@@ -1,4 +1,4 @@
-# Rupita — memory
+# Rupika — memory
 
 ## Criteria that worked well
 

@@ -6,28 +6,28 @@ any of them directly as an individual chat.
 
 ## Who's here
 
-- **Rupita** — prospecting. See `team/rupita-prospecting.md`.
+- **Rupika** — prospecting. See `team/rupika-prospecting.md`.
 - **Montague** — enrichment. See `team/montague-enrichment.md`.
-- **(third role, name TBD)** — outreach drafting. See
-  `team/outreach-agent.md` (placeholder — rename the file and update this
-  list once Kevin names this one).
+- **Elly** — outreach drafting. See `team/elly-outreach.md`.
 
-## Known overlap with KIREEK — not yet resolved
+## Scope vs. KIREEK — resolved 2026-07-31
 
-KIREEK (`VIRIDIALLC/KIREEK`, `voice-agent/backend/main.py`) already has its
-own voice-triggerable prospecting tools (`build_prospect_list`,
+KIREEK (`VIRIDIALLC/KIREEK`, `voice-agent/backend/main.py`) has its own
+voice-triggerable prospecting tools (`build_prospect_list`,
 `run_research_agent`, `draft_outreach_message`,
 `enroll_prospects_in_pipeline`) and a dormant autonomous scheduler
 (`PROSPECTING_SCHEDULE_ENABLED`, off by default). It also reserves
 `BDR_TEAM_CHAT_WEBHOOK_URL` in `backend/.env` for this team's Google Chat
 space.
 
-Before this team runs for real, decide with Kevin: does this repo's Rupita
-replace KIREEK's built-in scheduler, or do they cover different scope
-(e.g. KIREEK handles voice-requested one-off lookups, this repo handles the
-standing daily pipeline)? Don't let both run the same job independently —
-that's a silent way to double API spend. Flag this to Kevin rather than
-guessing if it's ever unclear which one should act.
+**Decision: different scope, both stay.** KIREEK's tools are for
+one-off, voice-requested lookups in the moment ("find me 5 prospects in
+Austin right now"). This repo is the standing daily pipeline
+(Rupika -> Montague -> Elly). KIREEK's `PROSPECTING_SCHEDULE_ENABLED`
+autonomous scheduler should stay off permanently now that this repo is the
+real standing pipeline — arming both would silently double API spend on
+the same job. If that ever needs to change, that's a conversation with
+Kevin first, not a default to flip.
 
 ## How handoff works
 
@@ -38,12 +38,12 @@ from `prospects/_template/`. `stage` field:
 found -> enriched -> drafted -> approved -> sent
 ```
 
-- **Rupita** finds new prospects (`stage: found` created by her), and
+- **Rupika** finds new prospects (`stage: found` created by her), and
   reviews `prospects/_new-leads.md` if Kevin drops raw leads there.
 - **Montague** picks up `stage: found`, enriches (company info, contact
   info, why-they-fit), advances to `stage: enriched`.
-- **Outreach agent** picks up `stage: enriched`, drafts an outreach message
-  into `outreach.md`, advances to `stage: drafted`.
+- **Elly** picks up `stage: enriched`, drafts an outreach message into
+  `outreach.md`, advances to `stage: drafted`.
 - **Nothing sends automatically.** `drafted` -> `approved` -> `sent` is
   Kevin's call — see "Approval gate."
 

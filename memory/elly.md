@@ -1,4 +1,4 @@
-# Outreach agent — memory
+# Elly — memory
 
 ## Tone Kevin tends to approve
 
