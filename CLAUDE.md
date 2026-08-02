@@ -9,6 +9,10 @@ any of them directly as an individual chat.
 - **Rupika** — prospecting. See `team/rupika-prospecting.md`.
 - **Montague** — enrichment. See `team/montague-enrichment.md`.
 - **Elly** — outreach drafting. See `team/elly-outreach.md`.
+- **Sage** — quoting, once a `track: website` prospect replies. See
+  `team/sage-quoting.md`.
+- **Nova** — Magic Patterns build, once a quote is approved and photos
+  are in hand. See `team/nova-build.md`.
 
 ## Scope vs. KIREEK — resolved 2026-07-31
 
@@ -52,6 +56,39 @@ and how Elly pitches — see their persona files.
   `outreach.md`, advances to `stage: drafted`.
 - **Nothing sends automatically.** `drafted` -> `approved` -> `sent` is
   Kevin's call — see "Approval gate."
+
+Once a `track: website` prospect is `stage: sent`, a second field takes
+over — `quote_stage`, for handling replies:
+
+```
+none -> quoted / needs_kevin -> ready_to_build
+```
+
+- Kevin drops what a prospect said into `prospects/<slug>/reply.md`.
+- **Sage** matches it against `prospects/_pricing.md`'s three tiers,
+  drafts `quote.md`, sets `quote_stage: quoted` — or `needs_kevin` if it
+  doesn't cleanly fit any tier (never guesses a price).
+- Kevin sets `quote_stage: ready_to_build` himself once the quote's
+  approved *and* the business owner has actually sent real photos —
+  nothing here can detect photo arrival automatically, so this flip
+  stays manual.
+- **Nova** picks up `ready_to_build`, but only actually starts a Magic
+  Patterns build when Kevin explicitly says to start that specific
+  project — see `team/nova-build.md` and "Magic Patterns access" below.
+  Build quality rules (uniqueness, SEO, the real-photos gate) live in
+  `prospects/_build-standards.md`.
+
+## Magic Patterns access
+
+The Magic Patterns MCP connector available in Claude Code sessions here
+is authenticated to Kevin's real account (confirmed 2026-08-02 — it has
+his actual active design system, `"Viridia Analytics"`). That means
+starting a real project is technically possible directly from a session,
+not something only Kevin can do by hand. It spends real credits and
+creates a real project on his account, though, so it follows the same
+approval gate as sending anything else here: never triggered
+automatically, only when Kevin explicitly says to start that specific
+project.
 
 ## Approval gate
 

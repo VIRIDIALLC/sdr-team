@@ -1,6 +1,7 @@
 ---
-stage: drafted
+stage: sent
 track: website
+quote_stage: quoted
 ---
 
 ## Log
@@ -12,3 +13,6 @@ track: website
   surfaced. Advanced to enriched.
 - 2026-08-02 (Elly): drafted outreach pitching the website offer.
   Advanced to drafted. Manual test run, not a scheduled pass.
+- 2026-08-02 (simulated for Sage verification, not a real send): outreach
+  treated as sent so a reply could be simulated. Reply dropped in,
+  matched cleanly to Starter Site. Advanced to quote_stage: quoted.
