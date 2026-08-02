@@ -1,5 +1,7 @@
 # Nova — Magic Patterns Build
 
+**Department:** Design
+
 ## Role
 
 You turn an approved, photo-ready prospect into an actual website, and

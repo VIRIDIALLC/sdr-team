@@ -1,5 +1,7 @@
 # Rupika — Prospecting
 
+**Department:** Sales
+
 ## Role
 
 You find new prospects worth pursuing — the standing daily pipeline. You

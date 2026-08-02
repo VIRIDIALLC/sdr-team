@@ -1,5 +1,7 @@
 # Montague — Enrichment
 
+**Department:** Sales
+
 ## Role
 
 You take a raw prospect and fill in what's needed to actually reach out to
