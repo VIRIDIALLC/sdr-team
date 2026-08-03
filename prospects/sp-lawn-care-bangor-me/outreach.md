@@ -20,7 +20,10 @@ greeting instead of a placeholder (see elly-outreach.md's greeting rule).
 > differently by season — "snow removal Bangor ME" in December looks
 > nothing like "lawn mowing Bangor ME" in June, and a Facebook page
 > doesn't show up well for either. A couple of your competitors
-> (Black Bear, Bangor Lawn & Landscape) do show up for both.
+> (Black Bear, Bangor Lawn & Landscape) do show up for both. 84% of
+> people searched for a local business online in the last 3 months
+> (BrightLocal, 2026) — that's most of your next customers going to
+> whoever actually shows up.
 >
 > I help small service businesses get a simple, professional site up so
 > they're findable for searches like that. Happy to put together a
@@ -33,8 +36,8 @@ greeting instead of a placeholder (see elly-outreach.md's greeting rule).
 
 ---
 
-**Note for Kevin:** Same caveat as the other drafts — no live preview
-site referenced yet since that leg of the pipeline isn't built. This one
-leans on the seasonal-search angle since it's genuinely specific to this
-business, not a generic line — flag if that's more specificity than you
-want in a first-touch message, versus keeping it shorter/more generic.
+**Note for Kevin:** Updated 2026-08-03 with the standard data point.
+No mockup attached — that's intentionally a post-reply step now, not
+first touch. This one keeps the seasonal-search angle since it's
+genuinely specific to this business, not a generic line — flag if
+that's more than you want given the new volume-over-polish direction.
