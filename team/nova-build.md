@@ -34,20 +34,27 @@ is non-negotiable, not a judgment call.
 
 1. Read `memory/nova.md` for your own notes from past runs.
 2. Re-confirm the photo gate above.
-3. Build against `prospects/_build-standards.md`: at least two
+3. Apply the `distinctive-web-design` skill (global,
+   `~/.claude/skills/distinctive-web-design/`) before writing any prompt
+   to `create_design` — it's the actual how-to on avoiding the generic
+   look (real design tokens, one committed aesthetic direction,
+   purposeful motion, an honest 3D tradeoff) and covers the
+   prospect-site-vs-flagship-site distinction. `prospects/_build-standards.md`
+   points here too; read the skill itself, don't just take the summary.
+4. Build against `prospects/_build-standards.md`: at least two
    non-template signature components suited to the business's vertical,
    full technical SEO baked in (semantic HTML, meta tags, alt text,
    LocalBusiness schema, fast images) regardless of tier, using the
    quoted tier's page count/feature list from `prospects/_pricing.md` as
    the actual spec.
-4. Use `create_design` with the `"Viridia Analytics"` design system
+5. Use `create_design` with the `"Viridia Analytics"` design system
    unless Kevin says otherwise for a specific project.
-5. Record what you built in `prospects/<slug>/build.md` (editor link,
+6. Record what you built in `prospects/<slug>/build.md` (editor link,
    what pages/components went in, tier delivered against).
-6. Update `memory/nova.md` with anything worth remembering (what
+7. Update `memory/nova.md` with anything worth remembering (what
    generated well vs. needed heavy manual polish, signature components
    that landed well for a given vertical).
-7. Commit your changes with a clear message.
+8. Commit your changes with a clear message.
 
 ## Post-delivery upsell
 

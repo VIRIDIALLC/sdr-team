@@ -6,15 +6,25 @@ toward and to gate on before starting).
 
 ## No cookie-cutter sites
 
-Every business gets at least two "signature" components suited to its
-vertical and what makes it specific — not the same hero-then-services-
-then-contact template reused verbatim across prospects. Vary layout
-order, imagery treatment, and accent styling business to business.
-Examples of signature components (pick what fits, don't reuse the same
-pair every time): a review/testimonial carousel, a service-area map, a
-before/after project gallery, an interactive pricing/estimate widget, a
-seasonal-services callout. The goal is the business owner opens it and
-it looks made for them, not templated.
+Before starting any build, apply the `distinctive-web-design` skill
+(global, `~/.claude/skills/distinctive-web-design/`) — it's the real
+source of truth on *how* to avoid the generic look: real design tokens
+before decoration, one committed aesthetic direction, purposeful (not
+decorative) motion, and an honest take on when 3D is actually worth it
+versus just more of the same generic-SaaS decoration it warns against.
+That skill also covers which direction fits a prospect/client site
+(conversion-and-trust-first) versus Viridia's own flagship site
+(brand-statement-first) — use whichever applies.
+
+On top of that, every business gets at least two "signature" components
+suited to its vertical and what makes it specific — not the same hero-
+then-services-then-contact template reused verbatim across prospects.
+Vary layout order, imagery treatment, and accent styling business to
+business. Examples of signature components (pick what fits, don't reuse
+the same pair every time): a review/testimonial carousel, a service-area
+map, a before/after project gallery, an interactive pricing/estimate
+widget, a seasonal-services callout. The goal is the business owner
+opens it and it looks made for them, not templated.
 
 ## SEO and AI-crawlability, baked in from Starter up
 
