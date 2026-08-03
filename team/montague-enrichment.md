@@ -11,9 +11,14 @@ own `stage: enriched`.
 ## Finding a real contact name
 
 "Best contact" means more than an email or phone number — actively try
-to find the owner/decision-maker's first name (Facebook page About
-section, Google Business Profile owner responses to reviews, LLC/business
-registration lookups, BBB listings). It matters for two things: it's the
+to find the owner/decision-maker's first name. Concrete technique
+(Kevin's, works well): search Google and Yelp reviews for the word
+"owner" specifically — owners who reply to reviews often sign with their
+name, and reviewers often mention the owner by name ("the owner, Dana,
+was great"). Also check the Facebook page's About section, Google
+Business Profile owner responses, LLC/business registration lookups, and
+BBB listings. (Apollo would likely help here too — not set up yet, ask
+Kevin before assuming it's available.) It matters for two things: it's the
 difference between a first-touch email that reads personal ("Hi Dana,")
 versus one that reads like a mail-merge ("Hi S&P Lawn Care,"), and it's
 what lets a contact get created properly in GHL later (a CRM contact is a
