@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
   note). Advanced to enriched.
 - 2026-08-03 (Elly): drafted outreach pitching the website offer.
   Advanced to drafted.
+- 2026-08-03 (Kevin, via KIREEK): sent for real via review_ready_to_send batch approval.
