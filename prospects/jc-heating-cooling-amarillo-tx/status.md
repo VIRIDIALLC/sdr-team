@@ -1,7 +1,7 @@
 ---
-stage: sent
+stage: drafted
 track: website
-quote_stage: quoted
+quote_stage: none
 ---
 
 ## Log
@@ -13,6 +13,9 @@ quote_stage: quoted
   surfaced. Advanced to enriched.
 - 2026-08-02 (Elly): drafted outreach pitching the website offer.
   Advanced to drafted. Manual test run, not a scheduled pass.
-- 2026-08-02 (simulated for Sage verification, not a real send): outreach
-  treated as sent so a reply could be simulated. Reply dropped in,
-  matched cleanly to Starter Site. Advanced to quote_stage: quoted.
+- 2026-08-02 (Sage verification exercise, reverted): a fictional reply
+  was simulated to test Sage's quoting logic, advancing stage/quote_stage.
+  Reset back to drafted/none on 2026-08-03 — that reply never happened
+  and no real outreach has been sent. reply.md and quote.md from that
+  exercise are left in place for reference but do not reflect anything
+  real.
