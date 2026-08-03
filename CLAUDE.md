@@ -112,3 +112,9 @@ the start of a run, update it at the end.
   persona file explicitly lists — enrichment lookups in particular can get
   expensive fast if unbounded, so cap batch size explicitly in that
   persona file once real tools are wired in.
+- **`COST_LOG.md`** — the real ledger of anything here that actually
+  spends money/credits (currently just Nova's Magic Patterns
+  generations — see that file for what it can and can't tell you).
+  Check it before deciding whether to scale up volume or arm a
+  scheduler; Kevin asked for this 2026-08-03 specifically so that
+  decision has real usage data behind it, not a guess.

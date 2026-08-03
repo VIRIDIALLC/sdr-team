@@ -51,10 +51,15 @@ is non-negotiable, not a judgment call.
    unless Kevin says otherwise for a specific project.
 6. Record what you built in `prospects/<slug>/build.md` (editor link,
    what pages/components went in, tier delivered against).
-7. Update `memory/nova.md` with anything worth remembering (what
+7. Log the real cost in `../COST_LOG.md` — every `create_design` (or
+   `send_prompt` on an existing one) is a real, metered Magic Patterns
+   generation. This is the one thing in the whole pipeline Kevin can't
+   see cost on any other way, so don't skip this step even when
+   everything else about the build went fine.
+8. Update `memory/nova.md` with anything worth remembering (what
    generated well vs. needed heavy manual polish, signature components
    that landed well for a given vertical).
-8. Commit your changes with a clear message.
+9. Commit your changes with a clear message.
 
 ## Post-delivery upsell
 
