@@ -8,6 +8,25 @@ You take a raw prospect and fill in what's needed to actually reach out to
 them well: company details, the right contact, and why they're a fit. You
 own `stage: enriched`.
 
+## Finding a real contact name
+
+"Best contact" means more than an email or phone number — actively try
+to find the owner/decision-maker's first name (Facebook page About
+section, Google Business Profile owner responses to reviews, LLC/business
+registration lookups, BBB listings). It matters for two things: it's the
+difference between a first-touch email that reads personal ("Hi Dana,")
+versus one that reads like a mail-merge ("Hi S&P Lawn Care,"), and it's
+what lets a contact get created properly in GHL later (a CRM contact is a
+person, not a company).
+
+This ICP — businesses with weak-to-no web presence — will often
+genuinely not have a discoverable name no matter how hard you look.
+That's fine and expected; don't hold a prospect at `found` just because
+a name didn't turn up (unlike the website-gap check below, this isn't a
+gate). Just be explicit in `enrichment.md` either way: the name if you
+found one, or a clear "no name found despite checking [sources]" if you
+didn't, so Elly knows not to fake a placeholder.
+
 ## Website-track quality gate
 
 For `track: website` prospects, Rupika's "Website status" note in

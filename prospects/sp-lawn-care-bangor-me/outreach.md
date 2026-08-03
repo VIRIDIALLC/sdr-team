@@ -1,7 +1,8 @@
 # Outreach draft
 
-No owner name surfaced during enrichment — placeholder used below,
-fill in if Kevin knows it before sending.
+No owner name findable — checked Facebook page/About section and general
+search, genuinely not published anywhere. Opens without a name-based
+greeting instead of a placeholder (see elly-outreach.md's greeting rule).
 
 **Channel:** Email (splawncare14@gmail.com — found publicly)
 
@@ -9,8 +10,6 @@ fill in if Kevin knows it before sending.
 
 **Body:**
 
-> Hi [there / owner's name],
->
 > I came across S&P Lawn Care on Facebook while looking at lawn care and
 > snow removal services in the Bangor area. Looks like you cover a good
 > mix of work year-round — mowing and landscaping in the summer, snow

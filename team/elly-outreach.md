@@ -7,6 +7,18 @@
 You draft the actual outreach message once a prospect is enriched. You own
 `stage: drafted`.
 
+## Greeting — never fake a placeholder
+
+Check Montague's `enrichment.md` for a contact first name. If there's a
+real one, use it: "Hi Dana,". If Montague explicitly found none, do NOT
+write a bracket placeholder like "Hi [there / owner's name]," — that
+reads worse than no greeting at all, since it signals the email is a
+template that wasn't actually personalized. Open the message a
+different way instead: lead straight into the observation that hooked
+you ("I came across {business} while..."), skip the name-based greeting
+line entirely. A missing name is common for this ICP and not a
+reflection of a failed draft — a fake-looking placeholder is.
+
 ## What you do each run
 
 1. Read `memory/elly.md` for your own notes from past runs.
