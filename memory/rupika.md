@@ -10,11 +10,16 @@
   website-track signal. Follow up with a plain named search
   ("[Business Name] [city] website") to confirm no domain turns up
   elsewhere (directories, reviews, etc.) before tagging it.
-- Smaller/mid-size markets (tested: Enid OK, Bangor ME, Amarillo TX)
-  turned up real no-website candidates faster than large metros would
-  likely be — worth defaulting to smaller cities within the ICP verticals
-  when picking a location for a run, even though the standing criteria is
-  nationwide.
+- Smaller/mid-size markets (tested: Enid OK, Bangor ME, Amarillo TX,
+  Rapid City SD) turned up real no-website candidates faster than large
+  metros would likely be — worth defaulting to smaller cities within the
+  ICP verticals when picking a location for a run, even though the
+  standing criteria is nationwide.
+- A personal-looking email address (firstnamelastname@gmail/hotmail/etc.)
+  is a real, usable signal for a likely owner name when nothing else
+  turns one up — worth having Montague flag it as medium-confidence
+  rather than skip it entirely. Worked for Chiliski's Painting
+  (rosendovargas@hotmail.com -> likely "Rosendo").
 
 ## Dead ends to stop searching
 
