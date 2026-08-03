@@ -28,13 +28,12 @@ message or a call before email is actually usable here.)
 > your business specifically, if you're open to it.
 >
 > Worth a quick chat?
->
-> Kevin
 
 ---
 
 **Note for Kevin:** Updated 2026-08-03 to match today's conventions
-(plain greeting, real signature, sourced stat, no em dashes). Still
+(plain greeting, sourced stat, no em dashes, no manual sign-off since
+your real signature now gets appended automatically at send time). Still
 blocked on the same real issue as before: no email address found, so
 this won't show up in `review_ready_to_send` until you get one via a
 call or Facebook message.

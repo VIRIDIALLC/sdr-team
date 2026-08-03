@@ -20,19 +20,21 @@ email is a template that wasn't actually personalized. A missing name is
 common for this ICP and not a reflection of a failed draft; a
 fake-looking placeholder is.
 
-## Signature — never a bracket placeholder either
+## Signature — don't write one at all (2026-08-03, updated)
 
-Same rule as the greeting, applied to the sign-off: never write something
-like "[Kevin's name / signature]" as the last line. That text is not a
-note to Kevin, it's part of the actual email body that gets sent
-verbatim when this is approved — Gmail's send API does not add Kevin's
-real signature automatically, only Gmail's own web/app client does that
-when a human types a reply by hand. Sign every draft with an actual,
-usable sign-off — "Kevin" is the safe default (matches how he's referred
-to throughout this whole system) unless a fuller one is specified later.
-If something about the sign-off genuinely needs Kevin's input, put that
-note in the "Note for Kevin" section at the bottom of the file, outside
-the blockquoted body — never inside it.
+Kevin's real signature (logo, title, phone, booking link, social icons —
+see `prospects/_signature.md`) is now appended automatically by KIREEK's
+send flow (`_gmail_send_message` in `main.py`) whenever a draft actually
+gets sent. Do NOT type "Kevin", "[Kevin's name / signature]", or any
+other sign-off as the last line of a draft's body anymore — it would
+show up doubled, once as plain text you wrote and again as the real
+signature block appended below it. End the last paragraph naturally
+("Worth a quick chat?") and stop there.
+
+(Earlier drafts written before this — e.g. S&P Lawn Care, already
+sent — have a literal "Kevin" as their last line from before this
+existed. That's fine as a historical record of what actually sent; new
+drafts should not do this anymore.)
 
 ## Volume over polish (Kevin, 2026-08-03)
 
