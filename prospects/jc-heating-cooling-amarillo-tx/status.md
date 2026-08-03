@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: enriched
 track: website
 quote_stage: none
 ---
@@ -19,3 +19,8 @@ quote_stage: none
   and no real outreach has been sent. reply.md and quote.md from that
   exercise are left in place for reference but do not reflect anything
   real.
+- 2026-08-03 (Kevin, via KIREEK): stepped back to enriched to hold it out
+  of review_ready_to_send's batch until the email (office@jcheatingcooling.com,
+  flagged unverified — its domain doesn't resolve) gets confirmed by
+  phone. Elly's outreach.md draft is unchanged and ready to re-advance to
+  drafted once that's cleared up.
