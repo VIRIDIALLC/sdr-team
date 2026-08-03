@@ -5,6 +5,17 @@ Source of truth for outbound email sign-offs. Confirmed with Kevin
 in KIREEK's `main.py` (not something Elly types into a draft's body) —
 see "How this gets used" below.
 
+**Known open issue (2026-08-03):** test-sent to Kevin's own inbox and
+checked on both platforms. Gmail desktop/web renders the full signature
+correctly (logo, links, all 4 social icons). Gmail's **mobile app**
+truncates it behind a "..." after just the "Schedule a meeting" line —
+name/phone/email/location/icons never show unless tapped to expand.
+This looks like Gmail mobile's own signature-detection/collapse
+behavior reacting to the `<table>`-based layout, not broken HTML (the
+same markup renders fully on desktop). Not fully resolved — worth
+retesting if the layout ever changes, since a meaningful share of
+prospects will read on mobile.
+
 ## Data
 
 - Name: Kevin Rogers
@@ -52,7 +63,7 @@ line, or it'll look doubled once the real signature is appended below it.
       <img src="https://cdn.magicpatterns.com/uploads/dBgonnHgNocdZqWCx2rT29/VA-Logo_(1).png" width="72" height="72" alt="Viridia Analytics" style="display: block;">
     </td>
     <td style="vertical-align: top; border-left: 2px solid #10B981; padding-left: 16px;">
-      <a href="https://api.viridiaanalytics.com/widget/booking/hv5pIfS27zbJCMMGNnkJ" style="color: #10B981; font-weight: bold; text-decoration: none; font-size: 12px; letter-spacing: 0.03em;">SCHEDULE A MEETING WITH ME</a><br>
+      <a href="https://api.viridiaanalytics.com/widget/booking/hv5pIfS27zbJCMMGNnkJ" style="color: #1155CC; font-weight: bold; text-decoration: underline; font-size: 12px; letter-spacing: 0.03em;">SCHEDULE A MEETING WITH ME</a><br>
       <span style="font-weight: bold; font-size: 14px;">Kevin Rogers</span><br>
       <span style="color: #555;">Founder &mdash; Director of Sales, Viridia Analytics</span><br>
       <span style="color: #555;">Phone: 623-300-0708 &nbsp;|&nbsp; Email: <a href="mailto:kevin@viridiaanalytics.com" style="color: #555;">kevin@viridiaanalytics.com</a></span><br>
