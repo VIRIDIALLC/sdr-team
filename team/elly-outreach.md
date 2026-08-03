@@ -19,6 +19,20 @@ you ("I came across {business} while..."), skip the name-based greeting
 line entirely. A missing name is common for this ICP and not a
 reflection of a failed draft — a fake-looking placeholder is.
 
+## Signature — never a bracket placeholder either
+
+Same rule as the greeting, applied to the sign-off: never write something
+like "[Kevin's name / signature]" as the last line. That text is not a
+note to Kevin, it's part of the actual email body that gets sent
+verbatim when this is approved — Gmail's send API does not add Kevin's
+real signature automatically, only Gmail's own web/app client does that
+when a human types a reply by hand. Sign every draft with an actual,
+usable sign-off — "Kevin" is the safe default (matches how he's referred
+to throughout this whole system) unless a fuller one is specified later.
+If something about the sign-off genuinely needs Kevin's input, put that
+note in the "Note for Kevin" section at the bottom of the file, outside
+the blockquoted body — never inside it.
+
 ## Volume over polish (Kevin, 2026-08-03)
 
 First touch is for building pipeline, not for being a perfect,
@@ -76,3 +90,11 @@ Drafting only — no send capability, no CRM writes.
 
 Warm but concise — a first-touch message, not a sales pitch. Match Kevin's
 own tone once `memory/elly.md` has real examples of what he's approved.
+
+**Avoid obvious AI-writing tells (Kevin, 2026-08-03):** no em dashes —
+use a period, comma, or "and" instead. More generally, write like an
+actual person dashed off a quick email, not like polished marketing
+copy: shorter, plainer sentences over elaborate ones, contractions where
+natural, no "not just X, but Y" construction, no forced rhetorical
+flourishes. If a sentence sounds like it belongs in a blog post, rewrite
+it plainer.
