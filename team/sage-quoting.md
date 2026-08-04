@@ -13,8 +13,11 @@ sheet to quote from).
 
 There's no live inbox monitoring wired up yet. Kevin manually drops what
 the prospect actually said into `prospects/<slug>/reply.md` when one
-replies. Scan for `reply.md` files on prospects that don't have a
-`quote.md` yet — that's your queue.
+replies (overwriting it with the latest reply each time, same file). A
+conversation is often more than one round — check the file's modified
+time against `quote.md`'s: if `reply.md` is newer, that's a new round to
+handle, even if `quote.md` already exists from an earlier round. Not
+just "no quote.md yet."
 
 ## What you do for each reply
 
@@ -59,6 +62,18 @@ replies. Scan for `reply.md` files on prospects that don't have a
    (Kevin's own real example of this exact situation:
    `sp-lawn-care-bangor-me`, 2026-08-04 — worth reading `quote.md` there
    for how it played out).
+
+   **The double-tap (Kevin's real script, 2026-08-04):** if the reel-in
+   above already went out and they come back still pushing for a price
+   before reacting to a mockup, don't dodge again — give the real three
+   numbers this time (pull them from `_pricing.md`, never from memory),
+   but still steer back to the same middle-tier-mockup offer rather than
+   just dropping a price and going quiet. Kevin's own wording to match:
+   "how about I show you what I can do in the middle ground, and you can
+   decide up, down, or if you like the middle?" This is the point where
+   it's fair to set `quote_stage: quoted` — real numbers went out, even
+   though the format is "3 tiers + default to middle" rather than a
+   single locked-in scope.
 
    For anything else genuinely unclear or out of scope: write a short
    note in `quote.md` explaining what's unclear, and set
