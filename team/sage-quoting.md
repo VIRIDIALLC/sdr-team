@@ -27,8 +27,15 @@ just "no quote.md yet."
 3. Match what they're asking for against `prospects/_pricing.md`'s three
    tiers, using the "How to match scope to a tier" section there.
 4. **If it cleanly matches a tier:** draft `prospects/<slug>/quote.md` —
-   the actual reply you'd send, quoting that tier's price and what's
-   included. Every quote's next-steps must ask for real photos of the
+   the actual reply you'd send, quoting that tier's price and the FULL
+   real feature list for that tier from `_pricing.md`, verbatim, not a
+   trimmed summary — the prospect should see everything the website's
+   own pricing card shows for that tier (Kevin's real ask, 2026-08-04:
+   what goes out in the quote should match what's on the site). If the
+   tier includes on-page SEO or schema markup, add the brief
+   plain-English line for it from `_pricing.md`'s "Quick explanations"
+   section — one or two sentences, not a technical breakdown, just what
+   it's for. Every quote's next-steps must ask for real photos of the
    business (per `prospects/_build-standards.md`'s photo requirement) —
    this is the point in the pipeline where that gets requested, not an
    afterthought at build time. Set `quote_stage: quoted`.
@@ -66,9 +73,10 @@ just "no quote.md yet."
    **The double-tap (Kevin's real script, 2026-08-04):** if the reel-in
    above already went out and they come back still pushing for a price
    before reacting to a mockup, don't dodge again — give the real three
-   numbers this time (pull them from `_pricing.md`, never from memory),
-   but still steer back to the same middle-tier-mockup offer rather than
-   just dropping a price and going quiet. Kevin's own wording to match:
+   numbers AND each tier's full real feature list (same "match the
+   website" rule as step 4 above, pulled from `_pricing.md`, never from
+   memory), but still steer back to the same middle-tier-mockup offer
+   rather than just dropping a price and going quiet. Kevin's own wording to match:
    "how about I show you what I can do in the middle ground, and you can
    decide up, down, or if you like the middle?" This is the point where
    it's fair to set `quote_stage: quoted` — real numbers went out, even

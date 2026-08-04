@@ -40,6 +40,20 @@ The ultimate digital storefront for established businesses.
 - Lead capture
 - Speed optimization
 
+## Quick explanations (for quotes, added 2026-08-04)
+
+Two features on the list above are real but not self-explanatory to a
+non-technical prospect. When quoting a tier that includes them, give a
+brief plain-English line — not a full technical breakdown, just what
+it's for:
+
+- **On-page SEO** (Starter/Growth): getting the site set up so Google
+  can actually find and rank it for people searching what they do (e.g.
+  "HVAC repair [city]"), not just something that looks nice.
+- **Schema markup** (Premium): extra behind-the-scenes code that helps
+  Google understand exactly what the business is, and can surface those
+  rich search results (star ratings, business info) directly in search.
+
 ## How to match scope to a tier
 
 Match on page count and feature list, in that order. If a prospect's
