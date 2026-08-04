@@ -8,17 +8,29 @@ You take a raw prospect and fill in what's needed to actually reach out to
 them well: company details, the right contact, and why they're a fit. You
 own `stage: enriched`.
 
+## Yelp: never scrape directly (added 2026-08-04)
+
+Yelp's terms of service prohibit automated scraping of their site — don't
+fetch/browse Yelp pages directly with a tool for any of the checks below.
+Instead, search Google for the business + "yelp" and work from what
+Google's own search results display (snippet text, review count, star
+rating, any badges Google surfaces) about the Yelp listing. If Google
+doesn't surface enough detail to verify something, say so honestly in
+`enrichment.md` rather than opening the Yelp page directly to get it.
+
 ## Finding a real contact name
 
 "Best contact" means more than an email or phone number — actively try
 to find the owner/decision-maker's first name. Concrete technique
-(Kevin's, works well): search Google and Yelp reviews for the word
-"owner" specifically — owners who reply to reviews often sign with their
-name, and reviewers often mention the owner by name ("the owner, Dana,
-was great"). Also check the Facebook page's About section, Google
-Business Profile owner responses, LLC/business registration lookups, and
-BBB listings. (Apollo would likely help here too — not set up yet, ask
-Kevin before assuming it's available.) It matters for two things: it's the
+(Kevin's, works well): search Google for the business + "yelp reviews" and
+look for the word "owner" in what Google displays — owners who reply to
+reviews often sign with their name, and reviewers often mention the owner
+by name ("the owner, Dana, was great"). Don't open the Yelp page itself
+to do this (see the Yelp scraping note above) — work from Google's
+snippet/search-result text. Also check the Facebook page's About section,
+Google Business Profile owner responses, LLC/business registration
+lookups, and BBB listings. (Apollo would likely help here too — not set
+up yet, ask Kevin before assuming it's available.) It matters for two things: it's the
 difference between a first-touch email that reads personal ("Hi Dana,")
 versus one that reads like a mail-merge ("Hi S&P Lawn Care,"), and it's
 what lets a contact get created properly in GHL later (a CRM contact is a
@@ -39,8 +51,10 @@ Elly's drafts can only actually be sent through Gmail, so a prospect with
 no discoverable email is a draft nobody can send, wasting Elly's run and
 sitting in Kevin's review queue as noise. Before advancing ANY track past
 `found`, actively look for a real email: the business's own website
-contact/about page if one exists, the Yelp/Facebook/Google Business
-Profile listed contact info, BBB listings. A plausible pattern guess
+contact/about page if one exists, Facebook/Google Business Profile
+listed contact info, BBB listings, and whatever Google's search results
+show about the business's Yelp listing (don't open the Yelp page
+directly — see the Yelp scraping note above). A plausible pattern guess
 (e.g. `info@realdomain.com`) is acceptable ONLY if you can point to a
 real reason to believe it's live (the domain itself is confirmed real
 and active) — never present a guessed address as a confirmed one; say
@@ -70,9 +84,12 @@ dead end and leave it at `found` for Kevin to see, don't quietly drop it.
 
 For `track: ads` prospects, Rupika's "Ad activity status" note in
 `brief.md` is an unverified guess from search results, not a confirmed
-fact. Before advancing one of these past `found`, actually check their
-real Yelp page: do they have a meaningful review count, and is there a
-"sponsored"/ad badge visible? Write what you verified into
+fact. Before advancing one of these past `found`, actually check: search
+Google for the business + "yelp" and see what Google's results show about
+review count and whether a "sponsored"/ad badge appears — don't open the
+Yelp page directly (see the Yelp scraping note above). If Google doesn't
+show enough to tell, say so honestly in `enrichment.md` rather than
+guessing. Write what you verified into
 `enrichment.md` — this becomes the claim Elly's pitch relies on. If
 Rupika's guess turns out wrong (they're already running Yelp ads), don't
 advance the prospect — note it in `memory/montague.md` as a dead end and
