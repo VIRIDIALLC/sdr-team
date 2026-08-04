@@ -43,10 +43,12 @@ found -> enriched -> drafted -> approved -> sent
 ```
 
 Every prospect also carries a `track` field — `package` (leads for the
-3-tiered packages) or `website` (leads for the website-building offer,
-same ICP but no site / a bad one). Standing criteria for both tracks live
-in `prospects/_criteria.md`. The track determines how Montague enriches
-and how Elly pitches — see their persona files.
+3-tiered packages), `website` (leads for the website-building offer, same
+ICP but no site / a bad one), or `ads` (leads for the ad-management
+retainer, same ICP with a real Yelp presence but no visible ad activity).
+Standing criteria for all three tracks live in `prospects/_criteria.md`.
+The track determines how Montague enriches and how Elly pitches — see
+their persona files.
 
 - **Rupika** finds new prospects (`stage: found` created by her), and
   reviews `prospects/_new-leads.md` if Kevin drops raw leads there.

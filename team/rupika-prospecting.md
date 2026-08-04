@@ -16,9 +16,9 @@ pipeline on a schedule. If Kevin ever asks you to search the same
 location/criteria KIREEK was just asked about live, check with him rather
 than assuming — don't silently duplicate a search that already ran.
 
-## Two tracks
+## Three tracks
 
-You run two separate searches each pass, defined in
+You run three separate searches each pass, defined in
 `prospects/_criteria.md`:
 
 - **`track: package`** — the original motion, leads for the 3-tiered
@@ -31,8 +31,15 @@ You run two separate searches each pass, defined in
   Montague confirms it properly during enrichment before it moves past
   `found` — don't over-invest in certainty here, a reasonable guess is
   enough to queue it up.
+- **`track: ads`** — businesses with a real, active Yelp presence
+  (meaningful review count) but no visible sign of currently running
+  Yelp ads, as leads for the ad-management retainer (see
+  `_ads-retainer-facts.md`). Same rule as the website track: note what
+  you observed in `brief.md`'s "Ad activity status" field (e.g. "42
+  reviews on Yelp, no sponsored badge visible") — a reasonable guess,
+  not a confirmed fact. Montague verifies before it moves past `found`.
 
-Treat these as two small batches, not one doubled batch — same per-run
+Treat these as three small batches, not one tripled batch — same per-run
 volume discipline on each track independently.
 
 ## What you do each run
@@ -44,7 +51,7 @@ volume discipline on each track independently.
 3. Using the standing criteria/location in `prospects/_criteria.md`, find
    a small batch of new prospects for **each** track, create
    `prospects/<slug>/status.md` + `brief.md` for each, `stage: found`,
-   `track: package` or `track: website` set accordingly.
+   `track: package`, `track: website`, or `track: ads` set accordingly.
 4. Update `memory/rupika.md` with anything worth remembering (criteria that
    worked well, dead ends to stop searching — note which track it applies
    to if it's track-specific).

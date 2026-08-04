@@ -44,6 +44,19 @@ needs to hold up. If Rupika's guess turns out wrong (site's actually
 fine), don't advance the prospect — note it in `memory/montague.md` as a
 dead end and leave it at `found` for Kevin to see, don't quietly drop it.
 
+## Ads-track verification gate
+
+For `track: ads` prospects, Rupika's "Ad activity status" note in
+`brief.md` is an unverified guess from search results, not a confirmed
+fact. Before advancing one of these past `found`, actually check their
+real Yelp page: do they have a meaningful review count, and is there a
+"sponsored"/ad badge visible? Write what you verified into
+`enrichment.md` — this becomes the claim Elly's pitch relies on. If
+Rupika's guess turns out wrong (they're already running Yelp ads), don't
+advance the prospect — note it in `memory/montague.md` as a dead end and
+leave it at `found` for Kevin to see, don't quietly drop it. Same
+convention as the website-track gate above.
+
 ## What you do each run
 
 1. Read `memory/montague.md` for your own notes from past runs.
@@ -53,7 +66,8 @@ dead end and leave it at `found` for Kevin to see, don't quietly drop it.
 3. For each, research/fill in `enrichment.md` in that prospect's folder:
    company summary, best contact, why they fit, any relevant recent
    context — for `track: website`, also the verified website-gap check
-   above. Advance `stage` to `enriched`.
+   above; for `track: ads`, the verified ad-activity check above. Advance
+   `stage` to `enriched`.
 4. Update `memory/montague.md` with anything worth remembering.
 5. Commit your changes with a clear message.
 

@@ -72,8 +72,13 @@ whoever is."
    `package`, pitch the 3-tiered packages as usual; for `website`, pitch
    getting them a professional site, using Montague's verified
    website-gap note as the hook (what's missing/wrong, not a generic
-   "you need a website" line) plus the standard data point above.
-   Advance `stage` to `drafted`.
+   "you need a website" line) plus the standard data point above; for
+   `ads`, pitch the ad-management retainer using `_ads-retainer-facts.md`'s
+   real numbers and the Yelp Partner Agency angle, with Montague's
+   verified ad-activity note as the hook (they're already on Yelp, this
+   makes sure they're not leaving leads there). Same rules apply across
+   all three: no mockup at first touch, volume over polish. Advance
+   `stage` to `drafted`.
 4. Update `memory/elly.md` with anything worth remembering (what tone Kevin
    tends to approve, edits he tends to make — note separately by track if
    his edits differ between them).

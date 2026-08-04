@@ -27,3 +27,24 @@ track, filtered further by web presence.
   observed in `brief.md`'s "Website status" field — Montague verifies and
   documents it properly before the prospect advances past `stage: found`.
 - **Location:** United States, nationwide — no state/metro restriction.
+
+## Track: ads
+
+Leads for the ad-management retainer (10% of ad spend, run today by
+Kevin's AE) — added 2026-08-04, Kevin's own ask to get an outbound lane
+going for this business alongside the package/website tracks. See
+`_ads-retainer-facts.md` for the real numbers and angle Elly pitches
+from.
+
+- **Verticals:** Same as package track above.
+- **Ad-activity filter:** Established business with a real, active Yelp
+  presence (meaningful review count — they're already listed where this
+  pitch lands hardest) but no visible sign of currently running Yelp ads
+  (no "sponsored"/ad badge on their Yelp page). Rupika notes what she
+  observed in `brief.md`'s "Ad activity status" field — same
+  unverified-guess convention as the website track's "Website status"
+  field, not a confirmed fact yet. Montague verifies it properly before
+  the prospect advances past `stage: found` (see the ads-track
+  verification gate in `montague-enrichment.md`).
+- **Location:** United States, nationwide — no state/metro restriction
+  (remote ad management, no on-site requirement).
