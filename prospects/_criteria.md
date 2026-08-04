@@ -28,6 +28,18 @@ Leads for the 3-tiered packages.
   results/AI overview will often surface the business's own website
   directly — capture that URL in `brief.md`'s "Source" field so Montague
   doesn't have to re-find it during enrichment.
+- **No-website subset — routing decision (added 2026-08-04):** some of
+  these Yelp advertisers won't have a real website. They stay
+  `track: package` and go through the normal automations pitch — do NOT
+  route them to `track: website` first. Kevin's real proof point (S&P
+  Lawn Care) shows the automations offer works entirely off Yelp's own
+  lead flow with no website involved at all, so a missing site doesn't
+  weaken this pitch. Montague still notes the website-gap (reusing the
+  "Website status" field below) purely as a **future upsell flag** —
+  once enrolled, it becomes a real `no-website` tag on the GHL contact
+  (see `montague-enrichment.md`) so a website-upsell campaign can target
+  that segment later, once they're already a paying automations client.
+  Not a routing gate, not built as an active campaign yet.
 
 ## Track: website
 

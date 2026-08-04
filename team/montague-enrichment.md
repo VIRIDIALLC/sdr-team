@@ -123,6 +123,18 @@ enough to confirm the response-time claim, say so honestly in
 grounds, this just isn't a confirmed hook Elly should lean on. Same
 "note it, don't fabricate certainty" convention as the other gates.
 
+While you're checking, also note whether the business has a real
+website (same check as the website-track quality gate above, reusing
+`brief.md`'s "Website status" field). This is informational only for
+`track: package` — per the routing decision in `_criteria.md`, a
+missing website does NOT change how this prospect is handled or block
+it from advancing; it stays `track: package` and gets pitched the
+normal automations offer. It just becomes a real `no-website` tag on
+the GHL contact once enrolled, for Kevin's future website-upsell
+targeting — write "no website found" or "has a website" plainly in
+`enrichment.md` either way so Elly knows whether to pass that tag
+along.
+
 ## What you do each run
 
 1. Read `memory/montague.md` for your own notes from past runs.
