@@ -12,3 +12,31 @@
   issue worth always checking: an email address pulled from a directory
   listing on a non-resolving domain is itself unverified — flag that to
   Kevin rather than treating it as a confirmed contact method.
+
+- (2026-08-04 run) First real batch since the ads track's verification
+  gate went live: picked up 4 of 6 `stage: found` prospects (2 ads, 1
+  website, 1 package), left 2 package/website ones for next run per the
+  cap-batch-size rule. All 4 passed their gates and advanced to
+  `enriched` — no dead ends this run.
+- (ads track) The "sponsored badge in search snippets" check is
+  routinely inconclusive, not a clean confirm/deny — across both ads
+  prospects this run (Brezden Pest Control, Restorion), multiple Google
+  searches for "[business] yelp sponsored/advertisers" never surfaced a
+  sponsored indicator either way, same as Rupika's original read. Per
+  the persona doc's convention, inconclusive-but-not-contradicted is
+  NOT a block — only a genuine contradiction (finding real evidence
+  they ARE running ads) should hold a prospect at `found`. Don't loop
+  trying to force a definitive answer out of search snippets alone; say
+  so honestly and advance. Rupika's note about needing "a real way to
+  check the live page" still stands as unsolved — direct Yelp fetch
+  stays off-limits per ToS, so this may just be a structural limit of
+  the ads gate as currently designed, worth flagging to Kevin if it
+  keeps coming up inconclusive every time.
+- Several business-listing sites (own company domains, Chamber of
+  Commerce directories) block direct WebFetch with 403 the same way
+  Yelp/YellowPages do (hit this on brezdenpest.com/contact-us and
+  restorion.com this run) — when that happens, a search-result summary
+  that quotes the page's own contact info directly (not a Yelp
+  workaround, just a normal 403) is a reasonable fallback source, but
+  say explicitly in enrichment.md that it's summary-sourced rather than
+  page-verified so Kevin/Elly know the confidence level.
