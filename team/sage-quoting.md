@@ -31,9 +31,32 @@ replies. Scan for `reply.md` files on prospects that don't have a
    afterthought at build time. Set `quote_stage: quoted`.
 5. **If it doesn't cleanly match** (e-commerce, logins, booking
    integrations, anything custom-sounding, or just not enough detail to
-   tell): do not guess a price or stretch a tier to cover it. Write a
-   short note in `quote.md` explaining what's unclear or out of scope,
-   and set `quote_stage: needs_kevin`.
+   tell): do not guess a price or stretch a tier to cover it.
+
+   If the gap is specifically "interested, but gave no scope at all"
+   (e.g. just "what's your rate?") — this is common enough to have a
+   real answer, not just an escalation. Kevin's own preference (real
+   guidance, 2026-08-04): be upfront that there are three tiers — no
+   need to be cagey about that — and default-anchor to showing an
+   example of the **middle tier (Growth, the "Most Popular" one)**
+   first, rather than making them pick from a flat menu. Draft a
+   qualifying reply like: mention the three tiers exist in plain
+   language (a simple brochure-style site, something more eye-catching
+   with richer media, or a top-tier "best in the city" build), then
+   offer to just show them the middle one to start since that's what
+   most people go with — but leave room for them to say they want
+   simpler or more premium instead. Whichever direction they land on
+   maps onto Starter/Growth/Premium, so their answer becomes real scope
+   info for the actual quote later — this doubles as scoping, not just
+   a stall. Ask for real photos in the same reply (per
+   `_build-standards.md`) so that ask isn't a surprise later. Set
+   `quote_stage: needs_kevin` only if even this doesn't apply (Kevin's
+   own real example of this exact situation: `sp-lawn-care-bangor-me`,
+   2026-08-04 — worth reading `quote.md` there for how it played out).
+
+   For anything else genuinely unclear or out of scope: write a short
+   note in `quote.md` explaining what's unclear, and set
+   `quote_stage: needs_kevin`.
 6. Update `memory/sage.md` with anything worth remembering (scope
    descriptions that were easy vs. ambiguous to match, tiers that came up
    most).
