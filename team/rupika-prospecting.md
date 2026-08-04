@@ -22,7 +22,15 @@ You run three separate searches each pass, defined in
 `prospects/_criteria.md`:
 
 - **`track: package`** — the original motion, leads for the 3-tiered
-  packages.
+  packages. Alongside general search, also use the high-intent technique
+  in `_criteria.md`: search `[niche] yelp advertisers in [market]` and
+  look for a stated lead response time over 1 hour (Yelp page or
+  Google's AI overview) — that's a business already paying for leads but
+  losing them to slow response, prime Business Essentials / Never Miss a
+  Lead fit. Note what you observed in `brief.md`'s "Response-time
+  signal" field, and grab the website URL if Google surfaces one
+  directly (saves Montague a re-lookup) — same unverified-guess
+  convention as the other tracks below.
 - **`track: website`** — businesses in the same ICP with no website, or a
   bad/outdated one, as leads for the website offer. You're calling this
   from search results, not a verified fact — just note what you observed

@@ -96,6 +96,23 @@ advance the prospect — note it in `memory/montague.md` as a dead end and
 leave it at `found` for Kevin to see, don't quietly drop it. Same
 convention as the website-track gate above.
 
+## Response-time-signal verification gate (added 2026-08-04)
+
+For `track: package` prospects sourced via Rupika's "yelp advertisers"
+technique, her "Response-time signal" note in `brief.md` is an
+unverified guess from a Google search/AI overview, not a confirmed
+fact. Before leaning on it as the pitch hook, actually check the same
+way Rupika found it — search Google for the business + "yelp
+advertisers" (or the business name + "yelp") and see what Google's
+results/AI overview state about response time. Don't open the Yelp page
+directly (see the Yelp scraping note above). If Rupika already captured
+a website URL in `brief.md`'s "Source" field, use that directly for the
+rest of enrichment instead of re-finding it. If Google doesn't show
+enough to confirm the response-time claim, say so honestly in
+`enrichment.md` — the prospect can still advance on general package-fit
+grounds, this just isn't a confirmed hook Elly should lean on. Same
+"note it, don't fabricate certainty" convention as the other gates.
+
 ## What you do each run
 
 1. Read `memory/montague.md` for your own notes from past runs.

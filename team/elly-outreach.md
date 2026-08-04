@@ -75,7 +75,15 @@ whoever is."
    in Kevin's review queue.
 4. For each remaining one, write `outreach.md` in that prospect's folder — a draft
    message referencing Montague's enrichment notes. Check `track`: for
-   `package`, pitch the 3-tiered packages as usual; for `website`, pitch
+   `package`, pitch the 3-tiered packages as usual — EXCEPT if
+   Montague's enrichment confirmed a real response-time signal (the
+   "yelp advertisers" sourcing technique, added 2026-08-04), lead with
+   that instead of a generic package pitch: they're already paying Yelp
+   for leads, and a slow response time is money left on the table —
+   frame Business Essentials / Never Miss a Lead as the fix for leads
+   they're already generating, not a new lead source. Only use this hook
+   if Montague actually verified it; if she couldn't confirm it, fall
+   back to the standard package pitch. For `website`, pitch
    getting them a professional site, using Montague's verified
    website-gap note as the hook (what's missing/wrong, not a generic
    "you need a website" line) plus the standard data point above; for

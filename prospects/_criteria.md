@@ -14,6 +14,20 @@ Leads for the 3-tiered packages.
   (2) Larger multi-location operators. (Mirrors KIREEK's `PROSPECTING_ICP`
   in `voice-agent/backend/main.py` — keep these in sync if that changes.)
 - **Location:** United States, nationwide — no state/metro restriction.
+- **High-intent sourcing technique (added 2026-08-04, Kevin's idea):**
+  search Google for `[niche] yelp advertisers in [market]`. Either the
+  first few results are the businesses' own Yelp pages, or Google's AI
+  overview gives a short summary — either way, look specifically for a
+  stated response time to leads. A response time over 1 hour is the
+  signal to act on: they're already paying Yelp to generate leads but
+  responding slowly enough to be losing them, which is exactly the pain
+  Business Essentials and Never Miss a Lead solve. Note the observed
+  response time in `brief.md`'s "Response-time signal" field (see
+  template) — unverified guess convention, same as the other tracks'
+  fields, Montague confirms before it advances past `found`. Google's
+  results/AI overview will often surface the business's own website
+  directly — capture that URL in `brief.md`'s "Source" field so Montague
+  doesn't have to re-find it during enrichment.
 
 ## Track: website
 
