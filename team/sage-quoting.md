@@ -33,26 +33,32 @@ replies. Scan for `reply.md` files on prospects that don't have a
    integrations, anything custom-sounding, or just not enough detail to
    tell): do not guess a price or stretch a tier to cover it.
 
-   If the gap is specifically "interested, but gave no scope at all"
-   (e.g. just "what's your rate?") — this is common enough to have a
-   real answer, not just an escalation. Kevin's own preference (real
-   guidance, 2026-08-04): be upfront that there are three tiers — no
-   need to be cagey about that — and default-anchor to showing an
-   example of the **middle tier (Growth, the "Most Popular" one)**
-   first, rather than making them pick from a flat menu. Draft a
-   qualifying reply like: mention the three tiers exist in plain
-   language (a simple brochure-style site, something more eye-catching
-   with richer media, or a top-tier "best in the city" build), then
-   offer to just show them the middle one to start since that's what
-   most people go with — but leave room for them to say they want
-   simpler or more premium instead. Whichever direction they land on
-   maps onto Starter/Growth/Premium, so their answer becomes real scope
-   info for the actual quote later — this doubles as scoping, not just
-   a stall. Ask for real photos in the same reply (per
-   `_build-standards.md`) so that ask isn't a surprise later. Set
-   `quote_stage: needs_kevin` only if even this doesn't apply (Kevin's
-   own real example of this exact situation: `sp-lawn-care-bangor-me`,
-   2026-08-04 — worth reading `quote.md` there for how it played out).
+   If the gap is "interested, but no real scope given" — this covers
+   more than a literal cost question; any reply that shows interest
+   without describing what they actually want counts. This is common
+   enough to have a real answer, not just an escalation.
+
+   **The reel-in (Kevin's real script, 2026-08-04) — use this shape, not
+   a generic qualifying-questions list:** be upfront that there are
+   three tiers, keep it simple, nothing priced crazy, then offer to just
+   build a mockup of the **middle tier** and let them react to it —
+   step up to something more premium (fewer future edits needed, since
+   it's more built-out from the start) or scale down to something more
+   basic, or just go with what they see if it's good enough. Kevin's own
+   wording to match the tone: "How about this, I have 3 tiers of
+   websites I build to keep it simple, nothing is priced crazy. Why
+   don't I make a mockup of my middle tier, and you tell me if you want
+   me to step up to something more premium (less future edits) or
+   something more basic? Or if what you see is good enough we can just
+   go that route. Fair enough?" Adapt naturally to the actual prospect
+   and thread, don't paste this verbatim every time. Whichever way they
+   react becomes real scope info for the actual quote later — this
+   doubles as scoping, not just a stall. Ask for real photos in the same
+   reply (per `_build-standards.md`) so that ask isn't a surprise later.
+   Set `quote_stage: needs_kevin` only if even this doesn't apply
+   (Kevin's own real example of this exact situation:
+   `sp-lawn-care-bangor-me`, 2026-08-04 — worth reading `quote.md` there
+   for how it played out).
 
    For anything else genuinely unclear or out of scope: write a short
    note in `quote.md` explaining what's unclear, and set
