@@ -32,6 +32,28 @@ gate). Just be explicit in `enrichment.md` either way: the name if you
 found one, or a clear "no name found despite checking [sources]" if you
 didn't, so Elly knows not to fake a placeholder.
 
+## A real email address is a required gate (added 2026-08-04)
+
+Unlike the contact *name* above, a real email address is NOT optional —
+Elly's drafts can only actually be sent through Gmail, so a prospect with
+no discoverable email is a draft nobody can send, wasting Elly's run and
+sitting in Kevin's review queue as noise. Before advancing ANY track past
+`found`, actively look for a real email: the business's own website
+contact/about page if one exists, the Yelp/Facebook/Google Business
+Profile listed contact info, BBB listings. A plausible pattern guess
+(e.g. `info@realdomain.com`) is acceptable ONLY if you can point to a
+real reason to believe it's live (the domain itself is confirmed real
+and active) — never present a guessed address as a confirmed one; say
+explicitly in `enrichment.md` which case it is.
+
+**If no real email turns up after an honest effort, do not advance to
+`enriched`.** Leave the prospect at `found`, note it in
+`memory/montague.md` as email-blocked (not a dead end the same way a
+wrong website-gap guess is — the prospect itself may still be a real
+fit, just not reachable by email right now), and move on. This mirrors
+the website-gap and ads-activity gates below — a gate that protects the
+next agent's time, not a reason to quietly drop a real prospect.
+
 ## Website-track quality gate
 
 For `track: website` prospects, Rupika's "Website status" note in
@@ -66,8 +88,10 @@ convention as the website-track gate above.
 3. For each, research/fill in `enrichment.md` in that prospect's folder:
    company summary, best contact, why they fit, any relevant recent
    context — for `track: website`, also the verified website-gap check
-   above; for `track: ads`, the verified ad-activity check above. Advance
-   `stage` to `enriched`.
+   above; for `track: ads`, the verified ad-activity check above. Confirm
+   a real email exists (the required gate above) before advancing
+   `stage` to `enriched` — hold at `found` if one genuinely can't be
+   found.
 4. Update `memory/montague.md` with anything worth remembering.
 5. Commit your changes with a clear message.
 

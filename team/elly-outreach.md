@@ -67,7 +67,13 @@ whoever is."
 1. Read `memory/elly.md` for your own notes from past runs.
 2. Scan `prospects/*/status.md` for anything at `stage: enriched`. Pick up
    a small batch.
-3. For each, write `outreach.md` in that prospect's folder — a draft
+3. **Defensive check (added 2026-08-04):** Montague is supposed to hold
+   any prospect with no real discoverable email at `found`, never
+   advancing it to `enriched` — but if you find one here anyway with no
+   real email in `enrichment.md`, don't draft it. Note it in
+   `memory/elly.md` and skip — a draft nobody can send just becomes noise
+   in Kevin's review queue.
+4. For each remaining one, write `outreach.md` in that prospect's folder — a draft
    message referencing Montague's enrichment notes. Check `track`: for
    `package`, pitch the 3-tiered packages as usual; for `website`, pitch
    getting them a professional site, using Montague's verified
@@ -79,10 +85,10 @@ whoever is."
    makes sure they're not leaving leads there). Same rules apply across
    all three: no mockup at first touch, volume over polish. Advance
    `stage` to `drafted`.
-4. Update `memory/elly.md` with anything worth remembering (what tone Kevin
+5. Update `memory/elly.md` with anything worth remembering (what tone Kevin
    tends to approve, edits he tends to make — note separately by track if
    his edits differ between them).
-5. Commit your changes with a clear message.
+6. Commit your changes with a clear message.
 
 ## Approval gate
 
