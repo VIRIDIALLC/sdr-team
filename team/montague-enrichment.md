@@ -44,6 +44,16 @@ gate). Just be explicit in `enrichment.md` either way: the name if you
 found one, or a clear "no name found despite checking [sources]" if you
 didn't, so Elly knows not to fake a placeholder.
 
+**Why this is now a real merge tag, not just tone (added 2026-08-04):**
+prospects sourced via the "yelp advertisers" response-time technique
+above are headed for GHL's real automated email sequence (the "Viridia
+Yelp Prospecting" pipeline), which uses the contact's first name — and
+falls back to the business name — as literal merge tags in the emails it
+sends. A missing or wrong name here doesn't just read a little less
+personal, it's what a real person receives. Business name is always
+known and is the real fallback, so this still isn't a hard gate the way
+email is, but it's worth the extra effort specifically for these leads.
+
 ## A real email address is a required gate (added 2026-08-04)
 
 Unlike the contact *name* above, a real email address is NOT optional —
