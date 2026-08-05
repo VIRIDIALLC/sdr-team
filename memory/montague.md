@@ -40,3 +40,32 @@
   workaround, just a normal 403) is a reasonable fallback source, but
   say explicitly in enrichment.md that it's summary-sourced rather than
   page-verified so Kevin/Elly know the confidence level.
+
+- (2026-08-05 run) Picked up 5 of 7 `stage: found` prospects (3
+  package, 2 website), leaving the 2 newest ones (Johnston Heating &
+  Air, Peña's Landscaping — both website track, both today's finds) for
+  next run per the cap-batch-size rule. Result: 2 advanced to
+  `enriched` (Schmidtlein Electric — package, real company website +
+  named contact Debbie Schmidtlein; Kuberra Electric — website,
+  confirmed no-site via ENOTFOUND + business Gmail address), 3 held at
+  `found` on the email gate (D&D Plumbing & Repair, SonRise Roofing,
+  Superior Roofing) — first real hits of that gate since it went live
+  2026-08-04. Also note: also had to fast-forward `master` past a
+  detached-HEAD commit (Rupika's 2026-08-05 run, 5 new prospects) that
+  an earlier session had left unmerged/unpushed — worth a heads-up to
+  Kevin that a prior session ended in a state where its work wasn't on
+  a branch.
+- (email gate, 2026-08-05) The gate is genuinely biting hardest on
+  package-track prospects sourced via the "family-owned/locally-owned"
+  search technique rather than the Yelp-advertisers one: both roofing
+  companies this run (SonRise, Superior) have real, live company
+  websites (confirmed via search-indexed pages) that both 403'd on
+  direct WebFetch — same as the recurring 403 pattern already noted
+  above — and neither surfaced a real email anywhere (site content via
+  search snippets, BBB "Email Business" widgets which don't expose an
+  address, or gmail/yahoo guesses tied to the named owner). Only the
+  phone number is reliably discoverable for either. This looks like a
+  real structural gap for small contractors who list a phone-first BBB/
+  Yelp presence and treat their own site as brochure-only — worth
+  flagging to Kevin if it recurs, same way the ads-track "inconclusive
+  sponsored badge" limit was flagged.
