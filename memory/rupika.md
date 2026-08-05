@@ -45,6 +45,32 @@
   when the ads track was added 2026-08-04 — added it this run so future
   ads-track prospects have it by default.
 
+- (run 2026-08-05) The "yelp advertisers in [market]" technique produces
+  aggregated/multi-business search summaries more often than a single
+  attributable response-time claim when scoped to a whole vertical+market
+  (tried restoration/Spokane WA, pest control/Bozeman+Sioux
+  Falls+Cheyenne) — didn't yield a usable single-business signal this
+  run. Falling back to the family-owned/locally-owned search worked
+  cleanly instead (Schmidtlein Electric, Topeka KS; SonRise Roofing,
+  Wichita Falls TX) — both had real websites, which is fine, package
+  track doesn't need a website gap.
+- (website track) Confirmed again this run: plenty of Facebook-scoped
+  hits turn out to have a real site once you do the named follow-up
+  search (struck out on Cowboy Plumbing, Eagar Plumbing, Anderson's Pest
+  Control, Uriar Turner Painting, Mosquito Solutions, Bob Eckert Painting
+  — all had working dedicated domains). Budget for roughly 2 misses per
+  hit when using this technique; the named follow-up search is doing real
+  work, don't skip it. Hits this run: D&D Plumbing & Repair (Medford OR),
+  Johnston Heating & Air / "Johnston Air" (Hot Springs Village AR),
+  Peña's Landscaping (Pocatello ID).
+- (website track) New small/mid markets that worked or are worth
+  revisiting: Medford OR, Hot Springs Village AR, Pocatello ID (all
+  yielded a real no-website hit this run). Already-used markets to avoid
+  repeating: Enid OK, Bangor ME, Amarillo TX, Rapid City SD, Cedar Rapids
+  IA, Duluth MN, Chattanooga TN, Boise ID, San Luis Obispo CA, Bellevue
+  WA, Sioux Falls SD, Bismarck ND (checked this run, no-website hit
+  didn't pan out there), Topeka KS, Wichita Falls TX, Spokane WA.
+
 ## Dead ends to stop searching
 
 (none yet)
