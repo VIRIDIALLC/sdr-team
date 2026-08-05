@@ -26,6 +26,44 @@ map, a before/after project gallery, an interactive pricing/estimate
 widget, a seasonal-services callout. The goal is the business owner
 opens it and it looks made for them, not templated.
 
+## Home service businesses sell on visuals, not on spec sheets (added 2026-08-05)
+
+Kevin's real, standing direction, confirmed against a real build
+(`sp-lawn-care-bangor-me`, first version came back reading as a SaaS
+product, not a landscaping company): home service customers buy with
+their eyes. The `distinctive-web-design` skill's caution against generic
+decoration is still real, but avoid overcorrecting into *tech-product*
+visual language — a real difference from avoiding genericness.
+
+Concretely, treat these as signals a build has drifted toward
+SaaS/dashboard territory instead of home-service warmth, and fix them:
+
+- Monospace, uppercase, letter-spaced micro-labels used everywhere
+  (stat labels, badges, eyebrows) — that's a design-system/dev-tool
+  pattern, not a trade business one. Fine sparingly, not as the default
+  voice for every label on the page.
+- Segmented pill toggles with spring-animated sliding indicators
+  (`role="tablist"` UI controls) — reads like a SaaS product's settings
+  panel, not a lawn care site choosing a season.
+- "Spec-sheet" or "work order" style data panels for what should be a
+  warm trust-building callout.
+- Numbered lists styled like a product changelog instead of a real
+  process explanation.
+
+What to lean into instead (see `www.tfplandscaping.com` as a real
+reference Kevin's actually shipped and likes): big, warm, photography-
+led sections; plain trust signals (real testimonials with names and
+towns once available, straightforward stat callouts); a straightforward
+step-by-step process section; a grounded, local feel over a polished
+tech-product feel.
+
+Real photos of the specific business come later (see the hard gate
+below) — a client only sends those once he's actually decided to move
+forward. Until then, use generic decorative stock/photography that
+still feels warm and real (grass, tools, seasonal imagery), not a
+photography-light, label-and-icon-heavy layout that ends up reading as
+a tech product because there wasn't real photography to lean on yet.
+
 ## SEO and AI-crawlability, baked in from Starter up
 
 This isn't a Growth/Premium-only feature — every tier, including
