@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: ads
 quote_stage: none
 ---
@@ -15,3 +15,5 @@ quote_stage: none
   (one review mentions "Jose" but not confirmed as owner). Email
   contact@restorion.com sourced from a search summary of the business's
   own domain. Advanced to enriched.
+- 2026-08-05 (Elly): drafted outreach pitching the ad-management
+  retainer. Advanced to drafted.

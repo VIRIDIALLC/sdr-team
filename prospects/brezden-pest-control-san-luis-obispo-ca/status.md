@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: ads
 quote_stage: none
 ---
@@ -15,3 +15,5 @@ quote_stage: none
   confirmed via SLO Chamber of Commerce directory; email
   web@brezdenpest.com sourced from the same official directory listing.
   Advanced to enriched.
+- 2026-08-05 (Elly): drafted outreach pitching the ad-management
+  retainer (first real `track: ads` draft). Advanced to drafted.
