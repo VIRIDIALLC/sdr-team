@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: approved
 track: website
 quote_stage: none
 ---
@@ -18,3 +18,4 @@ quote_stage: none
   reply never happened and no real outreach has been sent. reply.md and
   quote.md from that exercise are left in place for reference but do not
   reflect anything real.
+- 2026-08-05 (Kevin, via KIREEK): outreach approved for sending.
