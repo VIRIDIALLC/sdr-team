@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: approved
 track: website
 quote_stage: none
 ---
@@ -14,3 +14,4 @@ quote_stage: none
   (medium confidence). Advanced to enriched.
 - 2026-08-05 (Elly): drafted outreach pitching the website offer.
   Advanced to drafted.
+- 2026-08-05 (Kevin, via KIREEK): outreach approved for sending.
