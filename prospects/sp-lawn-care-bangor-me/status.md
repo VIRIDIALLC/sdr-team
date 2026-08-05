@@ -18,3 +18,7 @@ track: website
   about logo/branding assets) before that draft was finalized — see
   quote.md for the correction. quote_stage stays none — no price quoted
   yet, waiting on Karl's next reply.
+- 2026-08-05 (Kevin, via KIREEK): Karl replied with a real logo
+  ("S&P logo.png") — see reply.md's Round 2. Real engagement signal,
+  ready for Nova to build a Growth-tier mockup, gated on Kevin's
+  explicit go-ahead. quote_stage stays none.
