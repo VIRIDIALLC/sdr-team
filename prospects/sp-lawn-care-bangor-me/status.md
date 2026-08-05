@@ -1,6 +1,7 @@
 ---
 stage: sent
 track: website
+quote_stage: quoted
 ---
 
 ## Log
@@ -22,3 +23,7 @@ track: website
   ("S&P logo.png") — see reply.md's Round 2. Real engagement signal,
   ready for Nova to build a Growth-tier mockup, gated on Kevin's
   explicit go-ahead. quote_stage stays none.
+- 2026-08-05 (Kevin, via KIREEK): mockup done (after one real revision
+  round — see _build-standards.md), quote sent for real: Growth tier,
+  $850 + $30/mo, full feature list, snow-removal page as the real hook.
+  Real Gmail draft created (not yet sent). quote_stage: quoted.
