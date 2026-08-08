@@ -1,0 +1,4 @@
+
+# google chat service-account key — never commit
+*sa*.json
+service-account*.json
