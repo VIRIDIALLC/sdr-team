@@ -36,3 +36,14 @@ when finished, set them `done` with a one-line result.
 - If it's not your job, **hand it off** — never do a downstream team's work yourself.
 - Keep guardrails: a handoff never authorizes a send/publish/charge/live-change; the
   receiving team still drafts for Kevin's approval.
+
+## Visibility — post to the crew Chat
+Kevin watches the crew work in Google Chat. Run `scripts/notify.sh "..."` (one plain
+line) when you:
+- **complete a task / advance a stage:** `✅ <You>: <what> — <item> now <stage>`
+- **send a handoff:** `📤 <You> → <team>: <subject>`
+- **finish an inbound handoff:** `📥 <You>: done — <subject> (for <team>)`
+
+The webhook is read from `$GOOGLE_CHAT_WEBHOOK_URL` in your environment — never
+hardcode it. If it isn't set the script no-ops; do your real work regardless. This is
+how Kevin sees the team actually completing and handing off work.
