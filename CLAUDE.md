@@ -120,3 +120,9 @@ the start of a run, update it at the end.
   Check it before deciding whether to scale up volume or arm a
   scheduler; Kevin asked for this 2026-08-03 specifically so that
   decision has real usage data behind it, not a guess.
+## Handoffs (cross-team)
+
+This team is wired into the crew's handoff system — see `handoffs/README.md`. When a
+job belongs to another team, write a handoff in `handoffs/` addressed `to:` them
+instead of doing their work; inbound handoffs addressed to your agents arrive in
+their dispatch prompt. KIREEK routes them.
