@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: ads
 quote_stage: none
 ---
@@ -30,3 +30,4 @@ quote_stage: none
     ],
     "status": "PERMISSION_DENIED",
     "detai) -- nothing went out.
+- 2026-08-09 (Kevin, via KIREEK): approved and SENT for real to web@brezdenpest.com -- it's in your Gmail Sent folder now.
