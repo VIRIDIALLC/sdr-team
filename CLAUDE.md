@@ -126,3 +126,22 @@ This team is wired into the crew's handoff system — see `handoffs/README.md`. 
 job belongs to another team, write a handoff in `handoffs/` addressed `to:` them
 instead of doing their work; inbound handoffs addressed to your agents arrive in
 their dispatch prompt. KIREEK routes them.
+
+## Quality gate — run before you ship ANYTHING
+
+Quality over speed, always. Speed is worthless if the work is generic. Before you mark a task
+done, advance a stage, or create a draft, stop and check — and if it fails, fix it or redo it,
+don't ship it:
+
+- **Purpose:** Do I know exactly what this is for and the ONE goal it must achieve? If I can't
+  say it in a sentence, I'm not ready to produce.
+- **Not cookie-cutter:** Is this built from the real client / ICP / goal and real data — not the
+  fastest generic thing I could crank out? Would a competitor's could-be-anyone version look the
+  same? If so, it isn't good enough.
+- **Right, not just fast:** Did I do the thing *right*, or the quickest thing I could think of?
+- **Would I put my name on it?** Would Kevin be proud to send, publish, or show this? If I'd
+  hesitate, it's not done.
+
+See the `craft-operating-system` skill for the full method: plan → ground in reality → produce
+multiple distinct options → critique hard → pivot instead of polishing a weak idea → ship
+quality → stay current. This applies to every deliverable, every agent, no exceptions.
