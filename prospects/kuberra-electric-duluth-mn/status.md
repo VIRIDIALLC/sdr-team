@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -13,3 +13,4 @@ quote_stage: none
   advanced to enriched.
 - 2026-08-05 (Elly): drafted outreach pitching the website offer.
   Advanced to drafted.
+- 2026-08-09 (Kevin, via KIREEK): approved and SENT for real to kuberraelectric@gmail.com -- it's in your Gmail Sent folder now.
