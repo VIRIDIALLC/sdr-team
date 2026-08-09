@@ -15,3 +15,16 @@ quote_stage: none
   signal, so standard package pitch (lead response/automation angle,
   no tier names or pricing since none exist for this track). Advanced
   to drafted.
+- 2026-08-09 (Kevin, via KIREEK): approved, but sending the email failed ({
+  "error": {
+    "code": 403,
+    "message": "Request had insufficient authentication scopes.",
+    "errors": [
+      {
+        "message": "Insufficient Permission",
+        "domain": "global",
+        "reason": "insufficientPermissions"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "detai) -- nothing went out.
