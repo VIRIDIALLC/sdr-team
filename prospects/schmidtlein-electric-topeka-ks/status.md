@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -11,3 +11,4 @@ quote_stage: none
   President), advanced to enriched.
 - 2026-08-05 (Elly): drafted outreach — no verified response-time
   signal, so standard package pitch. Advanced to drafted.
+- 2026-08-09 (Kevin, via KIREEK): approved and SENT for real to debbie@electric.kscoxmail.com -- it's in your Gmail Sent folder now.
