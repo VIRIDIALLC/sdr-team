@@ -1,7 +1,7 @@
 ---
 stage: sent
 track: website
-quote_stage: quoted
+quote_stage: closed
 ---
 
 ## Log
@@ -27,3 +27,5 @@ quote_stage: quoted
   round — see _build-standards.md), quote sent for real: Growth tier,
   $850 + $30/mo, full feature list, snow-removal page as the real hook.
   Real Gmail draft created (not yet sent). quote_stage: quoted.
+- 2026-08-09 (Kevin, via KIREEK): removed from the review queue — Kevin is
+  handling the S&P thread directly. quote_stage: closed (out of the queue).
