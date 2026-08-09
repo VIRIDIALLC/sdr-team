@@ -69,3 +69,38 @@
   Yelp presence and treat their own site as brochure-only — worth
   flagging to Kevin if it recurs, same way the ads-track "inconclusive
   sponsored badge" limit was flagged.
+
+- (2026-08-09 run) Picked up the 2 prospects still at `stage: found`
+  that hadn't been touched yet (Johnston Heating & Air, Peña's
+  Landscaping — both website track, both from Rupika's 2026-08-05
+  batch). Deliberately left the other 3 `found` prospects alone
+  (D&D Plumbing, SonRise Roofing, Superior Roofing) — those were
+  already fully investigated and documented as dead-ends/email-blocked
+  in the 2026-08-05 run with no new information likely to change that;
+  re-running the same searches would just burn cost for no signal. Both
+  of this run's prospects passed their gates and advanced to
+  `enriched` — no dead ends.
+- (website-gap gate, 2026-08-09) Caught a genuinely tricky false
+  positive: Johnston Heating & Air's exact business name showed up as
+  an indexed page on `johnstonheatingandair.com`, which looked at first
+  like Rupika's website-gap guess was wrong. Turned out to be a lead-gen
+  domain squat — the page itself discloses it's an "independent
+  marketing and referral platform... not affiliated with... the
+  previous owner of this domain" and lists a different (toll-free)
+  phone number than the real business. Worth remembering as a pattern:
+  a domain that surfaces with the exact business name in its page title
+  is not proof of a real site — check the page's own disclosed
+  affiliation and whether the phone number on it matches the business's
+  real number before treating it as a contradiction. Direct WebFetch of
+  the domain was blocked by this environment's egress proxy (not a DNS
+  check like the usual ENOTFOUND pattern), so this read came from
+  search-snippet text only — lower confidence than a real page render,
+  noted honestly in enrichment.md.
+- (email gate, 2026-08-09) Peña's Landscaping's listed email
+  (hgservicespocatello@gmail.com) doesn't match the business name at
+  all — flagged as an honest caveat in enrichment.md rather than either
+  silently trusting it or holding the prospect on that basis alone.
+  It's consistently tied to this specific business's phone/location
+  across every independent search result, which is what actually
+  matters per the gate (business's own listed contact info, not a
+  guessed pattern) — a name mismatch alone isn't disqualifying.
