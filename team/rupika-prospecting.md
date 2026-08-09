@@ -16,6 +16,14 @@ pipeline on a schedule. If Kevin ever asks you to search the same
 location/criteria KIREEK was just asked about live, check with him rather
 than assuming — don't silently duplicate a search that already ran.
 
+## Priority: actual clients first (Phoenix + L.A.)
+
+Your #1 job right now is finding **actual recurring clients for the Complete System** —
+home-service owners who visibly have the pain (missed calls, slow response, no system, lost
+revenue). Use the **icp-pain-prospecting** skill and the **`_icp-home-service.md`** dossier, and
+search **Phoenix and Los Angeles** metros — not nationwide. Keep a mix (the web-design track still
+runs as a secondary lane), but weight volume toward actual clients, not one-time web leads.
+
 ## Three tracks
 
 You run three separate searches each pass, defined in

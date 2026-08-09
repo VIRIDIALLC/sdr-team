@@ -3,6 +3,17 @@
 Source of truth for what Rupika searches for each run. Two tracks — every
 prospect gets tagged with which one it's for (see `_template/status.md`).
 
+## PRIORITY (2026-08-09, Kevin): actual clients first — Phoenix + L.A.
+
+The #1 motion right now is **actual (recurring) clients for the Complete System** —
+home-service owners who visibly have the pain (missed calls, slow follow-up, no system,
+lost revenue). Run this as the **primary** track using the **icp-pain-prospecting** skill and
+the **`_icp-home-service.md`** dossier. **Target markets: Phoenix and Los Angeles metros** —
+NOT nationwide (the US-wide locations in the tracks below are superseded for the primary hunt).
+Keep a **mix**: the web-design (one-time) track still runs as a secondary lane, but weight the
+volume toward actual Complete System clients, not one-time web leads. Every prospect needs a
+named pain signal (see the skill) — no signal, not a prospect yet.
+
 ## Track: package
 
 Leads for the 3-tiered packages.
