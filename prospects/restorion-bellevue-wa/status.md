@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: ads
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
   own domain. Advanced to enriched.
 - 2026-08-05 (Elly): drafted outreach pitching the ad-management
   retainer. Advanced to drafted.
+- 2026-08-09 (Kevin, via KIREEK): approved and SENT for real to contact@restorion.com -- it's in your Gmail Sent folder now.
