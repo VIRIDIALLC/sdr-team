@@ -17,3 +17,16 @@ quote_stage: none
   Advanced to enriched.
 - 2026-08-05 (Elly): drafted outreach pitching the ad-management
   retainer (first real `track: ads` draft). Advanced to drafted.
+- 2026-08-09 (Kevin, via KIREEK): approved, but sending the email failed ({
+  "error": {
+    "code": 403,
+    "message": "Request had insufficient authentication scopes.",
+    "errors": [
+      {
+        "message": "Insufficient Permission",
+        "domain": "global",
+        "reason": "insufficientPermissions"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "detai) -- nothing went out.
