@@ -104,3 +104,43 @@
   across every independent search result, which is what actually
   matters per the gate (business's own listed contact info, not a
   guessed pattern) — a name mismatch alone isn't disqualifying.
+
+- (2026-08-10 run) Also had to fast-forward `master` past another
+  detached-HEAD commit (Rupika's 2026-08-10 batch, 4 new prospects) that
+  an earlier session left unmerged — third time this exact pattern has
+  shown up (also 2026-08-05). Worth a real heads-up to Kevin now that
+  it's recurring rather than a one-off: something about how these
+  sessions end is leaving work off any branch.
+  Picked up all 4 of the new `stage: found` prospects from that batch
+  (2 package via the Phoenix/L.A. priority hunt, 2 website) — left the
+  3 older ones (D&D Plumbing, SonRise Roofing, Superior Roofing) alone
+  again, still fully documented dead-ends/email-blocked from
+  2026-08-05 with nothing new likely to change that. All 4 of this
+  run's prospects passed their gates and advanced to `enriched` — no
+  dead ends, but one real identity-check catch and one recurring
+  data-quality issue worth flagging below.
+- (package track, 2026-08-10) AZ Grand Roofing and Painting: Rupika's
+  brief said "Gilbert, AZ" but Yelp/Angi/HomeAdvisor listings all show
+  the physical address as Chandler, AZ. Confirmed via their own
+  about-us page language (exact "third-generation... nearly five
+  decades... appointments with the owner or one of their talented
+  sons" phrasing) that this is the same business Rupika found, not a
+  mismatch — Chandler and Gilbert are adjacent Phoenix-metro suburbs
+  and her search was scoped to "Chandler/Gilbert, AZ" per brief.md.
+  Worth remembering as a pattern: a city discrepancy between brief.md
+  and what verification turns up isn't automatically a wrong-business
+  red flag — check the about-us/bio text for a distinctive phrase match
+  before assuming it's a different company.
+- (response-time gate, 2026-08-10) Exterior Specialists (Pasadena) is a
+  second confirmed case of the WebSearch response-time-figure
+  unreliability Rupika flagged this same run (family-painting/
+  aplus-garage-doors batch) — four separate searches returned four
+  different numbers (20 min / 6 hrs / 9 hrs / 1 day) for the same
+  business. This is now two independent hits on the same limitation in
+  one week of using the technique. Per the persona doc's inconclusive
+  convention this doesn't block advancement, but it's happening often
+  enough that it's worth flagging to Kevin the same way the ads-track
+  "inconclusive sponsored badge" limit was: the response-time hook from
+  this sourcing technique may just be structurally unreliable to
+  verify after the fact, even though it's a fine initial signal to
+  find prospects with.

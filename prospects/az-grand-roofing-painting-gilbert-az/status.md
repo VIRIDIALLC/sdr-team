@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -9,3 +9,7 @@ quote_stage: none
 - 2026-08-10 (Rupika): found via Yelp-advertisers response-time
   technique, scoped to the Phoenix + L.A. priority hunt. Added to
   pipeline.
+- 2026-08-10 (Montague): response-time signal directionally confirmed
+  (hours-to-a-day, over threshold) though exact figure unpinned; email
+  gate passed (business's own listed contact address). Advanced to
+  `enriched`.
