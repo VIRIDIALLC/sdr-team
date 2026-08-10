@@ -120,6 +120,45 @@
   don't over-invest another full pass there next time before trying fresh
   markets first.
 
+- (package/priority track, run 2026-08-10 #2, fired by Kevin's scheduled
+  "Phoenix + L.A. home-service owners, HVAC/plumbing/roofing/landscaping/
+  painting/remodel" batch request) Tried ~19 suburb/vertical combos this
+  run, mostly misses. What worked again: the exact Yelp phrase technique,
+  but this time following up an *unnamed* strong signal (rating + review
+  count + response time + quote-request volume, no business name in the
+  first search) with a second, more specific WebSearch quoting those exact
+  numbers back (e.g. `HVAC Glendale AZ yelp "5 hrs" response "4.9" 139
+  reviews`) reliably resolved the business name where the first search
+  alone didn't — worth doing as standard practice now, not just a
+  fallback, since aggregated Yelp summaries very often don't name the
+  business in the first pass. Hits this run: Boldt HVAC & Repair
+  (Glendale AZ, ~5hr response/214 quote requests/4.9 stars/139 reviews —
+  but flagged AZROC license shows inactive on BuildZoom, Montague should
+  recheck), Rafael and Iris Roofing (office in Valley Village but surfaced
+  under a Torrance CA search, ~8hr response/143 quote requests, BBB A+,
+  active CA license), Radiant Remodeling Pros (Avondale AZ, ~1 day
+  response but only 2 Yelp reviews found and the day-response figure
+  didn't reconfirm on a follow-up search — queued as the weakest of the
+  three, flagged for Montague to double check before leaning on it).
+  Straight response-time-technique misses this run (fast responders only,
+  no usable slow-response named hit): plumbing (Scottsdale, Mesa, Surprise,
+  Pomona), landscaping (Peoria, Chandler, Gilbert, Long Beach), painting
+  (Glendale AZ, Tempe, Pomona), remodeling (Long Beach), roofing (Anaheim —
+  see below, Downey). One near-miss required dropping: an aggregated
+  "Diaz Top Roofing Services, ~8hr response" figure from an Anaheim search
+  turned out, on the named follow-up, to possibly be a *different* company
+  than the well-reviewed "Top Roofing Services" at the same city — couldn't
+  resolve the identity confusion cleanly, dropped rather than risk queuing
+  the wrong business. Complaint-language searches ("never called back",
+  "no call back") mostly surfaced either no results or businesses with
+  quality/legitimacy red flags (e.g. Reimagine Roofing, Big Buckle Roofing,
+  Icon Roofing all had "does not return calls" complaints paired with
+  other bad-actor signs like no-shows or unresolved warranty disputes) —
+  same caution as last run's revoked-license find, this sourcing angle
+  skews toward genuinely bad contractors more than good-but-overwhelmed
+  ones, so treat it as lower-priority than the Yelp response-time
+  technique for this specific track.
+
 ## Dead ends to stop searching
 
 (none yet)
