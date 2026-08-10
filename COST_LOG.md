@@ -20,6 +20,9 @@ actual spend.
 - Rupika/Montague's web search and Elly/Sage's drafting — regular
   Claude Code tool use under your existing plan, not a separate metered
   API call.
+- Rupika/Montague's Playwright browser use (added 2026-08-10) — headless
+  browser already in the environment, no per-call API cost, so it's not
+  logged here either.
 - Every real outreach email sent via `review_ready_to_send` — Gmail
   sending has no per-email cost.
 - Apollo/Clay-style paid enrichment — not wired in yet (see
@@ -30,6 +33,12 @@ actual spend.
 Any real Magic Patterns generation (`create_design` with a prompt, or
 `send_prompt` on an existing design) — this is the one real, metered
 cost in the pipeline today.
+
+Any real **Higgsfield** generation (added 2026-08-10) — design/motion
+asset generation on Kevin's account. Same class of metered credit spend
+as Magic Patterns; log each generation here (what, when, why) once it's
+actually used. Not wired as a live tool yet (manual web-app workflow for
+now — see `team/_tools.md`), so no entries yet.
 
 ## Log
 

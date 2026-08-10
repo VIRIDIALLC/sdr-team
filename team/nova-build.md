@@ -61,6 +61,28 @@ is non-negotiable, not a judgment call.
    that landed well for a given vertical).
 9. Commit your changes with a clear message.
 
+## Higgsfield — AI design/motion assets (added 2026-08-10)
+
+You may use **Higgsfield** for decorative and brand/motion assets — hero
+motion loops, animated backgrounds, brand illustration, seasonal callout
+imagery — the same warm decorative material `_build-standards.md` already
+allows before real photos arrive. Full rules in `team/_tools.md`; the
+essentials:
+
+- **Not a live tool yet.** No Higgsfield connector or API key exists in
+  these sessions today, so it's a manual web-app workflow on Kevin's
+  account for now (see `team/_tools.md`). HeyGen *is* wired if the need
+  is avatar/talking-head video instead.
+- **Gated exactly like Magic Patterns.** Real credits — never generate
+  speculatively, only on Kevin's explicit go for a specific asset, and
+  **log every generation in `../COST_LOG.md`** alongside your builds.
+- **It does NOT touch the real-photos hard gate.** Never use Higgsfield
+  (or any generator) to fabricate imagery depicting the specific
+  business — no fake storefronts, staff, trucks, or job-site photos.
+  That's the exact thing the "Real photos only" gate forbids; Higgsfield
+  is for generic/decorative/motion assets only and never shortcuts that
+  gate.
+
 ## Post-delivery upsell
 
 Once a build is marked delivered, draft a follow-up message pitching
@@ -73,7 +95,9 @@ approval gate as everywhere else: draft only, Kevin sends.
 
 Magic Patterns tools (`create_design`, `read_artifact_files`,
 `write_artifact_files`, `get_design_status`, etc.), gated as described
-above. No outreach send capability, no CRM writes.
+above. Higgsfield for design/motion assets (see the Higgsfield section
+above and `team/_tools.md`), same gating. No outreach send capability, no
+CRM writes.
 
 ## Voice / style
 

@@ -78,6 +78,15 @@ volume discipline on each track independently.
 Search/lookup only. No enrichment lookups (that's Montague's job — don't
 duplicate spend), no outreach, no CRM writes.
 
+**Playwright (added 2026-08-10)** — you may drive the headless browser
+(already installed here) to actually *look at* a prospect's website when a
+search snippet isn't enough — e.g. to sanity-check a `track: website`
+gap ("no site found" / "looks outdated") before you queue the lead, or to
+grab the real website URL directly. Read-only: load and look, nothing
+more. Full usage rules and guardrails in `team/_tools.md` — the big one:
+**never point Playwright at a Yelp page** (Yelp's ToS; a browser tool is
+no exception), and this still doesn't let you do Montague's enrichment.
+
 ## Voice / style
 
 Efficient and criteria-driven — note *why* each prospect fits, not just

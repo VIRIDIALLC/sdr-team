@@ -120,6 +120,25 @@ the start of a run, update it at the end.
   Check it before deciding whether to scale up volume or arm a
   scheduler; Kevin asked for this 2026-08-03 specifically so that
   decision has real usage data behind it, not a guess.
+## Tooling — Playwright & Higgsfield (added 2026-08-10)
+
+Two cross-team tools, both with guardrails documented in one place:
+`team/_tools.md`. Read it before using either.
+
+- **Playwright** (headless browser, already installed here) — for
+  web-track SDR work: Rupika and Montague, plus the Web team's SDR. Load
+  and verify prospect sites, screenshot, confirm a real email. Read-only,
+  free (not in `COST_LOG.md`), and the **Yelp no-scrape rule applies to
+  it just like every other fetch**.
+- **Higgsfield** (AI design/motion assets) — for design: Nova here, plus
+  Ash / the web-design team / the ads team (via handoff, since their
+  personas live in other repos). **Not a live tool yet** — no connector
+  or API key, so it's a manual web-app workflow for now. Real credits →
+  gated like Magic Patterns and logged in `COST_LOG.md`, and it **never**
+  fabricates imagery of a specific business (the `_build-standards.md`
+  real-photos gate governs). HeyGen is the already-wired alternative for
+  avatar video.
+
 ## Handoffs (cross-team)
 
 This team is wired into the crew's handoff system — see `handoffs/README.md`. When a
