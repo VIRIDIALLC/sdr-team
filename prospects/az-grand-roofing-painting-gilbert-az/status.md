@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -13,3 +13,7 @@ quote_stage: none
   (hours-to-a-day, over threshold) though exact figure unpinned; email
   gate passed (business's own listed contact address). Advanced to
   `enriched`.
+- 2026-08-10 (Elly): drafted outreach leading with the Yelp-advertiser
+  response-time hook (Montague's signal was verified, even if the exact
+  figure wasn't pinned) — first real draft using this hook. Advanced to
+  `drafted`.

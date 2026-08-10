@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -11,3 +11,5 @@ quote_stage: none
 - 2026-08-10 (Montague): verified website-gap (confirmed no site
   anywhere) and email gate (business's own Facebook-listed Gmail).
   No contact name found despite checking. Advanced to `enriched`.
+- 2026-08-10 (Elly): drafted outreach pitching the website offer, no
+  contact name (plain "Hi,"). Advanced to `drafted`.

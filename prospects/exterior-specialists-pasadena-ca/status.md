@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -14,3 +14,6 @@ quote_stage: none
   pitch hook, advancing on general package-fit grounds instead. Email
   gate passed (business's own listed contact address). Advanced to
   `enriched`.
+- 2026-08-10 (Elly): drafted outreach using the standard package pitch
+  (response-time signal unconfirmed, no hook used) to owner Chris Jones.
+  Advanced to `drafted`.

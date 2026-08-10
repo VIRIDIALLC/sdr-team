@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -12,3 +12,5 @@ quote_stage: none
   listed on the business's own contact info). No owner name found despite
   checking — not a gate, business name is the fallback. Advanced to
   enriched.
+- 2026-08-10 (Elly): drafted outreach pitching the website offer, no
+  contact name (plain "Hi,"). Advanced to `drafted`.

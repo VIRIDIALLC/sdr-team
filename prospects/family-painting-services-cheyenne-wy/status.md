@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -12,3 +12,6 @@ quote_stage: none
   subdomain exists, confirmed no custom domain anywhere) and email gate
   (business's own consistently-listed contact address). Advanced to
   `enriched`.
+- 2026-08-10 (Elly): drafted outreach pitching the website offer,
+  medium-confidence name (Joseline, email-inferred). Advanced to
+  `drafted`.
