@@ -71,6 +71,55 @@
   WA, Sioux Falls SD, Bismarck ND (checked this run, no-website hit
   didn't pan out there), Topeka KS, Wichita Falls TX, Spokane WA.
 
+- (package/priority track, run 2026-08-10) First run of the Phoenix + L.A.
+  "actual clients" priority hunt using the Yelp-advertisers response-time
+  technique scoped to specific suburbs (not the whole metro). Whole-metro
+  queries ("HVAC yelp advertisers in Phoenix") mostly return aggregated
+  top-10-listing summaries dominated by fast (10-20 min) responders — not
+  useful. What worked: scope to a specific suburb + vertical + the exact
+  Yelp phrase `"responds in about" hours "locals recently requested a
+  quote"` — this reliably surfaces individual businesses with slow (2hr+)
+  response times despite real demand (the money signal). Budget roughly
+  8-10 suburb/vertical combos to land 2 usable, nameable hits — most
+  combos return only fast responders. Hits this run: Exterior Specialists
+  (painting, Pasadena CA, ~1 day response despite 60 quote requests),
+  AZ Grand Roofing and Painting (Gilbert AZ, ~2hr response, 33 reviews).
+  Suburbs tried without a usable hit this run: Phoenix/Tempe/Chandler/
+  Mesa/Surprise/Goodyear (HVAC, electrical, pest control, roofing),
+  Los Angeles/Long Beach/Torrance/Redondo Beach/Whittier/Norwalk/Glendale
+  CA/Pomona (plumbing, electrical, pest control) — several had a strong
+  signal (e.g. a Glendale CA plumber at 5hrs/182 quote requests, a
+  Chandler AZ roofer at 5hrs/150 requests) but the business name never
+  resolved from search snippets alone — worth a repeat attempt with
+  different phrasing next time rather than writing off those combos.
+  Caution: WebSearch's summarized response-time figures aren't always
+  consistent between two searches for the same business (Gomez Stone,
+  Century City countertop repair, showed "12 hours" in one search and
+  "20 min / 100% response rate" in a follow-up) — treat every figure as
+  Rupika's usual unverified guess, don't over-trust the specific number,
+  and prefer businesses independently corroborated (name, owner, years in
+  business) across 2+ searches the way Exterior Specialists and AZ Grand
+  were.
+  Complaint-language searches ("hard to get ahold of", "never called
+  back") surfaced businesses with real complaints but real risk too — one
+  hit (Arizona Certified Remodeling, Glendale AZ) turned out to have a
+  revoked contractor's license on follow-up check. Worth a quick "license
+  revoked" / "out of business" sanity check before queuing any prospect
+  sourced from a negative-review search, not just the response-time
+  technique.
+- (website track, run 2026-08-10) Bozeman MT, Cheyenne WY, and Missoula MT
+  ran unusually cold this run — 7 named candidates checked (Harvey's
+  Plumbing, Bob's Plumbing & Drain, Ranger Plumbing, Rocky Mountain
+  Electric, Big Bird Landscaping, Q Lawn, CHP Paint, Custom West Pest
+  Control, Bugmaster Pest Control) all turned out to have real dedicated
+  websites — well over the usual ~2-misses-per-hit budget. Two hits
+  eventually: Family Painting Service's (Cheyenne WY — only a free
+  Ueniweb-builder subdomain page, no real domain) and A+ Garage Doors LLC
+  (Idaho Falls, ID — confirmed no site at all, Facebook + Gmail only).
+  Not marking these markets dead — just noting the miss rate was high, so
+  don't over-invest another full pass there next time before trying fresh
+  markets first.
+
 ## Dead ends to stop searching
 
 (none yet)
