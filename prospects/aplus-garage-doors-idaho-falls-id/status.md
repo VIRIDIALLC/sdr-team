@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -13,3 +13,4 @@ quote_stage: none
   No contact name found despite checking. Advanced to `enriched`.
 - 2026-08-10 (Elly): drafted outreach pitching the website offer, no
   contact name (plain "Hi,"). Advanced to `drafted`.
+- 2026-08-11 (Kevin, via KIREEK): sent to APLUSGARAGEDOORSIDAHO@gmail.com.
