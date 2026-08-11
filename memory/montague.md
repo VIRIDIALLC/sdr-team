@@ -188,3 +188,61 @@
   Kevin about whether this signal is still worth sourcing on if it
   can't be verified, or whether the technique should shift to treating
   it as a sourcing-only signal Elly's drafts never cite directly.
+
+- (2026-08-11 run, priority batch) A second run the same day: Kevin
+  dropped `prospects/_kevin-yelp-handpicked/` — his own hand-picked list
+  of 273 Yelp advertisers (Phoenix metro) with poor response times but
+  high lead volume, already scored 1-5 on Purchase Likelihood by an
+  earlier AI pass. Per the README's instructions, worked the first
+  batch of the highest-likelihood + slowest-response-time businesses
+  (~25) myself, doing double duty since this batch skipped Rupika —
+  I both built each prospect folder (brief.md/status.md/enrichment.md)
+  from the CSV + web research AND enriched it in one pass, using
+  6 parallel research subagents to cover ground efficiently, then
+  applying the normal email gate myself. Result: 21 of 25 advanced to
+  `enriched`, 4 held at `found`.
+  - Deduped 273 CSV rows down to 185 unique businesses first (Kevin's
+    list had heavy repeat entries — some businesses appear 5-8 times
+    across different research passes with conflicting response-time
+    figures for the same business; picked the slowest-claimed figure
+    per business as the headline but flagged the CSV's own internal
+    noise in enrichment.md wherever it was significant, rather than
+    presenting a single unverified number as solid).
+  - Held at `found` (4): Nombrano Construction and Camelback Hardscapes
+    (both real, active businesses — no website at all and no email
+    findable anywhere, so no domain exists to even ground a guessed
+    pattern in, unlike the website-having businesses below); Good Times
+    Plumbing & Restoration (has a live site but genuinely no email
+    surfaced despite an honest check); Apple Plumbing (a new case, not
+    the usual email gate — confirmed via press coverage it was acquired
+    by Day & Night Air Conditioning, Heating & Plumbing on 2025-07-31
+    and no longer operates independently; appleplumbingaz.com now
+    redirects to the acquirer's site. Held as a dead-end the same way a
+    wrong website-gap guess gets held, not dropped quietly — Kevin may
+    want to pursue Day & Night itself as a different-shaped prospect).
+  - Email gate, new pattern worth naming: several advances this run used
+    a "guessed pattern on a confirmed-live company domain" email
+    (info@/admin@ style) rather than a directly-confirmed address —
+    Doherty Bros Window Pros, Nevarez Landscape specifically. Read the
+    gate's own wording as allowing this (domain confirmed real/active is
+    the stated bar for guesses), distinct from guessing an arbitrary
+    personal gmail/yahoo address, which past runs correctly didn't treat
+    as grounded enough. Flagged clearly as "GUESSED" in each
+    enrichment.md so Elly/Kevin know the confidence level — worth
+    Kevin confirming this reading of the gate is what he intended,
+    since it's a real precedent this run leaned on 2-3 times.
+  - Two businesses (Sal's Landscape Construction, AZ Remodel Pros/
+    Doherty Bros) had CSV-given phone numbers that didn't match any
+    independently-found number — likely Yelp call-tracking lines rather
+    than direct numbers. Verified numbers noted in each brief.md;
+    flagged rather than silently overwritten.
+  - Owner-name ambiguity came up twice (AMS Landscaping: Eli Hall vs.
+    Stephen Clark; Krasiva Windows and Doors: Greg Strickland vs.
+    Derrick as GM) — didn't guess which to use as a merge-tag first
+    name, flagged both candidates in enrichment.md for Elly/Kevin to
+    resolve rather than picking one.
+  - This batch was ~5x a normal run's volume by design (Kevin's own
+    README explicitly asked for ~25, this being a one-time priority
+    list rather the standing daily pipeline) — flagging so this isn't
+    read as a new normal batch size going forward without Kevin saying
+    so again.
