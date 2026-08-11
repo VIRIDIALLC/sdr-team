@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
 - 2026-08-10 (Elly): drafted outreach pitching the website offer,
   medium-confidence name (Joseline, email-inferred). Advanced to
   `drafted`.
+- 2026-08-11 (Kevin, via KIREEK): sent to joselinegutierrez.com@gmail.com.
