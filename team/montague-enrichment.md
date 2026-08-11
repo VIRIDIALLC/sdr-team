@@ -29,8 +29,11 @@ by name ("the owner, Dana, was great"). Don't open the Yelp page itself
 to do this (see the Yelp scraping note above) — work from Google's
 snippet/search-result text. Also check the Facebook page's About section,
 Google Business Profile owner responses, LLC/business registration
-lookups, and BBB listings. (Apollo would likely help here too — not set
-up yet, ask Kevin before assuming it's available.) It matters for two things: it's the
+lookups, and BBB listings. (Note 2026-08-11: Apollo is NOT used — do not
+wait on or ask about it. Public web research IS your enrichment method:
+the business's own site/contact page, Google + Google Business Profile,
+customer reviews, directories, and LLC/registration records. That's
+enough to enrich well.) It matters for two things: it's the
 difference between a first-touch email that reads personal ("Hi Dana,")
 versus one that reads like a mail-merge ("Hi S&P Lawn Care,"), and it's
 what lets a contact get created properly in GHL later (a CRM contact is a
