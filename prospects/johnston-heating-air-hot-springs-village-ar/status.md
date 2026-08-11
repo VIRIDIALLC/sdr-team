@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -16,3 +16,4 @@ quote_stage: none
 - 2026-08-10 (Elly): drafted outreach to Steve Johnston, used the
   "only HVAC company inside the gates" fact as the specific angle
   instead of a generic no-website line. Advanced to `drafted`.
+- 2026-08-11 (Kevin, via KIREEK): sent to johnstonair.hs@gmail.com.
