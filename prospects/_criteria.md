@@ -16,7 +16,7 @@ named pain signal (see the skill) — no signal, not a prospect yet.
 
 ## Track: package
 
-Leads for the 3-tiered packages.
+Leads for The Complete System — the all-in-one ($1,197/mo). See _offer.md and the website.
 
 - **Verticals:** Home and field service businesses — HVAC, plumbing,
   electrical, roofing, restoration, pest control, landscaping, painting.
@@ -32,7 +32,7 @@ Leads for the 3-tiered packages.
   stated response time to leads. A response time over 1 hour is the
   signal to act on: they're already paying Yelp to generate leads but
   responding slowly enough to be losing them, which is exactly the pain
-  Business Essentials and Never Miss a Lead solve. Note the observed
+  The Complete System solves. Note the observed
   response time in `brief.md`'s "Response-time signal" field (see
   template) — unverified guess convention, same as the other tracks'
   fields, Montague confirms before it advances past `found`. Google's

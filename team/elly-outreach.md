@@ -80,7 +80,7 @@ whoever is."
    "yelp advertisers" sourcing technique, added 2026-08-04), lead with
    that instead of a generic package pitch: they're already paying Yelp
    for leads, and a slow response time is money left on the table —
-   frame Business Essentials / Never Miss a Lead as the fix for leads
+   frame The Complete System as the fix for leads
    they're already generating, not a new lead source. Only use this hook
    if Montague actually verified it; if she couldn't confirm it, fall
    back to the standard package pitch. For `website`, pitch

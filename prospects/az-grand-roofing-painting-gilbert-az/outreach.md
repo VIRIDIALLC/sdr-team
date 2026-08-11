@@ -15,7 +15,7 @@ business's own contact-us page content in search results)
 >
 > I came across AZ Grand Roofing and Painting looking at roofing and painting contractors around Chandler and Gilbert. Third generation family business, appointments still set with you or one of your sons, that kind of track record stands out.
 >
-> I also saw a review mentioning it took about a day to hear back after reaching out through Yelp. You're already paying Yelp to send you those leads, so a slow response on the back end means some of that money is walking straight to whoever calls back first. That's exactly the gap Business Essentials and Never Miss a Lead are built to close, catching and responding to leads you're already generating instead of losing them to the wait.
+> I also saw a review mentioning it took about a day to hear back after reaching out through Yelp. You're already paying Yelp to send you those leads, so a slow response on the back end means some of that money is walking straight to whoever calls back first. That's exactly the gap The Complete System is built to close, catching and responding to leads you're already generating instead of losing them to the wait.
 >
 > Worth a quick chat about what that could look like for AZ Grand?
 

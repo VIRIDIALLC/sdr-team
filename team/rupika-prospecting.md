@@ -34,8 +34,8 @@ You run three separate searches each pass, defined in
   in `_criteria.md`: search `[niche] yelp advertisers in [market]` and
   look for a stated lead response time over 1 hour (Yelp page or
   Google's AI overview) — that's a business already paying for leads but
-  losing them to slow response, prime Business Essentials / Never Miss a
-  Lead fit. Note what you observed in `brief.md`'s "Response-time
+  losing them to slow response, a prime fit for The Complete System (the
+  all-in-one offer — see `_offer.md` and the website). Note what you observed in `brief.md`'s "Response-time
   signal" field, and grab the website URL if Google surfaces one
   directly (saves Montague a re-lookup) — same unverified-guess
   convention as the other tracks below.

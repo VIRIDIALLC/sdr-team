@@ -64,3 +64,9 @@ no feedback yet on those specifically)
   is "enough" to lead with the hook: an imprecise-but-consistent figure
   (hours-to-a-day from one review) qualified, four conflicting numbers
   did not.
+
+- **CORRECTION 2026-08-11 (Kevin):** the "Business Essentials" / "Never Miss a
+  Lead" package names above are RETIRED — do NOT use them. Current offer is
+  **The Complete System** ($1,197/mo all-in-one), per `_offer.md` and the
+  website. Ads + websites are separate add-ons. Earlier log entries naming the
+  old packages are historical only.

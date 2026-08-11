@@ -43,7 +43,7 @@ found -> enriched -> drafted -> approved -> sent
 ```
 
 Every prospect also carries a `track` field — `package` (leads for the
-3-tiered packages), `website` (leads for the website-building offer, same
+The Complete System (the all-in-one $1,197/mo offer)), `website` (leads for the website-building offer, same
 ICP but no site / a bad one), or `ads` (leads for the ad-management
 retainer, same ICP with a real Yelp presence but no visible ad activity).
 Standing criteria for all three tracks live in `prospects/_criteria.md`.
@@ -145,3 +145,10 @@ don't ship it:
 See the `craft-operating-system` skill for the full method: plan → ground in reality → produce
 multiple distinct options → critique hard → pivot instead of polishing a weak idea → ship
 quality → stay current. This applies to every deliverable, every agent, no exceptions.
+
+## ⚠️ CURRENT OFFER (updated 2026-08-11) — read `_offer.md`
+
+Pitch **The Complete System** ($1,197/mo all-in-one), per the live website
+(viridiaanalytics.com/pricing, /, /blog). **"Business Essentials" and "Never
+Miss a Lead" are RETIRED package names — never use them.** Ads and website
+builds are separate add-ons. Full detail + how to pitch: `_offer.md`.
