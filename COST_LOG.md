@@ -44,6 +44,14 @@ cost in the pipeline today.
 - **2026-08-03** — 0 Nova builds run yet for any prospect. First real
   Nova `create_design` call (once Kevin approves a specific project by
   name, per Nova's persona gate) will be the next real entry here.
+- **2026-08-11** — S&P Lawn Care revision (contrast fix + hero image
+  swap, editorId `8jjfheyktxtqulpxluvpdl`): 0 generation credits spent.
+  Done as a code-first edit (`create_new_artifact` + `write_artifact_files`
+  + `publish_artifact`), not `create_design`/`send_prompt` — that path
+  doesn't consume generation credits per the 2026-08-02 note above.
+  See `prospects/sp-lawn-care-bangor-me/build.md` for what changed. This
+  entry exists mainly to confirm the "code-first is free" pattern held
+  on a second real use, not because anything was spent.
 
 ## Rough ROI baseline (2026-08-03)
 
