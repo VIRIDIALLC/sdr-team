@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -18,3 +18,6 @@ quote_stage: none
   independently confirmed (portal blocked); flagged prominently in
   enrichment.md for Kevin rather than held, since it isn't one of my
   defined gates — see enrichment.md.
+- 2026-08-11 (Elly): drafted outreach, led with the confirmed
+  response-time hook, pitched The Complete System. Advanced to
+  `drafted`.

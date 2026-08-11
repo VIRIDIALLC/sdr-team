@@ -70,3 +70,30 @@ no feedback yet on those specifically)
   **The Complete System** ($1,197/mo all-in-one), per `_offer.md` and the
   website. Ads + websites are separate add-ons. Earlier log entries naming the
   old packages are historical only.
+
+- **2026-08-11 (this run):** Fire payload asked me to draft for prospects
+  enriched from Kevin's 273 hand-picked Yelp batch
+  (`prospects/_kevin-yelp-handpicked/`) — checked, and that batch is still
+  just the README + CSV (commit 61481b5). Montague hasn't built any
+  individual prospect folders from it yet, so there was nothing from that
+  specific batch to draft this run. Did my standing job instead: scanned
+  all `prospects/*/status.md` for `stage: enriched` per elly-outreach.md
+  step 2, found 2 real ones (unrelated to the CSV batch — both from
+  Rupika's separate 2026-08-10 Phoenix/L.A. Yelp-advertisers hunt) and
+  drafted both, first drafts written using **The Complete System** naming
+  throughout (post-retirement correction):
+  - **boldt-hvac-repair-glendale-az** (`track: package`) — response-time
+    hook used, Montague verified 3 hr / 100% response rate, a real confirm
+    among the recent run of inconclusive figures. Also carried forward
+    Montague's AZROC license flag into the outreach note for Kevin's
+    visibility (not a gate, just worth knowing before this goes further).
+  - **rafael-iris-roofing-valley-village-ca** (`track: package`) —
+    response-time signal contradictory (4th instance of that known
+    instability), fell back to the standard package pitch per convention.
+  - **jc-heating-cooling-amarillo-tx** skipped again, still held by Kevin
+    pending phone-verification of its email, unchanged since 2026-08-03.
+  - **Next run:** once Montague actually starts working the
+    `_kevin-yelp-handpicked` CSV and prospect folders start appearing at
+    `stage: enriched`, draft those per the fire payload's instruction —
+    lead with the response-time/missed-lead pain, Purchase-Likelihood 4-5
+    ones will be the highest priority per the CSV's own batching note.

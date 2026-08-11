@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -16,3 +16,6 @@ quote_stage: none
   Response-time signal came back contradictory/inconclusive (not a
   confirmed hook) — 4th instance of this known instability in about a
   week; see enrichment.md and memory/montague.md.
+- 2026-08-11 (Elly): drafted outreach, response-time signal inconclusive
+  so fell back to the standard package pitch. Pitched The Complete
+  System. Advanced to `drafted`.
