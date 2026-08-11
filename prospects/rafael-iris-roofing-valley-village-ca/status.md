@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -11,3 +11,8 @@ quote_stage: none
   fire payload asked specifically for HVAC/plumbing/roofing/landscaping/
   painting/remodel owners in Phoenix + L.A. with Yelp ad or missed-call
   pain). Added to pipeline.
+- 2026-08-11 (Montague): real email found (info@rafaelandirisroofing.com,
+  owner Aviv Shlush) — email gate passes, advanced to `enriched`.
+  Response-time signal came back contradictory/inconclusive (not a
+  confirmed hook) — 4th instance of this known instability in about a
+  week; see enrichment.md and memory/montague.md.

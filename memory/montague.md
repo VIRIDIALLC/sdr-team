@@ -144,3 +144,47 @@
   this sourcing technique may just be structurally unreliable to
   verify after the fact, even though it's a fine initial signal to
   find prospects with.
+
+- (2026-08-11 run) First run since Apollo was formally dropped from the
+  toolset (public web research only, per the 2026-08-11 persona-doc
+  update) — no change in method in practice, the note just confirmed
+  what I was already doing. Also had to fast-forward onto a detached
+  HEAD again on session start (4th time this pattern has shown up) —
+  this time it matched origin/master exactly with no divergent local
+  work, so no data-loss risk, but worth another nudge to Kevin that
+  it's still happening every run.
+  Picked up the 3 newest `stage: found` prospects, all package track,
+  all from Rupika's 2026-08-10 Phoenix/L.A. batch: Boldt HVAC & Repair
+  (Glendale AZ), Radiant Remodeling Pros (Avondale AZ), Rafael and Iris
+  Roofing (Valley Village CA). Deliberately left the 3 older ones (D&D
+  Plumbing, SonRise Roofing, Superior Roofing) alone again — still
+  fully documented dead-ends/email-blocked from 2026-08-05, nothing new
+  likely to change that.
+  Result: 2 advanced to `enriched` (Boldt HVAC, Rafael and Iris
+  Roofing), 1 held at `found` on the email gate (Radiant Remodeling
+  Pros — real, licensed, active business, just genuinely no
+  discoverable email after checking site/Facebook/Instagram/Bizapedia/
+  ZoomInfo/pattern guesses).
+- (license-status caution, 2026-08-11) Boldt HVAC's AZROC license
+  (272595/272596) showed inactive with an expiration around May 2025
+  per BuildZoom, and I couldn't independently confirm current status —
+  both azroc.gov and its search portal (azroc.my.site.com) are blocked
+  by this environment's egress proxy. Advanced anyway (license status
+  isn't one of my defined gates, and the business shows clear signs of
+  actively operating — new 5-star reviews through July 2026, A+ BBB),
+  but flagged prominently in enrichment.md for Kevin. Worth Kevin
+  deciding explicitly whether license status should become a real gate
+  alongside email/website-gap/ads-activity, especially if this
+  recurs — right now it's handled ad hoc, on judgment.
+- (response-time signal, 2026-08-11) Now 4 separate instances in about
+  a week of the same figure-instability problem across different
+  businesses and different sourcing runs (Rupika's family-painting/
+  aplus-garage-doors batch, Exterior Specialists, Radiant Remodeling
+  Pros, Rafael and Iris Roofing this run). This isn't occasional noise
+  anymore — reads like a structural limit of trying to verify a live
+  Yelp response-time metric after the fact via cached/aggregated
+  search results rather than the live page (which stays off-limits per
+  ToS). Repeating the 2026-08-10 flag: worth a real conversation with
+  Kevin about whether this signal is still worth sourcing on if it
+  can't be verified, or whether the technique should shift to treating
+  it as a sourcing-only signal Elly's drafts never cite directly.
