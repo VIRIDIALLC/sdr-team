@@ -352,3 +352,87 @@
     Darin, Izzy, Elvis — with no indication which is the owner), so left
     the contact-name field as business-name-fallback rather than
     guessing which team member to use as the merge tag.
+
+- (2026-08-12, third fire today) **This one was real — verified before acting,
+  glad I did.** Fire-payload again referenced
+  `prospects/_kevin-yelp-handpicked/yelp-DEDUPED-ready.csv`, same filename as
+  the two same-day payloads flagged as likely injections above. This time
+  `git fetch origin master` + `git ls-tree` showed the file genuinely exists
+  on `origin/master` (commit `66e87d6`, authored by the real
+  `VIRIDIALLC <kevin@viridiaanalytics.com>` account, 174 deduped rows —
+  exact match to the payload's claim), and a companion commit (`0ca9f24`)
+  added `YELP-PROSPECTING-PROCESS.md`, which independently documents this
+  exact CSV-output workflow ("Output goes in the CSV... enrichment written
+  only into per-prospect folders is invisible and unusable — that happened
+  on 2026-08-11 and 41 emails sat stranded until merged by hand"). That's
+  real corroboration, not just a plausible-sounding payload — the earlier
+  refusals were correct given what was checkable at the time, and staying
+  suspicious of the same-filename pattern rather than assuming "already
+  flagged twice, ignore" was also correct — each one needs its own
+  verification, not a standing bias either way.
+  Worked a batch of 20 businesses (Purchase Likelihood 4-5, blank EMAIL,
+  prioritized ones with a website since that's what makes an email
+  findable) via 5 parallel research subagents. Result: 11 real/guessed
+  emails found and advanced to `enriched` (new prospect folders built for
+  each, same as the 2026-08-11 double-duty pattern), 8 held at `found` on
+  the email gate, 1 skipped as a duplicate (see below). Filled
+  `yelp-ENRICHED-montague.csv` (copied from `yelp-DEDUPED-ready.csv` +
+  SOURCE column) — committed in two passes (8 rows, then the remaining 12)
+  since the session's stop-hook wanted commits between the async research
+  batches rather than one commit at the very end.
+  - **Dedup miss caught:** "Goodman's Landscape Maintenance" (this CSV) and
+    "Goodman's Landscape" (existing prospect `goodmans-landscape-phoenix-az`,
+    already `stage: drafted`) are the same real business — same
+    email (customerservice@glmaz.com) and owner (David Goodman)
+    independently re-found this run confirms it. Kevin's 274→174 dedupe
+    didn't catch this because the names differ by one word. Didn't create a
+    duplicate folder; filled the CSV row's EMAIL for completeness but flagged
+    it as a dup in SOURCE. Worth flagging to Kevin: if other near-miss-name
+    duplicates exist in the 174, this dedupe pass didn't catch all of them.
+  - **A contradicted guess, correctly not reported:** Fish Window Cleaning —
+    a candidate email recurred across searches ("earlesmith@...") but
+    ZoomInfo's own redacted format for the same listing starts with a
+    different letter ("s***@..."), a direct contradiction rather than just
+    an unconfirmed guess. Held at `found` rather than reporting a guess that
+    had active counter-evidence — this is a stricter bar than the usual
+    "no signal either way" NOT-FOUND case, worth remembering: a guess with a
+    contradiction is worse than a guess with silence.
+  - **A cross-entity email, correctly not reported:** Pro Natural Landscape
+    LLC — a plausible email surfaced tied to the same owner name (Wilfer
+    Maquin) but attached to a differently-named entity ("Wilfer Natural
+    Landscape Inc") in a directory listing, not this business's own domain.
+    Owner name itself was confirmed directly for the right entity (BBB lists
+    him as Member of Pro Natural Landscape LLC specifically), so the name
+    advanced-quality info is solid even though the email didn't clear the
+    gate — held at `found`.
+  - **Two owner-name ambiguities, left blank rather than guessed:** Desert
+    Sage Landscaping (Efrain Martinez, per the live site's own history copy,
+    vs. Miguel Angel Hernandez Guzaro, per a same-named LLC's Sept-2024 AZ
+    filing — could be a rebrand of the same shop or a different company) and
+    AAA Landscape (Richard Underwood per LinkedIn vs. conflicting
+    Michael Walter/Robert Underwood elsewhere — a large multi-executive
+    company, unsurprising the sources disagree). Both flagged with full
+    detail in their enrichment.md rather than picking one, same convention
+    as AMS Landscaping/Krasiva Windows earlier.
+  - Every research subagent this run reported this session's WebFetch fully
+    blocked by the egress proxy for every external domain tried (confirmed
+    against unrelated control domains too, so it's environment-wide, not
+    site-specific) — all 20 businesses' findings are WebSearch-snippet-
+    derived and cross-checked across independent queries, not page-rendered.
+    Flagged per-business in each enrichment.md; worth a mention to Kevin if
+    page-level verification ever matters enough to need fixing this
+    environment's egress policy.
+  - One subagent (Cold Fusion Mechanical) caught and discarded a
+    fabricated-looking email an AI search-summary asserted
+    ("cfm.phx@gmail.com") — a direct quoted search for that exact string
+    returned nothing tied to the business. Worth remembering as a real
+    failure mode of WebSearch's own synthesized answers, not just raw
+    snippets: verify a literal string actually recurs before trusting it,
+    even when it's presented confidently.
+  - Email coverage on the full 174-row list after this run: previously
+    filled rows (pre-existing, ~21) + this run's 20 attempted (12 found/
+    guessed + 8 NOT-FOUND) = 41 of 174 rows now have an EMAIL cell filled
+    one way or another (not-found is still a filled cell, distinct from
+    untouched-blank). ~133 rows still genuinely untouched — this is a
+    repeat-dispatch job per `YELP-PROSPECTING-PROCESS.md`, not a one-run
+    fix.
