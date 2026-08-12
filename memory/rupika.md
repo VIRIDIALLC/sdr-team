@@ -159,6 +159,55 @@
   ones, so treat it as lower-priority than the Yelp response-time
   technique for this specific track.
 
+- (package/priority track, run 2026-08-12) Ran research in parallel via
+  three sub-agents this run (one per track) rather than sequentially — cut
+  wall-clock significantly, worth doing again for future scheduled runs.
+  Package track: tried ~30 fresh suburb/vertical combos across Phoenix and
+  LA metros this run (Queen Creek, Buckeye, Fountain Hills, Apache
+  Junction, Peoria AZ / El Monte, Anaheim, Inglewood, Torrance, Whittier,
+  Santa Monica, Fullerton, Van Nuys, Burbank), mostly misses (fast <1hr
+  responders or unresolved business names) — 3 hits landed: Partnership
+  Painting (Pasadena CA painting, ~9hr response, 73 Yelp/271 Google
+  reviews), Rebuild Arizona Construction (Phoenix AZ remodeling/GC, ~8hr-
+  1day response, drifted between searches but pattern held, flagged a
+  possible naming collision with "Rebuild Construction LLC" in Surprise AZ
+  for Montague to check), J Powers Electric (Downey/LA CA electrical,
+  ~11hr response, single-sourced figure, needs live re-check). Two
+  specific misses worth noting: a "roofing" hit in Whittier turned out to
+  be a supply company not a contractor (wrong ICP, watch for this —
+  supply/wholesale businesses can surface under contractor-style Yelp
+  searches), and a Van Nuys landscaping candidate (7hr/4.9star/210
+  reviews) never resolved to one consistent business name across searches
+  — worth a repeat attempt with a more targeted follow-up query rather
+  than writing it off.
+- (website track, run 2026-08-12) Billings MT and Dubuque IA both hit on
+  first pass — 2 hits / 4 candidates checked, better than the usual
+  ~1:2-3 ratio. Hits: H&J Landscaping LLC (Billings MT, Facebook +
+  directories only, address inconsistent across listings — flagged for
+  Montague), Casey Moriarty Pest Control (Dubuque IA, Facebook only,
+  owner name confirmed via LinkedIn — a second usable owner-name source
+  beyond the personal-email trick). Misses: Frickle's Lawn and Landscape
+  (Billings, real site), McGraw Pest Control (Dubuque, real site since
+  1975). Worth revisiting Billings MT and Dubuque IA again — didn't feel
+  exhausted after just 2 candidates each.
+- (ads track, run 2026-08-12) City-scoped `site:yelp.com [vertical]
+  reviews [city]` continues to work well — Boise ID and Chattanooga TN
+  (Hixson) both yielded usable hits this run: Same Day Electric (Boise,
+  57 Yelp reviews, established 2000, but flagged as a high-volume
+  multi-platform operator — 2,400+ reviews on Birdeye — worth Montague
+  checking whether they already run paid marketing elsewhere despite no
+  Yelp sponsored badge) and Access Garage Doors (Hixson TN/Chattanooga
+  metro, 20 Yelp reviews, strong cross-platform ratings). Near-misses
+  under the 20-review threshold: Beacon Plumbing (Boise, 12), Reliable
+  Heating & Air Conditioning (Chattanooga, 19) — close enough to
+  reconsider if the threshold gets relaxed. Backup candidate banked but
+  not used: Boise Pest Control (33 reviews, no sponsored badge) — good
+  fallback if either primary above gets disqualified during enrichment.
+  Some listings (Chattanooga landscaping, Spokane roofing) don't surface
+  review counts directly in the search snippet/title — needs a follow-up
+  query to pin down, can't confirm "meaningful presence" from the first
+  search alone in those cases.
+
 ## Dead ends to stop searching
 
 (none yet)
