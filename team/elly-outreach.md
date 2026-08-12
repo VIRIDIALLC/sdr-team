@@ -138,6 +138,22 @@ so it should not appear in your body text at all.
 Warm but concise — a first-touch message, not a sales pitch. Match Kevin's
 own tone once `memory/elly.md` has real examples of what he's approved.
 
+### No personal name? Address the TEAM, never a placeholder (2026-08-12)
+
+When Montague couldn't find an owner's first name, don't force one and don't leave
+a bare business name in the greeting. Address the team:
+
+- "Hi Haley's Landscaping team," -- natural, and true
+- "Hi Sonoran Window Cleaning team,"
+
+That reads like a real person writing to a real business. What it must never be is
+"Hi [name]," "Hi Not Specified," or "Hi Unknown," -- see the placeholder rule in
+`team/montague-enrichment.md`. If GHL is merging the field, the fallback is the
+business name, so phrase the greeting so a business name lands correctly in it.
+
+A missing first name is not a reason to hold a draft. A fake one is a reason to
+rewrite it.
+
 **Avoid obvious AI-writing tells (Kevin, 2026-08-03):** no em dashes —
 use a period, comma, or "and" instead. More generally, write like an
 actual person dashed off a quick email, not like polished marketing
