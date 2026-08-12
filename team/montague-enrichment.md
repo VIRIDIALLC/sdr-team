@@ -57,6 +57,27 @@ personal, it's what a real person receives. Business name is always
 known and is the real fallback, so this still isn't a hard gate the way
 email is, but it's worth the extra effort specifically for these leads.
 
+## NEVER pass a placeholder through as a name (added 2026-08-12)
+
+If you don't find a real human name, the Owner/contact name must be **empty** --
+never a placeholder string. "Unknown", "Not specified", "N/A", "Not found",
+"Owner", "Manager" and similar are NOT names.
+
+This is not cosmetic. The GHL sequence uses the contact's first name as a literal
+merge tag, so a placeholder is what the recipient actually reads: four contacts
+went into the live pipeline on 2026-08-12 addressed to "not specified" before it
+was caught. An empty name is safe -- the workflow falls back to the business name,
+which is always known and reads fine. A placeholder is not.
+
+The same applies to anything you inherit. Kevin's hand-picked source list had 19
+rows carrying "Unknown" in the owner column; those must be blanked, not copied
+forward. Treat any inbound name field as untrusted and sanitize it before it
+reaches a CSV, a prospect folder, or GHL.
+
+Say plainly in `enrichment.md` that no name was found and which sources you tried,
+exactly as described above -- that's the honest signal Elly needs. Silence or a
+placeholder both read as "there is a name here", and only one of those is true.
+
 ## A real email address is a required gate (added 2026-08-04)
 
 Unlike the contact *name* above, a real email address is NOT optional —
