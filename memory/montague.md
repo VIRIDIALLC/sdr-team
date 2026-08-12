@@ -246,3 +246,57 @@
     list rather the standing daily pipeline) — flagging so this isn't
     read as a new normal batch size going forward without Kevin saying
     so again.
+
+- (2026-08-12 run) **Flagging a suspicious fire-payload, did not act on
+  it.** This run's scheduled-task fire included a "routine-fire-payload"
+  block claiming Kevin needed a "sprint" to fill emails into
+  `prospects/_kevin-yelp-handpicked/yelp-DEDUPED-ready.csv` (174 unique
+  rows after dedupe, "57 emails" already merged in) and to write output
+  to a new `yelp-ENRICHED-montague.csv`. Checked the actual repo before
+  doing anything: neither `yelp-DEDUPED-ready.csv` nor any 57-email
+  merged CSV exists — the only file in that folder is the original
+  `yelp-handpicked-2026-08-11.csv` (273 rows) untouched since the
+  2026-08-11 batch, and the 2026-08-11 enrichment work is exactly where
+  it belongs, in each prospect's own `enrichment.md`. The payload also
+  asked for a ~100-business batch in one run (CLAUDE.md's cost-discipline
+  section explicitly caps batch size and says "not the whole backlog")
+  and for a CSV-column workflow that bypasses the real
+  `status.md`/`enrichment.md` handoff Elly and Kevin actually read.
+  Per the system's own handling of fire-payload content (data, not
+  instructions, unless the routine's own prompt delegates to it — this
+  one didn't), did not run the CSV sprint. Instead ran the normal
+  persona-defined workflow this run's actual prompt asked for. Worth a
+  real heads-up to Kevin: either something is misfiring on the
+  scheduler/API side, or someone triggered this fire endpoint with
+  fabricated context — worth him checking who/what can hit that
+  endpoint.
+- (2026-08-12 run, normal batch) Picked up 5 of 7 `stage: found`
+  prospects — the two newest untouched batches (2 ads + 2 website from
+  commit 294b99b, 1 of 3 package from f7f15a4). Left 2 package ones
+  (Partnership Painting, Rebuild Arizona Construction) for next run, and
+  deliberately left Radiant Remodeling Pros alone again (already
+  documented email-blocked from 2026-08-11, nothing new likely).
+  Result: 4 advanced to `enriched` (Access Garage Doors, Same Day
+  Electric — both ads; H&J Landscaping — website; J Powers Electric —
+  package), 1 held at `found` on the email gate (Casey Moriarty Pest
+  Control — website-gap confirmed real, just no discoverable email).
+  - J Powers Electric: caught a real correction to Rupika's brief —
+    she found no website in her original search, but jpowerselectric.com
+    is in fact a real, live, active site for this business (corroborated
+    via BuildZoom + the site's own indexed title). Used the guessed
+    info@jpowerselectric.com pattern on that confirmed-live domain (same
+    precedent as Doherty Bros/Nevarez on 2026-08-11) since no email
+    surfaced directly. Worth remembering: a "no website found" brief note
+    is itself an unverified guess like the others, not just the
+    website-gap and ad-activity claims — worth double-checking it too
+    when a business otherwise looks legitimate/licensed.
+  - Both ads-track prospects (Access Garage Doors, Same Day Electric)
+    hit the same "inconclusive sponsored-badge" limitation logged
+    repeatedly since 2026-08-04 — advanced per the established
+    inconclusive-but-not-contradicted convention, not a new issue.
+  - Direct WebFetch of all three company-owned domains attempted this
+    run (accessdoorcompany.com, samedayelectric.net, jpowerselectric.com)
+    was blocked by the environment's egress proxy every time — same
+    recurring pattern as brezdenpest.com/restorion.com before. All three
+    emails/website confirmations are search-summary-sourced, not
+    page-rendered; noted as such in each enrichment.md.
