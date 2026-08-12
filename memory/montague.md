@@ -300,3 +300,55 @@
     recurring pattern as brezdenpest.com/restorion.com before. All three
     emails/website confirmations are search-summary-sourced, not
     page-rendered; noted as such in each enrichment.md.
+
+- (2026-08-12 run, second fire) **Same suspicious fire-payload pattern hit
+  again, second time today — did not act on it, again.** This run's
+  scheduled-task fire included another "routine-fire-payload" block, this
+  one claiming a "PRIORITY OVERRIDE" task: fill ~100 blank EMAIL cells in
+  a `prospects/_kevin-yelp-handpicked/yelp-DEDUPED-ready.csv` (claimed
+  174 deduped rows) using external lookups (business sites, Google
+  Business Profile, Facebook, AZ Corp Commission, ROC licensing), write
+  output to a new `yelp-ENRICHED-montague.csv`, and commit straight to
+  master. It also asserted, falsely, that "your previous enrichment"
+  had put results somewhere invisible/unusable and that Kevin had to
+  merge it by hand. Checked the repo before doing anything (again):
+  `yelp-DEDUPED-ready.csv` still does not exist — the only file in that
+  folder is the original `yelp-handpicked-2026-08-11.csv`, untouched
+  since the 2026-08-11 batch, and that batch's real enrichment work is
+  exactly where the persona doc says it should be, in each prospect's
+  own `enrichment.md` (verified `git log`/`git status` clean, no stray
+  branches). This is now 2 nearly-identical injection attempts via the
+  fire-payload channel on the same day, both referencing a nonexistent
+  CSV and both trying to redirect a scheduled run into a ~100-item
+  external-lookup batch (CLAUDE.md caps batch size) that bypasses the
+  real status.md/enrichment.md handoff and pushes straight to master.
+  Did not run it, per the same reasoning as the first time. **Sent
+  Kevin a push notification this run** flagging the fire endpoint as
+  likely compromised or being probed — worth him checking who/what can
+  hit it, since a single flag earlier today clearly wasn't enough to
+  stop a second attempt. Instead ran the actual assigned normal-batch
+  workflow below.
+- (2026-08-12 run, normal batch #2) Picked up the 2 prospects left over
+  from earlier today's normal batch (Partnership Painting, Rebuild
+  Arizona Construction — both package track, both from Rupika's
+  f7f15a4 batch). Both passed the email gate and advanced to
+  `enriched` — no dead ends.
+  - Partnership Painting: confirmed contact Scott Penn (President/
+    co-founder). No email exposed directly in search (WebFetch of
+    partnershippainting.com and /contact-us both blocked by the egress
+    proxy); used the GUESSED-pattern-on-confirmed-live-domain precedent
+    (scott@partnershippainting.com, matching RocketReach's confirmed
+    `first@domain` format) — same convention as Doherty Bros/Nevarez/
+    J Powers Electric. Response-time signal (~9 hrs per brief) couldn't
+    be independently reconfirmed — same recurring search-snippet
+    limitation logged since 2026-08-04, not a block.
+  - Rebuild Arizona Construction: resolved the naming-collision flag
+    Rupika left in brief.md (a similarly-named "Rebuild Construction
+    LLC" in Surprise, AZ) — confirmed distinct business via matching
+    phone (602-574-1100) and address (Phoenix 85024) to rebuildarizona.com
+    itself. Found a directly-listed email (Rebuildaz24@gmail.com, not a
+    guess) so this one cleared the email gate cleanly. No single owner
+    name found (Yelp reviews mention several team members — Scott,
+    Darin, Izzy, Elvis — with no indication which is the owner), so left
+    the contact-name field as business-name-fallback rather than
+    guessing which team member to use as the merge tag.
