@@ -97,3 +97,74 @@ no feedback yet on those specifically)
     `stage: enriched`, draft those per the fire payload's instruction —
     lead with the response-time/missed-lead pain, Purchase-Likelihood 4-5
     ones will be the highest priority per the CSV's own batching note.
+
+- **2026-08-12 (this run) — large batch, 25 drafted, matching Montague's
+  own precedent for this one-time priority list.** Found 25 prospects at
+  `stage: enriched`, not a normal run's volume: 21 came from Montague's
+  2026-08-11 pass through Kevin's hand-picked Yelp priority CSV
+  (`prospects/_kevin-yelp-handpicked/`), which her own commit/memory
+  flagged as a deliberate ~5x-normal batch per the CSV README's explicit
+  "work in batches of ~25" instruction; the other 4 (Access Garage Doors,
+  Same Day Electric, H&J Landscaping, J Powers Electric) were standing
+  Rupika/Montague pipeline prospects from the same run. Since the volume
+  spike was already documented and justified in the repo (not something
+  I decided on my own), matched it for the drafting step rather than
+  holding most of them back for a "small batch" — held only
+  jc-heating-cooling-amarillo-tx, unchanged, still Kevin's own
+  email-verification hold from 2026-08-03.
+
+  Given the size, split the batch across 5 parallel drafting passes (5
+  prospects each) instead of doing it serially, each held to the same
+  hard rules (real-name-only greeting or plain "Hi,", no bracket
+  placeholders, no signature line, no em dashes in body copy, hook only
+  when Montague actually verified the response-time figure — not just
+  repeated the CSV number, no invented facts/numbers). Spot-checked
+  several drafts afterward (em-dash sweep across all 25 body sections,
+  bracket-placeholder sweep, retired-package-name sweep, full read of 4
+  drafts spanning hook/fallback/ads/website cases) — all clean.
+
+  **Track breakdown:** 22 package, 2 ads (Access Garage Doors, Same Day
+  Electric), 1 website (H&J Landscaping).
+
+  **Hook vs. fallback, real data point worth flagging to Kevin:** of the
+  22 package-track drafts, only ONE actually led with a cited
+  response-time figure (Envirogreen Landscape, ~3 hr, corroborated by a
+  review describing trouble reaching the owner by phone) — every other
+  package-track draft this run had its CSV response-time figure come
+  back inconclusive, contradictory, or unconfirmed on Montague's
+  independent re-check, so all 21 used the general lead-response
+  fallback pitch instead (still grounded in a real, specific detail from
+  brief.md/enrichment.md — never generic). Same pattern flagged by two
+  of the drafting passes independently. This is a much lower hit rate
+  than the CSV's own hand-picked framing implied — worth Kevin knowing
+  the CSV's response-time numbers are turning out to be unreliable on
+  verification far more often than not, in case that changes how much
+  weight he puts on that column going forward.
+
+  **Ambiguous-owner-name cases (plain "Hi," used, not a guess):** AMS
+  Landscaping (Eli Hall vs. Stephen Clark), Krasiva Windows and Doors
+  (Greg Strickland vs. Derrick as GM), Envirogreen Landscape (Grayson vs.
+  Sean McLaughlin), Sal's Landscape Construction (no confident candidate
+  at all), Streak Patrol (two single-source unconfirmed candidates). Five
+  in one run is more than usual — worth Kevin knowing this batch's
+  ambiguity rate is higher than the standing pipeline's.
+
+  **Guessed-email flags (not directly confirmed, domain-grounded per the
+  established gate precedent):** Doherty Bros Window Pros, J Powers
+  Electric, Nevarez Landscape.
+
+  **Other flags carried into individual Notes for Kevin:** Goodman's
+  Landscape (contact email domain doesn't match the main site — worth a
+  sanity check before send), AZ Remodel Pros and Doherty Bros Window Pros
+  (CSV phone numbers look like Yelp call-tracking lines, real numbers
+  noted separately), Same Day Electric (a much bigger multi-platform
+  operation than typical for this ICP — worth judgment on whether they
+  already run paid marketing elsewhere before leaning on "no ads yet").
+
+  jc-heating-cooling-amarillo-tx skipped again, unchanged, still held by
+  Kevin.
+
+  **Batch-size note for future runs:** this was a one-time catch-up on
+  Kevin's hand-picked priority list, not a new standing batch size —
+  don't read 25-at-once as the new normal without Kevin saying so again,
+  same caveat Montague already logged for the enrichment step.

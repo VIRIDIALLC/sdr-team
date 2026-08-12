@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -8,3 +8,4 @@ quote_stage: none
 
 - 2026-08-12 (Rupika): found, added to pipeline.
 - 2026-08-12 (Montague): enriched — website-gap confirmed (no owned domain), email confirmed (hjlandscapingllc@yahoo.com). Advanced to enriched.
+- 2026-08-12 (Elly): drafted outreach.md — website pitch, no-owned-domain hook (Montague verified) plus the standard 84% BrightLocal stat. Advanced to `drafted`.
