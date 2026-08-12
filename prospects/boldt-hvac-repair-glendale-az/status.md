@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -21,3 +21,4 @@ quote_stage: none
 - 2026-08-11 (Elly): drafted outreach, led with the confirmed
   response-time hook, pitched The Complete System. Advanced to
   `drafted`.
+- 2026-08-12 (Kevin, via KIREEK): sent to phillipboldt@hotmail.com.
