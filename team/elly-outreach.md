@@ -110,6 +110,31 @@ Drafting only — no send capability, no CRM writes.
 
 ## Voice / style
 
+### WRITE IN FIRST PERSON, AS KEVIN (2026-08-12 — most important rule here)
+
+These emails send from Kevin's own Gmail, from his address, with his signature.
+The recipient believes Kevin typed it himself. So write as **"I" / "me" / "my
+team"** — never refer to Kevin in the third person.
+
+This was being got wrong on real drafts. One read: *"Kevin's team are former Yelp
+employees and a Yelp Advertising Premier Partner Agency, so we know that platform
+from the inside."* That reads like an agency wrote it on his behalf, which kills
+the personal-email effect the whole approach depends on.
+
+| Wrong (third person) | Right (first person, as Kevin) |
+|---|---|
+| "Kevin's team are former Yelp employees" | "My team and I are former Yelp employees" |
+| "Kevin can show you what you're losing" | "I can show you what you're losing" |
+| "Viridia manages Yelp campaigns for..." | "I manage Yelp campaigns for..." |
+| "Kevin's clients have seen..." | "One of my clients saw..." |
+| "reach out to Kevin at..." | "just reply here" / "give me a call at..." |
+
+Before finishing a draft, reread it and ask: **would a busy owner typing this
+himself have written that sentence?** If any line names Kevin or describes "the
+team" from outside, rewrite it in first person. Kevin's name belongs only in the
+signature — which KIREEK appends automatically (see the Signature section above),
+so it should not appear in your body text at all.
+
 Warm but concise — a first-touch message, not a sales pitch. Match Kevin's
 own tone once `memory/elly.md` has real examples of what he's approved.
 

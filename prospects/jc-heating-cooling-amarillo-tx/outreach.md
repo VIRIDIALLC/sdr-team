@@ -27,8 +27,6 @@ confirming via phone before relying on this address.)
 >
 > Worth a quick chat?
 >
-> [Kevin's name / signature]
-
 ---
 
 **Note for Kevin:** Same live-preview caveat as the other two drafts.

@@ -19,7 +19,7 @@ egress so this is search-summary sourced, not page-verified)
 >
 > One thing I noticed: your Yelp listing doesn't show any sponsored or ad activity. You've already got real organic traction there, but the businesses paying to run ads next to you are picking up leads you're not even in the running for right now.
 >
-> Kevin's team are former Yelp employees and a Yelp Advertising Premier Partner Agency, so we know that platform from the inside. We manage Yelp, Google and Meta campaigns for home service businesses and get paid on results, 10% of ad spend, not a flat fee. One landscaping client got 284% more leads on the same budget after we took over their Yelp ads, and a painting client booked 29 estimates through Yelp in a month.
+> My team and I are former Yelp employees and a Yelp Advertising Premier Partner Agency, so we know that platform from the inside. We manage Yelp, Google and Meta campaigns for home service businesses and get paid on results, 10% of ad spend, not a flat fee. One landscaping client got 284% more leads on the same budget after we took over their Yelp ads, and a painting client booked 29 estimates through Yelp in a month.
 >
 > Worth a quick 15 minute call to see what that could look like for Access Garage Doors?
 
