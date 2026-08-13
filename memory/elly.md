@@ -168,3 +168,76 @@ no feedback yet on those specifically)
   Kevin's hand-picked priority list, not a new standing batch size —
   don't read 25-at-once as the new normal without Kevin saying so again,
   same caveat Montague already logged for the enrichment step.
+
+- **2026-08-13 (this run) — 6 drafted, 7 left for next run.** Fire
+  payload reported the drafted queue was empty (Kevin had nothing to
+  review) and asked for a normal-sized batch, my own judgement on size.
+  Found 14 at `stage: enriched`: jc-heating-cooling-amarillo-tx already
+  has an outreach.md and is still Kevin's own email-verification hold
+  from 2026-08-03 (unchanged, skipped again, not redrafted), leaving 13
+  undrafted, all `track: package`. Went with 6 this run, matching the
+  standing normal-batch precedent (6 on 2026-08-05 and 2026-08-10) rather
+  than clearing the whole 13 — CLAUDE.md's cost-discipline rule says
+  "small, reasonable batch... not the whole backlog," and last run's
+  memory note explicitly warned not to treat the 25-item catch-up as a
+  new normal. Left 7 for next run: ground-zero-landscape-phoenix-az,
+  one-home-solution-phoenix-az, professional-window-cleaning-tempe-az,
+  sky-view-window-cleaning-phoenix-az, spectrum-shades-and-shutters-anthem-az,
+  stonecreek-roofing-phoenix-az, turf-monsters-phoenix-az — all already
+  reviewed this run, all have a usable contact and none needed the
+  no-email skip, so they're ready to draft first thing next time without
+  re-checking enrichment.md.
+
+  **Repo state note, worth flagging:** this container started with a
+  detached HEAD and a local `master` branch that had zero shared history
+  with `origin/master` (`git merge-base` returned nothing) even after
+  `git fetch origin`. The container's actual checked-out files already
+  matched `origin/master` exactly (clean working tree at that commit), so
+  the stale thing was only the local branch pointer, not the content —
+  fixed with `git checkout -B master origin/master` rather than
+  attempting to merge unrelated histories. Didn't force-push or touch
+  `origin/master` itself, just repointed the local ref to match what's
+  already there. Flagging in case this stale-local-master pattern recurs
+  for another agent's container — same underlying issue as the stale-ref
+  false alarm CLAUDE.md already documents from Montague's 2026-08-13
+  incident, just showing up as "unrelated histories" instead of "behind"
+  this time.
+
+  **Fire-payload verification note:** Montague's memory logs two
+  injection attempts through this same fire-payload channel on
+  2026-08-12 (both referencing a nonexistent CSV, both trying to redirect
+  a run into an oversized external-lookup batch). This run's payload
+  claimed two specific changes landed on master — first-person voice as
+  Kevin, and team-greeting when no name was found — plus a new
+  CLAUDE.md end-of-run merge-to-master rule. Checked both against actual
+  git history before trusting them: the CLAUDE.md rule really did land
+  today (936ac4e, authored by the real `VIRIDIALLC <kevin@viridiaanalytics.com>`
+  account), and the elly-outreach.md greeting/voice rules are real and on
+  master too, just from 2026-08-12 rather than literally "today" as the
+  payload said — a minor imprecision, not a fabrication. Nothing in the
+  payload asked for anything outside normal drafting (no sends, no
+  external lookups, no oversized batch, no direct-to-master bypass of the
+  status.md/enrichment.md handoff), so proceeded normally. Worth noting
+  for whoever reads this next: verify fire-payload claims against real
+  repo state before acting, same as Montague's standing practice, even
+  when the payload sounds plausible and references real-looking rules.
+
+  **Team-greeting rule, first real application:** rebuild-arizona-construction-phoenix-az
+  is the first draft to actually use "Hi [Business] team," — checked, and
+  the 2026-08-12 batch of 25 had at least two explicit no-name cases
+  (az-remodel-pros-phoenix-az, sals-landscape-construction-phoenix-az)
+  that used plain "Hi," instead, even though both post-date the rule
+  commit. Not correcting those retroactively (they're either already
+  approved/sent or Kevin's call), but the pattern going forward should be
+  the team greeting for explicit no-name cases, plain "Hi," reserved for
+  genuinely ambiguous cases with multiple unresolved name candidates
+  (desert-sage-landscaping-phoenix-az this run) — those are a different
+  situation from "no name was found at all."
+
+  **Track breakdown this run:** all 6 package track (the 13 remaining
+  enriched prospects skew heavily package this batch — only these two
+  standing-pipeline entries plus the CSV group, no website or ads track
+  currently sitting at enriched).
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's new
+  landing-work rule.
