@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -12,3 +12,4 @@ quote_stage: none
   (team/elly-outreach.md) -- no response-time figure exists, so used the
   underlying-problem question. Real name (Chad) used in greeting, first person as
   Kevin throughout. Advanced to `drafted`.
+- 2026-08-13 (Kevin, via KIREEK): sent to Chad@groundzerolc.com.
