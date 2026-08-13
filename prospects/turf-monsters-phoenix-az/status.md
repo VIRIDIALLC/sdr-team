@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: dismissed
 track: package
 quote_stage: none
 ---
@@ -12,3 +12,4 @@ quote_stage: none
   (team/elly-outreach.md) -- response-time question (2 hrs, from Kevin's CSV). Real
   name (Michael, not Sean the PM) used in greeting, first person as Kevin
   throughout. Advanced to `drafted`.
+- 2026-08-13 (Kevin, via KIREEK): removed from the review queue.
