@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
   (team/elly-outreach.md) -- response-time question (4 hrs, from Kevin's CSV, tied
   to the limited hours) replaces the old flattery-then-guess opening. Stays at
   `drafted`.
+- 2026-08-13 (Kevin, via KIREEK): sent to blindcleaningarizona@gmail.com.
