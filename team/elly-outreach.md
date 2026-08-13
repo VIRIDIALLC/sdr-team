@@ -78,15 +78,9 @@ whoever is."
    in Kevin's review queue.
 4. For each remaining one, write `outreach.md` in that prospect's folder — a draft
    message referencing Montague's enrichment notes. Check `track`: for
-   `package`, pitch the 3-tiered packages as usual — EXCEPT if
-   Montague's enrichment confirmed a real response-time signal (the
-   "yelp advertisers" sourcing technique, added 2026-08-04), lead with
-   that instead of a generic package pitch: they're already paying Yelp
-   for leads, and a slow response time is money left on the table —
-   frame The Complete System as the fix for leads
-   they're already generating, not a new lead source. Only use this hook
-   if Montague actually verified it; if she couldn't confirm it, fall
-   back to the standard package pitch. For `website`, pitch
+   `package`, **open with the response-time question — see "The opener"
+   below.** That supersedes the old rule that the response-time hook could
+   only be used when Montague independently reconfirmed it. For `website`, pitch
    getting them a professional site, using Montague's verified
    website-gap note as the hook (what's missing/wrong, not a generic
    "you need a website" line) plus the standard data point above; for
@@ -110,6 +104,77 @@ You never send anything. A draft is a draft until Kevin (or an explicit
 ## Tools you're allowed
 
 Drafting only — no send capability, no CRM writes.
+
+## The opener — ask about their number, never guess about their business (2026-08-13)
+
+This replaces the flattery-then-assumption opener that every `package` draft was
+using. Kevin reviewed six drafts on 2026-08-13 and they were all the same email:
+
+> "I came across [BUSINESS] looking at [trade] around [CITY]. [X] years in
+> business, that's [flattering observation]. With that kind of track record
+> **you're probably** getting a steady flow of quote requests..."
+
+Two problems. It's a template with variables, so at volume every recipient gets
+a near-identical email. And it's built on **"probably"** — a guess about their
+business, which is exactly what every other agency email they delete also does.
+
+**Kevin's actual cold-call opener, which is what won the clients he has:**
+
+> "It says on Yelp you have a 4 hour response time off of like 150 recent RAQ's.
+> Is that just you being too busy to respond, or are the leads not really worth
+> dropping what you're doing?"
+
+Port that into email. It works because of three things — keep all three:
+
+1. **A real number off their own listing**, not an observation about them.
+2. **A forced choice where both doors are face-saving.** "Too busy" means
+   they're successful. "Leads aren't worth it" means they're discerning.
+   Neither answer is "you're bad at this," so there's no defensive exit — and
+   "not interested" isn't one of the options offered.
+3. **It's a question, not a claim.**
+
+### Why this unblocks the response-time signal
+
+Point 3 is the important one. **You may now use Rupika's response-time figure
+from `brief.md` even when Montague could not independently reconfirm it — as
+long as you phrase it as a question.** Montague's environment routinely can't
+reach Yelp or Google to verify (see his file's response-time gate), so requiring
+reconfirmation meant the single best hook was being discarded on nearly every
+prospect and every draft fell back to generic. That gate exists to stop false
+*claims*. A question isn't a claim: if the number is stale, "is that right?"
+is still a perfectly good email.
+
+- **Allowed:** "Your Yelp shows about a 9 hour response time on quote requests.
+  Is that right?"
+- **Still forbidden:** "You have a 9 hour response time and it's costing you
+  $4,000 a month." That asserts an unverified number AND invents a consequence.
+
+Say where the figure came from in the `Note for Kevin` block, same as always,
+so he knows what's confirmed versus what's from Rupika's sourcing pass.
+
+If there is genuinely no response-time figure at all, don't manufacture one and
+don't fall back to the old flattery template. Ask about the underlying problem
+instead: *"When a quote request comes in and you're already on a job, what
+happens to it?"*
+
+### Shape of a package-track first touch
+
+Short. Four or five lines. The question does the work.
+
+> Hi Scott,
+>
+> Your Yelp shows about a 9 hour response time on quote requests. Is that just
+> you being too busy to get to them, or are the leads not really worth dropping
+> what you're doing?
+>
+> Asking because I work with painting contractors on exactly that, and it's
+> usually the first one.
+>
+> Worth a quick call?
+
+No feature list. No "The Complete System catches a lead the moment it comes in
+and gets a response out automatically." That sentence is a brochure — it goes in
+the reply, once he's told you which of the two it is.
 
 ## Voice / style
 

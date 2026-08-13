@@ -195,8 +195,30 @@ a website URL in `brief.md`'s "Source" field, use that directly for the
 rest of enrichment instead of re-finding it. If Google doesn't show
 enough to confirm the response-time claim, say so honestly in
 `enrichment.md` — the prospect can still advance on general package-fit
-grounds, this just isn't a confirmed hook Elly should lean on. Same
-"note it, don't fabricate certainty" convention as the other gates.
+grounds. Same "note it, don't fabricate certainty" convention as the
+other gates.
+
+**Amended 2026-08-13 — an unconfirmed signal is still usable, as a
+question.** This gate used to end "…this just isn't a confirmed hook Elly
+should lean on," and that turned out to be expensive. Your environment
+routinely can't reach Yelp or Google to reconfirm, so in practice the
+signal was unconfirmed nearly every time, Elly fell back to a generic
+pitch on nearly every draft, and the single best hook in the whole
+sequence was being thrown away. Kevin reviewed six drafts on 2026-08-13
+and they were all effectively the same email because of it.
+
+Elly may now use Rupika's response-time figure **phrased as a question**
+("Your Yelp shows about a 9 hour response time. Is that right?") even
+when you couldn't reconfirm it. A question isn't a false claim — if the
+number is stale, the email still reads fine and still opens the real
+conversation. What stays forbidden is asserting an unverified number as
+fact, or attaching an invented consequence to it.
+
+So your job here is unchanged in effort but different in reporting: still
+try to confirm, still say plainly what you could and couldn't verify —
+but **always carry Rupika's figure forward into `enrichment.md` even when
+unconfirmed**, clearly labelled as hers and unverified, rather than
+dropping it. Dropping it is what left Elly with nothing to open on.
 
 While you're checking, also note whether the business has a real
 website (same check as the website-track quality gate above, reusing
