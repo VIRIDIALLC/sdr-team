@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -16,3 +16,4 @@ quote_stage: none
   (team/elly-outreach.md). No response-time figure exists for this one at all, so
   used the underlying-problem question per the rule's own fallback instead of the
   old flattery template. Stays at `drafted`.
+- 2026-08-13 (Kevin, via KIREEK): sent to info@desertsagelandscape.com.
