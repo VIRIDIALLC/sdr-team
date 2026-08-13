@@ -436,3 +436,43 @@
     untouched-blank). ~133 rows still genuinely untouched — this is a
     repeat-dispatch job per `YELP-PROSPECTING-PROCESS.md`, not a one-run
     fix.
+
+- (2026-08-13 run) **The recurring detached-HEAD issue (flagged
+  2026-08-05, 08-10, 08-11) is worse than previously understood — it's
+  not an unmerged branch, it's a fully unrelated git history that has
+  never reached `origin/master`.** Session started on a detached HEAD
+  (tip `f00c023`, "Kevin approved via KIREEK: Streak Patrol") containing
+  58 commits spanning 2026-08-10 through today — real work: Rupika's
+  Phoenix/L.A. batches, all of last week's Montague enrichment runs
+  logged above, Elly drafts, Kevin's KIREEK approvals/sends. `git merge
+  --ff-only` against `master` failed; `git merge-base` returned nothing;
+  the two histories' root commits are entirely different content
+  (`master` roots at the Aug 2 "distinctive-web-design skill" commit,
+  the detached branch roots at Rupika's Aug 10 4-prospect commit with
+  NO parent). `origin/master` is frozen at Aug 9 (`ad49973`) and is
+  missing ~4 days of real work plus 4 prospect folders (squeeky-kleen-
+  windows, stonecreek-roofing, streak-patrol, turf-monsters) that only
+  exist on the detached side. Content-wise the detached branch is a
+  strict superset of master (diffing the two: turning the detached tip
+  into master's tree deletes 6556 lines and adds only 18), so this
+  reads as master/origin simply never having received ~4 days of pushes
+  from whatever local sessions did this work — not data corruption or
+  tampering. Did NOT force-merge or rewrite `master` myself — reconciling
+  two unrelated histories on the team's shared branch is Kevin's call,
+  not mine to make unilaterally. Instead created a durable branch at the
+  detached tip (`montague-2026-08-13-recovery`) and pushed it to origin
+  so the work is safe regardless of what happens to this session's
+  container, then did this run's actual work on top of that branch.
+  **Kevin needs to manually reconcile `montague-2026-08-13-recovery`
+  into `master` (or decide master should just move to it) — flagged via
+  push notification this run.**
+- (2026-08-13 run, batch) Scanned all `stage: found` prospects (17,
+  excluding `_template`) on the recovered branch. Every single one is
+  already fully investigated and documented as email-blocked or a dead
+  end by a prior run (dates ranging 2026-08-05 through 2026-08-12) — no
+  new `stage: found` prospects exist right now. Per the established
+  "don't re-run searches on already-documented dead-ends" convention,
+  picked up none of them this run rather than manufacturing busywork.
+  Net effect: no actual enrichment output this run — the backlog is
+  genuinely empty until Rupika sources something new or Kevin decides
+  to revisit one of the email-blocked ones with a different technique.
