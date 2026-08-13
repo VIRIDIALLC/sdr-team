@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -20,3 +20,4 @@ quote_stage: none
   (team/elly-outreach.md) — response-time question (~8 hrs to ~1 day, drifted
   between sources so phrased as a range) replaces the old flattery-then-guess
   opening. Stays at `drafted`.
+- 2026-08-13 (Kevin, via KIREEK): sent to Rebuildaz24@gmail.com.
