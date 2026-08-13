@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -13,3 +13,4 @@ quote_stage: none
   underlying-problem question. Best-documented name (Dave) used in greeting with a
   caveat flagged for Kevin (possibly historical, current owner unresolved), first
   person as Kevin throughout. Advanced to `drafted`.
+- 2026-08-13 (Kevin, via KIREEK): sent to office@getmywindowsclean.com.
