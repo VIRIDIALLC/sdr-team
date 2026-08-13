@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -12,3 +12,4 @@ quote_stage: none
   (team/elly-outreach.md) -- response-time question (1 day, from Kevin's CSV). Real
   name (Luis) used in greeting, first person as Kevin throughout. Advanced to
   `drafted`.
+- 2026-08-13 (Kevin, via KIREEK): sent to skyviewwindowcleaningllc@gmail.com.
