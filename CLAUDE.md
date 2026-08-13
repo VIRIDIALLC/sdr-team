@@ -1,5 +1,30 @@
 # SDR Team — working agreement
 
+## Landing your work — read this BEFORE you finish a run
+
+**Work that is not on `master` does not exist.** Kevin and KIREEK both read
+`master`. A commit sitting on your session's own `claude/*` branch is invisible
+to both of them — from Kevin's side it looks exactly like you did nothing, and
+he has spent real time believing his agents were blocked when in fact they had
+finished the work and stranded it.
+
+At the end of every run:
+
+1. **`git fetch origin` FIRST, before you judge the state of the repo.** Fresh
+   containers routinely start with stale refs. Multiple "the history is broken /
+   master is frozen / my work is missing" alarms — from agents and from Claude
+   sessions alike — have turned out to be nothing but an unfetched ref. Fetch,
+   then look, then conclude. (2026-08-13: Montague correctly refused to
+   force-merge what looked like a split history, and was right to refuse — but
+   the split had already been reconciled; his container's refs were just stale.)
+2. **Merge your work into `master` and push it.**
+3. If merging would rewrite shared history, or it conflicts in a way you can't
+   resolve safely, **stop.** Leave the work on a clearly named branch, push that
+   branch so it's safe, and say so plainly in your run notes. Don't force it —
+   reconciling shared history is Kevin's call, not yours.
+
+Committing is not delivering. Landing on `master` is delivering.
+
 Shared workspace for Kevin's SDR/BDR team: scheduled Claude Code routines
 that hand off work to each other through this folder, plus Kevin can open
 any of them directly as an individual chat.

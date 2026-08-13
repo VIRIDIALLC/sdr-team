@@ -78,6 +78,57 @@ Say plainly in `enrichment.md` that no name was found and which sources you trie
 exactly as described above -- that's the honest signal Elly needs. Silence or a
 placeholder both read as "there is a name here", and only one of those is true.
 
+## The owner's name is a PHONE asset first (added 2026-08-13)
+
+The name-finding above was written for email personalization. It matters more than
+that. **Kevin cold-calls this list himself, and the name is what gets him past the
+gatekeeper.**
+
+From 2026-08-13, roughly 25-30 dials: the dominant failure wasn't "not interested,"
+it was **"talk to the owner"** and **"I'll take a message."** Those are what a
+receptionist says to a stranger. Compare:
+
+| What Kevin says | What he gets |
+|---|---|
+| "Can I speak to the owner?" | "I'll take a message." |
+| "Hey, is Victor around?" | "Hold on." |
+
+Same list, same call, different gate — because the second one sounds like someone
+who already knows the business. A first name is worth more on the phone than
+anything else you can put in `enrichment.md`.
+
+So: **hunt the name even when the email is already found.** Don't stop looking once
+the email gate is satisfied. Customer reviews are the richest source — reviewers
+name the owner constantly ("ask for Victor," "Victor was great"), and owners sign
+their replies. Work from Google's displayed snippet text, never by opening Yelp
+directly (see the scraping note above).
+
+### Put a CALL CARD at the top of every `enrichment.md`
+
+Kevin is dialing at pace between running everything else. He should not have to read
+a research document to make a call. Lead the file with exactly this block:
+
+```
+CALL CARD
+  Ask for:   Victor            (or: NO NAME FOUND — checked reviews, GBP, FB, BBB)
+  Phone:     (626) 899-2524
+  Response:  ~3 hours          (the hook — he's trying, and still losing the race)
+  Hook:      "Your response time shows about 3 hours. I don't think your leads
+              are trash — I think you're getting there third."
+```
+
+Rules for the card:
+- **Never invent the name.** The placeholder rule above applies with full force —
+  "NO NAME FOUND" is useful, "Owner" or "Unknown" is worse than blank, because Kevin
+  will say it out loud to a receptionist and burn the call.
+- **The Hook line is one sentence Kevin can say cold**, built from the verified
+  response-time signal — not a summary of the business. If the response-time signal
+  couldn't be confirmed, write "no verified hook" rather than inventing one.
+- Everything else you research still goes below the card as normal.
+
+Response time + owner name together are the whole call: the name opens the door, the
+response time is the reason he's standing there.
+
 ## A real email address is a required gate (added 2026-08-04)
 
 Unlike the contact *name* above, a real email address is NOT optional —
