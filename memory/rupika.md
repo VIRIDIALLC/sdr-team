@@ -208,6 +208,97 @@
   query to pin down, can't confirm "meaningful presence" from the first
   search alone in those cases.
 
+- (run 2026-08-13) Session started on a detached HEAD unrelated to
+  `origin/master` (a leftover from the multi-day history-desync Montague
+  flagged the same day — see `memory/montague.md`'s 2026-08-13 entry on
+  the recovery branch). By the time I checked, `origin/master` had
+  already been fast-forwarded to the recovered tip (`f00c023`) — my
+  local `master`/`origin/master` refs were just stale from container
+  startup, fixed with `git fetch` + `git checkout -B master
+  origin/master`. No data lost, nothing to flag to Kevin this run;
+  noting the fix here in case another session hits the same stale-ref
+  symptom.
+- (package/priority track, run 2026-08-13) Ran the three tracks as
+  parallel sub-agents again (continues working well). Package track
+  tried ~26 fresh suburb/vertical combos (Gilbert/Cave Creek/Litchfield
+  Park/Casa Grande/Maricopa AZ; Culver City/Hawthorne/Compton/Lakewood/El
+  Segundo/Downey/West Covina/Rancho Cucamonga CA — see full miss list
+  below) — 3 hits, none as clean as a first-pass slam dunk this time:
+  Coleman Painting (Gilbert AZ, ~3hr response confirmed twice, 17yrs/
+  5.0star/100 reviews, but AZROC license status conflicting
+  active-vs-inactive across sources — reads like a stale directory
+  record, not a revoked-for-cause case), Lansford Roofing (Pasadena CA,
+  established 1989, identity rock-solid across searches but the exact
+  response-time figure drifted 3hrs-5hrs-3days across 4 reads, all still
+  over the 1hr threshold), Liquid Oak Painting (Hermosa Beach CA,
+  founded 1999, identity solid but the specific response-time/quote-
+  volume figure from the first search couldn't be reproduced in two
+  follow-ups — queued as this run's weakest find, flagged for Montague
+  to re-verify directly on Yelp before relying on it). Take-away: the
+  "corroborate the exact number across 2+ searches" caution from
+  2026-08-10 keeps mattering — identity (address/founding year/rating)
+  tends to hold steady even when the specific response-time figure
+  itself doesn't; treat number drift as a reason to flag, not
+  automatically drop, as long as identity stays solid.
+  Suburb/vertical combos tried this run without a usable hit (don't
+  re-try as-is): HVAC Scottsdale AZ, electrical Gilbert AZ (resolved to
+  a solar company, not a fit), roofing Cave Creek AZ, pest control
+  Litchfield Park AZ, garage door Casa Grande AZ, restoration Maricopa
+  AZ, remodeling Gilbert AZ, restoration Glendora AZ, remodeling Cave
+  Creek AZ (had a 3hr/87-request candidate but name never resolved),
+  plumber Litchfield Park AZ, electrician Casa Grande AZ, plumber Casa
+  Grande AZ, HVAC Maricopa AZ (a 4hr/1939-established candidate also
+  never resolved a name); roofing Pasadena CA (fast responders alongside
+  the Lansford hit), HVAC Culver City CA, plumber Hawthorne CA, pest
+  control Compton CA, garage door Lakewood CA, electrician El Segundo
+  CA, landscaping Downey CA, remodeling West Covina CA (a "contractors
+  don't respond" review theme surfaced but no resolvable business name),
+  HVAC Rancho Cucamonga CA, pest control West Covina CA.
+- (website track, run 2026-08-13) Joplin MO, Bemidji MN, Grand Junction
+  CO, and a second pass at Dubuque IA and Billings MT — 3 hits from
+  roughly the usual ~2-miss-per-hit rate: Crandell Pest Control (Joplin
+  MO, Facebook-only; a same-named domain exists but confirmed via
+  address/service-area check to be an unrelated business in Mesa AZ —
+  worth remembering this "same name, different city, not a match"
+  pattern can recur), Noska Lawncare (Bemidji MN, Facebook-only, several
+  same-city competitors confirmed to have real sites so the gap is
+  specific not market-wide), The 3 Roofers Construction (Dubuque IA —
+  a *dead/suspended domain* case, not pure no-website: they own
+  the3roofersconstructionllc.com but it now shows a Hostinger
+  suspension page, BBB/Yelp/BuildZoom all route to Facebook instead —
+  worth treating "owns a domain that's actually dead" as its own
+  no-website-track subtype going forward, same as last run's
+  free-builder-subdomain case). Grand Junction CO and Billings MT
+  (electrical) both ran cold this pass (all real sites) — Grand Junction
+  untried categories remain (Altitude/3C/SunShine Painting) but the
+  pattern there looks like a low-yield market; Joplin MO pest control has
+  one more untried name (Bug-A-Way/Logan's Termite) and Bemidji MN
+  landscaping has untried names left (Aurora Landscapes, Finishing
+  Touch, Northwoods Landscape) if either market gets revisited.
+- (ads track, run 2026-08-13) Tried 13 city/vertical combos (Tulsa OK,
+  Fort Wayne IN, Greenville SC, Des Moines IA, Shreveport LA, Fort
+  Collins CO, Wichita KS, Huntsville AL, Lexington KY, Savannah GA,
+  Baton Rouge LA, Colorado Springs CO, Amarillo TX) — wider net than
+  usual since several were quick dead ends. 2 queued: The Paint Doctor
+  (Colorado Springs CO, 29 reviews, independent, 18+ yrs, cleanest hit
+  of the run) and Mr. Electric of Wichita (Bel Aire KS, 24 reviews, but
+  it's a Neighborly-network franchise — flagged that franchise locations
+  can carry corporate-level paid marketing invisible to a plain Yelp
+  snippet check, worth weighing whether franchises are a good ads-track
+  fit going forward given this risk). Dropped a third candidate (Duvall
+  Plumbing, Tulsa OK, 22 reviews) rather than queue it — search summaries
+  surfaced a conflicting/implausible "1,900+ reviews" claim elsewhere for
+  the same name, an identity/data-quality red flag similar to last run's
+  Anaheim roofing name-collision case, not worth the risk of queuing a
+  possibly-misidentified business. Lexington KY's `site:yelp.com`
+  painting query got swamped by paint-and-sip/pottery studios instead of
+  house painters — worth adding "house painting" or "painting
+  contractors" explicitly to the query if that city gets revisited.
+  Near-miss backups banked under the 20-review threshold: Priority
+  Electrical (Greenville SC, 15 reviews, 25yr master electrician) and
+  Paul's Termite and Pest Control (Tallahassee FL, 15 reviews,
+  established 1971) — good fallbacks if the threshold gets relaxed.
+
 ## Dead ends to stop searching
 
 (none yet)
