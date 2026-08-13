@@ -241,3 +241,93 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's new
   landing-work rule.
+
+- **2026-08-13 (follow-up run) — new opener rule, 6 redrafted + 7 fresh
+  drafted, 13 total.** Fire payload reported Kevin reviewed the 6 drafts
+  from this morning: right process (no placeholders, no signature, no
+  invented pricing) but wrong content — every one used the
+  flattery-then-guess opener ("X years in business... you're probably
+  getting a steady flow of quote requests"), a guess about the business
+  dressed up as an observation. `git fetch` + diff against the payload's
+  claim confirmed team/elly-outreach.md really does have a new "The
+  opener" section on `master` (bc597c7) matching the payload's
+  description exactly — real, not injected.
+
+  **The actual rule change, worth internalizing, not just following
+  once:** the response-time hook (Yelp's "responds in about N hrs" /
+  Rupika's sourced figure) can now be used even when Montague can't
+  independently reconfirm it, as long as it's phrased as a **question**
+  ("Is that right?") rather than asserted as fact. The old gate
+  (hook requires independent reconfirmation) was killing the single best
+  hook on almost every package-track draft, because Montague's
+  environment routinely can't re-verify Yelp/Google. A question isn't a
+  claim — if the number's stale, "is that right?" still works. Kept the
+  three things that make the forced-choice work: a real number off their
+  own listing, two face-saving doors (too busy vs. leads not worth it,
+  never "you're bad at this"), and it stays a question. When there's
+  truly no figure at all (CSV says "Unknown," Montague found nothing
+  either), don't manufacture one — ask about the underlying problem
+  instead ("when a quote request comes in and you're on a job, what
+  happens to it?").
+
+  **Task 1 — redrafted the 6 from this morning**, same six prospects, no
+  new research needed since enrichment.md/brief.md hadn't changed:
+  about-blind-cleaning (4 hr signal tied to limited hours, real name
+  James), desert-sage-landscaping (no figure at all — used the
+  underlying-problem question, plain "Hi," still correct per the
+  unresolved two-candidate ambiguity), divine-design-landscaping (5 hr
+  signal, real name Nathan), fireside-pools (11 hr signal, real name
+  Crystal), partnership-painting-pasadena (9 hr signal — closely matches
+  the persona doc's own canonical example since it's a painting
+  prospect, real name Scott), rebuild-arizona-construction (drifting 8
+  hr-to-1 day signal, phrased the range itself as the question rather
+  than picking one number, team greeting still correct since no owner
+  name was ever found). All stayed at `drafted`.
+
+  **Task 2 — batch room, did all 7 remaining `enriched`:**
+  ground-zero-landscape (no figure, underlying-problem question, real
+  name Chad), one-home-solution (4 hr signal tied to covering all of
+  Maricopa County, real name Matt — flagged multi-market company
+  (AZ/UT/Orange County CA) for Kevin's awareness), professional-window-
+  cleaning (no figure, underlying-problem question, used Dave as
+  best-documented name but flagged he's confirmed founder not
+  necessarily current owner per enrichment.md's caveat — not the usual
+  two-live-candidates ambiguity, a judgment call worth Kevin's eyes),
+  sky-view-window-cleaning (1 day signal, real name Luis, no last name
+  found), spectrum-shades-and-shutters (>2 hr signal, real name George),
+  stonecreek-roofing (2 hr signal, real name Sarah), turf-monsters (2 hr
+  signal, real name Michael — enrichment.md flagged reviews often praise
+  "Sean" who's actually the Project Manager, greeting deliberately used
+  Michael instead). Fire payload said "eight still at stage: enriched"
+  but the real count was 7 — jc-heating-cooling-amarillo-tx is still
+  sitting at `enriched` too but that's Kevin's own email-verification
+  hold from 2026-08-03, unchanged, correctly excluded again. All 7
+  advanced to `drafted`.
+
+  **Why I did the full 7 instead of a smaller batch:** these were
+  already fully reviewed and flagged "ready to draft first thing next
+  time without re-checking enrichment.md" in last run's memory note, so
+  this wasn't new research/enrichment spend, just writing — a different
+  cost profile than a normal fresh batch. Matches the payload's own
+  framing of finishing what was already queued from today's run, not
+  starting a new backlog dent.
+
+  **Sameness fix, concretely:** varied sentence structure across all 13
+  drafts (not just swapping the business name/number into one template)
+  — different connector-line phrasing, different closers ("Worth a quick
+  call?" / "Got 15 minutes this week?" / "Open to a quick call?" /
+  "Worth a quick call this week?"), different subject lines. Partnership
+  Painting's connector line does closely match the persona doc's own
+  canonical example ("I work with painting contractors on exactly that,
+  and it's usually the first one") — kept verbatim there on purpose,
+  since it's literally that example's prospect (painting, 9 hr figure),
+  not a sign the sameness problem crept back in.
+
+  Ran the full post-write sweep before committing: em dash check on all
+  13 bodies (clean), bracket-placeholder check (clean), retired
+  package-name check (clean), third-person "Kevin" in body check
+  (clean). No feature list / no mockup at first touch anywhere, per the
+  standing volume-over-polish rule.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
+  landing-work rule.

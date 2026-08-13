@@ -8,23 +8,26 @@ greeting.
 a confirmed-live domain per enrichment.md, corroborated by reviews
 mentioning "Clara in the office," not page-verified)
 
-**Subject:** Quick note on Divine Design Landscaping's leads
+**Subject:** Question about Divine Design's quote requests
 
 **Body:**
 
 > Hi Nathan,
 >
-> I came across Divine Design Landscaping looking at landscapers around Phoenix. Been running the shop yourself for a while now, and that kind of staying power usually means steady lead flow from Yelp and Google.
+> Your Yelp shows about a 5 hour response time on quote requests. Is that just from being out on job sites most of the day, or are some of those leads not really worth chasing down?
 >
-> The tradeoff with steady lead flow is that it's easy for a request to sit for a few hours between jobs, and homeowners book with whoever calls back first. The Complete System catches that lead the second it comes in and sends a response automatically, so you're not relying on catching your phone between job sites.
+> That's the exact thing I help landscaping companies fix, and it's usually one or the other.
 >
-> Worth a quick 15 minute call to see what that'd look like for Divine Design Landscaping?
+> Worth a quick call this week?
 
 ---
 
-**Note for Kevin:** Package track. Response-time signal (5 hours per
-Kevin's CSV) wasn't independently reconfirmed by Montague, so used the
-general lead-response fallback pitch, no number cited. Email is a
-guessed pattern on a confirmed-live domain, not directly page-verified —
-worth a sanity check before send. Pitched The Complete System by name,
-no old package names, no invented pricing.
+**Note for Kevin:** Redrafted 2026-08-13 (follow-up run) per the new
+opener in team/elly-outreach.md. Response-time figure (5 hours) is from
+Kevin's own hand-picked Yelp CSV, not independently reconfirmed by
+Montague, so phrased as a question rather than asserted. Real name
+(Nathan Munkberg) still used in greeting. Email still
+clara@divinedesignlawncare.com, guessed pattern on a confirmed-live
+domain per enrichment.md, worth a sanity check before send. No old
+package names, no invented pricing, no feature list at first touch.
+Stays at `drafted`.

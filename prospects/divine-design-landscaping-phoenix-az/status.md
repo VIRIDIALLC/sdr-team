@@ -11,3 +11,6 @@ quote_stage: none
 - 2026-08-13 (Elly): drafted outreach.md -- package pitch, fallback (no confirmed
   response-time figure). Real name (Nathan) used in greeting, first person as Kevin
   throughout. Advanced to `drafted`.
+- 2026-08-13 (Elly, follow-up run): redrafted outreach.md using the new opener
+  (team/elly-outreach.md) -- response-time question (5 hrs, from Kevin's CSV)
+  replaces the old flattery-then-guess opening. Stays at `drafted`.

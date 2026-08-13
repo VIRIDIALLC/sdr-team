@@ -16,3 +16,7 @@ quote_stage: none
   response-time figure). No owner name found, so used the team greeting per the
   current rule ("Hi Rebuild Arizona Construction team,"), first person as Kevin
   throughout. Advanced to `drafted`.
+- 2026-08-13 (Elly, follow-up run): redrafted outreach.md using the new opener
+  (team/elly-outreach.md) — response-time question (~8 hrs to ~1 day, drifted
+  between sources so phrased as a range) replaces the old flattery-then-guess
+  opening. Stays at `drafted`.

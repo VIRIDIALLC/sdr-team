@@ -8,23 +8,28 @@ third-party HUB-certification document, not the company's own site, per
 enrichment.md; reasonably confident given the matching business
 description)
 
-**Subject:** Quick note on About Blind Cleaning's leads
+**Subject:** Quick question about your Yelp response time
 
 **Body:**
 
 > Hi James,
 >
-> I came across About Blind Cleaning looking at blind and window cleaning companies around Phoenix. Family and veteran owned since 1995, over 30 years is a long time to keep a service business running well.
+> Your Yelp shows about a 4 hour response time on quote requests, and I noticed your office hours run Monday to Friday, 10 to 4. Is that mostly the schedule, or are some of those leads just not worth the callback?
 >
-> With limited office hours, a request that comes in outside that window can sit for hours before anyone gets back to it, and homeowners tend to book with whoever answers first. The Complete System catches that lead the moment it comes in, even outside business hours, and gets a response out automatically so it's not waiting on someone to be at a desk.
+> Asking because I run into this with a lot of home service businesses, window and blind cleaning included, and it's almost always one of those two things.
 >
-> Worth a quick 15 minute call to see what that'd look like for About Blind Cleaning?
+> Worth a quick call?
 
 ---
 
-**Note for Kevin:** Package track. Response-time signal (4+ hours,
-limited Mon-Fri 10am-4pm hours per Kevin's CSV) wasn't independently
-reconfirmed by Montague, so used the general lead-response fallback
-pitch rather than citing the figure directly — leaned on the limited-
-hours detail instead since that part is well documented. Pitched The
-Complete System by name, no old package names, no invented pricing.
+**Note for Kevin:** Redrafted 2026-08-13 (follow-up run) per the new
+opener in team/elly-outreach.md — replaces the flattery-then-guess
+version. Response-time figure (4+ hours, tied to the limited Mon-Fri
+10-4 hours) is from Kevin's own hand-picked Yelp CSV, not independently
+reconfirmed by Montague. Per the new rule that's fine because it's
+phrased as a question, not asserted as fact. Real name (James Thomas
+Jr.) still used in greeting. Email still blindcleaningarizona@gmail.com,
+sourced from a third-party HUB-certification doc, not page-verified.
+Pitched The Complete System nowhere in the body on purpose (no feature
+list at first touch per the persona doc). No old package names, no
+invented pricing. Stays at `drafted`.

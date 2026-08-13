@@ -9,25 +9,27 @@ plain per the ambiguous-name convention, not a guess between the two.
 **Channel:** Email (info@desertsagelandscape.com — GUESSED pattern on a
 confirmed-live domain per enrichment.md, not page-verified)
 
-**Subject:** Quick note on Desert Sage Landscaping's leads
+**Subject:** Quick question for Desert Sage
 
 **Body:**
 
 > Hi,
 >
-> I came across Desert Sage Landscaping looking at landscapers around Phoenix. Been in business since 2004, that's two decades of steady work in a crowded market.
+> When a quote request comes in and your crew's already out on a job, what actually happens to it?
 >
-> With that kind of history you're probably getting a good amount of quote requests through Yelp and Google, and landscaping jobs tend to go to whoever calls back first. The Complete System catches a lead the moment it comes in and gets a response out automatically, so nothing sits waiting for someone to get back to the office.
+> I ask because that gap, between a lead coming in and someone getting back to it, is usually where landscaping companies lose the job to whoever calls back first.
 >
-> Worth a quick 15 minute call to see what that'd look like for Desert Sage Landscaping?
+> Worth a quick call?
 
 ---
 
-**Note for Kevin:** Package track. Greeting stayed plain "Hi," because
-enrichment surfaces two possible owner names tied to a possible
-re-registration/rebrand, without confirming either — same convention as
-other ambiguous-name cases, not a guess. Response-time signal unknown
-per Kevin's CSV, not independently reconfirmed, so used the general
-lead-response fallback pitch. Email is a guessed pattern on a confirmed-
-live domain, not page-verified. Pitched The Complete System by name, no
-old package names, no invented pricing.
+**Note for Kevin:** Redrafted 2026-08-13 (follow-up run) per the new
+opener in team/elly-outreach.md. This one has no response-time figure
+at all — Kevin's CSV lists it as "Unknown" and Montague's own search
+didn't surface one either — so per the rule's explicit instruction for
+that case, this uses the underlying-problem question instead of a
+guessed number or the old flattery template. Greeting stayed plain
+"Hi," since enrichment still shows two unresolved owner-name candidates,
+not a guess. Email still info@desertsagelandscape.com, guessed pattern
+on a confirmed-live domain, not page-verified. No old package names, no
+invented pricing, no feature list at first touch. Stays at `drafted`.

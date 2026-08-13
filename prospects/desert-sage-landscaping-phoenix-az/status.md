@@ -12,3 +12,7 @@ quote_stage: none
   response-time figure). Ambiguous owner name (two unresolved candidates), so
   plain "Hi," used per convention, not a guess. First person as Kevin throughout.
   Advanced to `drafted`.
+- 2026-08-13 (Elly, follow-up run): redrafted outreach.md using the new opener
+  (team/elly-outreach.md). No response-time figure exists for this one at all, so
+  used the underlying-problem question per the rule's own fallback instead of the
+  old flattery template. Stays at `drafted`.

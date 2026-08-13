@@ -8,24 +8,27 @@ the greeting.
 confirmed-live domain per enrichment.md, not page-verified, flagging as
 a guess not a confirmed address)
 
-**Subject:** Quick note on Partnership Painting's leads
+**Subject:** Quick question about Partnership Painting's response time
 
 **Body:**
 
 > Hi Scott,
 >
-> I came across Partnership Painting looking at painting contractors around Pasadena. 40+ years in business and 8,000+ projects with two founders still running it since 1984, that's rare to see anymore.
+> Your Yelp shows about a 9 hour response time on quote requests. Is that just you being too busy to get to them, or are the leads not really worth dropping what you're doing?
 >
-> With that kind of track record you're probably getting a steady flow of quote requests, and painting jobs are the kind of thing people book with whoever calls back first. If there's ever a gap between a lead coming in and someone following up, that's real work going to the next contractor on the list. The Complete System catches that the second it comes in and gets a response out automatically, so nothing sits.
+> Asking because I work with painting contractors on exactly that, and it's usually the first one.
 >
-> Worth a quick 15 minute call to see what that'd look like for Partnership Painting?
+> Worth a quick call?
 
 ---
 
-**Note for Kevin:** Package track. Response-time signal (~9 hrs per
-Rupika's brief) couldn't be independently reconfirmed by Montague, so
-used the general lead-response fallback pitch, no number cited. Email is
-a guessed pattern on a confirmed-live domain, not directly page-verified
+**Note for Kevin:** Redrafted 2026-08-13 (follow-up run) per the new
+opener in team/elly-outreach.md. Response-time figure (~9 hrs) is from
+Rupika's brief.md sourcing, corroborated across two searches on matching
+rating/review count but not independently reconfirmed by Montague, so
+phrased as a question rather than asserted. Real name (Scott Penn) still
+used in greeting. Email still scott@partnershippainting.com, guessed
+pattern on a confirmed-live domain per enrichment.md, not page-verified
 (egress proxy blocked partnershippainting.com this run) — worth a sanity
-check before send. Pitched The Complete System by name, no old package
-names, no invented pricing.
+check before send. No old package names, no invented pricing, no
+feature list at first touch. Stays at `drafted`.
