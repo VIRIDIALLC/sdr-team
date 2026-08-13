@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -14,3 +14,4 @@ quote_stage: none
 - 2026-08-13 (Elly, follow-up run): redrafted outreach.md using the new opener
   (team/elly-outreach.md) -- response-time question (11 hrs, from Kevin's CSV)
   replaces the old flattery-then-guess opening. Stays at `drafted`.
+- 2026-08-13 (Kevin, via KIREEK): sent to info@firesideazpools.com.
