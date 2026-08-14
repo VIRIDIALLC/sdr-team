@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: ads
 quote_stage: none
 ---
@@ -24,3 +24,4 @@ quote_stage: none
   `_ads-retainer-facts.md`. Franchise-marketing-risk flag carried into
   Note for Kevin, not resolved. Real name (Dave Kirkwood) used. Advanced
   to drafted. See outreach.md.
+- 2026-08-14 (Kevin, via KIREEK): sent to contactus@mrelectricwichita.com.
