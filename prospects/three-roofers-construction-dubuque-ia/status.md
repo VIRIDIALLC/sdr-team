@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
 - 2026-08-14 (Elly): drafted outreach, website-track pitch using the
   confirmed-dead-domain hook plus the standard 84%-search data point.
   Real name (Victor Mendoza) used. Advanced to drafted. See outreach.md.
+- 2026-08-14 (Kevin, via KIREEK): sent to the3roofersconstruction@gmail.com.
