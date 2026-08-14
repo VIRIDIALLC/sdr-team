@@ -436,3 +436,131 @@
     untouched-blank). ~133 rows still genuinely untouched — this is a
     repeat-dispatch job per `YELP-PROSPECTING-PROCESS.md`, not a one-run
     fix.
+
+- (2026-08-14 run) **Stale-refs false alarm again, resolved before doing any
+  work.** Session started with local `master` and `origin/master` sharing
+  zero common history (`git merge-base` found nothing at all). This looked
+  exactly like the 2026-08-13 split-history scare CLAUDE.md warns about, but
+  the cause here was simpler and fully explainable: this container's repo is
+  a **shallow clone** (`.git/shallow` present, depth 50), and local `master`
+  was created from an old shallow fetch of `origin/master` back when its tip
+  was `ad49973` (2026-08-09). `origin/master` has since moved on (many
+  KIREEK send/follow-up commits, up to `42c9696`), and the shallow depth
+  meant the shared ancestor simply wasn't in the local object set -- not a
+  real rewrite. Confirmed via `git reflog show refs/remotes/origin/master`
+  (showed a plain `forced-update` from the last fetch, i.e. local cache
+  catching up, not GitHub's real history changing) and by checking commit
+  dates on both tips. Local `master` had no unpushed work of mine sitting on
+  it -- it was itself just a cached copy of an old `origin/master` -- so
+  `git reset --hard origin/master` was the correct, safe move, not a
+  destructive one. Worth another nudge to Kevin: this is at least the 2nd
+  time (also 2026-08-13) a session has had to spend real effort
+  distinguishing "real split" from "stale/shallow local ref" -- might be
+  worth the repo doing a full unshallow fetch on container start if that's
+  controllable, so this stops costing an investigation every run.
+
+  Picked up all 7 fresh `stage: found` prospects from Rupika's 2026-08-13
+  batches (3 package, 3 website, 1 ads) named explicitly in this run's
+  fire-payload. Deliberately left the older already-documented `found`
+  prospects alone (aaa-landscape, apple-plumbing, camelback-hardscapes,
+  casey-moriarty-pest-control, cold-fusion-mechanical, copper-state-home-
+  maintenance-repair, dd-plumbing, fish-window-cleaning, good-times-plumbing,
+  landscaping-contractors-crg, nombrano-construction, phoenix-windows-and-
+  doors, pro-natural-landscape, radiant-remodeling-pros, sonrise-roofing,
+  squeeky-kleen-windows, superior-roofing, the-paint-doctor) -- every one of
+  those already has an `enrichment.md` from a prior run and is a documented
+  email-gate hold or dead-end; nothing new would surface from re-running the
+  same searches.
+
+  Applied both of this run's payload-referenced rule changes (both were
+  already live in `team/montague-enrichment.md` on master -- the CALL CARD
+  format and the "carry Rupika's figure forward labeled unverified"
+  amendment -- so this run just meant actually following them, not editing
+  the persona file): every enrichment.md this run leads with a CALL CARD,
+  and every package-track file carries the response-time figure forward
+  even when unconfirmed.
+
+  Result: 5 of 7 advanced to `enriched` (Coleman Painting, Lansford Roofing,
+  Liquid Oak Painting, Mr. Electric of Wichita, The 3 Roofers Construction),
+  2 held at `found` on the email gate (Crandell Pest Control, Noska
+  Lawncare) -- both are otherwise-good prospects, not dead ends: both had
+  their website-gap gate independently reconfirmed (Rupika was right on
+  both), just no discoverable email.
+
+  - **Coleman Painting:** Mark Coleman (owner) confirmed via a named
+    owner-profile feature; email colemanpaintingllc@gmail.com found
+    directly (not guessed). Caught a brief.md inaccuracy worth flagging:
+    brief said "17 years in business," but the LLC's own registration shows
+    it founded 2019 (~7 years) -- noted in enrichment.md rather than
+    silently trusting Rupika's "why they fit" framing. Response-time (~3hr)
+    stayed unconfirmed (search reads ranged 5hr/3hr/30min) -- carried
+    forward as a question per the amended gate. AZROC status conflict
+    carried forward as a plain caution, not a gate.
+  - **Lansford Roofing:** Robert Lansford (owner) confirmed via bio +
+    reviews naming him directly doing the work; email
+    Service@lansfordroofing.com found directly. Response-time instability
+    got *worse* on reconfirmation, not better -- one new read (20-40 min)
+    fell under the original >1hr threshold the prospect was sourced on.
+    Flagged prominently rather than picking a number; hook phrased as a
+    question, not asserted.
+  - **Liquid Oak Painting:** Paul Meils (founder) confirmed; email
+    LiquidOakPainting@gmail.com confirmed directly. Rupika's own flag that
+    this was "the weakest of the three package finds" held up -- 5 separate
+    re-verification searches never reproduced her ~5hr/190-locals figure
+    once, and one of those searches surfaced numbers for a *different*
+    Hawthorne-area painter instead, suggesting the original figure may be a
+    misattribution rather than just stale. CALL CARD hook set to "no
+    verified hook" rather than forcing a shaky number through -- worth
+    remembering as the line between "unconfirmed but real" (still usable as
+    a question) and "actively suspect" (don't use at all).
+  - **Mr. Electric of Wichita (ads track):** Dave Kirkwood (franchise
+    owner/operator) confirmed via LinkedIn + a YouTube video naming him;
+    email contactus@mrelectricwichita.com found directly (not guessed).
+    Ads-gate + the franchise-marketing caution Rupika raised both came back
+    genuinely inconclusive (no Yelp sponsored badge, but also no evidence
+    tying Neighborly/Mr. Electric's generic corporate-marketing support
+    specifically to Yelp spend for this location) -- advanced per the
+    standing inconclusive-but-not-contradicted convention, full franchise
+    detail left in enrichment.md for Kevin to weigh, since a franchise with
+    centralized ad spend is a real judgment call this gate wasn't designed
+    to fully resolve on its own.
+  - **The 3 Roofers Construction (website track):** website-gap
+    independently reconfirmed -- Google's own indexed title for
+    the3roofersconstructionllc.com literally reads "Website Suspended,"
+    corroborating Rupika's Hostinger-suspension finding (direct WebFetch
+    blocked by the egress proxy, as usual in this environment). Victor
+    Mendoza (owner) confirmed via BBB + reviews; email
+    the3roofersconstruction@gmail.com found directly -- a real discovered
+    Gmail address, not a domain-pattern guess, so the dead domain didn't
+    disqualify it.
+  - **Crandell Pest Control (website track, held at found):** website-gap
+    reconfirmed -- crandellpest.com independently verified as belonging to
+    an unrelated Mesa, AZ business (different address/phone/founder, zero
+    service-area overlap), same conclusion Rupika reached. Wayne Crandell
+    name reasonably confirmed via independent review text. Email gate
+    failed -- checked Facebook, Birdeye, BBB, namesandnumbers, ZoomInfo,
+    nothing surfaced, and correctly declined to guess @crandellpest.com
+    since that domain is confirmed to belong to the *other* business (a
+    guess there would be actively wrong, not just unconfirmed -- worth
+    remembering as its own category, distinct from "no domain exists to
+    guess from" and "domain exists but guess unconfirmed").
+  - **Noska Lawncare (website track, held at found):** website-gap
+    reconfirmed via direct DNS failure on noskalawncare.com (ENOTFOUND) --
+    same decisive signal as the 2026-08-02 jcheatingcooling.com case in
+    this file's oldest note. Email gate failed with a real environment
+    limitation attached: facebook.com, MN's Secretary of State
+    registered-agent lookup (mblsportal.sos.mn.gov), and
+    opencorporates.com were all blocked by the egress proxy this run,
+    cutting off the two most promising remaining leads for both name and
+    email. One "Jennifer Noska" name hit came from a people-search/
+    data-broker site (truthfinder.com) -- deliberately excluded, not an
+    approved source and can't be confirmed as this business's owner.
+    Flagged as worth a retry if the proxy access changes, not a dead end on
+    the business.
+  - Every one of this run's WebFetch attempts on target-business domains
+    was blocked by the egress proxy again (colemanpaintingaz.com,
+    lansfordroofing.com, liquidoakpainting.com, crandellpest.com,
+    noskalawncare.com, the3roofersconstructionllc.com,
+    mrelectricwichita.com) -- same recurring pattern logged since
+    2026-08-02. All confirmations this run are search-summary-sourced,
+    flagged as such per-business in each enrichment.md.
