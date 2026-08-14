@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -21,3 +21,4 @@ quote_stage: none
   misattributed to a different business, so fell back to the
   underlying-problem question instead. Real name (Paul Meils) used.
   Advanced to drafted. See outreach.md.
+- 2026-08-14 (Kevin, via KIREEK): sent to LiquidOakPainting@gmail.com.
