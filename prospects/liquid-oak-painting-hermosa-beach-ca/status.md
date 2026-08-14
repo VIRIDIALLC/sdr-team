@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -16,3 +16,8 @@ quote_stage: none
   labeled unverified/unstable per the gate's 2026-08-13 amendment.
   Review count/rating instability reconfirmed (101 vs 4.9/110 across
   two searches this run alone).
+- 2026-08-14 (Elly): drafted outreach. No response-time figure used —
+  Montague's re-verification suggests the original number may have been
+  misattributed to a different business, so fell back to the
+  underlying-problem question instead. Real name (Paul Meils) used.
+  Advanced to drafted. See outreach.md.

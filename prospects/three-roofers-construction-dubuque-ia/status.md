@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -14,3 +14,6 @@ quote_stage: none
   gate PASSED (the3roofersconstruction@gmail.com, cross-confirmed).
   Contact: Victor Mendoza, owner, confirmed via BBB + reviews. Phone:
   (563) 258-2350. Advanced found -> enriched. See enrichment.md.
+- 2026-08-14 (Elly): drafted outreach, website-track pitch using the
+  confirmed-dead-domain hook plus the standard 84%-search data point.
+  Real name (Victor Mendoza) used. Advanced to drafted. See outreach.md.

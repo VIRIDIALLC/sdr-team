@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -18,3 +18,6 @@ quote_stage: none
   said "17 years in business" but directory sources consistently show
   founded 2019 (~7 years) — discrepancy noted for Kevin/Elly, not resolved
   by me. See enrichment.md.
+- 2026-08-14 (Elly): drafted outreach, package-track response-time
+  question opener (~3hr figure, unreconfirmed, phrased as a question).
+  Real name (Mark Coleman) used. Advanced to drafted. See outreach.md.

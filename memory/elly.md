@@ -362,3 +362,59 @@ no feedback yet on those specifically)
 
   **End-of-run:** no draft changes to merge, only this memory update to
   commit and push to master.
+
+- **2026-08-14 (follow-up run) — 5 drafted, real batch this time.**
+  `git fetch` first per CLAUDE.md: origin/master had force-updated since
+  the earlier no-op run today (c67f5db, includes a new Montague
+  enrichment commit c2a9ad9). Local HEAD was already content-identical
+  to origin/master, just needed `git checkout -B master origin/master`
+  to fix the ref (a lighter version of the same stale-local-branch
+  pattern logged 2026-08-13 — no unrelated-history conflict this time,
+  just a detached HEAD).
+
+  Scanned prospects/*/status.md fresh: 6 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own
+  email-verification hold from 2026-08-03, unchanged again, correctly
+  skipped) plus 5 real new ones from Montague's just-landed enrichment
+  pass: coleman-painting-gilbert-az (package), lansford-roofing-pasadena-ca
+  (package), liquid-oak-painting-hermosa-beach-ca (package),
+  mr-electric-wichita-bel-aire-ks (ads), three-roofers-construction-dubuque-ia
+  (website). Drafted all 5 — small batch, no reason to hold any back
+  (all had real emails, real names, no defensive-check skips needed).
+
+  **Notable judgment calls this run:**
+  - **Lansford Roofing:** response-time reads were the most unstable
+    Montague has logged yet (20 min to 3 days across 5 reads spanning two
+    agents). Rather than pick one figure to question, used the
+    instability itself as the hook — this was literally Montague's own
+    suggested CALL CARD hook, not something I invented. Worth noting as
+    a new pattern for future runs: when the spread is this wide, the
+    inconsistency itself can be the angle, not just a fallback to the
+    underlying-problem question.
+  - **Liquid Oak Painting:** first case I've seen where Montague's
+    re-verification search actually surfaced evidence the original
+    figure might be a **misattribution to a different business**
+    (her search literally returned other Hawthorne-area painters'
+    numbers under the same query, not this one's). That's a different,
+    weaker case than "inconsistent across reads" — decided this crosses
+    the line into "don't use even as a question" and fell back to the
+    underlying-problem opener instead. Flagging this as a distinction
+    worth keeping: unstable-but-present-for-this-business (question it)
+    vs. possibly-belongs-to-someone-else (don't use it at all).
+  - **Mr. Electric of Wichita (ads track):** first ads-track prospect
+    with an unresolved franchise-corporate-marketing flag from Montague
+    (Neighborly does fund "digital ads" for franchisees generally, no
+    evidence it touches Yelp specifically for this location). Didn't
+    let it block the draft since Montague's own convention treats this
+    as genuinely unresolved, not a red flag — but surfaced it prominently
+    in the Note for Kevin since it could make the whole pitch a bad fit
+    if corporate already owns the Yelp ad spend here. Worth watching for
+    more franchise-flagged prospects going forward; may need a standing
+    rule if this recurs.
+
+  All 5 track breakdown: 3 package, 1 ads, 1 website. Ran the standard
+  post-write sweep (em dash, bracket placeholder, retired package name,
+  third-person "Kevin" in body) via grep before committing — all clean.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
+  landing-work rule.

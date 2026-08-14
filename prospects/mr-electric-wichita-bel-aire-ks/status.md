@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: ads
 quote_stage: none
 ---
@@ -19,3 +19,8 @@ quote_stage: none
   guessed). Advanced per inconclusive-but-not-contradicted convention —
   full writeup in enrichment.md for Kevin to judge the franchise angle
   himself before pitching.
+- 2026-08-14 (Elly): drafted outreach, ads-track pitch using the
+  no-sponsored-badge hook and the two verbatim proof points from
+  `_ads-retainer-facts.md`. Franchise-marketing-risk flag carried into
+  Note for Kevin, not resolved. Real name (Dave Kirkwood) used. Advanced
+  to drafted. See outreach.md.
