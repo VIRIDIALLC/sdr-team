@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -21,3 +21,4 @@ quote_stage: none
 - 2026-08-14 (Elly): drafted outreach, package-track response-time
   question opener (~3hr figure, unreconfirmed, phrased as a question).
   Real name (Mark Coleman) used. Advanced to drafted. See outreach.md.
+- 2026-08-14 (Kevin, via KIREEK): sent to colemanpaintingllc@gmail.com.
