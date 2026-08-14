@@ -299,6 +299,82 @@
   Paul's Termite and Pest Control (Tallahassee FL, 15 reviews,
   established 1971) — good fallbacks if the threshold gets relaxed.
 
+- (run 2026-08-14) Started on a detached HEAD again with a "forced update" on
+  fetch — same stale-ref symptom as 2026-08-13, not an actual history problem.
+  `git fetch` + `git checkout -B master origin/master` confirmed local master
+  already matched origin's tip (`c67f5db`), nothing lost. Ran all three
+  tracks as parallel sub-agents again (continues working well, ~6-9 min
+  wall-clock per agent this run).
+- (package/priority track, run 2026-08-14) 3 hits, all corroborated with 2+
+  pain signals each: CVA Exterminators (Santa Clarita CA pest control, ~9hr
+  Yelp response despite 4.9★/145 reviews + no self-serve booking for new
+  leads, 28yr-established — clean "too busy for new leads" narrative), Fifth
+  Element Landscape (Pasadena CA landscaping, ~2day response + a "Book
+  Online" page that's non-functional — broken booking may read worse than no
+  booking page), Scenic View Landscape (Glendora CA landscaping, ~9hr
+  response + no booking found at all, no website found either — flagged for
+  Montague's no-website-subset upsell tag). Both landscaping hits sourced
+  from the same Diamond Bar CA search — Yelp's radius-listing behavior
+  surfaces businesses from neighboring cities under one search, worth
+  remembering when logging "tried" markets (the market searched isn't always
+  the business's actual home city). Dropped rather than shipped: Gambit
+  Roofing (Encino/LA) — response-time figure drifted 9hr/8hr/50min across
+  three searches including one sub-1hr reading that directly contradicts the
+  pain signal, identity was solid but the number wasn't trustworthy enough;
+  Empowered Electrical Solutions (Sun City/Surprise AZ) — similar drift,
+  3hr claim resolved to 10min on direct check; a Paradise Valley AZ
+  remodeling signal ("1 day" response) never resolved to one company name
+  across 3 candidates. Many suburb/vertical combos tried empty this run
+  (Sun City/Sun Lakes/Fountain Hills/Ahwatukee/Laveen/San Tan Valley AZ;
+  Arcadia/Alhambra/Cerritos/Santa Clarita/Palmdale/Montebello/Bellflower/
+  Lancaster CA, various verticals) — see full list in the 2026-08-14 package
+  research agent transcript if repeating this ground. Santa Clarita
+  restoration resolved to Paul Davis, a national franchise — poor ICP fit,
+  worth remembering franchises can surface under any vertical search, not
+  just the ones flagged before.
+- (website track, run 2026-08-14) Fresh small/mid markets tried: Kearney NE,
+  Owensboro KY, Dothan AL, Great Falls MT, Tupelo MS — 3 clean hits (Al's
+  Heating and Air Conditioning, Kearney NE, 40+yr family HVAC, Facebook +
+  directories only; Bryan's Pest Control, Owensboro KY, ~33yr, Facebook +
+  directories only, real owner name confirmed; Boricuas Painting LLC, Dothan
+  AL, Facebook + Birdeye only, owner name NOT confirmed — flagged for
+  Montague to try an AL LLC filing lookup). Watch for same-name-different-
+  business collisions again this run (a Florida "Bryan Pest Control" with
+  its own site is unrelated to the Owensboro KY hit — confirmed different,
+  not counted as a miss). Banked but not used, worth a follow-up pass:
+  Starkey Heating and Air LLC (Kearney NE, looked like a hit, not fully
+  confirmed), Jones LawnCare & Landscaping LLC (Tupelo MS, free Ueniweb
+  builder subdomain — a genuine hit by the free-builder-subdomain rule,
+  just needs an owner-name pass), Hat Creek Lawn and Land (Tupelo MS,
+  Facebook-only but unusually thin footprint, needs one more confirming
+  search). Great Falls MT ran cold (all real sites: 4Aces Plumbing, Kindred
+  Plumbing & Heating).
+- (ads track, run 2026-08-14) 2 clean hits, city-scoped `site:yelp.com
+  [vertical] reviews [city]` continues to work: Charleston Roofs + Windows
+  (North Charleston SC roofing, 20-21 Yelp reviews, founded 2011, cleanest
+  hit of the run, no flags) and Quality Overhead Door (Toledo OH garage
+  doors, 41 Yelp reviews, family-owned since 1982, but flagged as a
+  multi-platform operator — 882 reviews on Birdeye — worth Montague
+  checking for paid marketing elsewhere despite no Yelp sponsored badge,
+  same caution pattern as Same Day Electric from the 2026-08-12 run). A
+  third candidate, Aaron's Plumbing (South Bend IN, 21 Yelp reviews, no
+  sponsored badge), was found but deliberately NOT queued — 2.9-star rating
+  with pricing complaints. New judgment call this run: a bad star rating is
+  itself a reason to drop an ads-track candidate even if the review-count
+  and no-ads signals are clean, since more ad traffic to a poorly-rated
+  business doesn't convert — worth treating low rating (call it under
+  ~3.5-4 stars) as a standing disqualifier for this track going forward, not
+  just a "flag and queue anyway" case like franchise/multi-platform risk.
+  Rocky Top HVAC (Knoxville TN) also dropped for a heavier multi-platform
+  flag (1,148 aggregated reviews via a review-generation dashboard vs. 20 on
+  Yelp — a much bigger gap than the Toledo case). Banked near-miss backups
+  under the 20-review threshold if the threshold gets relaxed: John H.
+  Coleman (Knoxville TN HVAC, 13), Easy Electrical Solutions (Columbia SC,
+  15), Goodman Plumbing (Asheville NC, 14), Drain Surgeon (South Bend IN,
+  10, 35+yrs). Franchise risks found and excluded per standing policy: Mr.
+  Electric of Columbia (Neighborly network), Overhead Door Company of
+  Little Rock (official brand distributor).
+
 ## Dead ends to stop searching
 
 (none yet)
