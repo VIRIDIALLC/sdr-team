@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: staged
 track: website
 quote_stage: none
 ---

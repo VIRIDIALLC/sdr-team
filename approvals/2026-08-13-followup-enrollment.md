@@ -1,0 +1,20 @@
+# Follow-up sequence — 6 prospect(s) ready to enroll
+
+Sent 2+ days ago, real email on file, no reply recorded.
+Enrolling adds them to the GHL **Viridia Yelp Prospecting** sequence.
+
+**Nothing is enrolled yet.** Approve this batch and KIREEK enrolls them;
+leave it and nothing happens.
+
+| Prospect | Email | First sent |
+|---|---|---|
+| Aplus Garage Doors Idaho Falls Id | APLUSGARAGEDOORSIDAHO@gmail.com | 2026-08-11 |
+| Az Grand Roofing Painting Gilbert Az | info@azroofingandpainting.com | 2026-08-11 |
+| Exterior Specialists Pasadena Ca | exteriorspecialist@sbcglobal.net | 2026-08-11 |
+| Family Painting Services Cheyenne Wy | joselinegutierrez.com@gmail.com | 2026-08-11 |
+| Johnston Heating Air Hot Springs Village Ar | johnstonair.hs@gmail.com | 2026-08-11 |
+| Penas Landscaping Pocatello Id | hgservicespocatello@gmail.com | 2026-08-11 |
+
+---
+
+_Staged automatically. The send itself is Kevin's -- an automated sequence firing without a human is the one thing the outbound backstop exists to prevent._
