@@ -564,3 +564,28 @@
     mrelectricwichita.com) -- same recurring pattern logged since
     2026-08-02. All confirmations this run are search-summary-sourced,
     flagged as such per-business in each enrichment.md.
+
+- (2026-08-14, duplicate-fire note) A second Montague session ran this same
+  scheduled task concurrently with this one -- both started from the same
+  base commit (`e49adf7`), both independently picked up the same 2026-08-13
+  batch, and both landed on identical outcomes for the 5 prospects we both
+  touched (Coleman Painting, Lansford Roofing, Mr. Electric of Wichita
+  advanced; Crandell Pest Control, Noska Lawncare held on the email gate).
+  That other session additionally covered Liquid Oak Painting and The 3
+  Roofers Construction, and pushed to `origin/master` first (`c2a9ad9`).
+  When this session went to push its own equivalent commit, `git fetch`
+  showed the other one had already landed -- since my commit was still
+  local-only (never pushed, so no shared history to rewrite) and its
+  substance was fully subsumed by the already-landed one (same or more
+  prospects, same conclusions), the safe move was `git reset --hard
+  origin/master` rather than force a duplicate/conflicting merge of two
+  near-identical enrichment.md sets for the same 5 folders. No data lost --
+  both passes reached the same real findings independently, which is itself
+  a decent cross-check. Only The Paint Doctor (ads track) is left untouched
+  from the 2026-08-13 batch now; leaving it for next run rather than picking
+  it up in a third pass today, per the cap-batch-size rule -- today's
+  combined coverage (7 prospects across two sessions) is already well above
+  a normal day's batch. Worth a real heads-up to Kevin: something is
+  double-firing this scheduled task (or two were configured to run at
+  overlapping times) -- worth checking the schedule/cron config, since this
+  wastes a full duplicate run's worth of API cost today.
