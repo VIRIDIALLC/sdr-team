@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
   as the hook (20 min to 3 days depending on when checked) rather than
   any single figure. Real name (Robert Lansford) used. Advanced to
   drafted. See outreach.md.
+- 2026-08-14 (Kevin, via KIREEK): sent to Service@lansfordroofing.com.
