@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: staged
 track: package
 quote_stage: none
 ---

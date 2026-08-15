@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: staged
 track: ads
 quote_stage: none
 ---
