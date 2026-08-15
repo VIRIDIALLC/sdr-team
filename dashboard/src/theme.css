@@ -1,0 +1,92 @@
+/*
+ * DESIGN TOKENS — the single swap point for brand/theme.
+ *
+ * Everything visual in this app resolves to a variable below; no component
+ * hardcodes a color. To match KIREEK's frontend, replace the values here and
+ * nothing else needs to change. (KIREEK's repo wasn't reachable from the
+ * session that scaffolded this, so these are Viridia-brand defaults — see
+ * dashboard/README.md, "Matching KIREEK".)
+ */
+
+:root {
+  /* Surfaces — dark-first; this is a console you leave open on a second monitor. */
+  --bg: #0a0f0d;
+  --bg-elev: #101714;
+  --surface: #141d1a;
+  --surface-hover: #1a2521;
+  --border: #22302b;
+  --border-strong: #2e403a;
+
+  /* Text */
+  --text: #e8f0ec;
+  --text-muted: #9aada5;
+  --text-faint: #6b7f77;
+
+  /* Brand — Viridia green */
+  --accent: #34d399;
+  --accent-dim: #1d7d5c;
+  --accent-wash: rgba(52, 211, 153, 0.12);
+
+  /* Stage colors — carry the pipeline's left-to-right progression. */
+  --stage-found: #7c8b96;
+  --stage-enriched: #4a9fd8;
+  --stage-drafted: #e0a54a;
+  --stage-approved: #a78bfa;
+  --stage-sent: #34d399;
+  --stage-dismissed: #5a6b64;
+
+  /* Track colors */
+  --track-package: #34d399;
+  --track-website: #4a9fd8;
+  --track-ads: #e0a54a;
+
+  /* Status signals */
+  --warn: #e0a54a;
+  --danger: #f0736a;
+
+  /* Type */
+  --font: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
+
+  /* Space + shape */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* The board is legible in daylight too — same tokens, light values. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    --bg: #f6f8f7;
+    --bg-elev: #ffffff;
+    --surface: #ffffff;
+    --surface-hover: #f0f4f2;
+    --border: #dde5e1;
+    --border-strong: #c6d2cc;
+
+    --text: #10201a;
+    --text-muted: #566761;
+    --text-faint: #7d8e88;
+
+    --accent: #0f9d6e;
+    --accent-dim: #0b7a55;
+    --accent-wash: rgba(15, 157, 110, 0.1);
+
+    --stage-found: #6b7a85;
+    --stage-enriched: #2b7fb8;
+    --stage-drafted: #b8801f;
+    --stage-approved: #7c5cd6;
+    --stage-sent: #0f9d6e;
+    --stage-dismissed: #8b9a94;
+
+    --track-package: #0f9d6e;
+    --track-website: #2b7fb8;
+    --track-ads: #b8801f;
+
+    --warn: #b8801f;
+    --danger: #d14a40;
+
+    --shadow: 0 1px 2px rgba(16, 32, 26, 0.06), 0 8px 24px rgba(16, 32, 26, 0.06);
+  }
+}
