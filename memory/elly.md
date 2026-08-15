@@ -418,3 +418,61 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
   landing-work rule.
+
+- **2026-08-15 (this run) — 6 drafted, normal batch.** `git fetch origin
+  master` first per CLAUDE.md: origin had force-updated again
+  (7040475, a fresh Montague enrichment pass plus a Rupika find-batch).
+  Local HEAD was already content-identical to origin/master (`git diff`
+  empty), just a detached-HEAD ref problem again, same pattern as
+  2026-08-13/08-14 — fixed with `git checkout -B master origin/master`,
+  no merge needed.
+
+  Scanned `prospects/*/status.md` fresh: 7 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification
+  hold from 2026-08-03, unchanged yet again, correctly skipped) plus 6
+  real new ones, all from Montague's 2026-08-15 pass on Rupika's
+  2026-08-14 finds: charleston-roofs-windows (ads), quality-overhead-door
+  (ads), the-paint-doctor-colorado-springs (ads), cva-exterminators
+  (package), fifth-element-landscape (package), scenic-view-landscape
+  (package). Drafted all 6 — normal-sized batch, all had real emails
+  (direct or domain-grounded guess), no defensive-check skips needed.
+
+  **Judgment calls worth flagging:**
+  - **Quality Overhead Door:** first prospect with a PE-acquisition flag
+    (GarageCo Holdings/Gridiron Capital, Aug 2024) rather than a
+    franchise-corporate flag like Mr. Electric of Wichita. Treated it the
+    same way — didn't let it block the draft since the pitch itself is
+    still to the real local owners (Bruce/Lisa Roth), but surfaced it
+    prominently in the Note for Kevin since the ad-spend decision may
+    route through corporate now. Worth a standing pattern: PE roll-up
+    acquisitions are a new variant of the same "who actually controls
+    marketing spend here" question already tracked for franchises.
+  - **CVA Exterminators:** first time using a named non-owner contact
+    (GM Dan Caballero) in the greeting instead of falling back to a team
+    greeting, since Montague explicitly designated him as the best
+    contact when no owner name exists anywhere. Read this as consistent
+    with "if there's a real one, use it" — a confirmed real person beats
+    a team greeting even if he's not the owner. Also the most unreliable
+    response-time read yet (16 sec to 9+ hrs across sources) — dropped
+    entirely rather than even used as a question, per Montague's own
+    explicit recommendation in enrichment.md.
+  - **Fifth Element Landscape:** combined two verified signals in one
+    hook (response-time question + the confirmed broken "Book Online"
+    page) rather than picking just one, since both were independently
+    confirmed real and reinforce the same point. First time doing this;
+    the standard shape stays "short, question does the work" so kept it
+    to two sentences, not a longer combined pitch.
+  - **Scenic View Landscape:** Montague corrected Rupika's original
+    "no website" note (a real site exists, form-only, no booking) but
+    per `_criteria.md` this stays `track: package`, doesn't reroute to
+    `track: website` — first real example of that distinction actually
+    showing up in a draft. Used the response-time question as the hook
+    instead of the website-gap angle since it was the more specific
+    signal.
+
+  Track breakdown: 3 ads, 3 package. Ran the standard post-write sweep
+  (em dash, bracket placeholder, retired package name, third-person
+  "Kevin" in body) via grep before committing — all clean.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
+  landing-work rule.

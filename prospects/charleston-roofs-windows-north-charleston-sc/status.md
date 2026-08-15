@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: ads
 quote_stage: none
 ---
@@ -13,3 +13,6 @@ quote_stage: none
   live, actively-used domain — email gate passed. Ad-activity check
   inconclusive, not contradicted — advanced per standing convention. See
   enrichment.md.
+- 2026-08-15 (Elly): drafted outreach pitching the ad-management
+  retainer, Sponsored-badge hook, greeted to co-owner Blake Miller.
+  Advanced to drafted.

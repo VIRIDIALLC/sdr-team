@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: ads
 quote_stage: none
 ---
@@ -12,3 +12,6 @@ quote_stage: none
   company's own live site — email gate passed. Ad-activity check
   inconclusive, not contradicted (no Sponsored badge evidence either way)
   — advanced per standing convention. See enrichment.md.
+- 2026-08-15 (Elly): drafted outreach pitching the ad-management
+  retainer, Sponsored-badge hook, greeted to owner Brian Wooldridge.
+  Advanced to drafted.

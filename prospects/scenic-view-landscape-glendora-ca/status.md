@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -13,3 +13,5 @@ quote_stage: none
   silence not contradiction — carried forward unverified. **Corrected
   Rupika's "no website" note — a real site (scenicviewlandscapeinc.com)
   exists, form-only contact, no booking.** Advanced. See enrichment.md.
+- 2026-08-15 (Elly): drafted outreach using the response-time question
+  opener, greeted to owner Isaias Gallegos. Advanced to drafted.

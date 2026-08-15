@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -13,3 +13,7 @@ quote_stage: none
   actively unreliable on reconfirmation (readings from 16sec to 9hrs
   across sources) — dropped as a hook, not carried forward as a question.
   Advanced. See enrichment.md.
+- 2026-08-15 (Elly): drafted outreach using the underlying-problem
+  opener (no response-time hook, per Montague's explicit call), greeted
+  to GM Dan Caballero since no owner name exists anywhere. Advanced to
+  drafted.

@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: ads
 quote_stage: none
 ---
@@ -14,3 +14,8 @@ quote_stage: none
   guessed on confirmed-live domain (info@qualityoverheaddoor.com) — no
   direct address found. Ad-activity inconclusive, franchise-distinction
   re-confirmed. Advanced. See enrichment.md.
+- 2026-08-15 (Elly): drafted outreach pitching the ad-management
+  retainer, Sponsored-badge hook, greeted to local-facing owner Bruce
+  Roth. PE-acquisition (GarageCo/Gridiron Capital) flag carried forward
+  prominently in the Note for Kevin — decision-maker on ad spend may now
+  route through corporate. Advanced to drafted.
