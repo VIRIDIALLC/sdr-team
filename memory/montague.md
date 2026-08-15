@@ -589,3 +589,74 @@
   double-firing this scheduled task (or two were configured to run at
   overlapping times) -- worth checking the schedule/cron config, since this
   wastes a full duplicate run's worth of API cost today.
+
+- (2026-08-15 run) No stale-refs/detached-HEAD issue this time — session
+  started cleanly synced to `origin/master` tip (56ee626), no fetch/reset
+  needed. Backlog had grown to 15 untouched `stage: found` prospects
+  across three batches: 1 leftover from 2026-08-13 (the-paint-doctor,
+  ads), 8 from 2026-08-14 (never picked up — charleston-roofs-windows,
+  quality-overhead-door, fifth-element-landscape, scenic-view-landscape,
+  cva-exterminators, als-heating, boricuas-painting, bryans-pest-control),
+  and 6 brand-new from today's Rupika batch (america-plumbing,
+  design-array-garage-door, walnut-valley-pest-control, brudwick-heating-
+  cooling, daves-plumbing-heating-cooling, high-country-lawn-landscape).
+  Picked up the oldest 9 (the 8/13 + 8/14 backlog) to clear it before it
+  grows further; deliberately left the freshest 6 (today's batch) for
+  next run per the cap-batch-size rule. Used 9 parallel research
+  subagents (pure-research, no file writes) then wrote all enrichment.md/
+  status.md updates myself for consistency — this run's batch was larger
+  than a normal 4-7, but justified by clearing a 2-day-old backlog rather
+  than letting it compound; flagging so it isn't read as the new normal
+  batch size without Kevin saying so.
+
+  Result: 6 of 9 advanced to `enriched` (The Paint Doctor, Charleston
+  Roofs + Windows, Quality Overhead Door — all ads; Fifth Element
+  Landscape, Scenic View Landscape, CVA Exterminators — all package), 3
+  held at `found` on the email gate (Al's Heating and Air Conditioning,
+  Boricuas Painting, Bryan's Pest Control — all website track).
+
+  - **Quality Overhead Door (ads):** real find — confirmed via GarageCo
+    Holdings' own acquisition announcement and a Gridiron Capital press
+    release that this business was acquired by a PE-backed garage-door
+    roll-up in August 2024. Not an independent local shop anymore. Didn't
+    hold it back (none of the defined gates cover ownership structure),
+    but flagged prominently in enrichment.md — same "advance but flag for
+    Kevin's judgment" pattern as the Boldt HVAC license-status caution
+    from 2026-08-11. Worth Kevin deciding if PE-owned/franchise-adjacent
+    prospects need their own gate, since this is now two different
+    ownership-structure surprises (franchise marketing risk on Mr.
+    Electric 2026-08-14, PE roll-up here) in about a week.
+  - **Scenic View Landscape (package):** caught a real correction to
+    Rupika's brief — she said "no website surfaced," but
+    scenicviewlandscapeinc.com is a real, live site (matches phone +
+    CSLB license exactly). Same "double-check a 'no website found' brief
+    note" pattern flagged before (J Powers Electric, 2026-08-12) —
+    worth remembering this keeps recurring across both website-gap and
+    package-track no-website checks, not a one-off.
+  - **CVA Exterminators (package):** response-time signal moved from
+    "unconfirmed" to actively unreliable on reconfirmation — readings
+    spanned 16 seconds to 9+ hours across sources, likely because the
+    business has duplicate/split Yelp listings. Per the 2026-08-13
+    amendment, an unconfirmed figure is still usable as a question, but
+    this crossed into a different category (mutually contradictory, not
+    just unconfirmed) — dropped the number entirely and used a generic
+    question hook instead. Worth naming as a third bucket alongside
+    "confirmed" and "unconfirmed-but-usable": actively-contradictory
+    figures shouldn't be used even as a question.
+  - **Email gate, guessed-pattern precedent used 3x this run** (Quality
+    Overhead Door, Fifth Element Landscape, Scenic View Landscape) — all
+    domain-grounded guesses on confirmed-live/active company sites, same
+    reading of the gate established 2026-08-11/12. Continuing to apply it
+    consistently; still worth Kevin confirming this reading is what he
+    intended, since it's now been used 6+ times across runs.
+  - All three website-track email-gate holds this run had zero domain to
+    even ground a guess in (confirmed no website for any of the three) —
+    a cleaner category than the guessed-pattern cases above, phone-only
+    reachable for now.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 9 prospects this run (company domains, BBB, Facebook,
+    YellowPages, Birdeye, business.site, Alabama SOS) — same recurring
+    pattern logged since 2026-08-02, all findings this run are search-
+    snippet-sourced, flagged per-business in each enrichment.md.
+  - Backlog after this run: the 6 freshest 8/15 prospects (listed above)
+    still untouched, left for next run.

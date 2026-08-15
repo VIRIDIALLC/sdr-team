@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -7,3 +7,9 @@ quote_stage: none
 ## Log
 
 - 2026-08-14 (Rupika): found, added to pipeline.
+- 2026-08-15 (Montague): Owner Isaias Gallegos confirmed. Email guessed
+  on confirmed-live domain (info@scenicviewlandscapeinc.com) — no direct
+  address found. Response-time figure (~9 hrs) unconfirmed, genuine
+  silence not contradiction — carried forward unverified. **Corrected
+  Rupika's "no website" note — a real site (scenicviewlandscapeinc.com)
+  exists, form-only contact, no booking.** Advanced. See enrichment.md.

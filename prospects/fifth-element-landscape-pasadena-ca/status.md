@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -7,3 +7,9 @@ quote_stage: none
 ## Log
 
 - 2026-08-14 (Rupika): found, added to pipeline.
+- 2026-08-15 (Montague): Owner Alejandro Ramirez confirmed. Email
+  guessed on confirmed-live domain (info@fifthelementlandscape.net) — no
+  direct address found. Response-time figure (~2 days) unconfirmed,
+  conflicting reads seen (12min/1day) — carried forward as unverified per
+  the amended gate. Website confirmed real; broken "Book Online" page
+  confirmed as a real pitch angle. Advanced. See enrichment.md.
