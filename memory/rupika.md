@@ -375,6 +375,76 @@
   Electric of Columbia (Neighborly network), Overhead Door Company of
   Little Rock (official brand distributor).
 
+- (run 2026-08-15) Scheduled run scoped to two tracks only (package + website
+  — ads track skipped per this run's task instructions). `git fetch` showed a
+  force-updated `origin/master` and a detached HEAD again — same stale-ref
+  symptom as 2026-08-13/14, confirmed HEAD already matched `origin/master`
+  tip (`c5aac38`), fixed with `git checkout -B master origin/master`, nothing
+  lost. Ran both tracks as parallel sub-agents again (continues working
+  well).
+- (package/priority track, run 2026-08-15) 3 hits, all flagged for
+  response-time drift (a recurring pattern worth treating as normal, not
+  alarming, as long as identity holds — see prior runs): Walnut Valley Pest
+  Control (Walnut CA/LA metro, surfaced via a Fullerton CA search, 35+yr
+  family-owned, 2hr/9hr drift on Yelp response, 67 reviews stable),
+  America Plumbing LLC (Scottsdale AZ, surfaced via Apache Junction AZ
+  search, "responds in about 1 day" — single-source but the sharpest signal
+  this run, AZ ROC license active, only 3 reviews/likely small op), Design
+  Array Garage Door Store (Peoria AZ, surfaced via Avondale AZ search, 1998/
+  25+yr/BBB-accredited, ~2hr response — weakest of the three but most
+  "stable" identity). New failure mode logged this run: several strong
+  response-time hits (J Martin HVAC Anaheim 2hr/700+ reviews/5,000+
+  customers since 2014; Green Machine Pest Control Queen Creek 2hr/579
+  reviews; Black Diamond Paver Stones Diamond Bar 3hr/multi-location chain;
+  Apex Garage Door Avondale 1hr exactly/513 reviews) turned out too
+  large/scaled for the owner-drowning ICP despite clearing the >1hr
+  threshold — review count/company scale needs cross-checking before
+  finalizing a response-time hit, not just the number itself. Cross-suburb
+  resolution keeps recurring too (a suburb-scoped search surfacing a
+  business actually HQ'd in a neighboring suburb) — same as 2026-08-14's
+  Diamond Bar/landscaping note, now confirmed again with Fullerton->Walnut,
+  Apache Junction->Scottsdale, Avondale->Peoria. Flagged but NOT queued:
+  Javier's Landscape (Huntington Beach CA, 10hr response/5.0star/solo
+  owner — excellent signal but service area is Orange County, outside the
+  stated LA-metro priority scope; worth promoting if Kevin loosens the
+  geography). ~20 suburb/vertical combos tried this run to land 3 hits —
+  felt like a lower hit-rate than prior runs, possibly because several
+  "fresh" suburbs tried (Peoria/Buckeye/Apache Junction/Queen Creek AZ) are
+  smaller markets with fewer Yelp-advertising businesses overall. Full
+  empty-combo list (avoid re-trying as-is): plumbing (Peoria/Glendale/
+  Buckeye AZ), roofing (Buckeye/Peoria/Queen Creek AZ, Inglewood CA),
+  electrical (Apache Junction/Glendale/Buckeye AZ, Burbank CA), HVAC
+  (Anaheim CA, Buckeye AZ), painting (Van Nuys/Diamond Bar CA), restoration
+  (Santa Monica CA).
+- (website track, run 2026-08-15) Fresh small/mid markets tried: Watertown SD
+  (pop. ~22k) and Gillette WY (pop. ~33k) — neither tried before. 3 hits:
+  Brudwick Heating & Cooling LLC (Watertown SD, 5.0star/20 reviews,
+  Facebook-only, distinctive surname so near-zero collision risk), Dave's
+  Plumbing Heating & Cooling Inc (Watertown SD, 25+yr established,
+  Facebook-only, generic name but every source resolved to the same
+  address/phone so no collision found in practice), High Country Lawn and
+  Landscape LLC (Gillette WY, full-service year-round, Facebook +
+  Bizapedia-filing-record only, personal Gmail signal
+  highcountry307@gmail.com, ruled out two same-name decoys in PA and
+  Casper WY before confirming). New website-gap subtype found this run:
+  a business's own name resolving only to a manufacturer/vendor
+  dealer-locator page (e.g. Aaron's Heating & Cooling, Watertown SD ->
+  only surfaces trane.com, not an owned site) is functionally a
+  no-website case even though a "website" technically appears in
+  search — worth treating as its own subtype alongside dead-domain/
+  free-builder-subdomain going forward. Runners-up banked, not used
+  (worth a follow-up pass): Aaron's Heating & Cooling (Watertown SD,
+  trane.com-only per above, owner name confirmed as Aaron Schmit), Zap
+  Lawn Care LLC (Gillette WY, no site across Manta/Nextdoor/Angi/Yelp,
+  skipped only to avoid two landscaping hits from the same city in one
+  batch). Watertown SD has one more untried real-site miss on record
+  (Joe's Heating, Cooling & Refrigeration — has a real site, not a fit).
+  Alexandria MN (pest control) ran cold this pass (Heid N Seek and
+  Reishus Pest Control both have real sites) — untried verticals remain
+  there (HVAC, roofing, electrical, garage doors, window cleaning) if
+  revisited. Gillette WY has untried verticals remaining too (roofing,
+  electrical, garage doors, restoration, painting, remodeling).
+
 ## Dead ends to stop searching
 
 (none yet)
