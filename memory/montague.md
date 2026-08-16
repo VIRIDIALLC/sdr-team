@@ -660,3 +660,113 @@
     snippet-sourced, flagged per-business in each enrichment.md.
   - Backlog after this run: the 6 freshest 8/15 prospects (listed above)
     still untouched, left for next run.
+
+- (2026-08-16 run) Clean start — no stale-refs issue (`git fetch origin`
+  first per CLAUDE.md, then `git reset --hard origin/master`; local was
+  just a stale shallow-clone cache same shape as 2026-08-14, no unpushed
+  work lost). Backlog had grown to 11 untouched `stage: found` prospects:
+  the 6 leftover from 2026-08-15 (america-plumbing, design-array-garage-
+  door, walnut-valley-pest-control — all package; brudwick-heating-
+  cooling, daves-plumbing-heating-cooling, high-country-lawn-landscape —
+  all website) plus 5 brand-new from today's Rupika batch
+  (jones-lawncare-landscaping, karber-plumbing, pest-patrol-slv — website;
+  all-professional-landscape, merican-plumbing-sewer-specialist —
+  package). Picked up the older 6 to clear the 8/15 backlog before it
+  compounds further, per the standing oldest-first convention; left
+  today's freshest 5 for next run per cap-batch-size. Used 6 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself.
+
+  Result: 5 of 6 advanced to `enriched` (America Plumbing, Design Array
+  Garage Door, Walnut Valley Pest Control — all package; Brudwick Heating
+  & Cooling, High Country Lawn and Landscape — both website), 1 held at
+  `found` on the email gate (Dave's Plumbing Heating & Cooling — website
+  track).
+
+  - **America Plumbing:** owner name Egzon Osmani found via BBB
+    Owner/Principal Contact listing — flagged one real caveat: that BBB
+    profile lists a Tempe, AZ address, not the Scottsdale HQ in the brief.
+    Plausible (BBB mailing address vs. service address is common for
+    home-service LLCs) but not independently corroborated by a second
+    source this run — worth Kevin doing a verbal double-check on the call
+    rather than treating it as fully nailed down. Real website confirmed
+    (americaplumbingaz.com) even though it's package track — good, not a
+    website-build fit.
+  - **Design Array Garage Door:** caught a real gatekeeper trap worth
+    remembering as a pattern — a Yelp Q&A answer was signed "Kevin," but
+    that's a staff member fielding customer questions, not the owner
+    (real owner is Ben Ahmann, confirmed via BBB + the site's own About Us
+    page). A signed reply on Yelp/reviews isn't automatically the owner;
+    cross-check against an About page or BBB filing before treating a
+    signed name as the contact.
+  - **Walnut Valley Pest Control:** response-time signal actually
+    reconfirmed this run (rare) — now reading ~8hrs, close to the brief's
+    9hr figure and consistent with real Yelp-metric drift rather than
+    noise (2hr → 9hr → 8hr across three pulls, all above the pain
+    threshold). Also deliberately discarded a Google AI-summary claim that
+    a reviewed technician ("Dave/David White") was "the owner" — the claim
+    wasn't sourced to any actual snippet and reviews describe him doing
+    field work, not ownership; used the CA SOS-filed CEO name (Mary
+    Cadena) instead, corroborated by unprompted review mentions. Worth
+    naming as its own failure mode alongside the Cold Fusion Mechanical
+    fabricated-email case (2026-08-13): search tools' own synthesized
+    "answers" asserting a name/fact with confidence isn't the same as a
+    sourced finding — always trace back to what's actually being quoted
+    from where.
+  - **Brudwick Heating & Cooling:** website-gap gate decisively confirmed
+    via a DNS-level check on two guessed domains (both ENOTFOUND) on top
+    of the usual convergent-absence-across-directories signal — cleaner
+    confirmation than most website-gap holds get. Real texture for the
+    pitch: reviews describe the owner (Allen Brudwick) personally going to
+    bat with a customer's insurance company on a claim — a specific,
+    non-generic "why they fit" detail, not just "no website."
+  - **High Country Lawn and Landscape:** website-gap gate reconfirmed with
+    the most decoy-heavy check of this run — found and ruled out a *third*
+    same-name business (High Country Lawn and Landscape LLC, Helena MT,
+    with its own real site and a named owner, Tate Fornof) beyond the two
+    Rupika had already excluded (Dallastown PA, Casper WY). Worth
+    remembering: an identical LLC name recurring in multiple states is
+    apparently common enough for this "High Country ___" naming pattern
+    specifically that every run on it should expect to find and rule out
+    a new decoy, not just the ones already documented. Owner name came up
+    genuinely NOT FOUND despite a real multi-source effort — correctly
+    left blank per the never-placeholder rule rather than guessing from
+    the Helena decoy's owner or anyone else.
+  - **Dave's Plumbing Heating & Cooling (held on email gate):**
+    website-gap independently confirmed, but worth flagging a new pattern:
+    caught WebSearch's own AI-synthesized summary confidently asserting a
+    specific website URL (sdplumbingheating.com) that turned out, on
+    direct investigation, to be a statewide directory site listing *other*
+    companies — not this business at all, just a name-similarity
+    pattern-match ("SD"/"Dave's...SD"). This is now at least three
+    instances of WebSearch's own synthesized answers asserting something
+    false/unsourced with full confidence (Cold Fusion Mechanical's
+    fabricated email 2026-08-13, "Dave/David is the owner" on Walnut
+    Valley this same run, this website claim) — worth flagging to Kevin as
+    a real, recurring failure mode of the search tool's AI-overview layer
+    specifically, distinct from ordinary snippet noise: always verify a
+    specific asserted fact (a URL, an email, a name) traces to an actual
+    quoted source before trusting it, not just when it looks suspicious.
+    Owner name "Dave Adkins" is moderate-confidence (surname independently
+    confirmed via a VP relative on RocketReach/LinkedIn, full name/title
+    not primary-source-verified) — usable as "Dave" alone with confidence.
+    No email surfaced anywhere and no confirmed domain exists to guess a
+    pattern from — held at `found` per the required gate, not a dead end
+    on the business itself.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (company/guessed domains, BBB,
+    Facebook, Bizapedia, Chamber of Commerce, Manta, Kompass, D&B,
+    LinkedIn, Wyoming SOS, OpenCorporates) — same recurring pattern logged
+    since 2026-08-02, all findings this run are search-snippet-sourced
+    except the two decisive DNS-resolution checks (Brudwick's two guessed
+    domains), which were direct and conclusive despite the general block.
+  - Backlog after this run: today's freshest 5 (jones-lawncare-
+    landscaping, karber-plumbing, pest-patrol-slv, all-professional-
+    landscape, merican-plumbing-sewer-specialist) still untouched, left
+    for next run. Also still open from before: Radiant Remodeling Pros,
+    Casey Moriarty Pest Control, Crandell Pest Control, Noska Lawncare,
+    Al's Heating and Air Conditioning, Boricuas Painting, Bryan's Pest
+    Control, and the older 2026-08-05 batch (D&D Plumbing, SonRise
+    Roofing, Superior Roofing) — all already fully documented email-gate
+    holds/dead-ends from prior runs, correctly left alone again rather
+    than re-running the same searches for no new signal.
