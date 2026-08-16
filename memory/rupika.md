@@ -473,6 +473,49 @@
   fresh market research. Pierre/Fort Pierre SD had a normal miss rate (2 of 3
   plumbers checked had real sites). Craig CO (garage doors) came up cold — no
   local business surfaced at all for that combo.
+- (package/priority track, run 2026-08-16) Pushed into the Inland Empire
+  (Ontario/Fontana/Corona/Moreno Valley/Riverside/San Bernardino/Chino/Rialto/
+  Redlands/Highland/Yucaipa/Colton CA) plus Tolleson/Paradise Valley/Yuma AZ
+  and Costa Mesa/Orange CA — fresh territory, not tried before. Lower hit
+  rate than usual: only 2 queued, both San Bernardino CA. All Professional
+  Landscape (4.8star/89 reviews, "responds in about 2hrs" confirmed
+  identically across 2 searches — stable, but the business itself couldn't be
+  corroborated via any non-Yelp source, flagged for Montague to open the Yelp
+  page directly) and Merican Plumbing Sewer Specialist (advertises 24/7 but
+  "responds in about 6hrs" — sharp contradiction signal, address confirmed,
+  but only 2 Yelp reviews so volume is thin/unconfirmed, queued with caution).
+  Inland Empire read as a genuinely fast-responder-skewed market this run —
+  roofing/garage door/HVAC/electrical/pest control/painting all came up empty
+  across every suburb tried (see combo list below), only landscaping and
+  plumbing in San Bernardino specifically broke through. New per-vertical
+  observation: pest control was uniformly fast (10-30min) across every
+  Inland Empire suburb tried — may be a saturated/competitive vertical there,
+  worth deprioritizing pest control specifically in this sub-region if
+  revisited. Dropped rather than queued: Garmar Roofing (San Bernardino/
+  Rialto/Hesperia — response time contradicted itself 40min/50min/2hr across
+  checks, only 3-4 reviews despite 20+ yrs, too inconsistent), Evergreen
+  Landscaping And Design Corp (San Bernardino — good signal, 4hr response,
+  but CSLB license #1060219 shows SUSPENDED as of 2026-06-17, a new concrete
+  case for the standing license-check caution), Prestige Roofing (name
+  collision across 3+ unrelated CA businesses, couldn't disambiguate which
+  one a Redlands search snippet referred to), Orange County Plumbing Heating
+  & Air Conditioning / Seaside Air Conditioning and Heating (both Orange
+  County, both scale-disqualified — OC Plumbing self-describes as "one of
+  California's primary" providers, founded 1958). One unresolved strong
+  signal worth a repeat attempt next run: a Fontana/Ontario-area kitchen
+  remodeler/GC surfaced twice at "responds in about 8hrs, 4.4star, 197 locals
+  recently requested a consultation" (one of the sharpest pain combos found
+  this run) but the exact business name never resolved across several
+  follow-ups (JMJ Remodeling Experts, Harding Construction, Red Star
+  Construction all tried and ruled out as the match) — try
+  `site:yelp.com/biz` filtered directly or vary the exact quote-count number
+  next time rather than dropping it. Empty combos this run (avoid repeating):
+  roofing (Ontario/San Bernardino/Redlands/Riverside CA), garage door
+  (Paradise Valley AZ/Redlands/Fontana/San Bernardino/Rialto/Colton CA), HVAC
+  (Tolleson AZ/San Bernardino/Costa Mesa/Orange CA), electrical (Corona/San
+  Bernardino/Fontana/Rialto CA), pest control (Moreno Valley/Rialto/Colton/
+  Highland/Yucaipa/Fontana CA), painting (Chino/Rialto/Colton/San Bernardino
+  CA).
 
 ## Dead ends to stop searching
 
