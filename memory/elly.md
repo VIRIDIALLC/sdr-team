@@ -476,3 +476,53 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
   landing-work rule.
+
+- **2026-08-16 (this run) — 5 drafted, normal batch.** `git fetch origin`
+  first per CLAUDE.md: origin/master had force-updated (495bb82, a fresh
+  Montague enrichment pass). Container started in a detached HEAD with a
+  local `master` content-identical to origin/master — same recurring
+  pattern logged 08-13/08-14/08-15, fixed with
+  `git checkout -B master origin/master`, no merge needed.
+
+  Scanned `prospects/*/status.md` fresh: 6 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification
+  hold from 2026-08-03, unchanged yet again, correctly skipped) plus 5
+  real new ones, all from Montague's 2026-08-16 pass on Rupika's
+  2026-08-15 finds: america-plumbing-scottsdale-az (package),
+  design-array-garage-door-peoria-az (package),
+  walnut-valley-pest-control-walnut-ca (package),
+  brudwick-heating-cooling-watertown-sd (website),
+  high-country-lawn-landscape-gillette-wy (website). Drafted all 5 —
+  normal-sized batch, all had real emails and email-gate passes, no
+  defensive-check skips needed.
+
+  **Judgment calls worth flagging:**
+  - **America Plumbing:** owner name (Egzon Osmani, BBB Owner/Principal
+    Contact) carries an uncorroborated address mismatch — BBB profile
+    lists Tempe, business HQ is Scottsdale, no second source confirmed
+    it's the same entity. Used the name in the greeting anyway per
+    Montague's own read (BBB filing is the strongest lead found, not a
+    guess) but flagged it clearly in the Note for Kevin rather than
+    building the opener around it, consistent with the response-time
+    question staying the actual hook, not the name.
+  - **High Country Lawn:** second website-track prospect this run (after
+    Brudwick) with a genuinely undiscoverable owner name despite a wide
+    multi-source search — used the team greeting, not a placeholder, per
+    the standing 2026-08-12 rule. Both website-gap confirmations this
+    run were unusually thorough (Montague ruled out several same-name
+    decoys in other states for both, notably a same-LLC-name Helena MT
+    business with a real site for High Country) — worth knowing the gate
+    is being checked carefully, not rubber-stamped.
+  - **Design Array Garage Door:** Montague flagged this as the weakest
+    signal of her batch (2hr response gap real but less dramatic, and an
+    established 25+ year shop with strong reviews, not a distressed
+    prospect) — used the hook per the standard rule since a real number
+    exists, but kept the rest of the pitch plain rather than trying to
+    force urgency onto a stable, healthy-looking business.
+
+  Track breakdown: 3 package, 2 website. Ran the standard post-write
+  sweep (em dash, bracket placeholder, retired package name, third-person
+  "Kevin" in body) via grep before committing — all clean.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
+  landing-work rule.

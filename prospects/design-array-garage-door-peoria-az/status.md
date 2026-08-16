@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -18,3 +18,5 @@ quote_stage: none
   carried forward labeled unverified per policy. Yelp review count/rating
   drifted across pulls this run (52-62 reviews) — likely index staleness,
   flagged in enrichment.md. See enrichment.md.
+- 2026-08-16 (Elly): drafted outreach using the response-time question
+  opener, greeted to owner Ben. Advanced to drafted.

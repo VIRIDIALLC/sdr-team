@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -17,3 +17,5 @@ quote_stage: none
   (highcountry307@gmail.com, consistent across 3 independent sources tied
   to the correct Gillette WY contact info — email gate passed). Phone
   confirmed: (307) 689-8873. See enrichment.md.
+- 2026-08-16 (Elly): drafted outreach pitching the website offer. No
+  owner name found, used the team greeting. Advanced to drafted.

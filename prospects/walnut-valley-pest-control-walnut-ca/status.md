@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -18,3 +18,5 @@ quote_stage: none
   reconfirmed at ~8hrs (close to the brief's 9hr read, real drift from an
   earlier 2hr read) — carried forward per policy. Review count stable at
   67 across all pulls. See enrichment.md.
+- 2026-08-16 (Elly): drafted outreach using the response-time question
+  opener, greeted to owner Mary. Advanced to drafted.

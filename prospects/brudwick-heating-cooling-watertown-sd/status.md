@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -14,3 +14,5 @@ quote_stage: none
   Email found (Abrudwick@gmail.com, consistent across independent
   directory sources — email gate passed). Phone confirmed:
   (605) 868-4983. See enrichment.md.
+- 2026-08-16 (Elly): drafted outreach pitching the website offer, greeted
+  to owner Allen. Advanced to drafted.
