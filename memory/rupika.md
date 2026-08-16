@@ -445,6 +445,35 @@
   revisited. Gillette WY has untried verticals remaining too (roofing,
   electrical, garage doors, restoration, painting, remodeling).
 
+- (run 2026-08-16) Scheduled run scoped to two tracks only (package + website —
+  ads track not requested this run). `git fetch` showed a force-updated
+  `origin/master` and a detached HEAD again — same recurring stale-ref symptom
+  as prior runs, fixed with `git checkout -B master origin/master`, confirmed
+  local already matched origin's tip (`cf84ba5`), nothing lost. Ran both
+  tracks as parallel sub-agents again.
+- (website track, run 2026-08-16) Two brand-new small markets (Fort Pierre/
+  Pierre SD, Alamosa CO) plus one banked candidate closed out — 3 hits: Karber
+  Plumbing (Fort Pierre SD, no web presence at all beyond Facebook/Yelp/state
+  licensing directory, owner Jamie Lee Karber confirmed via SD contractor
+  license lookup — cleanest hit), Pest Patrol of the SLV (Alamosa CO,
+  Facebook-only, owner not yet found, flagged a pestpatrol.com collision with
+  an unrelated San Diego business — do not attribute that domain to this
+  prospect), Jones LawnCare & Landscaping LLC (Tupelo MS — closed out a
+  banked candidate from 2026-08-14; could NOT confirm which of several
+  similarly-named Ueniweb subdomains, if any, actually belongs to this
+  business — direct fetch got blocked by egress proxy — so it's queued as a
+  plain directory-only hit instead, with an explicit flag for Montague to
+  verify the Ueniweb link directly before relying on it). Two other banked
+  candidates (Starkey Heating and Air, Kearney NE; Aaron's Heating & Cooling,
+  Watertown SD; Zap Lawn Care, Gillette WY) were re-confirmed as genuine hits
+  but deliberately held back rather than queued — each city/vertical already
+  has 1-2 entries in the pipeline and queuing a 2nd/3rd from the same small
+  market felt like over-concentration; worth queuing them directly (skip
+  re-verification, already done) if a future run wants a fast batch without
+  fresh market research. Pierre/Fort Pierre SD had a normal miss rate (2 of 3
+  plumbers checked had real sites). Craig CO (garage doors) came up cold — no
+  local business surfaced at all for that combo.
+
 ## Dead ends to stop searching
 
 (none yet)
