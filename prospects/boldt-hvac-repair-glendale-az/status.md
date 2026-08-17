@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -23,3 +23,4 @@ quote_stage: none
   response-time hook, pitched The Complete System. Advanced to
   `drafted`.
 - 2026-08-12 (Kevin, via KIREEK): sent to phillipboldt@hotmail.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
