@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   enrichment.md.
 - 2026-08-16 (Elly): drafted outreach using the response-time question
   opener, greeted to owner Egzon. Advanced to drafted.
+- 2026-08-17 (Kevin, via KIREEK): sent to info@americaplumbingaz.com.
