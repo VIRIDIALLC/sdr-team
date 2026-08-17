@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: ads
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
 - 2026-08-15 (Elly): drafted outreach pitching the ad-management
   retainer, Sponsored-badge hook, greeted to owner Brian Wooldridge.
   Advanced to drafted.
+- 2026-08-17 (Kevin, via KIREEK): sent to office@paintdoctor.com.
