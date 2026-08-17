@@ -517,6 +517,87 @@
   Highland/Yucaipa/Fontana CA), painting (Chino/Rialto/Colton/San Bernardino
   CA).
 
+- (run 2026-08-17) Scheduled run scoped to two tracks only (package + website — ads
+  track not requested this run). `git fetch` again showed a force-updated
+  `origin/master` and a detached HEAD — same recurring stale-ref symptom as every
+  prior run since 2026-08-13, fixed with `git checkout -B master origin/master`,
+  confirmed local already matched origin's tip (`a772eb5`), nothing lost. Ran
+  package and website tracks as parallel sub-agents again; package track needed a
+  third follow-up sub-agent this run (see below) to resolve names on strong
+  signals the first pass couldn't nail down — worth budgeting for that as a
+  normal second step when Yelp fetch is blocked, not a sign the technique failed.
+- (package/priority track, run 2026-08-17) Direct Yelp fetches were blocked by
+  the network egress proxy this run (`www.yelp.com` blocked) — had to work from
+  Google/search-summary data only, which made name resolution much harder than
+  usual. Net result: only 2 hits this run (thinner than the usual 3), both
+  flagged for Montague to verify the live Yelp page once fetch access is
+  restored: JNA Heating & Cooling (South Gate CA, 5.0star/56 reviews/family-
+  owned/8yrs, "responds in about 4hrs" — high confidence, all 5 distinguishing
+  facts matched together on one listing) and Nunez Painting Contractor
+  (Litchfield Park AZ, serves Buckeye AZ, 4.3star/63 reviews, "responds in about
+  3hrs"/11 quote requests, clean AZ license — moderate confidence only, since
+  Litchfield Park itself is an already-exhausted suburb and one existing review
+  praises the owner for being responsive by email, a mild contradiction to the
+  Yelp figure). Four other strong signals (Yuma AZ electrician 4.7star/13
+  reviews/3hr response; Monrovia CA roofing 73-quote-requests/2hr response;
+  Pasadena CA plumbing 5.0star/29 reviews/2hr response, serving Highland Park)
+  never resolved to a confidently-identified business despite the standard
+  "quote the exact numbers back" follow-up technique and repeated candidate
+  checks — worth a repeat attempt once direct Yelp access works again rather
+  than writing them off; candidates checked and ruled out for each are logged in
+  this run's sub-agent transcripts. New drop reasons this run: Affordable
+  Garage Door Service (Chandler AZ, 5-6hr/263 reviews) dropped for an
+  "Unlicensed Contractor" flag on HomeAdvisor despite a strong pain signal —
+  worth treating an unlicensed flag as a hard disqualifier same tier as a
+  revoked license, not just a caution; EcoEnergy Solutions (Yuma AZ, 2hr/124-142
+  reviews) deprioritized for doing HVAC+roofing+insulation+solar, a multi-trade
+  mix that reads more like a scaled regional outfit than an owner-operator.
+  Several near-misses also turned out to actually be based in a different
+  (often already-exhausted) city than the suburb searched — same cross-suburb
+  resolution pattern noted in prior runs, now also seen with ROC Electric
+  (matched "Diamond Bar" search, actually Whittier), Eguez Painting and Flex
+  Painting (both matched "Pico Rivera," actually Tustin/Rowland Heights), and
+  Phoenician Garage Door & Repair (matched "Peoria AZ" purely because its street
+  address contains "Peoria Ave," actually Phoenix). Confirmed via
+  `_kevin-yelp-handpicked` grep: no overlap between Nunez Painting and Kevin's
+  separate handpicked Phoenix batch, safe to queue independently. Suburb/vertical
+  combos tried this run without a usable hit (avoid re-trying as-is): garage
+  door (Peoria AZ, Chandler AZ - licensing flag, Gilbert AZ), restoration
+  (Buckeye AZ, Yuma AZ), HVAC (Yuma AZ - too scaled), electrician (Diamond Bar
+  CA - mislocated), landscaping (Duarte CA - mislocated/thin), painting (Pico
+  Rivera CA - mislocated x2), pest control (Azusa CA - nothing cleared the >1hr
+  bar).
+- (website track, run 2026-08-17) Strong run — 6 solid hits found across 5 fresh
+  markets (Twin Falls ID, Hattiesburg/Petal MS, Rome GA, Gadsden AL, Muskogee
+  OK), queued 4 to keep the batch disciplined: Vance Heating & Air Conditioning
+  LLC (Twin Falls ID, Facebook-only, owner name "Austin" via LinkedIn, medium
+  confidence), E-Z Garage Door Services LLC (Petal MS/Hattiesburg metro,
+  Facebook-only + Clopay dealer-locator listing, owner Marion Jones confirmed
+  via BBB — high confidence), Lolo Landscaping (Rome GA, Facebook-only, owner
+  Jahaziel Vega via a personal Gmail found directly in search results — high
+  confidence), Brown Beardz Restoration (Muskogee OK, Facebook-only, no owner
+  name found yet). Held back rather than queued: a second Gadsden AL painting
+  hit, It's Time 2 Paint (Facebook-only, 439 FB likes, no owner name found) —
+  Paint Works for You was queued instead since it's better-documented (30yr
+  established, full address); worth queuing It's Time 2 Paint directly next run
+  if Gadsden gets a second pass, skip re-verification. New open question: a
+  borderline case, Lambert's Lawn Care & Landscaping (Rome GA), runs on a free
+  `godaddysites.com` subdomain — treated as "has a real site" (not queued) since
+  the page is live and functional, unlike prior free-builder-subdomain hits
+  (Ueniweb) that were queued as genuine gaps. Worth Kevin/Montague weighing in on
+  whether a working free-builder site should count as a real site or a gap —
+  inconsistent treatment risk otherwise. Cold markets this run (all real sites,
+  don't re-try as-is): Twin Falls ID HVAC (rest of field, Vance was the one
+  hit), Longview TX electrical (fully cold), Hattiesburg MS garage doors (rest
+  of field), Cookeville TN roofing (fully cold, 2 untried names remain: Modern
+  Roofing Group, American Roof and Construction), Bowling Green KY pest control
+  (fully cold, 2 untried names remain: Commonwealth Pest Control, Home Pro Pest
+  Control), Rome GA landscaping (rest of field), Muskogee OK restoration (rest
+  of field). Presque Isle ME window cleaning came up cold too (no dedicated
+  window-cleaning business found at all) but has one untried name worth a
+  follow-up: "Island Shine Windows and Eaves" (found via Facebook, not yet
+  confirmed).
+
 ## Dead ends to stop searching
 
 (none yet)
