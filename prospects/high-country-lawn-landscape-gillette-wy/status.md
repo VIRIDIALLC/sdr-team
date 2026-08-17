@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   confirmed: (307) 689-8873. See enrichment.md.
 - 2026-08-16 (Elly): drafted outreach pitching the website offer. No
   owner name found, used the team greeting. Advanced to drafted.
+- 2026-08-17 (Kevin, via KIREEK): sent to highcountry307@gmail.com.
