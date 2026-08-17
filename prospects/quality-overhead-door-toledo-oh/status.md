@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: ads
 quote_stage: none
 ---
@@ -20,3 +21,4 @@ quote_stage: none
   prominently in the Note for Kevin — decision-maker on ad spend may now
   route through corporate. Advanced to drafted.
 - 2026-08-17 (Kevin, via KIREEK): sent to info@qualityoverheaddoor.com.
+- 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: ads isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.

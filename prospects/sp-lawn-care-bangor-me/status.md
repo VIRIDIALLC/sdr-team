@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: closed
 ---
@@ -29,3 +30,4 @@ quote_stage: closed
   Real Gmail draft created (not yet sent). quote_stage: quoted.
 - 2026-08-09 (Kevin, via KIREEK): removed from the review queue — Kevin is
   handling the S&P thread directly. quote_stage: closed (out of the queue).
+- 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.

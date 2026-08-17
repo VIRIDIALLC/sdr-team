@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -20,3 +21,4 @@ quote_stage: none
 - 2026-08-16 (Elly): drafted outreach pitching the website offer. No
   owner name found, used the team greeting. Advanced to drafted.
 - 2026-08-17 (Kevin, via KIREEK): sent to highcountry307@gmail.com.
+- 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.

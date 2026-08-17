@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -16,3 +17,4 @@ quote_stage: none
 - 2026-08-03 (Elly): drafted outreach pitching the website offer.
   Advanced to drafted.
 - 2026-08-03 (Kevin, via KIREEK): sent for real via review_ready_to_send batch approval.
+- 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.

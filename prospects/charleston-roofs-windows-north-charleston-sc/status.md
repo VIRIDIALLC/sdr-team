@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: ads
 quote_stage: none
 ---
@@ -17,3 +18,4 @@ quote_stage: none
   retainer, Sponsored-badge hook, greeted to co-owner Blake Miller.
   Advanced to drafted.
 - 2026-08-17 (Kevin, via KIREEK): sent to info@charlestonroofsandwindows.com.
+- 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: ads isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
