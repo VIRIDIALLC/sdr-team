@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -16,3 +16,4 @@ quote_stage: none
 - 2026-08-15 (Elly): drafted outreach combining the response-time
   question with the confirmed broken Book Online page, greeted to owner
   Alejandro Ramirez. Advanced to drafted.
+- 2026-08-17 (Kevin, via KIREEK): sent to info@fifthelementlandscape.net.
