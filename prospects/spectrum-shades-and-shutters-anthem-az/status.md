@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -14,3 +14,4 @@ quote_stage: none
   Real name (George) used in greeting, first person as Kevin throughout. Advanced
   to `drafted`.
 - 2026-08-13 (Kevin, via KIREEK): sent to Georgealay@me.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
