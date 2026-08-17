@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -23,3 +23,4 @@ quote_stage: none
   underlying-problem question instead. Real name (Paul Meils) used.
   Advanced to drafted. See outreach.md.
 - 2026-08-14 (Kevin, via KIREEK): sent to LiquidOakPainting@gmail.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
