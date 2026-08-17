@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   any single figure. Real name (Robert Lansford) used. Advanced to
   drafted. See outreach.md.
 - 2026-08-14 (Kevin, via KIREEK): sent to Service@lansfordroofing.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
