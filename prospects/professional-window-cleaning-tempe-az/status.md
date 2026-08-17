@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
   caveat flagged for Kevin (possibly historical, current owner unresolved), first
   person as Kevin throughout. Advanced to `drafted`.
 - 2026-08-13 (Kevin, via KIREEK): sent to office@getmywindowsclean.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
