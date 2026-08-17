@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -21,3 +21,4 @@ quote_stage: none
   so fell back to the standard package pitch. Pitched The Complete
   System. Advanced to `drafted`.
 - 2026-08-12 (Kevin, via KIREEK): sent to info@rafaelandirisroofing.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
