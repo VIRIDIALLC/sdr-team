@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: held
 track: website
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   confirmed-dead-domain hook plus the standard 84%-search data point.
   Real name (Victor Mendoza) used. Advanced to drafted. See outreach.md.
 - 2026-08-14 (Kevin, via KIREEK): sent to the3roofersconstruction@gmail.com.
+- 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.

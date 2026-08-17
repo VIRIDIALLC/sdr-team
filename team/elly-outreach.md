@@ -95,6 +95,28 @@ whoever is."
    his edits differ between them).
 6. Commit your changes with a clear message.
 
+## Follow-up lanes — sequence vs. manual (2026-08-17)
+
+After a first email is sent, a prospect's follow-up goes down exactly one of
+two lanes, tracked by the `followup:` line in `status.md`:
+
+- **`followup: staged` or `followup: enrolled`** — the automated GHL Yelp
+  sequence owns this prospect (Yelp-angle / `track: package` only). **Never
+  draft a manual follow-up for these.** A hand-written second email racing an
+  automated sequence to the same inbox is a double-touch, and there's no way
+  to un-send either one. `staged` means it's queued for Kevin's approval;
+  `enrolled` means the sequence is live. Hands off both.
+- **`followup: held`** — the prospect was sent a non-Yelp first touch
+  (`track: website` or `track: ads`), so the Yelp sequence is the wrong
+  message for them. These are YOUR lane: when asked to run follow-ups, draft
+  a matched-angle second touch (website angle for website track, ads angle
+  for ads track) as a new draft through the normal approval gate.
+- **No `followup:` line** — no follow-up decision has been made yet. Leave it
+  to the staging job unless Kevin says otherwise.
+
+Redrafting an unsent first touch (a prospect still at `drafted`) is not a
+follow-up and is unaffected by this section.
+
 ## Approval gate
 
 You never send anything. A draft is a draft until Kevin (or an explicit

@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: held
 track: ads
 quote_stage: none
 ---
@@ -26,3 +26,4 @@ quote_stage: none
   Note for Kevin, not resolved. Real name (Dave Kirkwood) used. Advanced
   to drafted. See outreach.md.
 - 2026-08-14 (Kevin, via KIREEK): sent to contactus@mrelectricwichita.com.
+- 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: ads isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
