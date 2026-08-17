@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
   exists, form-only contact, no booking.** Advanced. See enrichment.md.
 - 2026-08-15 (Elly): drafted outreach using the response-time question
   opener, greeted to owner Isaias Gallegos. Advanced to drafted.
+- 2026-08-17 (Kevin, via KIREEK): sent to info@scenicviewlandscapeinc.com.
