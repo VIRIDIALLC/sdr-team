@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: ads
 quote_stage: none
 ---
@@ -16,3 +16,4 @@ quote_stage: none
 - 2026-08-15 (Elly): drafted outreach pitching the ad-management
   retainer, Sponsored-badge hook, greeted to co-owner Blake Miller.
   Advanced to drafted.
+- 2026-08-17 (Kevin, via KIREEK): sent to info@charlestonroofsandwindows.com.
