@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: ads
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   Roth. PE-acquisition (GarageCo/Gridiron Capital) flag carried forward
   prominently in the Note for Kevin — decision-maker on ad spend may now
   route through corporate. Advanced to drafted.
+- 2026-08-17 (Kevin, via KIREEK): sent to info@qualityoverheaddoor.com.
