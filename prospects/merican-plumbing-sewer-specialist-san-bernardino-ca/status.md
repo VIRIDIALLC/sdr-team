@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -11,4 +11,7 @@ quote_stage: none
   Perez) but title unconfirmed — flagged as not-necessarily-owner. Email
   GUESSED (info@mericanplumbingsewerspecialist.com) on a confirmed-live,
   multi-page domain. Response-time (~6hr) unconfirmed, carried forward as
-  a question. Advanced to `enriched`. See enrichment.md.
+  a question. Advanced to `enriched`.
+- 2026-08-17 (Elly): drafted outreach, response-time question hook.
+  Flagged thin-scale (2 reviews, no license/BBB record) for Kevin.
+  Advanced to `drafted`. See outreach.md. See enrichment.md.

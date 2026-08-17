@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -12,3 +12,6 @@ quote_stage: none
   surname unconfirmed. Email CONFIRMED via Facebook page contact info
   (jna.ac@yahoo.com, not guessed). Advanced to `enriched`. See
   enrichment.md.
+- 2026-08-17 (Elly): drafted outreach, response-time hook (reconfirmed
+  4/5, still phrased as a question). Advanced to `drafted`. See
+  outreach.md.

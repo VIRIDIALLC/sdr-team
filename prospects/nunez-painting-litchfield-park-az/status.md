@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -13,4 +13,7 @@ quote_stage: none
   found (snippet-sourced, moderate confidence). Current address confirmed
   (16022 W Myrtle Ave); flagged the "closed Buckeye location" detail as
   likely a different family entity, not to reference in outreach. Advanced
-  to `enriched`. See enrichment.md.
+  to `enriched`.
+- 2026-08-17 (Elly): drafted outreach, response-time question hook.
+  Buckeye location not referenced per Montague's flag. Advanced to
+  `drafted`. See outreach.md. See enrichment.md.

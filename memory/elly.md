@@ -477,6 +477,68 @@ no feedback yet on those specifically)
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
   landing-work rule.
 
+- **2026-08-17 (this run) — 5 drafted, normal batch.** `git fetch origin`
+  first per CLAUDE.md: origin/master had force-updated (5918c0d, a fresh
+  Montague enrichment pass). Container started in a detached HEAD with a
+  local `master` content-identical to origin/master (`git diff` empty) —
+  same recurring pattern logged every run since 08-13, fixed with
+  `git checkout -B master origin/master`, no merge needed.
+
+  Scanned `prospects/*/status.md` fresh: 6 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification
+  hold from 2026-08-03, unchanged yet again, correctly skipped) plus 5
+  real new ones, all from Montague's 2026-08-17 pass on Rupika's
+  2026-08-16/17 finds: all-professional-landscape-san-bernardino-ca
+  (package), jna-heating-cooling-south-gate-ca (package),
+  merican-plumbing-sewer-specialist-san-bernardino-ca (package),
+  nunez-painting-litchfield-park-az (package), ez-garage-door-services-petal-ms
+  (website). Drafted all 5 — normal-sized batch, all had real or
+  domain-grounded-guessed emails, no defensive-check skips needed.
+
+  **Judgment calls worth flagging:**
+  - **JNA Heating & Cooling:** strongest response-time signal of the batch
+    — ~4hr figure reconfirmed across 4 of 5 independent searches, paired
+    consistently with the same rating/review/license details each time.
+    Still phrased the hook as a question per the standing convention
+    (never asserted as fact even when well-corroborated), but this is
+    about as solid as the hook gets under the current gate.
+  - **Merican Plumbing Sewer Specialist:** thinnest business of the batch
+    — only 2 Yelp reviews, no CSLB license record, no BBB profile, no
+    founding-year figure despite targeted searches. Drafted anyway (real
+    signal, real contact, real live domain) but flagged the scale
+    uncertainty prominently in the Note for Kevin rather than burying it,
+    per Montague's own explicit flag in enrichment.md. Also used a
+    real-but-unconfirmed-title contact (Mauro Perez) in the greeting —
+    same reasoning as the CVA Exterminators precedent from 08-15 (a real
+    specific person tied to the business beats a team greeting, title
+    confirmation isn't the bar for the greeting rule, only for how much
+    weight the note gives him).
+  - **Nunez Painting:** high-confidence owner name (3 independent
+    sources) but the enrichment carried a real naming-collision risk (3-4
+    similarly-named Nunez painting businesses in the West Valley, one
+    already-closed location that traces to a likely-different family
+    entity). Deliberately did not reference the closed Buckeye location
+    per Montague's flag — the "why they fit" texture in brief.md
+    mentioned it but enrichment.md was explicit it may not be this
+    prospect's own history. Good example of enrichment overriding an
+    earlier brief detail rather than the draft inheriting it uncritically.
+  - **All Professional Landscape:** identity-corroboration flag from
+    Rupika's original brief ("Yelp-only, couldn't corroborate outside
+    Yelp") was fully resolved by Montague this run (live site, matching
+    phone, matching address) before it ever reached me — nothing left for
+    the draft to work around, just noting the flag existed and closed
+    cleanly upstream.
+
+  Track breakdown: 4 package, 1 website. Ran the standard post-write
+  sweep (em dash, bracket placeholder, retired package name, third-person
+  "Kevin" in body) via grep before committing — all clean; the only
+  em dashes present are in the Note-for-Kevin metadata sections, none in
+  actual email body text, and the "Kevin" hits are all the literal "Note
+  for Kevin:" label, not third-person references inside a body.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
+  landing-work rule.
+
 - **2026-08-16 (this run) — 5 drafted, normal batch.** `git fetch origin`
   first per CLAUDE.md: origin/master had force-updated (495bb82, a fresh
   Montague enrichment pass). Container started in a detached HEAD with a

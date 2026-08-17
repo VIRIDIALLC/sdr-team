@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -12,3 +12,5 @@ quote_stage: none
   confirmed via BBB. Email CONFIRMED via Facebook page contact info
   (ezgaragedoorservices@gmail.com, not guessed). Advanced to `enriched`.
   See enrichment.md.
+- 2026-08-17 (Elly): drafted outreach, website-gap hook + standard 84%
+  data point. Advanced to `drafted`. See outreach.md.

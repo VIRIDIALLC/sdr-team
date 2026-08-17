@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -14,3 +14,5 @@ quote_stage: none
   (info@allprofessionallandscape.com) on a confirmed-live domain. Response-
   time (~2hr) unconfirmed, carried forward as a question. Advanced to
   `enriched`. See enrichment.md.
+- 2026-08-17 (Elly): drafted outreach, response-time question hook.
+  Advanced to `drafted`. See outreach.md.
