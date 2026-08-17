@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
   opener (no response-time hook, per Montague's explicit call), greeted
   to GM Dan Caballero since no owner name exists anywhere. Advanced to
   drafted.
+- 2026-08-17 (Kevin, via KIREEK): sent to mail@cvaexterminators.com.
