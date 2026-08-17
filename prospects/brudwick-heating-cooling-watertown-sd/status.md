@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -16,3 +16,4 @@ quote_stage: none
   (605) 868-4983. See enrichment.md.
 - 2026-08-16 (Elly): drafted outreach pitching the website offer, greeted
   to owner Allen. Advanced to drafted.
+- 2026-08-17 (Kevin, via KIREEK): sent to Abrudwick@gmail.com.
