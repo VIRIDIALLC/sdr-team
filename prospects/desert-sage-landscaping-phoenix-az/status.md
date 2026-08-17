@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -18,3 +18,4 @@ quote_stage: none
   used the underlying-problem question per the rule's own fallback instead of the
   old flattery template. Stays at `drafted`.
 - 2026-08-13 (Kevin, via KIREEK): sent to info@desertsagelandscape.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
