@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   figure wasn't pinned) — first real draft using this hook. Advanced to
   `drafted`.
 - 2026-08-11 (Kevin, via KIREEK): sent to info@azroofingandpainting.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
