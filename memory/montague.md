@@ -849,3 +849,78 @@
     framed around a workflow (GHL enrollment, or previously a specific
     CSV) that doesn't match what's actually in the repo. Worth him
     checking who/what can hit that endpoint, same ask as before.
+
+- (2026-08-17, second run same day) Clean start, no stale-refs issue —
+  `git fetch origin` then `git status` showed local already synced to
+  `origin/master`. This run's fire-payload was the normal persona-defined
+  prompt, no suspicious injection content this time. Picked up the 6
+  brand-new `stage: found` prospects from Rupika's latest batch (commit
+  `5f4e71c`, 2 package + 4 website) — the only untouched prospects in the
+  backlog; every other `found` prospect (28 total in the repo) already
+  carries a documented email-gate hold or dead-end from a prior run,
+  correctly left alone. Used 6 parallel research subagents (pure-research,
+  no file writes), then wrote all enrichment.md/status.md updates myself.
+
+  Result: 3 of 6 advanced to `enriched` (E-Z Garage Door Services —
+  website; JNA Heating & Cooling, Nunez Painting Contractor — both
+  package), 3 held at `found` on the email gate (Brown Beardz Restoration,
+  Lolo Landscaping, Vance Heating & Air Conditioning — all website track).
+
+  - **A new, sharper instance of the recurring WebSearch-synthesis
+    unreliability problem (Lolo Landscaping):** the research subagent
+    caught WebSearch repeating an identical owner-name/email claim
+    verbatim across many different queries — including a query whose
+    actual returned links had nothing to do with the business at all. That's
+    stronger evidence than prior instances (Cold Fusion Mechanical's
+    fabricated email 2026-08-13, "Dave/David is the owner" and the
+    sdplumbingheating.com misattribution both 2026-08-16) that the search
+    tool's AI-synthesis layer can echo back unfounded claims with full
+    confidence rather than grounding them in retrieved content. Treated the
+    candidate name/email as unresolved rather than passing them forward —
+    right call given the tool visibly wasn't tracking relevance. Worth
+    elevating this from "worth a mention" to a real ask for Kevin: this is
+    now 4 separate instances of the search layer asserting something
+    false/ungrounded with full confidence, specifically undermining the
+    contact-name and email gates this role exists to enforce.
+  - **Vance Heating & Air Conditioning:** caught a real correction to
+    Rupika's brief, not just an unconfirmed lead — the LinkedIn profile she
+    cited as corroborating "Austin" as owner turned out (via a companion
+    search result naming the account holder) to almost certainly belong to
+    Randy Vance, the confirmed owner of an unrelated Texas company of the
+    same trade and surname ("Vance Air Conditioning & Heating" vs. this
+    business's "Vance Heating & Air Conditioning" — reversed word order,
+    an easy mixup). "Austin" itself held up independently via the Facebook
+    bio text, but the LinkedIn corroboration specifically should be
+    discounted. Also a 4th same-surname collision domain surfaced and was
+    ruled out (vanceac.com, also Randy Vance's) — worth remembering
+    "Vance ___ heating/air" is apparently a common-enough business name
+    that every run on one should expect same-surname decoys, same pattern
+    already noted for "High Country Lawn and Landscape" (2026-08-16).
+  - **JNA Heating & Cooling:** a genuinely rare positive case — the
+    response-time signal reconfirmed cleanly (4 of 5 searches agreed on
+    ~4hrs, the one outlier traced to stale Yahoo Local metadata
+    inconsistent with the same page's own "same day service" note).
+    Worth noting alongside Walnut Valley Pest Control (2026-08-16) as one
+    of the few times this figure type has actually held up on
+    reconfirmation rather than degrading.
+  - **Nunez Painting Contractor:** a real naming-collision caution worth
+    remembering for any future "Nunez Painting"-named lead — there are at
+    least 3-4 similarly-named businesses in the West Valley AZ area, likely
+    different family members. Anchored this enrichment on the specific
+    license #254684 / 16022 W Myrtle Ave / 63-review-Yelp-listing
+    combination per the brief, not the name alone. Also declined to
+    reference the brief's "closed second location" detail in outreach
+    framing — the closed Buckeye Yelp listing traces to a plausibly
+    different (related-family) entity, not confirmed as this exact LLC's
+    own history.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (company domains, Facebook, BBB,
+    Bizapedia, CSLB, CSI.edu, Idaho/Oklahoma/Georgia SOS/business
+    registries) — same recurring pattern logged since 2026-08-02, all
+    email/owner-name confirmations this run are search-snippet-sourced
+    except the decisive DNS-resolution checks on guessed domains (direct
+    and conclusive despite the general block).
+  - Backlog after this run: 25 prospects remain at `stage: found`, all
+    already fully documented email-gate holds/dead-ends from prior runs —
+    correctly left alone, no new signal likely from re-running the same
+    searches. No new untouched prospects remain as of this run.
