@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
   to the limited hours) replaces the old flattery-then-guess opening. Stays at
   `drafted`.
 - 2026-08-13 (Kevin, via KIREEK): sent to blindcleaningarizona@gmail.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
