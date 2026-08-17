@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -22,3 +22,4 @@ quote_stage: none
   between sources so phrased as a range) replaces the old flattery-then-guess
   opening. Stays at `drafted`.
 - 2026-08-13 (Kevin, via KIREEK): sent to Rebuildaz24@gmail.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
