@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   (team/elly-outreach.md) — response-time question (~9 hrs, from Rupika's brief.md)
   replaces the old flattery-then-guess opening. Stays at `drafted`.
 - 2026-08-13 (Kevin, via KIREEK): sent to scott@partnershippainting.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
