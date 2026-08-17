@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -16,3 +16,4 @@ quote_stage: none
   (team/elly-outreach.md) -- response-time question (5 hrs, from Kevin's CSV)
   replaces the old flattery-then-guess opening. Stays at `drafted`.
 - 2026-08-13 (Kevin, via KIREEK): sent to clara@divinedesignlawncare.com.
+- 2026-08-17 (VEGA): already in GHL with an open pipeline opportunity from an earlier enrollment batch (today's create hit the duplicate-email guard). Contact record cleaned and sequence-ready; marking enrolled.
