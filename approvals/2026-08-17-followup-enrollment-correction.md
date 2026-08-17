@@ -1,3 +1,7 @@
+status: done
+
+> **CLOSED.** Resolved 2026-08-17: Kevin approved and all 41 Yelp-track prospects are enrolled in GHL (21 created that run, 20 already existed from an earlier batch and were confirmed). Contact records were cleaned to "[Company] Team" naming. The 9 off-track prospects remain `followup: held` for matched-angle manual follow-ups.
+
 # Follow-up enrollment — batch corrected to Yelp track only
 
 The 50-prospect batch staged on 08-15/08-16 mixed outreach angles. The GHL

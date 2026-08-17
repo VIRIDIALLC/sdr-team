@@ -1,3 +1,7 @@
+status: done
+
+> **CLOSED.** Resolved 2026-08-17: this batch was folded into the 50 staged prospects Kevin acted on -- 41 Yelp-track enrolled in GHL, 9 off-track held. Kept as the record of what was staged that day.
+
 # Follow-up sequence — 27 prospect(s) ready to enroll
 
 Sent 2+ days ago, real email on file, no reply recorded.
