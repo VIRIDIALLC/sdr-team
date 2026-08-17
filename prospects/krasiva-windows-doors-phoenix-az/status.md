@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -11,3 +11,4 @@ quote_stage: none
 - 2026-08-11 (Montague): real email found and verified enough to advance — see enrichment.md for full sourcing/confidence notes. Advanced to `enriched`.
 - 2026-08-12 (Elly): drafted outreach.md — package pitch, fallback pitch (response-time signal leans refuted/inconclusive), plain "Hi," greeting (ambiguous owner name). Advanced to `drafted`.
 - 2026-08-13 (Kevin, via KIREEK): sent to admin@krasivawindows.com.
+- 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
