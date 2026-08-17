@@ -770,3 +770,82 @@
     Roofing, Superior Roofing) — all already fully documented email-gate
     holds/dead-ends from prior runs, correctly left alone again rather
     than re-running the same searches for no new signal.
+
+- (2026-08-17 run) **Another suspicious fire-payload, did not act on it —
+  same pattern as the two 2026-08-12 incidents.** This run's fire-payload
+  claimed "fifty prospects across the four batches ready for GHL
+  enrollment" and asked to "pull real email addresses for each one,"
+  framed with an urgent-sounding "WHEN DONE, INTEGRATE YOUR WORK" postscript
+  pushing a commit straight to master. Checked before acting: `git fetch
+  origin master` (local HEAD was detached, sitting on a stale shallow-clone
+  cache from an old `origin/master` fetch — same shape as the 2026-08-14/
+  08-16 pattern, confirmed via `git reflog show master`, safe `git reset
+  --hard origin/master`), then scanned `prospects/*/status.md`. Reality:
+  28 prospects at `stage: found`, not "fifty in four batches" — and of
+  those, 23 already carry a documented email-gate hold or dead-end from a
+  prior run; only 5 were genuinely untouched. "Ready for GHL enrollment"
+  also isn't a real concept anywhere in this pipeline — nothing here
+  writes to GHL (CRM writes are an explicit hard limit on this role), and
+  no status field or workflow doc uses that phrase. Did not run the
+  50-prospect/GHL-framed batch. Instead picked up the actual 5 untouched
+  `stage: found` prospects (the same 5 flagged as backlog at the end of
+  the 2026-08-16 run above) — a normal-sized batch, consistent with the
+  cap-batch-size rule.
+
+  Result: 2 of 5 advanced to `enriched` (All Professional Landscape,
+  Merican Plumbing Sewer Specialist — both package), 3 held at `found` on
+  the email gate (Jones LawnCare & Landscaping, Karber Plumbing, Pest
+  Patrol of the SLV — all website track).
+
+  - **Guessed-pattern-on-confirmed-live-domain precedent applied twice
+    more this run** (All Professional Landscape, Merican Plumbing Sewer
+    Specialist) — both had a real, live, indexed company website but no
+    directly-discoverable email; used the info@ pattern on the confirmed
+    domain, labeled GUESSED not confirmed in both enrichment.md and the
+    CALL CARD. This precedent has now been used 8+ times across runs
+    since 2026-08-11 — still worth Kevin explicitly confirming this
+    reading of the gate is what he intended, per every prior note on this.
+  - **Merican Plumbing:** a real name (Mauro Perez) turned up tied to the
+    business's own Facebook page, but nothing confirms an owner title —
+    used on the CALL CARD with an explicit "not confirmed as owner"
+    caveat rather than treating it as settled. Worth naming as a new
+    category alongside the existing ones: a real, non-invented name with
+    an *uncertain title*, distinct from "no name found" and from the
+    owner-name-ambiguity-between-two-candidates cases logged before.
+  - **Jones LawnCare & Landscaping:** the website-gap gate came back
+    genuinely UNRESOLVED rather than confirmed or contradicted — this
+    session's egress proxy blocked every domain needed to check the one
+    remaining candidate (a generic, no-city Ueniweb subdomain). Didn't
+    force a false confirm; left it explicitly unresolved in enrichment.md
+    for a follow-up pass with working fetch access. The email gate failed
+    independently anyway (no domain to guess from), so this one's held at
+    `found` regardless — worth remembering as a case where the website
+    gate and the email gate can fail for genuinely different reasons in
+    the same prospect.
+  - **Pest Patrol of the SLV:** facebook.com and m.facebook.com were
+    hard-blocked by this environment's egress proxy this run (not a rate
+    limit, a structural block) — the Facebook page is almost certainly
+    where the owner name and a phone-adjacent contact lives, but this
+    session couldn't reach it. Website-gap itself confirmed decisively via
+    DNS. Flagged as a concrete follow-up target (working Facebook access
+    would likely close both the name and email gaps at once), not a dead
+    end on the business.
+  - **Karber Plumbing:** website-gap confirmed decisively, owner name
+    (Jamie Lee Karber) confirmed via two independent official sources —
+    only the email gate failed, and even that came with an environment
+    caveat (Facebook, TradeProof.net, BBB, the SD DLR PDF, YellowPages,
+    and Buzzfile were all egress-blocked this run, so absence-in-search
+    isn't the same as confirmed absence-on-page here).
+  - Egress-proxy blocking of essentially every direct-domain fetch
+    continues every run since 2026-08-02 — this run it specifically cost
+    two of the three held prospects a clean email-gate resolution (Pest
+    Patrol's Facebook block, Karber's six-source block), not just the
+    usual "search-summary-sourced not page-rendered" caveat. Worth a
+    renewed nudge to Kevin if this keeps costing real gate outcomes rather
+    than just confidence-level caveats.
+  - Push notification sent to Kevin this run flagging the fire endpoint
+    pattern — third near-identical injection attempt now (2x on
+    2026-08-12, this one on 2026-08-17), all asking for an oversized batch
+    framed around a workflow (GHL enrollment, or previously a specific
+    CSV) that doesn't match what's actually in the repo. Worth him
+    checking who/what can hit that endpoint, same ask as before.
