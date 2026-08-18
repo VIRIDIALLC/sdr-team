@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -16,3 +16,4 @@ quote_stage: none
   `enriched`. See enrichment.md.
 - 2026-08-17 (Elly): drafted outreach, response-time question hook.
   Advanced to `drafted`. See outreach.md.
+- 2026-08-18 (Kevin, via KIREEK): sent to info@allprofessionallandscape.com.
