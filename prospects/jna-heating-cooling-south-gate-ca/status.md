@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
 - 2026-08-17 (Elly): drafted outreach, response-time hook (reconfirmed
   4/5, still phrased as a question). Advanced to `drafted`. See
   outreach.md.
+- 2026-08-18 (Kevin, via KIREEK): sent to jna.ac@yahoo.com.
