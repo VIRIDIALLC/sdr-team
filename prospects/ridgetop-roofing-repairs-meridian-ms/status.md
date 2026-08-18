@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -19,3 +20,4 @@ quote_stage: none
   avoid repeating yesterday's E-Z Garage Door draft. Standard 84% data
   point included. See outreach.md.
 - 2026-08-18 (Kevin, via KIREEK): sent to ridgetop.roofing.repairs@gmail.com.
+- 2026-08-18 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
