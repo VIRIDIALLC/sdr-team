@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
   entirely per Montague's contradictory finding. Opener built on the five
   verified service lines plus the underlying-problem question. Email is a
   guess on a live domain. See outreach.md.
+- 2026-08-18 (Kevin, via KIREEK): sent to info@primapaintingllc.com.
