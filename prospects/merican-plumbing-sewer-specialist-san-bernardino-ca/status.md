@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
 - 2026-08-17 (Elly): drafted outreach, response-time question hook.
   Flagged thin-scale (2 reviews, no license/BBB record) for Kevin.
   Advanced to `drafted`. See outreach.md. See enrichment.md.
+- 2026-08-18 (Kevin, via KIREEK): sent to info@mericanplumbingsewerspecialist.com.
