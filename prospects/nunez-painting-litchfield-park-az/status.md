@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: dismissed
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
 - 2026-08-17 (Elly): drafted outreach, response-time question hook.
   Buckeye location not referenced per Montague's flag. Advanced to
   `drafted`. See outreach.md. See enrichment.md.
+- 2026-08-18 (Kevin, via KIREEK): removed from the review queue.
