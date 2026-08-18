@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -18,3 +18,4 @@ quote_stage: none
   Storm/local-search angle rather than the standard no-website opener, to
   avoid repeating yesterday's E-Z Garage Door draft. Standard 84% data
   point included. See outreach.md.
+- 2026-08-18 (Kevin, via KIREEK): sent to ridgetop.roofing.repairs@gmail.com.
