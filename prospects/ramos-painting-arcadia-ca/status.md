@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -18,3 +18,4 @@ quote_stage: none
   question (~3 days, unconfirmed but not contradicted), set against the
   steady 4.7/67-review figures. Email is a real discovered address. See
   outreach.md.
+- 2026-08-18 (Kevin, via KIREEK): sent to ramgb1023@gmail.com.
