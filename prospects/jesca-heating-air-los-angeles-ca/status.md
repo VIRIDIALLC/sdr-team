@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   Shakiest of the batch (no name, guessed email, unverified duplicate) and
   flagged for Kevin to sanity-check the listing before send. See
   outreach.md.
+- 2026-08-18 (Kevin, via KIREEK): sent to info@jescahvac.com.
