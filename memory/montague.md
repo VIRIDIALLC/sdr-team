@@ -924,3 +924,85 @@
     already fully documented email-gate holds/dead-ends from prior runs —
     correctly left alone, no new signal likely from re-running the same
     searches. No new untouched prospects remain as of this run.
+
+- (2026-08-18 run) Clean start, no stale-refs issue this time — `git fetch
+  origin` first per CLAUDE.md, then found local HEAD detached at the same
+  commit as `origin/master` (no divergence), `git checkout master && git
+  merge --ff-only` brought local master current with no risk. Also noticed
+  a root-level `STRANDED-WORK.md` left by a different session's ("VEGA")
+  blocker audit, flagging unrelated feature branches (a dashboard scaffold,
+  Playwright/Higgsfield tooling) never merged to master — out of scope for
+  this role (enrichment only) to merge unilaterally; left untouched for
+  Kevin or that session to handle, not something I should act on.
+
+  This run's fire-payload was the normal persona-defined prompt, no
+  suspicious injection content (unlike the four prior incidents logged
+  2026-08-12/08-17 above) — good to note the pattern isn't every run.
+  Picked up all 6 brand-new `stage: found` prospects from today's Rupika
+  batch (commit 903e37c, 3 package + 3 website) — the only untouched
+  prospects in the backlog; every other `found` prospect already carries a
+  documented email-gate hold/dead-end from a prior run. Used 6 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself.
+
+  Result: 4 of 6 advanced to `enriched` (Jesca Heating & Air, Prima
+  Painting, Ramos Painting — all package; RidgeTop Roofing and Repairs —
+  website), 2 held at `found` on the email gate (Lay's Electric, Watkins
+  Plumbing And Drains — both website track).
+
+  - **Ramos Painting (package) — a real correction, not just an unconfirmed
+    guess:** Rupika's brief said no dedicated domain surfaced; a live site
+    (rpaintingservices.com) actually exists, matching phone/address/service
+    list exactly. Removed the no-website-upsell flag. Same recurring
+    pattern as J Powers Electric (2026-08-12) and Scenic View Landscape
+    (2026-08-15) — a "no website found" brief note needs the same
+    double-check as an explicit website-gap or ad-activity claim, not just
+    those two. This is now the third instance.
+  - **Watkins Plumbing (website) — another real correction:** Rupika's
+    brief guessed the two Facebook pages she found were the same operation;
+    one of them (facebook.com/watkinsplbg) is actually an unrelated Chico,
+    CA business with its own decades-old operation and current non-Watkins
+    owner. Same-name collisions keep costing real verification time on this
+    team (Vance Heating/Air, High Country Lawn and Landscape, now this) —
+    worth remembering it's not just business-name collisions that need
+    checking, page/URL-handle collisions do too.
+  - **Prima Painting (package) — response-time figure graduated from
+    "unconfirmed" to "actively contradictory":** reconfirmation attempts
+    returned four different numbers across two dimensions (9hrs/1day
+    response time, 12/109 locals-requesting-quote) with zero verbatim
+    quoted snippets behind any of them. Per the CVA Exterminators
+    (2026-08-15) precedent, dropped the number entirely rather than using
+    it even as a hedged question — this is now a second clean instance of
+    that third bucket ("contradictory," distinct from "confirmed" and
+    "unconfirmed-but-usable").
+  - **Jesca Heating & Air (package) — the shakiest advance today:** every
+    individual gate technically cleared (email guessed-on-confirmed-domain,
+    response-time carried forward as a hedged question) but the
+    uncertainties compound — no owner name at all, a guessed not confirmed
+    email, and a response-time signal weakened further by discovering what
+    looks like a split/duplicate Yelp listing for the same business.
+    Advanced per the letter of the gates, but flagged prominently in
+    enrichment.md for Kevin's judgment rather than presented as a clean
+    win.
+  - **Guessed-pattern-on-confirmed-live-domain precedent used twice more**
+    this run (Jesca Heating & Air, Prima Painting) — now 10+ uses across
+    runs since 2026-08-11, still worth Kevin explicitly confirming this
+    reading of the gate is what he intended.
+  - **Both website-track holds this run had genuinely strong website-gap
+    confirmations** (DNS ENOTFOUND across 7-10 guessed domains each) but
+    failed purely on email — Lay's Electric (no domain to guess from, and
+    the Lloyd-vs-Payton contact-name question also stayed unresolved) and
+    Watkins Plumbing (a masked email exists on a directory listing but the
+    page itself couldn't be fetched to read it — a concrete follow-up
+    target, not a dead end).
+  - Egress proxy blocked essentially every direct WebFetch attempted across
+    all 6 prospects this run (company/guessed domains, BBB, Facebook,
+    Bizapedia, RoofReport, MeetAPlumber.com, CSLB, BuildZoom, AZ ROC, CA
+    SOS, MS SOS/MSBOC) — same recurring pattern logged since 2026-08-02.
+    Direct DNS lookups, notably, kept working throughout and were the
+    decisive tool for every website-gap confirmation/correction this run —
+    worth remembering DNS resolution is a real, reliable channel even when
+    page-level fetch is blocked.
+  - Backlog after this run: 27 prospects at `stage: found` (25 from before
+    + the 2 new holds), all now carrying a documented email-gate hold/
+    dead-end from some run. No untouched prospects remain.
