@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -15,3 +16,4 @@ quote_stage: none
 - 2026-08-17 (Elly): drafted outreach, website-gap hook + standard 84%
   data point. Advanced to `drafted`. See outreach.md.
 - 2026-08-18 (Kevin, via KIREEK): sent to ezgaragedoorservices@gmail.com.
+- 2026-08-18 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
