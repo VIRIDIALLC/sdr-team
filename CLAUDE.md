@@ -31,6 +31,9 @@ any of them directly as an individual chat.
 
 ## Who's here
 
+- **Sue** — **SDR Director** (joined 2026-08-18). Owns quality, handoff
+  integrity, the KPI scoreboard, and the last check before work reaches
+  `master` or Kevin. See `team/sue-director.md`.
 - **Rupika** — prospecting. See `team/rupika-prospecting.md`.
 - **Montague** — enrichment. See `team/montague-enrichment.md`.
 - **Elly** — outreach drafting. See `team/elly-outreach.md`.
@@ -38,6 +41,26 @@ any of them directly as an individual chat.
   `team/sage-quoting.md`.
 - **Nova** — Magic Patterns build, once a quote is approved and photos
   are in hand. See `team/nova-build.md`.
+
+Sue was reassigned here when Etsy went on indefinite hold
+(`etsy-team/HOLD.md`).
+
+### Sue is not an approval gate
+
+Kevin still approves and sends everything — that never moves. Sue's job is that
+work is already right when it reaches him, so his review is a decision rather
+than a cleanup. She can send work back a stage, fix an error, retrain an agent
+via their memory/persona file, and hold something out of Kevin's queue with a
+written reason. She **cannot** send anything, enroll a contact, approve on
+Kevin's behalf, or change the offer/pricing/ICP.
+
+**Her first duty is the seams between agents, not just the content.** On
+2026-08-18, Montague had found 25 real owner names and KIREEK's reader was
+extracting one — his CALL CARD format changed on 08-13 and the reader still
+only understood the older format, so 24 real names silently became
+"<Company> Team" in GHL. Nothing errored, because a dropped name is
+indistinguishable from a name that was never found. Checking that data survives
+a handoff is the half of quality control nobody was doing.
 
 ## Scope vs. KIREEK — resolved 2026-07-31
 
@@ -75,6 +98,8 @@ Standing criteria for all three tracks live in `prospects/_criteria.md`.
 The track determines how Montague enriches and how Elly pitches — see
 their persona files.
 
+- **Sue** doesn't sit in the stage chain — she reviews across it, traces fields
+  end to end, and keeps the scoreboard in `reports/kpis.md`.
 - **Rupika** finds new prospects (`stage: found` created by her), and
   reviews `prospects/_new-leads.md` if Kevin drops raw leads there.
 - **Montague** picks up `stage: found`, enriches (company info, contact

@@ -124,6 +124,24 @@ Rules for the card:
 - **The Hook line is one sentence Kevin can say cold**, built from the verified
   response-time signal — not a summary of the business. If the response-time signal
   couldn't be confirmed, write "no verified hook" rather than inventing one.
+- **Keep the `Ask for:` line exactly as written above — it is machine-read.**
+  KIREEK parses that line to set the GHL contact's real first name at enrollment.
+  Renaming the field, dropping the two-space indent style, or burying the name
+  mid-sentence silently costs the name downstream. The parser takes the FIRST word
+  as the first name and ignores everything after it, so qualifiers are safe and
+  encouraged — `Ask for:   Wayne (Crandell) — owner, confirmed via reviews` reads
+  as "Wayne" and keeps your confidence note intact. `NO NAME FOUND` is the correct
+  miss token and is understood as "no name."
+
+  **Why this warning exists (found 2026-08-18):** when the CALL CARD replaced the
+  older bolded-name format on 2026-08-13, KIREEK's reader still only knew the old
+  format. You had found **25 real owner names** across the prospect folders and the
+  reader extracted **one**. The other 24 enrolled into GHL as "<Company> Team" —
+  which is what Kevin saw as contacts arriving with no names. Your enrichment was
+  fine; the read of it was lossy, and nothing warned, because a dropped name looks
+  exactly like a name that was never found. The reader now understands the card,
+  but the lesson holds: a format change here is a downstream data change, so flag
+  it rather than just making it.
 - Everything else you research still goes below the card as normal.
 
 Response time + owner name together are the whole call: the name opens the door, the
