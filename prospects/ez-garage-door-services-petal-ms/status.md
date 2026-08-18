@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -14,3 +14,4 @@ quote_stage: none
   See enrichment.md.
 - 2026-08-17 (Elly): drafted outreach, website-gap hook + standard 84%
   data point. Advanced to `drafted`. See outreach.md.
+- 2026-08-18 (Kevin, via KIREEK): sent to ezgaragedoorservices@gmail.com.
