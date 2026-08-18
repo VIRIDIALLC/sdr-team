@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -14,3 +14,8 @@ quote_stage: none
   Confirmed real website exists (not a website-upsell case). Advanced to
   `enriched` on the guessed-email precedent, flagged as the shakiest of
   today's batch given the compounding uncertainty. See enrichment.md.
+- 2026-08-18 (Elly): drafted. Package track, response-time figure not used
+  at all. Opener asks about the apparent duplicate Yelp listing instead.
+  Shakiest of the batch (no name, guessed email, unverified duplicate) and
+  flagged for Kevin to sanity-check the listing before send. See
+  outreach.md.

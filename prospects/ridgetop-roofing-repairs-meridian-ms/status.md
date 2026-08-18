@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -14,3 +14,7 @@ quote_stage: none
   likely registered-agent artifact. Email CONFIRMED
   (ridgetop.roofing.repairs@gmail.com, search-sourced not page-verified).
   Advanced to `enriched`. See enrichment.md.
+- 2026-08-18 (Elly): drafted. Website track, DNS-confirmed website gap.
+  Storm/local-search angle rather than the standard no-website opener, to
+  avoid repeating yesterday's E-Z Garage Door draft. Standard 84% data
+  point included. See outreach.md.

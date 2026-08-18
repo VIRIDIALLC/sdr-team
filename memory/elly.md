@@ -588,3 +588,105 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
   landing-work rule.
+
+- **2026-08-18 (this run) — 4 drafted, small batch, first run under the
+  explicit quality gate.** `git fetch origin` first per CLAUDE.md:
+  origin/master had moved to 87161b8 (Montague's 2026-08-18 enrichment
+  pass, 4 advanced / 2 held on the email gate, on top of a Rupika find
+  batch). Container started detached at that exact commit with an empty
+  `git diff` — the same stale-ref-only pattern logged every run since
+  08-13, fixed with `git checkout -B master origin/master`.
+
+  Scanned `prospects/*/status.md`: 5 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification
+  hold from 2026-08-03, unchanged, correctly skipped for the umpteenth
+  time) plus 4 real new ones, all drafted:
+  ramos-painting-arcadia-ca (package), prima-painting-cave-creek-az
+  (package), jesca-heating-air-los-angeles-ca (package),
+  ridgetop-roofing-repairs-meridian-ms (website). No defensive-check
+  skips — all four had a real or domain-grounded-guessed email.
+
+  **The quality gate changed how I worked, concretely.** The fire payload
+  required two genuinely distinct angles per prospect, keeping the
+  stronger, and every `outreach.md` now ends with an explicit "Angle
+  considered and dropped" block naming the loser and why. Worth keeping
+  as a standing practice — writing the losing angle down forced the
+  comparison to be real rather than retroactive, and it gives Kevin a
+  second option to reach for if he doesn't like the one that shipped.
+
+  **Three of four prospects could NOT use a response-time number, and
+  each failed differently.** This run is a clean three-way illustration
+  of the escalating scale the team has been building case by case:
+  - **Ramos Painting — unconfirmed but not contradicted → use as a
+    question.** The one alternate figure Montague found was attached to a
+    phone number belonging to a different business, so she discarded it as
+    a mismatched listing rather than a correction. Hook used. Sharpened it
+    by setting the shaky ~3 days against the 4.7 stars / 67 reviews that
+    *did* hold steady everywhere — the contrast is what makes the question
+    land, and it costs nothing in verification risk since both halves come
+    off their own listing.
+  - **Prima Painting — actively contradictory → drop entirely.** Every
+    re-run produced different numbers (9hrs vs 1 day, 12 locals vs 109)
+    with no verbatim source-linked snippet behind any of them. Same
+    category as CVA Exterminators (08-15). Fell back to the
+    underlying-problem question, but anchored it in the five verified
+    service lines (painting, epoxy floors, roof coatings, stucco, cabinet
+    refinishing) so the fallback still opens on something specific rather
+    than generic. **Deliberately rejected Montague's own suggested CALL
+    CARD hook** (father/son shop, "most owners like that end up doing
+    intake themselves, is that still you?") — the family history is real
+    and specific but the sentence carrying it is an assumption about how
+    he operates dressed as an observation, which is the exact shape Kevin
+    killed on 08-13. Worth noting the CALL CARD hook is a suggestion, not
+    an instruction; it's fine to override it when it collides with the
+    opener rule.
+  - **Jesca Heating & Air — signal echoing my own query terms back →
+    drop, and find a different real observation.** Montague's re-check
+    found one result that restated the query with no link to the actual
+    listing, plus evidence of two separate Yelp listing URLs (1 review vs
+    5) which would make any figure unreliable anyway. **Turned the
+    duplicate listing itself into the opener** ("two Yelp pages for you,
+    one with a single review and one with five, on purpose or an old one
+    nobody cleaned up?"). Both doors face-saving, it's a question not a
+    claim, it's genuinely useful to the recipient, and no template could
+    produce it. New pattern worth remembering: when the response-time
+    signal collapses, look at *why* it collapsed — the reason it's
+    unreliable is sometimes a better hook than the number would have been.
+
+  **RidgeTop Roofing — deliberately avoided repeating yesterday's
+  website-track draft.** Montague's CALL CARD hook ("I don't see a website
+  anywhere, just your Facebook page") is the standard shape, and it's
+  nearly word-for-word the E-Z Garage Door draft from 08-17. Two
+  near-identical emails leaving Kevin's inbox in two days is the template
+  smell the gate exists to catch, so pivoted to a roofing-and-county
+  specific version (storm comes through Lauderdale County, everyone
+  searches "roofing repair Meridian MS" at once, nothing of yours to land
+  on). Same argument, impossible to mistake for a template. **Standing
+  note for future website-track runs: check the last website-track draft
+  before writing the next one.** That track has only one natural hook, so
+  it's the one most at risk of converging on a single template.
+
+  **Flagged prominently for Kevin on Jesca:** the opener's premise (two
+  listings) is Montague's read off search results, not page-rendered. If
+  he loads the live Yelp and there's only one listing, the draft needs a
+  rewrite — the underlying-problem fallback is named in the note as the
+  substitute. Also agreed with Montague's own call that this is the
+  shakiest prospect of the batch (no name, guessed email, weak signal,
+  unverified opener premise) and said so plainly: send it last, or skip it
+  if being selective. Better to say that than to hand over four drafts as
+  if they were equally solid.
+
+  **Also carried forward:** Ramos was a second website-gap correction from
+  Montague (Rupika's "no domain found" was wrong, rpaintingservices.com is
+  real) — the note tells Kevin explicitly not to tag `no-website` on the
+  GHL contact. That's the third time this specific brief-level guess has
+  been wrong (J Powers 08-12, Scenic View 08-15, Ramos today); it is
+  reliably worth double-checking.
+
+  Track breakdown: 3 package, 1 website. Ran the standard post-write sweep
+  on body text only (em dash, bracket placeholder, retired package name,
+  third-person "Kevin", "Viridia" in body) — all four clean on every
+  check.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
+  landing-work rule.
