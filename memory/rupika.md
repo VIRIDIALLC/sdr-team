@@ -598,6 +598,67 @@
   follow-up: "Island Shine Windows and Eaves" (found via Facebook, not yet
   confirmed).
 
+- (run 2026-08-18) Scheduled run scoped to two tracks only (package + website — ads
+  track not requested this run). `git fetch` again showed new branches and master
+  fast-forwarded, and the container started on a detached HEAD unrelated to
+  `origin/master` — same recurring stale-ref symptom as every prior run since
+  2026-08-13, fixed with `git checkout master` (local already matched origin's tip
+  `0429057`, just needed to leave detached HEAD), nothing lost. `_new-leads.md` had
+  nothing dropped in. Ran both tracks as parallel sub-agents again (continues
+  working well; package track ran ~90 searches this time, notably more than usual,
+  reflecting how exhausted the easy suburbs have become).
+- (package/priority track, run 2026-08-18) Pushed into newer Phoenix suburbs (San
+  Tan Valley, Sun City West, El Mirage, Youngtown, Cave Creek, Anthem AZ) and LA
+  suburbs (San Gabriel, Monterey Park, Alhambra, Covina, Claremont, Rosemead,
+  Duarte, La Verne/San Dimas CA) — mostly cold, consistent with the trend of lower
+  hit rates in fresher/smaller suburbs. 3 hits: Prima Painting (Cave Creek AZ,
+  ~9hr response/12 quote requests, 4.3star/7 reviews — thin review count, genuine
+  small owner-operator scale, AZ ROC #318828 active), Ramos Painting Services
+  (Arcadia CA, surfaced via an Alhambra search — actual home city is Arcadia, ~3
+  DAY response despite 4.7star/67 reviews — sharpest gap found this run but
+  single-source only, no website found either so flagged as a possible no-website
+  upsell case), Jesca Heating & Air Conditioning (Los Angeles/Glassell Park CA,
+  surfaced via an Alhambra search — actual home city is LA, ~1 day response,
+  5.0star/only 5 reviews, Yelp listing UNCLAIMED — weakest of the three, no
+  quote-request volume figure could be confirmed). Cross-suburb resolution keeps
+  recurring (2 of 3 hits this run alone) — an "Alhambra CA" search surfaced both
+  Arcadia and LA/Glassell Park businesses; treat the suburb searched as a starting
+  point only, always confirm actual home address. Coleman Painting (Cave Creek AZ
+  listing) turned out to be the SAME company as the already-existing
+  `coleman-painting-gilbert-az` prospect under a different service-area listing —
+  worth remembering one business can surface under multiple city searches, check
+  existing prospects by NAME not just by the searched city before queuing. Scale
+  disqualifiers again this run: Pro Active Pest Control (Chandler AZ, 2hr response
+  but 612+ Birdeye reviews since 2014 — too scaled), Air Mek and Next Level
+  Heating and Cooling (both surfaced via Alhambra HVAC searches but resolved to
+  Lake Elsinore and Anaheim respectively, both too big/far). San Tan Valley, Sun
+  City West, El Mirage, Youngtown AZ and San Gabriel, Monterey Park, Covina,
+  Claremont, Rosemead, Duarte, La Verne/San Dimas CA can likely be marked
+  exhausted now (tried across most verticals, mostly cold) — Cave Creek AZ is the
+  exception, worth a second pass on its untried verticals (HVAC, garage door,
+  restoration came up empty this run but painting worked).
+- (website track, run 2026-08-18) Two brand-new small markets, Meridian MS (pop.
+  ~33k) and Bartlesville OK (pop. ~36k) — 3 hits: Watkins Plumbing And Drains
+  (Meridian MS, pure Facebook-only, owner names Chris/Ashley Watkins found but
+  unconfirmed independently — flagged since "Watkins Plumbing" is a very common
+  name nationally, ruled out 4 same-named businesses elsewhere as unrelated),
+  Lay's Electric (Bartlesville OK, established 1973, pure Facebook-only,
+  distinctive name so low collision risk, but owner name conflicting between two
+  sources — Payton Lay vs. Lloyd Lay, likely a multi-generation family shop,
+  flagged for Montague to confirm which to use), RidgeTop Roofing and Repairs
+  (Meridian MS, Facebook-only, no owner name found yet, flagged an LLC filing
+  address in Ridgeland MS ~90mi away that's likely just a registered-agent address
+  not a second business — not fully resolved). Banked backups, not queued (avoid
+  stacking a 2nd same-city/vertical hit in one batch): S&S Electric (Bartlesville
+  OK electrical, Facebook-only, owner-email signal mjserafin103@yahoo.com). Two
+  more banked but need a collision/address check before queuing if revisited: B&B
+  Painting (Salina KS — a same-named KC business may be unrelated, unconfirmed)
+  and SK Painting Services LLC (Salina KS — BBB shows a Brookville KS address,
+  not Salina, needs confirming). Salina KS (pest control, landscaping) and
+  Jonesboro AR (garage doors) both ran fully cold this pass — all real sites
+  found. Meridian MS has an untried vertical remaining if revisited (HVAC came up
+  fully cold — 3 real sites checked, but septic/other trades untried).
+
 ## Dead ends to stop searching
 
 (none yet)
