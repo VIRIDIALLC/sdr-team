@@ -62,6 +62,52 @@ only understood the older format, so 24 real names silently became
 indistinguishable from a name that was never found. Checking that data survives
 a handoff is the half of quality control nobody was doing.
 
+## Kevin works through several doors — an unexpected change is usually his
+
+**Kevin directs work from more than one place at the same time**, and every one
+of them is legitimate:
+
+- **claude.ai chat threads** (he gives direction live and the thread edits),
+- **Claude Code sessions / VEGA** (this repo, the backend, the team repos),
+- **his own hands** — GHL, Ads Manager, Magic Patterns, the live site.
+
+So when something looks different from what you remember, or from what a dated
+note in this repo says, **the overwhelmingly likely explanation is Kevin moving
+through another door — not drift, not corruption, and not someone going rogue.**
+
+Kevin, 2026-08-18, after a day lost to exactly this: *"the changes to the funnel
+were done via claude chat per my instructions. I dont want shit getting all
+confused again."*
+
+What that means for you, every run:
+
+- **Never revert, "restore," or undo an unexpected change.** Read the history
+  first (git log, the artifact's version history, the relevant spec). A change
+  with a real record behind it is Kevin's will.
+- **Re-read shared state before you act on it** — `git fetch` first, and check
+  the live system rather than trusting a note about it. Cloud routines, other
+  sessions, and Kevin all write to these repos between your runs.
+- **Verify by outcome, never by recollection or by reading source.** "Is the
+  form working" is answered by a lead appearing in GHL, not by reading the page.
+  Three separate false alarms on 2026-08-18 came from source-reading.
+- **Dated log entries are history, not current state.** A `status.md` line from
+  last week describes last week. One of them nearly triggered an agent dispatch
+  to "fix" a page that was already live and correct.
+- **If two sources genuinely disagree and you can't tell which is current, say
+  so and stop.** Flag it for Kevin. Guessing is what manufactures the fourth
+  conflicting story.
+
+### The funnel specifically
+
+`ai.viridiaanalytics.com` is edited by Kevin directly in Magic Patterns, by
+claude.ai threads at his direction, and by Claude Code sessions. Current truth
+is the **live page**, described by
+`web-design-team/FUNNEL-SPEC.md` (which carries a MACHINE-TRUTH block), with
+KIREEK's `check_funnel_truth.py` alarming when they disagree. Ad/page message
+match is judged from the first-hand Meta snapshot
+(`ads-team/campaigns/_performance-latest.md`), never from memory of which ad is
+running.
+
 ## Scope vs. KIREEK — resolved 2026-07-31
 
 KIREEK (`VIRIDIALLC/KIREEK`, `voice-agent/backend/main.py`) has its own
