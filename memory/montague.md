@@ -1006,3 +1006,87 @@
   - Backlog after this run: 27 prospects at `stage: found` (25 from before
     + the 2 new holds), all now carrying a documented email-gate hold/
     dead-end from some run. No untouched prospects remain.
+
+- (2026-08-19 run) Clean start — `git fetch origin` first per CLAUDE.md,
+  found local HEAD detached but matching `origin/master` exactly (60edc19,
+  Rupika's 2026-08-19 batch already on it), `git checkout master && git
+  merge --ff-only` brought local current with no risk. Picked up all 5
+  brand-new `stage: found` prospects from that batch (3 package, 2
+  website) — the only untouched prospects in the backlog; the other 32
+  already carry a documented email-gate hold/dead-end from a prior run.
+  Used 5 parallel research subagents (pure-research, no file writes), then
+  wrote all enrichment.md/status.md updates myself.
+
+  Result: 2 of 5 advanced to `enriched` (Casa Painting Services, Reliant
+  Pest Control — both package), 3 held at `found` on the email gate
+  (New Light Electric — package; Dorries Roofing, J.A.M. Pest Control —
+  both website).
+
+  - **Casa Painting Services:** owner Carlos Casasola confirmed (high
+    confidence, 5+ sources), email confirmed, website confirmed real. A
+    real reconfirmation discrepancy worth naming as its own pattern,
+    distinct from "unconfirmed" and "contradictory": reconfirmation found
+    a *different, internally-consistent* number (~2hrs, 3x) than Rupika's
+    original (~5hrs) — not noise, not a contradiction of the pain point
+    (2hrs is still real leakage against 301 reviews of lead volume), just
+    a wrong original figure. Used the better-supported reconfirmed number,
+    flagged the discrepancy plainly rather than silently swapping it in.
+  - **Reliant Pest Control:** owner Gary Martin confirmed, email
+    confirmed. Response-time reconfirmation actually made things *less*
+    stable, not more — six total readings (brief's 4 + this run's 2) span
+    2-10hrs with every single one over threshold but no converging number.
+    Judged this too unstable to cite any figure at all (stricter than the
+    usual "carry it forward as a question" default) — used a generic
+    question instead. Real independent pain-point found and used instead:
+    the business is closed Saturdays/Sundays, a concrete structural gap
+    for a trade with real emergencies.
+  - **New Light Electric — the most consequential finding of this run, an
+    identity question, not just a gate failure.** Deeper verification
+    found the Bellflower listing's phone number reverse-resolves to the
+    Long Beach "New Light Electric" entity that Rupika's brief had
+    explicitly treated as a distinct, unrelated business (based on
+    address/phone/review-count matching at the time). Combined with the
+    same first name surfacing on both and closely-aligned "years in
+    business" figures, there's a real chance these are the same operation
+    running city-targeted duplicate Yelp listings, not two companies.
+    Couldn't resolve it without opening Yelp directly (off-limits).
+    Separately, the response-time figure came back CONTRADICTED (1-2 days
+    found, not the brief's ~4hrs) — dropped per the CVA Exterminators/
+    Prima Painting precedent. Held at `found` on the email gate regardless,
+    but flagged the identity question as the more important issue for
+    Sue/Kevin to resolve before this one goes further — worth remembering
+    as a new failure mode alongside the "same-name decoy in a different
+    city" pattern logged repeatedly (Vance Heating, High Country Lawn,
+    Watkins Plumbing): here the two listings may not even be different
+    businesses, just the same one gaming local SEO with duplicate
+    city-targeted pages.
+  - **Dorries Roofing:** website-gap confirmed (search-convergent, DNS
+    check not directly available this run). A genuine two-owner ambiguity
+    — BBB lists Shayne Dorries as owner, but LinkedIn lists Roddie Steele
+    as "Business Owner" too, both appearing as equal contacts on every
+    directory. Recommended Shayne first (BBB owner of record) but flagged
+    Roddie as a real second candidate, not a subordinate — same
+    "don't guess which of two real candidates" convention as AMS
+    Landscaping/Krasiva Windows. Email gate failed — no domain exists to
+    guess from.
+  - **J.A.M. Pest Control:** website-gap confirmed via decisive DNS
+    ENOTFOUND on 6 guessed domains. A family-ownership wrinkle: the
+    business's own public-facing material names John Mack as owner, but
+    BBB's registered owner is Alissa Mack (likely a relative, business
+    registered 1998, John's own "13 years" claim suggesting he took over
+    operating it later) — recommended John for the cold call since that's
+    the current public-facing name, while flagging Alissa as who might
+    actually answer as registered owner. Email gate failed — no domain to
+    guess from, and Facebook/BBB's own contact widgets were egress-blocked
+    this run, so absence-in-search isn't confirmed absence-on-page here.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 5 prospects this run (company/guessed domains, BBB,
+    Facebook, Instagram, D&B, Manta, ND/OK business registries) — same
+    recurring pattern logged since 2026-08-02, all findings this run are
+    search-snippet-sourced except the DNS-resolution checks on J.A.M. Pest
+    Control's guessed domains (direct and conclusive despite the general
+    block).
+  - Backlog after this run: 35 prospects at `stage: found` (32 from before
+    + 3 new holds), all now carrying a documented email-gate hold/dead-end
+    or (New Light Electric) an identity question from this run. No
+    untouched prospects remain.
