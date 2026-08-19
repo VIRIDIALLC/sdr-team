@@ -1,12 +1,23 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-19 21:51 UTC (2026-08-19 14:51 Phoenix)
+Generated: 2026-08-19 21:54 UTC (2026-08-19 14:54 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
 > or your own memory of last run — it supersedes all of them.** If the
 > timestamp above is more than ~12 hours old, the loop is down: say so
 > plainly and treat everything here as stale rather than trusting it.
+
+## THE NUMBER — $10k MRR by 2026-12-31 (everything here serves this)
+
+- **Gap: $5,300/mo** → **5 Complete System client(s)** at $1,197/mo (plan +1 for churn risk) in **133 days** (19 weeks) → ~1 close per 3 week(s).
+- Real MRR $4,700 (bank-flow real gross revenue, Apr-Jul avg (corrected P&L 2026-08-15). QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
+- **This week** (since 2026-08-17): 0 conversations · 0 proposals out · 0 closed · $0 MRR added
+- Last week: (tracking began 2026-08-19 - no prior week recorded)
+- Scoreboard counts come from Kevin via VEGA ('log 3 conversations') — the
+  machine can't see his phone. Vanity metrics (impressions, followers,
+  'leads') are NOT the scoreboard. Conversations → proposals → closed →
+  MRR added → MRR retained.
 
 ## Kevin's current mode & priorities
 
@@ -59,43 +70,55 @@ Generated: 2026-08-19 21:51 UTC (2026-08-19 14:51 Phoenix)
 ## Systems — live-probed, not recalled
 
 - **GHL API:** DOWN — configured but the API rejects the key (HTTP 401). Anything needing GHL is blocked until Kevin rotates the key.
-- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-19 21:22 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 28m ago)
-- **KIREEK repo:** 3 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
+- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-19 21:54 UTC)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 0m ago)
+- **KIREEK repo:** 4 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
 
 ### Etsy Team
-- last commit: 6 minutes ago — "KIREEK: fleet-state refresh" (13b62affe)
+- last commit: 3 minutes ago — "KIREEK: fleet-state refresh" (1020c0b80)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 6 minutes ago — "KIREEK: fleet-state refresh" (286530029)
+- last commit: 3 minutes ago — "KIREEK: fleet-state refresh" (ceec9b61e)
 - agent work in the last 24h: "Elly: 2 outreach drafts (both package track)"; "Montague: enrich 5 new prospects (2 advanced, 3 held on email gate)"; "Rupika: 5 new prospects (3 package, 2 website)"
-- waiting on Kevin (1): Follow-up sequence — 6 prospect(s) ready to enroll
+- waiting on Kevin (2): For Kevin's review — the selling kit for your cold calls; Follow-up sequence — 6 prospect(s) ready to enroll
 
 ### Ads Team
-- last commit: 6 minutes ago — "KIREEK: fleet-state refresh" (5a83b472b)
+- last commit: 19 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (88aa9ce72)
 - waiting on Kevin: nothing
 
 ### Customer Success
-- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (b6760013c)
+- last commit: 3 minutes ago — "KIREEK: fleet-state refresh" (8a918dcaf)
 - waiting on Kevin (1): Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (842a5ab11)
+- last commit: 3 minutes ago — "KIREEK: fleet-state refresh" (3b7242b9e)
 - waiting on Kevin (5): A/R reminders — status check, 2026-08-17; Corrected P&L preview — Jan 1 – Aug 14, 2026; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15
 
 ### Social Team
-- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (71ff13985)
+- last commit: 3 minutes ago — "KIREEK: fleet-state refresh" (2fc6558af)
 - agent work in the last 24h: "Rati 2026-08-19: Education Week 2 drafted, Week 1 advanced to ready, comments endpoint liv"; "Recover stranded 2026-08-11 security-incident record into memory/rati.md"
 - ⚠️ 1 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin (2): For Kevin's review — Education Week 1 (first batch under the content doctrine); For Kevin's review — Education Week 2, plus Week 1 is now genuinely ready
 
 ### SEO Team
-- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (79bce342d)
+- last commit: 3 minutes ago — "KIREEK: fleet-state refresh" (ccaa64bb1)
 - waiting on Kevin: nothing
 
 ### Web Design Team
-- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (c1995e3dc)
+- last commit: 3 minutes ago — "KIREEK: fleet-state refresh" (bdc07c986)
 - waiting on Kevin: nothing
+
+## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
+
+```
+As of 2026-08-19 21:54 UTC (auto-generated by VEGA's backend):
+Real MRR: $4700/mo (bank-flow real gross revenue, Apr-Jul avg (corrected P&L 2026-08-15). QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
+Target: $10000 by 2026-12-31 | Offer: $1197/mo
+Gap: $5,300/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 133 days (19 weeks) → ~1 close per 3 week(s).
+This week (since 2026-08-17): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
+Systems: GHL DOWN — configured but the API rejects the key (HTTP 401). An | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 0m ago)
+Approvals waiting on Kevin across the fleet: 10
+```
