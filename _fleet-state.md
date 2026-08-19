@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-19 21:23 UTC (2026-08-19 14:23 Phoenix)
+Generated: 2026-08-19 21:29 UTC (2026-08-19 14:29 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -39,44 +39,42 @@ Generated: 2026-08-19 21:23 UTC (2026-08-19 14:23 Phoenix)
 
 - **GHL API:** DOWN — configured but the API rejects the key (HTTP 401). Anything needing GHL is blocked until Kevin rotates the key.
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-19 21:22 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 0m ago)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 5m ago)
 - **KIREEK repo:** 3 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
 
 ### Etsy Team
-- last commit: 2 minutes ago — "Acquisition doctrine v1.0 + ground-truth reading order" (93e6912bc)
+- last commit: 2 minutes ago — "Doctrine appendix: the full research reports, with paths" (db7ca4d5f)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 2 minutes ago — "Acquisition doctrine v1.0 + ground-truth reading order" (3219022f5)
+- last commit: 2 minutes ago — "Doctrine appendix: the full research reports, with paths" (6ba13d8a8)
 - agent work in the last 24h: "Elly: 2 outreach drafts (both package track)"; "Montague: enrich 5 new prospects (2 advanced, 3 held on email gate)"; "Rupika: 5 new prospects (3 package, 2 website)"
 - waiting on Kevin (1): Follow-up sequence — 6 prospect(s) ready to enroll
 
 ### Ads Team
-- last commit: 32 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (ba4f14852)
-- agent work in the last 24h: "Wraith: routine monitoring run, 2026-08-19 â€” record 08-18 stat-proof kill-order baseline"
-- ⚠️ 1 recent commit(s) stranded off master — needs a merge
+- last commit: 2 minutes ago — "Doctrine appendix: the full research reports, with paths" (f0d550fa5)
 - waiting on Kevin: nothing
 
 ### Customer Success
-- last commit: 2 minutes ago — "Acquisition doctrine v1.0 + ground-truth reading order" (63f6287c1)
+- last commit: 2 minutes ago — "Doctrine appendix: the full research reports, with paths" (fe2941be4)
 - waiting on Kevin (1): Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 2 minutes ago — "Acquisition doctrine v1.0 + ground-truth reading order" (a6bd645ac)
+- last commit: 2 minutes ago — "Doctrine appendix: the full research reports, with paths" (d968b5b41)
 - waiting on Kevin (5): A/R reminders — status check, 2026-08-17; Corrected P&L preview — Jan 1 – Aug 14, 2026; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15
 
 ### Social Team
-- last commit: 2 minutes ago — "Acquisition doctrine v1.0 + ground-truth reading order" (5fd19a8be)
+- last commit: 2 minutes ago — "Doctrine appendix: the full research reports, with paths" (7e7e541a9)
 - agent work in the last 24h: "Rati 2026-08-19: Education Week 2 drafted, Week 1 advanced to ready, comments endpoint liv"; "Recover stranded 2026-08-11 security-incident record into memory/rati.md"
 - ⚠️ 1 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin (2): For Kevin's review — Education Week 1 (first batch under the content doctrine); For Kevin's review — Education Week 2, plus Week 1 is now genuinely ready
 
 ### SEO Team
-- last commit: 2 minutes ago — "Acquisition doctrine v1.0 + ground-truth reading order" (8647996b9)
+- last commit: 2 minutes ago — "Doctrine appendix: the full research reports, with paths" (9c3f53c2a)
 - waiting on Kevin: nothing
 
 ### Web Design Team
-- last commit: 2 minutes ago — "Acquisition doctrine v1.0 + ground-truth reading order" (0b7a70e83)
+- last commit: 2 minutes ago — "Doctrine appendix: the full research reports, with paths" (f5e900c88)
 - waiting on Kevin: nothing
