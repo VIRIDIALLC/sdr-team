@@ -690,3 +690,84 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
   landing-work rule.
+
+- **2026-08-19 (this run) — 2 drafted, small batch, that's all there was.**
+  `git fetch origin` first per CLAUDE.md: origin/master had moved to
+  957dad4 (Montague's 2026-08-19 enrichment pass, 2 advanced / 3 held on
+  the email gate, on top of a Rupika find batch). Container started in a
+  detached HEAD with local `master` 23 commits behind — the same stale-ref
+  pattern logged every run since 08-13, but this time a plain
+  `git checkout master && git merge --ff-only origin/master` did it, no
+  unrelated-history weirdness.
+
+  Scanned `prospects/*/status.md`: 3 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold
+  from 2026-08-03, unchanged, skipped again) plus the 2 real new ones, both
+  drafted: casa-painting-northridge-ca (package) and
+  reliant-pest-control-northridge-ca (package). No defensive-check skips —
+  both had a genuinely CONFIRMED email, not a domain guess, which is the
+  cleanest pair on that gate in a long while. Montague held the other three
+  of her batch at `found` on the email gate, so 2 was the whole queue, not
+  a batch-size choice.
+
+  **The dominant judgment call this run: both prospects are in Northridge,
+  both package track, drafted the same day, out of the same inbox. Sameness
+  was the live risk, not signal quality.** Montague's CALL CARD hooks made
+  it worse, not better: Casa's suggested hook is the response-time question,
+  and Reliant's is the closed-weekends question, and Casa also has posted
+  weekend-closed hours. Left alone, either pairing produces two emails with
+  the same skeleton.
+
+  - **Casa Painting — dropped a usable response-time number on purpose.**
+    Montague actually reconfirmed ~2 hrs three times (superseding Rupika's
+    ~5 hrs, which was never sourced across three targeted attempts). Under
+    the standing rule it was fair game as a question. Didn't use it for two
+    reasons: 2 hours is mild pain against 301 reviews, and the sentence it
+    produces is near word-for-word the Ramos Painting draft from 08-18 —
+    same trade, same "your Yelp shows N sitting next to X stars and Y
+    reviews" shape, days apart. Built the opener on posted hours instead
+    (Mon-Fri 7-4, closed weekends) against Saturday being when people decide
+    to repaint. **New reasoning worth keeping: posted hours are a
+    better-quality fact than a Yelp response average.** They don't drift
+    between searches, they're structural, and they're just as much "off
+    their own listing." Every time the response-time metric has failed us
+    (six-reading spreads, misparses, misattributions) the posted hours were
+    sitting there stable the whole time.
+  - **Reliant Pest Control — the TV commercial beat the closed-weekend
+    hook.** Response time was unusable (6 readings, 2 to 10 hrs, every one
+    over the threshold but no stable number — Montague's call, agreed).
+    Gary posted on his own LinkedIn about running a Spectrum TV spot. That
+    reframes the whole pitch: he's not a business that needs convincing to
+    invest in demand, he already bought it, and the question is only where
+    it lands when the office closed at 4. Used his real posted opening time
+    (8:30) in the body so the specificity is verifiable. Closing line sells
+    the outcome with no feature named: "you'd already paid for that call
+    before it rang."
+
+  **Standing note, generalizing the 08-18 website-track one:** the "check
+  the last draft in this track before writing the next" rule needs a second
+  half — **also check the other drafts in your own current batch.** Two
+  prospects enriched the same day, same city, same track will have
+  converging hooks, and Montague's CALL CARDs won't flag it because she
+  writes them one prospect at a time. That collision is mine to catch.
+
+  **Also worth logging:** I overrode Montague's suggested CALL CARD hook on
+  BOTH prospects this run. That's not a criticism of her cards, they're
+  correct per-prospect. It's the third run in a row where the card was a
+  suggestion I had good reason to decline (Prima Painting 08-18 was the
+  first). The card is input, not instruction, and that's now well
+  established.
+
+  Deliberately left out of Reliant's body: the reviewer who reported being
+  "lied to on the phone." Real corroboration that the communication gap
+  exists, useful for Kevin on a call, but quoting a bad review at a stranger
+  is the one door that isn't face-saving.
+
+  Caught one sameness detail in the sweep — both drafts originally closed
+  "Worth 15 minutes?" — and varied Casa's. Track breakdown: 2 package. Ran
+  the standard post-write sweep on body text only (em dash, bracket
+  placeholder, retired package name, third-person "Kevin", "Viridia") —
+  both clean on every check.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
+  landing-work rule.
