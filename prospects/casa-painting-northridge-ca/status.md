@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   would have been near-identical to the Ramos Painting draft from 08-18
   (same trade, days apart). Dropped angle recorded in outreach.md.
   Advanced to `drafted`.
+- 2026-08-19 (Kevin, via KIREEK): sent to carlospainter21@yahoo.com.
