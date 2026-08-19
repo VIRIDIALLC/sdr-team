@@ -214,3 +214,21 @@ doctrine adds one meta-standard: **every claim in anything we ship is either (a)
 Tier 1/2 sourced, (b) our own measured data, or (c) not in the document.** Kevin,
 2026-08-18: "I cannot run a business with bad info." That applies to what we tell
 prospects exactly as much as what we tell Kevin.
+---
+
+## Appendix — the full research reports (the receipts)
+
+The complete three-agent research pass behind this doctrine, with every
+source, URL, and credibility note:
+
+- `sdr-team/research/speed-to-lead-evidence.md` — the §5 claim architecture's
+  full evidence base, including the trace of which famous stats are fabricated.
+- `ads-team/research/channel-benchmarks.md` — the §6 channel numbers with
+  sources and the variance flags.
+- `sdr-team/research/agency-acquisition-evidence.md` — positioning, proof,
+  niching, and guarantee evidence behind §1–§4, tagged MEASURED / CONSENSUS /
+  FOLKLORE.
+
+If you work in a different repo, those paths are sibling repos on GitHub
+(github.com/VIRIDIALLC/<repo>). Quote the doctrine day-to-day; open the
+reports when you need the primary source or a credibility judgment.
