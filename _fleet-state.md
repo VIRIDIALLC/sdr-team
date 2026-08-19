@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-19 21:45 UTC (2026-08-19 14:45 Phoenix)
+Generated: 2026-08-19 21:51 UTC (2026-08-19 14:51 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -34,47 +34,68 @@ Generated: 2026-08-19 21:45 UTC (2026-08-19 14:45 Phoenix)
   Job System."
 - **Etsy team: on hold indefinitely** (crew reassigned — Ash→social,
   Elenor→SEO, Sue→SDR Director).
+- **THE NUMBER: $10,000 MRR by 2026-12-31** (Growth Council charter,
+  2026-08-19). The scoreboard is conversations → proposals → closed → MRR
+  added → MRR retained; vanity metrics don't count. Gap math lives in the
+  scoreboard section above this file's quote in `_fleet-state.md`.
+- **Team tiers (one-channel discipline, per the council's operating rules —
+  Kevin is one person and every output lands on HIS approval queue):**
+  - **PRIMARY:** sdr-team (feed and follow Kevin's cold calling) and cs-team
+    (retention + referral engine — MRR kept counts the same as MRR won).
+  - **SUPPORT:** finance-team (keep CAC/LTV computable, A/R moving),
+    web-design-team (the post-call background check: case studies, pricing,
+    proof on the live site).
+  - **BACKGROUND (low cadence, minimal approval traffic):** seo-team,
+    social-team. ads-team dormant, etsy-team held.
+  - Every agent: before shipping anything, ask "does this trace to the gap?"
+    If it isn't scoreboard-traceable and isn't your team's kit-gap work, it
+    can wait. Do NOT flood Kevin's approval queue with background-tier output.
+- **Growth Council decisions land HERE.** Kevin runs a Growth Council (a
+  claude.ai Project) for strategy. When it decides something, this file gets
+  the one-line ruling with a date, and the fleet inherits it via
+  `_fleet-state.md`. The council's current state flows the other way: the
+  COUNCIL REFRESH block at the bottom of `_fleet-state.md` is paste-ready.
 
 ## Systems — live-probed, not recalled
 
 - **GHL API:** DOWN — configured but the API rejects the key (HTTP 401). Anything needing GHL is blocked until Kevin rotates the key.
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-19 21:22 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 22m ago)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 28m ago)
 - **KIREEK repo:** 3 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
 
 ### Etsy Team
-- last commit: 6 minutes ago — "KIREEK: fleet-state refresh" (aeb55c4bd)
+- last commit: 6 minutes ago — "KIREEK: fleet-state refresh" (13b62affe)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 6 minutes ago — "KIREEK: fleet-state refresh" (b0dd19102)
+- last commit: 6 minutes ago — "KIREEK: fleet-state refresh" (286530029)
 - agent work in the last 24h: "Elly: 2 outreach drafts (both package track)"; "Montague: enrich 5 new prospects (2 advanced, 3 held on email gate)"; "Rupika: 5 new prospects (3 package, 2 website)"
 - waiting on Kevin (1): Follow-up sequence — 6 prospect(s) ready to enroll
 
 ### Ads Team
-- last commit: 6 minutes ago — "KIREEK: fleet-state refresh" (cad4c557d)
+- last commit: 6 minutes ago — "KIREEK: fleet-state refresh" (5a83b472b)
 - waiting on Kevin: nothing
 
 ### Customer Success
-- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (fee29c9ca)
+- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (b6760013c)
 - waiting on Kevin (1): Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (a35f7e5dd)
+- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (842a5ab11)
 - waiting on Kevin (5): A/R reminders — status check, 2026-08-17; Corrected P&L preview — Jan 1 – Aug 14, 2026; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15
 
 ### Social Team
-- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (9386e70c7)
+- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (71ff13985)
 - agent work in the last 24h: "Rati 2026-08-19: Education Week 2 drafted, Week 1 advanced to ready, comments endpoint liv"; "Recover stranded 2026-08-11 security-incident record into memory/rati.md"
 - ⚠️ 1 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin (2): For Kevin's review — Education Week 1 (first batch under the content doctrine); For Kevin's review — Education Week 2, plus Week 1 is now genuinely ready
 
 ### SEO Team
-- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (9bfde8c52)
+- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (79bce342d)
 - waiting on Kevin: nothing
 
 ### Web Design Team
-- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (0ec023ae0)
+- last commit: 5 minutes ago — "KIREEK: fleet-state refresh" (c1995e3dc)
 - waiting on Kevin: nothing
