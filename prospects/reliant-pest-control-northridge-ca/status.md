@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -20,3 +20,4 @@ quote_stage: none
   CALL CARD hook deliberately not used: it collides with the Casa Painting
   draft in this same batch. Dropped angle recorded in outreach.md.
   Advanced to `drafted`.
+- 2026-08-19 (Kevin, via KIREEK): sent to info@reliantpestcontrol.com.
