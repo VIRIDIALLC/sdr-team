@@ -659,6 +659,74 @@
   found. Meridian MS has an untried vertical remaining if revisited (HVAC came up
   fully cold — 3 real sites checked, but septic/other trades untried).
 
+- (run 2026-08-19) Scheduled run scoped to two tracks only (package + website — ads
+  track not requested this run). `git fetch` showed new branches and master
+  fast-forwarded (Sue joined 2026-08-18, a KIREEK follow-up stage commit, and the
+  "Kevin works through several doors" standing-rule note) and the container started
+  on a detached HEAD matching `origin/master`'s tip (`0a41511`) exactly — same
+  recurring stale-ref symptom as every prior run since 2026-08-13, fixed with `git
+  checkout -B master origin/master`, nothing lost. `_new-leads.md` had nothing
+  dropped in. Ran both tracks as parallel sub-agents again (continues working
+  well) — package track took ~5.5 min/57 tool calls, website track ~2 min/23 tool
+  calls this run.
+- (package/priority track, run 2026-08-19) Pushed into San Fernando Valley (Northridge,
+  Canoga Park, Reseda) and South Bay/Gateway (Gardena, Bellflower, Hawthorne) CA plus
+  fresh Phoenix-fringe suburbs (Cave Creek untried verticals, Laveen, Ahwatukee, Sun
+  Lakes, Wickenburg, Florence, Eloy/Coolidge). 3 hits, all with response-time signals
+  over 1hr: Reliant Pest Control (Northridge CA, veteran-owned since 2000, response
+  drifted 2hr/10hr/4hr/7hr across 4 reads but identity — address, ~125 reviews — held
+  steady each time; reviews independently mention "communication issues," corroborating
+  the pain outside the Yelp figure alone), Casa Painting Services (Northridge CA, owner
+  Carlos Casasola since 2006, ~5hr response corroborated twice, 299-301 reviews
+  consistent, cleanest identity match of the three), New Light Electric (Bellflower CA,
+  16yrs, 87 reviews, ~4hr response corroborated twice, Yelp-verified license — note a
+  same-named "New Light Electric" in Long Beach CA is a different business, verified via
+  address/phone/review count). Notable new disqualifier this run: one candidate
+  (Extra Electrical Inc., Coolidge/Peoria AZ) showed two wildly inconsistent readings
+  (5.0★/147 reviews/4hr vs. 3.5★/10 reviews/2hr) on the same business name across two
+  searches — too far apart to be normal number drift, treated as likely listing
+  conflation and dropped outright rather than picking one reading; worth adding this as
+  a standing caution alongside the existing "corroborate before trusting" rule. Also
+  dropped: Red Mountain Plumbing (Ahwatukee/Fountain Hills/Mesa AZ — BuildZoom shows no
+  active license on file, license-status hard disqualifier), Dutchmen Construction
+  (Bellflower roofing search, actually Irvine CA — too far + solar/roofing multi-trade
+  sprawl), Tito Alcaraz Painting (Canoga Park search, actually San Fernando CA — heavy
+  multi-trade sprawl reading as a general contractor, 263-301 reviews nearing scaled-
+  regional-outfit territory), North Canyon Roofing and Coating (resolved to
+  already-exhausted Glendale AZ, only 1 review), "Artificial Grass Arizona" (Cave Creek
+  landscaping, 4hr/65-request signal never resolved to one confirmed business name
+  despite trying — several similarly-named turf companies exist, none matched cleanly).
+  Empty suburb/vertical combos this run (avoid re-trying as-is): HVAC (Cave Creek AZ,
+  Palmdale CA — both fast only), garage door (Peoria/Cave Creek/Laveen AZ — all fast),
+  plumber (Ahwatukee/Sun Lakes AZ — fast dominated), pest control (Fountain Hills AZ),
+  roofing (Sun Lakes AZ — no data, Laveen AZ — fast), electrician (Wickenburg/Florence
+  AZ — fast), HVAC (Eloy/Coolidge AZ — 6hr signal existed but only 6 quote requests, too
+  thin to trust), restoration (Laveen/Fountain Hills AZ — fast), landscaping (Hawthorne
+  CA — fast). All three finalists checked clean against `_kevin-yelp-handpicked` and the
+  existing prospects/ directory — no overlap.
+- (website track, run 2026-08-19) Two fresh small markets: Ardmore OK (roofing) and
+  Dickinson ND (pest control) — both hit on or near first pass. Queued: Dorries Roofing
+  (Ardmore OK, established 1980, Facebook-only across BBB/D&B/Manta, owner Shayne
+  Dorries confirmed directly on the D&B listing — medium-high confidence) and J.A.M.
+  Pest Control (Dickinson ND, ~27yrs per BBB, Facebook-only across DexKnows/Yellow
+  Pages/Dickinson Press/BBB, owner John Mack confirmed via the business's own Facebook
+  video — medium confidence). Held back rather than queued: Milton's Roofing (also
+  Ardmore OK, also Facebook-only, address/phone confirmed but no owner name found) —
+  the search technique surfaced two Ardmore roofers together, and stacking two
+  same-city/same-vertical hits in one small batch felt like the same over-concentration
+  risk flagged in the 2026-08-16 run notes; worth queuing directly (skip
+  re-verification) if a future run wants a fast batch, or if Ardmore gets revisited and
+  needs a second entry. Cold this run: Sheridan WY electrical (fully cold — Electric
+  Solutions, Wyoming Electric, Sheridan Electric, Premier Electric all have real sites,
+  mark exhausted), Alexandria MN HVAC + garage doors (cold — Mission Mechanical,
+  Erickson's, Masters PHC, Ace Door Co, Viking Garage Door, MN Mobile Garage Door all
+  have real sites; window cleaning/pest control/painting still untried there), Minot ND
+  window cleaning (cold — Brite Way has a real site; HVAC/plumbing/roofing/electrical
+  untried there). Ardmore OK roofing is now partially saturated (2 hits found, but
+  Tornado(s) Roofing, Safe Roof, H&E Roofing, Bates Home Improvement, Seal-Tite Roofing
+  all resolved to real sites) — other verticals there remain untried. Dickinson ND has
+  other verticals untried beyond pest control.
+
 ## Dead ends to stop searching
 
 (none yet)
