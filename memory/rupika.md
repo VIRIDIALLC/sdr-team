@@ -727,6 +727,86 @@
   all resolved to real sites) — other verticals there remain untried. Dickinson ND has
   other verticals untried beyond pest control.
 
+- (run 2026-08-20) Scheduled run scoped to two tracks only (package + website, per
+  this run's task instructions). `git fetch` again showed a force-updated
+  `origin/master` and a detached HEAD — same recurring stale-ref symptom as every
+  prior run since 2026-08-13, fixed with `git checkout -B master origin/master`,
+  confirmed local already matched origin's tip, nothing lost. Ran both tracks as
+  parallel sub-agents again (continues working well; package-track agent took
+  ~8min/78 tool calls this run, notably longer than usual — worth budgeting for
+  variance here rather than assuming something's wrong if a run takes longer).
+- (package/priority track, run 2026-08-20) Pushed into fresh Phoenix suburbs (El
+  Mirage, Sun City West, Prescott Valley, Anthem, Casa Grande, Yuma) and LA
+  suburbs (Azusa, Duarte, Monrovia, Highland Park, Pico Rivera, Van Nuys) — 3
+  hits, confidence ranged wider than usual (one high, one medium, one low-medium):
+  Bright Ideas Painting Corp (South LA, ~3hr response corroborated 3x, 20
+  reviews/12yrs, no dedicated site — cleanest hit of the run), Freedom Roofing &
+  Coatings Inc. (Chandler AZ, surfaced via an El Mirage search then cross-suburb
+  resolved to Chandler, ~8hr response confirmed twice, 16 reviews/20yrs — flagged
+  for a genuine multi-city name-collision risk, other unrelated "Freedom Roofing"
+  entities exist in Wickenburg/Lake Havasu/Houston), Westland Mechanical (Phoenix
+  AZ, response drifted 6hr->1day but both over threshold and identity held, only
+  2 reviews — weakest hit, flagged hard for Montague: a same-named but larger
+  commercial HVAC company (westlandmechanical.net) exists and the two must not be
+  confused before any outreach references specifics). New take-away: response-time
+  drift between two over-threshold readings (e.g. 6hr vs 1day) that don't
+  contradict each other's direction is fine to log-and-queue, same standing
+  practice as before — only a drift that crosses below the 1hr threshold on a
+  later check is a real disqualifier. Several strong unresolved signals worth a
+  repeat attempt next run (name never resolved despite the quote-exact-numbers
+  technique): Anthem AZ plumbing (10hr/191 reviews/4.5star — sharpest unresolved
+  signal this run), Casa Grande AZ roofing (4hr/101 reviews/4.6star), Yuma AZ
+  roofing (1day/55 locals) and landscaping (9hr/20 locals, partial match to
+  "Arizona Quality Landscaping" but unconfirmed), Van Nuys landscaping (2hr/260
+  locals, resolved to a business address in Mount Washington but no name — this
+  exact signal has now gone unresolved across 2+ runs), Monrovia roofing (2hr
+  signal present but every name cross-resolved to already-exhausted suburbs).
+  Empty combos this run (avoid re-trying as-is): HVAC (Peoria AZ, Casa Grande AZ
+  — all <1hr), roofing (Prescott Valley AZ — all <=2hr/thin), electrical (Yuma AZ
+  — still unresolved from a prior run, Anthem AZ, Sun City West AZ — 89-151
+  quote-requests reads too large-scale), pest control (Anthem/Prescott
+  Valley/Casa Grande AZ — all fast, Casa Grande's 235-locals hit too large-scale
+  even though unresolved), garage door (Yuma AZ, Prescott Valley AZ — both fully
+  fast-responder markets, deprioritize this vertical in these suburbs), restoration
+  (Prescott Valley AZ, Anthem AZ), remodeling (Yuma AZ — only 1-review shops, too
+  thin), painting (Prescott Valley AZ — unresolved 5hr/33-locals signal), roofing
+  (Highland Park CA plumbing note: the one 2hr/213-locals hit here also never
+  resolved a name), electrical (Duarte CA — all <1hr), restoration (Pico Rivera CA
+  — all <1hr), painting (Duarte CA — resolved to a business actually in Glendora
+  CA, an already-exhausted combo, correctly not double-counted).
+- (website track, run 2026-08-20) 3 hits, 2 fresh + 1 banked candidate closed out.
+  Fresh: Guardian Pest & Termite Services (Ardmore OK, 31yr established, zero
+  owned web presence confirmed across 2 follow-ups, directories/Facebook only,
+  business Gmail found but no personal owner name yet), EMC Plumbing & Heating
+  (Vernal UT, 30+yr established, Facebook + a Hitachi vendor listing only —
+  flagged a same-name collision with an unrelated EMC Plumbing Inc. of Sacramento
+  CA, confirmed different address, do not attribute that domain to this
+  prospect). Banked-and-closed: Aaron's Heating & Cooling (Watertown SD, first
+  banked 2026-08-15, "website" resolves only to a trane.com dealer-locator page,
+  owner Aaron Schmit confirmed this run — also surfaced a NEW collision risk not
+  caught in the original banked note: an unrelated, same-named "Aaron's Heating
+  and Cooling" operates in Sioux Falls SD with a real working site, must not be
+  confused with this Watertown prospect). Confirms the "queue banked candidates
+  directly to save research time" approach from 2026-08-16's note works well, but
+  worth always doing at least one quick collision-check pass even on a banked
+  candidate — the Sioux Falls collision wasn't visible in the original note.
+  Fresh markets that ran cold this run (real sites found, don't re-try as-is):
+  Vernal UT plumbing/heating (rest of field: Make Your Mark Plumbing, Plummer's
+  Plumbing, Downs Plumbing, Daniels Plumbing & Heating), Elko NV HVAC/plumbing
+  (fully cold: Ruby Mountain HVAC, Snyder Mechanical, Parker Solutions), Corbin KY
+  garage doors (fully cold: Durham Garage Doors, Holder Garage Door, Overhead
+  Door Company of Corbin — a franchise). Ardmore OK pest control has 2 untried
+  names remaining if revisited (Allstate Termite & Pest Control, Pro-Guard
+  Termite and Pest Control — not individually verified this run). Fresh markets
+  not yet tried at all: Marshalltown IA, Ottumwa IA, Del Rio TX, Vicksburg MS,
+  Laurel MS, Middlesboro KY, Elizabethtown KY, Danville VA, Martinsville VA,
+  Sheridan WY, Klamath Falls OR, Del Norte County CA, Susanville CA. Remaining
+  banked candidates not yet closed out: Zap Lawn Care LLC (Gillette WY, no site
+  across Manta/Nextdoor/Angi/Yelp), It's Time 2 Paint (Gadsden AL, Facebook-only,
+  no owner name found), Starkey Heating and Air LLC (Kearney NE — was never fully
+  confirmed in its original run, needs a real verification pass, not just a
+  direct queue, before closing out).
+
 ## Dead ends to stop searching
 
 (none yet)
