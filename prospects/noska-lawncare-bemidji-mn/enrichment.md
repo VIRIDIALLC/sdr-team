@@ -9,6 +9,9 @@ CALL CARD
               of you when someone searches instead of scrolling Facebook."
 ```
 
+## Links
+- maps: https://www.google.com/maps/search/Noska+Lawncare+LLC+Bemidji+MN
+
 ## Company summary
 
 Noska Lawncare LLC — lawn care / landscaping business serving Bemidji, MN.

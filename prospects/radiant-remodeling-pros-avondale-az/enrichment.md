@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://radiantremodelingpros.com
+- maps: https://www.google.com/maps/search/Radiant+Remodeling+Pros+LLC+Avondale+AZ
+
 **Company summary:** Radiant Remodeling Pros, LLC — small, owner-led remodeling/general contractor in Avondale, AZ (kitchens, bathrooms, roofing, hardscapes, Duralum patios, exterior coatings). Real, active website at radiantremodelingpros.com (site itself blocked by egress proxy on direct fetch, confirmed live via multiple independent search-indexed listings). Fully licensed, bonded, and insured per multiple directory listings.
 
 **Best contact:** Scott Griffith (Instagram handle @robertscottgriffith suggests full legal name Robert Scott Griffith) — confirmed via customer reviews naming him directly ("Scott Griffith was really upfront and helpful," "very professional explaining different options") and an active Instagram presence posting as the business.

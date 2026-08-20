@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/J.C.+Heating+%26+Cooling+Amarillo+TX
+
 **Company summary:** J.C. Heating & Cooling — residential/light commercial and manufactured-housing HVAC contractor in Amarillo, TX. Long-standing local business based on the depth of directory/review history (Yelp, BBB, Birdeye all show established profiles).
 
 **Best contact:** office@jcheatingcooling.com — a real, publicly listed business email.

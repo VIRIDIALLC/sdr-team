@@ -14,6 +14,9 @@ CALL CARD
 **HELD AT `stage: found` — email gate failed. Not advanced.**
 **⚠️ ALSO: a geography/ICP question for Sue or Kevin to rule on — see below.**
 
+## Links
+- maps: https://www.google.com/maps/search/EMC+Plumbing+%26+Heating+Vernal+UT
+
 ## Company summary
 
 **The geography in the brief needs correcting before anyone calls.** This is

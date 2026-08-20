@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/Camelback+Hardscapes+Scottsdale+AZ
+
 **Company summary:** Camelback Hardscapes — Landscaping / Hardscaping, Scottsdale, AZ (7135 E Camelback Rd, Ste 230). Young (formed Jan 2024), fast-growing hardscaping company with strong review volume (5.0★/48 Google reviews, 19 Yelp reviews/580 photos) but no website and a young footprint — plausible the two working owners are handling jobsite work and incoming calls themselves.
 
 **Best contact:** Jacob Fowler and Monica Calderone are listed as LLC members per a corporate-filing aggregator. Customer reviews separately refer to "Jake and Jorge" as the two owners/operators running jobs day-to-day — Jacob likely = "Jake," but "Jorge" doesn't match the filed member names. Flag this discrepancy; may be an unlisted partner/foreman.

@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/Copper+State+Home+Maintenance+%26+Repair+Phoenix+AZ
+
 **Company summary:** Copper State Home Maintenance & Repair, Phoenix-metro AZ -- Plumbers/Handyman. Sourced from Kevin's hand-picked
 Yelp advertiser list (2026-08-12 email-coverage batch, ~20-business run targeting Purchase Likelihood 4-5
 rows with a blank EMAIL cell).

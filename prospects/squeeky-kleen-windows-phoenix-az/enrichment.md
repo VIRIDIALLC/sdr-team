@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://squeekykleenwindows.com
+- maps: https://www.google.com/maps/search/Squeeky+Kleen+Windows+Phoenix+AZ
+
 **Company summary:** Squeeky Kleen Windows, Phoenix-metro AZ -- Window Cleaning. Sourced from Kevin's hand-picked
 Yelp advertiser list (2026-08-12 email-coverage batch, ~20-business run targeting Purchase Likelihood 4-5
 rows with a blank EMAIL cell).

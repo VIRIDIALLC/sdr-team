@@ -4,6 +4,9 @@ Website-gap is confirmed decisively, and the owner names hold up
 reasonably well — but no usable email surfaced. Not a dead end on the
 business itself — leaving at `found` per the required email gate.
 
+## Links
+- maps: https://www.google.com/maps/search/Watkins+Plumbing+And+Drains+Meridian+MS
+
 ## Company summary
 
 Watkins Plumbing And Drains, Meridian, MS, phone 601-286-0191 — the

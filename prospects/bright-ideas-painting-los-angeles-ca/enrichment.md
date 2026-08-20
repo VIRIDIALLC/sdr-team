@@ -11,6 +11,9 @@ CALL CARD
               Angi. What happens the day one of them changes the rules?"
 ```
 
+## Links
+- maps: https://www.google.com/maps/search/Bright+Ideas+Painting+Los+Angeles+CA
+
 **HELD AT `stage: found` — email gate failed. Not advanced.**
 
 ## Company summary

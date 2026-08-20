@@ -5,6 +5,10 @@ email surfaced anywhere after an honest, multi-source effort. Not a dead
 end on the business itself — leaving at `found` per the required email
 gate, same convention as the website-gap/ads-activity gates.
 
+## Links
+- yelp: https://www.yelp.com/biz/lay-lloyd-bartlesville
+- maps: https://www.google.com/maps/search/Lays+Electric+Bartlesville+OK
+
 ## Company summary
 
 Lay's Electric, 1734 SE Orchard Ln, Bartlesville, OK 74006, (918)

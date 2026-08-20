@@ -6,6 +6,9 @@ CALL CARD
   Hook:      "I noticed Crandell Pest Control doesn't have its own website yet — just a Facebook page — even though you've got 16 five-star reviews in Joplin."
 ```
 
+## Links
+- maps: https://www.google.com/maps/search/Crandell+Pest+Control+LLC+Joplin+MO
+
 ## Company summary
 
 Crandell Pest Control LLC — residential/commercial pest control, 2602 S Grand,

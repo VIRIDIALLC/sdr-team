@@ -9,6 +9,9 @@ CALL CARD
              see below
 ```
 
+## Links
+- maps: https://www.google.com/maps/search/New+Light+Electric+Bellflower+CA
+
 ## Company summary
 
 New Light Electric, 9645 Artesia Blvd, Bellflower, CA 90706. Yelp

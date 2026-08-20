@@ -17,3 +17,7 @@
 **⚠️ Held at `found` — not advanced:** DEAD END, not the usual email gate: this business was acquired by Day & Night Air Conditioning, Heating & Plumbing on July 31, 2025 ("Apple Plumbing Joins Day & Night" per dayandnightair.com and friendlygroup.com press coverage). appleplumbingaz.com now redirects to Day & Night rather than operating independently. The Yelp listing may still show under the old name, but the underlying business has been absorbed into a larger multi-location HVAC/plumbing group — a materially different, already-systematized buyer than the solo-operator profile this pitch targets. Leaving at `found` rather than quietly dropping, per the persona's dead-end convention (same spirit as a wrong website-gap guess) — Kevin should decide whether to pursue the acquiring company (Day & Night) as a separate, different-shaped prospect instead, or drop this one.
 
 **Recent context:** None beyond the above.
+
+## Links
+- yelp: https://www.yelp.com/biz/apple-plumbing-scottsdale-2
+- maps: https://www.google.com/maps/search/Apple+Plumbing+Scottsdale+AZ

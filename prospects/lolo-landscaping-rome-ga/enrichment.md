@@ -1,3 +1,6 @@
+## Links
+- maps: https://www.google.com/maps/search/Lolo+Landscaping+Rome+GA
+
 ## Company summary
 
 Lolo Landscaping — solo/small lawn-maintenance operator, Rome, GA. Extremely

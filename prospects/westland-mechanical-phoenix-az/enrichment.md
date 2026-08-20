@@ -11,6 +11,9 @@ CALL CARD
               up."
 ```
 
+## Links
+- maps: https://www.google.com/maps/search/Westland+Mechanical+Phoenix+AZ
+
 **HELD AT `stage: found` — email gate failed. Not advanced.**
 **⚠️ ALSO: a NEW unresolved affiliation question replaces the one Rupika
 flagged, and it bears directly on ICP fit — see below.**
