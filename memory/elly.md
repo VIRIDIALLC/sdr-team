@@ -771,3 +771,66 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
   landing-work rule.
+
+- **2026-08-20 (this run) — 1 drafted, that's the whole queue.** `git fetch
+  origin` first: origin/master force-updated to 021887c (KIREEK fleet-state
+  refresh on top of Montague's 2026-08-20 enrichment, "1 advanced / 5 held on
+  email gate"). Container started detached — same recurring stale-ref pattern,
+  fixed with `git checkout -B master origin/master`, empty diff, no merge.
+
+  Scanned `prospects/*/status.md`: 2 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold
+  from 2026-08-03, unchanged, skipped again) plus the 1 real new one, drafted:
+  **freedom-roofing-coatings-chandler-az** (package). Montague held the other
+  5 of her batch at `found` on the email gate, so 1 was the entire queue, not
+  a batch-size choice.
+
+  **The defining constraints on this draft, both from Montague's enrichment:**
+  - **No response-time number exists to use.** She didn't just fail to
+    reconfirm Rupika's ~8hr figure — she found structural evidence it was
+    mis-sourced (the "5.0/16 reviews" it rode on traces to Angi; the Chandler
+    Yelp listing carries no review count at all and is miscategorized
+    "Flooring"). That's worse than "unconfirmed" — provenance in question — so
+    it's in the "drop entirely, don't even question it" bucket (same as CVA
+    08-15, Prima 08-18). The standard package opener was off the table from
+    the start.
+  - **The owner name is a landmine, so team greeting.** Rupika's "Jake Woods"
+    turned out to be the owner of a *different* Freedom Roofing (Lake Havasu
+    collision). Montague's replacement, "Beau Stowe," is single-source,
+    AI-synthesized, and a literal name search returned an unrelated WA person.
+    New rule of thumb worth keeping: **when a prospect has already burned us
+    once on a name AND the replacement is single-source/synthesized, use the
+    team greeting, not the replacement name** — even though Montague
+    designated Beau "best contact." This is a different case from CVA/Merican
+    (where the named non-owner was a *confirmed* real person). Confirmed real
+    → use it; medium-confidence synthesized on a collision-heavy prospect →
+    team greeting, flag the name for Kevin to verify before he dials.
+
+  **Angle that won (documented in the outreach.md dropped-angle block):** the
+  two-revenue-lines / coatings angle over the weekend-coverage-gap angle.
+  Freedom is "roof to concrete" (roofing + epoxy coatings), and those lines
+  buy differently — roofing is urgent so the caller waits, but a garage-floor
+  coating is discretionary and comparison-shopped so the buyer hires whoever
+  replies first, and those losses are silent. That's specific to their actual
+  service mix and squarely the speed-to-lead pain the offer solves. The
+  weekend-gap angle (grounded in posted Mon–Fri hours, needs no metric) was
+  the runner-up but lost on template smell — near-identical shape to the Casa
+  Painting 08-19 posted-hours opener out of the same inbox. **Reinforces the
+  standing sameness rule: when the response-time hook is unavailable, the
+  posted-hours/weekend-gap opener is becoming my default fallback, which means
+  it's now the shape most at risk of converging. Reach for a
+  business-specific angle first when one exists.**
+
+  **Email flagged to Kevin as grounded-guess-not-deliverable:** info@ on a
+  domain Montague confirmed live + Google-Workspace-mail-enabled by first-hand
+  DNS lookup, but `info@` may bounce (Workspace rejects unknown recipients
+  without a catch-all). Clears the gate per the grounded-guess precedent; not
+  treated as confirmed.
+
+  Track breakdown: 1 package. Body sweep clean (em dashes only in
+  Note/metadata prose, none in email copy or the dropped-angle example quote;
+  no bracket placeholders, no retired package names, no third-person
+  Kevin/Viridia in the body).
+
+  **End-of-run:** committed and pushed to `master` per CLAUDE.md's
+  landing-work rule.
