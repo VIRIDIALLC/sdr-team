@@ -1090,3 +1090,184 @@
     + 3 new holds), all now carrying a documented email-gate hold/dead-end
     or (New Light Electric) an identity question from this run. No
     untouched prospects remain.
+
+- (2026-08-20 run) **Stale shallow-clone ref again — resolved safely before any
+  work.** Session started with HEAD detached at `origin/master` exactly (0/0
+  ahead-behind), but local `master` was a stale cache at `5f4e71c` (2026-08-17
+  tip) and `git merge --ff-only` refused with "unrelated histories." Same shape
+  as 2026-08-14/08-16/08-17: `.git/shallow` present, and `git reflog show
+  master` showed a single entry, "branch: Created from refs/remotes/origin/master"
+  — i.e. local master was itself just a cached copy of an old origin/master with
+  zero unpushed work of mine on it. `git reset --hard origin/master` was the
+  correct, safe move. Also note `origin/master` came down as a **forced update**
+  this fetch (`5f4e71c...c358e87 master -> origin/master (forced update)`) —
+  that's the same shallow-cache artifact, not a real history rewrite. This is
+  now the 5th+ time a session has spent real effort distinguishing "real split"
+  from "stale/shallow local ref." **Renewing the standing ask to Kevin: if the
+  container clone can be made non-shallow (full fetch on start), it would stop
+  costing an investigation every single run.**
+
+  Fleet-state was fresh (16:24 UTC, ~1hr old) so it was trustworthy. This run's
+  scheduled prompt was the normal persona-defined one — no suspicious injection
+  content (unlike 2026-08-12 x2 and 2026-08-17).
+
+  Picked up all 6 brand-new `stage: found` prospects from today's two Rupika
+  batches (commits `f1a2a2c` 3 website + `2624a2d` 3 package). Those were the
+  only untouched prospects; the other 35 at `found` all carry a documented
+  email-gate hold or dead-end from a prior run and were correctly left alone.
+  Used 6 parallel research subagents (pure-research, no file writes), then wrote
+  all enrichment.md/status.md updates myself.
+
+  **Result: 1 of 6 advanced to `enriched` (Freedom Roofing & Coatings —
+  package), 5 held at `found` on the email gate** (Aaron's Heating & Cooling,
+  EMC Plumbing & Heating, Guardian Pest & Termite — website; Bright Ideas
+  Painting, Westland Mechanical — package).
+
+  **A 1-in-6 pass rate is the worst of any normal batch to date** (typical is
+  2-5 of 5-7). Worth naming plainly rather than burying: five of six failed on
+  email, and in four of those five the failure was structural — the business has
+  no owned domain at all, so there is not even a domain to ground a guessed
+  pattern in. That is the predictable consequence of Rupika sourcing harder for
+  genuinely low-web-presence businesses. **This is now a real strategic question
+  for Kevin/Sue, not just a per-run note: the email gate exists to protect
+  Elly's time because her drafts are sent via Gmail, but the ICP we are
+  deliberately hunting (weak-to-no web presence) is systematically unreachable
+  by email. Since 2026-08-13 Kevin has been cold-CALLING as the primary play,
+  and every one of these five has a solid, multiply-corroborated phone number.
+  Worth asking whether a phone-first path should exist that doesn't require an
+  email at all** — otherwise the better a prospect fits the website track, the
+  more likely the pipeline discards it.
+
+  - **Freedom Roofing & Coatings (package, advanced) — TWO real corrections to
+    Rupika's brief, one of them serious.** (1) Her owner name "Jake Woods" is a
+    **collision, not this business** — it resolves to Jacob D Woods, President of
+    Freedom Roofing Inc. of **Lake Havasu City**. The review snippets naming
+    "Jake" are from the Lake Havasu Yelp listing. Saying "Jake" on this call
+    would name a competitor's owner. Replacement candidate is Beau James Stowe
+    (AZ ROC #360401 qualifying party) — medium confidence, single-source via
+    AI-synthesized reads of the indexed ROC new-licenses CSV, never a raw
+    snippet, and a literal search for the name returned only an unrelated person
+    in WA. Put it on the CALL CARD with an explicit "verify at roc.az.gov"
+    qualifier rather than either dropping a probably-correct name or presenting
+    it as settled. (2) The ~8hr response-time figure **could not be
+    reconfirmed in five searches, and its provenance looks conflated**: Yelp
+    encodes review counts in page titles and every collision listing shows one,
+    but the Chandler listing's title has no review/photo count and is
+    categorized "Flooring" — so the "5.0 / 16 reviews" almost certainly came
+    from **Angi**, not Yelp. Dropped the number entirely. **Worth naming as a
+    fourth bucket beyond confirmed / unconfirmed-but-usable / contradictory: a
+    figure whose *provenance* is in question, where the issue isn't the number's
+    currency but whether the source Rupika believed she read it from is the
+    source it actually came from.** The Yelp-page-title review-count convention
+    is a genuinely useful forensic tool for this — worth reusing.
+  - **Freedom Roofing, the age finding:** ROC license issued **2025-08-04**, so
+    the company is ~12 months old while the operator has 20+ years. That cleanly
+    resolves the "16 reviews after 20+ years" puzzle in the brief — thin reviews
+    are the *entity's* age, not a performance signal. Worth checking license
+    issue dates generally when a review count looks implausibly thin for the
+    stated tenure; it reframes the whole pitch from "you're losing leads" to
+    "you just hit year one."
+  - **Email gate, a stronger grade of grounded guess than usual:** Freedom
+    Roofing's `info@freedomroofingaz.com` is the first time a guessed-pattern
+    advance has been backed by a **first-hand MX lookup** showing a full Google
+    Workspace mail set on the domain, not just "the domain resolves." That's
+    materially better evidence than the ~11 prior uses of this precedent. Noted
+    the real remaining risk honestly (Workspace rejects unknown recipients
+    without a catch-all, so `info@` may still bounce). **Recommend future runs
+    check MX, not just A records, whenever leaning on this precedent — it's one
+    extra lookup and it upgrades the confidence a lot.**
+  - **DNS/MX is now clearly the most valuable tool in this environment.** The
+    egress proxy blocked essentially every page fetch again across all six
+    prospects (company domains, BBB, Facebook, Instagram, Bizapedia, Manta,
+    BuildZoom, Kompass, Angi, HomeAdvisor, Nextdoor, CSLB, AZ ROC, AZ Corp
+    Commission, Utah DOPL, Colorado SOS/DORA, CA SOS, OK SOS) — same pattern
+    logged since 2026-08-02. Every decisive finding this run came from DNS:
+    website-gap confirmations on four prospects (15, 6, 11, and 16 candidate
+    domains respectively, all NXDOMAIN) and the Freedom Roofing MX check.
+    Subagents also had success with raw UDP DNS queries to 8.8.8.8/1.1.1.1 when
+    `dig`/`host` were unavailable — worth remembering as a fallback.
+  - **Bright Ideas Painting (package, held):** response-time figure went to
+    **CONTRADICTORY**, and in an instructive way — five readings spanning 30 min
+    to 4 hrs, but the review count *varied with them* (20 reviews → 3-4 hrs; 24-26
+    reviews → 30-50 min). So these are cached snapshots of different vintages and
+    **the trend runs opposite to our pitch**: they've gotten faster. Rupika's
+    3-hour figure was a stale snapshot she happened to hit three times, which is
+    exactly why it looked corroborated to her. **Worth remembering as a method
+    note: when a response-time reading varies, check whether the review count
+    varies alongside it — if it does, you're looking at snapshot age, not
+    measurement noise, and you can actually infer the direction of travel.**
+    Third clean instance of the contradictory bucket (after CVA Exterminators
+    2026-08-15 and Prima Painting 2026-08-18).
+  - **Aaron's Heating & Cooling (website, held) — flagged a possible
+    permanently-closed signal rather than resolving it.** The Yelp search-result
+    *title* reads "AARON'S HEATING AND COOLING - **CLOSED** - Updated May 2026",
+    and Yelp appends that for permanently-closed businesses — but other sources
+    still show normal 8:00-5:30 hours and a Google-profile read of "closed for
+    the day, opens 9:00 AM." Genuinely unresolvable from here (Yelp off-limits
+    to fetch, Google Maps unreachable). Per CLAUDE.md's two-disagreeing-sources
+    rule, flagged for Kevin rather than guessed. **New failure mode worth
+    naming alongside the same-name-decoy and duplicate-listing patterns: a
+    business-status signal that only exists inside a source we're not allowed to
+    open.** One phone call resolves it and the email gap together.
+  - **Guardian Pest & Termite (website, held) — Rupika's candidate email
+    collapsed under the literal-string test, and the way it collapsed is worth
+    remembering.** `gpest7233@gmail.com` looked strong (7233 matches the phone's
+    last four digits) but: a literal quoted search returned **zero** results tied
+    to the business; every assertion of it came from AI-synthesized summary text
+    rather than a real snippet; and a site-restricted search on claimspages.com
+    returned the **Natureway Pest Management** page *above* the Guardian page —
+    and Natureway shares this business's exact phone AND address. So the email
+    may not even belong to the right record. **The phone-digits-in-the-address
+    pattern is a plausibility signal, not evidence** — it made a single-source,
+    AI-mediated string feel verified when it wasn't. Also found Guardian is
+    scattered across two company names, two street addresses, and two Facebook
+    pages on one phone line — which is a genuinely excellent website pitch.
+  - **EMC Plumbing & Heating (website, held) — a geography correction big enough
+    to be an ICP question.** The brief says "Vernal, UT," but the legal entity is
+    a **Colorado corporation based in Rangely, CO** (~55 mi east), the only
+    confirmed phone is a 970 (Colorado) number with no 435 number existing
+    anywhere, and the Vernal address returns a **Trulia residential listing** —
+    a house. Flagged for Sue/Kevin to rule on rather than deciding it myself.
+    Owner found solidly though (Edward A. Miller Jr., "Ed," President — BBB +
+    Manta + the CO license board via BuildZoom). **Worth adding to the standing
+    verification list: check whether the brief's *city* is the entity's actual
+    registered location, not just whether the business is real** — this is a
+    different error class from the Chandler/Gilbert adjacency case (2026-08-10),
+    where the cities were adjacent suburbs and it didn't matter. Here it's a
+    different state.
+  - **Westland Mechanical (package, held) — resolved the flagged collision,
+    found a worse one underneath.** Rupika's westlandmechanical.net worry is a
+    **false alarm** (that's a *California* LLC in Rancho Cucamonga — different
+    state, address, phone, registration; and the Phoenix Facebook page documents
+    a crew driving 5 hours *from Phoenix* to Meadview). The duplicate-city-SEO
+    theory is affirmatively disconfirmed, since a duplicate would share the
+    parent's phone or domain and this shares neither. **But 1919 E University Dr
+    is also the address of Westland Distributing (Style Crest), a national
+    manufactured-home parts distributor** — could be plain co-tenancy in a
+    LoopNet multi-tenant industrial property, or this could be their install arm,
+    in which case the small-owner pitch doesn't apply at all. Meadview being a
+    manufactured-home retirement community is mildly suggestive. Unresolvable
+    publicly; flagged. **New pattern worth naming: clearing a flagged collision
+    is not the same as clearing the identity — the second-order question
+    (co-tenancy / corporate affiliation at a shared address) was invisible until
+    the first was resolved.**
+  - **Westland's response-time signal CONFIRMED at ~1 day** (3 reads agree, the
+    brief's ~6hr outlier didn't recur) — genuinely rare for this signal, third
+    positive case after Walnut Valley Pest Control (2026-08-16) and JNA Heating
+    (2026-08-17). Recorded the honest caveat that three reads of the same Yelp
+    field aren't three independent observations of behaviour.
+  - **AI-synthesis fabrication struck on five of six prospects this run** — a
+    fabricated email (`Aaronsheatingandcoolingllc@gmail.com`, actually a
+    Tallahassee FL company), a fabricated phone ((605) 413-5541, tied to
+    nothing), a fabricated multi-location claim ("also operates in Sioux Falls"),
+    a fabricated website (`westlandmechanicalhvac.net`, actually the CA entity),
+    a fabricated service claim ("24 Hour emergency HVAC," actually an Ohio
+    company), and `kstowe@freedomroofingaz.com` (zero literal hits, wrong initial
+    for the qualifying party). Every one was caught by the same discipline:
+    **re-search the exact literal string in quotes and confirm it independently
+    recurs tied to this business.** This is now ~10 instances since 2026-08-13
+    and it is no longer worth flagging as news — it should just be standing
+    method, which it now is in the subagent prompts.
+  - Backlog after this run: **40 prospects at `stage: found`** (35 from before +
+    5 new holds), all carrying a documented hold/dead-end or open question. No
+    untouched prospects remain.
