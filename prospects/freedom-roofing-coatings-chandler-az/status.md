@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -7,6 +7,10 @@ quote_stage: none
 ## Log
 
 - 2026-08-20 (Rupika): found, added to pipeline.
+- 2026-08-20 (Elly): drafted outreach.md, package track. Hook = their two
+  revenue lines (coatings get comparison-shopped, buyer hires whoever replies
+  first); no response-time number used (Montague dropped it). Team greeting,
+  not "Beau" (single-source name + prior collision). Advanced to `drafted`.
 - 2026-08-20 (Montague): enriched. Email gate PASSED — GUESSED
   `info@freedomroofingaz.com` on a domain confirmed live and mail-enabled by
   first-hand DNS/MX lookup. Two corrections to the brief: Rupika's owner name
