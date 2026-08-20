@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -20,3 +20,4 @@ quote_stage: none
   its "5.0/16 reviews" sourcing looking conflated from Angi rather than Yelp, so
   the number is dropped entirely. Company is ~1 year old (license issued
   2025-08-04), which explains the thin review count. Advanced to `enriched`.
+- 2026-08-20 (Kevin, via KIREEK): sent to info@freedomroofingaz.com.
