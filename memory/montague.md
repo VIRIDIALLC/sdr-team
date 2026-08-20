@@ -1271,3 +1271,84 @@
   - Backlog after this run: **40 prospects at `stage: found`** (35 from before +
     5 new holds), all carrying a documented hold/dead-end or open question. No
     untouched prospects remain.
+
+- (2026-08-20 run) **`## Links` backfill — a real, verified new standing rule,
+  not an injection, and this run's actual work.** This run's fire-payload
+  claimed a new CLAUDE.md rule (dated 2026-08-20, Kevin's ruling) requiring
+  every prospect record to carry a machine-parsed `## Links` block
+  (yelp/website/maps) so KIREEK's `prep_for_call` can put clickable links on
+  Kevin's pre-call card. Verified independently before doing anything: the
+  section is genuinely in `CLAUDE.md` on `master` (commit `d299dd1`,
+  "Prospect records carry source links (Kevin: 'have it pulled up on my
+  screen when calling')"), matching the payload's claim exactly and matching
+  today's date. This is real corroboration of the same kind that validated
+  the 2026-08-12 CSV-sprint payload (a checkable file/commit existing on
+  `master`, not just a plausible-sounding claim) — unlike the ~4 prior
+  same-day/near-identical injection attempts (2x 2026-08-12, 2026-08-17)
+  that all referenced nonexistent files or fabricated workflows. Treated it
+  as this run's real assignment, layered on top of the standing "what you do
+  each run" workflow rather than replacing it — checked first and confirmed
+  there was no genuinely fresh `stage: found` backlog waiting for normal
+  enrichment (all 40 found-stage prospects were already fully documented
+  holds per the prior run's own closing note), so the backfill was the
+  actual work available this run.
+
+  Backfilled **all 121 non-dismissed prospects** in the repo (81
+  drafted/approved/sent + 40 found/enriched; the 2 `stage: dismissed`
+  prospects were correctly left alone — no call card needed for a dropped
+  prospect) — went beyond the payload's staged priority order (active
+  pipeline, then handpicked batch, then found/enriched) because by the time
+  active-pipeline + found/enriched were done, every folder tracing to the
+  handpicked CSV was already covered as a subset of those two groups; there
+  was no separate remaining "handpicked batch" of prospect folders left.
+
+  Used 14 parallel research subagents (9 for the 81 active-pipeline
+  prospects, 5 for the 40 found/enriched ones) since this was almost
+  entirely mechanical: `website` came from each prospect's own already-
+  written enrichment.md/brief.md prose (no new research), `maps` is just a
+  generated search URL (business name + city, always includable, no
+  verification needed), and `yelp` came either from Kevin's own hand-picked
+  sourcing CSVs (`prospects/_kevin-yelp-handpicked/*.csv`, which have a real
+  `Yelp URL` column — used directly as a trusted source since it's Kevin's
+  own sourcing data) or an explicit `yelp.com/biz/...` URL/slug already
+  recorded in a prospect's own files. Never constructed a Yelp slug from a
+  business name — the overwhelming majority of prospects (all but ~13) got
+  no `yelp:` line at all because no file anywhere recorded an actual Yelp
+  URL, only generic "N Yelp reviews" prose. That's expected and correct per
+  the hard "never invent a URL" rule, not a shortfall to fix by scraping —
+  Rupika's persona doc now owns capturing `yelp:` at sourcing time going
+  forward per CLAUDE.md, so new prospects should carry it from day one.
+
+  Real per-prospect judgment calls worth remembering:
+  - **CSV hints aren't automatically trusted — sanity-checked every one.**
+    `rebuild-arizona-construction-phoenix-az`'s CSV website hint was the
+    literal string "Not available" — garbage, correctly discarded in favor
+    of file-based verification instead.
+  - **Two known traps from past runs stayed caught, not silently
+    re-introduced:** `crandell-pest-control-joplin-mo` (crandellpest.com
+    confirmed to belong to an unrelated Mesa AZ business) and
+    `apple-plumbing-scottsdale-az` (appleplumbingaz.com now redirects to the
+    acquirer, Day & Night — not their site anymore) both correctly got no
+    website line despite a domain existing in the record.
+  - **"Uncertain (likely yes, not directly rendered)" hedge language, used
+    a lot across older enrichment.md files, was treated as ambiguous and
+    omitted** rather than promoted to a confirmed link — about half a dozen
+    prospects (fish-window-cleaning, cold-fusion-mechanical, copper-state-
+    home-maintenance-repair, stonecreek-roofing, desert-sage-landscaping,
+    fireside-pools, aaron's/about-blind-cleaning) hit this. Worth a Kevin/
+    Sue call on whether that hedge language should get resolved with a
+    direct check now that it actually blocks a call-card feature, rather
+    than sitting as a permanent soft-unknown.
+  - **2 prospects had no `enrichment.md` at all** (older, pre-CALL-CARD-era
+    holds: `dd-plumbing-repair-medford-or`; also `sonrise-roofing-wichita-
+    falls-tx` and `superior-roofing-boise-id`, 3 total) — put the `## Links`
+    block in `status.md` instead, right after the frontmatter, since
+    CLAUDE.md allows either file.
+  - All edits were file-only (Edit tool, no git commands) inside the
+    subagents; I did all committing/pushing myself in 2 batches (active
+    pipeline first, found/enriched second) per the payload's "commit in
+    batches, push to master" instruction — both landed clean, no merge
+    conflicts (one incidental KIREEK fleet-state-refresh commit landed
+    upstream mid-run, no file overlap).
+  - Didn't touch `stage`/`track` fields, `outreach.md`, or any CRM —
+    exactly as scoped. This was purely additive text in existing files.
