@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-20 17:19 UTC (2026-08-20 10:19 Phoenix)
+Generated: 2026-08-20 18:28 UTC (2026-08-20 11:28 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -12,7 +12,7 @@ Generated: 2026-08-20 17:19 UTC (2026-08-20 10:19 Phoenix)
 
 - **Gap: $5,300/mo** → **5 Complete System client(s)** at $1,197/mo (plan +1 for churn risk) in **132 days** (18 weeks) → ~1 close per 3 week(s).
 - Real MRR $4,700 (bank-flow real gross revenue, Apr-Jul avg (corrected P&L 2026-08-15). QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
-- **This week** (since 2026-08-17): 0 conversations · 0 proposals out · 0 closed · $0 MRR added
+- **This week** (since 2026-08-17): 1 conversations · 0 proposals out · 0 closed · $0 MRR added
 - Last week: (tracking began 2026-08-19 - no prior week recorded)
 - Scoreboard counts come from Kevin via VEGA ('log 3 conversations') — the
   machine can't see his phone. Vanity metrics (impressions, followers,
@@ -76,58 +76,58 @@ Generated: 2026-08-20 17:19 UTC (2026-08-20 10:19 Phoenix)
 
 - **GHL API:** DOWN — configured but the API rejects the key (HTTP 401). Anything needing GHL is blocked until Kevin rotates the key.
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-20 15:56 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 1h ago)
-- **KIREEK repo:** 6 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 2h ago)
+- **KIREEK repo:** 7 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
 
 ### Etsy Team
-- last commit: 12 minutes ago — "Merge: Ash 2026-08-20 declined out-of-scope fire-payload, hold still in effect" (ba00baf45)
+- last commit: 81 minutes ago — "Merge: Ash 2026-08-20 declined out-of-scope fire-payload, hold still in effect" (ba00baf45)
 - agent work in the last 24h: "Merge: Ash 2026-08-20 declined out-of-scope fire-payload, hold still in effect"; "Ash 2026-08-20: declined out-of-scope fire-payload, hold still in effect"
 - ⚠️ 1 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 5 minutes ago — "Merge remote-tracking branch 'origin/master'" (69d90980e)
+- last commit: 74 minutes ago — "Merge remote-tracking branch 'origin/master'" (69d90980e)
 - agent work in the last 24h: "Elly 2026-08-20: memory update for Freedom Roofing draft run"; "Elly 2026-08-20: 1 package-track draft (Freedom Roofing & Coatings)"; "Montague 2026-08-20: enriched 6 new prospects â€” 1 advanced, 5 held on email gate"; "Rupika 2026-08-20: 3 new package-track prospects at stage: found + memory update"
 - waiting on Kevin (3): For Kevin's review — the selling kit for your cold calls; Follow-up sequence — 6 prospect(s) ready to enroll; Follow-up sequence — 6 prospect(s) ready to enroll
 
 ### Ads Team
-- last commit: 82 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (5efd5645a)
+- last commit: 3 hours ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (5efd5645a)
 - agent work in the last 24h: "Wraith 2026-08-20: no campaign work â€” Meta channel retired, all four ads verified paused"
 - ⚠️ 1 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin: nothing
 
 ### Customer Success
-- last commit: 19 hours ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (35b4cdc21)
+- last commit: 21 hours ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (35b4cdc21)
 - waiting on Kevin (1): Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 19 hours ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (f181657a2)
+- last commit: 21 hours ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (f181657a2)
 - waiting on Kevin (5): A/R reminders — status check, 2026-08-17; Corrected P&L preview — Jan 1 – Aug 14, 2026; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15
 
 ### Social Team
-- last commit: 60 minutes ago — "Rati 2026-08-20 (parallel run housekeeping): archive done approvals + note collision" (d0798a537)
+- last commit: 2 hours ago — "Rati 2026-08-20 (parallel run housekeeping): archive done approvals + note collision" (d0798a537)
 - agent work in the last 24h: "Rati 2026-08-20 (parallel run housekeeping): archive done approvals + note collision"; "Rati: schedule Education Week 1 in GHL (5 FB/LI slots, text-only)"
 - ⚠️ 1 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin: nothing
 
 ### SEO Team
-- last commit: 19 hours ago — "GA4 connected via OpenSEO: right property verified, first baseline, key-events gap flagged" (877853a2c)
+- last commit: 20 hours ago — "GA4 connected via OpenSEO: right property verified, first baseline, key-events gap flagged" (877853a2c)
 - waiting on Kevin: nothing
 
 ### Web Design Team
-- last commit: 19 hours ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (207fbbc0c)
+- last commit: 21 hours ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (207fbbc0c)
 - waiting on Kevin: nothing
 
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-20 17:19 UTC (auto-generated by VEGA's backend):
+As of 2026-08-20 18:28 UTC (auto-generated by VEGA's backend):
 Real MRR: $4700/mo (bank-flow real gross revenue, Apr-Jul avg (corrected P&L 2026-08-15). QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $5,300/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 132 days (18 weeks) → ~1 close per 3 week(s).
-This week (since 2026-08-17): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL DOWN — configured but the API rejects the key (HTTP 401). An | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 1h ago)
+This week (since 2026-08-17): 1 conversations, 0 proposals out, 0 closed, $0 MRR added
+Systems: GHL DOWN — configured but the API rejects the key (HTTP 401). An | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 2h ago)
 Approvals waiting on Kevin across the fleet: 9
 ```
