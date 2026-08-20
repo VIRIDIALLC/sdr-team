@@ -1,5 +1,10 @@
 # Enrichment
 
+## Links
+- yelp: https://www.yelp.com/biz/brezden-pest-control-san-luis-obispo
+- website: https://brezdenpest.com
+- maps: https://www.google.com/maps/search/Brezden+Pest+Control+San+Luis+Obispo+CA
+
 **Company summary:** Brezden Pest Control — family-owned residential/commercial pest & termite control business serving San Luis Obispo and the Central Coast, CA. Founded 1980 by John and Maria Brezden; John has been in the pest control industry since 1974. Real, meaningful Yelp presence (68 reviews).
 
 **Best contact:** John Brezden, owner — confirmed via the San Luis Obispo Chamber of Commerce directory listing, which names him directly as the business's owner (not just an inference from an email pattern).

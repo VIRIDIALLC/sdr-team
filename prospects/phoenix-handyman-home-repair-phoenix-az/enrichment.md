@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://www.phoenixhandymanhomerepair.com/
+- maps: https://www.google.com/maps/search/Phoenix+Handyman+Home+Repair+Phoenix+AZ
+
 **Company summary:** Phoenix Handyman Home Repair — Handyman, Phoenix, AZ. One-man, veteran-owned handyman operation with real review volume (5.0★, active Yelp listing through Aug 2025) — a classic case where the owner is doing the work himself and can't also be fast on the phone.
 
 **Best contact:** Joe Vaughan — US Army veteran (served in Afghanistan), insured (not licensed-contractor) handyman. Found via site copy and Facebook page; CSV's "Joe Vaughan" checks out.

@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://rafaelandirisroofing.com
+- maps: https://www.google.com/maps/search/Rafael+and+Iris+Roofing+Valley+Village+CA
+
 **Company summary:** Rafael and Iris Roofing — family-owned, locally-operated roofing company serving greater L.A., established 2009, founded by Aviv Shlush and his father Rafael (Voyage LA feature confirms the founding story). Real, active company website at rafaelandirisroofing.com. Strong reputation: 170 Yelp reviews as of July 2026, reviewers describe the team as "super helpful, thorough and very responsive" with detailed written proposals.
 
 **Best contact:** Aviv Shlush, Owner — confirmed by name and title via a Voyage LA Magazine profile ("Hidden Gems: Meet Aviv Shlush of Rafael and Iris Roofing") and matching "Aviv S., Owner" attribution on other directory listings.

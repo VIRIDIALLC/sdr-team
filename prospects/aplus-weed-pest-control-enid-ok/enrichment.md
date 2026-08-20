@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/A%2BWeed+and+Pest+Control+Enid+OK
+
 **Company summary:** A+Weed and Pest Control — locally owned pest and weed control service in Enid, OK. Accepts Venmo/PayPal/card, suggesting a hands-on, owner-run operation rather than a franchise.
 
 **Best contact:** No named owner/contact surfaced in public search results — outreach should go to the business generally (phone/Facebook message) until a name is confirmed, rather than guessing a name.

@@ -10,6 +10,10 @@ CALL CARD
               still about right?"
 ```
 
+## Links
+- website: https://jnaair.com
+- maps: https://www.google.com/maps/search/JNA+Heating+%26+Cooling+South+Gate+CA
+
 ## Company summary
 
 JNA Heating & Air Inc (dba JNA Heating & Cooling), South Gate, CA — family-

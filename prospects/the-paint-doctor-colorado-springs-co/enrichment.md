@@ -10,6 +10,11 @@ CALL CARD
               right now?"
 ```
 
+## Links
+- yelp: https://www.yelp.com/biz/the-paint-doctor-colorado-springs
+- website: https://paintdoctor.com
+- maps: https://www.google.com/maps/search/The+Paint+Doctor+Colorado+Springs+CO
+
 ## Company summary
 
 The Paint Doctor (The Paint Doctor Inc.) — residential and commercial

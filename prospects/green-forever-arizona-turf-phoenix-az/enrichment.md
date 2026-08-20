@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://greenforeverarizona.com
+- maps: https://www.google.com/maps/search/Green+Forever+Arizona+Synthetic+Turf+%26+Pavers+Phoenix+AZ
+
 **Company summary:** Green Forever Arizona Synthetic Turf & Pavers — Landscaping (synthetic turf & pavers), Phoenix, AZ (13 S 36th St, 85034). Large-volume, heavily-reviewed turf/hardscape installer (1,800+ five-star reviews, 79+ on Yelp, active Thumbtack/Nextdoor/Facebook presence) generating high lead flow that would benefit from missed-call/AI-receptionist coverage during install-season surges.
 
 **Best contact:** No individual name found despite checking site/Facebook/BBB — company describes itself as family-owned ("moved from Orange County, CA to AZ, four generations, 40+ years in home improvement") but doesn't name anyone specifically.

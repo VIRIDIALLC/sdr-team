@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/Chiliski's+Painting+Rapid+City+SD
+
 **Company summary:** Chiliski's Painting — small, owner-operated interior/exterior house painting business in Rapid City, SD. A few reviews on Yelp (unrated, low volume), consistent with an active but small local operation.
 
 **Best contact:** Likely owner name **Rosendo Vargas**, inferred from the business's personal email address (rosendovargas@hotmail.com) — a common, reasonably reliable pattern for small owner-operated businesses, but not independently confirmed via a bio, review reply, or About page. Used with that caveat, per Kevin's bar ("at minimum just find a name to address the email to").

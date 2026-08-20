@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://spectrumshadesandshutters.com
+- maps: https://www.google.com/maps/search/Spectrum+Shades+and+Shutters+Anthem+AZ
+
 **Company summary:** Spectrum Shades and Shutters, Phoenix-metro AZ -- Shades & Shutters. Sourced from Kevin's hand-picked
 Yelp advertiser list (2026-08-12 email-coverage batch, ~20-business run targeting Purchase Likelihood 4-5
 rows with a blank EMAIL cell).

@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/About+Blind+Cleaning+Phoenix+AZ
+
 **Company summary:** About Blind Cleaning, Inc, Phoenix-metro AZ -- Blind & Window Cleaning Services. Sourced from Kevin's hand-picked
 Yelp advertiser list (2026-08-12 email-coverage batch, ~20-business run targeting Purchase Likelihood 4-5
 rows with a blank EMAIL cell).

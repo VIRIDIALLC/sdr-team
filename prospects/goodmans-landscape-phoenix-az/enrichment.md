@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://goodmanslandscape.com
+- maps: https://www.google.com/maps/search/Goodman's+Landscape+Phoenix+AZ
+
 **Company summary:** Goodman's Landscape (also listed as "Goodman's Landscape Maintenance, LLC") — Landscaping, Phoenix, AZ (2210 W Desert Cove Ave, 85029). 40+ year legacy landscape company — long tenure plus scale (multiple crews implied by a "Meet the Team" page) fits the high-lead-volume profile.
 
 **Best contact:** David Goodman, founder/president — found via search results summarizing the company's About Us/history content.

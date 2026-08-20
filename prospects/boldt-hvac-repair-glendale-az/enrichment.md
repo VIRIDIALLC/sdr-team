@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://boldtair.com
+- maps: https://www.google.com/maps/search/Boldt+HVAC+%26+Repair+Glendale+AZ
+
 **Company summary:** Boldt HVAC & Repair, Inc. — owner-operated HVAC contractor in Glendale, AZ, established 2009. BBB A+ accredited. Strong, consistently positive reviews through July 2026 (139 Yelp reviews, 4.9 stars) praising honest pricing and professionalism, tied directly to the owner by name ("Phillip got it done"). Real, active company website at boldtair.com.
 
 **Best contact:** Phillip (Dean) Boldt, Owner — confirmed by name via LinkedIn ("Owner at Boldt HVAC & Repair Inc.") and matches reviewer mentions of "Phillip" doing the work personally.

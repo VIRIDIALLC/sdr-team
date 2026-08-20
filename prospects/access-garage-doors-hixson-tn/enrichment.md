@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://accessdoorcompany.com
+- maps: https://www.google.com/maps/search/Access+Garage+Doors+Hixson+TN
+
 **Company summary:** Access Garage Doors (also branded "Access Garage Door & More" / "Access Garage Doors of Chattanooga") — Hixson, TN (Chattanooga metro). Established 2005, Master Authorized Clopay® Dealer, 24/7 residential and commercial garage door install/repair. Strong cross-platform reputation (BBB A+, Angi/HomeAdvisor high ratings, 20 Yelp reviews/69 photos).
 
 **Best contact:** Jesse Cox — Founder, CEO, and President, confirmed via LinkedIn company listings (Access Garage Doors-USA, Access Garage Doors-Chattanooga).

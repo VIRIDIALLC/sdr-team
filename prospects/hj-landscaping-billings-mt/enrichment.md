@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/H%26J+Landscaping+LLC+Billings+MT
+
 **Company summary:** H&J Landscaping LLC — Billings, MT. Small landscaping operator (sprinkler installs/repairs through full lawn maintenance). No owned website — presence is Facebook + directory/aggregator listings only (Nextdoor, Birdeye, EcoHome, z1biz). 3.4★/5 reviews on Birdeye; one review specifically praises an "outstanding transformation" and notes "100% veteran approved and recommended."
 
 **Best contact:** No individual owner name surfaced despite checking Facebook About, LinkedIn, and directory listings — only the LLC name. Per persona guidance this isn't a gate, just noted honestly so Elly doesn't fake a placeholder.

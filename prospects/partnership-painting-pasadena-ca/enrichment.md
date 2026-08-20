@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://partnershippainting.com
+- maps: https://www.google.com/maps/search/Partnership+Painting+Pasadena+CA
+
 **Company summary:** Partnership Painting Inc, Pasadena, CA — residential/commercial
 painting contractor formed in 1984 by two lifelong friends (Scott Penn and Brad Cage,
 friends since 1968). 40+ years in business, 8,000+ projects completed. Active, live

@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/Pe%C3%B1a's+Landscaping+Pocatello+ID
+
 **Company summary:** Peña's Landscaping, Pocatello, ID — small,
 family-owned/operated landscape and hardscape business, 10+ years
 experience per its Facebook page. Reads as a solo or near-solo

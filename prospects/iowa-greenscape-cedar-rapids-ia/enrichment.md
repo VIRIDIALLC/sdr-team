@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/Iowa+Greenscape+Cedar+Rapids+IA
+
 **Company summary:** Iowa Greenscape — small landscaping/lawn care operation in Cedar Rapids, IA, offering free estimates; reads as a small owner-run shop. Only real online presence is a Facebook page.
 
 **Website-gap verification (website track quality gate):** Confirmed no live website — a direct WebFetch of the natural domain guess `iowagreenscape.com` returns a DNS resolution failure (`ENOTFOUND`), the decisive check documented in `memory/montague.md` from the jcheatingcooling.com case. Combined with Rupika's Facebook-only sourcing and follow-up named search turning up nothing, this is a genuine confirmed gap, not a search miss.

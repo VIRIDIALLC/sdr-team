@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://samedayelectric.net
+- maps: https://www.google.com/maps/search/Same+Day+Electric+Boise+ID
+
 **Company summary:** Same Day Electric — Boise, ID (electrical, established 2000). Full-service electrical contractor (lighting, ceiling fans, GFI/outlets, dedicated circuits, troubleshooting) serving Boise, Meridian, Eagle, Star, Kuna, Nampa, Caldwell. High-volume, multi-platform operation — 2,366+ Google reviews at 4.9★, "Idaho's most reviewed electrical contractor."
 
 **Best contact:** Patty Fletcher — Owner, per business-directory listings; review commentary independently corroborates an owner described as responsive/friendly/helpful, consistent with this name.

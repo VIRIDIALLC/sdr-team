@@ -10,6 +10,10 @@ CALL CARD
               voicemail before someone else picks up?"
 ```
 
+## Links
+- website: https://reliantpestcontrol.com
+- maps: https://www.google.com/maps/search/Reliant+Pest+Control+Northridge+CA
+
 ## Company summary
 
 Reliant Pest Control LLC, 19350 Business Center Dr, Ste 109, Northridge,

@@ -1,5 +1,10 @@
 # Enrichment
 
+## Links
+- yelp: https://www.yelp.com/biz/restorion-bellevue
+- website: https://restorion.com
+- maps: https://www.google.com/maps/search/Restorion+Bellevue+WA
+
 **Company summary:** Restorion — Washington family-owned water/fire/mold damage restoration company based in Bellevue, WA, 10+ years in business, 24/7 service. Real, meaningful Yelp presence (~59 reviews, 4.8 stars per third-party listings).
 
 **Best contact:** No confirmed name. One customer review mentions "Jose and his team at Restorion," but nothing ties "Jose" to an owner/decision-maker role rather than a technician — not used as the contact name. Checked Facebook, BBB-style listings, and the company's own site (blocked on direct fetch, see below); no named owner surfaced anywhere. Per convention, this is a genuine no-name-found case, not a reason to hold the prospect.
