@@ -1,5 +1,10 @@
 # Enrichment
 
+## Links
+- yelp: https://www.yelp.com/biz/capstone-plumbing-cave-creek
+- website: https://capstone-plumbing.com
+- maps: https://www.google.com/maps/search/Capstone+Plumbing+Cave+Creek+AZ
+
 **Company summary:** Capstone Plumbing — Plumbing (also water heater / water purification), Cave Creek, AZ. Woman-owned plumbing company established 2023, licensed/bonded/insured, actively marketing (BBB profile, press releases, active Nextdoor/Yelp presence, 90+ Yelp photos) — a real, growing local plumber with the admin bandwidth gap this system solves.
 
 **Best contact:** Erica Stenger, Owner/COO — confirmed via LinkedIn, BBB profile (listed as business contact "Ms. Erica Stenger, Owner"), and press releases. Husband Joey Stenger is her business partner and appears to do field work per reviews. Matches CSV's "Erica S."

@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://jpowerselectric.com
+- maps: https://www.google.com/maps/search/J+Powers+Electric+Los+Angeles+CA
+
 **Company summary:** J Powers Electric — Los Angeles, CA (4227 Woodlawn Ave), serving Downey and the broader LA area. Licensed electrical contractor (CA license, owner Evans Joel Coronado), BuildZoom score in the top 6% of CA contractors. Yelp Guaranteed advertiser, 4.9★/71 reviews, stated ~11 hr Yelp response time.
 
 **Best contact:** Evans Joel Coronado — confirmed as license holder/owner via CA contractor license records (already in brief.md), re-confirmed this run via BuildZoom.

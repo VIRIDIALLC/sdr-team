@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://groundzerolc.com
+- maps: https://www.google.com/maps/search/Ground+Zero+Landscape+Phoenix+AZ
+
 **Company summary:** Ground Zero Landscape, Phoenix-metro AZ -- Landscaping. Sourced from Kevin's hand-picked
 Yelp advertiser list (2026-08-12 email-coverage batch, ~20-business run targeting Purchase Likelihood 4-5
 rows with a blank EMAIL cell).

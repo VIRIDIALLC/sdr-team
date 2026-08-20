@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/S%26P+Lawn+Care+Bangor+ME
+
 **Company summary:** S&P Lawn Care — small lawn care/landscaping operation in Bangor, ME offering mowing, landscaping, pressure washing, and snow removal (year-round service mix, not just seasonal).
 
 **Best contact:** Gmail address (splawncare14@gmail.com) found publicly — usable for email outreach directly, unlike the pest control prospect.

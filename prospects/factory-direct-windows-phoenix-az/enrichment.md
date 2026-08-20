@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://factorydirectwindows.com
+- maps: https://www.google.com/maps/search/Factory+Direct+Windows+Phoenix+AZ
+
 **Company summary:** Factory Direct Windows — Windows & Doors, Phoenix, AZ (85022) — company is based in Mesa per its own Contact page. 40+ years combined industry experience per their marketing; owner also runs a second construction business, so a busy owner splitting time across two companies is a real missed-call/no-system risk even though current reviews are positive.
 
 **Best contact:** Travis Hyre — confirmed via the company site's Contact page ("Contact Factory Direct Windows | Mesa | Travis Hyre"), Facebook, and ZoomInfo. Note: the same Facebook page ID also appears under an older name "Retrofit Windows by Hyre Construction" — looks like a rebrand/DBA, and Hyre also runs a separate business, Hyre Construction, so he may be splitting time across two companies.

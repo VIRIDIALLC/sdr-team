@@ -10,6 +10,10 @@ CALL CARD
               handling your Yelp ad spend without you?"
 ```
 
+## Links
+- website: https://mrelectric.com/wichita
+- maps: https://www.google.com/maps/search/Mr+Electric+of+Wichita+Bel+Aire+KS
+
 ## Company summary
 
 Mr. Electric of Wichita — a Mr. Electric (Neighborly) franchise location,

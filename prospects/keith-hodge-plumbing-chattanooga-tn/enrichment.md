@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://khppro.com
+- maps: https://www.google.com/maps/search/Keith+Hodge+Plumbing+Chattanooga+TN
+
 **Company summary:** Keith Hodge Plumbing, LLC — locally owned, family-managed plumbing contractor based in Ooltewah, serving greater Chattanooga, TN and north Georgia. Has employees per third-party review sites, so reads as owner-plus-crew rather than solo operator.
 
 **Best contact:** Keith Hodge, owner — confirmed directly (business is named after him, and his LinkedIn profile lists him as "Owner, KHP / Keith Hodge Plumbing"), not an inference.

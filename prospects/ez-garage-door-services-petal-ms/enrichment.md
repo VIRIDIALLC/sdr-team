@@ -9,6 +9,9 @@ CALL CARD
               MS" has nowhere of yours to land on.
 ```
 
+## Links
+- maps: https://www.google.com/maps/search/E-Z+Garage+Door+Services+Petal+MS
+
 ## Company summary
 
 E-Z Garage Door Services, LLC — 400 N George Ave, Petal, MS (Hattiesburg/

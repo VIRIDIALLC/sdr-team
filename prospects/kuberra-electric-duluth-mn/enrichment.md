@@ -1,5 +1,8 @@
 # Enrichment
 
+## Links
+- maps: https://www.google.com/maps/search/Kuberra+Electric+LLC+Duluth+MN
+
 **Company summary:** Kuberra Electric LLC — small electrical contractor based near Duluth, actually registered at 421 Burton Road, Two Harbors, MN (a small town roughly 25 miles up the North Shore from Duluth proper, so still fairly reads as "Duluth area"). Owner-operated, residential and commercial electrical work.
 
 **Website-gap verification (website track quality gate):** Confirmed no live website — a direct WebFetch of the natural domain guess `kuberraelectric.com` returns a DNS resolution failure (`ENOTFOUND`), the decisive check documented in `memory/montague.md`. Combined with Rupika's Facebook/LinkedIn/BuildZoom-only sourcing and a follow-up named search turning up nothing, this is a genuine confirmed gap, not a search miss.

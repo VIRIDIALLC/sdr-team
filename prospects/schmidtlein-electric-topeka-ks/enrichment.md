@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://schmidtleinelectric.com
+- maps: https://www.google.com/maps/search/Schmidtlein+Electric+Inc+Topeka+KS
+
 **Company summary:** Schmidtlein Electric Inc — family-owned electrical contractor in Topeka, KS, in business since 1984, offering residential, commercial, and industrial electrical services across Northeast Kansas. Has a real, active company website (schmidtleinelectric.com — home, about, contact, residential, and commercial pages all indexed) with over 100 years of combined electrician experience cited.
 
 **Best contact:** Debbie Schmidtlein, President — confirmed via search results identifying her by name and title, matching the family-ownership story on the company's own About page.

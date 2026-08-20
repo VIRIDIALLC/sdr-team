@@ -11,6 +11,10 @@ CALL CARD
               requests. Does that sound right?"
 ```
 
+## Links
+- website: https://walnutvalleypestcontrol.com
+- maps: https://www.google.com/maps/search/Walnut+Valley+Pest+Control+Walnut+CA
+
 ## Company summary
 
 Walnut Valley Pest Control, 404 S Lemon Ave, Ste 11, Walnut, CA 91789

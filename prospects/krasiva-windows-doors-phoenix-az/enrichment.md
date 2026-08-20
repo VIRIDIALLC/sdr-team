@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://krasivawindows.com
+- maps: https://www.google.com/maps/search/Krasiva+Windows+and+Doors+Phoenix+AZ
+
 **Company summary:** Krasiva Windows and Doors — Windows & Doors, Phoenix, AZ (2432 W Peoria Ave, Ste 1186). Established since 1997, BBB A+ accredited, 227-337 reviews across Birdeye/BBB — a high-volume operation clearly fielding a lot of inbound calls, exactly the scenario where a missed-call-text-back system pays for itself.
 
 **Best contact:** Ambiguous — one aggregator-style source names Greg Strickland as owner; reviews separately name Derrick as an accessible General Manager. Worth confirming before drafting outreach; don't use a merge-tag name yet.

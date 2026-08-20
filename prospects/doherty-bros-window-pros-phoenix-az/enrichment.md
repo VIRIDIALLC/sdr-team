@@ -1,5 +1,9 @@
 # Enrichment
 
+## Links
+- website: https://dohertybroswindowpros.com
+- maps: https://www.google.com/maps/search/Doherty+Bros+Window+Pros+Phoenix+AZ
+
 **Company summary:** Doherty Bros Window Pros — Window Cleaning, Phoenix, AZ (85021). Small, newer owner-operator business (est. 2017) with a real commercial + residential client mix and an active Instagram/portfolio — a solo/small-crew operation like this is a classic case where the owner is on ladders all day and can't also answer the phone.
 
 **Best contact:** Shane Doherty, founder (company founded 2017) — per company site and Nextdoor listing.

@@ -9,6 +9,11 @@ CALL CARD
               sound right?"
 ```
 
+## Links
+- yelp: https://www.yelp.com/biz/ramos-painting-services-duarte
+- website: https://rpaintingservices.com
+- maps: https://www.google.com/maps/search/Ramos+Painting+Services+Arcadia+CA
+
 ## Company summary
 
 Ramos Painting Services (legal entity: R Painting Services Inc), 815 S
