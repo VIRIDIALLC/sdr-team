@@ -15,6 +15,28 @@
    banned everywhere. If a task depends on a missing kit item, the deliverable
    is a written flag naming the gap, not a workaround.
 
+## Source links are part of every prospect record (Kevin's ruling, 2026-08-20)
+
+Kevin cold-calls with the prospect's record on screen. KIREEK's `prep_for_call`
+machine-parses a `## Links` block out of `status.md` / `enrichment.md` and puts
+it on his pre-call card as CLICKABLE links — so the exact format matters:
+
+```
+## Links
+- yelp: https://www.yelp.com/biz/<the-actual-business-page>
+- website: https://<their-domain>
+- maps: https://www.google.com/maps/search/<business>+<city>
+```
+
+- **Rupika:** capture the `yelp:` line AT SOURCING TIME — the page is on your
+  screen when you find them; it's a paste, not a research task. A prospect
+  sourced from Yelp without its Yelp URL is an incomplete record.
+- **Montague:** complete `website:` and `maps:` at enrichment (you already
+  find the website — put it in the block, not only in prose). Never invent a
+  URL; omit a line you couldn't verify.
+- Bare domains and prose-only mentions don't render on Kevin's card. Full
+  `https://` URLs, in the block, exactly as above.
+
 ## Landing your work — read this BEFORE you finish a run
 
 **Work that is not on `master` does not exist.** Kevin and KIREEK both read
