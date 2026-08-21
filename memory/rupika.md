@@ -887,6 +887,68 @@
   Middlesboro KY, Elizabethtown KY, Klamath Falls OR, Del Norte County/Crescent City CA,
   Susanville CA.
 
+- (run 2026-08-21 #2) A second scheduled firing landed the same day as the "FULL SOURCING
+  DAY" volume-day run above (that one already closed out Kevin's explicit fire-payload
+  order). Treated this as a normal small-batch run rather than repeating the volume day —
+  ran 2 parallel sub-agents (package + website), explicitly steered away from every
+  suburb/vertical/market the earlier run that same day had already tried, and pointed the
+  package-track agent at that run's own banked "strong unresolved signals" list first.
+  `git fetch`/detached-HEAD stale-ref symptom recurred again as usual, fixed the same way,
+  nothing lost.
+- (package/priority track, run 2026-08-21 #2) 3 hits, all LA metro, all resolved via the
+  Yelp-advertisers response-time technique: VigilAir Heating and Cooling (Cerritos CA HVAC,
+  ~4hr response/24 quote requests, 153 reviews, family-owned since 2005 — also has a real
+  site but the site itself states a 24hr email turnaround, a second pain signal beyond
+  Yelp; cleanest identity, no flags), Pro Service Electricians Inc. (Whittier CA electrical,
+  ~3hr response/79 quote requests, only 28 reviews after 20+yrs — thin review-generation
+  rate despite volume; flagged for Montague to verify CSLB license, search-only access
+  couldn't confirm it), On Point Exterminating (Long Beach CA pest control, surfaced via a
+  Whittier search, ~3hr response/23 quote requests, only 33 reviews after 13yrs — same
+  thin-reviews-despite-volume pattern; no website found, license unconfirmed, flagged for
+  Montague). Closed out two carryover "strong unresolved signal" leads permanently this run:
+  Anthem AZ plumbing (10hr/191 reviews/4.5star, chased across 3+ runs) resolved to ProSkill
+  Services — ~51 employees, services 6 cities, too scaled, DO NOT re-chase. South Gate/
+  Paramount CA electrician (10hr/32 locals/4.9star/~168 reviews) resolved to a listing that
+  gave contradictory response times (10hr vs 10min) on two reads of the same business —
+  listing-conflation disqualifier, DO NOT re-chase. Also found and dropped on licensing:
+  Flex Painting Inc. (Rowland Heights, 2hr/5.0star/200+ reviews — CSLB painting license
+  #1080550 confirmed EXPIRED as of Oct 2025, otherwise would've been a strong hit). New
+  strong-but-unresolved signals banked for next run: Montebello CA HVAC (2hr/67 locals, but
+  the matching Yelp listing reads as unclaimed — likely conflation with a different claimed
+  listing, retry with a sharper query), Whittier CA remodeling (2hr/38 locals, candidate
+  Persa General Construction 4.7star/139 reviews unconfirmed match), Goodyear AZ roofing
+  (2hr/23 locals, name unresolved), Downey CA electrician (4hr/4.3star/19 reviews, distinct
+  from the already-queued J Powers Electric, name unresolved and review count thin). Empty
+  combos this run (avoid re-trying as-is): pest control (Litchfield Park, Apache Junction,
+  Avondale AZ, Pasadena/Norwalk CA), garage door (Tolleson/Surprise AZ, Downey/San Gabriel
+  Valley/Whittier CA), plumbing (Litchfield Park AZ, Norwalk/Alhambra/Downey/Whittier CA),
+  roofing (Goodyear AZ, Downey/Pasadena/Montebello/Whittier CA), remodeling (Pomona CA),
+  restoration (Alhambra CA), HVAC (Ontario CA — contradictory data, dropped), painting
+  (Norwalk CA — only a 1-review business found).
+- (website track, run 2026-08-21 #2) 3 hits from 3 fresh markets tried for the first time:
+  JB Plumbing (Ottumwa IA, Facebook-only, phone found but owner name not yet found — flagged
+  HIGH collision risk, "JB Plumbing" is a generic name with confirmed unrelated businesses
+  in Wyoming/South Carolina/California), Ed-Pat Electric (Klamath Falls OR, Facebook-only
+  despite 54 years of continuous Oregon CCB licensing since 1972 — a strong "decades of
+  trust, zero web presence" pitch angle, owner Cary Michael Brennan confirmed via CCB
+  license record + BuildZoom, low collision risk, cleanest identity of the run), Pinnacle
+  Painting (Middlesboro KY, Facebook-only, owner unconfirmed — a "sanders128@hotmail.com"
+  signal suggests a Sanders family business but no first name confirmed reliably; flagged
+  MEDIUM-HIGH collision risk, "Pinnacle Painting" is a common name with unrelated real
+  businesses in Indiana/Minnesota under similar names). Cold markets this run (all real
+  sites, don't re-try as-is): Marshalltown IA HVAC (B&G HVAC has a full site), Del Rio TX
+  roofing (all 4 candidates read as long-established/too-serious-to-be-siteless, not
+  individually site-checked — worth a revisit if more candidates needed), Crescent City CA
+  garage doors (nothing findable at all, market may be too small for this vertical),
+  Susanville CA pest control (Smith's Small Town Pest Solutions has a real site,
+  smalltownpestsolutions.com). Middlesboro KY landscaping came up cold too — Total Lawn Care
+  & Landscaping is Facebook-only but collision risk was too high to queue (name collides
+  with unrelated "Total Lawn Care" businesses in Paducah KY, Winder GA, and elsewhere,
+  couldn't isolate a phone/owner match). Fresh markets not yet tried at all remain: Marshall-
+  town/Ottumwa IA other verticals, Del Rio TX other verticals, Middlesboro KY other
+  verticals, Elizabethtown KY, Del Norte County/Crescent City CA other verticals, Susanville
+  CA other verticals, Laurel MS other verticals (pest control already cold there).
+
 ## Dead ends to stop searching
 
 - Van Nuys CA landscaping "2hr response / 260 locals" signal (unresolved across 3 prior
@@ -894,3 +956,13 @@
   project multi-county operator. Too scaled, hard disqualify. Stop re-chasing this one.
 - Zap Lawn Care LLC (Gillette WY) — had a real no-site website gap through 2026-08-16, but
   now has a live site at zaplawncare.com as of 2026-08-21. Gap closed, not a prospect.
+- Anthem AZ plumbing "10hr response / 191 reviews / 4.5star" signal (chased across 3+ runs
+  since 2026-08-20) — resolved 2026-08-21 to ProSkill Services, ~51 employees across 6
+  cities. Too scaled, hard disqualify. Stop re-chasing this one.
+- South Gate/Paramount CA electrician "10hr response / 32 locals / 4.9star / ~168 reviews"
+  signal — resolved 2026-08-21 to a listing that gave contradictory response times (10hr vs
+  10min) across two reads of the same business. Listing-conflation, not trustworthy. Stop
+  re-chasing this one.
+- Flex Painting Inc. (Rowland Heights CA) — strong 2hr/5.0star/200+ review pain signal but
+  CSLB painting license #1080550 confirmed EXPIRED (exp. 08-31-2025, still expired as of Oct
+  2025). Do not queue unless license is reinstated.
