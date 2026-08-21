@@ -1533,3 +1533,96 @@
     litchfield-park-az, turf-monsters-phoenix-az), and both are correctly
     `stage: dismissed` (no call card needed for a dropped prospect, per the
     2026-08-20 run's own convention). Nothing left to do there.
+
+- (2026-08-21, second run same day) Clean start — `git fetch origin` first
+  per CLAUDE.md, no stale-refs issue (local already synced to the
+  just-merged normal-batch commit). Checked `prospects/_do-not-contact.md`
+  first per the standing instruction from the priority-task run earlier
+  today — still just Top Quality Restoration, no new rulings, no conflict
+  with this batch. Picked up the freshest same-day 6-prospect batch left
+  over from the earlier run (2 package: VigilAir Heating and Cooling
+  [Cerritos], Pro Service Electricians [Whittier]; 4 website: On Point
+  Exterminating [Long Beach], JB Plumbing [Ottumwa IA], Ed-Pat Electric
+  [Klamath Falls OR], Pinnacle Painting [Middlesboro KY]) — exactly the 6
+  named as backlog at the end of the prior run, nothing else untouched
+  remained. Used 6 parallel research subagents (pure-research, no file
+  writes), then did DNS verification and two WebSearch phone-number checks
+  myself, then wrote all enrichment.md/status.md updates myself.
+
+  Result: 3 of 6 advanced to `enriched` (VigilAir Heating and Cooling,
+  Pro Service Electricians — both package; On Point Exterminating —
+  package, not website despite being grouped with the website-track batch
+  above), 3 held at `found` on the email gate (JB Plumbing, Ed-Pat
+  Electric, Pinnacle Painting — all website track).
+
+  - **VigilAir Heating and Cooling:** owner Robert Vigil confirmed high
+    confidence (Voyage LA feature + About-page copy + review mentions of
+    both Robert and wife/office-manager Susy). Response-time signal went
+    the wrong direction on reconfirmation — brief said ~4hr, every
+    independent re-check found sub-hour figures (10-60 min) across
+    multiple service-area Yelp pages for the same business, which actually
+    undercuts the "slow response" pitch. Dropped the number entirely and
+    used a different, still-real hook instead: the site's own stated
+    "we'll respond within 24 hours" contact-form language. Email GUESSED
+    on a DNS-confirmed-live domain.
+  - **Pro Service Electricians:** the shakiest advance of this run — no
+    owner name found anywhere (about-us, LinkedIn, BBB, CSLB, CA SOS all
+    came back empty), and the ~3hr/79-locals response-time figure didn't
+    reconfirm at all (looks fabricated, not just stale). Advanced on the
+    email gate alone (GUESSED on a domain I DNS-verified myself this run —
+    the research subagent found the domain live via organic search ranking
+    but couldn't do the DNS check itself). Real find worth using as the
+    hook instead of a fake number: Blue Book lists this "Inc." entity as
+    established 2020, directly contradicting the marketing copy's "over
+    two decades" — used as an honest, curiosity-driven opener. Had to
+    WebSearch the phone number myself (not in Rupika's brief and the
+    subagent couldn't find one either) — found and reconfirmed via a
+    second targeted quoted search, (562) 713-5626.
+  - **On Point Exterminating — another real correction to a "no website
+    found" brief note**, now enough instances of this exact pattern (J
+    Powers Electric 2026-08-12, Scenic View Landscape 2026-08-15, Ramos
+    Painting 2026-08-18, this one) that it's worth stating plainly as
+    standing method: **always re-check a brief's "no website" claim during
+    enrichment, the same as an explicit website-gap or ad-activity guess —
+    it's exactly as often wrong.** opexterminating.com is real, DNS-live,
+    multiple indexed pages. Owner Andrew O'Brien confirmed high confidence
+    (founding story + a review naming him directly). Response-time figure
+    itself didn't reconfirm, but the research surfaced something more
+    useful and just as usable as a hook: real customer complaints about
+    unanswered texts/calls "for weeks" sitting next to otherwise-strong
+    reviews — a follow-up-system pain point, sourced not invented. Email
+    GUESSED on the DNS-confirmed-live domain (a different, AI-hallucinated
+    domain — onpointext.com — was correctly discarded first).
+  - **JB Plumbing, Ed-Pat Electric, Pinnacle Painting (all website track,
+    held): clean, structurally similar misses** — all three had a
+    decisively confirmed website-gap (DNS NXDOMAIN across 3-11 guessed
+    domains each) but zero domain to ground an email guess in, and no
+    email surfaced directly. Ed-Pat additionally had the single strongest
+    identity confirmation of the whole batch (Cary Michael Brennan,
+    President, corroborated by three independent sources including the
+    Oregon CCB's own license lookup — 54 continuous years licensed). JB
+    Plumbing genuinely no owner name found, plus a real unresolved
+    collision lead flagged (a "JB Plumbing LLC" in nearby Blakesburg, IA
+    with a different phone number — not merged in, flagged for a future
+    pass to check). Pinnacle Painting's one email candidate
+    (sanders128@hotmail.com, surfaced pre-run) **collapsed under the
+    literal-string test and shows the same AI-summary-fabrication pattern
+    logged repeatedly since 2026-08-13** — the search tool kept asserting
+    it in unrelated queries without it ever appearing in an actual
+    snippet; correctly not reported as usable, same "guess with
+    contradiction is worse than silence" convention as Fish Window
+    Cleaning (2026-08-13). Also ruled out a previously-flagged bad lead
+    ("Andrew Blondell") as unrelated cross-contamination, confirming the
+    original caution was right to withhold it.
+  - Egress proxy blocked essentially every direct-domain WebFetch again
+    across all 6 prospects (company/guessed domains, Facebook, BBB, Yelp,
+    Blue Book, CSLB, Voyage LA, BuildZoom, ccblookup, YellowPages, Porch,
+    Angi, KBHBA, NationalContractorIndex) — same recurring pattern since
+    2026-08-02. DNS resolution stayed the reliable, decisive tool
+    throughout, as usual — used it directly myself this run (not just via
+    subagents) to verify two package-track domains before applying the
+    guessed-email precedent, worth doing routinely when a subagent reports
+    a domain as "clearly live" without actually DNS-checking it.
+  - Backlog after this run: no untouched `stage: found` prospects remain —
+    every one in the repo now carries a documented hold/dead-end or open
+    question from some prior run.
