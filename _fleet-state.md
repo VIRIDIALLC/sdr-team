@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-21 16:17 UTC (2026-08-21 09:17 Phoenix)
+Generated: 2026-08-21 16:28 UTC (2026-08-21 09:28 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -76,24 +76,24 @@ Generated: 2026-08-21 16:17 UTC (2026-08-21 09:17 Phoenix)
 
 - **GHL API:** UP (live probe returned 200)
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-21 16:05 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 11m ago)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 22m ago)
 - **KIREEK repo:** 10 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
 
 ### Etsy Team
-- last commit: 7 minutes ago — "Merge: Ash 2026-08-21 declined third fire on held etsy-team routine" (cd2c15231)
-- agent work in the last 24h: "Merge: Ash 2026-08-21 declined third fire on held etsy-team routine"; "Ash 2026-08-21: declined third fire on held etsy-team routine"; "Merge: Ash 2026-08-20 declined second out-of-scope fire-payload, hold still in effect"; "Ash 2026-08-20: declined second out-of-scope fire-payload, hold still in effect"
-- ⚠️ 2 recent commit(s) stranded off master — needs a merge
+- last commit: 18 minutes ago — "Merge: Ash 2026-08-21 declined third fire on held etsy-team routine" (cd2c15231)
+- agent work in the last 24h: "Merge: Ash 2026-08-21 declined third fire on held etsy-team routine"; "Ash 2026-08-21: declined third fire on held etsy-team routine"
+- ⚠️ 1 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 77 seconds ago — "DO-NOT-CONTACT list born: Top Quality Restoration is a scammer (Kevin, direct)" (a8a228ae8)
-- agent work in the last 24h: "Rupika: memory update for 2026-08-21 sourcing run"; "Rupika: website-track batch, 5 prospects (Vicksburg MS, Martinsville VA, Gadsden AL)"; "Rupika: package-track batch, 2 prospects (Phoenix + Prescott AZ)"; "Elly 2026-08-21: first-touch queue empty, drafted 10 second touches in the held lane"
+- last commit: 7 minutes ago — "Merge origin/master (Rupika 2026-08-21 batch, DO-NOT-CONTACT ruling) into Montague GHL cal" (235625724)
+- agent work in the last 24h: "Montague: GHL inbound-callback batch, 6 of Kevin's 7 priority leads (2026-08-21)"; "Rupika: package + website batches, 6 prospects (Cerritos/Whittier/Long Beach CA, Ottumwa I"; "Rupika: memory update for 2026-08-21 sourcing run"; "Rupika: website-track batch, 5 prospects (Vicksburg MS, Martinsville VA, Gadsden AL)"
 - waiting on Kevin (5): For Kevin's review — the selling kit for your cold calls; Follow-up sequence — 6 prospect(s) ready to enroll; Follow-up sequence — 6 prospect(s) ready to enroll; Second-touch drafts — 10 prospects in the `followup: held` lane; Follow-up sequence — 2 prospect(s) ready to enroll
 
 ### Ads Team
-- last commit: 8 minutes ago — "Ash 2026-08-21: routine run, ads channel still retired, no design work" (b083be34b)
+- last commit: 20 minutes ago — "Ash 2026-08-21: routine run, ads channel still retired, no design work" (b083be34b)
 - agent work in the last 24h: "Ash 2026-08-21: routine run, ads channel still retired, no design work"; "Wraith 2026-08-21: routine run, ads channel still retired, no action"
 - ⚠️ 2 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin: nothing
@@ -103,15 +103,16 @@ Generated: 2026-08-21 16:17 UTC (2026-08-21 09:17 Phoenix)
 - waiting on Kevin (1): Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 18 minutes ago — "Kevin's ruling: Premier Bath / Christopher Jordan cancelled + paid up - no pursuit, stale " (09e8c0e13)
+- last commit: 30 minutes ago — "Kevin's ruling: Premier Bath / Christopher Jordan cancelled + paid up - no pursuit, stale " (09e8c0e13)
 - agent work in the last 24h: "Sato 2026-08-21: flag Kevin's carve-out commit found mid-run, hold on applying reclass bat"; "Sato 2026-08-21: AR refresh, 2 new reminders, Luis Contreras collections status, Az Glo de"
 - ⚠️ 1 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin (6): A/R reminders — status check, 2026-08-17; Corrected P&L preview — Jan 1 – Aug 14, 2026; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15
 
 ### Social Team
-- last commit: 21 hours ago — "Merge origin/master (KIREEK fleet-state refresh c266f00) into branch" (b7946951c)
-- agent work in the last 24h: "Rati 2026-08-20: schedule post 1 on LinkedIn (Thu 2 PM MST, text-only)"
-- waiting on Kevin: nothing
+- last commit: 10 seconds ago — "Merge remote-tracking branch 'origin/master'" (8908792eb)
+- agent work in the last 24h: "Rati 2026-08-21: correct the Ash re-export status (delivered, not outstanding)"; "Rati 2026-08-21: Week 2 scheduled on LinkedIn, Week 3 drafted, FB blocker filed"
+- ⚠️ 1 recent commit(s) stranded off master — needs a merge
+- waiting on Kevin (1): Comment reply kit — Viridia's own channels
 
 ### SEO Team
 - last commit: 2 days ago — "GA4 connected via OpenSEO: right property verified, first baseline, key-events gap flagged" (877853a2c)
@@ -124,11 +125,11 @@ Generated: 2026-08-21 16:17 UTC (2026-08-21 09:17 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-21 16:17 UTC (auto-generated by VEGA's backend):
+As of 2026-08-21 16:28 UTC (auto-generated by VEGA's backend):
 Real MRR: $4679/mo (VERIFIED 2026-08-21 - sum of 7 active Stripe subscriptions (live API pull), confirms the bank-flow estimate. QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $5,321/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 131 days (18 weeks) → ~1 close per 3 week(s).
 This week (since 2026-08-17): 1 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 11m ago)
-Approvals waiting on Kevin across the fleet: 12
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 22m ago)
+Approvals waiting on Kevin across the fleet: 13
 ```
