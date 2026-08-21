@@ -46,15 +46,16 @@ everyone else's voicemail.
   $15,050 in closed-won revenue** from those estimates alone.
 - Full write-ups: **viridiaanalytics.com/case-studies**
 
-### Pricing — on the page, like it should be
-- **$1,197/month**, month-to-month, cancel anytime with [7] days' notice.
-- One-time setup: **$[497]** (non-refundable — covers the build).
+### Pricing — one number, on the page, like it should be
+- **$1,197/month. That's it — no setup fee, no onboarding charge, nothing
+  extra.** Month-to-month, cancel anytime with [7] days' notice.
 - Messaging/AI usage billed as a disclosed pass-through line item.
 - **Only [5] new businesses onboarded per month** so delivery stays tight.
 
 ### The guarantee
 **We respond to every missed call within 5 minutes for your first 14 days —
-or your first month is free. 100% of the $1,197 back.**
+or your first month is free. 100% of every dollar you've paid us back. There
+is no non-refundable anything.**
 (Measured by system logs; full terms on the site. We guarantee the response —
 the thing we control. Nobody can honestly guarantee your revenue.)
 

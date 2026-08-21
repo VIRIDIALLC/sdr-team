@@ -34,8 +34,10 @@ call in your first 14 days, the month is free — all of it back."
 
 ## 4 · THE CLOSE — then SHUT UP
 
-> **"To lock one of this month's five spots it's $497 to get you set up, plus
-> your first month, fully guaranteed. Want me to get you started?"**
+> **"To lock one of this month's five spots it's $1,197 — that's the whole
+> number, first month fully guaranteed. Want me to get you started?"**
+> *(Kevin's ruling 2026-08-21: NO setup fee. One number, start to finish.
+> "100% money back" means 100% — nothing carved out.)*
 
 **■ SAY NOTHING. Whoever talks next loses. Silence is them deciding YES —
 every word you add gives them a reason to decide later.**
