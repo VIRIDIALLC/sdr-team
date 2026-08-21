@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: closed
 track: package
 quote_stage: none
 ---
@@ -23,3 +23,5 @@ enrichment.md for what was checked)
   confirmed; only lead found (a financial-consulting firm) doesn't match
   the number and wouldn't fit our ICP anyway.** Held at `found`; not a
   normal pipeline entry. See enrichment.md.
+
+- 2026-08-21 (Kevin via VEGA): CLOSED - Kevin identified this caller as political\/election robocall traffic, not a customer lead. Do not resurface.

@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: closed
 track: package
 quote_stage: none
 ---
@@ -22,3 +22,5 @@ enrichment.md for what was checked)
   Rupika sourcing. GHL logged no caller name at all for this number —
   reverse-phone-lookup found **no business or identity whatsoever.** Held
   at `found`; not a normal pipeline entry. See enrichment.md.
+
+- 2026-08-21 (Kevin via VEGA): CLOSED - Kevin identified this caller as political\/election robocall traffic, not a customer lead. Do not resurface.
