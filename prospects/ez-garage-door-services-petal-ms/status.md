@@ -17,3 +17,6 @@ quote_stage: none
   data point. Advanced to `drafted`. See outreach.md.
 - 2026-08-18 (Kevin, via KIREEK): sent to ezgaragedoorservices@gmail.com.
 - 2026-08-18 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-08-21 (Elly): drafted second touch in `followup-1.md` (matched-angle
+  manual follow-up, `followup: held` lane). Stage unchanged at `sent`, lane
+  unchanged. Awaiting Kevin's approval before anything goes out.

@@ -33,3 +33,6 @@ quote_stage: none
     "detai) -- nothing went out.
 - 2026-08-09 (Kevin, via KIREEK): approved and SENT for real to web@brezdenpest.com -- it's in your Gmail Sent folder now.
 - 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: ads isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-08-21 (Elly): drafted second touch in `followup-1.md` (matched-angle
+  manual follow-up, `followup: held` lane). Stage unchanged at `sent`, lane
+  unchanged. Awaiting Kevin's approval before anything goes out.
