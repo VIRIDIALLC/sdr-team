@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -17,3 +18,4 @@ quote_stage: none
   `enriched`. See enrichment.md.
 - 2026-08-21 (Elly): drafted (website). Storefront opener built on the owner's confirmed sporting-goods background; 84% stat deliberately omitted, swap line named in outreach.md. Photos-on-Facebook angle dropped as an 08-21 RidgeTop repeat. See outreach.md.
 - 2026-08-21 (Kevin, via KIREEK): sent to mkemartin@comcast.net.
+- 2026-08-21 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
