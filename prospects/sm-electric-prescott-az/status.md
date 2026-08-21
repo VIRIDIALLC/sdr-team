@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -22,3 +22,4 @@ quote_stage: none
   Response-time signal came back unstable/contradictory on re-check —
   dropped. AZ ROC license reported active but not independently verified.
   Advanced to `enriched`. See enrichment.md.
+- 2026-08-21 (Elly): drafted (package). 1982 founding / 'five front doors' opener; no response-time or review count in the body. Prescott is outside the Phoenix-metro priority zone and this is the thinnest signal of the batch, flagged for Kevin's cut decision. See outreach.md.

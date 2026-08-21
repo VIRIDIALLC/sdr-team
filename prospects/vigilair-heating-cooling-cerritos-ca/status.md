@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -14,3 +14,4 @@ quote_stage: none
 - 2026-08-21 (Rupika): found via the "yelp advertisers" golden-signal search
   (Alhambra-area HVAC query, resolved to a Cerritos-based family shop),
   added to pipeline.
+- 2026-08-21 (Elly): drafted (package). Inverted pitch: evidence says they are FAST, so the draft protects a strength (their speed is Susy, not a system) rather than alleging slowness. Do not tell this prospect he is slow. See outreach.md.

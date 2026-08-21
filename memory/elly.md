@@ -966,3 +966,135 @@ no feedback yet on those specifically)
 
   **End-of-run:** committed and pushed to `master` per CLAUDE.md's
   landing-work rule.
+
+- **2026-08-21 (second run) — 6 drafted, the whole enriched queue, and the
+  first-touch pipeline is flowing again.** `git fetch origin` first per
+  CLAUDE.md: origin/master had force-updated to cc6228e (KIREEK fleet-state
+  refresh on top of Montague's second 2026-08-21 batch, 6 prospects).
+  Container started detached at that commit, clean diff — the same stale-ref
+  pattern logged every run since 08-13, fixed with
+  `git checkout -B master origin/master`. `_fleet-state.md` was fresh
+  (16:50 UTC), so ground truth was live.
+
+  **This morning's run found the enriched queue at zero and the bottleneck
+  upstream at Montague. That resolved itself the same day** — she ran twice
+  more and put 13 prospects through, 6 of which reached `enriched`. Scanned
+  all `prospects/*/status.md`: 7 at `stage: enriched`, being
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold
+  from 2026-08-03, unchanged, skipped again, already drafted) plus the 6 real
+  ones, all drafted: 1st-choice-plumbing-air-phoenix-az (package),
+  on-point-exterminating-long-beach-ca (package),
+  pro-service-electricians-whittier-ca (package), sm-electric-prescott-az
+  (package), vigilair-heating-cooling-cerritos-ca (package),
+  mgm-painting-martinsville-va (website). No defensive-check skips — five
+  grounded-guess emails on confirmed-live domains, one genuinely confirmed
+  address (MGM).
+
+  **THE HEADLINE FOR KEVIN: five out of five package prospects had their
+  response-time figure dropped by Montague.** Not one survived
+  re-verification. 1st Choice returned three mutually contradictory numbers
+  in a single sitting; Pro Service's "79 locals" traced to no source for that
+  business at all; S & M flipped from ~2 hrs to 50 minutes within an hour;
+  VigilAir was contradicted in the *good* direction by four independent
+  sub-hour readings; On Point's figure never reproduced. **The golden-signal
+  response-time column is now failing verification essentially 100% of the
+  time.** I first flagged the low hit rate on 08-12 (1 of 22). It has since
+  gone to zero. This is no longer a per-prospect quirk to note, it is a
+  sourcing-method problem worth Kevin's ruling: either Rupika's capture
+  method needs to change (screenshot or paste the widget text at sourcing
+  time, the same way the `## Links` block was fixed on 08-20), or the team
+  should stop treating that column as a signal and lean on structural facts
+  instead. Raised in the run notes and by push notification.
+
+  **The practical consequence: the standard package opener was unavailable on
+  all five.** Every one needed an angle built from scratch. That is now the
+  normal case, not the exception, and it is what the batch is really a record
+  of:
+  - **1st Choice Plumbing (Phoenix)** — the calendar. It is August 21 in
+    Phoenix, peak week for a two-man father-and-son HVAC shop, so the pain is
+    happening this afternoon rather than being averaged out of a widget.
+    **New idea worth keeping: a dated, seasonal opener is the one kind that
+    can't be templated, because it expires.** Noted in the draft that if it
+    sits past mid-September the opener goes stale.
+  - **On Point Exterminating (Long Beach)** — 33 reviews since 2012 on a
+    quarterly-service business. **Took the same underlying finding Montague
+    put on the card (customers describing weeks of silence) and viewed it from
+    a flattering angle instead of quoting the bad reviews back at him.** Same
+    call as Reliant Pest Control 08-19, same trade, so it's now a settled
+    convention rather than a one-off.
+  - **Pro Service Electricians (Whittier)** — their own published 24/7 claim.
+    **The clearest override yet: Montague's card led with "your site says two
+    decades, your registration says 2020."** That's a real find but it opens by
+    asking a stranger to account for himself, and neither door is face-saving.
+    A promise they made themselves is fair game; a discrepancy that implies
+    they're overstating is not. Kept for a live call once there's rapport.
+  - **S & M Electric (Prescott)** — founded 1982, so one front door became
+    five (Yelp, web form, text, Facebook, phone). "Which one are you least
+    sure somebody's watching?" is diagnostic: whatever he names is where the
+    call starts. Complimentary posture, right for a 44-year shop, same
+    reasoning as Brezden.
+  - **VigilAir (Cerritos)** — **the most useful new precedent of the run.
+    The evidence says this prospect is FAST**, four independent sub-hour
+    readings, so the standard pain premise would have been not just
+    unverifiable but wrong and insulting. **Inverted the pitch to protect a
+    strength instead of alleging a weakness:** their speed is Susy personally
+    answering, which is a person and not a system, and the question is what
+    covers her on a 100-degree week. **Standing note: when re-verification
+    contradicts the pain in the prospect's favour, that is not a dead
+    prospect, it's a different email.** Worth reaching for before falling back
+    to the underlying-problem question.
+  - **MGM Painting (Martinsville VA, website track)** — he ran a sporting
+    goods store for eleven years before painting, so he already knows what a
+    storefront does; he just doesn't have one now. **Deliberately dropped the
+    standard 84% BrightLocal stat**, because the argument was already concrete
+    via his own biography and the stat is the exact element that makes every
+    website-track draft resemble the last one. Named the swap-in line in the
+    note so Kevin can restore it in one edit.
+
+  **Batch-level sameness was the live risk again and it bit twice.** Two
+  electricians (Pro Service, S & M) and three LA-metro prospects in one batch.
+  The review-count mechanism was independently the strongest available angle
+  for On Point, Pro Service AND S & M; using it on all three would have
+  produced one template with the names swapped, so it won on On Point only
+  and the other two were rebuilt. Also killed the 1st Choice
+  insulation-vs-emergency angle outright because it was the same
+  two-revenue-lines mechanism as the Freedom Roofing draft from 08-20, one day
+  apart out of the same inbox. **This confirms the 08-19 rule: checking the
+  other drafts in your own current batch matters as much as checking the last
+  one in the track. Montague's cards can't catch it because she writes them
+  one prospect at a time.**
+
+  **Cards overridden on 4 of 6 this run** (1st Choice, On Point, Pro Service,
+  S & M). That's the fifth run running. It's now well past being worth
+  remarking on per-prospect: the CALL CARD hook is correct-per-prospect input
+  written without sight of the batch, the opener rule, or the previous week's
+  sends. Treat it as raw material.
+
+  **Handoff-seam defect worth Sue's eyes, not blocking:** three of the six
+  (On Point, Pro Service, VigilAir) reached `stage: enriched` with a complete
+  `enrichment.md` but **no Montague log line in `status.md`** — only Rupika's.
+  The other three have hers. The stage field advanced without the log entry
+  documenting it, which is exactly the class of silent handoff gap Sue was
+  brought in for (nothing errors, because a missing log line looks identical
+  to a prospect nobody worked). Flagged, not patched — writing her log entries
+  for her would hide the defect.
+
+  **Pricing-in-email question from this morning is still unanswered.** Two
+  website-track follow-ups (E-Z Garage Door, A+ Garage Doors) named the build
+  price range. No ruling from Kevin yet, so I did NOT extend it to MGM
+  Painting. Keep it contained until he rules.
+
+  Standard post-write sweep on body text only: em dash, bracket placeholder,
+  retired package name, third-person Kevin/Viridia, doctrine Tier 3 banned
+  stats, stray signature line, and pricing. All six clean on every check. Six
+  distinct subject lines, six distinct closers, six distinct mechanisms.
+
+  **Next run:** first-touch queue is empty again after this. The real backlog
+  is upstream (47 at `stage: found`) and in my own follow-up lane — 11
+  held-lane second touches remain, listed by slug in
+  `approvals/2026-08-21-followup-drafts-held-lane.md`, ready to write without
+  re-reading enrichment. Check `stage: enriched` FIRST regardless; fresh first
+  touches outrank follow-ups.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
+  landing-work rule.

@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -14,3 +14,4 @@ quote_stage: none
 - 2026-08-21 (Rupika): found via the "yelp advertisers" golden-signal search
   (Whittier-area pest control query, resolved to a Long Beach-based
   owner-operator shop), added to pipeline.
+- 2026-08-21 (Elly): drafted (package). Review-count opener (33 reviews since 2012 on a quarterly-service business); deliberately did NOT use Montague's bad-review hook, per the 08-19 Reliant precedent that quoting bad reviews at a stranger is not face-saving. See outreach.md.

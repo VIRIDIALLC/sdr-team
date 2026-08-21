@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
   owner Michael Martin confirmed (medium-high confidence); email
   mkemartin@comcast.net confirmed real/recurring, not a guess. Advanced to
   `enriched`. See enrichment.md.
+- 2026-08-21 (Elly): drafted (website). Storefront opener built on the owner's confirmed sporting-goods background; 84% stat deliberately omitted, swap line named in outreach.md. Photos-on-Facebook angle dropped as an 08-21 RidgeTop repeat. See outreach.md.
