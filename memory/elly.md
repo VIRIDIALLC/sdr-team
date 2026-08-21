@@ -834,3 +834,135 @@ no feedback yet on those specifically)
 
   **End-of-run:** committed and pushed to `master` per CLAUDE.md's
   landing-work rule.
+
+- **2026-08-21 (this run) — first-touch queue EMPTY, pivoted to the
+  follow-up lane: 10 second touches drafted, the first this team has ever
+  written.** `git fetch origin` first per CLAUDE.md: origin/master had
+  force-updated to 91d29a5 (KIREEK fleet-state refresh on top of Montague's
+  Links-backfill commits). Container started detached at that exact commit,
+  clean diff — the same stale-ref pattern logged every run since 08-13,
+  fixed with `git checkout -B master origin/master`. `_fleet-state.md` was
+  27 minutes old, so ground truth was live, not stale.
+
+  **The assigned task came back zero, and that's the headline.** Kevin's
+  fire payload said to draft for "every enriched prospect that passes the
+  email gate and has no draft yet." Scanned all 125 prospect folders: 79
+  sent, 40 found, 2 approved, 2 dismissed, and exactly **1 at
+  `stage: enriched`** — jc-heating-cooling-amarillo-tx, still his own
+  email-verification hold from 2026-08-03, still already drafted. So the
+  count of enriched-prospects-needing-a-draft was genuinely 0. **The
+  bottleneck is upstream: 40 prospects are stacked at `stage: found` and
+  Montague's last two commits were the `## Links` backfill, not an
+  enrichment pass.** No amount of working this seat produces first touches
+  until she runs. Flagged to Kevin in the approvals file and by push
+  notification. Did NOT file a `handoffs/` item for it: handoffs are the
+  cross-team channel and Montague is on this team, so the honest routes are
+  the approvals file, this memory note, and Sue.
+
+  **What I did instead, and why it's my lane and not a stretch.** 21
+  prospects sit at `stage: sent` with `followup: held`. Per
+  `team/elly-outreach.md` that lane is explicitly mine: their first touch
+  was the website or ads angle, so the automated GHL Yelp sequence is the
+  wrong message and they were correctly kept out of it. **Every one of them
+  was sent a single email on 08-17 or 08-18 and had received nothing since,
+  and not one had a second touch drafted.** That is precisely the failure
+  the doctrine names (Velocify 3.5M leads: ~93% of conversions by the 6th
+  attempt, half of leads never get a 2nd; XANT median follow-up is ONE
+  attempt). We were the median. Drafted 10, left 11 for next run, and
+  deliberately excluded sp-lawn-care-bangor-me because Kevin is handling
+  that thread with Karl directly (status.md 2026-08-09) — a routine-
+  generated follow-up landing inside a live conversation he owns is the one
+  thing this lane must never do.
+
+  **Convention I established this run, for whoever picks this up next:**
+  second touches go in `prospects/<slug>/followup-1.md` (numbered, so
+  touch 3 is obvious), `stage` stays `sent`, `followup:` stays `held`
+  (changing it would imply the GHL sequence owns the prospect), and a dated
+  log line goes in `status.md`. Nothing about the first-touch record moves.
+
+  **The rule that governed every draft: a second touch must not re-argue
+  the first one.** All five website first touches were built on the same
+  spine (no website + the 84% BrightLocal stat), and all five ads first
+  touches on the same spine (no Sponsored badge + the TFP/Finish Coat
+  numbers). Restating either would have produced ten form letters. So I
+  dropped the stat from every website follow-up and the proof numbers from
+  every ads follow-up, and found a genuinely new argument per prospect:
+  - **Access Garage Doors** (ads) — the sponsored block of competitors that
+    sits on a non-advertiser's own Yelp page. Best property of this angle:
+    **it needs no verification from us at all.** It's how Yelp's product
+    works and Jesse can confirm it on his phone in ten seconds. Every ads
+    draft we write is otherwise hostage to Montague's "inconclusive but not
+    contradicted" badge check; this one isn't.
+  - **Brezden Pest Control** (ads) — 46 years of word of mouth has a
+    ceiling, and the ceiling is the person who moved to SLO in June and has
+    never heard the name. Complimentary rather than corrective, which
+    matters when writing to a man in the trade since 1974.
+  - **Charleston Roofs + Windows** (ads) — the founders' own admission in a
+    trade profile that windows is the harder half. Best angle in the batch;
+    argues for pointing budget at the weak service line instead of the one
+    that already fills itself. Premise is Montague's read of a search
+    summary, not page-verified, so it's phrased as a question ending
+    "Fair?" — a wrong premise then costs nothing and still earns a reply.
+  - **Restorion** (ads) — restoration is the one trade with no repeat
+    business worth counting on, so 100% of jobs start with a stranger
+    searching. Had to steer clear of touch one's speed-of-response line;
+    this argues about being *found*, not about responding fast once found.
+  - **The Paint Doctor** (ads) — three markets, and paid placement is bought
+    by geography, so spend in Denver and skip the market that's known them
+    33 years. Reframes the pitch as allocation rather than volume, which is
+    what separates it from the next agency email.
+  - **Brudwick** (website) — the review where Allen got a customer's AC
+    replacement covered by fighting their insurer. Invisible to anyone not
+    already sitting on his Facebook page.
+  - **E-Z Garage Door** (website) — "Pine Belt's most affordable" only pays
+    if a shopper can compare him, and he's the one of the three they can't
+    find.
+  - **High Country Lawn** (website) — winterization, holiday lighting and
+    snow removal are searched cold and start in about six weeks. **The one
+    angle in the batch with a clock on it**, which is what a second touch
+    most needs and rarely has.
+  - **A+ Garage Doors** (website) — the real search Montague ran returned
+    five Idaho Falls competitors' sites and not theirs. Named the count, not
+    the competitors; naming them turns an observation into a jab.
+  - **RidgeTop Roofing** (website) — they already have real job photos on
+    Facebook, where a post dies in a day. Reframes a site from "another
+    project" into "somewhere to put what you already do."
+
+  **New ground, needs Kevin's ruling: two drafts name the website build
+  price** ($500 to $1,200 one time plus $30/mo, the published tiers from
+  `_pricing.md`, stated as a range and never as a quote). Used only on E-Z
+  Garage Door and A+ Garage Doors, both tiny owner-operator shops whose
+  realistic silent objection is "a website costs thousands," and E-Z's whole
+  brand is being the affordable option so an email about price that hides
+  its own price would be the wrong email to send him. Doctrine kit #3 has
+  transparent pricing as buyers' #1 wish four years running. Kept it off the
+  other three website drafts on purpose: three of five leading with cost is
+  its own template. Each note names the exact paragraph to cut if Kevin
+  says no. **Watch for his answer — it decides whether this becomes standard.**
+
+  **First use of the published case-study page.** Doctrine §7's SDR gate
+  item (4) wants a proof asset to link, and it finally exists:
+  viridiaanalytics.com/case-studies is live and approved. Linked it in 2 of
+  10 (Brezden, Paint Doctor) rather than all 10, so it stays a reason to
+  click rather than a footer. `collateral/` one-sheets NOT attached and not
+  referenced anywhere, per Kevin's explicit instruction that they're still
+  awaiting his numbers.
+
+  **Payload verification, per standing practice:** both claims in the fire
+  payload checked out against real repo state before I acted on them —
+  `collateral/` really does contain the two draft one-sheets, and the
+  doctrine's §5 claim tiers are real and on master. Nothing in the payload
+  asked for a send, an external lookup, or a bypass of the approval gate.
+
+  Standard post-write sweep on body text only: em dash, bracket
+  placeholder, retired package name, third-person Kevin/Viridia, and a new
+  check for the doctrine's Tier 3 banned stats. All ten clean; eight of the
+  ten contain no statistic at all.
+
+  **Next run:** the remaining 11 held-lane follow-ups are listed by slug in
+  `approvals/2026-08-21-followup-drafts-held-lane.md`, ready to write
+  without re-reading enrichment. But check `stage: enriched` FIRST — if
+  Montague has run, fresh first touches outrank follow-ups.
+
+  **End-of-run:** committed and pushed to `master` per CLAUDE.md's
+  landing-work rule.

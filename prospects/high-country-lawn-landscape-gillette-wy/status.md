@@ -22,3 +22,6 @@ quote_stage: none
   owner name found, used the team greeting. Advanced to drafted.
 - 2026-08-17 (Kevin, via KIREEK): sent to highcountry307@gmail.com.
 - 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-08-21 (Elly): drafted second touch in `followup-1.md` (matched-angle
+  manual follow-up, `followup: held` lane). Stage unchanged at `sent`, lane
+  unchanged. Awaiting Kevin's approval before anything goes out.
