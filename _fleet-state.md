@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-21 15:36 UTC (2026-08-21 08:36 Phoenix)
+Generated: 2026-08-21 15:42 UTC (2026-08-21 08:42 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -10,8 +10,8 @@ Generated: 2026-08-21 15:36 UTC (2026-08-21 08:36 Phoenix)
 
 ## THE NUMBER — $10k MRR by 2026-12-31 (everything here serves this)
 
-- **Gap: $5,300/mo** → **5 Complete System client(s)** at $1,197/mo (plan +1 for churn risk) in **131 days** (18 weeks) → ~1 close per 3 week(s).
-- Real MRR $4,700 (bank-flow real gross revenue, Apr-Jul avg (corrected P&L 2026-08-15). QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
+- **Gap: $5,321/mo** → **5 Complete System client(s)** at $1,197/mo (plan +1 for churn risk) in **131 days** (18 weeks) → ~1 close per 3 week(s).
+- Real MRR $4,679 (VERIFIED 2026-08-21 - sum of 7 active Stripe subscriptions (live API pull), confirms the bank-flow estimate. QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
 - **This week** (since 2026-08-17): 1 conversations · 0 proposals out · 0 closed · $0 MRR added
 - Last week: (tracking began 2026-08-19 - no prior week recorded)
 - Scoreboard counts come from Kevin via VEGA ('log 3 conversations') — the
@@ -76,24 +76,24 @@ Generated: 2026-08-21 15:36 UTC (2026-08-21 08:36 Phoenix)
 
 - **GHL API:** DOWN — configured but the API rejects the key (HTTP 401). Anything needing GHL is blocked until Kevin rotates the key.
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-21 15:00 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 35m ago)
-- **KIREEK repo:** 8 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 41m ago)
+- **KIREEK repo:** 9 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
 
 ### Etsy Team
-- last commit: 20 hours ago — "Merge: Ash 2026-08-20 declined second out-of-scope fire-payload, hold still in effect" (e9d472cfe)
+- last commit: 21 hours ago — "Merge: Ash 2026-08-20 declined second out-of-scope fire-payload, hold still in effect" (e9d472cfe)
 - agent work in the last 24h: "Merge: Ash 2026-08-20 declined second out-of-scope fire-payload, hold still in effect"; "Ash 2026-08-20: declined second out-of-scope fire-payload, hold still in effect"; "Merge: Ash 2026-08-20 declined out-of-scope fire-payload, hold still in effect"; "Ash 2026-08-20: declined out-of-scope fire-payload, hold still in effect"
 - ⚠️ 2 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 5 minutes ago — "KIREEK: stage 2 prospect(s) for follow-up enrollment, hold 0 off-track (2+ days since firs" (c89d35e80)
-- agent work in the last 24h: "Montague: memory update for 2026-08-20 Links-backfill run"; "Montague: backfill ## Links block for found/enriched prospects (40)"; "Montague: backfill ## Links block for active pipeline (81 prospects)"; "Elly 2026-08-20: memory update for Freedom Roofing draft run"
+- last commit: 11 minutes ago — "KIREEK: stage 2 prospect(s) for follow-up enrollment, hold 0 off-track (2+ days since firs" (c89d35e80)
+- agent work in the last 24h: "Montague: memory update for 2026-08-20 Links-backfill run"; "Montague: backfill ## Links block for found/enriched prospects (40)"; "Montague: backfill ## Links block for active pipeline (81 prospects)"
 - waiting on Kevin (4): For Kevin's review — the selling kit for your cold calls; Follow-up sequence — 6 prospect(s) ready to enroll; Follow-up sequence — 6 prospect(s) ready to enroll; Follow-up sequence — 2 prospect(s) ready to enroll
 
 ### Ads Team
-- last commit: 6 minutes ago — "Merge remote-tracking branch 'origin/master'" (60d30716d)
+- last commit: 12 minutes ago — "Merge remote-tracking branch 'origin/master'" (60d30716d)
 - agent work in the last 24h: "Wraith 2026-08-21: routine run, ads channel still retired, no action"
 - ⚠️ 1 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin: nothing
@@ -108,8 +108,7 @@ Generated: 2026-08-21 15:36 UTC (2026-08-21 08:36 Phoenix)
 
 ### Social Team
 - last commit: 20 hours ago — "Merge origin/master (KIREEK fleet-state refresh c266f00) into branch" (b7946951c)
-- agent work in the last 24h: "Rati 2026-08-20: schedule post 1 on LinkedIn (Thu 2 PM MST, text-only)"; "Rati 2026-08-20 (parallel run housekeeping): archive done approvals + note collision"
-- ⚠️ 1 recent commit(s) stranded off master — needs a merge
+- agent work in the last 24h: "Rati 2026-08-20: schedule post 1 on LinkedIn (Thu 2 PM MST, text-only)"
 - waiting on Kevin: nothing
 
 ### SEO Team
@@ -123,11 +122,11 @@ Generated: 2026-08-21 15:36 UTC (2026-08-21 08:36 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-21 15:36 UTC (auto-generated by VEGA's backend):
-Real MRR: $4700/mo (bank-flow real gross revenue, Apr-Jul avg (corrected P&L 2026-08-15). QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
+As of 2026-08-21 15:42 UTC (auto-generated by VEGA's backend):
+Real MRR: $4679/mo (VERIFIED 2026-08-21 - sum of 7 active Stripe subscriptions (live API pull), confirms the bank-flow estimate. QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
-Gap: $5,300/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 131 days (18 weeks) → ~1 close per 3 week(s).
+Gap: $5,321/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 131 days (18 weeks) → ~1 close per 3 week(s).
 This week (since 2026-08-17): 1 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL DOWN — configured but the API rejects the key (HTTP 401). An | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 35m ago)
+Systems: GHL DOWN — configured but the API rejects the key (HTTP 401). An | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 41m ago)
 Approvals waiting on Kevin across the fleet: 10
 ```
