@@ -16,3 +16,8 @@ quote_stage: none
   better-documented) — see memory/rupika.md.
 - 2026-08-21 (Rupika): re-confirmed still no dedicated website, added to
   pipeline.
+- 2026-08-21 (Montague): website-gap confirmed a third time (the domain
+  itstime2paint.com resolves but is registered-and-parked, no built site —
+  functionally still no website). Email genuinely not found; owner name
+  still not found, third straight miss. **Held at `found` on the email
+  gate.** See enrichment.md.

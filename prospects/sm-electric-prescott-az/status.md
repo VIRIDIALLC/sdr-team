@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -16,3 +16,9 @@ quote_stage: none
   added to pipeline. Weaker/thinner signal than usual and outside the
   strict Phoenix-metro priority area — flagged for Sue/Montague judgment,
   see brief.md.
+- 2026-08-21 (Montague): owner Gary Miller confirmed (high confidence, wife
+  Donna corroborated too); website confirmed real; email GUESSED on the
+  confirmed domain, stronger than usual (real staff demonstrably use it).
+  Response-time signal came back unstable/contradictory on re-check —
+  dropped. AZ ROC license reported active but not independently verified.
+  Advanced to `enriched`. See enrichment.md.

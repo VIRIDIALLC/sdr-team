@@ -1458,3 +1458,78 @@
     claim, etc.) — same recurring failure mode logged since 2026-08-13,
     ~15th instance now, still caught every time by the same discipline
     (re-verify any specific asserted fact as an exact quoted string).
+
+  **After the priority task, resumed the normal per-run workflow**: picked up
+  the older of two fresh Rupika 2026-08-21 batches (2 package — 1st Choice
+  Plumbing Air & Insulation Phoenix, S&M Electric Prescott; 5 website —
+  Bennys Painting, C E H Painting, It's Time 2 Paint, MGM Painting, Wall CW
+  Painting), leaving the freshest same-day 6-prospect batch (Cerritos/
+  Whittier/Long Beach CA, Ottumwa IA, Klamath Falls OR, Middlesboro KY) for
+  next run per cap-batch-size. Used 7 parallel research subagents
+  (pure-research, no file writes), then wrote all files myself.
+
+  Result: 3 of 7 advanced to `enriched` (1st Choice Plumbing Air &
+  Insulation, S&M Electric — both package; MGM Painting — website), 4 held
+  at `found` on the email gate (Bennys Painting, C E H Painting, It's Time 2
+  Paint, Wall CW Painting — all website track).
+
+  - **1st Choice Plumbing:** owner Tim/Michael Rhoads confirmed medium-high
+    confidence via LinkedIn + Thumbtack + review mentions; email GUESSED on
+    the confirmed-live domain. Response-time went from Rupika's clean "~3hr,
+    corroborated twice" to CONTRADICTORY on this run's re-check (10min/
+    30min/no reconfirmation) — dropped. Real collision risk with 8+ other
+    "1st Choice Plumbing"-named businesses nationally; the search tool
+    itself blended in a wrong review and a mismatched review-count figure
+    from the Oceanside, CA collision — discarded, anchored on exact
+    address+phone instead.
+  - **S&M Electric:** owner Gary Miller confirmed high confidence (wife
+    Donna corroborated too); email GUESSED but a stronger grade than usual —
+    ZoomInfo shows two real staff using the exact domain for email, not just
+    "the domain resolves." Response-time also went unstable on re-check
+    (2hr brief vs. 50min this run, alongside a shifted review count) —
+    dropped rather than used as a hedge question, since the instability
+    pattern (number + review count moving together) suggests snapshot-age
+    confusion, not just noise.
+  - **MGM Painting:** the cleanest advance of the batch — website-gap
+    confirmed (7 domains NXDOMAIN), owner Michael Martin confirmed
+    medium-high (a specific corroborating backstory detail — ran a
+    sporting-goods store for 11 years before painting — recurred across
+    independent sources), and the email (mkemartin@comcast.net) is a real
+    discovered address, not a guess, recurring tied to the business across
+    multiple queries.
+  - **C E H Painting:** resolved a real 3-way phone-number conflict from the
+    brief to (601) 618-1543 via convergent evidence, and discarded a
+    candidate email (chrisscottsteele@gmail.com) that traced to no real
+    source — same discipline as the recurring AI-fabrication catches
+    logged since 2026-08-13. **New pattern worth naming:** Vicksburg, MS
+    has at least three distinct Steele-surname painting businesses (this
+    one plus two already-excluded ones) — a small-town name-collision
+    density worth remembering specifically for future Vicksburg leads.
+  - **It's Time 2 Paint:** third research pass, third confirmed "no
+    website" and third confirmed "no owner name" — but this run found a
+    nuance the first two missed: itstime2paint.com actually resolves in
+    DNS, just to a parked/unused page on shared AWS infrastructure, not a
+    built site. Worth remembering as a DNS-resolves-but-still-no-real-site
+    case, distinct from a flat NXDOMAIN — record it as "registered but
+    parked" so a future pass doesn't either wrongly re-claim it as
+    confirmed-no-site-via-DNS or waste time re-guessing that exact domain.
+  - **Wall CW Painting:** resolved a phone/address conflict via a genuinely
+    different method than usual — cross-referencing property/people-search
+    records against BuildZoom's named co-owners (Coy Wall physically
+    matches a resident at the 51 Baronwood Rd listing) rather than
+    recency/review-volume signals. Also surfaced a real possible-inactive
+    flag (license expired 2019, no activity signal since ~2021) — a new
+    instance of the same "business-status signal that can't be resolved
+    from open search" pattern as Aaron's Heating & Cooling (2026-08-20);
+    flagged prominently rather than guessed either way.
+  - Every subagent hit the same egress-proxy wall on essentially every
+    direct-domain fetch this run (company/guessed domains, BBB, Facebook,
+    YellowPages, Chamber platforms, BuildZoom, Angi, Nextdoor, VA SCC) —
+    same recurring pattern since 2026-08-02; all findings above are
+    search-snippet-sourced except the decisive DNS-resolution checks, which
+    stayed direct and reliable throughout as usual.
+  - Confirmed the `## Links` backfill task is fully complete — only 2
+    prospects in the whole repo lack a Links block (nunez-painting-
+    litchfield-park-az, turf-monsters-phoenix-az), and both are correctly
+    `stage: dismissed` (no call card needed for a dropped prospect, per the
+    2026-08-20 run's own convention). Nothing left to do there.

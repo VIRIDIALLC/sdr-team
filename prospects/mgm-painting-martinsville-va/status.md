@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: website
 quote_stage: none
 ---
@@ -11,3 +11,7 @@ quote_stage: none
 
 - 2026-08-21 (Rupika): found via Facebook-scoped search + named follow-up,
   added to pipeline.
+- 2026-08-21 (Montague): website-gap confirmed (7 domains all NXDOMAIN);
+  owner Michael Martin confirmed (medium-high confidence); email
+  mkemartin@comcast.net confirmed real/recurring, not a guess. Advanced to
+  `enriched`. See enrichment.md.
