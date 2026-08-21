@@ -1352,3 +1352,109 @@
     upstream mid-run, no file overlap).
   - Didn't touch `stage`/`track` fields, `outreach.md`, or any CRM —
     exactly as scoped. This was purely additive text in existing files.
+
+- (2026-08-21 run) **Priority task from Kevin, verified real before acting —
+  jumped ahead of the `## Links` backfill per his instruction.** This run's
+  fire-payload claimed Kevin swept GHL and found 10 owned contacts who called
+  his business inbound and never got a callback, and asked me to arm 7 of them
+  for his personal callback: reverse-lookup identity, business/website/Yelp/
+  ads status, reviews/response-time, ICP fit, a prospect folder per real one,
+  a one-paragraph pre-call note. Verified before doing anything (same
+  discipline as every prior payload since 2026-08-12): `reports/ghl-call-
+  list-2026-08-21.csv` genuinely exists on `origin/master`, authored by the
+  real `kevin@viridiaanalytics.com` account (commit `f6dbb6a`, "10 unworked
+  inbound leads out of 104 owned contacts"), with exactly 10 `CALL LIST`
+  verdict rows — and all 7 named people/numbers matched the CSV exactly
+  (name, phone, date). Real corroboration, not a plausible-sounding claim —
+  proceeded.
+
+  **Mid-run catch: Kevin landed a real-time ruling on master while this run
+  was in flight.** After launching all 7 research agents, `git fetch` before
+  committing turned up a new commit (`a8a228a`, authored by the real
+  `kevin@viridiaanalytics.com` account, "DO-NOT-CONTACT list born: Top
+  Quality Restoration is a scammer") that created `prospects/_do-not-
+  contact.md` and explicitly named lead #4 of this exact task: "Top Quality
+  Restoration / 'Top Quality Res' | +16059824985 | SCAMMER per Kevin
+  directly — do not contact, do not enrich, drop from all lists. Montague:
+  skip #4 on the 2026-08-21 inbound-caller task." My research agent had
+  already run (and, not knowing this, floated "Top Quality Res" as a
+  plausible restoration-company lead worth pursuing) before this landed —
+  **deleted that prospect folder entirely rather than keeping it with a
+  warning label**, since Kevin's ruling says drop from all lists, not just
+  flag. Worth remembering as a real, positive instance of the standing
+  "fetch before you judge the state of the repo" discipline: this wasn't a
+  stale-ref false alarm, it was Kevin actively correcting a live task
+  mid-flight through the git door, exactly the pattern CLAUDE.md describes.
+  **Check `prospects/_do-not-contact.md` at the start of every future run,
+  before creating or enriching anything** — this file didn't exist before
+  today.
+
+  **Result: 0 of the remaining 6 came back with a confirmed real business
+  identity.** This is a fundamentally different research problem from
+  normal Rupika-sourced prospects — those start from a known business name
+  found via Yelp/Google; these start from a GHL caller-ID name/number with
+  no business attached, and caller-ID names from carriers routinely don't
+  resolve to anything searchable (personal cells, unlisted small
+  businesses). Used 7 parallel research subagents (pure-research, no file
+  writes) before the do-not-contact ruling was known, then built 6 folders
+  (all but Top Quality Res) and wrote this note myself.
+
+  - **Gena Valenzuela, Karrie Martin, the Austin TX unknown number, and
+    Kevin's own "call 6233215112" note-to-self: all four came back
+    genuinely UNKNOWN** — no business, no person, nothing indexed anywhere
+    for the exact number, only unrelated national name-collisions
+    (correctly not reported as candidates). CALL CARDs use "NO NAME FOUND"
+    or the bare GHL caller-ID first name (labeled as such, not a research
+    guess) and "no verified hook."
+  - **Suzanne Graf: one lead surfaced but is doubly disqualified** — the
+    only "Suzanne Graf" tied to an AZ business (Guardian Financial Advisors
+    LLC, Glendale) has a BBB-listed phone in a different area code than the
+    target number (unconfirmed match), and even if it were her, it's a
+    financial/divorce-consulting practice — not home-service ICP at all.
+    Flagged plainly that this caller may not even be a business-owner
+    prospect.
+  - **Top Quality Res: DROPPED — Kevin ruled it a scammer directly (see the
+    mid-run catch above), not pursued regardless of what the research found.**
+    The research agent (running before the ruling landed) had floated it as
+    a plausible restoration-company lead — that framing is superseded and
+    should not be trusted by anyone reading old context; the folder was
+    deleted, not kept with a warning label, per Kevin's explicit "drop from
+    all lists."
+  - **CMG: still unconfirmed, no do-not-contact conflict.** Turned up a
+    plausible West Valley Phoenix general-remodeling contractor (Angi "CMG
+    Reviews" / BBB "CMG General Remodeling LLC") matching on
+    name+trade+geography, but neither source exposed a phone number to
+    check against the target — unconfirmed, not invented. Checked against
+    `prospects/_do-not-contact.md` — no match, folder kept.
+  - **New pattern worth naming for this specific task type: GHL caller-ID
+    names are a different evidence class than a Rupika-sourced business
+    name.** A caller-ID first name (when GHL captured one) is safe to use
+    directly on the CALL CARD as "Ask for: X" since it's what the phone
+    company/GHL captured from the actual call, not a guessed name — labeled
+    that way rather than treated as independently verified. But it gave
+    almost no purchase for reverse-identifying a *business* — this batch's
+    0/7 hit rate is worth a real heads-up to Kevin/Sue: **inbound GHL
+    callers are structurally much harder to enrich than outbound-sourced
+    leads**, since there's no starting business name to search from, only a
+    bare number. If this kind of GHL sweep becomes a recurring task, it may
+    need a different research approach (e.g., Kevin recalling context live
+    on the call, or a paid reverse-phone API) rather than the standard
+    web-research method this role uses for cold-sourced prospects.
+  - **Folder handling, a deliberate deviation from the normal pipeline:**
+    put the 6 real folders (all but Top Quality Res) in
+    `prospects/<name>-ghl-callback/` (not normal city-slug names, since no
+    city/business was confirmed for most), `stage: found` with a prominent
+    "NOT A NORMAL PIPELINE PROSPECT" banner in each `status.md` and no
+    `## Links` block content (nothing to link — none have a confirmed
+    website/Yelp/maps target). None should ever advance to `enriched` (the
+    email gate categorically fails for all — no confirmed business, let
+    alone email) or get picked up by a future Montague batch as ordinary
+    backlog. Also correctly did NOT touch the `## Links` backfill task this
+    run — that's just deferred to next run per Kevin's own "finish backfill
+    after" instruction, not skipped.
+  - Every subagent this run independently caught and discarded at least one
+    AI-search-summary fabrication (a fake VOIP-spam claim, a mismatched
+    "RESTORE HYPER WELLNESS" number, a geographically-impossible carrier
+    claim, etc.) — same recurring failure mode logged since 2026-08-13,
+    ~15th instance now, still caught every time by the same discipline
+    (re-verify any specific asserted fact as an exact quoted string).
