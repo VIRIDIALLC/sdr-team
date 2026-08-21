@@ -807,6 +807,90 @@
   confirmed in its original run, needs a real verification pass, not just a
   direct queue, before closing out).
 
+- (run 2026-08-21) Kevin's fire-payload order: "FULL SOURCING DAY — volume day," golden
+  signal (HIGH Yelp response rate + SLOW response time), Phoenix-metro first, and a NEW
+  standing rule — every Yelp-sourced record must carry the actual `yelp.com/biz/<slug>`
+  URL in `status.md`'s `## Links` block, captured at sourcing time, not guessed/
+  constructed. `git fetch` showed a force-updated `origin/master` and a detached HEAD —
+  same recurring stale-ref symptom as every prior run since 2026-08-13, fixed with `git
+  checkout -B master origin/master`, confirmed local already matched origin's tip
+  (`91d29a5`), nothing lost. Ran 4 parallel sub-agents this run instead of the usual 2-3
+  (3x package-track batches split by sub-territory — Phoenix fringe, Yuma/Pinal/Prescott
+  fringe, LA metro — plus 1 website-track batch) to genuinely source "multiple batches"
+  per Kevin's order. Net result thinner than hoped on package track (2 hits total, not the
+  usual 3 per batch) — most of the day's package-track search budget went to resolving
+  and then correctly DISQUALIFYING strong-looking signals rather than queuing weak ones;
+  see below. Website track had a strong day (5 hits). Did not touch any existing prospect
+  folder — Montague is mid-Links-backfill per the order, only new slugs created.
+- (package/priority track, run 2026-08-21) 2 hits, both weaker/thinner than the usual bar
+  but genuinely corroborated: 1st Choice Plumbing, Air & Insulation (Phoenix AZ 85027,
+  Deer Valley near the Cave Creek border — HVAC, ~3hr response corroborated twice, no
+  sub-1hr drift, 4.4★/104-107 reviews, active AZ ROC license, family-owned), S & M
+  Electric, Inc. (Prescott AZ — electrical, ~2hr response/7 quote requests/14 Yelp
+  reviews, established 1982, family-owned, but flagged as OUTSIDE the Phoenix-metro
+  priority area — Prescott is a separate ~100mi-away market — and a thinner signal than
+  usual; queued under the standing nationwide package-track criteria but flagged for
+  Sue/Kevin's call on fit). **New standing pattern worth logging: strong "yelp advertisers"
+  signals in fresh/unresolved-signal territory are disproportionately resolving to
+  DISQUALIFIED businesses, not new hits** — this run alone resolved and correctly dropped:
+  Cave Creek Cooling Company (3hr reading contradicted by a 10min reading on direct
+  check), Arizona's Finest Roofing (closes out the 2026-08-20 unresolved "Casa Grande
+  roofing 4hr/101-review" signal — it's actually a 10min fast responder), McMillan
+  Brothers Painting & Roofing (strong clean 4hr/139-147-review Casa Grande signal, but
+  HQ'd in already-exhausted Gilbert AZ — a judgment call flagged, not unilaterally
+  dropped, worth Sue/Kevin weighing in on whether a Gilbert HQ should hard-disqualify a
+  business that dominates a fringe-suburb search), American Home Water and Air (closes
+  out the 2026-08-20 unresolved "Anthem plumbing 10hr/191-review" signal — real business,
+  too scaled: 440+ reviews at one location alone, multi-location, 40+ years), Action
+  Termite & Pest Control (closes out Casa Grande's 4hr/235-quote pest control signal —
+  too scaled, 5,000+ reviews, metro-wide), Tucker Hill Air/Plumbing/Electric (closes out
+  Fountain Hills' 3hr electrical signal — too scaled, 15+ cities), Pacific Outdoor Living
+  (closes out the Van Nuys landscaping "2hr/260 locals" signal that had gone unresolved
+  across 2+ prior runs — too scaled, 10,000+ projects, multi-county). Take-away: these
+  "unresolved signal, worth a repeat attempt" notes from past runs are working as
+  intended — the repeat attempts ARE resolving them, just mostly to disqualified rather
+  than queuable businesses. Worth expecting that ratio going forward rather than treating
+  every unresolved signal as a banked future hit. New tooling constraint hit hard this
+  run: direct `WebFetch` to yelp.com is blocked by the network egress proxy
+  (`EGRESS_BLOCKED`) in this environment, and the LA-metro sub-agent exhausted its full
+  200-call WebSearch budget mid-run without fully closing out every lead — worth
+  budgeting for that ceiling on a "multiple batches" volume day, and flagging to
+  Sue/Kevin that a direct-Yelp-fetch path would meaningfully improve name-resolution
+  yield if it ever becomes available. Strong unresolved signals banked for next run:
+  Anthem AZ plumbing (10hr/191 reviews/4.5★, corroborated identically across 5 searches
+  this run alone, closest thing to a slam-dunk in the territory but the search tool's
+  summarizer never surfaced an individual `/biz/` card for it — needs a direct-browser
+  Yelp pass, not another search-engine attempt), Fountain Hills roofing (2hr/116
+  reviews/143 quote requests) and electrical (2hr/109 quote requests), Gold Canyon HVAC/
+  duct cleaning (3hr/45 quote requests), Anthem painting (8hr/141 quote requests), South
+  Gate/Paramount CA electrician (10hr/32 locals/4.9★/~168 reviews), Lawndale CA HVAC
+  (9hr/6 locals/4.9★/64 reviews — thin quote volume but clean signal otherwise). One
+  scale judgment call flagged, not resolved: South Bay Electric Company (Harbor City CA,
+  4.9★/441 reviews) reads single-location/owner-operated in its own page language despite
+  441 reviews nudging into the usual "too scaled" zone — worth Sue/Kevin deciding whether
+  review count alone should disqualify a genuinely single-location shop.
+- (website track, run 2026-08-21) Strong run, 5 hits from 5 fresh small/mid markets
+  (Vicksburg MS, Martinsville VA) plus one banked candidate closed out: C E H Painting LLC
+  and Bennys Painting LLC (both Vicksburg MS, painting — deliberately queued both despite
+  the usual same-city/same-vertical over-concentration caution, since this was an explicit
+  volume day), MGM Painting and Wall CW Painting (both Martinsville VA, painting — same
+  call), It's Time 2 Paint (Gadsden AL, banked since 2026-08-17, re-confirmed still no
+  website). One banked candidate DISQUALIFIED this run: Zap Lawn Care LLC (Gillette WY) —
+  previously banked as no-site 2026-08-16, but now has a real live site at zaplawncare.com
+  — the gap closed since then; worth remembering banked candidates can go stale, always
+  re-verify before closing one out, not just queue on the old note. Two markets ran cold
+  (real sites found): Danville VA electrical, Sheridan WY landscaping (though Sheridan has
+  2 untried near-misses if revisited: Walker Landscapes and Cowboy State Landscape LLC,
+  both confirmed Facebook-only but no phone/owner surfaced yet; also Skipper's Lawn Care
+  LLC in Vicksburg MS, same status). Fresh markets not yet tried at all remain: Marshalltown
+  IA, Ottumwa IA, Del Rio TX, Laurel MS (pest control ran cold, other verticals untried),
+  Middlesboro KY, Elizabethtown KY, Klamath Falls OR, Del Norte County/Crescent City CA,
+  Susanville CA.
+
 ## Dead ends to stop searching
 
-(none yet)
+- Van Nuys CA landscaping "2hr response / 260 locals" signal (unresolved across 3 prior
+  runs, 2026-08-14/19/20) — resolved 2026-08-21 to Pacific Outdoor Living, a 10,000+
+  project multi-county operator. Too scaled, hard disqualify. Stop re-chasing this one.
+- Zap Lawn Care LLC (Gillette WY) — had a real no-site website gap through 2026-08-16, but
+  now has a live site at zaplawncare.com as of 2026-08-21. Gap closed, not a prospect.
