@@ -949,6 +949,92 @@
   verticals, Elizabethtown KY, Del Norte County/Crescent City CA other verticals, Susanville
   CA other verticals, Laurel MS other verticals (pest control already cold there).
 
+- (run 2026-08-22) Scheduled run scoped to two tracks only (package + website, per this run's
+  task instructions — ads track not requested). `git fetch` showed new branches and a
+  force-updated `origin/master`, and the container started on a detached HEAD — same recurring
+  stale-ref symptom as every prior run since 2026-08-13, fixed with `git checkout -B master
+  origin/master`, nothing lost. `_new-leads.md` had nothing dropped in. Ran both tracks as
+  parallel sub-agents again (continues working well).
+- (package/priority track, run 2026-08-22) 3 hits — 2 clean, 1 flagged for a real discrepancy.
+  Linea Electric (San Pedro CA electrician, ~10hr response/100% response rate/15 quote
+  requests, 4.6★/11-12 reviews, true one-man shop est. 1996, active CA license, no website
+  found at all — San Pedro CA was a fresh untried suburb). Sierra Vista Roofing LLC (Mesa AZ
+  roofing, surfaced via a Fountain Hills AZ search then cross-suburb resolved to Mesa — Mesa's
+  roofing vertical specifically hadn't been tried even though other Mesa verticals were
+  exhausted — ~6hr response/100% response rate/4.9★/15 reviews, two named owners Jose & Jorge,
+  active AZ ROC license, existing site is only a bare GoDaddy site-builder page). Overson Pest
+  Control (Mesa AZ, serves Queen Creek/Gilbert/Chandler) — queued WITH A FLAG: the
+  resolving search reported 5hr response/114 quote requests/4.9★/119 reviews, but the
+  independently-confirmed Yelp page for this business shows only 63 reviews — a real
+  discrepancy, not just normal drift, that couldn't be resolved this run (possibly a second
+  Yelp listing or search-tool conflation with a different pest control business). Identity
+  (owner Brett Overson, ~11yr establishment) is solid even though the number isn't confirmed —
+  explicit flag for Montague to verify directly on Yelp before Elly's draft leans on either
+  reading. Also worth noting: Overson's own website (oversonpestcontrol.com) is a genuinely
+  decent site already, unusual for this track. Dropped as disqualified: South Bay Electric
+  Company (Harbor City CA, 4.9★/441 reviews, owner ~40yrs) — explicitly trips the "40+ years
+  AND 400+ reviews" scale disqualifier despite reading as a genuine family shop in its own
+  language, and had no response-time pain signal anyway; Penna Electric (Carson/Hawthorne/
+  Redondo Beach CA) — review counts drifted 176/172/31 across reads, conflation across
+  multiple same-name listings including one CLOSED LA location; AC Plumbing Heating & Air
+  Conditioning (Harbor City CA) — three different review counts (111/68/97) across reads on
+  the same listing, not trusted as a hit, flagged as "maybe, re-verify directly" rather than
+  queued. New standing caution: the search tool itself sometimes blends numbers from adjacent
+  Yelp listings rather than reflecting a real change in the underlying data (seen 4x this run
+  alone: Controlled Comfort, AC Plumbing Harbor City, Overson Pest Control, Downey electrician,
+  Penna Electric) — worth treating any single-run 2+ different review-count reading as reason
+  to flag-not-drop (if identity holds) same as the existing drift guidance, but a 50%+ swing
+  (like Overson's 63 vs 119) deserves an explicit "verify before use" flag rather than being
+  treated as normal drift. Still-unresolved strong signals from prior runs, tried again, still
+  not resolved: Fountain Hills AZ electrical (2hr/109 quote requests), Gold Canyon AZ HVAC/duct
+  cleaning (3hr/45 quote requests), Anthem AZ painting (8hr/141 quote requests), Lawndale CA
+  HVAC (9hr/6 locals/4.9★/64 reviews — closest candidate checked, Controlled Comfort, had wrong
+  numbers), Whittier CA remodeling (2hr/38 locals — "Persa General Construction" guess still
+  unconfirmed, no rating/response data found for it this run). Goodyear AZ roofing (2hr/23
+  locals) wasn't attempted this run — ran out of budget, try fresh next time. Downey CA
+  electrician (4hr/4.3★/19 reviews) got yet another different reading (11 reviews/6hr) — still
+  dropped, now tried and failed to resolve across 2 separate runs. Empty suburb/vertical combos
+  this run (avoid re-trying as-is): HVAC (El Mirage/Anthem/Yuma/Casa Grande AZ — all fast
+  except Casa Grande's 3hr Just In Time Heating & Cooling, worth a closer look next run),
+  garage door (Sun City West/Lakewood CA — no response-time data surfaced at all), plumbing
+  (Baldwin Park/Rowland Heights CA — fast only), landscaping (La Puente CA — fast only), pest
+  control (Florence/Coolidge/Eloy AZ — only 24hr-guarantee marketing language, no Yelp data),
+  electrician/plumbing (Wilmington CA — fast only).
+- (website track, run 2026-08-22) 3 hits from fresh/partially-tried small markets: Goodvin
+  Plumbing (Ottumwa IA, Facebook-only/778 likes/16 reviews, owner Ryan Goodvin confirmed via
+  active Iowa contractor license on BuildZoom — low collision risk, distinct spelling from
+  "Goodin/Godwin/Goodwin"), Solid Rock Roofing LLC (Elizabethtown KY, Facebook+Instagram only,
+  owner Drew Kenny via LinkedIn — medium collision risk, "Solid Rock/Rock Solid Roofing"
+  recurs nationally but this one is cleanly isolated by phone/email/owner; flagged a specific
+  same-market collision risk: "Rock Solid Roofing KY" in Frankfort/Eastview KY has its own real
+  site, confirmed different business, don't attribute that domain here), Stanley Brooks
+  Plumbing LLC (Klamath Falls OR, no domain across BBB/Yelp/HomeAdvisor/BuildZoom/Nextdoor/
+  Facebook, BBB A+ since 2018, owners Margo Gonzalez Brooks + Stanley Ronald Brooks
+  cross-confirmed BBB+LinkedIn — low collision risk). One near-miss ruled out: Maher Plumbing
+  and Heating (Ottumwa IA) looked like a hit (no site, gmail) but BBB flags it as OUT OF
+  BUSINESS — not queued, not viable; worth adding "check BBB for out-of-business status" as a
+  standing quick sanity check alongside the existing license-check caution, not just for
+  negative-review-sourced candidates. Cold markets this run (real sites found, don't re-try as
+  a whole market, though see untried remnants below): Marshalltown IA (Sentry Plumbing, Ritter
+  Plumbing, B&G HVAC, Elite Cool & Heat all real), Elizabethtown KY pest control (BCPC
+  Exterminating, Singleton's Pest Solution, Perks Worx, E-Town Exterminating all real — this
+  vertical is fully saturated there), Klamath Falls OR painting (Rolez Painting, Cascade
+  Painting & Wallcovering both real — Cascade looked site-less at first pass, worth remembering
+  a deeper check can reverse a first impression), Klamath Falls OR plumbing partial (Case
+  Plumbing real), Klamath Falls OR garage doors (Valley Garage Door LLC real). Untried
+  remnants worth a future pass: Elizabethtown KY roofing (7 more names not individually
+  checked: Vessels Roofing, Bourbon Country Exteriors, Hyper Roofing KY, Borders Storm
+  Restoration, Olympus Roofing LLC, D&C Premier Exteriors LLC, YETI Commercial Roofing),
+  Klamath Falls OR (Precision Painting Inc., BNB Painting & Construction, Powley Plumbing Inc,
+  Butler Sewer & Drain, Klamath Water Systems not checked; landscaping returned nothing
+  findable at all). Two banked backups for next run: AB Plumbing LLC (Marshalltown IA — no
+  site, gmail signal, owner unconfirmed, medium collision risk nationally) and Affordable
+  Plumbing and Drain Cleaning Service (Klamath Falls OR — no site, yahoo email signal, owner
+  not yet identified). Still fully untouched: Del Rio TX, Middlesboro KY, Del Norte
+  County/Crescent City CA, Susanville CA, Laurel MS, plus the older banked-not-yet-verified
+  Starkey Heating and Air LLC (Kearney NE) and Walker Landscapes/Cowboy State Landscape LLC
+  (Sheridan WY).
+
 ## Dead ends to stop searching
 
 - Van Nuys CA landscaping "2hr response / 260 locals" signal (unresolved across 3 prior
