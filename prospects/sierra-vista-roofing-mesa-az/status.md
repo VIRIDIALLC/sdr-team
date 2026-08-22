@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,9 @@ quote_stage: none
   via two independent listings. AZ ROC license status conflict flagged
   for Kevin (Inactive per BuildZoom vs. active-to-2028 per HomeAdvisor).
   Advanced to `enriched`. See enrichment.md.
+- 2026-08-22 (Elly): drafted first touch. Used the standard response-time
+  opener, setting the confirmed 100% response rate against the ~6hr wait —
+  the first cleanly reconfirmed response-time figure available to this seat
+  in weeks. Dropped a monsoon-season angle for template collision with the
+  1st Choice Plumbing 08-21 draft. AZ ROC license conflict kept out of the
+  body and re-flagged for Kevin. Advanced to `drafted`. See outreach.md.

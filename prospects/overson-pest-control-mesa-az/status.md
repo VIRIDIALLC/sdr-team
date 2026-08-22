@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -20,3 +20,10 @@ quote_stage: none
   is real/live (informational only) — pitch angle is follow-up/review
   system, not "no website." Email info@oversonpestcontrol.com confirmed
   via a real snippet. Advanced to `enriched`. See enrichment.md.
+- 2026-08-22 (Elly): drafted first touch. Angle is his own SEO investment
+  (the dedicated /queen-creek-az-pest-control/ service-area page) and what
+  catches the form fill after hours. Deliberately did NOT use Montague's
+  review-count CALL CARD hook: it is near-identical to the On Point
+  Exterminating draft from 08-21 (same trade, same mechanism, one day
+  apart, same inbox). No response-time or review figure in the body at all,
+  per the fabricated-signal finding. Advanced to `drafted`. See outreach.md.

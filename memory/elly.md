@@ -1098,3 +1098,108 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's
   landing-work rule.
+
+- **2026-08-22 (this run) — 2 drafted, the whole enriched queue.** `git
+  fetch origin` first per CLAUDE.md: origin/master force-updated to 250415b
+  (KIREEK fleet-state refresh on top of Montague's 2026-08-22 pass, "enriched
+  2, held 4 on email gate"). Container started detached at that commit —
+  same stale-ref pattern logged every run since 08-13, fixed with
+  `git checkout -B master origin/master`, empty diff, no merge needed.
+  `_fleet-state.md` was fresh (16:49 UTC), so ground truth was live.
+
+  Scanned `prospects/*/status.md`: 3 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold
+  from 2026-08-03, unchanged, skipped again) plus the 2 real ones, both
+  drafted: **sierra-vista-roofing-mesa-az** (package) and
+  **overson-pest-control-mesa-az** (package). Montague held the other 4 of
+  her batch at `found` on the email gate, so 2 was the entire queue, not a
+  batch-size choice. No defensive-check skips: **both emails genuinely
+  CONFIRMED, not domain-grounded guesses**, which is the cleanest pair on
+  that gate since Casa/Reliant on 08-19.
+
+  **A NEW AND WORSE FAILURE MODE ON THE RESPONSE-TIME COLUMN: a figure that
+  was not stale or drifting but FABRICATED OUTRIGHT and attached to a real
+  business.** Overson's brief carried "5 hr response / 114 locals requested
+  a quote / 4.9 stars / 119 reviews." The verified Yelp page shows 63
+  reviews. Montague ran it down: "119 reviews" never appeared in a single
+  real snippet, only inside AI-written summary sentences; one search tool
+  said outright that no business matching the figure appeared in results;
+  and a sweep of every real Queen Creek pest-control listing matched none of
+  them either. So the number belongs to no business at all. Every prior
+  failure I've logged was drift, misparse, or misattribution to a *real*
+  other business. This is invention. **Escalation of the 08-21 flag, raised
+  again to Kevin in the approvals file and by push notification: the process
+  only caught it because Rupika flagged the smell and Montague spent a run
+  killing one number. That doesn't scale. Either the capture method changes
+  at sourcing time (paste/screenshot the widget text, the same fix that
+  worked for `## Links` on 08-20) or the column stops being treated as a
+  signal.**
+
+  **And in the same batch, the opposite: Sierra Vista's figure held clean.**
+  100% response rate, ~6 hrs, Yelp title identical across an April and an
+  August 2026 snapshot, agreeing across multiple independent searches.
+  Montague's own words: "safe to use the figure as stated." **First package
+  draft since JNA Heating on 08-17 to get to use the standard opener.**
+  Still phrased it as a question, because the forced choice is what makes
+  the opener work, not because the number was shaky. Worth remembering the
+  pairing: the column is not uniformly broken, it is unverifiable-by-default
+  with occasional clean reconfirmations, which is exactly why the
+  verification step can't be dropped.
+
+  **Judgment calls worth flagging:**
+  - **Sierra Vista — used the 100% as hard as the 6 hours, on purpose.** A
+    100% response rate is not a business ignoring leads, it's one answering
+    all of them late. That makes both doors properly face-saving (up on a
+    roof, or Yelp leads aren't worth the climb down) and stops the email
+    reading as "you're slow." Kept the AZ ROC license conflict (Inactive per
+    BuildZoom vs. active-to-2028 per HomeAdvisor) out of the body entirely
+    and re-flagged it. Also left out the site's own "27 years of experience"
+    claim: the LLC registered 2019-12-23 and the second-generation claim
+    didn't reconfirm, so it's a call question, not an email fact.
+  - **Overson — overrode Montague's CALL CARD hook on pure batch-level
+    template collision, the clearest instance yet.** Her hook (63 reviews
+    flat since 2015, nobody runs a review-ask system) is genuinely good and
+    I'd have used it on its own. But it is near-identical to the On Point
+    Exterminating draft from 08-21: same trade, same review-count mechanism,
+    same shape, one day apart, same inbox. **New standing rule: the
+    review-count/review-ask angle is now off the table for pest control
+    prospects specifically until real distance has passed** — it has been
+    independently the strongest available angle for three pest control
+    prospects in a row (Reliant 08-19, On Point 08-21, Overson today), which
+    is precisely what makes it a template risk rather than an asset.
+  - **Overson's winning angle inverts the usual package premise: credit the
+    investment he already made.** He has a dedicated
+    /queen-creek-az-pest-control/ landing page on a real, professionally
+    built site, so the email opens on a decision he made rather than
+    something broken, then asks what catches the form fill after hours.
+    Nearest relative is Reliant's TV-commercial angle (08-19), and I kept
+    them apart deliberately by avoiding the closing-hours framing that draft
+    used. **Generalizable: "you already paid to create the demand, where
+    does it land" is a strong package angle whenever the prospect has
+    visibly invested in getting found, and it's the natural one to reach for
+    when the prospect's website is GOOD** — which is the case the standard
+    package playbook has no answer for.
+  - **Both drafts were also checked against each other**, per the 08-19
+    within-batch rule. Two Mesa AZ package prospects drafted the same day is
+    exactly the collision setup. They ended up sharing no mechanism, no
+    shape, no subject line and no closer, but that was a constraint I wrote
+    under, not luck.
+
+  Track breakdown: 2 package. Standard post-write sweep on body text only
+  (em dash, en dash, bracket placeholder, retired package name, third-person
+  Kevin/Viridia, pricing, Tier 3 stats) — both clean. The single `%` hit is
+  Sierra Vista's verified 100% response rate.
+
+  **Did NOT touch the follow-up lane this run.** The payload scoped me to
+  the `stage: enriched` first-touch job and that queue was real, so I did it
+  in full rather than widening. The 11 held-lane second touches remain
+  listed by slug in `approvals/2026-08-21-followup-drafts-held-lane.md`.
+
+  **Next run:** check `stage: enriched` first as always. Upstream backlog is
+  now **51 at `stage: found`** (47 yesterday, 40 the day before) — it is
+  growing faster than Montague's email gate is clearing it, so the
+  first-touch queue will keep arriving in twos and threes. The 11 held-lane
+  follow-ups are the realistic place to spend surplus capacity.
+
+  **End-of-run:** committed and pushed to `master` per CLAUDE.md's
+  landing-work rule.
