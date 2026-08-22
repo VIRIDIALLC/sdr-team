@@ -1626,3 +1626,114 @@
   - Backlog after this run: no untouched `stage: found` prospects remain —
     every one in the repo now carries a documented hold/dead-end or open
     question from some prior run.
+
+- (2026-08-22 run) Clean start — `git fetch origin` first per CLAUDE.md,
+  local already synced to `origin/master` tip (`9989c8f`, a KIREEK
+  fleet-state refresh sitting on top of Rupika's 2026-08-22 batch), no
+  reset needed. Checked `prospects/_do-not-contact.md` first — unchanged
+  (Top Quality Restoration; the 2026-08-21 GHL robocall batch), no
+  conflict with today's batch. This run's fire-payload was the normal
+  persona-defined prompt, no suspicious injection content. Picked up all
+  6 brand-new `stage: found` prospects from today's Rupika batch (commit
+  `0f122d2`, 3 package + 3 website) — the only untouched prospects; every
+  other `found` prospect in the repo already carries a documented
+  email-gate hold/dead-end from a prior run. Used 6 parallel research
+  subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself.
+
+  Result: 2 of 6 advanced to `enriched` (Overson Pest Control, Sierra
+  Vista Roofing — both package), 4 held at `found` on the email gate
+  (Goodvin Plumbing, Solid Rock Roofing, Stanley Brooks Plumbing — all
+  website; Linea Electric — package).
+
+  - **Overson Pest Control — the flag Rupika queued was real, and it
+    resolved as a fabrication, not a second listing.** Her brief carried
+    an unresolved discrepancy: a Queen Creek search surfaced "119
+    reviews / 5hr response / 114 locals requested a quote," but the
+    business's actual Yelp page (1829 S Horne, Mesa) independently shows
+    only 63 reviews. This run traced it down: the Yelp page title itself
+    ("...83 Photos & 63 Reviews...") recurred verbatim across three
+    independent searches, while "119 reviews" never once appeared in an
+    actual snippet/title — only inside AI-synthesized summary sentences,
+    and one search tool flatly said it couldn't find a business matching
+    that figure. A full sweep of every real Queen Creek pest-control Yelp
+    listing turned up nothing matching it either. Dropped the fabricated
+    figure entirely, used a real, sourced hook instead (stalled review
+    growth despite ~10 years and BBB accreditation since 2019). **Worth
+    naming as its own instructive case for the standing AI-fabrication
+    list: this is the first time a fabricated figure was invented
+    specifically to *resolve a name collision/search query* rather than
+    just asserting a wrong email or name — the search tool effectively
+    hallucinated an entire matching business record complete with
+    plausible-sounding Yelp boilerplate ("Yelp Guaranteed," "Verified
+    License") to satisfy the query.** Also found the business's own
+    website (oversonpestcontrol.com / oversonpest.com) is real, live, and
+    genuinely well-built — a real correction to the usual package-track
+    assumption; flagged for Elly not to pitch "no web presence" here, the
+    angle is speed-to-lead/follow-up instead.
+  - **Sierra Vista Roofing — a real owner-name correction, not just an
+    ambiguity.** Rupika's brief named "Jose & Jorge" from Yelp reviews
+    with no last names; BBB and the AZ LLC filing both list Carla Ruby
+    Garibay as the registered owner/agent instead. A Facebook search
+    surfaced a "Jorge Garibay" profile, making Jorge (family, likely
+    Carla's spouse/relative) the better-supported CALL CARD candidate
+    over the unconfirmed "Jose." Response-time (~6hr/100%) was a rare
+    *clean* reconfirmation — same review count (15) across an April and
+    an August 2026 snapshot, no drift — safe to state directly rather
+    than hedge. Also surfaced a genuine AZ ROC license-status conflict
+    (Inactive/expired Feb 2026 per BuildZoom vs. active-to-2028 per
+    HomeAdvisor) — flagged for Kevin, same "advance but flag" pattern as
+    Boldt HVAC (2026-08-11); this is now a second unresolved
+    license-status conflict in about two weeks, worth Kevin deciding if
+    it should become a real gate.
+  - **Solid Rock Roofing — a new email-verification failure category,
+    distinct from the usual "not found."** Rupika reported
+    solidrockroofingco@gmail.com as already-found (not a guess) at
+    sourcing time. This run's re-verification effort could not confirm
+    it: the address recurred only in WebSearch's own synthesized summary
+    text, never in an actual snippet/title, across six separate search
+    attempts — including a literal exact-phrase search on the email
+    string itself, which returned unrelated FL/CT/OH/TX "Solid Rock
+    Roofing" business pages instead of anything tied to this specific
+    Eastview/Elizabethtown business. Treated this the same as the
+    Pinnacle Painting (2026-08-21)/Fish Window Cleaning (2026-08-13)
+    precedent — an address that only exists in synthesized text is not
+    trustworthy even when it was originally reported as "found" rather
+    than "guessed." Held at `found` despite website-gap and owner name
+    (Drew Kenny) both being cleanly confirmed — a strong prospect on
+    every other axis, worth a retry if egress/browser access improves.
+  - **Stanley Brooks Plumbing — a new DNS nuance worth naming: "resolves
+    but squatted" as a third category alongside NXDOMAIN and
+    parked-but-registered.** stanleybrooksplumbing.com actually resolves
+    in DNS (Cloudflare IP) but serves unrelated squatted content (a
+    soccer player profile, a Guild Wars 2 forum) — a naive "does it
+    resolve" check would have wrongly treated this as a live site.
+    Contact name is a genuine two-candidate case (Margo Gonzalez Brooks,
+    Owner per BBB + registered agent + LinkedIn, vs. Stanley Ronald
+    Brooks, Manager per BBB with zero public profile anywhere) — used
+    Margo per the stronger evidence trail, flagged as inferred from title
+    rather than confirmed. Both candidate phone numbers this run turned
+    up failed verification outright — one geographically impossible
+    (Phoenix area code for a Klamath Falls business), one that a
+    follow-up query re-attributed to a completely different business at
+    the same address — left phone blank rather than guessing between two
+    fabricated-looking candidates. No email found anywhere; held at
+    `found`.
+  - **Linea Electric — response-time and owner name both carried forward
+    with caveats, but held purely on the email gate** (nothing found, no
+    confirmed domain to guess a pattern from — the one domain that
+    surfaced belongs to an unrelated San Jose, CA "Linea Electric," a
+    third same-name collision alongside a Milwaukee WI BBB entity).
+    Website status came back genuinely unresolved rather than confirmed
+    either way (this run's DNS checks were unreliable — control domains
+    also failed to resolve) — flagged for Elly not to treat "no website"
+    as settled fact here, unlike the three website-track holds above
+    where DNS was decisive.
+  - DNS was the decisive tool for 4 of 6 prospects this run (Goodvin,
+    Solid Rock, Stanley Brooks website-gaps; Overson's live-site
+    confirmation) — egress-proxy blocking of direct WebFetch continued
+    across essentially every company/directory domain attempted, same
+    recurring pattern since 2026-08-02.
+  - Backlog after this run: no untouched `stage: found` prospects
+    remain — every one in the repo now carries a documented hold/
+    dead-end or open question from some prior run.
