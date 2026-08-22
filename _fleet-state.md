@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-21 20:08 UTC (2026-08-21 13:08 Phoenix)
+Generated: 2026-08-22 16:10 UTC (2026-08-22 09:10 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -10,7 +10,7 @@ Generated: 2026-08-21 20:08 UTC (2026-08-21 13:08 Phoenix)
 
 ## THE NUMBER — $10k MRR by 2026-12-31 (everything here serves this)
 
-- **Gap: $5,321/mo** → **5 Complete System client(s)** at $1,197/mo (plan +1 for churn risk) in **131 days** (18 weeks) → ~1 close per 3 week(s).
+- **Gap: $5,321/mo** → **5 Complete System client(s)** at $1,197/mo (plan +1 for churn risk) in **130 days** (18 weeks) → ~1 close per 3 week(s).
 - Real MRR $4,679 (VERIFIED 2026-08-21 - sum of 7 active Stripe subscriptions (live API pull), confirms the bank-flow estimate. QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
 - **This week** (since 2026-08-17): 1 conversations · 0 proposals out · 0 closed · $0 MRR added
 - Last week: (tracking began 2026-08-19 - no prior week recorded)
@@ -75,59 +75,55 @@ Generated: 2026-08-21 20:08 UTC (2026-08-21 13:08 Phoenix)
 ## Systems — live-probed, not recalled
 
 - **GHL API:** UP (live probe returned 200)
-- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-21 16:05 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 4h ago)
+- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-22 16:04 UTC)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 5m ago)
 - **KIREEK repo:** 10 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
 
 ### Etsy Team
-- last commit: 4 hours ago — "Merge: Ash 2026-08-21 declined third fire on held etsy-team routine" (cd2c15231)
-- agent work in the last 24h: "Merge: Ash 2026-08-21 declined third fire on held etsy-team routine"; "Ash 2026-08-21: declined third fire on held etsy-team routine"
-- ⚠️ 1 recent commit(s) stranded off master — needs a merge
+- last commit: 24 hours ago — "Merge: Ash 2026-08-21 declined third fire on held etsy-team routine" (cd2c15231)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 5 minutes ago — "The pitch card: one screen, sting-question openers, and the STFU-after-the-close disciplin" (9ae6610db)
-- agent work in the last 24h: "Elly 2026-08-21 (second run): 6 first touches drafted, whole enriched queue"; "Montague: normal batch, 6 prospects (2026-08-21, second run)"
+- last commit: 19 hours ago — "Pitch card + one-pager: one number ($1,197, no setup fee) per Kevin's ruling" (d6d4f53d9)
+- agent work in the last 24h: "Elly 2026-08-21 (second run): 6 first touches drafted, whole enriched queue"
 - waiting on Kevin (6): For Kevin's review — the selling kit for your cold calls; Follow-up sequence — 6 prospect(s) ready to enroll; Follow-up sequence — 6 prospect(s) ready to enroll; For Kevin's review — 6 first-touch drafts (2026-08-21, second run); Second-touch drafts — 10 prospects in the `followup: held` lane
 
 ### Ads Team
-- last commit: 4 hours ago — "Ash 2026-08-21: routine run, ads channel still retired, no design work" (b083be34b)
-- agent work in the last 24h: "Ash 2026-08-21: routine run, ads channel still retired, no design work"
-- ⚠️ 1 recent commit(s) stranded off master — needs a merge
+- last commit: 6 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (a462851ba)
 - waiting on Kevin: nothing
 
 ### Customer Success
-- last commit: 2 days ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (35b4cdc21)
+- last commit: 3 days ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (35b4cdc21)
 - waiting on Kevin (1): Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 14 minutes ago — "Kevin's payment rulings: Theresa + Premier Bath PAID (GHL corroborates, QBO never posted);" (66dfa1040)
+- last commit: 20 hours ago — "Kevin's payment rulings: Theresa + Premier Bath PAID (GHL corroborates, QBO never posted);" (66dfa1040)
 - waiting on Kevin (7): A/R reminders — status check, 2026-08-17; Reclass batch APPLIED — 2026-08-21, via Claude Code session, Kevin's explicit "a; Corrected P&L preview — Jan 1 – Aug 14, 2026; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 4 hours ago — "Merge remote-tracking branch 'origin/master'" (8908792eb)
+- last commit: 24 hours ago — "Merge remote-tracking branch 'origin/master'" (8908792eb)
 - agent work in the last 24h: "Rati 2026-08-21: correct the Ash re-export status (delivered, not outstanding)"; "Rati 2026-08-21: Week 2 scheduled on LinkedIn, Week 3 drafted, FB blocker filed"
 - ⚠️ 1 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin (1): Comment reply kit — Viridia's own channels
 
 ### SEO Team
-- last commit: 2 days ago — "GA4 connected via OpenSEO: right property verified, first baseline, key-events gap flagged" (877853a2c)
+- last commit: 3 days ago — "GA4 connected via OpenSEO: right property verified, first baseline, key-events gap flagged" (877853a2c)
 - waiting on Kevin: nothing
 
 ### Web Design Team
-- last commit: 2 days ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (207fbbc0c)
+- last commit: 3 days ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (207fbbc0c)
 - waiting on Kevin: nothing
 
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-21 20:08 UTC (auto-generated by VEGA's backend):
+As of 2026-08-22 16:10 UTC (auto-generated by VEGA's backend):
 Real MRR: $4679/mo (VERIFIED 2026-08-21 - sum of 7 active Stripe subscriptions (live API pull), confirms the bank-flow estimate. QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
-Gap: $5,321/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 131 days (18 weeks) → ~1 close per 3 week(s).
+Gap: $5,321/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 130 days (18 weeks) → ~1 close per 3 week(s).
 This week (since 2026-08-17): 1 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 4h ago)
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 5m ago)
 Approvals waiting on Kevin across the fleet: 15
 ```
