@@ -1035,6 +1035,45 @@
   Starkey Heating and Air LLC (Kearney NE) and Walker Landscapes/Cowboy State Landscape LLC
   (Sheridan WY).
 
+- (run 2026-08-23) Scheduled run scoped to two tracks (package + website, per this run's task
+  instructions — ads track not requested). Fleet state (`_fleet-state.md`) was 18 hours old at
+  run start (generated 2026-08-22 22:07 UTC, checked 2026-08-23 16:05 UTC) — past the ~12h
+  freshness bar, so treated as informational only, not relied on for anything track-specific.
+  `git fetch` + `git checkout -B master origin/master` fixed the usual detached-HEAD/stale-ref
+  symptom seen on every run since 2026-08-13, confirmed local matched origin's tip, nothing
+  lost. `_new-leads.md` had nothing dropped in. Ran both tracks as parallel sub-agents again.
+- (website track, run 2026-08-23) All 3 hits were banked-candidate closeouts rather than fresh-
+  market research (per this run's steer toward the banked list first) — confirms the "queue
+  banked candidates directly" approach keeps working, though two of three needed a real
+  collision-risk flag on re-verification, not a clean pass-through. Starkey Heating and Air LLC
+  (Kearney NE, HVAC, active NE license #13754-25, address 40 Summerhaven Lk, Facebook/Bizapedia/
+  BuildZoom only — flagged HIGH collision risk: unrelated same-named businesses confirmed in
+  Pittsburgh PA, Jackson GA, Marietta OH, Montague must verify by the Kearney address; no owner
+  name found yet, worth an NE license-holder lookup on #13754-25). Cowboy State Landscape LLC
+  (Sheridan WY, landscaping, Facebook-only, no domain anywhere, no BBB out-of-business flag,
+  distinctive name — LOW collision risk, cleanest of the three; no owner name found yet). AB
+  Plumbing LLC (Marshalltown IA, plumbing, phone (641) 691-7271, email abplumbing23@gmail.com —
+  personal-looking gmail signal but owner name unconfirmed, address 3233 220th St, confirmed
+  abplumbing.net belongs to an unrelated Sacramento/Bay Area business — flagged HIGH collision
+  risk: unrelated "AB Plumbing" businesses confirmed in Round Lake IL, Lakewood OH, Columbus OH,
+  Tucson AZ, Hamilton Township NJ, Montague must verify by the Marshalltown address/phone).
+  Deliberately held back rather than queued: Walker Landscapes (Sheridan WY) — also confirmed
+  Facebook-only again this run, but carries an even higher collision risk than Cowboy State
+  Landscape (unrelated same-named "Walker Landscapes" in Alaska and Topanga CA, plus separate
+  real-site businesses "Walker Landscape and Grading LLC" / "Walker Landscaping LLC" nationally)
+  — a possible owner name (Heidi Hollingsworth-Shea) surfaced but could NOT be confirmed as tied
+  to this specific business, don't use it without a stronger source if this gets queued later.
+  Banked-and-ready-to-queue-directly next run (re-confirmed clean, no re-research needed):
+  Affordable Plumbing and Drain Cleaning Service (Klamath Falls OR — Facebook-only,
+  facebook.com/AffordablePlumbingAndDrainCleaning/, phone (541) 591-8662, email
+  Affordableplumbing23@yahoo.com, address 2811 Front St, no domain, no out-of-business flag,
+  owner name still not found). Nothing came up cold this run — all 5 candidates checked
+  (Starkey, Walker Landscapes, Cowboy State Landscape, AB Plumbing, Affordable Plumbing)
+  confirmed as genuine no-website gaps. No fresh markets attempted this run (Del Rio TX,
+  Middlesboro KY remaining verticals, Del Norte County/Crescent City CA, Susanville CA, Laurel
+  MS remaining verticals) since the banked-candidate closeout filled the batch — still
+  available untried for a future run.
+
 ## Dead ends to stop searching
 
 - Van Nuys CA landscaping "2hr response / 260 locals" signal (unresolved across 3 prior
