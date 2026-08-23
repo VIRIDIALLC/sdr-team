@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Derived from prospects/ on every dev-server start and build — never hand-edited.
+src/generated/
