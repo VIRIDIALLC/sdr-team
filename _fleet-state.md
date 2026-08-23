@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-23 19:58 UTC (2026-08-23 12:58 Phoenix)
+Generated: 2026-08-23 20:29 UTC (2026-08-23 13:29 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -83,58 +83,89 @@ Generated: 2026-08-23 19:58 UTC (2026-08-23 12:58 Phoenix)
 ## Systems — live-probed, not recalled
 
 - **GHL API:** UP (live probe returned 200)
-- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-23 18:23 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 1h ago)
+- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-23 20:28 UTC)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 0m ago)
 - **KIREEK repo:** 13 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
 
 ### Etsy Team
-- last commit: 81 minutes ago — "Merge remote-tracking branch 'origin/master'" (5b37fea95)
+- last commit: 2 hours ago — "Merge remote-tracking branch 'origin/master'" (5b37fea95)
+- pipeline (products, 4 items): brief 1 · approved 1 · published 2 — ~67% through the pipeline
 - agent work in the last 24h: "Ash 2026-08-23: declined fifth fire on held etsy-team routine"
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 3 minutes ago — "Document the call-recycle loop (calling lane, CALL-LIST.md, 3-attempt recycle)" (0364fe5f9)
-- agent work in the last 24h: "Rupika 2026-08-23 #2: 4 top-up prospects (2 package, 2 website)"; "Elly 2026-08-23: 3 first touches drafted, whole enriched queue"; "Montague 2026-08-23: 3 advanced to enriched, 3 held on email gate"
-- waiting on Kevin (10): For Kevin's review — the selling kit for your cold calls; Follow-up sequence — 6 prospect(s) ready to enroll; Follow-up sequence — 6 prospect(s) ready to enroll; For Kevin's review — 6 first-touch drafts (2026-08-21, second run); Second-touch drafts — 10 prospects in the `followup: held` lane
+- last commit: 34 minutes ago — "Document the call-recycle loop (calling lane, CALL-LIST.md, 3-attempt recycle)" (0364fe5f9)
+- pipeline (prospects, 158 items): found 57 · enriched 1 · drafted 5 · approved 2 · sent 85 · closed 6 · dismissed 2 — ~60% through the pipeline
+- where each agent is (from their own logged task work):
+  - **Elly** (Outreach): 2026-08-23 on `ab-plumbing-marshalltown-ia` — "drafted. Website track. Built the email on the name collision Rupika flagged and Montague confirmed (five unre"
+  - **Montague** (Enrichment): 2026-08-23 on `ab-plumbing-marshalltown-ia` — "website-gap confirmed (no site anywhere; two suspicious-looking domains — abplumbing.net and abplumbingllc.net"
+  - **Nova** (Magic Patterns Build): no logged task activity yet · 1 open handoff(s) in their inbox
+  - **Rupika** (Prospecting): 2026-08-23 on `ab-plumbing-marshalltown-ia` — "found, added to pipeline. Flag: HIGH collision risk — "AB Plumbing (LLC)" is a very common business name natio"
+  - **Sage** (Quoting): no logged task activity yet
+  - **Sue** (SDR Director): no logged task activity yet
+- agent work in the last 24h: "Rupika 2026-08-23 #2: 4 top-up prospects (2 package, 2 website)"; "Elly 2026-08-23: 3 first touches drafted, whole enriched queue"; "Montague 2026-08-23: 3 advanced to enriched, 3 held on email gate"; "Rupika 2026-08-23: 3 package-track prospects, Phoenix + LA priority hunt"
+- waiting on Kevin (10): 2026-08-19: For Kevin's review — the selling kit for your cold calls; 2026-08-19: Follow-up sequence — 6 prospect(s) ready to enroll; 2026-08-20: Follow-up sequence — 6 prospect(s) ready to enroll; 2026-08-21: For Kevin's review — 6 first-touch drafts (2026-08-21, second run); 2026-08-21: Second-touch drafts — 10 prospects in the `followup: held` lane
 
 ### Ads Team
-- last commit: 27 minutes ago — "KIREEK: deliver inbound handoff(s) to this team's inbox" (c181d7791)
+- last commit: 43 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (47f4d33c7)
+- pipeline (campaigns, 2 items): archived 2
+- where each agent is (from their own logged task work):
+  - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
+  - **Doc** (Copywriter): 2026-08-14 on `viridia-complete-system` — "Kevin's features-vs-outcomes test on the 4 live ads (real numbers in `api-funnel-analysis-2026-08-13.md` / `_p" · 1 open handoff(s) in their inbox
+  - **Nova** (Landing Page Build): 2026-08-09 on `viridia-complete-system` — "built the dedicated landing page (see `landing-page-notes.md`) — hero uses the ad's exact hook ("Never miss a " · 1 open handoff(s) in their inbox
+  - **Wraith** (Meta Media Buyer): 2026-08-19 on `viridia-complete-system` — "routine monitoring run. `_performance-latest.md` regenerated today (2026-08-19 14:12 UTC — same-day, fresh). L"
 - agent work in the last 24h: "Ash 2026-08-23: routine run, ads channel still retired, no design work"; "Wraith 2026-08-23: routine run, ads channel still retired, no action"
-- ⚠️ 2 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin: nothing
 
 ### Customer Success
 - last commit: 4 days ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (35b4cdc21)
-- waiting on Kevin (1): Post-purchase onboarding sequence — spec + gap list
+- pipeline (onboarding, 1 items): review 1 — ~67% through the pipeline
+- where each agent is (from their own logged task work):
+  - **Cora** (CSR): 2026-08-18 on `client-onboarding-portal` — "Kevin confirmed the direction from the 8/14 spec live in chat and closed two of the three open `[VERIFY]`s: on"
+  - **Nova** (Magic Patterns Build): 2026-08-07 on `client-onboarding-portal` — "media-cleanup + nav-fix pass from Kevin's review. §3 CRM tour trimmed to the single crm-options.ss.png (droppe" · 1 open handoff(s) in their inbox
+- waiting on Kevin (1): 2026-08-14: Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 66 minutes ago — "Close two already-handled approval records (applied reclass batch, superseded P&L preview)" (1061bc6bd)
-- waiting on Kevin (5): A/R reminders — status check, 2026-08-17; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15; Corrected P&L — refresh, 2026-08-21
+- last commit: 2 hours ago — "Close two already-handled approval records (applied reclass batch, superseded P&L preview)" (1061bc6bd)
+- pipeline (invoices, 9 items): draft 8 · sent_to_collections 1 — ~0% through the pipeline
+- where each agent is (from their own logged task work):
+  - **Sato** (Finance Manager): 2026-08-21 on `reminder-denise-mcadams-porter-2026-08` — "Drafted from live A/R aging pull — this invoice (part of the 2026-08-10 Yelp batch) went overdue since the 202"
+- waiting on Kevin (5): 2026-08-17: A/R reminders — status check, 2026-08-17; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15; Corrected P&L — refresh, 2026-08-21
 
 ### Social Team
-- last commit: 59 minutes ago — "Merge remote-tracking branch 'origin/master' into claude/compassionate-mendel-6hxv2z" (24cd5de66)
+- last commit: 2 hours ago — "Merge remote-tracking branch 'origin/master' into claude/compassionate-mendel-6hxv2z" (24cd5de66)
+- pipeline (posts, 26 items): scheduled 11 · posted 2 · superseded 13 — ~72% through the pipeline
+- where each agent is (from their own logged task work):
+  - **Ash** (Designer): 2026-08-23 on `ai-front-door-45-percent` — "**Media delivered.** Two-box stat comparison, "6%" (grey, last year) against "45%" (green, this year), with "8" · 1 open handoff(s) in their inbox
+  - **Rati** (Social Media Manager): 2026-08-23 on `ai-quote-that-went-quiet` — "**SCHEDULED on LinkedIn** for Tue 2026-09-08, 9:00 AM MST — GHL post id `6a8b418567dcfe3076af6e2c`, account `V"
 - agent work in the last 24h: "Ash: Education Week 2 + Week 3 artwork, 6 posts, 11 assets"; "Rati 2026-08-23 (2nd run): authority hold cleared, 7 posts scheduled through 10/01"; "Rati 2026-08-23: Week 5 on the doctrine's Tier 1 bench, FB failure #3 imminent, authority "
-- ⚠️ 2 recent commit(s) stranded off master — needs a merge
-- waiting on Kevin (1): Comment reply kit — Viridia's own channels
+- waiting on Kevin (1): 2026-08-21: Comment reply kit — Viridia's own channels
 
 ### SEO Team
 - last commit: 4 days ago — "GA4 connected via OpenSEO: right property verified, first baseline, key-events gap flagged" (877853a2c)
+- pipeline (audits, 3 items): recommendations 2 · tracking 1 — ~78% through the pipeline
+- where each agent is (from their own logged task work):
+  - **Elenor** (Backlink & Citation Outreach): no logged task activity yet
+  - **Pushan** (SEO Strategist): 2026-08-18 on `viridiaanalytics-local-search` — "Kevin confirmed `tfplandscaping.com` is a real client (his first/ longest) — every site he builds gets a Virid"
 - waiting on Kevin: nothing
 
 ### Web Design Team
 - last commit: 4 days ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (207fbbc0c)
+- pipeline (prospects, 1 items): researched 1
+- where each agent is (from their own logged task work):
+  - **Nova** (Magic Patterns Build): 2026-08-12 on `tpg-home-improvements-az` — "Dispatch referenced a pre-existing `prospects/tpg-home-improvements-az/brief.md` on master — it did not exist " · 1 open handoff(s) in their inbox
 - waiting on Kevin: nothing
 
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-23 19:58 UTC (auto-generated by VEGA's backend):
+As of 2026-08-23 20:29 UTC (auto-generated by VEGA's backend):
 Real MRR: $4679/mo (VERIFIED 2026-08-21 - sum of 7 active Stripe subscriptions (live API pull), confirms the bank-flow estimate. QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $5,321/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 129 days (18 weeks) → ~1 close per 3 week(s).
 This week (since 2026-08-17): 1 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 1h ago)
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 0m ago)
 Approvals waiting on Kevin across the fleet: 17
 ```
