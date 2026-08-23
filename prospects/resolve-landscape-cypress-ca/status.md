@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,13 @@ quote_stage: none
   resolvelandscape@gmail.com confirmed (not guessed). Owner Eric Mercado
   confirmed via self-identification + corporate filing. Strong record,
   advanced. See enrichment.md.
+- 2026-08-23 (Elly): drafted. Package track. Used the response-time figure
+  as a direct question per Montague's clearance (~3 days / 100%, reproduced
+  verbatim in 2 of 4 re-checks, never contradicted) — the only verified
+  response-time figure in this batch. Shaped the opener as "do you clear them
+  all at once" rather than the standard 100%-then-the-number-underneath, to
+  avoid repeating the Sierra Vista Roofing draft sent 08-22 out of the same
+  inbox. Consequence line is landscaping-specific (a yard redo gets quoted by
+  several companies the same afternoon). Dropped angle: the 171 photos /
+  Instagram self-marketing angle, same mechanism as Overson Pest Control
+  (08-22). See outreach.md.

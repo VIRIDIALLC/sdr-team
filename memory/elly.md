@@ -1203,3 +1203,137 @@ no feedback yet on those specifically)
 
   **End-of-run:** committed and pushed to `master` per CLAUDE.md's
   landing-work rule.
+
+- **2026-08-23 (this run) — 3 drafted, the whole enriched queue, and
+  `_fleet-state.md` was 19 HOURS STALE.** `git fetch origin` first per
+  CLAUDE.md: origin/master force-updated to 75a50ef (Montague's 2026-08-23
+  pass, "3 advanced to enriched, 3 held on email gate", on top of two Rupika
+  find batches). Container started detached — same stale-ref pattern logged
+  every run since 08-13, fixed with `git checkout -B master origin/master`,
+  clean diff, no merge needed.
+
+  **Ground truth was NOT live this run, and that's the first time.**
+  `_fleet-state.md` says "Generated: 2026-08-22 22:07 UTC" and this run
+  started 2026-08-23 17:08 UTC. That is 19 hours, well past the ~12 hour
+  threshold the file itself defines as "the loop is down." Rupika and Montague
+  both committed real work after that timestamp, so the repo was moving while
+  the sync loop wasn't. Per CLAUDE.md I said so plainly rather than quoting
+  its numbers, flagged it at the top of the approvals file, and pushed a
+  notification. **Every figure in that file (MRR, this week's conversation
+  count, systems health, per-team approval counts) is yesterday evening's.**
+  The prospect files are written by the agents directly, not by the loop, so
+  the drafting job itself was unaffected. Worth knowing for whoever runs next:
+  a stale fleet-state does not block a run, it just means the run can't cite
+  fleet numbers.
+
+  Scanned `prospects/*/status.md`: 4 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold
+  from 2026-08-03, unchanged, skipped again) plus the 3 real ones, all
+  drafted: **resolve-landscape-cypress-ca** (package),
+  **roofing-systems-incorporated-panorama-city-ca** (package),
+  **ab-plumbing-marshalltown-ia** (website). Montague held 3 of her 6 at
+  `found` on the email gate, so 3 was the entire queue, not a batch-size
+  choice. No defensive-check skips: two confirmed emails, one guessed-on-a-
+  confirmed-live-domain (Roofing Systems).
+
+  **The response-time column produced one clean figure and one contradiction
+  in the same batch, which is now the settled shape of it.** Resolve's ~3
+  days / 100% reproduced verbatim in 2 of 4 independent re-checks and was
+  never contradicted; Roofing Systems' flipped between 1 day and 2 hrs off
+  the same cached snippet with the quote-request count moving 2 to 6.
+  Second clean figure in two days (Sierra Vista 08-22 was the other) after
+  five straight failures on 08-21 and an outright fabricated one on 08-22.
+  **Updated read: the column is unverifiable-by-default with roughly a
+  one-in-three clean rate, not uniformly broken.** The 08-21/08-22 escalation
+  to Kevin still stands (fix the capture method at sourcing time), but the
+  "essentially 100% failure" framing I used on 08-21 was too strong and this
+  week's data corrects it.
+
+  **Judgment calls worth flagging:**
+  - **Resolve — the three days is a categorically different pitch from the
+    usual six-to-nine hours, and I built on that rather than on the metric.**
+    Six hours is late; three days is after the decision. The consequence line
+    is landscaping-specific (a yard redo is discretionary, so the buyer
+    quotes several companies the same afternoon rather than calling one and
+    waiting). **Also had to dodge a direct collision: Sierra Vista Roofing
+    went out 08-22 on 100% + six hours, same inbox, one day apart.** Leading
+    with the 100% as praise then pivoting to the number under it would have
+    been that exact draft with the trade swapped. So this one leads with the
+    three days and questions his *method* instead of his speed: "nobody hits
+    100% by accident, so my read is you clear the whole pile at once when you
+    get off a job, is that about right?" **New pattern worth keeping: when
+    the same metric pair comes up twice in a week, ask about the behavior
+    that produces the number instead of the number.** Both doors stay
+    face-saving (disciplined and busy, or discerning) and it's still a
+    question.
+  - **Roofing Systems — posted hours beat the metric again, and this is now
+    my standing first fallback.** Figure was contradictory so it was dropped
+    entirely per the CVA convention. Went to the posted hours: 7am to 11:45pm
+    daily, nearly seventeen hours, seven days. That isn't a business's hours,
+    it's one man saying call me whenever. **The forced choice writes itself
+    and neither door is a criticism** (he really is that available, or he
+    posted it so people reach him instead of voicemail), and the follow-on
+    line makes the offer's whole argument without naming a feature: the
+    promise is real and a person is the only thing holding it up. First noted
+    on 08-19 (Casa Painting) that posted hours are a better-quality fact than
+    a response average because they don't drift between searches. **Every
+    time the metric has failed this month the posted hours were sitting there
+    stable the whole time. Treat them as the first thing to reach for when
+    the figure dies, ahead of the underlying-problem question.** Note this is
+    the *inverse* of Casa's closed-weekends gap, so the two don't collide.
+  - **AB Plumbing — the name collision IS the website argument, and it's the
+    best website-track hook I've had.** Five unrelated AB Plumbings across
+    four states plus abplumbing.net belonging to a Sacramento business. So the
+    email doesn't argue that a website is good marketing, it points out the
+    internet has no way to tell them apart from five strangers. **Best
+    property: every fact in it is checkable by the recipient on their own
+    phone in ten seconds**, same quality I liked in the Access Garage Doors
+    follow-up (08-21). **Generalizable: on a generic business name, run the
+    collision check and make it the hook — it converts the track's one
+    template-prone argument into a specific one.**
+  - **Dropped the 84% BrightLocal stat again** (second website draft running,
+    after MGM 08-21). Named the swap-in sentence in the note. Two separate
+    reasons now: the argument was already concrete, and the persona file's own
+    instruction to recheck the figure is current has not been done by anyone.
+    **That recheck is genuinely overdue and worth someone's run.**
+
+  **Overrode Montague's CALL CARD hook on Roofing Systems** (her "what's
+  slowing you down on turning quote requests into booked jobs" asks a stranger
+  to account for a weakness with no face-saving door — the 08-13 shape). Kept
+  her hooks on the other two, which is the first run in six where I didn't
+  override the majority. Her Resolve card was correct and I used its substance.
+
+  **The review-count mechanism is now formally retired for a while.** It was
+  independently the strongest available angle on On Point (08-21), Overson
+  (08-22, killed for collision) and now both halves of Roofing Systems. Four
+  prospects in six days. It's a good mechanism that has become a template
+  risk purely by winning too often; leaving it alone until real distance has
+  passed, same as the pest-control rule from 08-22.
+
+  **Batch-level check across my own three:** two package prospects, both LA
+  metro (Cypress OC and Panorama City SFV), drafted the same day. Both land on
+  "the owner personally is the system," which is inherent to the offer, so I
+  forced the *evidence* and *shape* apart instead: a response metric plus a
+  batching question vs. posted hours plus a public-promise question. Three
+  distinct subjects, three distinct closers, three distinct mechanisms. Caught
+  one sameness detail in the sweep (Resolve and Roofing both closed on "this
+  week?") and varied Roofing's.
+
+  Track breakdown: 2 package, 1 website. Standard post-write sweep on body
+  text only (em dash, en dash, bracket placeholder, retired package name,
+  third-person Kevin/Viridia, pricing, doctrine Tier 3 stats, stray signature)
+  — all three clean on every check. The single `%` hit is Resolve's verified
+  100% response rate.
+
+  **Pricing-in-email question from 08-21 is STILL unanswered** (four runs
+  now). Kept contained to the two follow-ups that already have it.
+
+  **Next run:** check `stage: enriched` first as always. Upstream backlog is
+  now **54 at `stage: found`** (51 on 08-22, 47 on 08-21, 40 on 08-20) — still
+  growing faster than the email gate clears it. The 11 held-lane second
+  touches in `approvals/2026-08-21-followup-drafts-held-lane.md` remain the
+  realistic place to spend surplus capacity. **And check whether the
+  fleet-state loop came back up** before citing anything from that file.
+
+  **End-of-run:** committed and pushed to `master` per CLAUDE.md's
+  landing-work rule.

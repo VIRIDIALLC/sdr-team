@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,14 @@ quote_stage: none
   used GUESSED info@roofingsysteminc.com on the confirmed-live domain per
   established precedent. Owner Javier Loya (CEO), moderate confidence
   (aggregator + review corroboration). Advanced. See enrichment.md.
+- 2026-08-23 (Elly): drafted. Package track. No response-time number used at
+  all, per Montague's contradictory-figure call — built the opener on the
+  posted hours instead (7am to 11:45pm daily), which is structural and doesn't
+  drift between searches the way the Yelp widget does. Overrode Montague's
+  CALL CARD hook: her "what's slowing you down on turning quote requests into
+  booked jobs" asks a stranger to account for a weakness with no face-saving
+  door, the shape Kevin killed on 08-13. CSLB license gap and the GUESSED
+  info@ email both flagged for Kevin in outreach.md, neither is used in the
+  body. Dropped angle: the 4.9/44 reviews mechanism, now the winner on four
+  prospects in six days and the most template-prone shape in the lane.
+  See outreach.md.

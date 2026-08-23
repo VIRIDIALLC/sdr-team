@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -16,3 +16,13 @@ quote_stage: none
   abplumbing23@gmail.com confirmed as their own listed contact (not a guess)
   via Facebook page snippet. No owner name found despite checking reviews,
   Facebook, Bizapedia (paywalled). Advanced. See enrichment.md.
+- 2026-08-23 (Elly): drafted. Website track. Built the email on the name
+  collision Rupika flagged and Montague confirmed (five unrelated AB Plumbings
+  across four states, plus abplumbing.net belonging to a Sacramento business)
+  rather than the generic no-website line — the collision is verifiable by the
+  recipient in seconds and can't be templated onto another prospect.
+  Deliberately dropped the standard 84% BrightLocal stat; the swap-in sentence
+  is named in outreach.md if Kevin wants it back. Team greeting used, no owner
+  name exists. Dropped angle: the May 2026 sewer-drain service announcement
+  (same "a Facebook post dies in a day" mechanism as the RidgeTop follow-up,
+  08-21). See outreach.md.
