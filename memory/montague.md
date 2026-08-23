@@ -1737,3 +1737,88 @@
   - Backlog after this run: no untouched `stage: found` prospects
     remain — every one in the repo now carries a documented hold/
     dead-end or open question from some prior run.
+
+- (2026-08-23 run) First Montague run since 2026-08-22 (no gap — daily
+  cadence holding). Session started detached HEAD, local `master` sharing
+  zero common history with `origin/master` under this container's shallow
+  (depth-50) clone — same well-established shape as every prior stale-ref
+  incident (2026-08-14/16/17/20). Verified clean tree, no stash, no
+  unpushed work, then `git reset --hard origin/master` per the standing
+  playbook. Checked `prospects/_do-not-contact.md` first — unchanged (Top
+  Quality Restoration; the 2026-08-21 GHL robocall batch), no conflict
+  with today's batch.
+
+  This run's fire-payload was the normal persona-defined prompt, no
+  suspicious injection content. Picked up all 6 brand-new `stage: found`
+  prospects from today's two Rupika batches (3 package: Elite Professional
+  Painting, Resolve Landscape, Roofing Systems Incorporated; 3 website: AB
+  Plumbing, Cowboy State Landscape, Starkey Heating and Air) — the only
+  untouched prospects; every other `found` prospect in the repo already
+  carries a documented email-gate hold/dead-end from a prior run and was
+  correctly left alone. Used 6 parallel research subagents (pure-research,
+  no file writes), then wrote all enrichment.md/status.md updates myself.
+
+  Result: 3 of 6 advanced to `enriched` (AB Plumbing — website; Resolve
+  Landscape, Roofing Systems Incorporated — both package), 3 held at
+  `found` on the email gate (Cowboy State Landscape, Starkey Heating and
+  Air — both website; Elite Professional Painting — package).
+
+  - **Resolve Landscape — a genuinely clean pass, every gate cleared with
+    real corroboration.** Owner Eric Mercado self-identified by name on the
+    business's own Instagram post ("Hi, I'm Eric Mercado, owner of Resolve
+    Landscape") — the cleanest contact-name confirmation in recent memory,
+    no ambiguity to flag. Email confirmed (not guessed), response-time
+    figure (~3 days/100%) reconfirmed 2 of 4 tries with zero contradiction.
+    Worth naming as a positive counterexample after a long run of
+    contradictory/fabricated findings — not every prospect this month has
+    been a fight.
+  - **Two more caught search-tool fabrications, now ~17+ instances since
+    2026-08-13.** Elite Professional Painting's search summary produced a
+    full email/website/address combo where the website domain doesn't
+    resolve at all (DNS failure) — discarded the whole combo, including a
+    suggested surname ("Jamie Heinecke"), keeping only "Jaime" (first name,
+    review-corroborated). Cowboy State Landscape's search summary produced
+    a phone/email pair that failed a direct stress-test — a neutral
+    re-query said no phone number existed for the business at all, and the
+    pair only reappeared when fed back into a query verbatim (echo
+    pattern, not a grounded source) — discarded. Standing method holds:
+    verify any specific asserted email/URL/name/phone traces to an actual
+    quoted snippet, not just a confident synthesized answer.
+  - **Roofing Systems Incorporated: response-time figure graduated from
+    "unconfirmed" to actively contradictory** (1 day vs. 2 hrs read off the
+    same cached Yelp snippet; quote-request count read 2 in one search, 6
+    in another) — dropped entirely rather than used as a question, per the
+    CVA Exterminators (2026-08-15) "third bucket" convention. Advanced
+    anyway on a guessed info@roofingsysteminc.com (domain confirmed real/
+    live via multiple aggregators) — did not run an MX check this run
+    (the 2026-08-20 Freedom Roofing lesson on preferring MX over a bare
+    A-record confirmation), worth doing routinely going forward when
+    leaning on this precedent. Owner Javier Loya (CEO) sourced from a
+    filings aggregator plus an independent review naming "Javier" doing
+    hands-on work — moderate, not first-party, confidence.
+  - **CSLB/AZROC license-status verification stayed fully blocked this
+    run** for both package-track prospects carrying a license number
+    (Roofing Systems Incorporated's CSLB, Elite Professional Painting's
+    AZROC) — cslb.ca.gov, roc.az.gov, and BuildZoom (which mirrors both)
+    were all egress-blocked. Flagged each as an unverified gap per the
+    acquisition doctrine's rule on missing kit items, joining Boldt HVAC
+    (2026-08-11) and Sierra Vista Roofing (2026-08-22) as unresolved
+    license-status questions worth Kevin deciding whether to formalize as
+    a real gate.
+  - **Process gap to fix next run: didn't have subagents run direct
+    DNS/dig checks this time**, relying on WebFetch-blocked/search-snippet
+    confirmation only for both website-track holds (Cowboy State
+    Landscape, Starkey Heating and Air) that had no guessed domain to
+    check anyway — so it cost nothing concrete this run, but DNS/MX has
+    been the single most reliable tool in this environment since
+    2026-08-20 and should be an explicit subagent instruction every run
+    going forward, not an occasional add-on.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (company/guessed domains, Facebook,
+    BBB, Bizapedia, CSLB, AZROC, Nebraska SOS/DOL, Wyoming SOS,
+    OpenCorporates, Iowa SOS) — same recurring pattern logged since
+    2026-08-02, all findings this run are search-snippet-sourced, flagged
+    per-business in each enrichment.md.
+  - Backlog after this run: no untouched `stage: found` prospects remain —
+    every one in the repo now carries a documented hold/dead-end or open
+    question from some prior run.
