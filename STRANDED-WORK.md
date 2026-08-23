@@ -1,20 +1,20 @@
-# Stranded work — found by the 2026-08-18 blocker audit, needs a one-line merge
+# Stranded work — found by the 2026-08-18 blocker audit
 
-Real work exists on remote branches that never reached master. It is invisible
-to VEGA and to Kevin until merged. This session could not run `git merge`
-(permission layer), so this file makes it visible and gives the exact commands.
+Update 2026-08-23 (Claude Code session, weekly audit): the two clean branches
+were merged to master as this file instructed:
+
+- `origin/claude/phone-ui-overhaul-scaffold-vg0vek` — MERGED (dashboard scaffold, 19 files)
+- `origin/claude/playwright-higgsfield-setup-b06ke4` — MERGED (Playwright/Higgsfield tooling + persona updates)
+
+One branch remains, and it does NOT merge clean — it conflicts with master and
+needs human eyes before merging:
 
 | Branch | Date | What's on it |
 |---|---|---|
-| `origin/claude/phone-ui-overhaul-scaffold-vg0vek` | 08-15 | **SDR pipeline dashboard scaffold — 19 files, 3,852 lines.** Vite+TS app, additions only. |
-| `origin/claude/playwright-higgsfield-setup-b06ke4` | 08-10 | Playwright/Higgsfield tooling docs + persona-file updates (nova-build, rupika). |
-| `origin/montague-2026-08-13-recovery` | 08-13 | Montague's detached-history finding, 40 lines of memory. |
+| `origin/montague-2026-08-13-recovery` | 08-13 | Montague's detached-history finding, 40 lines of memory. Conflicts with current memory/montague.md. |
 
-To recover (from a normal shell):
+To recover (resolve conflicts by hand):
 ```
-git merge --no-edit origin/claude/phone-ui-overhaul-scaffold-vg0vek
-git merge --no-edit origin/claude/playwright-higgsfield-setup-b06ke4
 git merge --no-edit origin/montague-2026-08-13-recovery
-git push origin master
 ```
 Then delete this file in the same commit.
