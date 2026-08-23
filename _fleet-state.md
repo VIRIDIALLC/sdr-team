@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-23 18:53 UTC (2026-08-23 11:53 Phoenix)
+Generated: 2026-08-23 18:59 UTC (2026-08-23 11:59 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -84,23 +84,23 @@ Generated: 2026-08-23 18:53 UTC (2026-08-23 11:53 Phoenix)
 
 - **GHL API:** UP (live probe returned 200)
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-23 18:23 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 30m ago)
-- **KIREEK repo:** 10 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 36m ago)
+- **KIREEK repo:** 11 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
 
 ### Etsy Team
-- last commit: 16 minutes ago — "Merge remote-tracking branch 'origin/master'" (5b37fea95)
+- last commit: 22 minutes ago — "Merge remote-tracking branch 'origin/master'" (5b37fea95)
 - agent work in the last 24h: "Ash 2026-08-23: declined fifth fire on held etsy-team routine"
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 21 minutes ago — "KIREEK: stage 5 prospect(s) for follow-up enrollment, hold 0 off-track (2+ days since firs" (4e077f0e1)
-- agent work in the last 24h: "Elly 2026-08-23: 3 first touches drafted, whole enriched queue"; "Montague 2026-08-23: 3 advanced to enriched, 3 held on email gate"; "Rupika 2026-08-23: 3 package-track prospects, Phoenix + LA priority hunt"; "Rupika 2026-08-23: 3 website-track prospects (banked candidate closeout)"
+- last commit: 3 minutes ago — "Merge remote-tracking branch 'origin/master'" (8de2498b7)
+- agent work in the last 24h: "Rupika 2026-08-23 #2: 4 top-up prospects (2 package, 2 website)"; "Elly 2026-08-23: 3 first touches drafted, whole enriched queue"; "Montague 2026-08-23: 3 advanced to enriched, 3 held on email gate"; "Rupika 2026-08-23: 3 package-track prospects, Phoenix + LA priority hunt"
 - waiting on Kevin (10): For Kevin's review — the selling kit for your cold calls; Follow-up sequence — 6 prospect(s) ready to enroll; Follow-up sequence — 6 prospect(s) ready to enroll; For Kevin's review — 6 first-touch drafts (2026-08-21, second run); Second-touch drafts — 10 prospects in the `followup: held` lane
 
 ### Ads Team
-- last commit: 22 minutes ago — "Merge remote-tracking branch 'origin/master'" (d3aca043a)
+- last commit: 28 minutes ago — "Merge remote-tracking branch 'origin/master'" (d3aca043a)
 - agent work in the last 24h: "Ash 2026-08-23: routine run, ads channel still retired, no design work"; "Wraith 2026-08-23: routine run, ads channel still retired, no action"
 - ⚠️ 2 recent commit(s) stranded off master — needs a merge
 - waiting on Kevin: nothing
@@ -110,14 +110,14 @@ Generated: 2026-08-23 18:53 UTC (2026-08-23 11:53 Phoenix)
 - waiting on Kevin (1): Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 2 minutes ago — "Close two already-handled approval records (applied reclass batch, superseded P&L preview)" (1061bc6bd)
+- last commit: 7 minutes ago — "Close two already-handled approval records (applied reclass batch, superseded P&L preview)" (1061bc6bd)
 - waiting on Kevin (5): A/R reminders — status check, 2026-08-17; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15; Corrected P&L — refresh, 2026-08-21
 
 ### Social Team
-- last commit: 3 hours ago — "Rati 2026-08-23: Week 5 on the doctrine's Tier 1 bench, FB failure #3 imminent, authority " (c0d869039)
-- agent work in the last 24h: "Rati 2026-08-23: Week 5 on the doctrine's Tier 1 bench, FB failure #3 imminent, authority "
-- ⚠️ 1 recent commit(s) stranded off master — needs a merge
-- waiting on Kevin (3): Comment reply kit — Viridia's own channels; For Kevin — Education Week 4 (2 posts) + one authority question I need you to se; For Kevin — 2026-08-23 (Rati)
+- last commit: 19 seconds ago — "Merge remote-tracking branch 'origin/master' into claude/compassionate-mendel-6hxv2z" (24cd5de66)
+- agent work in the last 24h: "Ash: Education Week 2 + Week 3 artwork, 6 posts, 11 assets"; "Rati 2026-08-23 (2nd run): authority hold cleared, 7 posts scheduled through 10/01"; "Rati 2026-08-23: Week 5 on the doctrine's Tier 1 bench, FB failure #3 imminent, authority "
+- ⚠️ 2 recent commit(s) stranded off master — needs a merge
+- waiting on Kevin (1): Comment reply kit — Viridia's own channels
 
 ### SEO Team
 - last commit: 4 days ago — "GA4 connected via OpenSEO: right property verified, first baseline, key-events gap flagged" (877853a2c)
@@ -130,11 +130,11 @@ Generated: 2026-08-23 18:53 UTC (2026-08-23 11:53 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-23 18:53 UTC (auto-generated by VEGA's backend):
+As of 2026-08-23 18:59 UTC (auto-generated by VEGA's backend):
 Real MRR: $4679/mo (VERIFIED 2026-08-21 - sum of 7 active Stripe subscriptions (live API pull), confirms the bank-flow estimate. QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $5,321/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 129 days (18 weeks) → ~1 close per 3 week(s).
 This week (since 2026-08-17): 1 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 30m ago)
-Approvals waiting on Kevin across the fleet: 19
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 36m ago)
+Approvals waiting on Kevin across the fleet: 17
 ```
