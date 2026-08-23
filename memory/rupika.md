@@ -1134,3 +1134,59 @@
 - Flex Painting Inc. (Rowland Heights CA) — strong 2hr/5.0star/200+ review pain signal but
   CSLB painting license #1080550 confirmed EXPIRED (exp. 08-31-2025, still expired as of Oct
   2025). Do not queue unless license is reinstated.
+- Persa General Construction Inc (Whittier/LA CA remodeling) — chased across 3+ runs
+  (2026-08-21 #2 through 2026-08-23 #2), identity confirmed (persa-inc.com, 4.7★/139 reviews)
+  but no actual Yelp business page could ever be located to pin down a real response-time
+  figure; the "typically replies in minutes" text found 2026-08-23 #2 had no real source
+  behind it. Stop re-chasing unless a direct `/biz/` URL surfaces.
+
+- (run 2026-08-23 #2) A second scheduled firing landed the same day as the earlier 2026-08-23
+  run above (package + website, 3 hits each, already committed). Treated as a normal top-up
+  batch rather than a repeat of the full run — 2 parallel sub-agents (package + website), each
+  steered explicitly away from today's earlier hits, today's exhausted suburb/vertical combos,
+  and existing prospect slugs, and pointed first at banked/carryover leads before fresh
+  territory. `git fetch` showed a force-updated `origin/master`; this time `git checkout
+  master` (without `-B origin/master`) landed on a genuinely stale local branch 50/62 commits
+  diverged from origin — not the usual harmless detached-HEAD symptom, an actual own mistake
+  running the wrong checkout form. Fixed immediately with `git checkout -B master
+  origin/master`, confirmed local then matched origin's tip exactly, nothing lost. Worth
+  remembering: always use `-B origin/<branch>` form, never a bare `git checkout <branch>`,
+  since a local branch ref can itself be stale even when detached HEAD already matches origin.
+- (package/priority track, run 2026-08-23 #2) 2 hits (deliberately smaller top-up batch, not
+  the usual 3), both corroborated via the Yelp-advertisers response-time technique with a
+  direct Yelp URL confirmed in search results (not guessed): Cabinet Refinishing Specialist
+  (Burbank CA, cabinet painting/refinishing — a painting-adjacent vertical, owner Vic/Vachik
+  Hovhannisyan, est. 2010, ~2hr response/26 quote requests, real site found, minor 92-vs-95
+  review-count read discrepancy flagged for Montague), All Around Electrical Services
+  (Avondale AZ, electrician, family-run since 1998, ~3hr response/26 quote requests, 25 Yelp/
+  186 Google reviews — two different platforms, not a conflation, noted explicitly so Montague
+  doesn't misflag it). Persa General Construction carryover lead (see Dead ends section above)
+  finally given up on after 3+ runs unresolved. New listing-conflation drops this run: HVAC
+  Montebello CA (2hr/67 requests, but reviews read 124 vs 386 across pages), Whittier CA
+  restoration (10min/40 requests vs 5hr/50 requests for what may be different businesses),
+  Lynwood CA plumbing (5hr/115 reviews, name never resolved). A Buckeye AZ electrician
+  (generator install, 3hr response, only 2 reviews) never resolved a business name either —
+  too thin anyway. Direct Yelp fetch confirmed still `EGRESS_BLOCKED` this run — WebSearch
+  snippets remain the only path, which is the recurring source of conflation risk. Empty
+  combos this run (avoid re-trying as-is): plumbing (Queen Creek AZ, Compton CA — both fast
+  only), roofing (Sun Lakes AZ — fast only), HVAC (Gardena CA — fast only), garage door (El
+  Monte CA, Apache Junction AZ — both fast only).
+- (website track, run 2026-08-23 #2) 2 hits, one banked-candidate closeout + one fresh-market
+  pickup: Affordable Plumbing and Drain Cleaning Service (Klamath Falls OR — banked since
+  2026-08-22, re-verified clean: still Facebook-only, still active per Angi 4.2/5, no BBB
+  out-of-business flag; HIGH collision risk flagged, unrelated same-name-pattern businesses in
+  Portland OR/Kansas City MO/Westlake OH; owner name still not found), Hutchinson Plumbing Co.
+  (Del Rio TX — first hit in this previously-untried market, Facebook-only across two legacy
+  pages, owner Joseph R. Hutchinson confirmed via CorporationWiki/BuildZoom/TX Comptroller
+  registration, est. 2016/incorporated 2018, PPP loan "Paid in Full" per SBA so not a closure
+  signal, MODERATE-HIGH collision risk flagged against unrelated "Hutchinson
+  Plumbing/Heating/Cooling" businesses in NC and NJ). New standing collision-pattern note:
+  business names built from a common adjective ("Affordable," "Quality," "Reliable") or a
+  common surname ("Hutchinson") recur nationally often enough that the `-city -state`
+  collision search should be treated as a default step on every website-track hit, not just
+  when a name already looks generic. Del Rio TX now has one confirmed hit and one ruled-out
+  real-site business (Specialty Landscape Solutions, slslawns.com); one more untried lead
+  banked there if revisited: AP Plumbing Co. (phone-only Facebook presence, not yet checked).
+  Did not touch Walker Landscapes (Sheridan WY, still unconfirmed owner name) or the other
+  fresh markets (Middlesboro KY remaining verticals, Del Norte County/Crescent City CA,
+  Susanville CA, Laurel MS remaining verticals) — still available for a future run.
