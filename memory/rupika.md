@@ -1042,6 +1042,49 @@
   `git fetch` + `git checkout -B master origin/master` fixed the usual detached-HEAD/stale-ref
   symptom seen on every run since 2026-08-13, confirmed local matched origin's tip, nothing
   lost. `_new-leads.md` had nothing dropped in. Ran both tracks as parallel sub-agents again.
+- (package/priority track, run 2026-08-23) 3 hits, all resolved via the Yelp-advertisers
+  response-time technique, all flagged for Montague to pin down an exact figure directly on
+  Yelp (identity solid in each case, the specific number just didn't re-surface cleanly on
+  follow-up searches — same "flag, don't drop" pattern as prior runs). Elite Professional
+  Painting LLC (Anthem AZ, closes out a signal banked since 2026-08-21/22 — 5.0★/only 6
+  reviews against 141 locals recently requested a quote, a stark lead-volume-vs-review-
+  conversion gap, ~8hr response re-corroborated on identity across 3 searches but the exact
+  hour figure didn't re-surface, AZ ROC#328711 not independently license-checked). Roofing
+  Systems Incorporated (Panorama City/LA CA, surfaced via a Buena Park CA search then cross-
+  suburb resolved — "2nd generation" family shop, 4.9★/44 reviews, ~2-3hr response
+  corroborated twice, real site roofingsysteminc.com, one read showed a thin "2 locals
+  requested a quote" figure that may just be normal listing volatility rather than
+  contradiction). Resolve Landscape Corp (Cypress CA/Orange County, young company est. 2020,
+  CA license active since 2022, 39 reviews — sharpest signal of the three: 3-DAY response at
+  100% response rate, i.e. they always answer but far too late; CSLB #1090873 confirmed
+  ACTIVE via BuildZoom, real site + Gmail found). New disqualifier this run: Just In Time
+  Heating & Cooling (banked "Casa Grande AZ 3hr" signal from 2026-08-22) resolved to Globe AZ,
+  ~90mi outside Phoenix metro — drop, don't re-chase as a Casa Grande lead; a separate "Just In
+  Time Refrigeration and Air Conditioning" in Phoenix is a different, unrelated business.
+  Strongest carryover for next run: Persa General Construction Inc (Whittier/LA CA remodeling)
+  — identity now FULLY CONFIRMED (persa-inc.com, 4.7★/139 reviews, 20+yr LA remodeling GC,
+  phone 213-840-3575) after 2+ prior runs of the name being unresolved; only the exact "2hr/38
+  locals" response-time figure from the original banked signal still needs pinning down
+  directly on Yelp — worth prioritizing since the hard part (identity) is done. Also
+  unresolved again this run, worth one more attempt with sharper/differently-phrased queries
+  rather than the same two obvious top-of-search names: Fountain Hills AZ electrical (2hr/109
+  requests — Sandoval Electrical and Barbagallo Electrical both checked, both read as fast,
+  no match), Gold Canyon AZ HVAC/duct cleaning (3hr/45 requests — no individual data surfaced
+  at all this run), Lawndale CA HVAC (9hr/64 reviews — Stability Heating & Air checked, wrong
+  review count; Dr. Ductless and Thermo Tech still untried), Goodyear AZ roofing (2hr/23
+  locals — JD Roofing AZ/EZ Roofing/Estrella Roofing all read fast, signal still unresolved).
+  New unresolved signal banked: Carson CA electrical — an aggregated search showed several
+  distinct readings (11hr, 1 day, 3hr, 7hr) among unnamed Carson-area electricians in one
+  summary, none resolved to a name this run. Take-away worth logging: these four
+  previously-banked signals (Fountain Hills, Gold Canyon, Lawndale, Goodyear) have each now
+  gone unresolved across 2+ runs apiece — diminishing returns, worth deprioritizing them below
+  fresh suburb/vertical combos unless a materially different query phrasing is tried. Empty
+  combos this run (avoid re-trying as-is): plumbing (La Mirada CA — all 10min responders),
+  electrical (Carson CA — see banked signal above, named candidate V-Teg Electrical was itself
+  a 20min fast responder), HVAC (San Tan Valley AZ — no response-time data surfaced at all),
+  pest control (Buena Park CA — Fenn Termite/C&H Pest Control both fast, 20min), garage door
+  (Rowland Heights CA — Kim's Overhead Garage Doors/SoCal Window Pros both fast and too large
+  for this track anyway), restoration (La Mirada CA — fast responders only, 10-50min).
 - (website track, run 2026-08-23) All 3 hits were banked-candidate closeouts rather than fresh-
   market research (per this run's steer toward the banked list first) — confirms the "queue
   banked candidates directly" approach keeps working, though two of three needed a real
