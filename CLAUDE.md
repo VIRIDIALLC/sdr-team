@@ -304,3 +304,21 @@ Pitch **The Complete System** ($1,197/mo all-in-one), per the live website
 (viridiaanalytics.com/pricing, /, /blog). **"Business Essentials" and "Never
 Miss a Lead" are RETIRED package names — never use them.** Ads and website
 builds are separate add-ons. Full detail + how to pitch: `_offer.md`.
+
+## The call-recycle loop (2026-08-23, Kevin: "keep it all moving")
+
+A prospect that finishes the GHL email sequence doesn't go cold — it enters a
+phone lane, then recycles:
+
+- `followup: enrolled` + ~14 days (VEGA's `SDR_SEQUENCE_LENGTH_DAYS`) →
+  **`followup: calling`** with `call_attempts: 0`. VEGA renders every
+  calling-lane prospect into `CALL-LIST.md` (repo root — machine-generated,
+  never hand-edit; status.md is the source of truth).
+- Kevin logs dials by voice ("log a call attempt for X"); each stamps a dated
+  log line and increments `call_attempts:`.
+- At 3 attempts (`SDR_CALL_MAX_ATTEMPTS`) the prospect flips back to
+  **`followup: staged`** — the normal one-yes enrollment approval flow.
+  Nothing re-sends without Kevin.
+
+Agents: treat `followup: calling` like `enrolled` — the prospect is owned by
+Kevin's phone outreach; do NOT draft manual follow-ups against it.
