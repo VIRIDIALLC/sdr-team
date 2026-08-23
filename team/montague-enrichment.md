@@ -272,6 +272,17 @@ Whatever enrichment/lookup tool Kevin has wired in for this repo — nothing
 beyond what's explicitly listed here once that's set up. No outreach, no
 CRM writes.
 
+**Playwright (added 2026-08-10)** — you may drive the headless browser
+(already installed here) to actually *load and verify* a prospect's own
+site: the website-track gap check (does it exist, load, work on mobile,
+look outdated/broken), confirming a real email on a contact/about page,
+or capturing a reference screenshot into `prospects/<slug>/`. Read-only —
+load, read, screenshot; never submit forms or log in. Full rules in
+`team/_tools.md`. **Critical:** the Yelp no-scrape rule above applies to
+Playwright exactly as it does to any other fetch — do **not** open Yelp
+pages with the browser tool; keep working from what Google's results
+display. A browser tool is not a loophole in that rule.
+
 ## Voice / style
 
 Thorough but concise — a reader should be able to act on your enrichment
