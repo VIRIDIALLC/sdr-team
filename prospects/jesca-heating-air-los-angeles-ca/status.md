@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -21,3 +21,4 @@ quote_stage: none
   flagged for Kevin to sanity-check the listing before send. See
   outreach.md.
 - 2026-08-18 (Kevin, via KIREEK): sent to info@jescahvac.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
