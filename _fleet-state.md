@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-24 17:35 UTC (2026-08-24 10:35 Phoenix)
+Generated: 2026-08-24 17:41 UTC (2026-08-24 10:41 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -95,7 +95,7 @@ Generated: 2026-08-24 17:35 UTC (2026-08-24 10:35 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 5 minutes ago — "KIREEK: call loop — 0 to the call list, 0 recycled after 3 attempts (0 on the list)" (fe32d6eed)
+- last commit: 5 minutes ago — "KIREEK: call loop — 0 to the call list, 0 recycled after 3 attempts (0 on the list)" (105b5e0ec)
 - pipeline (prospects, 163 items): found 58 · enriched 1 · drafted 4 · approved 2 · sent 90 · closed 6 · dismissed 2 — ~60% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-08-24 on `all-around-electrical-services-avondale-az` — "drafted. Package track. Built on the contrast between their advertised 24/7 emergency service and the ~3hr Yel"
@@ -108,7 +108,7 @@ Generated: 2026-08-24 17:35 UTC (2026-08-24 10:35 Phoenix)
 - waiting on Kevin (6): 2026-08-19: For Kevin's review — the selling kit for your cold calls; 2026-08-21: For Kevin's review — 6 first-touch drafts (2026-08-21, second run); 2026-08-21: Second-touch drafts — 10 prospects in the `followup: held` lane; 2026-08-22: For Kevin's review — 2 first-touch drafts (2026-08-22); 2026-08-23: For Kevin's review — 3 first-touch drafts (2026-08-23)
 
 ### Ads Team
-- last commit: 78 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (4a5613ef1)
+- last commit: 84 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (4a5613ef1)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
@@ -127,15 +127,15 @@ Generated: 2026-08-24 17:35 UTC (2026-08-24 10:35 Phoenix)
 - waiting on Kevin (1): 2026-08-14: Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 2 hours ago — "A/R aging refresh 2026-08-24: reminders updated, three drafts corrected against stale ruli" (121963944)
+- last commit: 24 seconds ago — "Stage Sato routine-prompt text for Kevin to paste (2026-08-24)" (b5c7ae61e)
 - pipeline (invoices, 9 items): draft 5 · draft_amount_disputed 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~0% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-08-24 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 95 days overdue, 91+ bucket. Discrepancy vs. GHL's $197 sti"
 - agent work in the last 24h: "A/R aging refresh 2026-08-24: reminders updated, three drafts corrected against stale ruli"
-- waiting on Kevin (6): 2026-08-17: A/R reminders — status check, 2026-08-17; 2026-08-24: A/R aging review — 2026-08-24; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15
+- waiting on Kevin (7): 2026-08-17: A/R reminders — status check, 2026-08-17; 2026-08-24: A/R aging review — 2026-08-24; 2026-08-24: Sato routine prompt update — ready to paste (Kevin approved 2026-08-; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 74 minutes ago — "Merge origin/master into claude/trusting-hamilton-2ydhf7" (ffab715da)
+- last commit: 40 seconds ago — "Handoff: TFP Yelp page updates (Connect post, 4 portfolios, About sections) per Yelp rep f" (dea060795)
 - pipeline (posts, 26 items): scheduled 11 · posted 2 · superseded 13 — ~72% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-08-23 on `ai-front-door-45-percent` — "**Media delivered.** Two-box stat comparison, "6%" (grey, last year) against "45%" (green, this year), with "8" · 1 open handoff(s) in their inbox
@@ -144,7 +144,7 @@ Generated: 2026-08-24 17:35 UTC (2026-08-24 10:35 Phoenix)
 - waiting on Kevin (1): 2026-08-21: Comment reply kit — Viridia's own channels
 
 ### SEO Team
-- last commit: 73 minutes ago — "Merge origin/master into claude/bold-mayer-uc22ad" (0596c9f6e)
+- last commit: 79 minutes ago — "Merge origin/master into claude/bold-mayer-uc22ad" (0596c9f6e)
 - pipeline (audits, 3 items): recommendations 2 · tracking 1 — ~78% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elenor** (Backlink & Citation Outreach): no logged task activity yet
@@ -162,11 +162,11 @@ Generated: 2026-08-24 17:35 UTC (2026-08-24 10:35 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-24 17:35 UTC (auto-generated by VEGA's backend):
+As of 2026-08-24 17:41 UTC (auto-generated by VEGA's backend):
 Real MRR: $4679/mo (VERIFIED 2026-08-21 - sum of 7 active Stripe subscriptions (live API pull), confirms the bank-flow estimate. QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $5,321/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 128 days (18 weeks) → ~1 close per 3 week(s).
 This week (since 2026-08-17): 1 conversations, 0 proposals out, 0 closed, $0 MRR added
 Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 1h ago)
-Approvals waiting on Kevin across the fleet: 14
+Approvals waiting on Kevin across the fleet: 15
 ```
