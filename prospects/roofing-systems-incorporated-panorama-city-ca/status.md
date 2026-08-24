@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -30,3 +30,4 @@ quote_stage: none
   body. Dropped angle: the 4.9/44 reviews mechanism, now the winner on four
   prospects in six days and the most template-prone shape in the lane.
   See outreach.md.
+- 2026-08-24 (Kevin, via KIREEK): sent to info@roofingsysteminc.com.
