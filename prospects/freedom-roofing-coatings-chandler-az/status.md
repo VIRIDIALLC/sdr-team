@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -22,3 +22,4 @@ quote_stage: none
   the number is dropped entirely. Company is ~1 year old (license issued
   2025-08-04), which explains the thin review count. Advanced to `enriched`.
 - 2026-08-20 (Kevin, via KIREEK): sent to info@freedomroofingaz.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
