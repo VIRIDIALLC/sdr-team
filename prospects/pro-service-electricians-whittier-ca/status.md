@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -16,3 +16,4 @@ quote_stage: none
   (Whittier CA electrical query), added to pipeline.
 - 2026-08-21 (Elly): drafted (package). Their own 24/7 claim used as the opener; team greeting (no owner name found). Overrode Montague's 2020-vs-two-decades hook as not face-saving for a first touch, kept it for a live call. See outreach.md.
 - 2026-08-21 (Kevin, via KIREEK): sent to info@proserviceelectricians.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
