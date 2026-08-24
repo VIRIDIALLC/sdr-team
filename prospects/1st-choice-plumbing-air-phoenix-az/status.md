@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -23,3 +23,4 @@ quote_stage: none
   Advanced to `enriched`. See enrichment.md.
 - 2026-08-21 (Elly): drafted (package). August-peak / two-man-family-shop opener; no response-time number used (Montague dropped it as contradictory). Insulation-vs-emergency angle written up and dropped as a repeat of the 08-20 Freedom Roofing shape. See outreach.md.
 - 2026-08-21 (Kevin, via KIREEK): sent to info@1stchoicemechanicalaz.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
