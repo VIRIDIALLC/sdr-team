@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
 - 2026-08-15 (Elly): drafted outreach using the response-time question
   opener, greeted to owner Isaias Gallegos. Advanced to drafted.
 - 2026-08-17 (Kevin, via KIREEK): sent to info@scenicviewlandscapeinc.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
