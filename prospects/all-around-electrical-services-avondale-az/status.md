@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -26,3 +26,4 @@ quote_stage: none
   Dropped the lifetime-warranty economics angle. Deliberately built apart from
   Gallantry Electric, same trade six miles away, drafted today. Email is a
   GUESSED info@ pattern. Advanced to `drafted`.
+- 2026-08-24 (Kevin, via KIREEK): sent to info@allaroundelectrical.com.
