@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -27,3 +27,4 @@ quote_stage: none
   Exterminating draft from 08-21 (same trade, same mechanism, one day
   apart, same inbox). No response-time or review figure in the body at all,
   per the fabricated-signal finding. Advanced to `drafted`. See outreach.md.
+- 2026-08-24 (Kevin, via KIREEK): sent to info@oversonpestcontrol.com.
