@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-24 18:04 UTC (2026-08-24 11:04 Phoenix)
+Generated: 2026-08-24 18:10 UTC (2026-08-24 11:10 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -105,12 +105,12 @@ Generated: 2026-08-24 18:04 UTC (2026-08-24 11:04 Phoenix)
 ## Every team, right now
 
 ### Etsy Team
-- last commit: 23 hours ago — "Merge remote-tracking branch 'origin/master'" (5b37fea95)
+- last commit: 24 hours ago — "Merge remote-tracking branch 'origin/master'" (5b37fea95)
 - pipeline (products, 4 items): brief 1 · approved 1 · published 2 — ~67% through the pipeline
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 5 minutes ago — "KIREEK: call loop — 0 to the call list, 0 recycled after 3 attempts (0 on the list)" (c9a7dd565)
+- last commit: 5 minutes ago — "KIREEK: call loop — 0 to the call list, 0 recycled after 3 attempts (0 on the list)" (1242e28d9)
 - pipeline (prospects, 163 items): found 58 · enriched 1 · drafted 4 · approved 2 · sent 90 · closed 6 · dismissed 2 — ~60% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-08-24 on `all-around-electrical-services-avondale-az` — "drafted. Package track. Built on the contrast between their advertised 24/7 emergency service and the ~3hr Yel"
@@ -134,7 +134,7 @@ Generated: 2026-08-24 18:04 UTC (2026-08-24 11:04 Phoenix)
 - waiting on Kevin: nothing
 
 ### Customer Success
-- last commit: 5 minutes ago — "AZ GLO churned (demand letter, do-not-contact); Tyler keep-the-system one-pager ask" (9791ce725)
+- last commit: 10 minutes ago — "AZ GLO churned (demand letter, do-not-contact); Tyler keep-the-system one-pager ask" (9791ce725)
 - pipeline (onboarding, 1 items): review 1 — ~67% through the pipeline
 - where each agent is (from their own logged task work):
   - **Cora** (CSR): 2026-08-18 on `client-onboarding-portal` — "Kevin confirmed the direction from the 8/14 spec live in chat and closed two of the three open `[VERIFY]`s: on" · 1 open handoff(s) in their inbox
@@ -142,15 +142,15 @@ Generated: 2026-08-24 18:04 UTC (2026-08-24 11:04 Phoenix)
 - waiting on Kevin (1): 2026-08-14: Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 5 minutes ago — "A/R ground truth 2026-08-24 + for-review posting batch as Sato's first proposal; MRR re-ve" (cb07b4cd6)
-- pipeline (invoices, 9 items): draft 5 · draft_amount_disputed 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~0% through the pipeline
+- last commit: 2 minutes ago — "Merge origin/master (fleet-state refresh) into finance branch" (340bfd65a)
+- pipeline (invoices, 9 items): draft 3 · draft_amount_disputed 1 · draft_amount_needs_qbo_entry 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~0% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-08-24 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 95 days overdue, 91+ bucket. Discrepancy vs. GHL's $197 sti" · 1 open handoff(s) in their inbox
-- agent work in the last 24h: "A/R aging refresh 2026-08-24: reminders updated, three drafts corrected against stale ruli"
-- waiting on Kevin (6): 2026-08-17: A/R reminders — status check, 2026-08-17; 2026-08-24: A/R aging review — 2026-08-24; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15
+- agent work in the last 24h: "Sato: Sierra Glover balance correction, decentralized-billing transition proposal"; "A/R aging refresh 2026-08-24: reminders updated, three drafts corrected against stale ruli"
+- waiting on Kevin (9): 2026-08-17: A/R reminders — status check, 2026-08-17; 2026-08-24: A/R aging review — 2026-08-24; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15
 
 ### Social Team
-- last commit: 24 minutes ago — "Handoff: TFP Yelp page updates (Connect post, 4 portfolios, About sections) per Yelp rep f" (dea060795)
+- last commit: 30 minutes ago — "Handoff: TFP Yelp page updates (Connect post, 4 portfolios, About sections) per Yelp rep f" (dea060795)
 - pipeline (posts, 26 items): scheduled 11 · posted 2 · superseded 13 — ~72% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-08-23 on `ai-front-door-45-percent` — "**Media delivered.** Two-box stat comparison, "6%" (grey, last year) against "45%" (green, this year), with "8" · 1 open handoff(s) in their inbox
@@ -177,11 +177,11 @@ Generated: 2026-08-24 18:04 UTC (2026-08-24 11:04 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-24 18:04 UTC (auto-generated by VEGA's backend):
+As of 2026-08-24 18:10 UTC (auto-generated by VEGA's backend):
 Real MRR: $4679/mo (VERIFIED 2026-08-21 - sum of 7 active Stripe subscriptions (live API pull), confirms the bank-flow estimate. QBO's headline is ~2x inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $5,321/mo → 5 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 128 days (18 weeks) → ~1 close per 3 week(s).
 This week (since 2026-08-17): 1 conversations, 0 proposals out, 0 closed, $0 MRR added
 Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 1h ago)
-Approvals waiting on Kevin across the fleet: 14
+Approvals waiting on Kevin across the fleet: 17
 ```
