@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-24 18:50 UTC (2026-08-24 11:50 Phoenix)
+Generated: 2026-08-24 18:56 UTC (2026-08-24 11:56 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -110,7 +110,7 @@ Generated: 2026-08-24 18:50 UTC (2026-08-24 11:50 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 5 minutes ago — "KIREEK: call loop — 0 to the call list, 0 recycled after 3 attempts (0 on the list)" (e0b35c97f)
+- last commit: 5 minutes ago — "KIREEK: call loop — 0 to the call list, 0 recycled after 3 attempts (0 on the list)" (8fbf40e99)
 - pipeline (prospects, 163 items): found 58 · enriched 1 · drafted 4 · approved 2 · sent 90 · closed 6 · dismissed 2 — ~60% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-08-24 on `all-around-electrical-services-avondale-az` — "drafted. Package track. Built on the contrast between their advertised 24/7 emergency service and the ~3hr Yel"
@@ -134,7 +134,7 @@ Generated: 2026-08-24 18:50 UTC (2026-08-24 11:50 Phoenix)
 - waiting on Kevin: nothing
 
 ### Customer Success
-- last commit: 51 minutes ago — "AZ GLO churned (demand letter, do-not-contact); Tyler keep-the-system one-pager ask" (9791ce725)
+- last commit: 56 minutes ago — "AZ GLO churned (demand letter, do-not-contact); Tyler keep-the-system one-pager ask" (9791ce725)
 - pipeline (onboarding, 1 items): review 1 — ~67% through the pipeline
 - where each agent is (from their own logged task work):
   - **Cora** (CSR): 2026-08-18 on `client-onboarding-portal` — "Kevin confirmed the direction from the 8/14 spec live in chat and closed two of the three open `[VERIFY]`s: on" · 1 open handoff(s) in their inbox
@@ -142,7 +142,7 @@ Generated: 2026-08-24 18:50 UTC (2026-08-24 11:50 Phoenix)
 - waiting on Kevin (1): 2026-08-14: Post-purchase onboarding sequence — spec + gap list
 
 ### Finance Team
-- last commit: 3 minutes ago — "APPLY check confirms no writes made; corrects Sierra Glover per Kevin's urgent withdrawal" (ebb192253)
+- last commit: 9 minutes ago — "APPLY check confirms no writes made; corrects Sierra Glover per Kevin's urgent withdrawal" (ebb192253)
 - pipeline (invoices, 9 items): draft 4 · draft_amount_disputed 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~0% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-08-24 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 95 days overdue, 91+ bucket. Discrepancy vs. GHL's $197 sti" · 1 open handoff(s) in their inbox
@@ -151,16 +151,16 @@ Generated: 2026-08-24 18:50 UTC (2026-08-24 11:50 Phoenix)
 - waiting on Kevin (9): 2026-08-17: A/R reminders — status check, 2026-08-17; 2026-08-24: A/R aging review — 2026-08-24; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15
 
 ### Social Team
-- last commit: 35 minutes ago — "Resolve orphaned-master handoff: shallow-clone artifact, no force-push, all 8 repos verifi" (70a2804ba)
+- last commit: 40 minutes ago — "Resolve orphaned-master handoff: shallow-clone artifact, no force-push, all 8 repos verifi" (70a2804ba)
 - pipeline (posts, 26 items): scheduled 11 · posted 2 · superseded 13 — ~72% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-08-23 on `ai-front-door-45-percent` — "**Media delivered.** Two-box stat comparison, "6%" (grey, last year) against "45%" (green, this year), with "8" · 1 open handoff(s) in their inbox
   - **Rati** (Social Media Manager): 2026-08-24 on `ai-front-door-45-percent` — "Verified the delivered asset directly rather than trusting the record. `front-door-stat-square.png` is a corre"
-- agent work in the last 24h: "Rati 2026-08-24: FB goes dark after tomorrow, master history orphaned, attach list rebuilt"; "Ash routine check 2026-08-24: no handoffs addressed to Ash, no post missing media at the a"; "Ash: Education Week 2 + Week 3 artwork, 6 posts, 11 assets"; "Rati 2026-08-23 (2nd run): authority hold cleared, 7 posts scheduled through 10/01"
+- agent work in the last 24h: "Rati 2026-08-24: FB goes dark after tomorrow, master history orphaned, attach list rebuilt"; "Ash routine check 2026-08-24: no handoffs addressed to Ash, no post missing media at the a"; "Ash: Education Week 2 + Week 3 artwork, 6 posts, 11 assets"
 - waiting on Kevin (1): 2026-08-21: Comment reply kit — Viridia's own channels
 
 ### SEO Team
-- last commit: 2 hours ago — "Merge origin/master into claude/bold-mayer-uc22ad" (0596c9f6e)
+- last commit: 3 hours ago — "Merge origin/master into claude/bold-mayer-uc22ad" (0596c9f6e)
 - pipeline (audits, 3 items): recommendations 2 · tracking 1 — ~78% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elenor** (Backlink & Citation Outreach): no logged task activity yet
@@ -178,7 +178,7 @@ Generated: 2026-08-24 18:50 UTC (2026-08-24 11:50 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-24 18:50 UTC (auto-generated by VEGA's backend):
+As of 2026-08-24 18:56 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). Down from 7 subs / $4,679 on 8/21 - one $897/mo subscription gone, consistent with the AZ GLO churn. QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 128 days (18 weeks) → ~1 close per 3 week(s).
