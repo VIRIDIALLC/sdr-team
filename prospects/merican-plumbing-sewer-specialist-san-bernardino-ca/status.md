@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
   Flagged thin-scale (2 reviews, no license/BBB record) for Kevin.
   Advanced to `drafted`. See outreach.md. See enrichment.md.
 - 2026-08-18 (Kevin, via KIREEK): sent to info@mericanplumbingsewerspecialist.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
