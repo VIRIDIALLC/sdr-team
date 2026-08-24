@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   to GM Dan Caballero since no owner name exists anywhere. Advanced to
   drafted.
 - 2026-08-17 (Kevin, via KIREEK): sent to mail@cvaexterminators.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
