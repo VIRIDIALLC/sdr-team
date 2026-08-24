@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
   4/5, still phrased as a question). Advanced to `drafted`. See
   outreach.md.
 - 2026-08-18 (Kevin, via KIREEK): sent to jna.ac@yahoo.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
