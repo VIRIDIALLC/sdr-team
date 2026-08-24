@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
   added to pipeline.
 - 2026-08-21 (Elly): drafted (package). Inverted pitch: evidence says they are FAST, so the draft protects a strength (their speed is Susy, not a system) rather than alleging slowness. Do not tell this prospect he is slow. See outreach.md.
 - 2026-08-21 (Kevin, via KIREEK): sent to info@vigilairandheat.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
