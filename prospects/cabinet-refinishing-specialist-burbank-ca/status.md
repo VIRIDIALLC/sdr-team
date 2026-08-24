@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -24,3 +24,4 @@ quote_stage: none
   the job to a cabinet showroom, not to another refinisher. Dropped the Impact
   Pro Refinishing name-mismatch angle (unresolved premise, and it duplicates
   Gallantry's mechanism this batch). Advanced to `drafted`.
+- 2026-08-24 (Kevin, via KIREEK): sent to vachikhovhannisyan@yahoo.com.
