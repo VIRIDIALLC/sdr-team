@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -27,3 +27,4 @@ quote_stage: none
   several companies the same afternoon). Dropped angle: the 171 photos /
   Instagram self-marketing angle, same mechanism as Overson Pest Control
   (08-22). See outreach.md.
+- 2026-08-24 (Kevin, via KIREEK): sent to resolvelandscape@gmail.com.
