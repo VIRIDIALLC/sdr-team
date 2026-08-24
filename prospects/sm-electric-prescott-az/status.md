@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -25,3 +25,4 @@ quote_stage: none
   Advanced to `enriched`. See enrichment.md.
 - 2026-08-21 (Elly): drafted (package). 1982 founding / 'five front doors' opener; no response-time or review count in the body. Prescott is outside the Phoenix-metro priority zone and this is the thinnest signal of the batch, flagged for Kevin's cut decision. See outreach.md.
 - 2026-08-21 (Kevin, via KIREEK): sent to info@sandmelectricinc.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
