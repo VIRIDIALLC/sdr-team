@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -27,3 +28,4 @@ quote_stage: none
   (same "a Facebook post dies in a day" mechanism as the RidgeTop follow-up,
   08-21). See outreach.md.
 - 2026-08-24 (Kevin, via KIREEK): sent to abplumbing23@gmail.com.
+- 2026-08-24 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
