@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -12,3 +12,10 @@ quote_stage: none
 - yelp: https://www.yelp.com/biz/hendrix-painting-long-beach-7
 - website: https://hendrixpainting.com
 - maps: https://www.google.com/maps/search/Hendrix+Painting+Long+Beach+CA
+- 2026-08-24 (Elly): drafted. Package track. ~8hr figure framed as a full
+  working day; the argument underneath is that a paint quote's first reply is a
+  walkthrough slot, not a price, so speed is calendar position. Plain "Hi,"
+  greeting per the two-unresolved-candidates convention (Bobby vs. David).
+  Dropped the BuildZoom-score angle. NOTE: this status.md had no Montague log
+  line despite complete enrichment.md — flagged for Sue, not backfilled in her
+  voice. Advanced to `drafted`.
