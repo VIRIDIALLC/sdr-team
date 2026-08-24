@@ -1190,3 +1190,77 @@
   Did not touch Walker Landscapes (Sheridan WY, still unconfirmed owner name) or the other
   fresh markets (Middlesboro KY remaining verticals, Del Norte County/Crescent City CA,
   Susanville CA, Laurel MS remaining verticals) — still available for a future run.
+
+- (run 2026-08-24) Scheduled run scoped to two tracks (package + website, per this run's task
+  instructions — ads track not requested). Fleet state (`_fleet-state.md`) was fresh at run start
+  (generated 2026-08-24 16:20 UTC, well within the 12h bar). `_new-leads.md` had nothing dropped
+  in. Started on a detached HEAD matching `origin/master`'s tip exactly — same recurring
+  stale-ref symptom as every prior run since 2026-08-13, fixed with `git checkout -B master
+  origin/master`. Ran both tracks as parallel sub-agents again. First push attempt hit an HTTP 403
+  + non-fast-forward rejection because origin/master had moved (KIREEK activity) between the
+  agents finishing and the push — fetched, merged cleanly (no conflicts, KIREEK's changes touched
+  different files), pushed successfully. Worth noting for future runs: a mid-run push rejection
+  from concurrent KIREEK/other-session activity is normal and just needs fetch+merge, not a sign
+  of anything wrong.
+- (package/priority track, run 2026-08-24) 2 hits (smaller than the usual 3 — most of the budget
+  went to closing out stale banked signals, several of which turned out to be dead ends rather
+  than new prospects): Hendrix Painting, Inc. (Long Beach/Signal Hill CA, ~30yr family shop,
+  owners Bobby Ray & David Joe Hendrix, ~8hr response corroborated twice against 104 quote
+  requests, only 50 reviews after 3 decades — thin reputation footprint for the tenure, 4.8★, real
+  site hendrixpainting.com, CSLB license BuildZoom-verified active as of June 2025 — Montague
+  should reconfirm current status directly; MEDIUM collision risk, an unrelated "Hendrix Painting"
+  sole-prop in Roseburg OR is a different business). Gallantry Electric (Tolleson AZ, small
+  family shop, 22 reviews/5.0★, Yelp Guaranteed + verified license, 2hr→3hr response drift
+  corroborated twice — both over threshold, direction-consistent, phone number identical both
+  reads — against 85 quote requests. IMPORTANT: appears to be a rebrand from "Gerry Electric LLC"
+  — same phone/address, Facebook page shows both names, Yelp slug is `gallantry-electric-tolleson`
+  but one search result still showed "GERRY ELECTRIC" — flagged hard for Montague/Sue to confirm
+  current name of record on the live Yelp page before Elly's draft references either name).
+  Banked-signal resolution this run, several closed out as dead ends rather than fresh hits:
+  Fountain Hills AZ electrical (2hr/109 requests) — still unresolved after 3+ runs, a "Gerry
+  Electric 2hr" match this run actually resolved to the Tolleson hit above, not Fountain Hills;
+  worth one more attempt only with materially different phrasing, otherwise treat as diminishing
+  returns. Gold Canyon AZ HVAC/duct cleaning (3hr/45 requests) and Goodyear AZ roofing (2hr/23
+  locals) both tried again with zero traction (3rd+ run unresolved for both) — recommend dropping
+  from the banked list entirely rather than re-trying again. South Bay Electric Company (Harbor
+  City CA) not re-evaluated this run — the 2026-08-22 drop (40+yrs AND 400+ reviews scale rule)
+  stands as final, remove from banked list. New dead end found: Apollo Electric (AZ) — a
+  "7hr/113 reviews" signal searched as Litchfield Park actually resolved to Scottsdale
+  (already-exhausted), and a direct follow-up on the same business showed a 10min response time —
+  a real threshold-crossing contradiction, not normal drift. Drop, do not re-chase. Two listing-
+  conflation drops this run (same pattern as before — same business showing two very different
+  numbers across searches): a Manhattan Beach CA landscaping candidate (24 vs 212 quote requests
+  for the same business) and a Bell Gardens/Cudahy CA electrician candidate (5hr/210 vs 2hr/30).
+  Empty combos this run (avoid re-trying as-is): plumbing (Hacienda Heights CA), electrical
+  (Huntington Park CA), HVAC (Litchfield Park/Avondale AZ, Huntington Park/Bell Gardens CA),
+  painting (Litchfield Park AZ), roofing (Litchfield Park AZ, Huntington Park/Bell Gardens/Cudahy
+  CA), pest control (Huntington Park/Bell Gardens CA), restoration (Signal Hill/Los Alamitos CA),
+  plumbing (Youngtown AZ), garage door (Avondale AZ). Lawndale CA HVAC and Carson CA electrical
+  (both older banked signals) not re-attempted this run, still open.
+- (website track, run 2026-08-24) 3 hits, mix of a banked-candidate closeout and fresh-market
+  follow-ups: AP Plumbing Co. (Del Rio TX, plumbing, family-owned since 1976/Pineda family — this
+  closes out the "phone-only Facebook presence, not yet individually checked" banked note from
+  2026-08-23 #2 — confirmed genuine no-website gap, Facebook + directories only, MEDIUM collision
+  risk against unrelated "AP Plumbing" businesses elsewhere, none sharing this phone/address).
+  Olympus Roofing, LLC (Elizabethtown KY, roofing, owner Justin Renfro per LinkedIn medium
+  confidence, Facebook/Yelp/BBB/Bizapedia only — HIGH collision risk, real website-having "Olympus
+  Roofing" companies exist in Salt Lake City UT, Central Florida, and Charlotte NC, none sharing
+  this address/phone). BNB Painting & Construction (Klamath Falls OR, painting, veteran-owned per
+  Yelp but no individual owner name found, Facebook + Yelp only — HIGH collision risk, real/
+  directory-listed "BNB Painting" entities exist in Portland OR, Lawrenceville GA, and Dunnellon FL
+  — the Dunnellon one is BBB-flagged out-of-business, confirmed a different company). **Location
+  correction for the record:** the standing banked note "Middlesboro KY roofing has 7 untried
+  names" was WRONG — all 7 (Vessels Roofing, Bourbon Country Exteriors, Hyper Roofing KY, Borders
+  Storm Restoration, Olympus Roofing LLC, D&C Premier Exteriors LLC, YETI Commercial Roofing) are
+  actually based in Elizabethtown KY (one, YETI, ambiguous between Elizabethtown/Campbellsville
+  KY), not Middlesboro. 6 of 7 have real owned-domain sites (misses); Olympus was the one hit,
+  queued above. YETI Commercial Roofing has only a free Wix subdomain page
+  (jbwatsonhenderson.wixsite.com/yeticommercialroof-1— would be a valid gap) but was left banked,
+  not queued — city attribution is inconsistent (BBB says Campbellsville KY pop. ~11k, too small
+  for the usual target range; Facebook says Elizabethtown KY) and no owner name surfaced; worth a
+  follow-up to resolve the city before queuing. Klamath Falls OR: painting and plumbing verticals
+  now effectively exhausted (Precision Painting, Powley Plumbing, Butler Sewer & Drain all real-
+  site misses this run) — Klamath Water Systems still untried. Fresh markets still worth a future
+  pass: Del Norte County/Crescent City CA (other verticals), Susanville CA (other verticals),
+  Laurel MS (other verticals). Walker Landscapes (Sheridan WY) still not queued — owner name still
+  unconfirmed, remains banked only.
