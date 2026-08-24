@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -20,3 +20,4 @@ quote_stage: none
   steady 4.7/67-review figures. Email is a real discovered address. See
   outreach.md.
 - 2026-08-18 (Kevin, via KIREEK): sent to ramgb1023@gmail.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
