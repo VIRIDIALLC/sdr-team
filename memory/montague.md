@@ -1822,3 +1822,120 @@
   - Backlog after this run: no untouched `stage: found` prospects remain —
     every one in the repo now carries a documented hold/dead-end or open
     question from some prior run.
+
+- (2026-08-24 run) Clean start — `git fetch origin` first per CLAUDE.md,
+  local `master` had diverged from `origin/master` under the usual
+  shallow-clone shape (KIREEK's automated commits move fast); `git reset
+  --hard origin/master` after confirming no unpushed work of mine was on
+  it. Before the main batch, found and fixed a small seam gap: three
+  prospects (ed-pat-electric-klamath-falls-or, jb-plumbing-ottumwa-ia,
+  pinnacle-painting-middlesboro-ky) had complete `enrichment.md` files
+  documenting an email-gate hold from a prior run, but the corresponding
+  `status.md` Log line was never written — status.md is supposed to be
+  the source of truth (it's what CALL-LIST.md and KIREEK's readers key
+  off of), so a missing log line there is exactly the kind of seam gap
+  Sue's persona doc warns about. Backfilled all three log lines to match
+  the enrichment.md that already existed — no new research, just closing
+  the record. Committed and pushed that fix separately before starting
+  the real batch.
+
+  Scanned `prospects/*/status.md` for `stage: found` — 63 files matched,
+  but the overwhelming majority already carry a documented email-gate
+  hold/dead-end from a prior run (checked via presence of `enrichment.md`
+  + a `(Montague)` log line, not just the stage field — the raw grep
+  count is misleading on its own, worth remembering as a check method for
+  future runs). Only 9 were genuinely untouched (no enrichment.md, no
+  Montague log line at all): affordable-plumbing-drain-klamath-falls-or,
+  all-around-electrical-services-avondale-az, ap-plumbing-co-del-rio-tx,
+  bnb-painting-construction-klamath-falls-or, cabinet-refinishing-
+  specialist-burbank-ca, gallantry-electric-tolleson-az, hendrix-painting-
+  long-beach-ca, hutchinson-plumbing-del-rio-tx,
+  olympus-roofing-elizabethtown-ky — all from Rupika's 2026-08-23/24
+  batches, no older backlog exists. Picked up all 9 (on the high end of a
+  normal batch, but it's the entire fresh backlog, not a multi-day pile
+  like 2026-08-15/16). Used 9 parallel research subagents (pure-research,
+  no file writes), then wrote all enrichment.md/status.md updates myself
+  for consistency.
+
+  Result: 4 of 9 advanced to `enriched` (All Around Electrical Services,
+  Cabinet Refinishing Specialist, Gallantry Electric, Hendrix Painting —
+  all package track), 5 of 9 held at `found` on the email gate
+  (Affordable Plumbing and Drain Cleaning, AP Plumbing Co., BNB Painting &
+  Construction, Hutchinson Plumbing, Olympus Roofing — all website
+  track).
+
+  - **A clean pattern worth naming: every website-track prospect in this
+    batch failed the email gate, every package-track prospect cleared
+    it — 5-for-5 and 4-for-4.** Facebook-only businesses with no owned
+    domain have no pattern to guess an email from; package-track
+    businesses already have a live site to guess an `info@` pattern
+    against if nothing surfaces directly. Not a new insight (flagged
+    before, e.g. 2026-08-05), but this run is an unusually clean, complete
+    illustration of it.
+  - **Olympus Roofing — a real wrong-owner-name catch, not just an
+    email-gate hold.** Rupika's brief.md named "Justin Renfro" as the
+    likely owner based on a LinkedIn hit. Independent verification this
+    run found that's a name collision: the real Justin Renfro owns a
+    completely different Olympus Roofing and Contracting in Warrensburg,
+    MO (incorporated 2017, co-owned with Samantha Renfro, its own BBB/
+    Nextdoor profiles) — nothing ties him to the Elizabethtown, KY
+    business. This is more serious than the usual ambiguous-name case: an
+    outbound call using this name wouldn't just sound slightly off, it
+    would ask for a specific wrong person by name at a business he has no
+    connection to. Worth naming as its own category alongside "no name
+    found" and "two ambiguous candidates": a *wrong* name found with
+    apparent confidence — worse than either, and only catchable by
+    independently re-verifying a name against the business's own
+    identifiers (address/phone), not just re-searching the name in
+    isolation.
+  - **Gallantry Electric — rebrand confirmed, and a fabricated phone
+    number caught separately.** Confirmed Rupika's rebrand flag (Gerry
+    Electric LLC → Gallantry Electric, same phone/address across both
+    names) as genuine, high confidence — safe for Elly to use the current
+    name. Separately, a search AI-summary asserted a phone number ((602)
+    614-0221) that turned out to belong to unrelated companies literally
+    named "Gallant Electric" in four different states — a
+    same-sounding-name confusion, not the usual fabricated-from-nothing
+    pattern (Cold Fusion Mechanical, etc.) but a real new failure mode
+    worth naming: the search tool can also confuse two *similarly-named
+    but genuinely different* businesses, not just invent details from
+    nothing. Discarded, did not use.
+  - **Hendrix Painting — a two-owner ambiguity resolved by reporting
+    both, not guessing.** Co-owned by brothers Bobby Ray Hendrix and
+    David Joe Hendrix; one source (Buzzfile) tags Bobby as "Principal,"
+    another (an independently address/phone-matched directory listing)
+    names David as "Contact Person." No clean winner — flagged both
+    rather than picking one, same convention as AMS Landscaping/Krasiva
+    Windows/Desert Sage Landscaping earlier. Email came from that same
+    directory listing, not the company's own site (egress-blocked) —
+    labeled directory-sourced/moderate-confidence rather than
+    first-party-confirmed, a new middle tier worth naming alongside
+    "confirmed directly," "guessed pattern on a live domain," and "not
+    found": a third-party directory that independently corroborates on
+    two hard identifiers (address + phone) is stronger than a guess but
+    short of a page read.
+  - **AP Plumbing Co. — founder deceased, no current owner name usable.**
+    The founder (Antonio Pineda, per a 2021 obituary, ~42 years in
+    business) died in 2021; the business is still operating in 2026
+    presumably under a family successor, but nothing names who. Left the
+    name field blank rather than using the deceased founder's name —
+    worth naming as its own case distinct from "no name found" and "wrong
+    name found": a real name exists and is well-sourced, but it belongs
+    to someone who can no longer be the person Kevin asks for on a call.
+  - **Cabinet Refinishing Specialist — the "locals recently requested a
+    quote" figure dropped entirely, a clean instance of the third
+    bucket.** Four independent searches returned four different numbers,
+    two of which (259, 239) came only from the search tool's own AI
+    summary layer, never a literal snippet, and never reproduced twice.
+    Per the 2026-08-15 CVA Exterminators "third bucket" convention
+    (actively contradictory, not just unconfirmed), dropped the number
+    rather than using it even as a question — the response-time hour
+    figure alone (2-3hrs) stayed usable.
+  - Every one of this run's WebFetch attempts on target-business/
+    directory domains was blocked by the egress proxy again (all 9
+    prospects) — same recurring pattern logged since 2026-08-02, all
+    findings this run are search-snippet-sourced, flagged per-business in
+    each enrichment.md.
+  - Backlog after this run: no untouched `stage: found` prospects remain
+    — every one in the repo now carries a documented hold/dead-end or
+    open question from some prior run.
