@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -22,3 +22,4 @@ quote_stage: none
   draft in this same batch. Dropped angle recorded in outreach.md.
   Advanced to `drafted`.
 - 2026-08-19 (Kevin, via KIREEK): sent to info@reliantpestcontrol.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
