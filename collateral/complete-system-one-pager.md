@@ -64,7 +64,8 @@ Former Yelp advertising insiders who managed **$[2M+]/month** in home-service
 ad spend before building this system. We've seen exactly where the leads leak.
 
 **Next step:** a free **Missed-Call Audit** — 15 minutes, we show you in
-dollars what's slipping through right now. **[booking link] · [phone]**
+dollars what's slipping through right now.
+**api.viridiaanalytics.com/widget/booking/hv5pIfS27zbJCMMGNnkJ · 623-300-0708**
 
 ---
 *Results shown are real past-client outcomes, not a promise of identical
