@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   verified service lines plus the underlying-problem question. Email is a
   guess on a live domain. See outreach.md.
 - 2026-08-18 (Kevin, via KIREEK): sent to info@primapaintingllc.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
