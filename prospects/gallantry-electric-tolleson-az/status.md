@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,9 @@ quote_stage: none
 ## Links
 - yelp: https://www.yelp.com/biz/gallantry-electric-tolleson
 - maps: https://www.google.com/maps/search/Gallantry+Electric+Tolleson+AZ
+- 2026-08-24 (Elly): drafted. Package track. Hook is the half-finished rename
+  Montague confirmed (Facebook still at GerryElectricLLC, Instagram still
+  gerryelectricllc, Yelp on the new name) — every fact checkable by him in ten
+  seconds. Dropped the standard response-time opener purely to avoid colliding
+  with All Around Electrical, same trade and metro, drafted today; the 2-3hr
+  figure is demoted to a supporting line. Advanced to `drafted`.

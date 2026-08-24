@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,10 @@ quote_stage: none
   state-verified — flagged as a caution, not a gate. Response-time
   (~3hr) unconfirmed this run but not contradicted — carried forward as
   a question. See enrichment.md.
+- 2026-08-24 (Elly): drafted. Package track. Built on the contrast between
+  their advertised 24/7 emergency service and the ~3hr Yelp quote-request
+  figure (two lanes: the caller who can't shop vs. the planned job that gets
+  shopped), so the draft survives the unconfirmed response figure being stale.
+  Dropped the lifetime-warranty economics angle. Deliberately built apart from
+  Gallantry Electric, same trade six miles away, drafted today. Email is a
+  GUESSED info@ pattern. Advanced to `drafted`.

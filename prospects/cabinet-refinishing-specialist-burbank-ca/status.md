@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -18,3 +18,9 @@ quote_stage: none
   Response-time carried forward as a question; the quote-count figure
   dropped as actively contradictory across 4 searches. CSLB license
   unverified, flagged as a caution. See enrichment.md.
+- 2026-08-24 (Elly): drafted. Package track. Opener sets his own reviews
+  ("quick to answer") against the ~2-3hr first-touch figure, so the question
+  opens on a compliment. Consequence line is trade-specific: a slow reply loses
+  the job to a cabinet showroom, not to another refinisher. Dropped the Impact
+  Pro Refinishing name-mismatch angle (unresolved premise, and it duplicates
+  Gallantry's mechanism this batch). Advanced to `drafted`.

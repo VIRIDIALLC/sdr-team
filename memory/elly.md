@@ -1337,3 +1337,150 @@ no feedback yet on those specifically)
 
   **End-of-run:** committed and pushed to `master` per CLAUDE.md's
   landing-work rule.
+
+- **2026-08-24 (this run) — 4 drafted, the whole enriched queue, and the
+  hardest within-batch collision setup I have had.** `git fetch origin` first
+  per CLAUDE.md: origin/master had moved to d78db0a (KIREEK call-loop and
+  fleet-state commits on top of Montague's 2026-08-24 pass, "9 stage:found
+  prospects enriched", plus two Rupika find batches). Container started
+  detached — same stale-ref pattern logged every run since 08-13, fixed with
+  `git checkout -B claude/elly-2026-08-24 origin/master`. `_fleet-state.md`
+  was fresh (17:07 UTC, run started ~17:1x), so ground truth was live, unlike
+  08-23 when it was 19 hours stale.
+
+  Scanned `prospects/*/status.md`: 5 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold
+  from 2026-08-03, unchanged, skipped again) plus the 4 real ones, all
+  drafted: **all-around-electrical-services-avondale-az**,
+  **gallantry-electric-tolleson-az**,
+  **cabinet-refinishing-specialist-burbank-ca**,
+  **hendrix-painting-long-beach-ca**. All package track. No defensive-check
+  skips: one guessed `info@`, three found-not-guessed (site content, Facebook
+  attribution, directory).
+
+  **TWO collision pairs in one batch, which is new and shaped every decision
+  this run.** All four package track, same day, same inbox, and they pair up
+  twice: two electricians about six miles apart in west Phoenix (Avondale and
+  Tolleson) and two painting-adjacent shops in LA metro (Burbank cabinet
+  refinishing, Long Beach painting). Worse, Montague's suggested CALL CARD
+  hook for BOTH electricians was the standard response-time question. Left
+  alone this run produces two pairs of near-identical emails. **The 08-19
+  within-batch rule has always been about one pair; two pairs at once means
+  the collision check has to happen before you pick any angle, not after you
+  draft.** Wrote all four under that constraint deliberately.
+
+  **Judgment calls worth flagging:**
+  - **All Around Electrical — used the advertised 24/7 emergency service as
+    the other half of a contrast, and this is a pattern worth keeping.** They
+    promote 24/7 emergency service while Yelp shows ~3hrs on a quote request.
+    The forced choice is about *lanes* rather than about being busy (is the
+    Yelp box a once-a-day check, or is a quote request just not the same
+    animal as a dead panel at midnight), and the payoff line is that he is
+    quickest in the lane where nobody is comparing him and slowest in the one
+    where they are. **Best property: the draft survives its response-time
+    figure being wrong**, because the load-bearing fact is his own advertised
+    promise. Generalizable: when a prospect advertises 24/7 or emergency
+    service, that promise plus any slower channel is a stronger and more
+    durable contrast than the bare metric. It is a cousin of the Roofing
+    Systems posted-hours draft (08-23) so I deliberately built it on two
+    *channels* rather than on hours, to keep them apart.
+  - **Gallantry Electric — the rename is the hook, and the response-time
+    figure got demoted on purpose.** Montague confirmed a genuine rebrand
+    (Gerry Electric LLC → Gallantry Electric) via matching phone AND address
+    under both names across Yelp, Nextdoor, homeyou and Instagram. Facebook is
+    still at /GerryElectricLLC/ and Instagram is still gerryelectricllc while
+    Yelp carries the new name. Same quality I keep coming back to: **every
+    fact in it is checkable by the recipient on his own phone in ten seconds**
+    (AB Plumbing 08-23, Access Garage Doors 08-21). The 2-3hr figure still
+    appears but in the third paragraph as a compliment ("a perfectly good
+    reply time") supporting the argument, not carrying it. **New note: when
+    two prospects in a batch both deserve the standard opener, the one with a
+    fact nobody else in the pipeline has should give it up, not the other
+    way round.**
+  - **Cabinet Refinishing — opened on a compliment that is literally in his
+    reviews, and I think this is the best opener shape I have found in a
+    while.** Rupika spotted it in the brief and Montague quoted two verbatim
+    review snippets confirming it: customers praise him as responsive and
+    quick to answer *once engaged*, while the Yelp first-touch figure is 2-3
+    hours. So the pain is not that he is unresponsive, it is specifically the
+    first two hours before a stranger has reached him at all. That is
+    complimentary rather than corrective, which is exactly what you want when
+    raising the one thing his reviews say he is good at. **Generalizable: when
+    reviews praise responsiveness and the first-touch metric is slow, the gap
+    between them IS the opener, and it is a friendlier one than the standard
+    forced choice.**
+  - **Cabinet Refinishing's consequence line inverts the usual speed-to-lead
+    argument and it is the thing I would defend hardest this run.** In most
+    verticals a slow reply loses the job to a faster competitor. In cabinet
+    refinishing the real alternative is *replacement*, so an unanswered
+    homeowner walks into a cabinet showroom and the job leaves the category
+    entirely rather than going to a competitor. **Worth generalizing: ask what
+    the prospect's real alternative is, not who their competitor is. In some
+    trades the lost job doesn't move sideways, it disappears.** Also had to
+    avoid Resolve Landscape's "asks three companies the same afternoon"
+    construction (08-23), which this replaces cleanly.
+  - **Hendrix Painting — reframed eight hours as a full working day, and the
+    argument underneath is calendar position, not speed.** A paint quote is
+    almost never a price over email, it is a walkthrough. So the first reply
+    is a calendar slot, and whoever books it has the homeowner's Saturday
+    morning and a face-to-face before anyone else has spoken to them. **New
+    mechanism, not used before: speed as calendar position rather than speed
+    for its own sake.** Applies to any trade where the quote requires a site
+    visit (painting, landscaping redesign, roofing replacement), so it is
+    reusable but should now be watched for the same over-winning problem the
+    review-count angle had.
+  - **Hendrix greeting: plain "Hi," not the team greeting.** Two unresolved
+    owner candidates (brothers Bobby Ray and David Joe, Yelp's own bio says
+    "owned by Bobby and David H." with no precedence), which is the
+    AMS/Krasiva/Desert Sage case, not the no-name-found case. The 08-13
+    distinction held up well here and is worth keeping crisp: **nothing found
+    → team greeting; multiple live candidates → plain "Hi,".**
+
+  **Overrode Montague's CALL CARD hook on two of four** (both electricians),
+  both times on batch collision rather than on any defect in her cards. Her
+  Cabinet and Hendrix cards were correct and I used their substance. The card
+  is input, not instruction — well established by now.
+
+  **Response-time column this run: no fabrications, which is an improvement.**
+  All Around ~3hr inconclusive-but-not-contradicted; Gallantry 2-3hr drifting
+  but direction-consistent; Cabinet drifted 2hr→3hr (normal band) with the
+  quote-count figure correctly dropped as actively contradictory (four
+  searches, four numbers, AI layer producing 259 then 239); Hendrix
+  unconfirmed with no stable snippet, originals carried forward rather than
+  swapped. Nothing invented, unlike Overson on 08-22. **The 08-23 read holds:
+  unverifiable-by-default with roughly a one-in-three clean rate, not
+  uniformly broken.** Escalation from 08-21/08-22 still stands. Wrote three of
+  the four drafts so they survive their figure being wrong, which is the real
+  mitigation available to me while the capture method is unfixed.
+
+  **Bookkeeping gap found and flagged, not fixed:** hendrix-painting-long-beach-ca
+  had NO Montague log line in `status.md` despite a complete `enrichment.md`
+  and an already-advanced stage. Same class as the ed-pat / jb-plumbing /
+  pinnacle-painting backfill she did on 08-24. Flagged for Sue in the
+  approvals file and in my own log line; did not write a line in Montague's
+  voice.
+
+  Track breakdown: 4 package. Standard post-write sweep on body text only (em
+  dash, en dash, bracket placeholder, retired package name, third-person
+  Kevin/Viridia, pricing, Tier 3 stats, stray signature) — all four clean. The
+  single pricing hit was the false positive "the first reply isn't a price" in
+  the Hendrix body. Four distinct subject lines, four distinct closers, four
+  distinct opening sentences, four disjoint mechanisms.
+
+  **Doctrine §7 SDR gate item 4** (a proof asset to link, kit #2) is still
+  missing and was flagged again in the approvals file rather than worked
+  around. These four-line first touches cite nothing, per Kevin's 08-13 ruling
+  on what a first touch is.
+
+  **Pricing-in-email question from 08-21 is STILL unanswered** (five runs now).
+  Kept contained to the two follow-ups that already have it.
+
+  **Next run:** check `stage: enriched` first as always. Upstream backlog is
+  now **59 at `stage: found`** (54 on 08-23, 51 on 08-22, 47 on 08-21, 40 on
+  08-20) — still growing faster than the email gate clears it. The 11
+  held-lane second touches in
+  `approvals/2026-08-21-followup-drafts-held-lane.md` remain the realistic
+  place to spend surplus capacity.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.
