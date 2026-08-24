@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -18,3 +18,4 @@ quote_stage: none
 - 2026-08-17 (Elly): drafted outreach, response-time question hook.
   Advanced to `drafted`. See outreach.md.
 - 2026-08-18 (Kevin, via KIREEK): sent to info@allprofessionallandscape.com.
+- 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
