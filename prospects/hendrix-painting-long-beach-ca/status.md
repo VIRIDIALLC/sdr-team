@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -19,3 +19,4 @@ quote_stage: none
   Dropped the BuildZoom-score angle. NOTE: this status.md had no Montague log
   line despite complete enrichment.md — flagged for Sue, not backfilled in her
   voice. Advanced to `drafted`.
+- 2026-08-24 (Kevin, via KIREEK): sent to hendrixpainting87@gmail.com.
