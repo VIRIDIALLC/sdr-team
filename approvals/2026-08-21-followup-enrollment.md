@@ -1,3 +1,7 @@
+status: done
+
+> **CLOSED.** Resolved 2026-08-24: the prospects staged here were enrolled in the GHL follow-up sequence (20 in that run). Kept as the record of what was staged.
+
 # Follow-up sequence — 2 prospect(s) ready to enroll
 
 Sent 2+ days ago, real email on file, no reply recorded,
