@@ -1,6 +1,15 @@
 # For Kevin's review — the selling kit for your cold calls
 
-status: open
+status: approved
+
+> **APPROVED — Kevin, 2026-08-24, with corrections applied same day:** 7-day
+> notice confirmed; 5/month cap kept (deliberate urgency play — honor it if
+> called); the $2M+ management claim REMOVED (it was Nate's Yelp-era number);
+> guarantee re-scoped to LEADS RESPONDED TO only, clock starting at
+> AI-receptionist go-live. Lawyer review still required before the guarantee
+> appears anywhere public — fine to say on calls. Elly: start linking the
+> collateral in drafts. The [KEVIN] owner-quote slots in the case-study
+> one-sheets remain his to fill or delete.
 
 **From:** VEGA/Claude Code session · **Date:** 2026-08-19
 

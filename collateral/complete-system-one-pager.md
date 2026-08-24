@@ -3,11 +3,19 @@
 status: draft-awaiting-kevin
 Created 2026-08-19. Source of truth for claims: `_acquisition-doctrine.md` §5
 (Tier 1 only), `ads-team/campaigns/_offer-never-miss-a-job.md` (offer/guarantee),
-proof points verified against the live site. Numbers in [brackets] are Kevin's
-to confirm — same brackets as the offer doc. Once approved, this is the
-leave-behind for every cold call and the attachment/link for every SDR email.
+proof points verified against the live site. Brackets confirmed by Kevin
+2026-08-24 (7-day notice; the 5/month cap is a deliberate urgency play — he
+can onboard more, but honor the number if a prospect calls it). Once approved,
+this is the leave-behind for every cold call and the attachment/link for every
+SDR email.
 ⚠️ The guarantee is a real contractual promise — lawyer review before this
 goes anywhere public (offer doc carries the same flag).
+⚠️ Guarantee scope (Kevin, 2026-08-24): it covers LEADS RESPONDED TO only —
+never revenue, appointment counts, or lead volume — and the 14-day clock
+starts at AI-receptionist GO-LIVE (auto-responder + phone AI live), not at
+signup. Ops note: A2P registration (~3 days typically) gates missed-call
+TEXT-back only; phone AI reception doesn't require it — sequence go-live
+accordingly.
 
 ---
 
@@ -48,20 +56,22 @@ everyone else's voicemail.
 
 ### Pricing — one number, on the page, like it should be
 - **$1,197/month. That's it — no setup fee, no onboarding charge, nothing
-  extra.** Month-to-month, cancel anytime with [7] days' notice.
+  extra.** Month-to-month, cancel anytime with 7 days' notice.
 - Messaging/AI usage billed as a disclosed pass-through line item.
-- **Only [5] new businesses onboarded per month** so delivery stays tight.
+- **Only 5 new businesses onboarded per month** so delivery stays tight.
 
 ### The guarantee
-**We respond to every missed call within 5 minutes for your first 14 days —
-or your first month is free. 100% of every dollar you've paid us back. There
-is no non-refundable anything.**
-(Measured by system logs; full terms on the site. We guarantee the response —
-the thing we control. Nobody can honestly guarantee your revenue.)
+**Once your AI receptionist is live, every missed call and new lead gets a
+response within 5 minutes — for your first 14 live days. If we miss that,
+your first month is free: 100% of every dollar you've paid us back. There is
+no non-refundable anything.**
+(A response guarantee, measured by system logs — full terms on the site. We
+guarantee responses, the thing we control. We do not guarantee revenue,
+appointment counts, or lead volume — nobody honestly can.)
 
 ### Who runs this
-Former Yelp advertising insiders who managed **$[2M+]/month** in home-service
-ad spend before building this system. We've seen exactly where the leads leak.
+Built by former Yelp advertising insiders who managed home-service ad spend
+at scale. We've seen exactly where the leads leak.
 
 **Next step:** a free **Missed-Call Audit** — 15 minutes, we show you in
 dollars what's slipping through right now.
