@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-25 07:46 UTC (2026-08-25 00:46 Phoenix)
+Generated: 2026-08-25 16:00 UTC (2026-08-25 09:00 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -98,7 +98,7 @@ Generated: 2026-08-25 07:46 UTC (2026-08-25 00:46 Phoenix)
 ## Systems — live-probed, not recalled
 
 - **GHL API:** UP (live probe returned 200)
-- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-25 07:46 UTC)
+- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-25 15:59 UTC)
 - **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 0m ago)
 - **KIREEK repo:** 18 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
@@ -110,7 +110,7 @@ Generated: 2026-08-25 07:46 UTC (2026-08-25 00:46 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 10 hours ago — "Kevin approved via KIREEK: Hendrix Painting, Inc. (Long Beach, CA — serves Signal Hill/Lon" (ab8535fd8)
+- last commit: 18 hours ago — "Kevin approved via KIREEK: Hendrix Painting, Inc. (Long Beach, CA — serves Signal Hill/Lon" (ab8535fd8)
 - pipeline (prospects, 163 items): found 58 · enriched 1 · approved 2 · sent 94 · closed 6 · dismissed 2 — ~62% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-08-24 on `all-around-electrical-services-avondale-az` — "drafted. Package track. Built on the contrast between their advertised 24/7 emergency service and the ~3hr Yel"
@@ -123,18 +123,18 @@ Generated: 2026-08-25 07:46 UTC (2026-08-25 00:46 Phoenix)
 - waiting on Kevin (6): 2026-08-19: For Kevin's review — the selling kit for your cold calls; 2026-08-21: For Kevin's review — 6 first-touch drafts (2026-08-21, second run); 2026-08-21: Second-touch drafts — 10 prospects in the `followup: held` lane; 2026-08-22: For Kevin's review — 2 first-touch drafts (2026-08-22); 2026-08-23: For Kevin's review — 3 first-touch drafts (2026-08-23)
 
 ### Ads Team
-- last commit: 21 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (7492ca144)
+- last commit: 24 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (fb7f45561)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
   - **Doc** (Copywriter): 2026-08-14 on `viridia-complete-system` — "Kevin's features-vs-outcomes test on the 4 live ads (real numbers in `api-funnel-analysis-2026-08-13.md` / `_p" · 1 open handoff(s) in their inbox
   - **Nova** (Landing Page Build): 2026-08-09 on `viridia-complete-system` — "built the dedicated landing page (see `landing-page-notes.md`) — hero uses the ad's exact hook ("Never miss a " · 1 open handoff(s) in their inbox
   - **Wraith** (Meta Media Buyer): 2026-08-19 on `viridia-complete-system` — "routine monitoring run. `_performance-latest.md` regenerated today (2026-08-19 14:12 UTC — same-day, fresh). L"
-- agent work in the last 24h: "Doc 2026-08-24: routine run, ads channel retired, no copy work"; "Wraith 2026-08-24: routine run, ads channel still retired, no action"
+- agent work in the last 24h: "Doc 2026-08-24: routine run, ads channel retired, no copy work"
 - waiting on Kevin: nothing
 
 ### Customer Success
-- last commit: 10 hours ago — "Card-on-file VERIFY resolved: prior advertisers usually still have payment methods on file" (c3f918738)
+- last commit: 18 hours ago — "Card-on-file VERIFY resolved: prior advertisers usually still have payment methods on file" (c3f918738)
 - pipeline (onboarding, 1 items): review 1 — ~67% through the pipeline
 - where each agent is (from their own logged task work):
   - **Cora** (CSR): 2026-08-18 on `client-onboarding-portal` — "Kevin confirmed the direction from the 8/14 spec live in chat and closed two of the three open `[VERIFY]`s: on" · 1 open handoff(s) in their inbox
@@ -143,7 +143,7 @@ Generated: 2026-08-25 07:46 UTC (2026-08-25 00:46 Phoenix)
 - waiting on Kevin (3): 2026-08-14: Post-purchase onboarding sequence — spec + gap list; 2026-08-24: Billing-transition client comms + Tyler "keep the system" one-pager; 2026-08-24: Tyler meeting — collect + keep-the-system talk track (2026-08-24)
 
 ### Finance Team
-- last commit: 9 hours ago — "Bank-feed categorization review: Desert Financial CSV export from Kevin" (faee4e16a)
+- last commit: 17 hours ago — "Bank-feed categorization review: Desert Financial CSV export from Kevin" (faee4e16a)
 - pipeline (invoices, 9 items): draft 4 · draft_amount_disputed 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~0% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-08-24 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 95 days overdue, 91+ bucket. Discrepancy vs. GHL's $197 sti" · 1 open handoff(s) in their inbox
@@ -152,7 +152,7 @@ Generated: 2026-08-25 07:46 UTC (2026-08-25 00:46 Phoenix)
 - waiting on Kevin (9): 2026-08-17: A/R reminders — status check, 2026-08-17; 2026-08-24: A/R aging review — 2026-08-24; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15; Payout reconciliation summary — 2026-08-15
 
 ### Social Team
-- last commit: 14 hours ago — "Resolve orphaned-master handoff: shallow-clone artifact, no force-push, all 8 repos verifi" (70a2804ba)
+- last commit: 22 hours ago — "Resolve orphaned-master handoff: shallow-clone artifact, no force-push, all 8 repos verifi" (70a2804ba)
 - pipeline (posts, 26 items): scheduled 11 · posted 2 · superseded 13 — ~72% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-08-23 on `ai-front-door-45-percent` — "**Media delivered.** Two-box stat comparison, "6%" (grey, last year) against "45%" (green, this year), with "8" · 1 open handoff(s) in their inbox
@@ -161,7 +161,7 @@ Generated: 2026-08-25 07:46 UTC (2026-08-25 00:46 Phoenix)
 - waiting on Kevin (1): 2026-08-21: Comment reply kit — Viridia's own channels
 
 ### SEO Team
-- last commit: 15 hours ago — "Merge origin/master into claude/bold-mayer-uc22ad" (0596c9f6e)
+- last commit: 24 hours ago — "Merge origin/master into claude/bold-mayer-uc22ad" (0596c9f6e)
 - pipeline (audits, 3 items): recommendations 2 · tracking 1 — ~78% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elenor** (Backlink & Citation Outreach): no logged task activity yet
@@ -170,7 +170,7 @@ Generated: 2026-08-25 07:46 UTC (2026-08-25 00:46 Phoenix)
 - waiting on Kevin: nothing
 
 ### Web Design Team
-- last commit: 5 days ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (207fbbc0c)
+- last commit: 6 days ago — "Doctrine kit table corrected: case studies are PUBLISHED (verified live), one-pager now DR" (207fbbc0c)
 - pipeline (prospects, 1 items): researched 1
 - where each agent is (from their own logged task work):
   - **Nova** (Magic Patterns Build): 2026-08-12 on `tpg-home-improvements-az` — "Dispatch referenced a pre-existing `prospects/tpg-home-improvements-az/brief.md` on master — it did not exist " · 1 open handoff(s) in their inbox
@@ -179,7 +179,7 @@ Generated: 2026-08-25 07:46 UTC (2026-08-25 00:46 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-25 07:46 UTC (auto-generated by VEGA's backend):
+As of 2026-08-25 16:00 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 127 days (18 weeks) → ~1 close per 3 week(s).
