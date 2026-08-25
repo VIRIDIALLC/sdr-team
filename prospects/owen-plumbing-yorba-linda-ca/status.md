@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -7,6 +7,7 @@ quote_stage: none
 ## Links
 - yelp: https://www.yelp.com/biz/owen-plumbing-yorba-linda
 - website: https://www.owenplumbing.net
+- maps: https://www.google.com/maps/search/Owen+Plumbing+22775+E+Savi+Ranch+Pkwy+Unit+B+Yorba+Linda+CA+92887
 
 ## Log
 
@@ -19,3 +20,10 @@ quote_stage: none
   (multiple unrelated "Owen Plumbing" businesses elsewhere pollute the
   lookup) — Montague should pull the CSLB record tied specifically to
   this Yorba Linda/Orange County address before outreach.
+- 2026-08-25 (Montague): owner Scott Owen confirmed (review mention +
+  LinkedIn + CA SOS filing). Email info@owenplumbing.net confirmed via
+  the business's own contact-page snippet. Response-time figure came back
+  actively contradictory (10 min / 3 hrs / 1 day across searches) —
+  dropped rather than used as a question. CSLB license status stayed
+  unresolved (every direct/mirror channel egress-blocked) — flagged for
+  Kevin, not a defined gate. Advanced. See enrichment.md.

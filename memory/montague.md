@@ -1939,3 +1939,68 @@
   - Backlog after this run: no untouched `stage: found` prospects remain
     — every one in the repo now carries a documented hold/dead-end or
     open question from some prior run.
+
+- (2026-08-25 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  session started genuinely HEAD-detached at origin/master's tip (no local
+  `master` branch existed at all in this container), so this was a plain
+  checkout, not the usual stale-shallow-clone divergence pattern. Only 2
+  genuinely untouched `stage: found` prospects existed (checked via
+  presence of `enrichment.md`, not just the raw stage field, per the
+  2026-08-24 lesson on that grep being misleading): Owen Plumbing (Yorba
+  Linda, CA — package) and Total Lawn Care and Landscape (Middlesboro, KY
+  — website), both from today's Rupika top-up batch. A small batch by
+  nature (Rupika's whole batch was 2), well within cap-batch-size — used 2
+  parallel research subagents (pure-research, no file writes), then wrote
+  enrichment.md/status.md myself.
+
+  Result: 1 of 2 advanced to `enriched` (Owen Plumbing), 1 held at `found`
+  on the email gate (Total Lawn Care and Landscape).
+
+  - **Owen Plumbing:** clean pass on name/email, response-time signal
+    landed in the actively-contradictory third bucket. Owner Scott Owen
+    confirmed via 4 independent sources (Yelp review mention, LinkedIn, CA
+    SOS filing naming Timothy Scott Owen as CEO at this exact address,
+    ZoomInfo). Email info@owenplumbing.net confirmed via a search snippet
+    of the business's own contact page (direct fetch egress-blocked, so
+    snippet-sourced not page-rendered — noted as such). Response-time
+    reconfirmation returned three different numbers (10 min / 3 hrs / 1
+    day) across independent searches — per the CVA Exterminators
+    (2026-08-15) third-bucket convention, dropped the figure entirely
+    rather than using it even as a question. CSLB license status for this
+    specific Yorba Linda entity stayed unresolved (cslb.ca.gov and every
+    aggregator mirror egress-blocked) — flagged for Kevin rather than
+    reporting an AI-summary-sourced license number that looked
+    cross-contaminated with a different, larger same-named business (same
+    pollution problem Rupika's brief already named). Joins Boldt HVAC,
+    Sierra Vista Roofing, Roofing Systems Incorporated as an unresolved
+    license-status flag — still worth Kevin deciding whether this needs to
+    become a real gate given how often it's coming up.
+  - **Total Lawn Care and Landscape — website-gap gate passed decisively,
+    contact info didn't, for a genuine environment reason not a dead
+    end.** DNS-checked 7 guessed domains, all ENOTFOUND — cleaner
+    confirmation than most website-gap holds get. The one domain that does
+    resolve for this name pattern (totalawncare.com) independently
+    confirmed as an unrelated NY business, not this one. Collision-risk
+    list Rupika started (10 states) grew to 25+ nationally this run,
+    including a same-state one in Paducah, KY (western KY, ~300mi away) —
+    the most dangerous kind of collision, worth flagging prominently since
+    it's easy to conflate on a quick check. A false owner-name lead
+    ("Todd") was caught and correctly rejected — traced back to an
+    unrelated Manlius, NY business of the same name pattern, not this one.
+    No name/phone/email found for the real business — but this run's
+    Facebook and KY-SOS access were both fully egress-blocked (confirmed
+    against a control domain too, not Facebook-specific), which is exactly
+    where an owner name/contact would most likely surface for a
+    Facebook-only business. Held at `found` on the email gate per the
+    persona doc's convention (a real environment gap, not evidence the
+    business is a dead end) — worth a retry if egress/Facebook access
+    improves, flagged as a concrete follow-up target the same way Pest
+    Patrol of the SLV (2026-08-17) was.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across both prospects this run (owenplumbing.net, cslb.ca.gov +
+    mirrors, facebook.com, web.sos.ky.gov, and even unrelated control
+    domains) — same recurring pattern logged since 2026-08-02, all
+    findings this run are search-snippet-sourced except the Total Lawn
+    Care DNS checks, which were direct and decisive despite the general
+    block.
+  - Backlog after this run: no untouched `stage: found` prospects remain.
