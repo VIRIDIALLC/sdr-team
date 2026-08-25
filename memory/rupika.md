@@ -1264,3 +1264,79 @@
   pass: Del Norte County/Crescent City CA (other verticals), Susanville CA (other verticals),
   Laurel MS (other verticals). Walker Landscapes (Sheridan WY) still not queued — owner name still
   unconfirmed, remains banked only.
+
+- (run 2026-08-25) Scheduled run scoped to two tracks (package + website — ads track not
+  requested). `git fetch` + `git status` showed the container started on a detached HEAD; this
+  time `git checkout master` (bare form) landed on a local branch 58/50 commits diverged from
+  origin — the same "own mistake" case flagged 2026-08-23 #2, not the harmless kind. Fixed with
+  `git checkout -B master origin/master`, confirmed local then matched origin's tip exactly,
+  nothing lost. Reconfirming the standing rule: always use the `-B origin/<branch>` form, never a
+  bare `git checkout <branch>`. `_new-leads.md` had nothing dropped in. Ran both tracks as
+  parallel sub-agents again. Thin batch this run (1 hit per track, not the usual 2-3) — see why
+  below; not a sign the technique stopped working, just how this particular run's leads shook out.
+  **Record-keeping correction:** two "banked, not yet queued" candidates from this file
+  (Starkey Heating and Air LLC / Kearney NE, It's Time 2 Paint / Gadsden AL) turned out to
+  ALREADY be queued prospects (2026-08-23 and 2026-08-21 respectively) — this file's banked-list
+  notes hadn't been updated when they were queued. Caught it this run by checking
+  `prospects/*/status.md` directly before writing new files, not by trusting the banked-list text
+  — worth doing that check every run rather than assuming a banked note is still accurate.
+- (package/priority track, run 2026-08-25) 1 hit: Owen Plumbing (Yorba Linda CA, plumbing,
+  est. 1999/27yr owner-operator, 4.9★/~150 reviews, "responds in about 3hrs"/21 quote requests,
+  real Yelp URL + website both captured directly from search results). A second candidate the
+  sub-agent surfaced, Flex Painting Inc. (Rowland Heights CA, via a Cerritos CA search — same
+  cross-suburb resolution pattern as always) re-discovered the EXACT dead end already logged
+  below under "Dead ends to stop searching": CSLB license #1080550 still reads expired
+  (08-31-2025). Confirms the existing dead-end entry rather than adding a new one — worth noting
+  I hadn't included the Dead Ends list in the sub-agent's prompt this run, which is why it
+  re-surfaced and re-researched a already-known dead end; future runs should hand the sub-agent
+  the Dead Ends section, not just the list of already-queued names, to avoid wasting research
+  cycles on this. Six other strong signals were found but not resolved to a confident/clean
+  queue this run — worth a repeat attempt with different phrasing rather than fresh territory:
+  Chino Hills/Yorba Linda painting (9hr response/107 quote requests/5.0★/81 reviews — tentatively
+  Revive & Refinish but that business's own page shows a "Fast Response Time" badge and a
+  conflicting founding date, contradicts the signal), Cerritos pest control (3hr/82 requests —
+  two different generically-templated listings kept conflating, 64 vs 55 reviews), Cerritos/LA
+  roofing "SLR Roofing" (4.9★, review count drifted 266→301-304, but serves "Reseda and
+  surrounding LA areas" broadly — deprioritize, reads like a multi-area advertiser not a tight
+  local shop), Claremont CA electrical (actual home city for a business found via an "Upland"
+  search — response time read both 7hr/297 reviews and 1hr/391 requests/336 reviews across two
+  searches, the 1hr reading doesn't clear the threshold so treat with caution), Westminster
+  electrical "Streamlined Electric" (6hr response, couldn't find an actual Yelp page under that
+  exact name — kept resolving to "Streamlined Solutions Co." instead, retry with exact-name
+  variants), Westminster/Stanton garage door (2hr/311 requests/130 reviews, unresolved — one
+  adjacent result was literally named "Overhead Door," verify it's NOT the Neighborly-network
+  franchise of that name before pursuing), La Habra gardeners/tree service (8hr response, request
+  count drifted 60→76, no name resolved), Paramount landscaping "Paramount Yards" (4.9★/58
+  reviews, 2hr response, active CA license #1119876 — but multiple same-named "Paramount
+  Yards"/"Paramount Landscaping" listings exist across different CA cities, real conflation risk,
+  needs a canonical-listing check first). New disqualifiers/notes from this run: Ancla Plumbing
+  (Sun Lakes AZ search, actual base Phoenix/Tempe) — dropped for an unusually broad multi-city
+  service radius (13 cities), reads as a broad-coverage operator not a tight owner-operator, worth
+  treating "service area spans double-digit cities" as its own scale-adjacent caution going
+  forward. Kramers Plumbing (Placentia CA) dropped for LOW response rate (67%, below the 90-100%
+  golden-signal bar) despite an otherwise fine response-time reading — response RATE below ~90%
+  is a real disqualifier on its own, not just response time. Fresh LA-metro suburbs (Yorba Linda,
+  Brea, La Habra, Placentia, Cerritos, Stanton, Westminster, Garden Grove, Newport Beach, Irvine,
+  Tustin, Chino Hills, Upland/Claremont) were tried this run since most closer-in suburbs are
+  exhausted — still fresh/untried remnants there: Newport Beach (beyond electrical), Irvine
+  (beyond HVAC), Tustin (beyond garage door), San Clemente (beyond plumbing/garage door), Laguna
+  Niguel (beyond pest/garage door), Montclair (beyond garage door), Coolidge/Florence/Eloy AZ
+  (Yelp-specific Google results were extremely sparse for these small AZ towns this run — may
+  need a non-Yelp-specific query angle rather than assuming they're dead).
+- (website track, run 2026-08-25) 1 hit: Total Lawn Care and Landscape (Middlesboro KY,
+  landscaping, Facebook-only across two pages, no owner/phone/email found, HIGH collision risk —
+  "Total Lawn Care" recurs nationally, confirmed unrelated real-site businesses in NY/NC/FL/TN/
+  CA/IN/NJ/MS/IA/CT/MI, a stray NY phone number (315-730-9783) must NOT be attributed to this
+  business). Middlesboro KY (genuinely untried before this run) is now partially exhausted: HVAC
+  cold (Complete Comfort Heating and Air, real site, owner Freddie Middleton), pest control cold
+  (Emery Exterminating, real site since 1981), landscaping had the one hit above plus a cold
+  same-market competitor (Singleton Lawncare & Landscaping, real site) — electrical, plumbing,
+  roofing, restoration remain untried there. One adjacent lead surfaced but not pursued: Kelso
+  Electric LLC, actually based in Benton KY (not Middlesboro, a separate untried small market,
+  pop. ~4,300) — no dedicated website, personal-ish business email
+  (kelsoelectric@hotmail.com) — worth a dedicated look if Benton KY gets added to rotation. Both
+  banked candidates used to round out the batch turned out to already be queued (see
+  record-keeping correction above) rather than net-new — so this run effectively produced only 1
+  genuinely new website-track prospect despite 3 "hits" reported by the sub-agent; worth remembering
+  to check `prospects/*/status.md` for a name match before trusting this file's banked-candidate
+  notes, not just before finalizing a new hit.
