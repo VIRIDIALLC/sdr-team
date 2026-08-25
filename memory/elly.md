@@ -1484,3 +1484,123 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-08-25 (this run) — 1 drafted, the whole enriched queue, and the first
+  run where the selling kit actually gets linked.** `git fetch origin` first per
+  CLAUDE.md: origin/master force-updated to aa4d078 (KIREEK fleet-state refresh
+  on top of Montague's 2026-08-25 pass, "1 advanced / 1 email-gate hold", on top
+  of a Rupika top-up). Container started detached at that commit with a clean
+  diff, the same stale-ref pattern logged every run since 08-13, fixed with
+  `git checkout -B master origin/master`. `_fleet-state.md` was fresh (16:46
+  UTC), so ground truth was live.
+
+  Scanned `prospects/*/status.md`: 2 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold from
+  2026-08-03, unchanged, skipped again) plus the 1 real one, drafted:
+  **owen-plumbing-yorba-linda-ca** (package). Montague held her other one at
+  `found` on the email gate, so 1 was the entire queue, not a batch-size choice.
+  No defensive-check skip: the email is the business's own published address
+  from their contact page, not a guessed pattern.
+
+  **The approvals model changed this run and it is worth internalizing, not
+  just following once.** Kevin's 08-25 ruling after the "19 approvals but really
+  nothing" incident: no more dated first-touch files. There is now exactly ONE
+  rolling file, `approvals/ROLLING-first-touch-drafts.md`, **regenerated from
+  scratch every run to display every prospect currently at `stage: drafted`,
+  not this run's additions.** The point is that a dated file records history and
+  then rots, while the queue Kevin actually needs is live state. `status.md`
+  frontmatter stays the source of truth; the approvals file is a view of it. All
+  four old dated first-touch files were already `status: superseded`, so there
+  was nothing to close. Left `2026-08-21-followup-drafts-held-lane.md` open on
+  purpose: it is not a first-touch file and it tracks 11 genuinely undrafted
+  second touches, so closing it would delete a real to-do.
+
+  **Doctrine §7 SDR gate item 4 is finally CLOSED.** Kit #2 exists and Kevin
+  approved it on 08-24 with the explicit instruction "Elly: start linking the
+  collateral in drafts" (verified against the real approval file before acting,
+  not taken from the fire payload alone). So the body now carries one line
+  linking viridiaanalytics.com/case-studies, placed after the ask so the
+  question still closes the argument. That gate had been flagged missing on
+  every run since 08-19.
+
+  **Held the one-pager back from the email, deliberately, and said so plainly
+  in the approvals file.** Kevin's own approval note keeps the guarantee out of
+  anything public until lawyer review and says it is fine to say on calls. A
+  cold-email attachment to a stranger is not a call. So the one-pager is the
+  phone leave-behind and the attach-after-he-replies asset, and the case-studies
+  page (already published, verified live 08-19) is the only thing in the body.
+  **Standing read for future runs: link the published page, not the repo
+  markdown, and never put the guarantee in a cold email until the lawyer flag
+  clears.** Also recommended a send order for the follow-up proof: Finish Coat
+  before TFP for any prospect whose pain is intake volume, since TFP's story is
+  same-ad-spend and answers a question a non-advertiser did not ask.
+
+  **The draft itself: no response-time number at all, forced not chosen.**
+  Rupika sourced ~3 hrs; Montague's three re-checks returned 10 min, 3 hrs and
+  1 day, no majority. Actively contradictory, so third-bucket, dropped entirely
+  per CVA (08-15) / Prima (08-18) / Freedom Roofing (08-20). Built on the one
+  verified load-bearing fact instead: this is a referral shop (their own /about
+  copy plus multiple reviews from fifteen- and twenty-year customers).
+  **Winning mechanism: the two kinds of customer on the same phone, and the
+  argument is the SILENT loss rather than slowness.** The referral already chose
+  him before dialing, waits, and complains if the patience runs out. The Yelp
+  stranger chose three plumbers at once and never tells him he was there. A
+  twenty-seven-year referral shop has never needed a system for the customer who
+  leaves without saying anything, because until Yelp there wasn't one.
+  **Generalizable: on a long-established referral business with no usable
+  metric, contrast the two customer types rather than reaching for the
+  posted-hours fallback.** That fallback (Casa 08-19, Roofing Systems 08-23) is
+  becoming my default and therefore my biggest template risk.
+
+  **Collision check was the hardest constraint this run even with only one
+  draft, because both nearest neighbours are from yesterday's batch.**
+  All Around Electrical (08-24) is also a two-lanes contrast, so I kept mine on
+  customer *types* rather than service channels and landed the payoff on
+  invisibility rather than competitive comparison. Cabinet Refinishing (08-24)
+  opens on a compliment pulled from reviews, so I deliberately did NOT open on
+  the fifteen-and-twenty-year reviews even though that was the warmest available
+  first line, and put the question first per Kevin's 08-13 canonical shape
+  instead. **Worth keeping: a one-draft run still needs the batch check, run
+  against the last batch that left the inbox rather than against nothing.**
+
+  **Runner-up angle, documented in the outreach.md dropped-angle block: the
+  word-of-mouth ceiling** (twenty-seven years of referrals is a finite aging
+  list; every house in Yorba Linda that changes hands brings somebody who opens
+  Yelp instead of asking a neighbour). Dropped for two independent reasons. It
+  argues about being **found**, and Owen is already found with real demand
+  landing in the quote box, so it solves the wrong problem for this prospect.
+  And its mechanism is a near repeat of the Brezden Pest follow-up (08-21), four
+  days ago, same inbox. **Kept the "is this angle solving THIS prospect's actual
+  bottleneck" test explicit: discovery versus conversion is the fork, and a
+  prospect with visible inbound demand is a conversion problem every time.**
+
+  **Kept the negative review out of the body** (a bad install by a staff plumber
+  plus no follow-up) and flagged it as call material instead. Quoting a
+  complaint at a stranger is the one door that is not face-saving, same call as
+  Reliant Pest (08-19). It also usefully tells Kevin he has employees rather
+  than being a one-truck shop.
+
+  **Bookkeeping gap found and flagged, not fixed: both collateral files still
+  carry `status: draft-awaiting-kevin` in their own headers** even though the
+  approval file records Kevin approving them on 08-24 with corrections applied.
+  Stale header, not a real disagreement, but anyone reading the collateral cold
+  would think it is unapproved. Flagged for Sue; did not edit documents I do not
+  own, same precedent as not writing a log line in Montague's voice.
+
+  Track breakdown: 1 package. Standard post-write sweep on body text only (em
+  dash, en dash, bracket placeholder, retired package name, third-person
+  Kevin/Viridia, pricing, `%`, the 84% stat, the word "guarantee") — all clean.
+  The only domain mention is the case-studies URL, which is intentional.
+
+  **Pricing-in-email question from 08-21 is STILL unanswered** (six runs now).
+
+  **Next run:** check `stage: enriched` first as always, then regenerate
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted` state
+  (write it as explicitly empty if nothing is there — that is the point of it).
+  Upstream backlog is now **60 at `stage: found`** (59 on 08-24, 54 on 08-23,
+  51 on 08-22) and still growing faster than the email gate clears it, so first
+  touches will keep arriving in ones and twos. The 11 held-lane second touches
+  remain the realistic place to spend surplus capacity.
+
+  **End-of-run:** committed and pushed to `master` per CLAUDE.md's landing-work
+  rule.
