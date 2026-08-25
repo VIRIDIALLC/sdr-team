@@ -1,5 +1,7 @@
 # For Kevin's review — 3 first-touch drafts (2026-08-23)
 
+status: superseded
+
 Two `track: package`, one `track: website`, all from Montague's 2026-08-23
 enrichment pass. That was the entire `stage: enriched` queue, not a batch-size
 choice (she held 3 of her 6 at `found` on the email gate).
@@ -120,3 +122,5 @@ reusing it, and nobody has.
 - **Upstream backlog is 54 at `stage: found`** (51 on 08-22, 47 on 08-21, 40
   on 08-20). It is still growing faster than the email gate clears it, so the
   first-touch queue will keep arriving in twos and threes.
+
+> CLOSED SUPERSEDED 2026-08-25 (Claude Code queue cleanup, Kevin present): same - drafts already handled, nothing at stage drafted.

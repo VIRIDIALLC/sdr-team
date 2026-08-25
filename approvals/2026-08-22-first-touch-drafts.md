@@ -1,5 +1,7 @@
 # For Kevin's review — 2 first-touch drafts (2026-08-22)
 
+status: superseded
+
 Both `track: package`, both Mesa AZ, both from Montague's 2026-08-22
 enrichment pass. That was the entire `stage: enriched` queue, not a
 batch-size choice (she held 4 of her 6 at `found` on the email gate).
@@ -102,3 +104,5 @@ cut if the answer is no.
   without re-reading enrichment.
 - **51 prospects at `stage: found`** (up from 47 yesterday). The
   first-touch pipeline is throttled upstream at enrichment, not here.
+
+> CLOSED SUPERSEDED 2026-08-25 (Claude Code queue cleanup, Kevin present): same - drafts already handled, nothing at stage drafted.

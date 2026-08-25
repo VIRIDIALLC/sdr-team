@@ -1,5 +1,7 @@
 # For Kevin's review — 6 first-touch drafts (2026-08-21, second run)
 
+status: superseded
+
 All six sit at `stage: drafted`. Nothing has been sent. Each draft is in
 `prospects/<slug>/outreach.md` with a full Note for Kevin and a documented
 runner-up angle you can swap in.
@@ -84,3 +86,5 @@ in `status.md`** — only Rupika's. The other three have hers. Nothing broke,
 which is the point: a missing log line looks exactly like a prospect nobody
 worked. Flagged rather than patched, since writing her entries for her would
 hide the defect.
+
+> CLOSED SUPERSEDED 2026-08-25 (Claude Code queue cleanup, Kevin present): pipeline truth: 0 prospects at stage drafted - these drafts were sent; doc was a display artifact.

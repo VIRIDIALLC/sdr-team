@@ -1,5 +1,7 @@
 # For Kevin's review — 4 first-touch drafts (2026-08-24)
 
+status: superseded
+
 All four are `track: package`, all sitting at `stage: drafted`. Nothing has
 been sent. Full draft plus reasoning is in each prospect's `outreach.md`.
 
@@ -92,3 +94,5 @@ unconfirmed response-time figure.
   fours.
 - **11 held-lane second touches** remain undrafted, listed by slug in
   `approvals/2026-08-21-followup-drafts-held-lane.md`.
+
+> CLOSED SUPERSEDED 2026-08-25 (Claude Code queue cleanup, Kevin present): same - drafts already handled, nothing at stage drafted.
