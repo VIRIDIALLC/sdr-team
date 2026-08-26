@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -35,3 +35,4 @@ quote_stage: none
   fits a home-run solo shop with no Yelp presence in a town of ~35,000.
   84% BrightLocal stat deliberately omitted (it supports a findability
   argument this draft is not making). Advanced to drafted.
+- 2026-08-26 (Kevin, via KIREEK): sent to av_heatingandcooling@yahoo.com.
