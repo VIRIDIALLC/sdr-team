@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: dismissed
 track: package
 quote_stage: none
 ---
@@ -39,3 +39,4 @@ quote_stage: none
   guarantee back from anything public until lawyer review. Runner-up angle
   (word-of-mouth ceiling) documented and dropped in outreach.md. Advanced to
   drafted. Nothing sent.
+- 2026-08-26 (Kevin, via KIREEK): removed from the review queue.
