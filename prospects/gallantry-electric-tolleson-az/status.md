@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -27,3 +27,4 @@ quote_stage: none
   with All Around Electrical, same trade and metro, drafted today; the 2-3hr
   figure is demoted to a supporting line. Advanced to `drafted`.
 - 2026-08-24 (Kevin, via KIREEK): sent to gallantryelectric@gmail.com.
+- 2026-08-26 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
