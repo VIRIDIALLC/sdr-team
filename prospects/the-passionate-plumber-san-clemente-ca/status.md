@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -42,3 +42,4 @@ quote_stage: none
   Still phrased as a forced-choice question per the 08-13 opener rule. No
   licensing language anywhere in the draft, per Montague's escalated CSLB
   flag. Case-studies page linked after the ask. Advanced to drafted.
+- 2026-08-26 (Kevin, via KIREEK): sent to Info@thepassionateplumber.com.
