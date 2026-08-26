@@ -27,3 +27,15 @@ quote_stage: none
   two. No website found for this business — flagged as a possible
   future website-upsell case per standing convention, not routed to the
   website track.
+- 2026-08-26 (Montague): held at `found` on the email gate. Owner Salomon
+  Garcia reconfirmed via independent review-text mentions. Phone resolved
+  to (949) 973-0937, moderate confidence (majority answer, 6 of 8
+  independent searches). Response-time signal turned ACTIVELY
+  CONTRADICTORY on re-check (7hrs/4hrs/50min and 28/91 locals across
+  separate searches minutes apart) — dropped entirely, not used even as a
+  question; pitching the qualitative pain instead (see CALL CARD). NO
+  EMAIL found anywhere (Facebook, BBB, CSLB, ProView, Nextdoor, Instagram)
+  and no owned domain exists to guess a pattern from. Website reconfirmed
+  absent (informational only, package track). Collision risk confirmed
+  HIGH — a new unrelated same-named business found in Simi Valley CA this
+  run, on top of the six already known. See enrichment.md.

@@ -25,3 +25,16 @@ quote_stage: none
   Tyler/John T. Lightsey, also Facebook-only per an initial pass but not
   fully vetted), was banked but not queued — worth a look next run if
   this one doesn't pan out.
+- 2026-08-26 (Montague): held at `found` on the email gate. Website-gap
+  CONFIRMED. Owner Hunter McLeod confirmed HIGH confidence via MS SOS
+  filing (registered agent) + LinkedIn + a Mississippi Magazine feature —
+  a strong personalization story (the Jefcoat property, "came full
+  circle" in 2021). Address/phone conflict RESOLVED to 1620 Bush Dairy Rd
+  / 601-425-5856, medium confidence (converges across 3 recently-updated
+  sources vs. the competing pair's stale/zero-review listings) — a
+  confirming call is worth it before finalizing a cold-call script. NO
+  EMAIL found anywhere despite a full check (Facebook, BBB, Angi, Manta,
+  Porch, Nextdoor, Yellow Pages, D&B, Chamber, LeadSmart) and no domain
+  exists to guess a pattern from. Elite Landscapes LLC (the banked
+  alternate) confirmed real but has its own website — not a fit for this
+  track, dropped from consideration. See enrichment.md.

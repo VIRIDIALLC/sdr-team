@@ -2004,3 +2004,106 @@
     Care DNS checks, which were direct and decisive despite the general
     block.
   - Backlog after this run: no untouched `stage: found` prospects remain.
+
+- (2026-08-26 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  `git status` showed working tree clean, no stale-refs issue this time.
+  Scanned `prospects/*/status.md` for `stage: found` — found 62 files at
+  that stage, but per the 2026-08-24/08-25 lesson (grep on the raw stage
+  field is misleading), filtered for ones with no `enrichment.md` yet
+  (or, for a few, no Montague log entry at all in `status.md`) to find
+  what's genuinely untouched. Result: 5 genuinely new prospects, all from
+  today's Rupika top-up batch (2 package, 3 website) — AV Heating and
+  Cooling (Del Rio TX, website), Four Seasons Lawn & Landscape (Laurel MS,
+  website), Garcia's Landscaping (San Clemente CA, package), Kelso
+  Electric (Benton KY, website), The Passionate Plumber (San Clemente CA,
+  package). Everything else at `found` (dd-plumbing-repair-medford-or,
+  sonrise-roofing-wichita-falls-tx, superior-roofing-boise-id, and the
+  large 2026-08-05-through-08-25 backlog) already carries a documented
+  email-gate hold or dead-end in its own `status.md` log from a prior run
+  — deliberately left alone, re-running the same searches would burn cost
+  for no new signal. Used 5 parallel research subagents (pure-research, no
+  file writes), then wrote all enrichment.md/status.md updates myself for
+  consistency, following the CALL CARD format exactly.
+
+  Result: 3 of 5 advanced to `enriched` (AV Heating and Cooling, Kelso
+  Electric — both website; The Passionate Plumber — package), 2 held at
+  `found` on the email gate (Four Seasons Lawn & Landscape — website;
+  Garcia's Landscaping — package).
+
+  - **AV Heating and Cooling:** real business email found
+    (av_heatingandcooling@yahoo.com, sourced from Facebook's own Contact
+    section) even though the business has zero owned domain — a genuine
+    business-branded email with no domain to guess a pattern from is still
+    a "found," not a "guessed," per the gate's own distinction. No owner
+    name turned up despite checking Facebook, BBB (no profile exists for
+    this business at all — unusual, worth noting), TDLR contractor
+    licensing, and reviews — correctly left blank. No Yelp presence exists
+    for this business at all, so there's no response-time signal to find,
+    not just an unconfirmed one — a new variant of "no demand signal"
+    distinct from the usual "found but couldn't verify" case.
+  - **Kelso Electric:** owner-name confidence upgraded from "single
+    aggregator bio" to "two independent sources, address-anchored" this
+    run (a people-search/property aggregator independently placed "Mike
+    Kelso" at the business's own street address) — a real, concrete way a
+    weak single-source name claim can get stronger without becoming a
+    primary-source (KY SOS) confirmation. Email gate passed cleanly
+    (three independent directories agree). Worth naming as its own
+    pattern: "upgraded via independent corroboration" sits between "single
+    aggregator bio" and "primary government filing" as a confidence tier.
+  - **The Passionate Plumber:** a genuinely concerning CSLB finding, not
+    just an unresolved one — the license number (#1073266) the business
+    itself publicly cites on its own Instagram bio appears, per multiple
+    independent sources, to actually belong to a completely different
+    company (a fire-protection contractor, also San Clemente-based). This
+    is a step past the usual "couldn't confirm, egress-blocked" caution —
+    escalated prominently in enrichment.md and status.md rather than
+    logged as a routine flag, since it's the business's own stated number
+    that looks wrong, not just an unverifiable one. Response-time signal
+    reconfirmed cleanly this run (the only fully clean reconfirmation of
+    the run) — the "N locals requested a quote" count moved a lot (431 →
+    2,117) but that reads as Yelp's live rolling counter advancing between
+    pulls, not instability of the kind that drops a figure.
+  - **Four Seasons Lawn & Landscape:** resolved Rupika's priority-flagged
+    address/phone conflict with medium confidence (1620 Bush Dairy Rd /
+    601-425-5856 — three independently-sourced, recently-touched listings
+    converge, vs. the competing pair's stale/zero-review listing profile)
+    — still snippet-inference, not page-verified or dial-tested, worth a
+    confirming call before the cold-call script is locked. Owner name
+    upgraded to HIGH confidence via a genuine primary source (the MS
+    Secretary of State's own LLC filing naming Hunter McLeod as registered
+    agent) plus an unusually strong personalization asset — a Mississippi
+    Magazine feature on the owner's specific "came full circle" story with
+    a named client property. Held on the email gate anyway — no email
+    found anywhere and no owned domain exists to guess a pattern from, a
+    genuinely unmet gate, not an environment-blocked one this time. Also
+    resolved the banked alternate (Elite Landscapes LLC) as real but
+    disqualified for this track — it has its own website.
+  - **Garcia's Landscaping:** the response-time/demand-signal figures went
+    from "unconfirmed" on the original brief straight to "actively
+    contradictory" on this run's own re-checks (three different
+    response-time figures across searches minutes apart) — a fast-moving
+    instance of the third-bucket pattern first named 2026-08-15, dropped
+    entirely rather than used even as a question, with a qualitative hook
+    substituted instead. Owner name reconfirmed via fresh independent
+    review mentions. Held on the email gate — genuinely no email found and
+    no domain to guess from, plus a new same-named collision found this
+    run (Simi Valley CA, on top of six already known) reinforcing how
+    common this business name is nationally.
+  - Both held prospects this run were held on a **genuine** email-gate
+    miss (no domain exists at all to blame on the recurring egress-proxy
+    block), not the usual "couldn't verify because the environment blocked
+    the check" pattern that dominates most holds in this file — worth
+    noting since it means these two are real, structural email gaps for
+    Facebook-only small businesses, the same conclusion reached repeatedly
+    since 2026-08-05 (D&D Plumbing, SonRise Roofing, Superior Roofing,
+    etc.) for the website-gap side of the pipeline specifically.
+  - Egress proxy again blocked most direct WebFetch attempts this run
+    (Facebook across all 5 prospects, cslb.ca.gov, thepassionateplumber.com,
+    kelsoelectric.com, mismag.com, and most business-directory domains) —
+    same recurring pattern logged since 2026-08-02, all findings this run
+    are search-snippet-sourced except where a subagent noted a direct,
+    successful check.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain — every one in the repo now carries either a
+    documented hold/dead-end from a prior run or this run's own
+    enrichment.md.

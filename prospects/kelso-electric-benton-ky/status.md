@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: website
 quote_stage: none
 ---
@@ -19,3 +19,11 @@ quote_stage: none
   address/phone/email, so low practical risk if those anchors are used.
   Flag: owner name only sourced from an aggregator bio, not a primary KY
   SOS filing — Montague should confirm.
+- 2026-08-26 (Montague): enriched. Website-gap CONFIRMED (no owned domain
+  across every KY-specific source; kelsoelectric.com exists but ties to no
+  directory or search result for this business — flagged unresolved, not
+  attributed here). Owner name Mike Kelso upgraded to medium-high
+  confidence (two independent corroborating sources, address-anchored;
+  KY SOS filing still unreachable). Email found (kelsoelectric@hotmail.com,
+  corroborated across three independent listings — email gate passed).
+  Phone confirmed: (270) 227-0159. See enrichment.md.

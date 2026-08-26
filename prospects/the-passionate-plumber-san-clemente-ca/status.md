@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -23,3 +23,14 @@ quote_stage: none
   this business — vs #1073266 from an Instagram source, status
   unverified) — Montague should verify the correct license number
   directly at cslb.ca.gov before outreach.
+- 2026-08-26 (Montague): enriched. Response-time signal RECONFIRMED
+  cleanly (~2 hrs, 4.9★/144 reviews, 70% response rate, Yelp Verified
+  License badge all stable) — usable as stated fact, not just a question.
+  Owner Zach Grimm confirmed via matching About-page bio text + a review
+  naming him directly. Email found (Info@thepassionateplumber.com, listed
+  directly on a business directory — email gate passed). Phone confirmed:
+  (949) 899-2021. CSLB license flag ESCALATED, not resolved — the license
+  number the business publicly cites (#1073266) appears via independent
+  sources to actually belong to a different company; recommend Kevin/Sue
+  manually confirm at cslb.ca.gov before any licensing claim in outreach.
+  See enrichment.md.
