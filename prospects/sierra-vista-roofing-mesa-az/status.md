@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -27,3 +27,4 @@ quote_stage: none
   1st Choice Plumbing 08-21 draft. AZ ROC license conflict kept out of the
   body and re-flagged for Kevin. Advanced to `drafted`. See outreach.md.
 - 2026-08-24 (Kevin, via KIREEK): sent to sierravistaroofing@gmail.com.
+- 2026-08-26 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
