@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -21,3 +21,4 @@ quote_stage: none
   line despite complete enrichment.md — flagged for Sue, not backfilled in her
   voice. Advanced to `drafted`.
 - 2026-08-24 (Kevin, via KIREEK): sent to hendrixpainting87@gmail.com.
+- 2026-08-26 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
