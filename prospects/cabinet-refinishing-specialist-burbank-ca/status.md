@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -26,3 +26,4 @@ quote_stage: none
   Pro Refinishing name-mismatch angle (unresolved premise, and it duplicates
   Gallantry's mechanism this batch). Advanced to `drafted`.
 - 2026-08-24 (Kevin, via KIREEK): sent to vachikhovhannisyan@yahoo.com.
+- 2026-08-26 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
