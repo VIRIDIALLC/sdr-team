@@ -1340,3 +1340,78 @@
   genuinely new website-track prospect despite 3 "hits" reported by the sub-agent; worth remembering
   to check `prospects/*/status.md` for a name match before trusting this file's banked-candidate
   notes, not just before finalizing a new hit.
+
+- (run 2026-08-26) Scheduled run scoped to two tracks (package + website — ads track not
+  requested). `_fleet-state.md` was fresh at run start (generated 2026-08-26 15:59 UTC). Container
+  started on a detached HEAD matching `origin/master`'s tip exactly — same recurring stale-ref
+  symptom as every prior run since 2026-08-13, fixed with `git checkout -B master origin/master`
+  (the safe form, per the 2026-08-23 #2 / 2026-08-25 correction — never a bare `git checkout
+  <branch>`). `_new-leads.md` had nothing dropped in. Ran both tracks as parallel background
+  Agent-tool sub-agents this run (rather than in-conversation sub-agents) — worked cleanly, each
+  returned a fully structured report; viable alternative to the pattern used in prior runs.
+  `origin/master` moved twice (KIREEK fleet-state refreshes) between agent dispatch and
+  file-writing — fast-forwarded cleanly, no conflicts, consistent with the known-benign pattern
+  noted 2026-08-24.
+- (package/priority track, run 2026-08-26) 2 hits, both San Clemente CA (a fresh LA-metro suburb,
+  not previously exhausted) — a genuinely clean pair, no dropped/contradictory response-time
+  readings this run: The Passionate Plumber (owner Zach Grimm, master plumber since 1998, biz est.
+  2014, ~2hr response/431 quote requests/4.9★/144 reviews, real site + Yelp URL both captured
+  directly; two conflicting CSLB license numbers surfaced across sources, flagged for Montague to
+  verify the correct one at cslb.ca.gov) and Garcia's Landscaping (owner Salomon Garcia, est. 2005,
+  ~7hr response at 100% response rate/28 quote requests/5.0★, Yelp URL captured, no website found —
+  flagged as a possible future website-upsell case per standing convention, not routed to the
+  website track; HIGH name-collision risk nationally for "Garcia's Landscaping," resolved via exact
+  address, a same-named-but-legally-distinct CSLB-revoked entity exists elsewhere so don't conflate
+  during a license check). New fresh-suburb finding: San Clemente CA hadn't been tried before and
+  produced 2 hits from a small number of vertical searches — worth prioritizing over Irvine/Tustin/
+  Laguna Niguel/Montclair/Newport Beach, which were also tried this run but struck out (see below)
+  or got dropped for scale/listing-conflation reasons. Struck out / dropped this run: Irvine HVAC
+  ("Irvine HVAC Masters," strong 10hr/4.9★/~350-review signal but 11-50 employees + corporate-park
+  address — too scaled, worth remembering as a specific dead end if it resurfaces), a Lake Forest
+  cabinet/garage-cabinetry candidate (listing-conflation, response time and review count both
+  drifted heavily), a Tustin remodeling candidate (contradicted itself 5hr vs 20min, address
+  resolved to LA not Tustin — classic threshold-crossing contradiction, drop), Laguna Niguel
+  electrical (Hi Power Electric found but 456 reviews, too scaled; two other candidates had no
+  response-time data), Montclair garage doors (two candidates both read as multi-county/scale-
+  adjacent from their own marketing language), Newport Beach electrical (JMT Lighting — clean but
+  only "2 locals recently requested a quote," insufficient quote-volume signal, and actual address
+  is Costa Mesa not Newport Beach), San Clemente pest control (Recon Pest Control — good ICP
+  profile but the specific response-time figures found may belong to a different business on the
+  same results page, a listing-conflation risk, not queued without a cleaner re-run), San Clemente
+  roofing and Laguna Niguel roofing (both had named candidates but no response-time figure could be
+  pinned to a specific business). Unresolved signals worth a future attempt: Dutchmen Construction
+  (Upland CA painting, "5hr/20 locals," only single-sourced so far, needs a second corroborating
+  search), Recon Pest Control (San Clemente, per above — worth a cleaner targeted re-run rather
+  than writing off).
+- (website track, run 2026-08-26) 3 hits, three different fresh small/mid markets in one run
+  (Benton KY pop. ~4,300, Del Rio TX new-vertical pass, Laurel MS pop. ~18k): Kelso Electric, LLC
+  (Benton KY, electrical, opened 2020 after owner's 30+yrs in trade, pure Facebook/directory-only,
+  owner Mike Kelso medium-confidence via aggregator bio not a primary KY filing, personal email
+  signal kelsoelectric@hotmail.com, MEDIUM collision risk against unrelated same-named businesses
+  in OK/AZ/WA — this closes out the lead first spotted-but-not-pursued on 2026-08-25). AV Heating
+  and Cooling (Del Rio TX, HVAC, Facebook-only, confirmed via both a direct search and ruling out a
+  lookalike domain that belongs to an unrelated Independence MO business; real Del Rio competitors
+  do have owned sites so the gap is genuine, not market-wide; no owner name found yet, HIGH
+  collision risk nationally, anchor strictly on address+phone). Four Seasons Lawn & Landscape
+  (Laurel MS, landscaping, ~17yr tenure, Facebook-only — the local Chamber of Commerce directory
+  literally lists Facebook as their "Website" field, about as clean a no-site confirmation as
+  exists; owner Hunter McLeod medium-confidence; **PRIORITY FLAG: two different addresses/phones
+  circulating across directories, same "founded 2009" detail on both suggesting stale/duplicate
+  directory data rather than two businesses — Montague MUST resolve which is current before this
+  goes to outreach**, a wrong address would undercut Kevin's cold-call script). New subtype-
+  confirming note: a directory literally using a business's Facebook URL as its "Website" field
+  (seen this run for Four Seasons) is as strong a no-website confirmation as the technique gets —
+  worth treating as a fast-track signal, skip extra verification searches when seen. Struck out /
+  cold this run: Del Rio TX roofing (4 named competitors all have real sites — Red Nail Roofing,
+  Del Rio Roofing Inc, Tellez Roofing, Sanchez Roofing — vertical looks saturated with owned
+  domains there), Susanville CA plumbing (2 real sites found — Guess Plumbing, JM Plumbing; try
+  electrical/roofing/landscaping there instead if revisited), Middlesboro KY electrical/plumbing
+  (no clean same-city hit; the one electrical result kept resolving back to the Benton KY business
+  above, i.e. not actually Middlesboro-based; a roofing result read as a metal-roofing supply house
+  not a contractor, not pursued). Banked, not used: Elite Landscapes LLC (Laurel MS, owner
+  Tyler/John T. Lightsey, also Facebook-only per an initial pass but not fully vetted) — worth a
+  follow-up if Four Seasons doesn't pan out. Fresh markets still untouched/partially touched:
+  Middlesboro KY (roofing — contractor-not-supplier angle untried, restoration untried), Del Norte
+  County/Crescent City CA (all verticals), Susanville CA (electrical/roofing/landscaping),
+  Laurel MS (verticals beyond landscaping), Del Rio TX (electrical/HVAC other than AV/roofing
+  already tried, landscaping).
