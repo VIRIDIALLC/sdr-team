@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -29,3 +29,4 @@ quote_stage: none
   Instagram self-marketing angle, same mechanism as Overson Pest Control
   (08-22). See outreach.md.
 - 2026-08-24 (Kevin, via KIREEK): sent to resolvelandscape@gmail.com.
+- 2026-08-26 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
