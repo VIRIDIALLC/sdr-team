@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -34,3 +34,11 @@ quote_stage: none
   sources to actually belong to a different company; recommend Kevin/Sue
   manually confirm at cslb.ca.gov before any licensing claim in outreach.
   See enrichment.md.
+- 2026-08-26 (Elly): drafted. Package track. Built on the Yelp RESPONSE
+  RATE (70%, roughly three in ten quote requests never answered) rather
+  than the ~2 hr response time, even though Montague cleanly reconfirmed
+  the 2 hr figure and it was usable as stated fact. Two hours against 4.9
+  stars and 144 reviews is not a question the owner feels; 30% ghosted is.
+  Still phrased as a forced-choice question per the 08-13 opener rule. No
+  licensing language anywhere in the draft, per Montague's escalated CSLB
+  flag. Case-studies page linked after the ask. Advanced to drafted.

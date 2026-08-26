@@ -1604,3 +1604,136 @@ no feedback yet on those specifically)
 
   **End-of-run:** committed and pushed to `master` per CLAUDE.md's landing-work
   rule.
+
+- **2026-08-26 (this run) — 3 drafted, the whole enriched queue, and the run
+  where the website track's template rot finally had to be broken.** `git fetch
+  origin` first per CLAUDE.md: origin/master force-updated to 04ab5b7 (KIREEK
+  fleet-state refresh on top of Montague's 2026-08-26 pass, "3 advanced / 2
+  email-gate holds", on top of a Rupika top-up). Container started detached at
+  exactly that commit with a clean tree and zero divergence from origin/master
+  (`git rev-list --left-right --count` returned 0 0) — the same stale-ref-only
+  pattern logged every run since 08-13. `_fleet-state.md` was fresh (16:52 UTC),
+  so ground truth was live.
+
+  Scanned `prospects/*/status.md`: 4 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold from
+  2026-08-03, unchanged, skipped again) plus 3 real ones, all drafted:
+  **the-passionate-plumber-san-clemente-ca** (package),
+  **av-heating-cooling-del-rio-tx** (website), **kelso-electric-benton-ky**
+  (website). No defensive-check skips; all three passed Montague's email gate.
+
+  **Kevin DISMISSED yesterday's only draft (Owen Plumbing) this morning** —
+  KIREEK commit 51f5d32, "removed from the review queue," no reason recorded.
+  Only the third dismissal ever against 94 sent, so it is not routine pruning.
+  Asked him directly in the approvals file which part it was (prospect fit vs.
+  the draft itself, and if the draft, which element). **Do not silently assume
+  the draft was the problem and start rewriting the approach off one data
+  point** — there is genuinely no signal in the record either way, and I still
+  have zero logged feedback on tone or edits. If he answers, that is the first
+  real entry this file's "Edits Kevin tends to make" section has ever had.
+
+  **The dominant judgment call this run: two website-track prospects with an
+  IDENTICAL fact pattern in one batch, on a track that had already collapsed
+  into one email.** AV Heating and Kelso Electric are both small-town
+  owner-operators, Facebook and directories only, no owned domain, gap confirmed
+  hard. Worse, I pulled the last four website first touches (Brudwick and High
+  Country 08-16, E-Z Garage 08-17, RidgeTop 08-18) and they are close to a
+  single form letter: "I went looking and only found your Facebook page," then
+  the 84% stat as its own paragraph, then "I build sites for contractors so
+  people land on something real." Brudwick and High Country are near word for
+  word. **The 08-18 standing note said to check the last draft in this track
+  before writing the next; that check was clearly not surviving contact.** So
+  this run neither draft argues findability at all:
+  - **AV Heating — the site is for people who ALREADY have your name.** Solo
+    shop run out of a house (property records: 1,216 sq ft manufactured home,
+    not a storefront), town of ~35,000, no Yelp presence anywhere. A business
+    like that lives on word of mouth, so the failure mode is not obscurity, it
+    is the warm referral cooling off on a phone screen before the call. Team
+    greeting, no name found across four source types.
+  - **Kelso Electric — the site is where thirty years finally gets stated.**
+    Opened 2020 after 30+ years on the tools. A stranger sees a six-year-old LLC
+    with a handful of reviews and reads "new guy," and he is the opposite of
+    one. Conversion argument, not a discovery one, and no other prospect in the
+    pipeline could receive this email.
+  **Generalizable and worth keeping: when a track has one natural hook, the fix
+  is not a fresh phrasing of that hook, it is a different argument about what
+  the product is for.** Findability is the obvious website argument and that is
+  exactly why it rots. Legitimacy-to-people-who-already-found-you and
+  experience-that-has-nowhere-to-live are both real, both provable from
+  enrichment, and neither had been used.
+
+  **Dropped the 84% BrightLocal stat from both**, deliberately. It supports a
+  findability argument neither draft is making, and re-inserting it is precisely
+  how the template reassembles itself. Same call as the 08-21 website
+  follow-ups. Persona still lists it as the standard website data point, so this
+  is a considered override, not an oversight.
+
+  **The Passionate Plumber: dropped a CLEANLY RECONFIRMED response-time figure
+  on purpose, which is a first.** Montague reconfirmed ~2 hrs with no
+  contradiction (plus 4.9 stars, 144 reviews, 70% response rate, Verified
+  License badge, all stable), which under the gate made it usable as stated fact
+  rather than merely as a question. That almost never happens. Used the
+  **response RATE** instead: 70% means roughly three in ten quote requests never
+  get answered at all. **Reasoning worth internalizing: two hours next to 144
+  reviews at 4.9 stars is not pain the owner feels, and an opener has to land on
+  something he already feels.** Thirty percent ghosted is. Same listing, same
+  source, no added verification risk, and it is the first draft this team has
+  built on the rate rather than the time. **New standing option: when the
+  response time is real but unalarming, check the response rate — it is on the
+  same widget and it is usually the sharper number.**
+
+  Kept it phrased as a forced-choice question anyway (buried on a job vs.
+  screening out tire-kickers) per the 08-13 opener rule, even though the data
+  would have supported an assertion. A question costs nothing if the figure has
+  drifted.
+
+  **Runner-up angles, all documented in the outreach.md dropped-angle blocks:**
+  - *Passionate Plumber* — the honesty reputation against the speed problem
+    (reviews credit Zach personally for not gouging; that only pays if he gets
+    in the room). Dropped on collision: it is the Owen Plumbing draft from
+    08-25, one day earlier, same trade, same corner of Southern California, same
+    inbox, same two-customer-types mechanism. **Second time in two runs the
+    nearest neighbour was yesterday's draft — the batch check now matters more
+    than the per-prospect signal.**
+  - *AV Heating* — the Del Rio heat, AC dies in August, same-hour decision,
+    nobody scrolls. Sounded the strongest and was the weakest idea: structurally
+    the identical email to RidgeTop Roofing 08-18 (weather event, everyone
+    searches at once, nothing of yours to land on), and it is the discovery
+    argument the track keeps collapsing into.
+  - *Kelso Electric* — the agricultural/industrial buyers vetting harder than
+    homeowners. Real, but the same legitimacy mechanism as the AV draft in the
+    same batch, and less specific to Mike than the thirty-years point.
+
+  **Real kit gap surfaced and flagged, not worked around:** every published case
+  study is an AI lead-response story (TFP, Finish Coat). **There is no published
+  website-build case study at all**, so a website-track prospect clicking the
+  link reads about an adjacent product. Framed the link as proof we are real
+  rather than proof about websites, which is honest and happens to be exactly
+  the AV draft's own argument. Flagged for Kevin and Sue: doctrine §3 kit item 2
+  is marked closed on the package track's strength, and for this track it is
+  not.
+
+  **Verification notes:** confirmed pipeline counts by grep rather than trusting
+  `_fleet-state.md`'s summary (62 found, 1 enriched, 3 drafted, 94 sent, 3
+  dismissed) and corrected the approvals file after writing 61. Re-checked all
+  four dated first-touch approval files: already `status: superseded`, nothing
+  to close. Left `2026-08-21-followup-drafts-held-lane.md` open again on purpose
+  (not a first-touch file, 11 real undrafted second touches).
+
+  Track breakdown: 1 package, 2 website. Standard post-write sweep on body text
+  only (em dash, en dash, bracket placeholder, retired package name,
+  third-person Kevin/Viridia, pricing, `%`, the 84% stat, "guarantee") — all
+  clean. The only `%` in any body is the intended 70% off Passionate Plumber's
+  own listing; the only domain is the case-studies URL.
+
+  **Pricing-in-a-cold-email question is STILL unanswered** (seven runs now).
+
+  **Next run:** check `stage: enriched` first, then regenerate
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted` (write it
+  explicitly empty if nothing is there). **Check whether Kevin answered on Owen
+  Plumbing** — that is the highest-value thing waiting. Upstream backlog is 62
+  at `stage: found` and still growing faster than the email gate clears it. The
+  11 held-lane second touches remain the place to spend surplus capacity.
+
+  **End-of-run:** committed and pushed to `master` per CLAUDE.md's landing-work
+  rule.

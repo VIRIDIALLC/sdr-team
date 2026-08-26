@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -26,3 +26,12 @@ quote_stage: none
   TDLR, and reviews — left blank per the never-placeholder rule. No Yelp
   presence exists for this business, so no response-time/demand signal to
   source. See enrichment.md.
+- 2026-08-26 (Elly): drafted. Website track. Team greeting (no owner name
+  found). Deliberately broke from the standard website-track opener, which
+  had converged into one near-identical email across the last four drafts
+  on this track (Brudwick/High Country 08-16, E-Z Garage 08-17, RidgeTop
+  08-18). Argues the site is for people who ALREADY have your name and are
+  checking you out before they dial, not for strangers finding you, which
+  fits a home-run solo shop with no Yelp presence in a town of ~35,000.
+  84% BrightLocal stat deliberately omitted (it supports a findability
+  argument this draft is not making). Advanced to drafted.

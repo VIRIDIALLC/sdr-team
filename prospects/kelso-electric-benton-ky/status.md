@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -27,3 +27,11 @@ quote_stage: none
   KY SOS filing still unreachable). Email found (kelsoelectric@hotmail.com,
   corroborated across three independent listings — email gate passed).
   Phone confirmed: (270) 227-0159. See enrichment.md.
+- 2026-08-26 (Elly): drafted. Website track. Real name (Mike Kelso,
+  medium-high confidence) used. Angle is the mismatch between 30+ years on
+  the tools and a six-year-old LLC with a handful of reviews: a stranger
+  reads "new guy," and a site is the only place that difference gets
+  stated. Kept deliberately distinct in mechanism from the AV Heating
+  draft written in the same batch, which is the identical fact pattern.
+  Flagged for a human: load kelsoelectric.com in a browser before sending
+  (unresolved/unattributed domain per Montague). Advanced to drafted.
