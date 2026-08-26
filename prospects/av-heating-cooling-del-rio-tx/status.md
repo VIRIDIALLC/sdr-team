@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -36,3 +37,4 @@ quote_stage: none
   84% BrightLocal stat deliberately omitted (it supports a findability
   argument this draft is not making). Advanced to drafted.
 - 2026-08-26 (Kevin, via KIREEK): sent to av_heatingandcooling@yahoo.com.
+- 2026-08-26 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.

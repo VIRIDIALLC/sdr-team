@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -36,3 +37,4 @@ quote_stage: none
   Flagged for a human: load kelsoelectric.com in a browser before sending
   (unresolved/unattributed domain per Montague). Advanced to drafted.
 - 2026-08-26 (Kevin, via KIREEK): sent to kelsoelectric@hotmail.com.
+- 2026-08-26 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
