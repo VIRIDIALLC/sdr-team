@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -29,3 +29,4 @@ quote_stage: none
   apart, same inbox). No response-time or review figure in the body at all,
   per the fabricated-signal finding. Advanced to `drafted`. See outreach.md.
 - 2026-08-24 (Kevin, via KIREEK): sent to info@oversonpestcontrol.com.
+- 2026-08-26 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
