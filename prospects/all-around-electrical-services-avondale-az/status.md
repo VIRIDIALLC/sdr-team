@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -28,3 +28,4 @@ quote_stage: none
   Gallantry Electric, same trade six miles away, drafted today. Email is a
   GUESSED info@ pattern. Advanced to `drafted`.
 - 2026-08-24 (Kevin, via KIREEK): sent to info@allaroundelectrical.com.
+- 2026-08-26 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
