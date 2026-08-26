@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -35,3 +35,4 @@ quote_stage: none
   draft written in the same batch, which is the identical fact pattern.
   Flagged for a human: load kelsoelectric.com in a browser before sending
   (unresolved/unattributed domain per Montague). Advanced to drafted.
+- 2026-08-26 (Kevin, via KIREEK): sent to kelsoelectric@hotmail.com.
