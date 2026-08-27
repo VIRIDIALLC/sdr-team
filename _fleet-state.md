@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-27 16:46 UTC (2026-08-27 09:46 Phoenix)
+Generated: 2026-08-27 17:18 UTC (2026-08-27 10:18 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -99,7 +99,7 @@ Generated: 2026-08-27 16:46 UTC (2026-08-27 09:46 Phoenix)
 
 - **GHL API:** UP (live probe returned 200)
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-27 15:07 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 1h ago)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 2h ago)
 - **KIREEK repo:** 21 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
@@ -110,16 +110,16 @@ Generated: 2026-08-27 16:46 UTC (2026-08-27 09:46 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 25 seconds ago — "Montague: enrichment batch (2 advanced, 4 email-gate holds)" (defd3a8b2)
-- pipeline (prospects, 176 items): found 65 · enriched 3 · approved 2 · sent 97 · closed 6 · dismissed 3 — ~59% through the pipeline
+- last commit: 4 minutes ago — "Elly 2026-08-27: 2 website first touches + rolling approvals refresh" (0ab45e567)
+- pipeline (prospects, 176 items): found 65 · enriched 1 · drafted 2 · approved 2 · sent 97 · closed 6 · dismissed 3 — ~60% through the pipeline
 - where each agent is (from their own logged task work):
-  - **Elly** (Outreach): 2026-08-26 on `av-heating-cooling-del-rio-tx` — "drafted. Website track. Team greeting (no owner name found). Deliberately broke from the standard website-trac"
+  - **Elly** (Outreach): 2026-08-27 on `joshs-plumbing-crescent-city-ca` — "drafted. Website track. Real owner name used (Josh). Deliberately used neither the rotted findability opener n"
   - **Montague** (Enrichment): 2026-08-27 on `dk-electrical-services-westminster-ca` — "held at `found` on the email gate. No email found anywhere and no owned domain exists to guess a pattern from."
   - **Nova** (Magic Patterns Build): no logged task activity yet · 1 open handoff(s) in their inbox
   - **Rupika** (Prospecting): 2026-08-27 on `dk-electrical-services-westminster-ca` — "found via the "yelp advertisers" golden-signal search (Westminster CA electrical), added to pipeline. Panel up"
   - **Sage** (Quoting): no logged task activity yet
   - **Sue** (SDR Director): no logged task activity yet
-- agent work in the last 24h: "Montague: enrichment batch (2 advanced, 4 email-gate holds)"; "Rupika: package-track top-up â€” 3 hits (Garden Grove, Westminster, Tustin CA); memory upd"; "Rupika: website-track top-up â€” 3 hits (Crescent City CA, Vernal UT x2)"; "Elly 2026-08-26: 3 first touches + rolling approvals file"
+- agent work in the last 24h: "Elly 2026-08-27: 2 website first touches + rolling approvals refresh"; "Montague: enrichment batch (2 advanced, 4 email-gate holds)"; "Rupika: package-track top-up â€” 3 hits (Garden Grove, Westminster, Tustin CA); memory upd"; "Rupika: website-track top-up â€” 3 hits (Crescent City CA, Vernal UT x2)"
 - waiting on Kevin (2): 2026-08-21: Second-touch drafts — 10 prospects in the `followup: held` lane; For Kevin — first-touch drafts waiting on you (LIVE QUEUE)
 
 ### Ads Team
@@ -149,7 +149,7 @@ Generated: 2026-08-27 16:46 UTC (2026-08-27 09:46 Phoenix)
 - waiting on Kevin (4): 2026-08-24: A/R aging review — 2026-08-24; 2026-08-27: A/R aging review — 2026-08-27; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 31 minutes ago — "Correct week 2 numbers (221, not 175); clear two stale records from Kevin's queue" (daaaf9442)
+- last commit: 63 minutes ago — "Correct week 2 numbers (221, not 175); clear two stale records from Kevin's queue" (daaaf9442)
 - pipeline (posts, 26 items): scheduled 10 · posted 3 · superseded 13 — ~74% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-08-27 on `ai-front-door-45-percent` — "**Closed the footer-gap flag from `handoffs/inbox/2026-08-26-front-door-4x5-footer-gap.md`** (optional polish;" · 1 open handoff(s) in their inbox
@@ -158,7 +158,7 @@ Generated: 2026-08-27 16:46 UTC (2026-08-27 09:46 Phoenix)
 - waiting on Kevin (2): 2026-08-21: Comment reply kit — Viridia's own channels; 2026-08-25: TFP Landscaping — Yelp page updates, drafts for your approval
 
 ### SEO Team
-- last commit: 24 hours ago — "Merge origin/master into claude/bold-mayer-uc22ad" (5729cc0b1)
+- last commit: 25 hours ago — "Merge origin/master into claude/bold-mayer-uc22ad" (5729cc0b1)
 - pipeline (audits, 3 items): recommendations 2 · tracking 1 — ~78% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elenor** (Backlink & Citation Outreach): no logged task activity yet
@@ -175,11 +175,11 @@ Generated: 2026-08-27 16:46 UTC (2026-08-27 09:46 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-27 16:46 UTC (auto-generated by VEGA's backend):
+As of 2026-08-27 17:18 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 125 days (17 weeks) → ~1 close per 2 week(s).
 This week (since 2026-08-24): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 1h ago)
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 2h ago)
 Approvals waiting on Kevin across the fleet: 11
 ```
