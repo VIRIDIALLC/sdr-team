@@ -1415,3 +1415,76 @@
   County/Crescent City CA (all verticals), Susanville CA (electrical/roofing/landscaping),
   Laurel MS (verticals beyond landscaping), Del Rio TX (electrical/HVAC other than AV/roofing
   already tried, landscaping).
+
+- (run 2026-08-27) Scheduled run scoped to two tracks (package + website — ads track not
+  requested). `git fetch` + `git status` again showed a detached HEAD, and this time `git
+  checkout master` (bare form) landed on a local branch with NO common ancestor with
+  `origin/master` (58 vs 50 commits, `git merge-base` returned empty) — more severe-looking than
+  the usual "just behind" stale-ref symptom, worth a careful check rather than assuming it was
+  safe. Verified before touching anything: local master's HEAD commit was dated 2026-08-24 (3
+  days stale) and `diff <(git ls-tree -r --name-only master) <(git ls-tree -r --name-only
+  origin/master)` showed **zero files unique to local master** — origin/master's newer history had
+  already absorbed everything local master had (and more — e.g. it had enrichment.md/outreach.md
+  for prospects local master only had at brief/status stage). Confirmed safe, fixed with `git
+  checkout -B master origin/master`, nothing lost. Recording this verification method (root
+  commit date + file-tree diff, not just commit count) as the standard way to confirm a diverged
+  local branch is genuinely stale before resetting it, on top of the standing "-B" reminder from
+  2026-08-23/25. Ran both tracks as parallel background Agent-tool sub-agents (continues working
+  cleanly). Committed the website-track batch separately and immediately (before the package-track
+  agent finished) rather than waiting to batch both into one commit — a stop-hook flagged the
+  untracked files; committing incrementally as each track's research lands is a reasonable pattern
+  going forward rather than holding everything for one end-of-run commit.
+- (package/priority track, run 2026-08-27) 3 hits, all Orange County CA (fresh suburbs — Garden
+  Grove, Westminster, Tustin — not on the exhausted list): First And Local Plumbing, Inc. (Garden
+  Grove CA, sewer/hydro-jetting/septic specialist, ~7hr response/30 quote requests, identity
+  strongly corroborated across Manta/Bizapedia/BBB/D&B — established 2016, ~2 employees, ~$81K
+  est. revenue, a clean small-operator fit; owner unconfirmed, a same-city licensed plumber is only
+  a plausible not confirmed match), DK Electrical Services (Westminster CA, ~2hr response/46 quote
+  requests/5.0 stars, genuine solo operator per reviews — one guy doing the work, 20+yr experience;
+  MODERATE collision risk, 2 unrelated same-named businesses exist elsewhere, anchor on the Bolsa
+  Ave address), MH Painting/Mario Huerta (Tustin CA, surfaced via yet another cross-suburb
+  resolution — searched as Upland, actual home city Tustin — ~7hr response/10 reviews, owner
+  confirmed directly via initials-as-business-name, 30+yr tenure; weakest of the three, one review
+  says Mario "was quick to respond" which mildly contradicts the 7hr figure, same handling as
+  Nunez Painting 2026-08-17: flag not drop). New contradiction-severity distinction confirmed this
+  run: Mark of Excellence Heating (Coolidge/Casa Grande AZ) went from "2hrs" to "10 mins" between
+  two searches — a sub-1hr reading that directly crosses the threshold is a DROP reason, whereas
+  MH Painting's "quick to respond" review (no specific contradicting number, just a qualitative
+  claim) stayed a flag not a drop — worth keeping this distinction (specific sub-threshold number
+  vs. vague qualitative praise) as the dividing line going forward. Also dropped this run:
+  Capistrano Air (Laguna Niguel HVAC, 9hr response but 371-502 reviews, scale-disqualified), a
+  Bellflower pest control candidate (Active Pest Control, 329 reviews + broad "LA and Orange
+  County" service area, both scale and broad-radius disqualifiers), La Habra Electric (4.7
+  stars/4,300 reviews, massively scaled), At Ease Electric (Florence AZ, real business/owner
+  confirmed but only 1 Yelp review and the response-time figure came from Thumbtack not Yelp — too
+  thin). Several strong signals didn't resolve to a confident name this run, worth a repeat
+  attempt: San Clemente pest control ("3hr/229 quote-requests/4.6 stars/67 reviews," same
+  unresolved signal flagged 2026-08-26 too), Newport Beach roofing (RIMMZ Roofing Services — real
+  young licensed shop, but the "~3hr" figure needs a second targeted confirmation before queuing),
+  Yorba Linda landscaping (unnamed "7hr/70 locals" signal), Chino Hills painting (two unnamed "2hr"
+  candidates, try `site:yelp.com/biz` filtering next time). Streamlined Electric (Westminster)
+  could not be located at all on a direct follow-up — likely a WebSearch aggregation/attribution
+  error, treat as unresolved rather than a real business, matches the same name's unresolved
+  status from 2026-08-25.
+- (website track, run 2026-08-27) 3 hits, two fresh markets in one run: Crescent City CA/Del Norte
+  County (previously flagged as untried, now opened) and Vernal UT (Uintah Basin, brand new
+  market). Josh's Plumbing (Crescent City CA, CSLB #1003226 active, owner Josh Williamson HIGH
+  confidence via LinkedIn + a corroborating personal email on Facebook, LOW collision risk).
+  Powerhouse Electrical Services (Vernal UT, trades as part of Powerhouse Construction Services
+  LLC, MEDIUM collision risk — 2 unrelated same-named companies exist in Orem UT and Pflugerville/
+  San Antonio TX, both ruled out by address — no owner name found). Nebeker Roofing (Vernal UT,
+  owner likely Dustin Nebeker per Instagram photo credits, MEDIUM confidence only — no explicit
+  "owner" title found; LOW-MEDIUM collision risk, "Nebeker" is a common local Uintah Basin surname,
+  a separate Craig Stephen Nebeker BuildZoom listing also exists in Vernal — flagged hard for
+  Montague to confirm this Dustin Nebeker's operation is the same entity as the FB/Instagram page
+  before relying on the name). Crescent City CA: HVAC, electrical, landscaping, and general
+  contracting/roofing-adjacent all came up cold (real sites found); pest control and painting had
+  no genuinely local candidates at all in that small market — likely too small for those verticals.
+  One promising-but-unconfirmed Crescent City candidate banked: Mow Town and Country Landscaping,
+  has a page at a `.websites.co.in` free-builder domain that's plausibly a real functional site but
+  direct fetch was blocked by network egress rules — needs a manual look before ruling either way.
+  Vernal UT: plumbing came up cold (Plummer's Plumbing, real site) and several other Vernal
+  candidates were surfaced but not individually verified this run (budget went to confirming the 3
+  hits) — worth a fast follow-up pass if this market gets revisited: Hank's Electric of Vernal,
+  Daniels Plumbing & Heating, Make Your Mark Plumbing, Roofing World, EMC Plumbing & Heating, Downs
+  Plumbing.
