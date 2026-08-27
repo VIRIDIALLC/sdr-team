@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-26 23:53 UTC (2026-08-26 16:53 Phoenix)
+Generated: 2026-08-27 05:57 UTC (2026-08-26 22:57 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -10,7 +10,7 @@ Generated: 2026-08-26 23:53 UTC (2026-08-26 16:53 Phoenix)
 
 ## THE NUMBER — $10k MRR by 2026-12-31 (everything here serves this)
 
-- **Gap: $6,218/mo** → **6 Complete System client(s)** at $1,197/mo (plan +1 for churn risk) in **126 days** (18 weeks) → ~1 close per 3 week(s).
+- **Gap: $6,218/mo** → **6 Complete System client(s)** at $1,197/mo (plan +1 for churn risk) in **125 days** (17 weeks) → ~1 close per 2 week(s).
 - Real MRR $3,782 (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 - **This week** (since 2026-08-24): 0 conversations · 0 proposals out · 0 closed · $0 MRR added
 - Last week: week of 8/17 - 1 conversation, 0 proposals, 0 closed, $0 MRR added
@@ -98,7 +98,7 @@ Generated: 2026-08-26 23:53 UTC (2026-08-26 16:53 Phoenix)
 ## Systems — live-probed, not recalled
 
 - **GHL API:** UP (live probe returned 200)
-- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-26 23:53 UTC)
+- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-27 05:56 UTC)
 - **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 0m ago)
 - **KIREEK repo:** 21 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
@@ -110,7 +110,7 @@ Generated: 2026-08-26 23:53 UTC (2026-08-26 16:53 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 6 hours ago — "Kevin approved via KIREEK: The Passionate Plumber (130 Avenida Baja, San Clemente, CA 9267" (777769dd5)
+- last commit: 12 hours ago — "Kevin approved via KIREEK: The Passionate Plumber (130 Avenida Baja, San Clemente, CA 9267" (777769dd5)
 - pipeline (prospects, 170 items): found 61 · enriched 1 · approved 2 · sent 97 · closed 6 · dismissed 3 — ~61% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-08-26 on `av-heating-cooling-del-rio-tx` — "drafted. Website track. Team greeting (no owner name found). Deliberately broke from the standard website-trac"
@@ -123,7 +123,7 @@ Generated: 2026-08-26 23:53 UTC (2026-08-26 16:53 Phoenix)
 - waiting on Kevin (2): 2026-08-21: Second-touch drafts — 10 prospects in the `followup: held` lane; For Kevin — first-touch drafts waiting on you (LIVE QUEUE)
 
 ### Ads Team
-- last commit: 21 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (4948a8423)
+- last commit: 20 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (8494cc3d2)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
@@ -141,14 +141,14 @@ Generated: 2026-08-26 23:53 UTC (2026-08-26 16:53 Phoenix)
 - waiting on Kevin (3): 2026-08-14: Post-purchase onboarding sequence — spec + gap list; 2026-08-24: Billing-transition client comms + Tyler "keep the system" one-pager; 2026-08-24: Tyler meeting — collect + keep-the-system talk track (2026-08-24)
 
 ### Finance Team
-- last commit: 7 hours ago — "Sierra Glover PAID INV-000059 (Kevin direct, 2026-08-26): reminder retired, stage paid_pen" (1fd98d144)
+- last commit: 14 hours ago — "Sierra Glover PAID INV-000059 (Kevin direct, 2026-08-26): reminder retired, stage paid_pen" (1fd98d144)
 - pipeline (invoices, 9 items): draft 3 · draft_amount_disputed 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 3 · sent_to_collections 1 — ~0% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-08-24 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 95 days overdue, 91+ bucket. Discrepancy vs. GHL's $197 sti" · 1 open handoff(s) in their inbox
 - waiting on Kevin (3): 2026-08-24: A/R aging review — 2026-08-24; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 8 hours ago — "Media blocker was misdiagnosed; week 2 engagement says distribution is the ceiling" (43e778242)
+- last commit: 14 hours ago — "Media blocker was misdiagnosed; week 2 engagement says distribution is the ceiling" (43e778242)
 - pipeline (posts, 26 items): scheduled 10 · posted 3 · superseded 13 — ~74% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-08-26 on `ai-front-door-45-percent` — "**Re-exported `front-door-stat-linkedin.png`, fixing the clipped source line Rati flagged** in `handoffs/inbox" · 1 open handoff(s) in their inbox
@@ -157,7 +157,7 @@ Generated: 2026-08-26 23:53 UTC (2026-08-26 16:53 Phoenix)
 - waiting on Kevin (2): 2026-08-21: Comment reply kit — Viridia's own channels; 2026-08-25: TFP Landscaping — Yelp page updates, drafts for your approval
 
 ### SEO Team
-- last commit: 7 hours ago — "Merge origin/master into claude/bold-mayer-uc22ad" (5729cc0b1)
+- last commit: 13 hours ago — "Merge origin/master into claude/bold-mayer-uc22ad" (5729cc0b1)
 - pipeline (audits, 3 items): recommendations 2 · tracking 1 — ~78% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elenor** (Backlink & Citation Outreach): no logged task activity yet
@@ -175,10 +175,10 @@ Generated: 2026-08-26 23:53 UTC (2026-08-26 16:53 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-26 23:53 UTC (auto-generated by VEGA's backend):
+As of 2026-08-27 05:57 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
-Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 126 days (18 weeks) → ~1 close per 3 week(s).
+Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 125 days (17 weeks) → ~1 close per 2 week(s).
 This week (since 2026-08-24): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
 Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 0m ago)
 Approvals waiting on Kevin across the fleet: 10
