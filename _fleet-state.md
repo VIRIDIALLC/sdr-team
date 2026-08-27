@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-27 16:19 UTC (2026-08-27 09:19 Phoenix)
+Generated: 2026-08-27 16:46 UTC (2026-08-27 09:46 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -110,20 +110,20 @@ Generated: 2026-08-27 16:19 UTC (2026-08-27 09:19 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 3 minutes ago — "Merge origin/master into Rupika's package-track commit" (6ed926034)
-- pipeline (prospects, 176 items): found 67 · enriched 1 · approved 2 · sent 97 · closed 6 · dismissed 3 — ~59% through the pipeline
+- last commit: 25 seconds ago — "Montague: enrichment batch (2 advanced, 4 email-gate holds)" (defd3a8b2)
+- pipeline (prospects, 176 items): found 65 · enriched 3 · approved 2 · sent 97 · closed 6 · dismissed 3 — ~59% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-08-26 on `av-heating-cooling-del-rio-tx` — "drafted. Website track. Team greeting (no owner name found). Deliberately broke from the standard website-trac"
-  - **Montague** (Enrichment): 2026-08-26 on `av-heating-cooling-del-rio-tx` — "enriched. Website-gap CONFIRMED (lookalike domain ruled out — belongs to an unrelated Independence, MO busines"
+  - **Montague** (Enrichment): 2026-08-27 on `dk-electrical-services-westminster-ca` — "held at `found` on the email gate. No email found anywhere and no owned domain exists to guess a pattern from."
   - **Nova** (Magic Patterns Build): no logged task activity yet · 1 open handoff(s) in their inbox
   - **Rupika** (Prospecting): 2026-08-27 on `dk-electrical-services-westminster-ca` — "found via the "yelp advertisers" golden-signal search (Westminster CA electrical), added to pipeline. Panel up"
   - **Sage** (Quoting): no logged task activity yet
   - **Sue** (SDR Director): no logged task activity yet
-- agent work in the last 24h: "Rupika: package-track top-up â€” 3 hits (Garden Grove, Westminster, Tustin CA); memory upd"; "Rupika: website-track top-up â€” 3 hits (Crescent City CA, Vernal UT x2)"; "Elly 2026-08-26: 3 first touches + rolling approvals file"; "Montague: enrichment batch (3 advanced, 2 email-gate holds)"
+- agent work in the last 24h: "Montague: enrichment batch (2 advanced, 4 email-gate holds)"; "Rupika: package-track top-up â€” 3 hits (Garden Grove, Westminster, Tustin CA); memory upd"; "Rupika: website-track top-up â€” 3 hits (Crescent City CA, Vernal UT x2)"; "Elly 2026-08-26: 3 first touches + rolling approvals file"
 - waiting on Kevin (2): 2026-08-21: Second-touch drafts — 10 prospects in the `followup: held` lane; For Kevin — first-touch drafts waiting on you (LIVE QUEUE)
 
 ### Ads Team
-- last commit: 72 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (162f8ac9e)
+- last commit: 2 hours ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (162f8ac9e)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
@@ -141,7 +141,7 @@ Generated: 2026-08-27 16:19 UTC (2026-08-27 09:19 Phoenix)
 - waiting on Kevin (3): 2026-08-14: Post-purchase onboarding sequence — spec + gap list; 2026-08-24: Billing-transition client comms + Tyler "keep the system" one-pager; 2026-08-24: Tyler meeting — collect + keep-the-system talk track (2026-08-24)
 
 ### Finance Team
-- last commit: 69 minutes ago — "Merge branch 'claude/nifty-bardeen-9xdd0f'" (736bf7be4)
+- last commit: 2 hours ago — "Merge branch 'claude/nifty-bardeen-9xdd0f'" (736bf7be4)
 - pipeline (invoices, 9 items): draft 3 · paid 1 · draft_amount_disputed 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~25% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-08-27 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 98 days overdue, still 91+ bucket. Third run on hold with n" · 1 open handoff(s) in their inbox
@@ -149,7 +149,7 @@ Generated: 2026-08-27 16:19 UTC (2026-08-27 09:19 Phoenix)
 - waiting on Kevin (4): 2026-08-24: A/R aging review — 2026-08-24; 2026-08-27: A/R aging review — 2026-08-27; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 4 minutes ago — "Correct week 2 numbers (221, not 175); clear two stale records from Kevin's queue" (daaaf9442)
+- last commit: 31 minutes ago — "Correct week 2 numbers (221, not 175); clear two stale records from Kevin's queue" (daaaf9442)
 - pipeline (posts, 26 items): scheduled 10 · posted 3 · superseded 13 — ~74% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-08-27 on `ai-front-door-45-percent` — "**Closed the footer-gap flag from `handoffs/inbox/2026-08-26-front-door-4x5-footer-gap.md`** (optional polish;" · 1 open handoff(s) in their inbox
@@ -163,7 +163,6 @@ Generated: 2026-08-27 16:19 UTC (2026-08-27 09:19 Phoenix)
 - where each agent is (from their own logged task work):
   - **Elenor** (Backlink & Citation Outreach): no logged task activity yet
   - **Pushan** (SEO Strategist): 2026-08-18 on `viridiaanalytics-local-search` — "Kevin confirmed `tfplandscaping.com` is a real client (his first/ longest) — every site he builds gets a Virid"
-- agent work in the last 24h: "Correction: real GSC clicks were being hidden by query-dimension pulls"
 - waiting on Kevin: nothing
 
 ### Web Design Team
@@ -176,7 +175,7 @@ Generated: 2026-08-27 16:19 UTC (2026-08-27 09:19 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-27 16:19 UTC (auto-generated by VEGA's backend):
+As of 2026-08-27 16:46 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 125 days (17 weeks) → ~1 close per 2 week(s).
