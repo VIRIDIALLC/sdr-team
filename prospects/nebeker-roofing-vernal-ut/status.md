@@ -24,3 +24,11 @@ quote_stage: none
   by phone/address that Dustin Nebeker's operation is the same entity as
   the Facebook/Instagram "Nebeker Roofing" page, not a relative's
   separate outfit, before relying on the owner-name attribution.
+- 2026-08-27 (Montague): held at `found` on the email gate. Website-gap
+  CONFIRMED (6 domain guesses, all DNS-failed). Owner-identity flag left
+  by Rupika is STILL OPEN, not resolved — found a new complication
+  (Dustin Nebeker has an unrelated full-time day job elsewhere in Vernal,
+  and a third Nebeker household surfaced) that argues for more caution,
+  not less. No email, phone, or address found for the business at all —
+  thinner than a typical email-only hold. Do not use a name on the CALL
+  CARD until a human confirms by phone. See enrichment.md.

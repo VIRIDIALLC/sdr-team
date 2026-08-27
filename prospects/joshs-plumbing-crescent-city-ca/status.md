@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: website
 quote_stage: none
 ---
@@ -20,3 +20,12 @@ quote_stage: none
   active, expires 4/30/2027. LOW collision risk — no other same-named
   business surfaced in searches, license number + address pin this
   uniquely to Crescent City.
+- 2026-08-27 (Montague): enriched. Website-gap CONFIRMED (5 domain
+  guesses DNS-failed; the one registered "joshsplumbing.com" belongs to
+  an unrelated business). Owner Josh(ua Caleb) Williamson upgraded to
+  high confidence (second independent source ties full legal name to the
+  license number). Email joshmariaster@gmail.com confirmed as a real
+  Facebook-found contact (email gate passed), though single-sourced.
+  CSLB #1003226 corroborated via consistent secondary sources
+  (medium-high confidence, primary CSLB page itself egress-blocked).
+  Phone (707) 464-9056 confirmed. See enrichment.md.

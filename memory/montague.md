@@ -2107,3 +2107,124 @@
     prospects remain — every one in the repo now carries either a
     documented hold/dead-end from a prior run or this run's own
     enrichment.md.
+
+- (2026-08-27 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  session started HEAD-detached at `origin/master`'s tip (961bcbf, no
+  divergent local history), a plain checkout via `git checkout -B master
+  origin/master`, not the usual stale-shallow-clone pattern. Scanned
+  `prospects/*/status.md` for `stage: found` (67 files, minus template =
+  66), filtered for genuinely untouched (no `enrichment.md`, per the
+  2026-08-24/25 lesson) — 9 matched, but 3 (dd-plumbing-repair-medford-or,
+  sonrise-roofing-wichita-falls-tx, superior-roofing-boise-id) turned out
+  to be pre-enrichment.md-convention dead-ends from 2026-08-04/05, already
+  fully documented directly in their own `status.md` logs — deliberately
+  left alone again. The remaining 6 were all genuinely new, from today's
+  two Rupika top-up batches (3 package: dk-electrical-services-westminster-
+  ca, first-and-local-plumbing-garden-grove-ca, mh-painting-tustin-ca; 3
+  website: joshs-plumbing-crescent-city-ca, nebeker-roofing-vernal-ut,
+  powerhouse-electrical-services-vernal-ut) — a normal-sized batch. Used 6
+  parallel research subagents (pure-research, no file writes), then wrote
+  all enrichment.md/status.md updates myself for consistency.
+
+  Result: 2 of 6 advanced to `enriched` (Josh's Plumbing, Powerhouse
+  Electrical Services — both website), 4 held at `found` on the email
+  gate (DK Electrical Services, First And Local Plumbing, MH Painting —
+  all package; Nebeker Roofing — website).
+
+  - **DK Electrical Services (held):** no email found, no domain to guess
+    from. Owner-name lead "Dang" strengthened to medium confidence (two
+    independent snippet sources) but not solid enough for the CALL CARD —
+    marked NO NAME FOUND per the never-placeholder rule rather than
+    risking a wrong first name on a Vietnamese given name (Westminster CA
+    has a large Vietnamese-American population — worth remembering as a
+    reason a name lead can be real but still too risky to use cold).
+    Ruled out a CSLB license number (#495243) that would have been a
+    false attribution — belongs to an unrelated Ventura, CA commercial
+    contractor of the same name.
+  - **First And Local Plumbing (held):** no email found, no domain to
+    guess from. Caught and corrected a real brief.md error — the zip
+    code (92870) had no support in any source found this run; every
+    independent search converges on 92843 for the same street address
+    (14300 Clinton St, Space 95). Worth remembering as its own category
+    alongside the "no website found" and response-time-figure corrections
+    logged before: a plain address/zip field in brief.md can also be
+    wrong, not just the qualitative "why they fit" claims — worth a
+    glance at every field, not just the flagged ones.
+  - **MH Painting (held):** no email found, no domain to guess from (the
+    two obvious-looking domains, mhpaintinginc.com and mhpainting.net,
+    both belong to unrelated, larger commercial painting companies — do
+    not attribute). Re-examined the "quick to respond" review flagged as
+    a contradiction to the 7hr Yelp figure and read it as a genuine
+    nuance rather than a disqualifier: multiple independent reviews
+    describe Mario as fast on the phone/in person specifically, and
+    Yelp's response-time metric measures responses to Yelp's own message
+    feature, a different channel — worth naming as a new pattern
+    alongside the CVA Exterminators/Garcia's Landscaping "actively
+    contradictory" bucket: a review that looks like it contradicts a
+    Yelp stat isn't automatically in that bucket if it's measuring a
+    different channel, and can sharpen the pitch angle instead of
+    weakening it. Also found the same phone number tied to a second
+    address (Santa Ana) under the same owner/license — read as the same
+    operator's older CSLB-registered address, not a second business, but
+    not primary-source confirmed; flagged so a lower-rated review from
+    that address isn't mistaken for this business's reputation.
+  - **Josh's Plumbing (advanced):** website-gap DNS-decisive (5 guesses
+    failed). Owner Josh(ua Caleb) Williamson upgraded to high confidence
+    via a second independent source. Email (Facebook-found, not a domain
+    guess) passed the gate even though single-sourced — worth naming
+    explicitly: the email gate cares whether a contact was *discovered*
+    vs. *guessed*, not whether it's corroborated by a second independent
+    source the way a name gets weighed. A single-sourced but directly-
+    found email is still a PASS, distinct from a single-sourced *name*
+    lead (like "Dang" above), which isn't a hard gate and gets held to a
+    higher bar before going on a CALL CARD specifically because Kevin
+    says it out loud to a stranger.
+  - **Nebeker Roofing (held):** website-gap DNS-decisive (6 guesses
+    failed), but the owner-identity flag Rupika explicitly left
+    unresolved stayed unresolved, and this run found a genuine reason for
+    MORE caution rather than resolving it: the "Dustin Nebeker" lead has
+    an unrelated full-time day job elsewhere in Vernal with no source
+    tying him to the roofing business beyond a photo credit, and a third
+    distinct Nebeker household surfaced. No email, phone, OR address
+    found at all for the business — thinner than a typical email-only
+    hold. Left the CALL CARD's Ask-for line as NO NAME FOUND rather than
+    picking either candidate. Worth naming as its own category: most
+    holds are "good business, missing one contact channel" — this one is
+    "good business, no contact channel found at all, and the one name
+    lead is actively getting less certain the more it's checked," which
+    reads as a case that specifically needs a human phone call (find the
+    number on Facebook/Instagram directly) rather than more desk research
+    closing the gap.
+  - **Powerhouse Electrical Services (advanced):** website-gap confirmed
+    via DNS + ruling out two look-alike domains that resolve to genuinely
+    different companies. Owner name (Robert Hendrik Ooostveen) came from
+    a real Utah entity filing (OpenCorporates registered-agent record) —
+    a stronger source type than the usual aggregator bio, medium-high
+    confidence. Found a real, higher-stakes speculative link (a "Robert
+    Oostveen" independently shows up as owner of a *different* Vernal
+    electrical business, Hank's Electric) — flagged plainly as
+    unconfirmed rather than asserted, kept off the CALL CARD's framing.
+    Email corroborated via a second, Vernal-specifically-labeled source
+    (distinct from same-named businesses elsewhere) — passed the gate.
+    Also caught a genuinely dangerous collision: an identically-named LLC
+    ("Powerhouse Construction Services, LLC") exists in Marrero, LA with
+    a different owner — worth flagging to whoever sets up the GHL contact
+    since name-only dedup logic could conflate the two real businesses.
+  - Both of today's fresh-market pairs (the two Vernal, UT prospects)
+    came from a "no dedicated domain found across Facebook/BuildZoom/
+    LinkedIn/OpenCorporates" style sweep rather than the Yelp-advertisers
+    technique — worth noting this run's package-track holds (DK
+    Electrical, First And Local Plumbing) both came from the
+    Yelp-advertisers technique instead, so the two sourcing techniques
+    didn't correlate with which gate failed this run.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (Yelp/Facebook/BBB/CSLB.ca.gov/
+    OpenCorporates/BuildZoom and most guessed company domains) — same
+    recurring pattern logged since 2026-08-02. DNS-level checks (via
+    direct socket resolution rather than HTTP fetch) stayed decisive and
+    unblocked throughout, same as every prior run — worth remembering
+    this specific distinction keeps holding: the egress block is on HTTP
+    fetch, not DNS resolution, so a website-gap DNS check is reliable
+    even when everything else this run is search-snippet-sourced.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain.

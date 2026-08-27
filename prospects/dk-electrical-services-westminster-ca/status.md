@@ -26,3 +26,13 @@ quote_stage: none
   strictly on the 9701 Bolsa Ave, Westminster CA address, don't conflate.
   No CSLB number resolved via search despite the "Verified License"
   badge — Montague should pull the exact number.
+- 2026-08-27 (Montague): held at `found` on the email gate. No email
+  found anywhere and no owned domain exists to guess a pattern from.
+  Owner-name lead strengthened to medium confidence ("Dang," two
+  independent review/aggregator snippets) but not solid enough to put on
+  a CALL CARD — marked NO NAME FOUND per the never-placeholder rule.
+  CSLB license #495243 ruled out as belonging to an unrelated Ventura, CA
+  business (DK Electrical Contractors, Inc.) — do not attribute. Phone
+  (714) 887-3386 confirmed. Response-time signal unconfirmed (not
+  contradicted) — Yelp's dynamic UI doesn't surface in search snippets.
+  See enrichment.md.

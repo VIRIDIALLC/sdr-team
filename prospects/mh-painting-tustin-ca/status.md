@@ -28,3 +28,16 @@ quote_stage: none
   distinct, differently-addressed "MHP Painting" (John, Upland CA) was
   correctly ruled out as a different business. CSLB license not checked
   — Montague should run it before advancing.
+- 2026-08-27 (Montague): held at `found` on the email gate. No email
+  found anywhere and no owned domain to guess a pattern from
+  (mhpaintinginc.com/mhpainting.net both belong to unrelated, larger
+  companies — do not attribute). CSLB license #930670 (C33) found, tied
+  to a second address (2910 S. Bradford Pl., Santa Ana) sharing the same
+  phone/owner — read as the same operator's older registered address,
+  not a separate business, but not primary-source verified. The
+  "contradiction" review flagged by Rupika reads as a real nuance, not a
+  disqualifier: reviews consistently describe Mario as fast on the phone/
+  in person, distinct from Yelp's own message-response metric — used as
+  a caveated question on the CALL CARD. Phone (714) 470-4129 confirmed
+  (strongest single data point, cross-corroborated 8+ sources). See
+  enrichment.md.
