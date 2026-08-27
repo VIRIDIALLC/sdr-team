@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -29,3 +29,15 @@ quote_stage: none
   CSLB #1003226 corroborated via consistent secondary sources
   (medium-high confidence, primary CSLB page itself egress-blocked).
   Phone (707) 464-9056 confirmed. See enrichment.md.
+- 2026-08-27 (Elly): drafted. Website track. Real owner name used (Josh).
+  Deliberately used neither the rotted findability opener nor either of
+  yesterday's two website replacements. Angle: OWNERSHIP — the Facebook
+  page, the directory listings he never made, and a personal Gmail mean
+  every place his business exists belongs to somebody else. Opens on the
+  three-addresses-one-phone fact from enrichment as checkable proof of it.
+  Runner-up dropped: licensed-and-bonded vs unlicensed handymen (same
+  legitimacy mechanism as Kelso Electric one day earlier, and rests on the
+  least-verified item in the file). 84% BrightLocal stat deliberately
+  omitted again. Flagged for Kevin: the "personal Gmail" clause is his call
+  on tone, and the CSLB record is aggregator-sourced, not page-verified.
+  See outreach.md.

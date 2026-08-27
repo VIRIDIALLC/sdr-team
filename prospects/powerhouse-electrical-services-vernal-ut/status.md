@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -32,3 +32,16 @@ quote_stage: none
   Vernal-specific Facebook listing (email gate passed). New high-risk
   name collision found: an identically-named LLC in Marrero, LA — flag
   for GHL dedup. See enrichment.md.
+- 2026-08-27 (Elly): drafted. Website track. First name only in the
+  greeting (Robert) — the surname's triple-o rendering is a likely OCR
+  artifact, so it appears nowhere in the email. Angle: SCOPE — the trade
+  name says Electrical while the LLC is Construction Services, and there is
+  nowhere for a customer to find out which, so the whole-job work goes to
+  two contractors. Built as a forced-choice question rather than a claim,
+  and deliberately does NOT cite the B100/E200 license classifications,
+  which Montague flagged as unverified at source (DOPL egress-blocked).
+  Runner-up dropped: the Uintah Basin oil-and-gas discovery angle (the
+  rotted template, and it would have leaned on the unverified license).
+  The possible Hank's Electric connection is kept out of the email entirely
+  and flagged as call material only. GHL dedup warning carried forward
+  (identical LLC name in Marrero LA). See outreach.md.

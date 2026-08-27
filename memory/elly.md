@@ -1737,3 +1737,160 @@ no feedback yet on those specifically)
 
   **End-of-run:** committed and pushed to `master` per CLAUDE.md's landing-work
   rule.
+
+- **2026-08-27 (this run) — 2 drafted, the whole enriched queue, both website
+  track, and the run that proved the template break has to happen EVERY time,
+  not once.** `git fetch origin` first per CLAUDE.md: origin/master
+  force-updated to 6a71de1 (KIREEK fleet-state refresh on top of Montague's
+  2026-08-27 pass, "2 advanced / 4 email-gate holds", on top of two Rupika
+  top-ups). Container started detached at exactly that commit, clean tree, HEAD
+  an ancestor of origin/master — the same stale-ref-only pattern logged every
+  run since 08-13. `_fleet-state.md` was fresh (16:46 UTC), ground truth live.
+
+  Scanned `prospects/*/status.md`: 3 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold from
+  2026-08-03, unchanged, skipped again) plus 2 real ones, both drafted:
+  **joshs-plumbing-crescent-city-ca** (website) and
+  **powerhouse-electrical-services-vernal-ut** (website). No defensive-check
+  skips; both passed Montague's email gate. Montague held her other four at
+  `found`, so 2 was the entire queue, not a batch-size choice.
+
+  **All three of yesterday's drafts are now `sent`** (Passionate Plumber, AV
+  Heating, Kelso Electric). That is the first batch written after the website
+  template break and it went out intact, which is real if indirect evidence the
+  break was the right call. Still zero logged feedback on tone or edits.
+
+  **Owen Plumbing is still `dismissed` with no reason recorded and Kevin did not
+  answer the 08-26 question.** Asked once more in the rolling approvals file,
+  and said explicitly that if it was only prospect fit I will stop asking. Do
+  not start rewriting the approach off one unexplained dismissal — there is
+  still no signal in the record either way.
+
+  **The dominant fact this run: the SAME two-small-town-owner-operators fact
+  pattern arrived again, one day after it arrived last time.** Josh's Plumbing
+  and Powerhouse are both website track, both Facebook-and-directories only,
+  both gap-confirmed by DNS. That is now four consecutive website drafts in two
+  days off one fact pattern. **The lesson worth internalizing: breaking a
+  template is not a one-time fix, it is a per-run tax.** Yesterday I invented
+  two new arguments (AV: the site is for people who already have your name;
+  Kelso: the site is where thirty years finally gets stated). Reusing either
+  today would have rebuilt the template with a two-day cycle instead of a
+  one-day one. So today's two use neither, and neither uses findability.
+  - **Josh's Plumbing — OWNERSHIP.** Every place his business exists online is
+    rented: the Facebook page, the directory listings he never made, and a
+    personal Gmail as the contact address. Eleven years of a licensed, bonded
+    business and he owns none of the front door. **Opened on the
+    three-different-addresses-one-phone-number fact from Montague's enrichment,
+    because it is proof of the argument rather than a separate complaint, and he
+    can check it in thirty seconds.** Findability was also just factually wrong
+    for him: Crescent City is ~6,600 people in a county of 27,000, he is not
+    hard to find, his information is scattered across pages he cannot edit.
+  - **Powerhouse Electrical — SCOPE.** Trade name says Powerhouse Electrical
+    Services, the LLC is Powerhouse Construction Services. Somebody putting up a
+    shop who needs the building and the panel has no way to learn one outfit
+    does both, so they call two contractors and he gets the smaller half.
+    **Built as a forced-choice question, which ports Kevin's cold-call opener
+    mechanic onto the website track without needing a response-time number.**
+    Both doors face-saving (the construction side is real and he is bigger than
+    his name suggests, or it is entity housekeeping and there is nothing to
+    defend). Worth keeping as a pattern: the package track's question shape is
+    portable, and website-track prospects have no Yelp metrics at all.
+
+  **Generalizable and worth keeping: when the same fact pattern keeps arriving,
+  the renewable supply of angles is the prospect's own records, not the
+  category.** Both winning angles came from documents rather than from anything
+  about "small-town contractor" — a directory address discrepancy and an
+  entity-name-versus-trade-name mismatch. Category-level thinking produces the
+  template every time; record-level thinking cannot, because no two prospects'
+  records disagree in the same way.
+
+  **Deliberately did not cite an unverified license, on the one draft where it
+  would have been the strongest possible proof.** Powerhouse reportedly holds
+  B100 (General Building) and E200 (General Electrical) qualifiers, which would
+  settle the exact question the email asks. Montague flagged Utah DOPL as
+  egress-blocked and said to check it before referencing in outreach. Citing a
+  classification we could not verify at source is exactly the claim the one
+  person who knows it is wrong would dismiss the email over. Asked instead, and
+  told Kevin it is a ten-second DOPL check that would let him assert it on the
+  call. **Standing read: an unverified fact that would make the argument is
+  still an unverified fact, and the question form costs nothing.**
+
+  **Name calls this run, both defensible and different from each other:**
+  - Josh: high confidence, two independent sources, used plainly.
+  - Powerhouse: used the FIRST NAME ONLY ("Hi Robert,"). The surname renders
+    "Ooostveen" with a triple o in indexed OpenCorporates text, a likely OCR
+    artifact — the first name is stable across both spellings, so the greeting
+    carries no risk while writing the surname would. **New pattern: when the
+    source has a rendering problem in part of a name, use only the stable part
+    rather than falling back to a team greeting.** Using the name at all is
+    right under the CVA/Merican precedent (a state entity filing at the
+    business's own address beats an aggregator bio); this is not the Freedom
+    Roofing 08-20 case, where a name had already burned us and the replacement
+    was single-source and synthesized.
+
+  **Kept out of the Powerhouse email entirely and flagged as call material:** a
+  "Robert Oostveen" also turns up as President/Master Electrician of Hank's
+  Electric of Vernal, a separate local contractor. Same man with two shops, or
+  coincidence — no source says either. Montague said not to present it as
+  settled and she is right; it is the single worst thing to get wrong in a first
+  email to a stranger. Same class of call as keeping the negative review out of
+  Reliant Pest (08-19) and Owen Plumbing (08-25).
+
+  **One line I flagged for Kevin as his call rather than deciding alone:** the
+  "the email on your listing is a personal Gmail" clause in Josh's draft. It is
+  true, it is his own address, and the email arrives in that very inbox, which
+  is part of why it lands. It sits inside an ownership argument rather than a
+  judgment about how he looks. But it is the closest thing to a sting I have put
+  in a first touch, and Kevin knows small-town tone better than I do. Told him
+  exactly which clause to cut and that the paragraph survives without it.
+
+  **Runner-up angles, both documented in the outreach.md dropped-angle blocks:**
+  - *Josh's Plumbing* — licensed and bonded against the unlicensed handyman
+    trade. Dropped for three independent reasons: same legitimacy mechanism as
+    the Kelso draft one day earlier out of the same inbox, it rests on the CSLB
+    record which is the least verified item in the file, and it only works by
+    implying something about his competitors, which turns a first touch into a
+    jab.
+  - *Powerhouse* — the Uintah Basin oil-and-gas economy and operators needing a
+    vetted local electrician. Real and genuinely local, but it is a discovery
+    argument (the rotted template) and it would have leaned on the unverified
+    license to do its work. Pivoted rather than polished.
+
+  **84% BrightLocal stat omitted again**, third run running on this track. It
+  supports a findability argument neither draft makes, and re-inserting it is
+  precisely how the template reassembles itself. Considered override of the
+  persona's standing guidance, not an oversight.
+
+  **Verification notes:** confirmed pipeline counts by grep rather than trusting
+  `_fleet-state.md`'s summary (66 found, 1 enriched, 2 drafted, 97 sent, 6
+  closed, 3 dismissed, 2 approved). Re-checked all four dated first-touch
+  approval files: already `status: superseded`, nothing to close. Left
+  `2026-08-21-followup-drafts-held-lane.md` open again on purpose (not a
+  first-touch file, 11 real undrafted second touches).
+
+  Track breakdown: 2 website. Standard post-write sweep on body text only (em
+  dash, en dash, bracket placeholder, retired package name, third-person
+  Kevin/Viridia, pricing, `%`, the 84% stat, "guarantee", stray signature) — both
+  clean on every check. Bodies are 139 and 138 words. Two distinct subject lines,
+  two distinct closers, two disjoint mechanisms.
+
+  **Bookkeeping gaps re-flagged, not fixed (both carried from 08-25/08-26):**
+  the two collateral files still carry `status: draft-awaiting-kevin` headers
+  despite Kevin's recorded 08-24 approval, and there is still no published
+  website-build case study while doctrine §3 kit item 2 is marked closed. Did
+  not edit documents I do not own.
+
+  **Pricing-in-a-cold-email question is STILL unanswered** (eight runs now).
+
+  **Next run:** check `stage: enriched` first, then regenerate
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted` (write it
+  explicitly empty if nothing is there). **Check whether Kevin answered on Owen
+  Plumbing or on the personal-Gmail line** — those are the two highest-value
+  things waiting. Upstream backlog is **66 at `stage: found`** and has grown
+  every day for a week (62 on 08-26, 60 on 08-25, 59 on 08-24). The email gate
+  clears one or two a day while Rupika adds three, so first touches will keep
+  arriving in ones and twos; nothing in this seat changes that. The 11 held-lane
+  second touches remain the one place surplus capacity would actually convert.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.
