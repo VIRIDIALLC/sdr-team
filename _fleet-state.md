@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-08-27 17:18 UTC (2026-08-27 10:18 Phoenix)
+Generated: 2026-08-27 21:08 UTC (2026-08-27 14:08 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -98,8 +98,8 @@ Generated: 2026-08-27 17:18 UTC (2026-08-27 10:18 Phoenix)
 ## Systems — live-probed, not recalled
 
 - **GHL API:** UP (live probe returned 200)
-- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-27 15:07 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 2h ago)
+- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-08-27 21:07 UTC)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 0m ago)
 - **KIREEK repo:** 21 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
@@ -110,7 +110,7 @@ Generated: 2026-08-27 17:18 UTC (2026-08-27 10:18 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 4 minutes ago — "Elly 2026-08-27: 2 website first touches + rolling approvals refresh" (0ab45e567)
+- last commit: 4 hours ago — "Elly 2026-08-27: 2 website first touches + rolling approvals refresh" (0ab45e567)
 - pipeline (prospects, 176 items): found 65 · enriched 1 · drafted 2 · approved 2 · sent 97 · closed 6 · dismissed 3 — ~60% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-08-27 on `joshs-plumbing-crescent-city-ca` — "drafted. Website track. Real owner name used (Josh). Deliberately used neither the rotted findability opener n"
@@ -123,7 +123,7 @@ Generated: 2026-08-27 17:18 UTC (2026-08-27 10:18 Phoenix)
 - waiting on Kevin (2): 2026-08-21: Second-touch drafts — 10 prospects in the `followup: held` lane; For Kevin — first-touch drafts waiting on you (LIVE QUEUE)
 
 ### Ads Team
-- last commit: 2 hours ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (162f8ac9e)
+- last commit: 23 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (753923b6a)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
@@ -141,7 +141,7 @@ Generated: 2026-08-27 17:18 UTC (2026-08-27 10:18 Phoenix)
 - waiting on Kevin (3): 2026-08-14: Post-purchase onboarding sequence — spec + gap list; 2026-08-24: Billing-transition client comms + Tyler "keep the system" one-pager; 2026-08-24: Tyler meeting — collect + keep-the-system talk track (2026-08-24)
 
 ### Finance Team
-- last commit: 2 hours ago — "Merge branch 'claude/nifty-bardeen-9xdd0f'" (736bf7be4)
+- last commit: 6 hours ago — "Merge branch 'claude/nifty-bardeen-9xdd0f'" (736bf7be4)
 - pipeline (invoices, 9 items): draft 3 · paid 1 · draft_amount_disputed 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~25% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-08-27 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 98 days overdue, still 91+ bucket. Third run on hold with n" · 1 open handoff(s) in their inbox
@@ -149,7 +149,7 @@ Generated: 2026-08-27 17:18 UTC (2026-08-27 10:18 Phoenix)
 - waiting on Kevin (4): 2026-08-24: A/R aging review — 2026-08-24; 2026-08-27: A/R aging review — 2026-08-27; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 63 minutes ago — "Correct week 2 numbers (221, not 175); clear two stale records from Kevin's queue" (daaaf9442)
+- last commit: 5 hours ago — "Correct week 2 numbers (221, not 175); clear two stale records from Kevin's queue" (daaaf9442)
 - pipeline (posts, 26 items): scheduled 10 · posted 3 · superseded 13 — ~74% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-08-27 on `ai-front-door-45-percent` — "**Closed the footer-gap flag from `handoffs/inbox/2026-08-26-front-door-4x5-footer-gap.md`** (optional polish;" · 1 open handoff(s) in their inbox
@@ -158,7 +158,7 @@ Generated: 2026-08-27 17:18 UTC (2026-08-27 10:18 Phoenix)
 - waiting on Kevin (2): 2026-08-21: Comment reply kit — Viridia's own channels; 2026-08-25: TFP Landscaping — Yelp page updates, drafts for your approval
 
 ### SEO Team
-- last commit: 25 hours ago — "Merge origin/master into claude/bold-mayer-uc22ad" (5729cc0b1)
+- last commit: 29 hours ago — "Merge origin/master into claude/bold-mayer-uc22ad" (5729cc0b1)
 - pipeline (audits, 3 items): recommendations 2 · tracking 1 — ~78% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elenor** (Backlink & Citation Outreach): no logged task activity yet
@@ -175,11 +175,11 @@ Generated: 2026-08-27 17:18 UTC (2026-08-27 10:18 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-08-27 17:18 UTC (auto-generated by VEGA's backend):
+As of 2026-08-27 21:08 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 125 days (17 weeks) → ~1 close per 2 week(s).
 This week (since 2026-08-24): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 2h ago)
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 0m ago)
 Approvals waiting on Kevin across the fleet: 11
 ```
