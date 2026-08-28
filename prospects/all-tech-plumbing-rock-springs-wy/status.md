@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -30,3 +30,13 @@ quote_stage: none
   guess. Owner name upgraded: Jeff Carey (BBB profile + an independent
   review naming "the owner, Jeff"), medium confidence, first name solid
   enough for the CALL CARD. Advanced to `enriched`. See enrichment.md.
+- 2026-08-28 (Elly): drafted. Website track. Built the email on the national
+  name collision — at least six unrelated All Tech Plumbings exist (NJ, CT, OK,
+  LA, CO, VA) and in a referral town of ~23,000 the break happens between "call
+  All Tech" and actually reaching him. First name only ("Hi Jeff,"); surname
+  rests on one BBB snippet and stays out. Kept out of the body: the unanswered
+  BBB complaint (not a face-saving door, call material) and the "union
+  technicians only" claim (same legitimacy mechanism as the 08-26 Kelso draft).
+  Dropped angle: the 10,500 sq mi Sweetwater County service area (same
+  "your listing understates you" mechanism as the 08-27 Powerhouse draft).
+  Advanced to `drafted`. See outreach.md.

@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -36,3 +36,12 @@ quote_stage: none
   sources). Email gate PASSED — info@kjcroofing.com, guessed pattern on a
   confirmed-live domain, labeled GUESSED. Advanced to `enriched`. See
   enrichment.md.
+- 2026-08-28 (Elly): drafted. Package track. Built the email on the 100%
+  response rate sitting next to the ~9hr response time — nothing is being
+  dropped, it is all queued, and a queue treats a spring re-roof enquiry and an
+  active leak the same way. Signal was the cleanest reconfirmation in weeks
+  (three reads, one tight band), so the number is stated and the interpretation
+  stays a question. Greeted Randy as President; Kelly may read the shared info@
+  inbox. Dropped angle: the two of them personally answering the phone (an
+  assumption about how he operates, and a compliment rather than a question).
+  Advanced to `drafted`. See outreach.md.

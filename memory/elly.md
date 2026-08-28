@@ -1894,3 +1894,166 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-08-28 (this run) — 3 drafted, the whole enriched queue, and the run
+  where the container's local `master` was a genuinely orphaned history rather
+  than just a stale ref.** `git fetch origin` first per CLAUDE.md: origin/master
+  force-updated to c9d1987 (Montague's 2026-08-28 pass, "3 advanced / 3
+  email-gate holds", on top of two Rupika batches). Container started detached
+  on a local `master` at 1c273a9 that had **zero shared history** with
+  origin/master (58 vs 51 commits, `git merge --ff-only` returned "refusing to
+  merge unrelated histories"). Same class of thing as 08-13 but worse: origin
+  carried today's real Rupika and Montague commits and today's fleet state,
+  local carried a 08-24 fleet state, so origin was unambiguously the live
+  history. Repointed with `git checkout -B work origin/master`. Did not touch
+  origin's history. **Worth knowing: I read `_fleet-state.md` off the stale
+  local branch first and got a four-day-old file. Fetch, repoint, THEN read
+  ground truth — reading it before fixing the ref is how a stale note gets
+  treated as current.** `_fleet-state.md` on origin was fresh (14:15 UTC).
+
+  Scanned `prospects/*/status.md`: 4 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold from
+  2026-08-03, unchanged, skipped again) plus 3 real ones, all drafted:
+  **kjc-roofing-mission-viejo-ca** (package),
+  **all-tech-plumbing-rock-springs-wy** (website),
+  **nelson-landscaping-willmar-mn** (website). No defensive-check skips; all
+  three passed Montague's email gate. She held three others at `found`, so 3 was
+  the entire queue, not a batch-size choice.
+
+  **Nothing moved on Kevin's side since yesterday.** Josh's Plumbing and
+  Powerhouse are still sitting at `drafted`, first time in a while the queue has
+  carried over. Owen Plumbing is still `dismissed` with no reason recorded and
+  he did not answer for a third run. **I told him in the rolling file this is
+  the last time I ask, and that silence means I will assume prospect fit.**
+  Follow through on that: do not raise Owen again, and do not start rewriting
+  the approach off one unexplained dismissal. Still zero logged feedback on tone
+  or edits after nine weeks.
+
+  **KJC Roofing — the response-time signal came back clean, and the interesting
+  move was using the 100% rate to make the number mean something.** Three
+  independent reads in one tight band (Rupika 8hr twice, Montague 9hr fresh)
+  with a 100% response rate, 4.5 stars, 20 reviews. Montague cleared it as
+  usable as stated fact. **The pairing is the angle: a 100% response rate means
+  nothing is being neglected, it is being QUEUED, and a queue treats a spring
+  re-roof enquiry and an active roof leak identically.** The re-roof waits
+  happily; the leak calls three roofers and hires whoever rings back first, and
+  that is both the biggest job and the only one he never learns he lost. **New
+  standing option worth keeping alongside the 08-26 rate lesson: response rate
+  and response time interpret each other.** Low rate means leads rot (Passionate
+  Plumber, 70%). High rate plus a long time means a queue, which is a different
+  problem, a different email, and honestly the better one because there is no
+  neglect to accuse anybody of.
+
+  **Also had to rebuild the forced choice, because the standard pair breaks at
+  100%.** "Too busy to get to them" versus "screening out the tire-kickers" is
+  the canonical pairing, but the second door contradicts answering every single
+  one. Replaced with: up on a roof all day, or wanting a proper look at a job
+  before replying. Both face-saving, both compatible with the data, and the
+  second one is what his own reviews credit him for. **Generalizable: when you
+  build an opener on two metrics, check that both doors survive both metrics.**
+
+  **Two website-track prospects with the same small-town-owner-operator fact
+  pattern arrived for the THIRD day running** (AV/Kelso 08-26, Josh's/Powerhouse
+  08-27, All Tech/Nelson today). That is six drafts in three days off one
+  pattern. The per-run template tax logged yesterday held: neither of today's
+  reuses ownership, scope, legitimacy, warm-referral-cooling, or findability.
+  - **All Tech Plumbing — NAME AMBIGUITY IN A REFERRAL ECONOMY.** At least six
+    unrelated All Tech Plumbings exist nationally (NJ, CT, OK, LA, CO, VA), a
+    collision both Rupika and Montague documented as a dedup risk. Rock Springs
+    is ~23,000 people so findability is factually not his problem; the break is
+    in the referral handoff, between somebody saying "call All Tech" and the
+    neighbour actually reaching him. **A domain is literally the product that
+    fixes that, which is the tightest problem-to-product fit this track has
+    had.** Best property: he can verify the entire premise on his phone in ten
+    seconds, so nothing depends on trusting a number we pulled.
+  - **Nelson Landscaping — THE PORTFOLIO, first time this pipeline has argued
+    it.** Paver driveways, retaining walls, patios and steps are bought off
+    photographs, and every job he has finished is a permanent photogenic object
+    sitting in a yard doing no selling because it lives on a feed that scrolls
+    away. A hardscaper without a portfolio is a builder with no showroom.
+    **Opened with a forced-choice question whose doors are both normal
+    contractor behaviour** (send them to Facebook, or text them photos) so
+    neither answer is embarrassing and both land in the same place: the pictures
+    only work when he is personally in the conversation.
+
+  **Generalizable and worth keeping: the renewable supply of website angles is
+  the TRADE, not the town.** Yesterday's lesson was that angles come from the
+  prospect's own records rather than the category. Today adds a second seam:
+  what the trade physically sells. Hardscaping is bought off pictures,
+  emergency plumbing is bought off availability, electrical is bought off
+  qualification. Those are structurally different arguments for the same
+  product and none of them is findability. "Small-town contractor with no
+  website" generates one email forever; "hardscaper" and "24/7 plumber"
+  generate different ones.
+
+  **Facts I deliberately kept out of bodies this run:**
+  - All Tech's BBB B- and its unanswered complaint, and the fact that the review
+    corroborating "Jeff" is a review calling him difficult to work with. Real,
+    reinforcing, and not a face-saving door. Same call as Reliant Pest (08-19),
+    Owen Plumbing (08-25) and the Hank's Electric question (08-27). Flagged as
+    call material.
+  - All Tech's "union technicians only" claim, which would have made a fine
+    differentiator-with-nowhere-to-live pitch and is the exact Kelso legitimacy
+    mechanism from two days ago.
+  - Nelson's hauling/trucking DOT registration, which is the Powerhouse scope
+    mechanism from one day ago.
+  - KJC's two unverified CSLB numbers and Rupika's unreconfirmed "Yelp
+    Guaranteed" badge.
+
+  **Runner-up angles, both documented in the outreach.md dropped-angle blocks:**
+  - *All Tech* — Sweetwater County is the largest county in Wyoming by area at
+    roughly 10,500 sq mi and he covers all of it from one address on Dewar
+    Drive, so nobody in Green River or Farson can learn he drives out that far.
+    Real and genuinely local. Dropped because the mechanism is "your listing
+    understates you," which is the Powerhouse draft from 08-27.
+  - *Nelson* — the closing Minnesota hardscape season, about eight weeks left,
+    next spring decided over a winter when nobody drives past his work. **A
+    clock is the rarest and most valuable thing a cold email can have** and I
+    still dropped it, because it is structurally the High Country Lawn follow-up
+    from 08-21 (winterization and snow removal searched cold, six weeks out),
+    same mechanism and same time of year. Told Kevin to use it on the phone,
+    where it works better anyway.
+
+  **Name calls:** Randy Holmes used plainly (four sources, essentially settled;
+  flagged that co-owner Kelly may be the one reading the shared info@ inbox and
+  that "Hi Randy and Kelly," reads like a mail merge). Lee Nelson used plainly
+  (LinkedIn plus a federal FMCSA filing). Jeff first-name-only on All Tech, per
+  the 08-27 Powerhouse precedent, since "Carey" rests on a single BBB search
+  snippet from an egress-blocked page.
+
+  **Nelson's email is the weak spot and the draft is deliberately built not to
+  depend on it.** Montague flagged lee.nelson14@gmail.com as better-supported
+  but not certain and said not to lean on email personalization. Nothing in the
+  body does. yahoo.com is the documented fallback on a bounce.
+
+  **84% BrightLocal stat omitted again**, fourth run running on this track,
+  considered override not oversight. Neither draft argues findability.
+
+  **Verification notes:** confirmed pipeline counts by grep rather than trusting
+  `_fleet-state.md`'s summary (69 found, 1 enriched, 5 drafted, 97 sent, 6
+  closed, 3 dismissed, 2 approved). Re-checked all four dated first-touch
+  approval files: already `status: superseded`, nothing to close. Left
+  `2026-08-21-followup-drafts-held-lane.md` open again on purpose. Regenerated
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted`, so it
+  lists all 5 including yesterday's two carryovers, not just today's additions.
+
+  Track breakdown: 1 package, 2 website. Standard post-write sweep on body text
+  only (em dash, en dash, bracket placeholder, retired package name,
+  third-person Kevin/Viridia, pricing, `$`, the 84% stat, "guarantee", stray
+  sign-off) — all three clean on every check. Bodies are 129, 153 and 154 words.
+  Three distinct subject lines, three distinct closers ("Worth fifteen minutes
+  on the phone?" / "Is that worth a short call?" / "Can I call you this week?"),
+  three distinct collateral lines, three disjoint mechanisms. The only `%` in
+  any body is KJC's 100% off his own listing.
+
+  **Next run:** check `stage: enriched` first, then regenerate
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted` (write it
+  explicitly empty if nothing is there). **Fix the git ref before reading
+  `_fleet-state.md`** — see the top of this entry. Do NOT raise Owen Plumbing
+  again. Upstream backlog is **69 at `stage: found`** and has grown every day
+  for over a week (66 on 08-27, 62 on 08-26, 60 on 08-25). Montague cleared 3
+  and held 3 today while Rupika added 6, so the gap widened. The 11 held-lane
+  second touches remain the one place surplus capacity would actually convert.
+
+  **End-of-run:** committed and pushed to `master` per CLAUDE.md's landing-work
+  rule.

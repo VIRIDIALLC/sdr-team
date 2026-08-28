@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -40,3 +40,11 @@ quote_stage: none
   mirrors; the yahoo.com candidate traces to a directory listing in the
   wrong county). Not fully certain — flagged for Elly not to lean hard
   on email personalization. Advanced to `enriched`. See enrichment.md.
+- 2026-08-28 (Elly): drafted. Website track. Built the email on the portfolio —
+  hardscaping is bought off photographs, every wall and paver driveway he has
+  finished is still sitting in a yard doing no selling, and Facebook cannot show
+  a stranger the body of work. First portfolio-angle draft this pipeline has
+  written. Nothing in the body depends on the email address being right, per
+  Montague's flag that lee.nelson14@gmail.com is not fully certain. Dropped
+  angle: the closing Minnesota hardscape season (same clock mechanism as the
+  08-21 High Country Lawn follow-up). Advanced to `drafted`. See outreach.md.
