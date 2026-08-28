@@ -2228,3 +2228,96 @@
     even when everything else this run is search-snippet-sourced.
   - Backlog after this run: no genuinely untouched `stage: found`
     prospects remain.
+
+- (2026-08-28 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  `origin/master` had a force-updated ref since last fetch (KIREEK
+  fleet-state refreshes + Rupika's two today's batches), local working
+  tree was already clean and synced, no reset needed. Scanned
+  `prospects/*/status.md` for `stage: found` (69 files, minus template),
+  filtered for genuinely untouched (no `enrichment.md` yet, per the
+  2026-08-24/25 lesson that the raw stage field alone is misleading) — 9
+  matched, but 3 (dd-plumbing-repair-medford-or,
+  sonrise-roofing-wichita-falls-tx, superior-roofing-boise-id) are the
+  same pre-enrichment.md-convention dead-ends from 2026-08-04/05 that
+  keep showing up in this filter every run — confirmed via their own
+  status.md logs, deliberately left alone again. The remaining 6 were
+  genuinely new, both of today's Rupika batches in full (3 package: Cano
+  Painting/James Fania Plumbing — Dana Point CA, KJC Roofing — Mission
+  Viejo CA; 3 website: All Tech Plumbing — Rock Springs WY, Nelson
+  Landscaping — Willmar MN, Your Electrician — Aberdeen SD) — a
+  normal-sized batch. Used 6 parallel research subagents (pure-research,
+  no file writes), then wrote all enrichment.md/status.md updates myself
+  for consistency, following the CALL CARD format.
+
+  Result: 3 of 6 advanced to `enriched` (All Tech Plumbing, Nelson
+  Landscaping — both website; KJC Roofing — package), 3 held at `found`
+  on the email gate (Cano Painting, James Fania Plumbing — both package;
+  Your Electrician — website).
+
+  - **All Tech Plumbing (advanced):** website-gap DNS-decisive (4
+    guesses ENOTFOUND). Email gate passed on a directly-found business
+    gmail (alltechplumbingllc.rs@gmail.com) recurring across multiple
+    independent directory listings tied to this business's name/
+    address/phone — not a guess, so it clears the gate even though I
+    couldn't read a page verbatim showing it (egress-blocked). Owner
+    name upgraded from "not yet found" to Jeff Carey, medium confidence
+    — first name corroborated twice (BBB profile + a review naming "the
+    owner, Jeff"), surname resting on the BBB snippet alone. Worth
+    naming as a clean instance of the "first name solid enough for the
+    CALL CARD even when the surname isn't" distinction used before.
+  - **KJC Roofing (advanced):** a rare case where a whole run's worth of
+    Rupika's open questions all resolved cleanly in one pass — response-
+    time reconfirmed (9hrs, same band as her 8hr read), website
+    confirmed genuinely real/live via DNS + matching indexed content
+    (she'd flagged it as unverified), owners upgraded from HIGH to
+    essentially-confirmed via a 4th independent source, and email
+    passed via the standard guessed-pattern-on-confirmed-live-domain
+    precedent. No open questions left on this one.
+  - **Nelson Landscaping (advanced):** website-gap DNS-decisive (8
+    guesses ENOTFOUND, 3 more-generic resolving domains ruled out via
+    search evidence). Resolved Rupika's flagged email ambiguity (gmail
+    vs. yahoo) with genuine but incomplete confidence — the gmail
+    address matches a federal FMCSA/DOT filing across 4 independent
+    mirrors (an authoritative, self-filed source), while the yahoo
+    address traces to a directory listing in the wrong county (Murray,
+    not Kandiyohi) — used gmail but flagged explicitly for Elly not to
+    lean hard on email personalization since this isn't fully certain.
+    Worth naming as its own pattern: resolving a two-candidate ambiguity
+    by weighing source authority (federal filing > mismatched-county
+    directory) rather than picking arbitrarily or leaving both — a step
+    between "flag both, pick neither" (AMS Landscaping et al.) and a
+    clean single-source resolution.
+  - **Cano Painting (held):** response-time unconfirmed-not-contradicted,
+    same as the standard "Yelp's dynamic UI isn't indexed" pattern.
+    Owner name didn't strengthen past "Carlos" — actively ruled out a
+    tempting "Carlos Cano" identity because a same-named Florida
+    painting business turns out to belong to a different, unrelated
+    Carlos Cano. No email, no domain to guess from — held on a genuine
+    gate miss, not an environment-blocked one.
+  - **James Fania Plumbing (held):** response-time stayed unconfirmed;
+    owner and license both strengthened via independent sources this
+    run (BuildZoom, 2 LinkedIn profiles). No email anywhere and no
+    website/domain exists — held on a genuine gate miss. A strong
+    prospect otherwise (40-yr tenure, active C-36 license, sharp
+    lead-volume-vs-reviews pain signal) — only reachable by phone right
+    now.
+  - **Your Electrician (held):** website-gap reconfirmed (7 guesses
+    NXDOMAIN); one resolving near-match domain (yourelectrician.com)
+    couldn't be tied to or ruled out for this business — left
+    unresolved rather than forced either way, similar to the Jones
+    LawnCare pattern from 2026-08-17. Owner name (Brian Braaten) stayed
+    at Rupika's original HIGH confidence — couldn't independently
+    strengthen it this run since Facebook/BBB/SD SOS were all
+    egress-blocked or came back empty. No email found — held, mostly an
+    environment-access gap (the domains most likely to carry a contact
+    email were blocked) rather than a confirmed structural absence.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (company/guessed domains, BBB,
+    Facebook, BuildZoom, CSLB.ca.gov, D&B, Manta, TheBlueBook) — same
+    recurring pattern logged since 2026-08-02. DNS-level resolution
+    checks stayed decisive and unblocked throughout (confirmed the
+    distinction again this run against control domains too) — every
+    website-gap verdict above rests on DNS, every other finding is
+    search-snippet-sourced.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain.
