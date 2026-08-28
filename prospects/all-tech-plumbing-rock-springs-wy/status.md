@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: website
 quote_stage: none
 ---
@@ -24,3 +24,9 @@ quote_stage: none
   Griswold/Dayville CT, and New Jersey — anchor strictly on the 1897 Dewar
   Dr, Rock Springs WY 82901 address and (307) 382-2711 phone, do not
   attribute any of those to this prospect.
+- 2026-08-28 (Montague): website-gap reconfirmed DNS-decisive (4 guessed
+  domains all ENOTFOUND). Email gate PASSED — alltechplumbingllc.rs@gmail.com
+  is a directly-found address recurring across directory listings, not a
+  guess. Owner name upgraded: Jeff Carey (BBB profile + an independent
+  review naming "the owner, Jeff"), medium confidence, first name solid
+  enough for the CALL CARD. Advanced to `enriched`. See enrichment.md.

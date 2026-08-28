@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -29,3 +29,10 @@ quote_stage: none
   principal records. No collision risk found — "KJC Roofing" reads as a
   distinctive enough name, no other same-named business turned up in
   search.
+- 2026-08-28 (Montague): response-time signal reconfirmed (~9hrs, same
+  band as Rupika's 8hr read). Website confirmed real/live (kjcroofing.com,
+  DNS-resolves to Vercel, matches phone/address across BBB/BuildZoom/
+  Facebook). Owner names upgraded to essentially confirmed (4 independent
+  sources). Email gate PASSED — info@kjcroofing.com, guessed pattern on a
+  confirmed-live domain, labeled GUESSED. Advanced to `enriched`. See
+  enrichment.md.

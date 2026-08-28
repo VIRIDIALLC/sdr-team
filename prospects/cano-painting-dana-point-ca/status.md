@@ -29,3 +29,14 @@ quote_stage: none
   Painting" locations exist in Sacramento CA and Ravensdale WA per
   search, both clearly separate/unrelated Yelp listings with their own
   addresses, no address overlap with this Dana Point business.
+- 2026-08-28 (Montague): response-time signal stayed unconfirmed (not
+  contradicted) on reconfirmation — Yelp's dynamic UI just isn't
+  indexed for this business, same as Rupika's original read; carried
+  forward as a question, not a block. No email found anywhere (GBP,
+  Facebook, Houzz, HomeAdvisor, Networx, BBB) and no live domain exists
+  to guess a pattern from — **email gate FAILED, held at `found`**.
+  Owner name did not strengthen past "Carlos" — caution: do not assume
+  "Cano" is his surname (a same-named Florida business is a different,
+  unrelated Carlos Cano; not this one). Not a dead end — real,
+  fit-the-ICP business, just not currently reachable by email. See
+  memory/montague.md.

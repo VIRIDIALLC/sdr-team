@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: website
 quote_stage: none
 ---
@@ -32,3 +32,11 @@ quote_stage: none
   attribute any of them here. Also note a same-city, different-business
   "Nelson Construction Co" (Willmar MN, general contractor) turned up in
   search — confirmed unrelated to this landscaping prospect, don't conflate.
+- 2026-08-28 (Montague): website-gap reconfirmed DNS-decisive (8 guessed
+  domains ENOTFOUND; the 3 that resolve don't tie to this business).
+  Owner Lee Eric Nelson reconfirmed, no contradictions. Email gate
+  PASSED — lee.nelson14@gmail.com is the better-supported of the two
+  candidates (matches a federal FMCSA/DOT filing across 4 independent
+  mirrors; the yahoo.com candidate traces to a directory listing in the
+  wrong county). Not fully certain — flagged for Elly not to lean hard
+  on email personalization. Advanced to `enriched`. See enrichment.md.

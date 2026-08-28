@@ -33,3 +33,14 @@ quote_stage: none
   matching independent directory listing (Jim Fania, San Juan
   Capistrano). No collision risk found — distinctive name, no other
   "James Fania Plumbing" turned up anywhere in search.
+- 2026-08-28 (Montague): response-time signal stayed unconfirmed (not
+  contradicted) — Yelp's dynamic UI didn't surface the specific figures
+  again, but a generic "is a Yelp advertiser" badge did reconfirm.
+  Owner James "Jim" Fania strengthened further (BuildZoom + two
+  matching LinkedIn profiles). CA C-36 license #398219 corroborated via
+  BuildZoom (cslb.ca.gov itself egress-blocked, not a first-hand check).
+  No email found anywhere (BBB, Facebook, BuildZoom, TopProz, LinkedIn,
+  local.yahoo.com) and no website/domain exists to guess a pattern
+  from — **email gate FAILED, held at `found`**. Only a phone number,
+  (949) 887-4885, is currently reachable. Not a dead end — a strong fit,
+  just email-blocked right now. See memory/montague.md.
