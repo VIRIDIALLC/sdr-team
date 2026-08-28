@@ -1488,3 +1488,74 @@
   hits) — worth a fast follow-up pass if this market gets revisited: Hank's Electric of Vernal,
   Daniels Plumbing & Heating, Make Your Mark Plumbing, Roofing World, EMC Plumbing & Heating, Downs
   Plumbing.
+
+- (run 2026-08-28) Scheduled run scoped to two tracks (package + website — ads track not
+  requested, per this run's task instructions). `git fetch` showed a detached HEAD matching
+  `origin/master`'s tip exactly (`de648ff`) — same recurring stale-ref symptom, fixed with
+  `git checkout -B master origin/master` (the safe form, per the 2026-08-23/25 correction).
+  `_new-leads.md` had nothing dropped in. Ran both tracks as parallel background Agent-tool
+  sub-agents (continues working cleanly). Committed each track's batch separately and
+  immediately as it landed, per the pattern from 2026-08-27, rather than holding for one
+  end-of-run commit — a stop-hook again flagged the untracked files after the first batch
+  landed, confirming incremental commits are the right call here.
+- (package/priority track, run 2026-08-28) 3 hits, all South Orange County CA (Mission Viejo,
+  Dana Point — a fresh sub-region, not on the exhausted list): KJC Roofing, Inc. (Mission
+  Viejo CA, roofing, co-owners Randy & Kelly Holmes personally answer the phone per reviews,
+  ~8hr response corroborated identically across 2 searches, thin quote-volume drift 5-16
+  locals — doesn't cross threshold either way so not a disqualifier, 4.7★/20 reviews, no
+  collision risk), Cano Painting (Dana Point CA, painting, owner Carlos C., ~6hr response/61
+  quote requests — SINGLE-SOURCED, a follow-up couldn't re-surface the exact figures, mild
+  4.4-vs-5.0-star discrepancy across reads, flagged for Montague to re-verify directly on
+  Yelp), James Fania Plumbing (Capistrano Beach/Dana Point CA, plumbing, 40+yr family
+  operator, PO Box address/no storefront, active CA C-36 license, only 5 reviews despite 379
+  recent quote requests / ~7hr response — sharpest pain signal of the batch, single-sourced
+  on the response figure but identity very strongly corroborated across 3+ sources). Struck
+  out / low-yield this run (avoid re-trying as-is): HVAC (Woodland Hills — thin signal only;
+  San Juan Capistrano — resolved to Capistrano Air, 385 reviews, too scaled; Laguna Niguel —
+  fast/scaled only; Dana Point — resolved to Capo Air, 521 reviews, too scaled), electrical
+  (Rancho Santa Margarita — 427-review scaled business; Chatsworth — fast only; Woodland
+  Hills — likely a Mr. Electric Neighborly-franchise and/or a 105-review scaled listing, not
+  pursued; Mission Viejo — all fast/scaled), plumbing (Mission Viejo, Laguna Hills — fast
+  only), pest control (Laguna Hills, Rancho Santa Margarita, San Juan Capistrano — scaled or
+  unnamed; Allure Pest Management explicitly dropped at 644 reviews), landscaping (Tarzana —
+  Matul's Construction and Landscape, 743 reviews, way too scaled), garage door (Mission
+  Viejo — quote-request number drifted 11/18/29 across reads, classic listing conflation),
+  painting (Sherman Oaks, Laguna Niguel — fast/scaled; a Laguna Niguel "Del Pozo Drywall"
+  candidate had a 42-vs-292 review discrepancy, same conflation pattern), restoration (Dana
+  Point — an aggregated "4hr/34 locals" signal never reconfirmed, resolved instead to a
+  10min/different-business reading on follow-up, dropped as unresolved). One drop worth
+  recording: "Queen Roofing" (searched as Aliso Viejo, actually a real, permit-active Marina
+  del Rey CA family shop) had its quote-request figure swing wildly across reads (20 vs.
+  189) plus a second same-named BuildZoom listing under Tarzana — treated as listing-
+  conflation risk and dropped, same standing caution as prior wild-swing cases.
+- (website track, run 2026-08-28) 3 hits, three brand-new small/mid markets: Your Electrician
+  LLC (Aberdeen SD, electrical, ~10yr/~5 employees, owner Brian Braaten HIGH confidence via
+  D&B Managing Member listing, MEDIUM collision risk against unrelated same-named businesses
+  in Middle Georgia and elsewhere — anchor on the Aberdeen SD address/phone; note a plain
+  "electrician Facebook Aberdeen SD" search pulls in unrelated Aberdeen, SCOTLAND businesses,
+  "Ltd" suffix is the tell, worth flagging for any other Aberdeen-named market), All Tech
+  Plumbing & Construction LLC (Rock Springs WY, plumbing, family-owned 24/7, owner not yet
+  found — only a personal-looking gmail signal, HIGH collision risk nationally against CA/OK/
+  CT/NJ entities), Nelson Landscaping (Willmar MN, landscaping/hardscaping, owner Lee Nelson
+  HIGH confidence via LinkedIn + a matching FMCSA/DOT carrier registration at the same
+  address, no Yelp page exists for this specific business at all so the `yelp:` line was
+  correctly omitted rather than invented, HIGH collision risk nationally against OK/RI/TX
+  entities plus a differently-named WI business — flagged a gmail-vs-yahoo email discrepancy
+  for Montague to resolve, and confirmed a same-city "Nelson Construction Co" is a genuinely
+  different, unrelated business). Banked, not queued (worth queuing directly next run, no
+  re-verification needed): Alpine Plumbing Services (Rock Springs WY, Facebook-only, looked
+  like a genuine second hit but held back to avoid stacking two same-city/same-vertical
+  prospects in one small batch); Rogue Plumbing LLC (Rock Springs WY, only a jobbersites.com
+  builder page, couldn't verify live — WebFetch hit an EGRESS_BLOCKED error on that domain —
+  banked as unconfirmed either way, not a queued gap). Struck out this run: Rock Springs WY
+  plumbing rest-of-field (Vaughn's Plumbing & Heating, Elite Plumbing Services, Aspen
+  Mountain Plumbing — real sites); Aberdeen SD electrical rest-of-field (Ladner Electric,
+  Anderson Electric, Schwan Electric — real sites); Willmar MN landscaping rest-of-field not
+  individually checked (Yard Smart of Willmar, I & M Landscaping Nursery, Stacy's Nursery &
+  Floral untried; Garcia's Lawn Care not pursued; Trav's Lawn Care resolved to a real site,
+  travslawncare.com, actually based in Dassel/Cokato MN not Willmar); Hutchinson KS roofing
+  (Wray & Sons Roofing est. 1939, Ark Valley Roofing — both real sites; untried names remain:
+  Hamilton Roofing Co Inc, Wheat State Roofing, Hutchinson Roofing, All Star Roofing, Great
+  Plains Roofing & Exterior, Above & Beyond Home Improvement, plus all other verticals
+  untried there). Willmar MN has untried verticals remaining (HVAC, plumbing, roofing,
+  electrical, pest control, painting).
