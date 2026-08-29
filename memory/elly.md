@@ -2057,3 +2057,122 @@ no feedback yet on those specifically)
 
   **End-of-run:** committed and pushed to `master` per CLAUDE.md's landing-work
   rule.
+
+- **2026-08-29 (this run) — 1 drafted, the whole enriched queue, and the first
+  run where `_fleet-state.md` was actually stale.** `git fetch origin` first per
+  CLAUDE.md: origin/master force-updated to c9b4fae (Montague's 2026-08-29 pass,
+  "1 advanced / 5 email-gate holds", on top of two Rupika batches). Container
+  started detached at exactly that commit with a clean tree, the ordinary
+  stale-ref pattern, repointed with `git checkout -B work origin/master`. Fixed
+  the ref BEFORE reading ground truth, per yesterday's lesson.
+
+  **`_fleet-state.md` was 17 hours old** (generated 2026-08-28 21:59 UTC, read
+  at 17:07 UTC today), past the ~12 hour line CLAUDE.md draws. That is the first
+  time it has actually tripped for me; every prior run it was minutes to an hour
+  fresh. Treated it as unverified per the rule, recounted every pipeline stage
+  by grep instead of trusting its summary, and said so plainly in the rolling
+  approvals file and the push notification. KIREEK's sync loop on Kevin's PC
+  looks down since yesterday evening. **Worth keeping: the file being stale does
+  not block this seat at all** — everything I need is in `prospects/*/status.md`,
+  which is the source of truth anyway. The thing that is lost is the fleet-wide
+  view, so the honest move is to say the loop is down and stop quoting it, not to
+  hold the run.
+
+  Scanned `prospects/*/status.md`: 2 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold from
+  2026-08-03, unchanged, skipped again) plus 1 real one, drafted:
+  **local-choice-pest-landscape-nutrition-cave-creek-az** (package). Montague
+  held five others at `found` on the email gate, so 1 was the entire queue, not a
+  batch-size choice.
+
+  **The angle that won is the owner's own career, and it is the strongest
+  personalization this pipeline has had.** Sage Garvey spent 23 years at Burns
+  Pest Elimination and left as Director of Technical and Customer Care
+  Operations, then founded this shop in 2019. So he ran the inbound-customer
+  function, at scale, with staff, and now he is also the technician, which means
+  the one job he is overqualified for is the one that waits until he is out of a
+  crawlspace. **Generalizable: when enrichment turns up a real career history,
+  check whether the prospect's PAST JOB and their present bottleneck are the same
+  function.** That collision produces an email nobody else could send him, it
+  opens with respect instead of a correction, and it skips the entire
+  convince-them-speed-matters step because he used to own it as a department.
+  LinkedIn work history is a seam I have basically never mined; Montague surfaces
+  it routinely and I have been reading past it to get to the numbers.
+
+  **Also new: naming the counter-evidence first, and agreeing with it.** Montague
+  found a review describing him replying "within minutes," which is a different
+  measure from the platform badge and does not contradict it. Left unsaid, it
+  hands him the obvious objection ("I answer people fast"). So the third line
+  says it out loud, concedes it, and moves the argument to where it is actually
+  true: the delay is access to the phone, not willingness. **Standing option: if
+  enrichment carries a fact that would let the recipient dismiss the email in one
+  sentence, put it in the email yourself and agree with it.** Cheaper than being
+  right and ignored.
+
+  **Both doors rebuilt again, because yesterday's pair was one day old.** KJC
+  used "up on a roof all day" versus "a proper look at a job before you answer."
+  Reusing that shape for a pest tech would have been the same email twice.
+  Doors here: the badge is stale and he corrects me, or the next morning is
+  genuinely when he gets to them. Door one is unusual and worth keeping in the
+  kit — **letting the prospect tell you your number is wrong is a face-saving
+  door that also gets you a reply**, and it costs nothing when the figure is
+  unreconfirmed anyway, which it is on most package prospects.
+
+  **Runner-up, dropped on sameness alone:** 53 quote requests against a day-long
+  window, and pest demand being perishable in a way most trades are not (the
+  scorpion does not come back, the urgency evaporates, and the sale goes with
+  it). Genuinely good and genuinely pest-specific. Dropped because the mechanism
+  is yesterday's KJC draft out of the same inbox — urgent lead decays while it
+  waits in a queue — one day apart on the same track. Told Kevin to use it on
+  the phone as the second question.
+
+  **Facts kept out of the body:** the least-toxic-method positioning and the
+  humane rodent anecdote (likeable, but using them is flattery, the 08-13 shape),
+  the Mon-Fri 8-5 posted hours (the weekend-gap opener is now my most-reused
+  fallback and the shape most at risk of becoming the template — Casa 08-19,
+  Freedom 08-20), and the ~99 review count (it lives on pestcontrolreviews.com,
+  not his own listing, and I will not put a number in an email he cannot trace).
+
+  **Flagged prominently, not buried: the AZ PCO licence is still unchecked and it
+  is a hard disqualifier.** Rupika raised it at sourcing, Montague could not close
+  it (the Department of Agriculture lookup is a form-based tool neither
+  environment can reach). It is the one open item that could kill the prospect
+  outright rather than weaken the draft. Put it in the outreach note, the status
+  log, and its own section in the rolling approvals file. Nothing in the body
+  depends on it, so a bad result costs a send, not a rewrite.
+
+  Track breakdown: 1 package. Standard post-write sweep on body text only (em
+  dash, en dash, bracket placeholder, retired package name, third-person
+  Kevin/Viridia, `$`, "guarantee", the 84% stat, stray sign-off) — clean on
+  every check. Body is 116 words. Subject "Burns had a whole team for this"
+  deliberately avoids the number-shaped subjects of the last several package
+  drafts; closer is "Got ten minutes this week?", distinct from the last three.
+
+  **Verification notes:** recounted by grep — 74 found, 1 enriched, 6 drafted, 2
+  approved, 97 sent, 6 closed, 3 dismissed. Re-checked all four dated first-touch
+  approval files: already `status: superseded`, nothing to close. Left
+  `2026-08-21-followup-drafts-held-lane.md` open on purpose (not a first-touch
+  file) and left `2026-08-28-realestate-batch-01-cold-emails.md` alone — it is
+  `status: pending` but it is a different workflow's batch staged in Kevin's
+  Gmail, not this pipeline's first-touch queue, so it is not mine to supersede.
+  Regenerated `approvals/ROLLING-first-touch-drafts.md` from live `stage:
+  drafted`, so it lists all 6 including three carryovers.
+
+  **Kevin's side is quiet again.** Nothing moved from `drafted` since 08-27;
+  Josh's Plumbing and Powerhouse are now three days old. Did not raise Owen
+  Plumbing, per the commitment made on 08-28. Still zero logged feedback on tone
+  or edits after nine weeks, and the pricing-in-a-cold-email question is now
+  unanswered for nine runs. Not asking again; it is in the record.
+
+  **Next run:** check `stage: enriched` first, then regenerate
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted` (write it
+  explicitly empty if nothing is there). **Check whether `_fleet-state.md` is
+  fresh again** — if it is still stale a second day running, that is a real
+  systems problem worth telling Kevin about more loudly than a caveat line.
+  Upstream backlog is **74 at `stage: found`** and has grown every single day for
+  ten days (69 on 08-28, 66 on 08-27, 62 on 08-26). Montague cleared one and held
+  five today while Rupika added five. The 11 undrafted held-lane second touches
+  remain the one place surplus capacity here would actually convert.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.

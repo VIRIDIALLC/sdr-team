@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -45,3 +45,16 @@ quote_stage: none
   license status still not independently confirmable from this
   environment (form-based lookup tool, not searchable) — real open flag
   for Kevin, not a gate. Advanced to `enriched`. See enrichment.md.
+- 2026-08-29 (Elly): drafted. Package track. Opener is the response-time
+  question (Rupika's ~1 day, unreconfirmed but uncontradicted, phrased as a
+  question per the 08-13 rule) with both doors face-saving. The angle that
+  carries it is Sage's own career: 23 years at Burns Pest Elimination ending
+  as Director of Technical and Customer Care Operations, so he ran the
+  inbound-customer function with a team, and now he is the technician too.
+  Named the "within minutes" review up front so the email agrees with him
+  before it asks anything. Dropped the perishable-demand angle (53 requests
+  decaying while they wait) because it is structurally yesterday's KJC Roofing
+  draft out of the same inbox. Email is GUESSED (info@ on a confirmed-live
+  domain). CARRIED FORWARD FOR KEVIN: the AZ PCO licence check is still open
+  and is a hard disqualifier if it comes back revoked or inactive. Advanced to
+  `drafted`.
