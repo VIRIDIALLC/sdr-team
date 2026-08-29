@@ -1559,3 +1559,85 @@
   Plains Roofing & Exterior, Above & Beyond Home Improvement, plus all other verticals
   untried there). Willmar MN has untried verticals remaining (HVAC, plumbing, roofing,
   electrical, pest control, painting).
+
+- (run 2026-08-29) Scheduled run, two tracks (package + website — ads track not
+  requested). `git fetch` showed a real force-updated `origin/master`, and local
+  `master` had NO common ancestor with it (`git merge-base` empty). Verified
+  before touching anything, per the 2026-08-27 standard: local master's tip was
+  a stale container-init snapshot (reflog showed it was "Created from
+  refs/remotes/origin/master" at container start, before origin/master got
+  force-pushed to a completely unrelated, more-recent, continuously-committed
+  history matching `_fleet-state.md`) — no local unpushed commits existed to
+  lose, so `git reset --hard origin/master` was safe and correct here (simpler
+  than `-B` since there was nothing local worth preserving even provisionally).
+  `_fleet-state.md` was ~18h old at run start (slightly over the ~12h freshness
+  bar) but git history showed continuous same-day commit activity with no gap,
+  so treated as reliable rather than stale — noting the threshold technically
+  breached in case a future run hits a genuinely stale fleet-state and needs to
+  flag it for real. `_new-leads.md` had nothing dropped in. Ran both tracks as
+  parallel background Agent-tool sub-agents doing research-only (no file/git
+  access) and reporting back structured findings; committed each track's batch
+  separately as it landed, per the pattern from 2026-08-27/28.
+- (website track, run 2026-08-29) 3 hits, three brand-new small/mid markets in
+  one run, first-search hits in all three (unusually clean): Harrell's
+  Refrigeration Service, Inc. (Selma AL, HVAC/appliance repair, established
+  1967ish — founding year conflicts 1967/1973/1980 across sources, flagged for
+  Montague — a DEAD/LAPSED DOMAIN case: harrellsrefrigeration.com is indexed
+  with cached page fragments but doesn't resolve at all, worse than a
+  suspension page since it doesn't resolve at all; owner Marie Harrell via BBB,
+  medium-high confidence), WJ Gas, Plumbing, & Electrical (Corinth MS, owner
+  Will Johnson HIGH confidence via the Corinth Gas & Water official gas-fitters
+  license list — a primary municipal record, a new owner-name-source type worth
+  remembering; pure Facebook-only, active MS contractor license #20522 through
+  1/18/2026; a same-city Drain Care LLC was checked and dropped — Yelp shows
+  CLOSED while other directories still show active, a conflicting
+  operating-status red flag not worth queuing), Tracy L. Martin Roofing
+  (Alexandria LA, 35+yr family roofer, owner IS the business name, HIGH
+  confidence via LA contractor license record, pure Facebook/directory-only,
+  LOW collision risk). All three markets (Selma AL, Corinth MS, Alexandria LA)
+  now worked, add to the exhausted list. New pattern worth banking: municipal/
+  utility licensing lists (a city gas-fitters registry, a state contractor
+  license list) are a strong, primary-source owner-name find — better than the
+  usual LinkedIn/personal-email/DOT signals when they exist, worth searching
+  for explicitly (`"[city] gas fitters license" OR "[state] contractor license
+  lookup"`) going forward, not just as a fallback.
+- (package/priority track, run 2026-08-29) 3 hits from ~40 searches (over the
+  usual 25-35 budget — Phoenix/LA suburbs are increasingly picked over, several
+  verticals needed multiple resolution passes): JW Painting (Cypress CA,
+  painting, 30+yr operation but only 14 reviews/4hr Yelp response — the
+  long-tenure-vs-thin-reviews gap itself is a second pain signal per the skill,
+  not just the response time; owner "Mr. Woo" per review text, MEDIUM
+  confidence only, single-sourced on Yelp; a same-named "JW Painting, LLC"
+  flagged Unlicensed Contractor is a confirmed-different Tucson AZ business,
+  don't conflate), Local Choice Pest & Landscape Nutrition (Cave Creek AZ, pest
+  control, "responds in about 1 day" — the most extreme response-time figure
+  found this run — against only 53 quote requests, ~99 reviews under the scale
+  threshold; owner Sage Garvey HIGH confidence via LinkedIn + own site +
+  Nextdoor/HomeAdvisor consistency, real website captured; reviews read
+  positive overall so the pain signal is specifically the stated response
+  time, not complaints — worth remembering response-time and review-sentiment
+  can point opposite directions on the same business), All the Details
+  Remodeling (Fountain Hills AZ, remodeling — queued PROVISIONALLY with a hard
+  flag: Yelp messaging is disabled entirely on the listing, a real and named
+  pain signal (no inbound quote-response path at all) but the business
+  couldn't be corroborated beyond Yelp + basic directory scraping — no owner
+  name, no BBB/Manta/Bizapedia/AZ-ROC hit; explicitly flagged for Montague to
+  verify the business is actually active before it advances, drop rather than
+  draft outreach if it can't be corroborated). New disqualifier-pattern
+  confirmations from drops this run: Midwest Roofing (Gardena CA, surfaced via
+  a Seal Beach search — cross-suburb resolution again) had a good 6hr
+  response/complaint-laden reviews but LinkedIn/ZoomInfo showed 11-50
+  employees + a distinct CEO/COO/CFO leadership team, plus two Yelp listings
+  with conflicting review counts (27 vs 24) — either flag alone might have
+  been a caution, both together made it a clean drop; Laguna Electric (Laguna
+  Beach CA) dropped for both being over the review-count threshold (152) AND
+  an unresolvable name-collision with a second similarly-named local
+  competitor sharing overlapping review language — a good example of the
+  standing "can't cleanly disambiguate, drop rather than guess" rule. Suburbs
+  to add to the exhausted list: Rossmoor CA (electrical, resolves to Los
+  Alamitos, no distinct signal), Costa Mesa CA (HVAC/pest/garage
+  door/roofing — all fast-responder dominated), Buena Park CA (garage
+  door/plumbing fast, pest control unresolved/drifted). Cave Creek AZ can now
+  be considered more thoroughly worked (painting from 2026-08-18, pest control
+  this run) — garage door, HVAC, restoration, electrical, roofing still
+  untried there per the running list.
