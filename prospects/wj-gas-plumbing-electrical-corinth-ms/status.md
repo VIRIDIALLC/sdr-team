@@ -30,3 +30,20 @@ quote_stage: none
   plumber, Drain Care LLC, was checked and dropped — Yelp flags it
   CLOSED as of May 2026 while other directories still show it active, a
   conflicting operating-status signal not worth the risk.
+- 2026-08-29 (Montague): website-gap reconfirmed — no owned domain or
+  directory microsite found for WJ Gas, Plumbing, & Electrical / Will
+  Johnson anywhere (Facebook-only presence, page itself not fetchable —
+  egress-blocked, a general block here, not just the Yelp rule).
+  License #20522 cross-confirmed via the same gas-fitters list source
+  Rupika used, but the live MSBOC lookup and the Corinth Gas & Water
+  site itself are both blocked from this environment, so current status
+  can't be independently verified — and since today (8/29/2026) is past
+  the 1/18/2026 expiration date on file, the license is **presumptively
+  expired pending renewal**, unconfirmed either way. Real open flag for
+  Kevin, worth a direct check before outreach. No email found anywhere
+  (no directly-listed address on any directory or BBB, no personal
+  Gmail/Yahoo turned up) and no domain exists to ground a guess in.
+  **Email gate FAILED, held at `found`.** Not a dead end — real,
+  currently-operating small operator with a clean no-web-presence
+  story, just phone/Facebook-only reachable, and worth a license-status
+  recheck before Kevin calls. See memory/montague.md.

@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -32,3 +32,16 @@ quote_stage: none
   Department of Agriculture pest-control (PCO) license status — worth
   a quick lookup before outreach given a revoked/inactive license is a
   hard disqualifier.
+- 2026-08-29 (Montague): response-time signal stayed unconfirmed (not
+  contradicted) on reconfirmation — Yelp's badge isn't indexed by
+  search, same recurring limitation; carried forward as a question, not
+  a block. Owner Sage Garvey strengthened to HIGH confidence via a
+  coherent LinkedIn career history (Orkin → 23yrs Burns Pest Elimination
+  → founded this business 2019). No directly-listed email found despite
+  checking directories/aggregators (localchoicepest.com itself blocked
+  to direct fetch by this environment's egress proxy) — used the
+  guessed-pattern-on-confirmed-live-domain precedent:
+  info@localchoicepest.com, flagged GUESSED not confirmed. AZ PCO
+  license status still not independently confirmable from this
+  environment (form-based lookup tool, not searchable) — real open flag
+  for Kevin, not a gate. Advanced to `enriched`. See enrichment.md.

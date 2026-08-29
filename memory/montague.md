@@ -2321,3 +2321,95 @@
     search-snippet-sourced.
   - Backlog after this run: no genuinely untouched `stage: found`
     prospects remain.
+
+- (2026-08-29 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  origin/master had force-updated refs since last fetch (KIREEK
+  fleet-state refresh + Rupika's two today's batches), local HEAD came
+  up detached but matched origin/master exactly with no divergent local
+  work — plain `git checkout -B master origin/master`, not the usual
+  stale-shallow-clone pattern. Scanned `prospects/*/status.md` for
+  `stage: found`, filtered for genuinely untouched (no `enrichment.md`
+  AND no `(Montague)` log entry yet, per the 2026-08-24/25 lesson) — 6
+  matched, both of today's Rupika batches in full (3 package: JW
+  Painting/Cypress CA, Local Choice Pest/Cave Creek AZ, All the Details
+  Remodeling/Fountain Hills AZ; 3 website: Harrell's Refrigeration/Selma
+  AL, Tracy Martin Roofing/Alexandria LA, WJ Gas Plumbing/Corinth MS) —
+  a normal-sized batch. Used 6 parallel research subagents
+  (pure-research, no file writes), then wrote all enrichment.md/
+  status.md updates myself for consistency, following the CALL CARD
+  format.
+
+  Result: only 1 of 6 advanced to `enriched` (Local Choice Pest &
+  Landscape Nutrition — package), 5 held at `found` — 4 on a genuine
+  email-gate miss (JW Painting, Harrell's Refrigeration, Tracy Martin
+  Roofing, WJ Gas Plumbing & Electrical) and 1 on a real corroboration
+  failure (All the Details Remodeling). Lowest advance-rate run since
+  the email gate went live — worth naming, though it reads as batch
+  variance (this run happened to draw four Facebook/directory-only
+  small operators with genuinely no owned domain to guess an email
+  from) rather than a new pattern.
+
+  - **Local Choice Pest & Landscape Nutrition (advanced):** owner Sage
+    Garvey strengthened to HIGH confidence via a coherent LinkedIn
+    career history (23yrs at Burns Pest Elimination before founding this
+    business in 2019). No email directly found (localchoicepest.com
+    itself egress-blocked to direct fetch) but the domain is confirmed
+    real/live/active — used the guessed-pattern-on-confirmed-live-domain
+    precedent (info@localchoicepest.com), flagged GUESSED. Also did a
+    quick direct WebSearch myself (not just via subagent) to find a
+    phone number missing from brief.md — found (602) 525-1442, plus a
+    secondary text/schedule line (480-450-4660). AZ PCO pest-control
+    license status still not independently confirmable from this
+    environment (form-based lookup, not searchable) — real open flag
+    for Kevin, not a gate, carried forward from Rupika's original note.
+  - **All the Details Remodeling (held, recommend NOT pursuing):**
+    Rupika flagged this one with a HARD FLAG and an explicit
+    recommend-dropping instruction if it couldn't be corroborated — ran
+    the check and it failed on every point. No AZ ROC license record, no
+    BBB/Manta/Bizapedia/Chamber listing, no Google Business Profile or
+    Maps listing independent of Yelp, no Facebook/Instagram, no owner
+    name anywhere, and the listed phone number carries an Illinois area
+    code (815) that doesn't tie to any name or other listing — a real
+    red flag, not just an absence. The address is confirmed (Redfin/
+    Zillow/LoopNet) to be a residential apartment unit. This is a
+    genuinely new category worth naming distinctly from the usual
+    email-gate hold: not "good business, missing a contact channel" but
+    "insufficient evidence this is a real, currently operating business
+    at all." Held at `found` rather than advanced, per the same
+    don't-silently-drop convention as a wrong website-gap guess — Kevin
+    should see this one and decide, not have it vanish. If this
+    Yelp-messaging-disabled + zero-corroboration pattern recurs, it may
+    be worth Rupika adding a lighter-weight version of this check at
+    sourcing time before a prospect folder gets created at all.
+  - **Email-gate holds, all four genuine (not environment-blocked)
+    this run:** JW Painting (no website/domain exists — only a medium-
+    confidence surname "Woo" as the name lead, no email anywhere);
+    Harrell's Refrigeration (a rare case where the website-gap gate
+    itself decisively PASSED — dead/lapsed domain, not "never had a
+    site" — but the domain being dead means even a guessed pattern
+    isn't groundable, so the email gate still fails cleanly); Tracy
+    Martin Roofing (no domain ever existed, license status found but
+    genuinely ambiguous — BuildZoom flags it "at one point cancelled"
+    alongside a still-listed expiration date, live LSLBC lookup blocked
+    from this environment, don't assert "active" in outreach); WJ Gas
+    Plumbing & Electrical (no domain, and the on-file MSBOC license
+    expiration of 1/18/2026 is now in the past as of today 8/29 —
+    presumptively expired pending renewal, unconfirmed either way since
+    the live lookup and the Corinth Gas & Water site are both
+    egress-blocked — worth a direct check before Kevin calls, same
+    "advance/hold but flag prominently" pattern as prior license-status
+    cautions on Boldt HVAC 2026-08-11 and Quality Overhead Door
+    2026-08-15, except here it blocked the email gate outright so
+    there's no advance to caveat).
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (all target company/guessed
+    domains, BBB, Facebook, CitySquares, USdirectory, Yahoo Local,
+    al.ltddir.com, sos.alabama.gov, LSLBC, MSBOC, AZ Corporation
+    Commission, Corinth Gas & Water) — same recurring pattern logged
+    since 2026-08-02. DNS-level checks stayed decisive and unblocked
+    throughout (Harrell's dead-domain confirmation, Tracy Martin's
+    never-registered confirmation) — the same distinction holds every
+    run: the block is on HTTP fetch, not DNS resolution.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain (All the Details Remodeling stays at `found` by
+    deliberate decision, not backlog — see above).

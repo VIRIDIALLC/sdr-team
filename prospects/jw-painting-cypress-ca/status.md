@@ -26,3 +26,20 @@ quote_stage: none
   Manta. Flagged for Montague: verify CSLB license status directly
   before outreach (generic business name raises general collision
   risk too).
+- 2026-08-29 (Montague): response-time signal (~4hrs) stayed unconfirmed
+  on reconfirmation — Yelp's badge isn't indexed by search, same
+  recurring limitation, carried forward as a question not a block.
+  Owner surname "Woo" corroborated via two independent Yelp review
+  snippets ("Woo came by Friday morning...", "Mr. Woo came by
+  himself...") — no first name found anywhere (Facebook, Instagram,
+  Nextdoor, BBB all checked, no Cypress-specific profile exists for any
+  of them). CSLB license status not confirmable from this environment
+  (interactive lookup only, not searchable) — real open flag, not a
+  gate. No email found anywhere and no website/domain exists to guess a
+  pattern from — **email gate FAILED, held at `found`**. Not a dead
+  end — real, decades-old business with a genuine pain signal, just not
+  currently reachable by email. Phone confirmed: (562) 833-1369. Two
+  additional CA same-name collisions found beyond the known Tucson AZ
+  one (JW Painting Company, Visalia CA — different owner, suspended
+  license; JW Painting LLC, Victorville CA) — neither is this business,
+  noted for anyone doing a loose name search. See memory/montague.md.

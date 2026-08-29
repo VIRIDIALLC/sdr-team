@@ -25,3 +25,22 @@ quote_stage: none
   is actually active — if it can't be independently corroborated during
   enrichment, recommend dropping rather than drafting outreach on an
   unverified shell listing.**
+- 2026-08-29 (Montague): ran the corroboration check Rupika asked for —
+  **failed on every point.** No AZ ROC license record found (AZ
+  Corporation Commission's own lookup tool is blocked from this
+  environment, so "no license" isn't 100% provable, but no third-party
+  source references one either). No BBB, Manta, Bizapedia, or Chamber
+  of Commerce listing. No Google Business Profile or Maps listing
+  independent of the Yelp page — zero reviews, photos, or activity
+  anywhere else. No Facebook or Instagram page found. No owner name
+  anywhere. The listed phone number (815 area code) is an Illinois
+  number, not Arizona — a real red flag for a business claiming a
+  Fountain Hills, AZ address — and it doesn't tie to any name or other
+  listing anywhere on the web. The address itself (17024 E Calle Del
+  Oro Dr Unit B) is confirmed via Redfin/Zillow/LoopNet to be a
+  residential apartment/condo unit, not a business premises. **Held at
+  `found`, not advanced — this reads as an unverifiable, possibly
+  fabricated or defunct shell listing, not a real reachable business.**
+  Per CLAUDE.md's convention, not silently dropped — flagged here and
+  in memory/montague.md for Kevin to see; recommend leaving it out of
+  the pipeline unless he can independently confirm the phone is live.
