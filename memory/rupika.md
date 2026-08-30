@@ -1641,3 +1641,83 @@
   be considered more thoroughly worked (painting from 2026-08-18, pest control
   this run) — garage door, HVAC, restoration, electrical, roofing still
   untried there per the running list.
+
+- (run 2026-08-30) Scheduled run, two tracks (package + website — ads track not
+  requested). Container started detached from `origin/master` again — same
+  recurring stale-ref symptom as every run since 2026-08-13 — fixed with
+  `git checkout -B master origin/master`, confirmed local already matched
+  origin's tip (`0423af3`), nothing lost. `_new-leads.md` had nothing dropped
+  in. `_fleet-state.md` was generated 2026-08-28 21:59 UTC — genuinely stale
+  this time (well over the ~12h bar, unlike the 08-29 near-miss), but git
+  history shows continuous commit activity through 2026-08-29 with no gap, so
+  treated live pipeline state as reliable and proceeded; not flagging to
+  Kevin since it doesn't affect prospecting work, but noting for whichever
+  agent/Sue next needs `_fleet-state.md` itself to be current. Ran both
+  tracks as parallel background Agent-tool sub-agents (research-only, no
+  file/git access), committed each track's batch separately as it landed,
+  per the pattern since 2026-08-27.
+- (website track, run 2026-08-30) 2 fresh hits plus 1 banked candidate closed
+  out, kept batch at 3: BGS AC & Heating LLC (Corsicana TX, HVAC,
+  Facebook-only, owner not found — TDLR lookup only reached indirect results,
+  not the live license database, flagged for Montague to try the real form),
+  Wesley B. Jones Electrical, Inc. (Vicksburg MS, electrical, owner Wesley B.
+  Jones HIGH confidence via BBB + active MS contractor license #17422-MC,
+  Facebook-only despite an unusually large third-party directory/federal-
+  contractor footprint — a stray AI-summary claim of "Website: elhorn.com"
+  was checked and is FALSE, an unrelated MI company, worth remembering that
+  AI search summaries can hallucinate a website field, always verify before
+  trusting one), Alpine Plumbing Services (Rock Springs WY, plumbing —
+  closed out the 2026-08-28 banked candidate rather than re-searching,
+  queued as a distinct prospect from the already-in-pipeline All Tech
+  Plumbing in the same city). New standing note: banked candidates save
+  real search budget but should still get Montague's normal fresh
+  verification — don't let "already checked once" become "pre-cleared."
+  Corsicana TX and Vicksburg MS (electrical) now worked, add to the tried
+  list. Struck out this run: Zanesville OH plumbing (both candidates had
+  real sites), other Corsicana TX HVAC (Hood Service Company, Robinson
+  Taylor Industries — real sites). Two bonus candidates surfaced but NOT
+  independently verified (flagging rather than shipping half-checked, worth
+  a fast follow-up pass next time before queuing): Triple O Pest Control
+  and Hometown Pest Control Service, both Cullman AL, both showing the same
+  Facebook-only pattern.
+- (package/priority track, run 2026-08-30) 3 hits, all sourced via a direct
+  review-complaint search technique rather than the usual Yelp-response-time
+  technique (`[vertical] [city] yelp review "never called back" OR "no call
+  back" OR "didn't return my call"`) — worth treating as a standing
+  alternative technique alongside the response-time one, not just a fallback:
+  Horizon Roofing (Irvine CA, roofing, in business since 2001, a 9pm-1am
+  no-response-during-emergency review + only 24 Yelp reviews vs. 25yr tenure
+  — Yelp fetch was blocked this session so review text is snippet-sourced,
+  needs live re-verification), MJB Electric (Camarillo CA, electrical, owner
+  Michael Alan Brown, 36yr operation, a "no response for a week across
+  email/call/text" review + only 1 Yelp review after 36 years — HARD
+  license-ambiguity flag for Montague: CSLB #586172 reads active but a
+  BuildZoom record cites a different #457106 marked Inactive, plus a
+  possibly-unrelated Escondido CA listing; identity signals otherwise
+  consistent, reads like directory conflation not a real problem, but must
+  be confirmed on cslb.ca.gov before outreach per the standing
+  inactive-license disqualifier), Primus Pest (Simi Valley CA, pest
+  control, solo owner Darren Dutka since 2019, no website/booking at all +
+  no after-hours hours — weaker/qualitative signal only, no response-time
+  figure, lead outreach with the booking gap not an invented number).
+  Search budget ran ~70 (well over the 25-40 guideline) to land these 3 —
+  reported honestly rather than padding; Orange County/Ventura County
+  small-city ground is getting picked over too. New hard-disqualifier
+  confirmations: two license-revoked/expired drops this run (Jim Thomas
+  Roofing, San Clemente — CSLB roofing license expired 1988/still expired
+  as of Nov 2025; Stuckert Door Service, Wickenburg AZ — license revoked
+  2023) reinforce the standing rule. New multi-state/cross-suburb drop
+  pattern: CMB Garage Doors (Cave Creek AZ) actually serves a tri-state
+  area (Eastern NM/West TX/Phoenix) despite reading local — worth adding
+  "serves [far-away states]" language as its own scale-disqualifier
+  pattern, not just review-count. Runner-up banked, not queued: Evans
+  Termite (Newport Beach CA, owner George Evans, 23yr/11 reviews — only 1
+  clean pain signal, all reviews positive on responsiveness, didn't clear
+  the 2-signal bar; worth a second look if one of today's 3 doesn't survive
+  enrichment). Orange County suburbs (Irvine, Camarillo, Simi Valley,
+  Thousand Oaks, San Clemente, Laguna Hills/Niguel, Rancho Santa Margarita,
+  Aliso Viejo, San Juan Capistrano, Newport Beach) and a few AZ towns
+  (Wickenburg, Florence, Eloy, Maricopa) are now partially worked — untried
+  remnants noted in this run's full sub-agent report if revisited (San
+  Clemente HVAC/electrical, Rancho Santa Margarita electrical/HVAC,
+  Maricopa/Eloy AZ most verticals).
