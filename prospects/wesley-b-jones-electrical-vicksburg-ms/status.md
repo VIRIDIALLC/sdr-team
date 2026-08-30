@@ -36,3 +36,23 @@ quote_stage: none
   business" — inconsistent with the owner name; could be a spouse/co-owner
   certification detail or a database quirk, not itself a red flag but worth
   a sanity check.
+- 2026-08-30 (Montague): website-gap reconfirmed - 12 guessed domains all
+  ENOTFOUND; one coincidental resolving domain (jones-electrical.com)
+  checked and ruled out, nothing ties it to this specific Vicksburg
+  business. The false "Website: elhorn.com" claim resurfaced on a second
+  independent aggregator (Buzzfile, in addition to BBB's AI summary) -
+  reconfirmed FALSE (unrelated Mason, MI company), now flagged twice so
+  it doesn't get trusted downstream. Phone (601) 636-9591 reconfirmed;
+  MS contractor license #17422-MC (exp. 1/14/2027) reconfirmed. Real
+  texture: BBB-accredited since 2004 (22+ yrs), active federal contractor
+  (CAGE 1UU37, ~$2.69M in federal obligations per USAspending), 5.0/5
+  rating, no negative reviews found - a genuinely established,
+  well-regarded, ~26-year business with zero web presence beyond
+  directories, sharp fit for the pitch. **Email gate FAILED** - checked
+  BBB, Facebook, federal contractor POC fields (GovTribe/USAspending/
+  HigherGov), TheBlueBook, chamber directory; no email surfaced anywhere,
+  and several of the most likely pages (BBB, TheBlueBook contacts,
+  GovTribe) were egress-blocked to direct fetch this run, so absence in
+  search isn't the same as confirmed absence-on-page - worth a retry if
+  fetch access to those specific domains ever opens up. Held at `found`,
+  phone-only reachable for now. See memory/montague.md.

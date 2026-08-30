@@ -34,3 +34,34 @@ quote_stage: none
   before advancing, not assumed clean. Also: with only 1 Yelp review, keep
   outreach copy to "your reviews don't reflect 36 years in business," not
   an inflated "hundreds of missed calls" framing.
+- 2026-08-30 (Montague): Ran the hard-flagged license check directly.
+  **Identity question resolved**: license #586172 IS this business
+  (Camarillo, PO Box 717, phone (805) 987-4272, owner Michael/Mike Brown
+  all tie together via BBB's own profile; the Yelp review's exact
+  complaint text matches this listing, not the other one) and #457106 IS
+  a different, unrelated business (Escondido, CA, no address/phone/owner
+  overlap with ours) - directory-data conflation confirmed as the
+  original theory, not a real problem. **But the currency question is
+  NOT resolved**: every cached source found shows #586172's expiration
+  as 1/31/2026 - seven months in the past as of today (2026-08-30) - with
+  no source showing a renewed date or a status read dated after that.
+  cslb.ca.gov and BuildZoom's live sync were both egress-blocked to
+  direct fetch this run, so this could be a stale cache (very plausible)
+  or a genuinely lapsed license - cannot tell from here. **Flagging this
+  prominently and separately from the email gate below - this is the one
+  open item against the standing inactive-license hard-disqualifier rule,
+  and it needs a live cslb.ca.gov check or a call to CSLB (1-800-321-CSLB)
+  before this prospect goes anywhere near outreach, regardless of what
+  happens with email.** Owner name strengthened to "Michael Brown" /
+  "Mike Brown" (medium-high confidence, consistent across BBB and several
+  directories) - the "Alan" middle name from the original brief wasn't
+  independently corroborated this run, not a contradiction, just
+  unconfirmed. One directory-scraped "email" (contractor@MJB ELECTRIC.com)
+  was found and discarded as an obvious unrendered template placeholder,
+  not a real address. **Email gate FAILED** - no real email found anywhere
+  (home-based/PO-Box operation, no website/domain to ground a guess in).
+  Held at `found` on BOTH the email gate and the still-open license
+  currency question - not a dead end on the business (identity/pain
+  signal both check out), but this one needs Kevin's eyes on the license
+  question specifically before any further work, separate from the usual
+  "just needs an email" holds. See memory/montague.md.

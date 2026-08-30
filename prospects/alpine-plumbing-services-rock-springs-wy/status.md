@@ -23,3 +23,31 @@ quote_stage: none
   batch-size discipline) — Montague should still do the standard
   website-gap and email-gate checks fresh, same as any other `found`
   prospect, rather than treating "banked" as "pre-cleared."
+- 2026-08-30 (Montague): website-gap reconfirmed DNS-decisive (6 guessed
+  domains all ENOTFOUND — alpineplumbingservices.com/.net,
+  alpineplumbingwy.com, alpineplumbingrocksprings.com,
+  alpineplumbingservicesrocksprings.com, alpineplumbingofrocksprings.com).
+  Only confirmed web presence is facebook.com/AlpinePlumbingServices/
+  (name+location matched in search), which this environment's egress
+  proxy blocked from direct fetch, so the About/contact section couldn't
+  be read. Owner name: NOT FOUND despite checking BBB, WY SOS, and
+  directory searches — left blank per the never-placeholder rule.
+  Phone: could not confidently confirm — every number/address pair search
+  surfaced for "Alpine Plumbing" near Rock Springs actually belongs to a
+  different, similarly-named entity ("Alpine Plumbing & Heating LLC,"
+  WY-SOS-registered in Laramie/Bosler, WY, filing 2021-000999584) whose
+  own search results were internally self-contradictory across two
+  different address/phone pairs for the same listing — discarded both
+  rather than risk attributing a wrong number to this business. Collision
+  risk flagged as real and non-trivial: "Alpine Plumbing" is a common name
+  nationally (distinct unrelated businesses found in Truckee CA, Pagosa
+  Springs CO, Stanwood WA, Billings MT, Odessa FL, Brookfield/Milwaukee
+  WI, Salt Lake County UT, Grand Rapids MI, plus the Laramie/Bosler WY one
+  above) — anchor strictly on the Rock Springs, WY Facebook page identity,
+  do not merge contact info from any of those. **Email gate FAILED** — no
+  directly-listed email found anywhere, and no live domain exists to
+  ground even a guessed pattern (Facebook itself wasn't readable). Held at
+  `found`. Not a dead end on the business — the website-gap fit signal is
+  decisively confirmed — just currently unreachable except possibly via
+  Facebook Messenger, which this environment can't access. See
+  memory/montague.md.

@@ -2413,3 +2413,132 @@
   - Backlog after this run: no genuinely untouched `stage: found`
     prospects remain (All the Details Remodeling stays at `found` by
     deliberate decision, not backlog — see above).
+
+- (2026-08-30 run) Note up front: fleet-state.md's timestamp (2026-08-28
+  21:59 UTC) was already >12h stale at run start per CLAUDE.md's own
+  threshold — flagged rather than trusted, though nothing in this run
+  actually depended on its aggregate numbers (prospect-level status.md
+  files are ground truth for enrichment work either way). Clean git
+  start — `git fetch origin` first, working tree already synced to
+  `origin/master`, no reset needed. Scanned `prospects/*/status.md` for
+  `stage: found`, filtered for genuinely untouched (no `enrichment.md`
+  AND zero `(Montague)` log entries) — 6 matched, exactly today's two
+  Rupika batches in full (3 package: Horizon Roofing/Irvine CA, MJB
+  Electric/Camarillo CA, Primus Pest/Simi Valley CA; 3 website: Alpine
+  Plumbing/Rock Springs WY, Wesley B. Jones Electrical/Vicksburg MS, BGS
+  AC & Heating/Corsicana TX) — a normal-sized batch. Used 6 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself for consistency, following the
+  CALL CARD format. This run ran long — the license-verification agent
+  for MJB Electric in particular took multiple check-in cycles (deep
+  CSLB cross-referencing across egress-blocked primary sources) — not a
+  sign anything was wrong, just genuinely slow research.
+
+  Result: 2 of 6 advanced to `enriched` (Horizon Roofing, BGS AC &
+  Heating), 4 held at `found` (Alpine Plumbing, MJB Electric, Primus
+  Pest, Wesley B. Jones Electrical — all four on a genuine email-gate
+  miss, not environment-blocked reads).
+
+  - **Horizon Roofing (advanced, package):** pain signals (9pm-1am
+    no-response, "too busy to bid") reconfirmed via the company's OWN
+    Trustindex review widget mirroring the sourced complaints — a
+    stronger corroboration path than the usual failed Yelp-badge
+    reconfirmation attempt, worth remembering as an alternate technique
+    when a business runs its own review widget. Owner Frank Garcia HIGH
+    confidence. Email is aggregator-sourced (contact@horizonroofingca.com
+    reported by a third-party directory, not literally guessed by me) on
+    a confirmed-live domain — treated at the same confidence tier as the
+    established guessed-pattern precedent, flagged as such.
+    **CSLB license status came back genuinely unresolved** — not just
+    ambiguous like Boldt HVAC (2026-08-11), but no license number at all
+    could be tied to this specific Frank Garcia/Irvine entity (a
+    same-named Anaheim business's 4 license numbers were found and ruled
+    out as a different company first). Advanced anyway per the
+    established advance-with-prominent-flag handling (strong
+    active-operation signals: 25yr history, A+ BBB, 4.7-4.8★/48-59
+    reviews, real content-rich site), but this is a real open item for
+    Kevin, not a formality — worth him deciding, per the standing
+    open question since Boldt HVAC, whether license status needs to
+    become a real named gate rather than continuing ad hoc.
+  - **BGS AC & Heating (advanced, website):** clean pass — website-gap
+    decisive (2 parked-domain resolves + 4 NXDOMAIN + zero Yelp
+    presence), email directly-listed on the business's own Facebook page
+    (bgac812@gmail.com, not a guess) though single-source since every
+    search hit traces back to the same underlying Facebook-via-Google-
+    index snapshot rather than independent cross-corroboration — worth
+    naming as its own confidence tier, between "directly found, multiply
+    corroborated" (All Tech Plumbing 2026-08-28) and "guessed pattern on
+    a live domain": a real, specific, directly-listed address, just from
+    one underlying source. Owner name NOT FOUND — TDLR's ACR license
+    search and TX Comptroller's Taxable Entity Search were the two most
+    promising remaining leads but both are interactive/form-based and
+    blocked by this environment's egress proxy; a genuine environment
+    gap, not a dead end, worth a retry if fetch access to those two
+    specific TX state domains ever opens up.
+  - **Alpine Plumbing (held, website):** website-gap decisively confirmed
+    (6/6 guessed domains ENOTFOUND, Facebook-only). Real collision risk
+    surfaced and correctly avoided: a same-state, near-identically-named
+    "Alpine Plumbing & Heating LLC" (Laramie/Bosler, WY) kept surfacing
+    in search with self-contradictory address/phone pairs across
+    different queries for what claimed to be the same listing — discarded
+    both numbers rather than risk misattributing a wrong phone to this
+    business. Owner name and phone both genuinely NOT FOUND (Facebook
+    itself was egress-blocked, which is likely where both would live).
+    Email gate failed cleanly — no domain exists to guess from.
+  - **MJB Electric (held, package):** this run's hardest case — the
+    hard-flagged CSLB license conflict got a real, careful answer: the
+    *identity* question resolved cleanly (license #586172 IS this
+    business — BBB profile, address, phone, and the exact Yelp complaint
+    text all tie together; #457106 IS a different, unrelated Escondido
+    business, no overlap found) confirming the original "directory
+    conflation, not a real problem" theory. But the *currency* question
+    stayed open: every cached source shows #586172's expiration as
+    1/31/2026, seven months in the past as of today, with nothing showing
+    a renewal — could be a stale cache or a genuinely lapsed license,
+    couldn't tell from here since cslb.ca.gov and BuildZoom's live sync
+    were both egress-blocked. Worth naming as its own pattern, distinct
+    from the Boldt HVAC/Quality Overhead Door "ambiguous but advance"
+    precedent: there the ambiguity didn't block advancing because other
+    gates passed; here the email gate failed independently anyway, so
+    the license question stayed open rather than getting resolved either
+    way by a forced choice. Flagged prominently and separately from the
+    email-gate hold, since a hard-disqualifier question staying
+    genuinely unresolved is a different, more important category than
+    the routine "just needs an email" holds — this one specifically
+    needs Kevin's eyes (or a live CSLB call) before anything else happens
+    on it, not just a future re-enrichment pass.
+  - **Primus Pest (held, package):** clean case — website-gap and owner
+    name (Darren Dutka, HIGH confidence via his own self-titled Facebook
+    profile) both resolved well; only the email gate failed, cleanly (no
+    website/domain to guess from, Facebook itself unreadable, no BBB
+    profile exists). CA Structural Pest Control Board license status
+    stayed an open informational gap (form-based lookup, not reachable)
+    but with zero red-flag signal either — same "advance/hold but note,
+    not a block" handling as other license-status cautions when nothing
+    contradicts.
+  - **Wesley B. Jones Electrical (held, website):** the false
+    "Website: elhorn.com" claim from a prior run resurfaced on a SECOND
+    independent aggregator (Buzzfile this time, BBB's AI summary before)
+    — worth remembering as a real recurring bad-data pattern, not a
+    one-off: some claims propagate across multiple third-party
+    aggregators from a shared bad upstream source, so seeing it "twice
+    independently" isn't actually two confirmations. Reconfirmed false
+    both times. Otherwise a strong, well-established prospect (BBB
+    since 2004, active federal contractor with ~$2.69M in obligations,
+    5.0 rating, MS license through 2027) — only the email gate failed,
+    and with a real environment caveat: BBB, TheBlueBook contacts page,
+    and GovTribe (the three most likely email sources) were all
+    egress-blocked this run, so absence-in-search isn't the same as
+    confirmed absence-on-page here — worth a retry if broader fetch
+    access ever opens up, same caveat pattern logged many times before.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (target/guessed company domains, BBB,
+    Facebook, cslb.ca.gov, pestboard.ca.gov, tdlr.texas.gov,
+    mycpa.cpa.state.tx.us, GovTribe, USAspending, HigherGov, TheBlueBook,
+    BuildZoom) — same recurring pattern logged since 2026-08-02. DNS-level
+    resolution checks stayed decisive and unblocked throughout — every
+    website-gap verdict above rests on DNS, every other finding is
+    search-snippet-sourced.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain (all 4 holds above stay at `found` by documented
+    gate misses, not backlog).

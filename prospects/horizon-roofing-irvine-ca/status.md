@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -29,3 +29,20 @@ quote_stage: none
   before using it as an outreach hook; (b) CSLB license status not yet
   checked — confirm active before drafting (a license flag has killed
   other candidates this batch, see memory).
+- 2026-08-30 (Montague): pain signals reconfirmed via the company's own
+  Trustindex review widget (independent of the disallowed direct-Yelp
+  read) - both the 9pm-1am no-response review and the "too busy to bid"
+  review genuinely appear there. Owner Frank Garcia confirmed HIGH
+  confidence (site About page, LinkedIn, a review naming him directly).
+  Email found via aggregator (contact@horizonroofingca.com) on a
+  confirmed-live domain - flagged GUESSED/aggregator-sourced, not
+  page-verified. **CSLB license status could NOT be confirmed** - no
+  license number verifiably ties to this Frank Garcia/Irvine entity (a
+  same-named Anaheim business's 4 license numbers were checked and ruled
+  out as a different company). Genuinely unresolved, not contradicted -
+  advancing on the strength of every other signal (25-yr history, A+ BBB,
+  4.7-4.8 stars/48-59 reviews, real content-rich site) per the same
+  advance-with-prominent-flag handling used for Boldt HVAC (2026-08-11)
+  and Quality Overhead Door (2026-08-15), but this is a real open item
+  for Kevin, not a formality - see enrichment.md's Open Flags. Advanced
+  to `enriched`. See enrichment.md.

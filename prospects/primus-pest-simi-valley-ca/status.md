@@ -5,6 +5,7 @@ quote_stage: none
 ---
 
 ## Links
+- yelp: https://www.yelp.com/biz/primus-pest-simi-valley-2
 - maps: https://www.google.com/maps/search/Primus+Pest+Simi+Valley+CA
 
 ## Log
@@ -29,3 +30,21 @@ quote_stage: none
   presence. FLAGGED for Montague: confirm no website exists at time of
   enrichment — a business this small could stand one up between now and
   outreach.
+- 2026-08-30 (Montague): website-gap reconfirmed — of 6 guessed domains
+  only primuspest.com resolves at all (to generic GoDaddy parked-domain
+  IPs, not a hosted site), and zero search results tie that domain to
+  this business; no real live website exists. Owner Darren Dutka
+  strengthened to HIGH confidence — his own Facebook profile is
+  self-titled "Darren Dutka - Primus pest control," corroborated by
+  multiple independent reviews naming "Darren" as the reliable
+  owner/operator. CA Structural Pest Control Board license status could
+  not be checked (pestboard.ca.gov/search.dca.ca.gov both egress-blocked
+  and form-based, not indexed) — no disciplinary-action or
+  revoked/suspended signal found in search either, so this is an
+  unresolved gap, not a red flag. Phone (805) 304-5169 confirmed across
+  multiple sources. **Email gate FAILED** — no email surfaced anywhere
+  (Facebook itself unreadable in this environment, no BBB profile exists
+  for this business, no directory lists one), and no website/domain
+  exists to ground a guessed pattern. Held at `found`. Not a dead end —
+  a strong, well-reviewed solo operator, just phone-only reachable right
+  now. See memory/montague.md.
