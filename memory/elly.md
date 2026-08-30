@@ -2176,3 +2176,159 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-08-30 (this run) — 2 drafted, the whole enriched queue, and
+  `_fleet-state.md` is now 43 hours stale, second day running.** `git fetch
+  origin` first per CLAUDE.md: origin/master force-updated to 5729e89
+  (Montague's 2026-08-30 pass, "2 advanced / 4 email-gate/verification holds",
+  on top of two Rupika batches). Container started detached at exactly that
+  commit with a clean tree, the ordinary stale-ref pattern, repointed with
+  `git checkout -B work origin/master`. Fixed the ref BEFORE reading ground
+  truth, per the 08-28 lesson.
+
+  **The staleness escalated and I escalated with it.** `_fleet-state.md` was
+  generated 2026-08-28 21:59 UTC and I read it at 2026-08-30 17:08 UTC. That is
+  43 hours, versus 17 yesterday. The file has not moved in two days, so KIREEK's
+  sync loop on Kevin's PC is down rather than slow. Yesterday's note said if it
+  stayed stale a second day that becomes a real systems problem worth telling
+  him about more loudly than a caveat line, so it is now the headline of the
+  rolling approvals file and the lead of the push notification, not a footnote.
+  **Standing observation worth keeping: the file being stale does not block this
+  seat at all.** `prospects/*/status.md` is the source of truth and I recount
+  every stage by grep anyway. What is lost is the fleet-wide view, and the
+  fleet-wide risk is other agents quoting Thursday-evening MRR and systems
+  health as current.
+
+  Scanned `prospects/*/status.md`: 3 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold from
+  2026-08-03, unchanged, skipped again) plus 2 real ones, both drafted:
+  **horizon-roofing-irvine-ca** (package) and **bgs-ac-heating-corsicana-tx**
+  (website). No defensive-check skips; both passed Montague's email gate.
+  Montague held four others, so 2 was the entire queue, not a batch-size choice.
+
+  **Horizon Roofing — I deliberately broke my own standing rule about negative
+  reviews, and documented it as a rule refinement rather than an exception.**
+  The angle is a review on the company's OWN SITE (a Trustindex widget Montague
+  read through the search index) describing somebody calling from 9pm to 1am
+  during a roof leak with no answer. I have kept negative reviews out of bodies
+  three times (Reliant 08-19, Owen 08-25, All Tech 08-28) on the grounds that
+  quoting a stranger's complaint is the one door that isn't face-saving.
+  **The refinement: that rule is really about reviews concerning the owner's
+  CHARACTER, relayed from a platform he does not control.** This one is
+  structural (nobody's office is open at 1am, there is nothing to be ashamed of)
+  and it is on his own homepage, so the email points at something he publishes
+  rather than repeating gossip. Crucially the question asked is about the
+  WIDGET, not about his performance: "is that up there on purpose, or is the
+  widget just pulling in everything it finds?" Both doors are about publishing
+  choices, so neither requires him to concede anything about how he answers the
+  phone. **Generalizable: when a fact would ordinarily be too pointed to use,
+  check whether you can ask about the CONTAINER instead of the CONTENT.** Asking
+  about the widget got me the vividness of the review with none of the accusation.
+
+  **I also wrote Kevin a ready-to-swap substitute opener into the outreach.md
+  and named it in the rolling file.** If he judges the review citation too
+  pointed, cutting paragraph one and opening "When a roof starts leaking at
+  eleven at night, who takes that call?" leaves everything after it standing.
+  **Worth doing again whenever I knowingly work against one of my own standing
+  rules: hand him the sharp version and the safe version, not just the sharp
+  one.** Costs a paragraph in the note and turns a judgment call he might veto
+  into a choice he can make in five seconds.
+
+  **Also had to keep Horizon off yesterday's mechanism.** KJC (08-28) also ended
+  with an urgent job leaving, but its mechanism was a queue where everything gets
+  answered eventually in one line. This one is the opposite: there is no queue at
+  1am, the office is shut, and the argument is about coverage in a WINDOW rather
+  than triage inside a backlog. Roofs leak when it rains and it rains at night,
+  which is genuinely trade-specific. Runner-up dropped: the second verified
+  complaint ("probably too busy to get back to you for a bid"), which maps almost
+  exactly onto Kevin's canonical cold-call opener and which I nearly used.
+  Dropped because it argues about the ordinary working day, which is what every
+  competitor's email argues about, and because using both complaints turns a
+  question into a case against him. Also kept out: the 48-59 Google vs 24 Yelp
+  review gap after 25 years, which would support a "your follow-up isn't
+  happening" pitch and is the 08-13 assumption-dressed-as-observation shape.
+
+  **BGS AC & Heating — the two different sales inside one trade, and it is the
+  first genuinely new website-track mechanism in a week.** HVAC is close to
+  unique in selling two things bought in completely different ways: the service
+  call is word-of-mouth and ring-somebody-now, where a Facebook page honestly is
+  enough, and the changeout is four or five figures, comparison shopped over
+  days, decided at a kitchen table in the evening with tabs open. He is not
+  invisible for the first and effectively absent from the second, which is also
+  the half that carries the year. **This extends the 08-28 lesson (angles come
+  from the TRADE, not the town) one level further: some trades sell TWO products
+  with different buying processes, and the website argument can be true for one
+  and honestly false for the other.** Conceding that the Facebook page is fine
+  for most of his work is what makes the email not read like the next agency
+  pitch. Opener is a question I genuinely do not know the answer to, since
+  nothing in the file says which half he is in.
+
+  **Runner-up dropped on a twice-worn mechanism:** BGS lists a (469)
+  Dallas-prefix mobile number on a business in Corsicana, which is 903.
+  Checkable in two seconds and it plausibly reads to a comparison shopper as an
+  out-of-town outfit. Dropped because "your listing misrepresents you" was the
+  Powerhouse draft on 08-27 AND All Tech's runner-up on 08-28. **Twice-rejected
+  inside a week is the signal a shape is worn out, not just recently used.**
+  Also kept out: the competitor-tenure contrast (Area Wide 22 years, B&J since
+  1961, BGS states nothing anywhere), which argues by comparing him unfavourably
+  to his neighbours and is the Kelso 08-26 legitimacy mechanism besides; and the
+  Facebook page's "10 reviews, 100% recommended," since ten is thin and pointing
+  at it reads as a dig.
+
+  **Team greeting on BGS, and the name gap is genuinely closable by a human.**
+  No owner name exists anywhere. TDLR's ACR licence search and the TX
+  Comptroller's Taxable Entity Search are the two most likely sources and both
+  are form-based tools that egress-block for both agents and are not indexed.
+  Rupika also failed on TX SOS. This is a real gap for anyone with an unblocked
+  browser, not a dead end on the business — worth saying that way in the note so
+  Kevin knows it is two minutes of his time, not a research failure.
+
+  **Both prospects carry an unresolved licence flag, which is new.** Horizon's
+  CSLB is unresolved-not-contradicted (four numbers surfaced that cross-check to
+  a DIFFERENT Anaheim company, owner Manuel Gonzales Jr; cslb.ca.gov and
+  BuildZoom both egress-blocked), and Local Choice's AZ PCO licence from 08-29 is
+  still open. Both are hard disqualifiers. Put Horizon's in the outreach note,
+  the status log and its own section in the rolling file, with the specific
+  instruction to run a **name-specific** Check-A-License lookup rather than a
+  business-name one, since a business-name search is exactly what produced the
+  wrong company. Nothing in either body depends on the licence, so a bad result
+  costs a send, not a rewrite.
+
+  **84% BrightLocal stat omitted again, seventh run running on this track.**
+  Considered override, not oversight. BGS is not a findability argument and
+  Corsicana is a town of ~24,000 where nobody struggles to find an HVAC company.
+
+  **Verification notes:** recounted by grep rather than trusting `_fleet-state.md`
+  — 78 found, 1 enriched, 8 drafted, 2 approved, 97 sent, 6 closed, 3 dismissed.
+  All four dated first-touch approval files already `status: superseded`, nothing
+  to close. Left `2026-08-21-followup-drafts-held-lane.md` open on purpose (not a
+  first-touch file) and left `2026-08-28-realestate-batch-01-cold-emails.md`
+  alone (different workflow, staged in Kevin's Gmail). Regenerated
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted`, so it
+  lists all 8 including six carryovers.
+
+  **Kevin's side is quiet for a fourth day.** Nothing has moved from `drafted`
+  since 08-27; Josh's Plumbing and Powerhouse are now four days old. Did not
+  raise Owen Plumbing, per the 08-28 commitment. Still zero logged feedback on
+  tone or edits after ten weeks.
+
+  Track breakdown: 1 package, 1 website. Standard post-write sweep on body text
+  only (em dash, en dash, bracket placeholder, retired package name,
+  third-person Kevin/Viridia, `$`, "guarantee", the 84% stat, pricing, stray
+  sign-off) — both clean on every check. Bodies are 122 and 144 words. Distinct
+  subjects ("Repairs or changeouts?" / "The 9pm to 1am review"), distinct closers
+  ("Fifteen minutes this week?" / "Is that worth ten minutes?"), disjoint
+  mechanisms, and no same-track collision since the two are on different tracks.
+
+  **Next run:** check `stage: enriched` first, then regenerate
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted` (write it
+  explicitly empty if nothing is there). **Check `_fleet-state.md`'s timestamp —
+  if it is still frozen at 2026-08-28 21:59 UTC on a third day, escalate harder
+  still, because that is a KIREEK outage nobody has noticed.** Upstream backlog
+  is **78 at `stage: found`**, grown every day for eleven days (74 on 08-29, 69
+  on 08-28, 66 on 08-27). Montague advanced 2 and held 4 today while Rupika added
+  6, so the gap widened again. The 11 undrafted held-lane second touches remain
+  the one place surplus capacity here would actually convert.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.

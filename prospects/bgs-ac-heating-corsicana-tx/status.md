@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -45,3 +45,17 @@ quote_stage: none
   (Facebook-derived via search index, not independently cross-verified
   on a second listing) but directly-listed, not guessed. Advanced to
   `enriched`. See enrichment.md.
+- 2026-08-30 (Elly): drafted. Website track. Angle is the two different sales
+  inside HVAC: a service call is a word-of-mouth purchase a Facebook page
+  genuinely covers, a full system changeout is comparison shopped at a kitchen
+  table in the evening and he is effectively absent from that half. Team
+  greeting, since no owner name exists anywhere (TDLR and TX Comptroller both
+  egress-blocked for both agents; a live lookup would likely close it and
+  upgrade the email at the same time). Deliberately not the findability
+  argument, seventh run running on this track, and the 84% BrightLocal stat is
+  omitted again as a considered override. Runner-up dropped: the (469)
+  Dallas-prefix number on a 903 business, same "your listing misrepresents you"
+  mechanism as Powerhouse 08-27 and All Tech's runner-up 08-28. Email is
+  directly listed but single-source (Facebook via search index); a glance at the
+  Facebook About tab would confirm it. Live-operating status still rests only on
+  that Facebook page. See outreach.md.

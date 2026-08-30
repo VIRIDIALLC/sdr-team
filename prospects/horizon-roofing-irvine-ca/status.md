@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -46,3 +46,17 @@ quote_stage: none
   and Quality Overhead Door (2026-08-15), but this is a real open item
   for Kevin, not a formality - see enrichment.md's Open Flags. Advanced
   to `enriched`. See enrichment.md.
+- 2026-08-30 (Elly): drafted. Package track. No response-time figure exists
+  anywhere, so the hook is the qualitative signal Montague corroborated through
+  the Trustindex widget on the company's own site: the review describing calls
+  from 9pm to 1am during a roof leak with no answer. Angle is that he is
+  publishing the evidence himself, opened as a question about the widget rather
+  than about his performance, so both doors are face-saving and he can verify
+  the whole premise in ten seconds. Deliberately different from KJC 08-28
+  (queue/triage) and Local Choice 08-29 (career history). CSLB licence is still
+  UNRESOLVED and flagged prominently for Kevin as a hard disqualifier to close
+  with a name-specific Check-A-License lookup before sending. A clean
+  no-review-cited substitute opener is written into outreach.md if Kevin judges
+  the review citation too pointed. Email is aggregator-sourced, not
+  page-verified; phone (714) 328-1967 is the HIGH-confidence fallback. See
+  outreach.md.
