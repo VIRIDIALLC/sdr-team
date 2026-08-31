@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -59,3 +59,4 @@ quote_stage: none
   directly listed but single-source (Facebook via search index); a glance at the
   Facebook About tab would confirm it. Live-operating status still rests only on
   that Facebook page. See outreach.md.
+- 2026-08-31 (Kevin, via KIREEK): sent to bgac812@gmail.com.
