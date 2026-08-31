@@ -1,6 +1,7 @@
 ---
 stage: sent
-followup: enrolled
+followup: calling
+call_attempts: 0
 track: package
 quote_stage: none
 ---
@@ -23,3 +24,4 @@ quote_stage: none
   opening. Stays at `drafted`.
 - 2026-08-13 (Kevin, via KIREEK): sent to Rebuildaz24@gmail.com.
 - 2026-08-17 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
+- 2026-08-31 (VEGA): email sequence presumed finished (14 days since enrollment, no reply logged) — moved to Kevin's CALL-LIST.md for phone outreach.
