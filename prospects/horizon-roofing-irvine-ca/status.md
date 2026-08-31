@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -60,3 +60,4 @@ quote_stage: none
   the review citation too pointed. Email is aggregator-sourced, not
   page-verified; phone (714) 328-1967 is the HIGH-confidence fallback. See
   outreach.md.
+- 2026-08-31 (Kevin, via KIREEK): sent to contact@horizonroofingca.com.
