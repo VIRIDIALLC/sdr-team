@@ -2542,3 +2542,111 @@
   - Backlog after this run: no genuinely untouched `stage: found`
     prospects remain (all 4 holds above stay at `found` by documented
     gate misses, not backlog).
+
+- (2026-08-31 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  origin/master had force-updated refs since last fetch (KIREEK fleet-state
+  refresh + Rupika's two today's batches), local was a stale detached HEAD
+  matching an old origin/master tip with no divergent local work — plain
+  `git fetch` + reset, not the shallow-clone pattern. Scanned
+  `prospects/*/status.md` for `stage: found`, filtered for genuinely
+  untouched (no `enrichment.md` AND no Montague log entry) — 5 matched,
+  exactly today's two Rupika batches in full (2 package: Hero AC & Heat/
+  Casa Grande AZ, Orange Heating Air Conditioning/Orange CA; 3 website:
+  Bilskie Electric/Vincennes IN, Nelson's Complete Treat/Hobbs NM, Reed
+  Overhead Doors/Ottumwa IA) — a normal-sized batch. Used 5 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself for consistency, following the
+  CALL CARD format.
+
+  Result: 3 of 5 advanced to `enriched` (Hero AC & Heat — package; Bilskie
+  Electric, Nelson's Complete Treat — both website), 2 held at `found`
+  (Orange Heating — package, email gate; Reed Overhead Doors — website,
+  website-gap gate).
+
+  - **Hero AC & Heat (advanced):** owner Sam Lara confirmed high
+    confidence (BBB + an independent FB video both naming him owner).
+    Email herohvac5@gmail.com found directly on BBB — clean email-gate
+    pass. Response-time signal landed in the actively-contradictory
+    bucket, not just unconfirmed — one search returned "10 minutes, 100%
+    response," directly contradicting the brief's ~12hr premise, and
+    review counts varied 2-20 by source. Per the CVA Exterminators
+    (2026-08-15) third-bucket convention, dropped the figure entirely and
+    substituted a real secondary signal (thin review count vs. claimed
+    decades of experience) as the hook instead — worth noting this is now
+    at least the third time a response-time signal has flipped from
+    "unconfirmed" to genuinely "contradicts the brief," not just noisy.
+  - **Bilskie Electric (advanced):** the owner-name ambiguity Rupika
+    flagged (Brandt vs. Ron) got a real, useful answer even though it
+    didn't fully resolve — Ron traced to an unrelated Colorado supply-company
+    sales role (Valley Electric Supply), effectively ruling him out, while
+    Brandt got a direct verbatim review quote naming him as doing the
+    work. Used "Brandt" on the CALL CARD with an explicit
+    not-registry-confirmed-as-owner caveat, same category as Merican
+    Plumbing's "real name, uncertain title" (2026-08-17) — worth naming as
+    a repeatable pattern: when two candidate names surface, checking each
+    one's OTHER business ties (not just searching harder for the target
+    business) can eliminate one even without confirming the other.
+  - **Nelson's Complete Treat (advanced):** cleanest website-gap case in
+    the batch (3/3 guessed domains ENOTFOUND, one resolving decoy
+    domain-squat correctly ruled out via zero topical association). Owner
+    Trey Nelson strengthened from the brief's single-source LinkedIn
+    inference to medium-high via a second, independent local-registry
+    signal — a Trey Nelson listed as owner of a different Hobbs business
+    in city registration records doesn't prove pest-control ownership
+    directly, but confirms it's a real, active local business-owner
+    identity in that specific city, worth naming as its own light-weight
+    corroboration tier (place-and-name match on an unrelated record) below
+    a direct registry filing but above a bare single-source bio.
+  - **Orange Heating (held, package, email gate):** a clean case of the
+    search tool's AI-summary layer asserting an unsourced email
+    ("info@orangehvacr.com") that never appeared in its own cited
+    snippets — caught and discarded, not reported as even a guess, same
+    failure mode as Cold Fusion Mechanical (2026-08-13). Every other
+    signal held up (response-time, review count, owner, collision check)
+    — this is a genuine email-gate-only hold, not a dead end, but also a
+    real environment-access gap: every primary-source page for this
+    prospect (own site, BBB, Facebook, ZoomInfo, LinkedIn, CSLB) was
+    egress-blocked this run, cutting off nearly every place a real email
+    could have surfaced. Worth a retry if fetch access ever broadens.
+  - **Reed Overhead Doors (held, website — NEW pattern, worth naming
+    distinctly): the website-gap gate came back genuinely CONTRADICTED,
+    not just unconfirmed or unresolved.** Rupika's brief explicitly stated
+    reedoverheaddoors.com doesn't resolve; this run's DNS check found it
+    now resolves live to Wix's shared-hosting infrastructure — a real
+    change from what was checked at sourcing time, not a research miss on
+    her part (a domain's DNS state can change day to day, especially one
+    recently pointed at a website builder). Direct content verification
+    was blocked (WebFetch and even a Playwright headless-browser attempt
+    both hit policy-level 403s at the proxy), so it's genuinely impossible
+    to tell from this environment whether that's a live published site or
+    an unpublished/parked Wix connection (both are common and look
+    identical at the DNS level) — held rather than forced either way,
+    per the "if a website-gap guess turns out wrong, don't advance, flag
+    for Kevin" rule, except here "wrong" isn't confirmed either, just no
+    longer confirmable as right. Everything else about this prospect
+    actually got STRONGER this run (owner Robert Reed now has a genuine
+    second independent source, email verified via that same second
+    source) — worth flagging to Kevin as a good prospect sitting one
+    five-second browser check away from being ready to enroll, not a
+    research dead end. Worth naming as a new category alongside "genuinely
+    unresolved" (Jones LawnCare 2026-08-17, blocked before any DNS read at
+    all) and "confirmed wrong" (Johnston Heating 2026-08-09, a domain
+    squat with zero real content): a domain that used to be empty and now
+    resolves to a website-builder's shared IP pool, content unknown — this
+    may be worth Kevin deciding whether it's common enough to add as its
+    own named gate outcome rather than continuing ad hoc.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 5 prospects this run (target/guessed company domains, BBB,
+    Facebook, LinkedIn, ZoomInfo, CSLB.ca.gov, Bizapedia, Yahoo Local,
+    Chamber of Commerce, Indiana SOS, NM SOS, Hobbs city registry, Wix
+    infrastructure, Iowa SOS, Alignable, Clopay, LiftMaster) — same
+    recurring pattern logged since 2026-08-02. DNS-level resolution
+    checks stayed decisive and unblocked throughout (confirmed again this
+    run, including the Reed Overhead Doors case above) — the same
+    distinction holds every run: the block is on HTTP fetch, not DNS
+    resolution, though this run also showed DNS-alone isn't always
+    sufficient to fully certify a website-gap gate when a domain resolves
+    but content can't be read.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain (both holds above stay at `found` by documented gate
+    misses, not backlog).
