@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -45,3 +45,4 @@ quote_stage: none
   The possible Hank's Electric connection is kept out of the email entirely
   and flagged as call material only. GHL dedup warning carried forward
   (identical LLC name in Marrero LA). See outreach.md.
+- 2026-08-31 (Kevin, via KIREEK): sent to powerhouse_es@outlook.com.
