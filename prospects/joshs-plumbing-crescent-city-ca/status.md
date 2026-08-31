@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -42,3 +43,4 @@ quote_stage: none
   on tone, and the CSLB record is aggregator-sourced, not page-verified.
   See outreach.md.
 - 2026-08-31 (Kevin, via KIREEK): sent to joshmariaster@gmail.com.
+- 2026-08-31 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
