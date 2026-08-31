@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -45,3 +45,4 @@ quote_stage: none
   inbox. Dropped angle: the two of them personally answering the phone (an
   assumption about how he operates, and a compliment rather than a question).
   Advanced to `drafted`. See outreach.md.
+- 2026-08-31 (Kevin, via KIREEK): sent to info@kjcroofing.com.
