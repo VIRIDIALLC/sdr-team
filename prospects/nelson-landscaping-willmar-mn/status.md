@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -48,3 +48,4 @@ quote_stage: none
   Montague's flag that lee.nelson14@gmail.com is not fully certain. Dropped
   angle: the closing Minnesota hardscape season (same clock mechanism as the
   08-21 High Country Lawn follow-up). Advanced to `drafted`. See outreach.md.
+- 2026-08-31 (Kevin, via KIREEK): sent to lee.nelson14@gmail.com.
