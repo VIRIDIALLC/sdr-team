@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -58,3 +58,4 @@ quote_stage: none
   domain). CARRIED FORWARD FOR KEVIN: the AZ PCO licence check is still open
   and is a hard disqualifier if it comes back revoked or inactive. Advanced to
   `drafted`.
+- 2026-08-31 (Kevin, via KIREEK): sent to info@localchoicepest.com.
