@@ -1,7 +1,7 @@
 # For Kevin — first-touch drafts waiting on you (LIVE QUEUE)
 
 status: open
-Last regenerated: 2026-08-30 (Elly)
+Last regenerated: 2026-08-31 (Elly)
 
 > **This is the only first-touch approval file. It is regenerated from scratch
 > every run** and lists every prospect currently sitting at `stage: drafted`,
@@ -10,102 +10,80 @@ Last regenerated: 2026-08-30 (Elly)
 > approvals but really nothing" incident, there are no more dated first-touch
 > files. If this file says the queue is empty, the queue is empty.
 
-## The queue: 8 drafts
+## You cleared the whole queue today
+
+All 8 drafts that were sitting here yesterday went out this morning via KIREEK.
+That's the first movement on this queue since 08-27, and it's the first time it
+has gone to zero and been refilled in the same day. The three below are new as of
+this run, so the queue is small on purpose, not stalled.
+
+## The queue: 3 drafts
 
 | Prospect | Track | Contact | Hook | Email confidence |
 |---|---|---|---|---|
-| **Horizon Roofing (Irvine CA)** — new today | package | Frank Garcia | There's a review on your own site from a guy who called you 9pm to 1am with a roof leaking. Is that up there on purpose? | **Aggregator-sourced** (real domain, not page-verified) |
-| **BGS AC & Heating (Corsicana TX)** — new today | website | no name found (team greeting) | Service calls or full changeouts? A Facebook page covers one of those and not the other. | **Directly listed, single-source** (his own Facebook page) |
-| Local Choice Pest & Landscape Nutrition (Cave Creek AZ) | package | Sage Garvey | You ran customer care at Burns for 23 years. Now the messages wait until you're out of the crawlspace. | **Guessed** (info@ on a confirmed-live domain) |
-| KJC Roofing (Mission Viejo CA) | package | Randy Holmes | You answer 100% of them, nine hours later. Which pile is waiting? | **Guessed** (info@ on a DNS-confirmed live domain) |
-| All Tech Plumbing (Rock Springs WY) | website | Jeff (first name only) | There's an All Tech Plumbing in New Jersey, and another three states. None of them are you. | **Strong** (directly found, recurs across independent listings) |
-| Nelson Landscaping (Willmar MN) | website | Lee Nelson | Where do you send somebody who wants to see a patio you built? | **Uncertain** (one of two conflicting candidates) |
-| Josh's Plumbing (Crescent City CA) | website | Josh Williamson | Three addresses for you online, one phone number, and you made none of them. | **Single-sourced** (his own Facebook page, snippet-sourced) |
-| Powerhouse Electrical Services (Vernal UT) | website | Robert (first name only) | Listings say Electrical, the LLC says Construction. Which is it? | **Medium** (Vernal-specific Facebook listing, not page-rendered) |
+| **Hero AC & Heat (Casa Grande AZ)** — new today | package | Sam Lara | How much of your work comes from people who've been in Casa Grande under two years? None of them know you, and there are barely any reviews for them to find out. | **Strong** (listed directly on his BBB profile, not constructed) |
+| **Bilskie Electric (Vincennes IN)** — new today | website | Brandt (first name, title unconfirmed) | One of your reviews says "we are so happy we found him." Found. Search your name and you land on HomeAdvisor, which is paid to show three other electricians first. | **Good** (recurs across three independent directories, not page-verified) |
+| **Nelson's Complete Treat (Hobbs NM)** — new today | website | Trey Nelson | You're licensed in New Mexico and Texas both, and there's nowhere that's written down. | **Good** (cross-referenced across multiple directories, not page-verified) |
 
 Nothing has been sent. Full drafts and reasoning live in each prospect's
 `outreach.md`.
 
-## Two things need a check before they send, and one is new
+## One draft needs a decision from you before it sends
 
-**Horizon Roofing — the CSLB licence. NEW, and this is the serious one.**
-Montague could not tie any licence number to this Frank Garcia / Irvine entity.
-Four numbers surfaced under "Horizon Roofing Company" and she cross-checked them
-to a **different business** (122 S Kingsley St, Anaheim, owner Manuel Gonzales
-Jr). cslb.ca.gov and BuildZoom were both egress-blocked. Genuinely unresolved
-rather than contradicted, but an unlicensed roofer is a hard disqualifier under
-our own criteria. **Do a name-specific Check-A-License lookup, not a
-business-name one** — a business-name search is exactly what produced the wrong
-company. Nothing in the draft depends on it, so a bad result costs a send, not a
-rewrite.
+**Nelson's Complete Treat — the whole email rests on the two-state licence, and
+nobody has seen that on a registry.** "Licensed in NM and TX" comes from his own
+listings and directory data via Rupika and Montague. The New Mexico Secretary of
+State and the state pest control licence board were both unreachable from either
+agent's environment. If that fact is wrong, this email is wrong from the second
+sentence, not merely weaker.
 
-**Local Choice Pest — the Arizona PCO licence.** Unchanged from yesterday, still
-open. Rupika flagged it, Montague could not close it (searchagriculture.az.gov
-is a form-based tool neither environment can reach). Also a hard disqualifier.
+So there's a **ready-to-swap substitute opener written into the outreach.md**: cut
+the first two paragraphs and open with *"When a company's purchasing person asks
+you to send over your info, what do you send them?"* That runs on the oilfield and
+commercial half of his book instead, needs no licensing claim at all, and
+everything from "A site isn't about being found" onward still stands. Five-second
+choice, not a rewrite. Same practice as the Horizon substitute on 08-30.
 
-## One judgment call on Horizon I want you to actually look at
+## Softer flags, none of them blocking
 
-Horizon's opener cites a negative review. I have kept negative reviews out of
-bodies three times on the grounds that quoting a stranger's complaint at
-somebody is the one door that isn't face-saving (Reliant Pest 08-19, Owen
-Plumbing 08-25, All Tech 08-28). Those were all reviews about the **owner's
-character**, relayed from a platform he does not control. This one is about a
-phone not being answered at 1am, which is structural and which nobody should be
-ashamed of, and it is sitting on **his own homepage** via the Trustindex widget,
-so the email points at something he publishes rather than repeating gossip. The
-question asked is about the widget, not about his performance, and the second
-line moves off the review immediately.
+**Hero AC & Heat — AZ ROC #338116 is a secondhand read.** Listed Active per an
+aggregator, but azroc.gov and its portal were both egress-blocked, so it isn't a
+live-registry check. Same standing caution as Boldt HVAC and Quality Overhead
+Door. Also worth knowing on the phone: **do not lead with response time on this
+one.** Rupika sourced him on a ~12hr Yelp figure and Montague's re-check returned
+"10 minutes, 100% response," which contradicts it outright. The number is
+deliberately absent from the draft and you have no idea which reading is real.
 
-I think it holds, but you know the tone that works on a roofer in Orange County.
-**A clean substitute opener is already written into `outreach.md`** if you
-disagree: cut the first paragraph, open with "When a roof starts leaking at
-eleven at night, who takes that call?", and everything after it stands
-unchanged. Weaker only because it's generic enough that any roofer could have
-received it.
+**Bilskie Electric — two small things.** The review I quote back at him is
+search-snippet-sourced, so if he asks which site it's on, you don't have an
+answer. Low cost, since it's a compliment. And Brandt is confirmed as the man
+doing the work but not registry-confirmed as the owner, so don't call him "the
+owner" until he says it himself.
 
-## Queue age
+**Local Choice Pest went out today with the Arizona PCO licence still
+unchecked.** Not a criticism, just closing the loop: that flag was open when it
+sent and it's still open. searchagriculture.az.gov is a form-based tool neither
+agent can reach, so it needs two minutes of a human browser.
 
-Josh's Plumbing and Powerhouse have been sitting here since 08-27, KJC, All Tech
-and Nelson since 08-28, Local Choice since 08-29. The oldest two are now four
-days old. Not chasing, just noting.
+## The selling kit still says it's waiting on you
 
----
+Both collateral files are linked from every draft's Note as the leave-behind, but
+`collateral/complete-system-one-pager.md` and `collateral/case-study-onesheets.md`
+still carry `status: draft-awaiting-kevin` in the repo, and the one-pager still
+has the lawyer-review flag on the guarantee. My run instructions say you approved
+the kit on 08-25. **Those two things disagree and I'm not going to guess which is
+current.** Practical effect: the drafts link the live public case-studies page,
+which is safe either way, and the Notes tell you the one-pager isn't a send-as-is
+attachment yet. If you did approve it, the status lines in those two files need
+flipping so nobody downstream keeps treating it as a draft.
 
-## ⚠️ KIREEK's sync loop looks down, second day running
+## Upstream, unchanged and still the real constraint
 
-`_fleet-state.md` was generated **2026-08-28 21:59 UTC** and I read it at
-2026-08-30 17:08 UTC. That is **43 hours old**, against the ~12 hour staleness
-line CLAUDE.md draws. Yesterday it was 17 hours old and I flagged it as a
-caveat; today it has not moved at all in two days, so this is a real systems
-problem on your PC rather than a slow refresh, and I am saying it louder than a
-footnote as I said I would.
+**80 prospects are stacked at `stage: found`**, up from 78 yesterday and grown
+every day for twelve days. Montague advanced 3 and held 2 today while Rupika
+added 5, so the gap widened again. Nothing about this seat fixes it.
 
-**What it costs:** nothing on this seat. Everything I need is in
-`prospects/*/status.md`, which is the source of truth anyway, and I recounted
-every stage by hand rather than trusting the file's summary. What is lost is the
-fleet-wide view. Every team's `_fleet-state.md` is stale by the same two days,
-so any agent quoting live MRR, systems health, or another team's state right now
-is quoting Thursday evening.
-
-**Live pipeline counts, recounted from `prospects/*/status.md` this run:**
-78 found · 1 enriched · 8 drafted · 2 approved · 97 sent · 6 closed · 3
-dismissed.
-
-**Upstream, and this has now grown every single day for eleven days:** 78
-prospects are stacked at `stage: found`, up from 74 yesterday, 69 on 08-28, 66
-on 08-27, 62 on 08-26. Montague advanced 2 and held 4 on the email gate today
-while Rupika added 6, so the gap widened again. First touches will keep arriving
-in ones and twos regardless of how often this seat runs. The constraint is the
-enrichment step, not the drafting step.
-
-**Still open elsewhere:** `approvals/2026-08-21-followup-drafts-held-lane.md`
-has 10 second-touch drafts waiting on you, and 11 more prospects in the
-`followup: held` lane have never had a second touch written at all. That remains
-the one place spare capacity on this seat would actually convert, since those
-are people who already received a first email and got nothing after it.
-
-All four dated first-touch approval files (08-21 batch 2, 08-22, 08-23, 08-24)
-were already `status: superseded`; nothing to close this run. Left
-`2026-08-21-followup-drafts-held-lane.md` open on purpose (not a first-touch
-file) and left `2026-08-28-realestate-batch-01-cold-emails.md` alone (a
-different workflow's batch staged in your Gmail, not this pipeline's queue).
+**11 held-lane second touches are still undrafted** (website and ads prospects
+whose first email went out on 08-17 and 08-18 and who have had nothing since).
+That remains the one place spare capacity here would actually convert, and it's
+been true for ten days.

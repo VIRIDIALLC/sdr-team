@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -16,3 +16,12 @@ quote_stage: none
   board both unreachable). Email Treypest@yahoo.com cross-referenced
   against multiple directory listings, not just the brief's original find
   — **email gate PASSED**. Advanced to `enriched`. See enrichment.md.
+- 2026-08-31 (Elly): drafted. Angle that won: the two-state licence is a real
+  differentiator with nowhere to live, so the site is the sales argument rather
+  than a findability fix. First website-track draft in a while that argues from
+  a strength instead of a deficiency. Body's premise is listing-sourced, not
+  registry-confirmed (NM SOS and pest board both unreachable), so a
+  ready-to-swap substitute opener is written into outreach.md. Runner-up
+  dropped: the oilfield procurement gate, close to BGS 08-30 and it assumes
+  facts not in the file. Leans on Hobbs geography, never the brand name, per
+  Montague's collision warning. Advanced to `drafted`.

@@ -2332,3 +2332,180 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-08-31 (this run) — 3 drafted, the whole enriched queue, and Kevin
+  cleared all 8 pending drafts this morning after a five-day freeze.** `git fetch
+  origin` first per CLAUDE.md: origin/master had moved to 1faea7d (KIREEK
+  fleet-state refresh on top of Montague's 2026-08-31 pass, "3 advanced, 2 held,"
+  on top of two Rupika batches). Container started detached at that commit with a
+  clean tree, the ordinary stale-ref pattern logged every run since 08-13,
+  repointed with `git checkout -B work origin/master` before reading anything.
+
+  **`_fleet-state.md` is fresh again and the KIREEK outage is over.** Generated
+  2026-08-31 16:51 UTC, minutes old when I read it. It had been frozen at
+  2026-08-28 21:59 UTC for two days and I escalated it as the headline of
+  yesterday's rolling file and push notification. It recovered on its own, so the
+  sync loop on Kevin's PC is back up. Nothing further owed on it; noting the
+  resolution so the next run doesn't re-escalate a closed problem.
+
+  **The queue actually moved, which is the headline.** All 8 drafts sitting at
+  `stage: drafted` went out via KIREEK this morning (All Tech, BGS, Horizon,
+  Josh's Plumbing, KJC, Local Choice, Nelson Landscaping, Powerhouse), each with
+  its own "Kevin approved via KIREEK" commit. That's the first movement since
+  08-27 and the first time this queue has gone to zero and been refilled the same
+  day. **Approval rate is 8 for 8 with no recorded edits, which now runs to
+  roughly sixty consecutive drafts approved as written.** Still literally zero
+  logged feedback on tone or on edits after ten weeks, so the "Edits Kevin tends
+  to make" section stays empty and honestly so. He sent Horizon, which was the
+  draft where I knowingly worked against my own no-negative-reviews rule and
+  handed him a safe substitute opener. I can't tell from the commit which version
+  went, so that's not evidence the sharp version passed. Don't read it as such.
+
+  Scanned `prospects/*/status.md`: 4 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold from
+  2026-08-03, unchanged, skipped again) plus 3 real ones, all drafted:
+  **hero-ac-heat-casa-grande-az** (package), **bilskie-electric-vincennes-in**
+  (website), **nelsons-complete-treat-hobbs-nm** (website). No defensive-check
+  skips; all three passed Montague's email gate.
+
+  **Hero AC & Heat — I had a perfectly good angle and refused it on sameness, and
+  this is the clearest case yet for why that's the right call.** Sam Lara answers
+  the calls and does the work himself, confirmed by review. In Casa Grande in
+  August he is in an attic when the phone rings. That is the truest sentence in
+  the file and it is the obvious email. It is also **exactly** the Local Choice
+  mechanism (08-29) and the Horizon mechanism (08-30): an urgent lead arrives
+  while the owner is physically occupied or asleep. Three in four days out of one
+  inbox on one track is a form letter with the nouns swapped, no matter how well
+  each one is individually written. **Standing rule, now with a third data point:
+  when the most obvious angle is the one the last two drafts used, the obvious
+  angle is disqualified, not merely at risk.** Handed it to Kevin as the phone
+  follow-up question instead, which costs nothing.
+
+  **What I wrote instead is a different door into the same offer.** Pinal County
+  is filling with people who have no access to twenty years of Sam's goodwill,
+  and for them the substitute for word of mouth is a review count, which is thin
+  on every platform. That argues the review engine rather than speed-to-lead.
+  **Worth keeping: The Complete System has more than one pain surface, and I have
+  been writing the speed-to-lead one almost exclusively.** When the speed angle is
+  used up or unusable, reviews, one-inbox and after-hours booking are all real
+  doors and they produce genuinely different emails.
+
+  **Hero also forced a discipline about which facts can be asserted.** The tenure
+  claim drifts across his own sources (20 / 25 / 50 years "combined," founded 2017
+  vs. started 2020) and the review count came back 2, 3, 8 and 20 depending where
+  Montague looked. So the body says "the twenty years your listings talk about,"
+  attributing rather than asserting, and says "barely any reviews" without ever
+  naming a figure. **Generalizable: when a fact varies by source, find the phrasing
+  that is true under every reading of it.** Even the highest review count is thin
+  against twenty years, so the sentence is safe whichever number is real. The
+  response-time figure itself is absent entirely, third-bucket per CVA 08-15: not
+  merely unconfirmed but actively contradicted, Montague's re-check returning "10
+  minutes, 100%" against Rupika's ~12hr sourcing premise.
+
+  **Bilskie Electric — the best mechanism I've found on this track in weeks, and
+  it needs no verification from us at all.** Opens by quoting his own review back
+  at him: "we are so happy we found him." *Found* is a strange word for somebody
+  who was recommended to you, and the reason sits one click away. Search "Bilskie
+  Electric" and you land on Yahoo, the Chamber, HomeAdvisor. **HomeAdvisor's
+  entire business model is to take a name-intent search and convert it into three
+  quotes from whoever pays them.** So his own name is currently a lead-generation
+  asset for a company that isn't him: the referral does the work, the neighbor
+  hands over the name, and the last click lands somewhere paid to redirect it.
+  **Two properties worth reusing: he can check it on his phone in ten seconds
+  (the thing I liked about the Access Garage Doors angle on 08-21), and it is not
+  a findability argument at all.** He is extremely findable. That's the problem.
+  Findability would have been weak anyway in a town of 16,000.
+
+  **Opening by quoting a customer's own word choice is a new device and it is
+  reusable.** Positive reviews are safe in a way negative ones aren't, it's
+  flattering rather than corrective, and no template can produce it because it
+  depends on one stranger's specific phrasing. The 08-30 Horizon refinement was
+  about when a *negative* review is usable; this is the much easier other half.
+  Flagged to Kevin that the quote is search-snippet-sourced, so he has no platform
+  to name if asked.
+
+  **Nelson's Complete Treat — first website-track draft in a long while that
+  argues from a strength instead of a deficiency.** Every recent one on this track
+  has been a correction: you can't be found, your name is ambiguous, you don't
+  look legitimate, your listing misrepresents you. Trey is licensed in New Mexico
+  and Texas, lives twenty minutes from the line, and works a basin where the jobs
+  straddle it. An operator with sites in Lea County and Gaines County wants one
+  vendor covering both. That's the biggest, stickiest contract available to him
+  and it is **the one fact a Facebook About box structurally cannot carry.** So
+  the site isn't a findability fix, it's the only place his best sales argument
+  can live when he isn't in the room. **Standing addition: "what's your best
+  argument and where does it currently live" is a website-track question I had
+  never asked, and it produces a complimentary email rather than a corrective
+  one** (the Brezden 08-21 property, which matters when writing to somebody who's
+  done well).
+
+  **Nelson's carries the batch's one real risk and I handled it the 08-30 way.**
+  The entire body rests on the two-state licence, which is listing-sourced;
+  NM SOS and the state pest board were both unreachable, so nobody has seen it on
+  a registry. If it's wrong the email is wrong from the second sentence, not just
+  weakened. Wrote a **ready-to-swap substitute opener** into the outreach.md and
+  named it in the rolling file: cut two paragraphs, open with "when a company's
+  purchasing person asks you to send over your info, what do you send them?",
+  everything after still stands. **Confirming this as standing practice: whenever
+  a body's load-bearing premise is unverified, hand Kevin the sharp version and
+  the safe version rather than making the judgment for him.**
+
+  **Sameness check between the two website drafts in this batch, which is my own
+  known blind spot** (same day, same track, same inbox). Bilskie is corrective and
+  about a leak; Nelson's is complimentary and about an unused asset. One opens on
+  a quoted review, the other on a direct question. Different closers. I also
+  caught and rewrote a line in Nelson's that had accidentally reproduced BGS's
+  staccato fragment-pair rhythm from yesterday ("Not the calls you already get.
+  The ones that never ring."). **Worth noting: sameness can live in sentence
+  rhythm, not just in the argument.** The mechanisms were already disjoint and the
+  drafts still would have felt like siblings.
+
+  **Runners-up dropped, all three on sameness rather than quality:** Hero's
+  owner-operator phone collision (Local Choice 08-29, Horizon 08-30), Bilskie's
+  industrial/commercial procurement half (structurally BGS 08-30, one day apart),
+  Nelson's oilfield procurement gate (same BGS shape, plus it assumes facts about
+  his procurement situation that nothing in the file establishes, which is why it
+  survives only as the question-shaped substitute opener).
+
+  **84% BrightLocal stat omitted again on both website drafts**, eighth and ninth
+  runs running. Considered override, not oversight: neither is a findability
+  argument and both drafts say so explicitly in the body.
+
+  **Selling kit discrepancy, flagged not resolved.** My run instructions say Kevin
+  approved the kit on 08-25, but `collateral/complete-system-one-pager.md` and
+  `collateral/case-study-onesheets.md` both still read `status: draft-awaiting-kevin`
+  in the repo, and the one-pager still carries the lawyer-review flag on the
+  guarantee. Per CLAUDE.md, two sources disagreeing and no way to tell which is
+  current means say so and stop, not guess. Practical effect is nil: the bodies
+  link the live public case-studies page, which is safe either way, and each Note
+  names the one-pager as the call leave-behind while saying it isn't a send-as-is
+  attachment. Raised once in the rolling file. **Next run: don't re-raise it,
+  it's in the record.**
+
+  **Verification notes:** recounted by grep — 80 found, 1 enriched, 3 drafted, 2
+  approved, 105 sent, 6 closed, 3 dismissed. All four dated first-touch approval
+  files already `status: superseded`, nothing to close. Left
+  `2026-08-21-followup-drafts-held-lane.md` open on purpose (not a first-touch
+  file) and left `2026-08-28-realestate-batch-01-cold-emails.md` alone (different
+  workflow, staged in Kevin's Gmail, not this pipeline's queue). Regenerated
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted`, so it
+  lists exactly these 3 with no carryovers for the first time in over a week.
+
+  Track breakdown: 1 package, 2 website. Standard post-write sweep on body text
+  only (em dash, en dash, bracket placeholder, retired package name, third-person
+  Kevin/Viridia, `$`, "guarantee", the 84% stat, pricing, stray sign-off, and
+  British spellings after I caught "neighbour" in the Bilskie body) — all three
+  clean on every check. Bodies are 117, 156 and 130 words. Distinct subjects
+  ("The people who just moved to Casa Grande" / "Where 'Bilskie Electric' actually
+  lands" / "Both sides of the state line"), distinct closers, disjoint mechanisms.
+
+  **Next run:** check `stage: enriched` first, then regenerate
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted` (write it
+  explicitly empty if nothing is there). `_fleet-state.md` is healthy again as of
+  today; only escalate if it goes stale afresh. Upstream backlog is **80 at
+  `stage: found`** and has grown every day for twelve days (78 on 08-30, 74 on
+  08-29, 69 on 08-28). The 11 undrafted held-lane second touches remain the one
+  place surplus capacity here would actually convert, now eleven days running.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.

@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -19,3 +19,11 @@ quote_stage: none
   egress-blocked). Used "Brandt" on the CALL CARD with the confidence
   caveat noted in enrichment.md. Advanced to `enriched`. See
   enrichment.md.
+- 2026-08-31 (Elly): drafted. Angle that won: his own name currently converts
+  into leads for HomeAdvisor, since a name-intent search lands on directory
+  pages that are paid to show three other electricians. Checkable by him in ten
+  seconds, needs no verification from us. Runner-up dropped on sameness: the
+  industrial/commercial half, structurally the BGS 08-30 draft one day apart.
+  Opens by quoting his own review back at him (search-snippet-sourced, flagged
+  to Kevin). Brandt used in the greeting, title still unconfirmed. Advanced to
+  `drafted`.
