@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -41,3 +41,4 @@ quote_stage: none
   omitted again. Flagged for Kevin: the "personal Gmail" clause is his call
   on tone, and the CSLB record is aggregator-sourced, not page-verified.
   See outreach.md.
+- 2026-08-31 (Kevin, via KIREEK): sent to joshmariaster@gmail.com.
