@@ -1721,3 +1721,100 @@
   remnants noted in this run's full sub-agent report if revisited (San
   Clemente HVAC/electrical, Rancho Santa Margarita electrical/HVAC,
   Maricopa/Eloy AZ most verticals).
+
+- (run 2026-08-31) Scheduled run, two tracks (package + website — ads track
+  not requested). Container started on a detached HEAD unrelated-looking to
+  `origin/master` again — same recurring stale-ref symptom as every run
+  since 2026-08-13 — but this time `git branch -a --contains HEAD` showed
+  detached HEAD sat exactly at `origin/master`'s fetched tip, so fixed with
+  the simple `git checkout -B master origin/master`, confirmed nothing
+  local was at risk. `_new-leads.md` had nothing dropped in. Ran website
+  track and package track as parallel background Agent-tool sub-agents,
+  committed and pushed the website batch immediately once verified (a
+  KIREEK fleet-state-refresh commit had landed on `origin/master` mid-run —
+  ordinary `git merge origin/master` resolved it cleanly, no conflict).
+- **IMPORTANT PROCESS LESSON THIS RUN — geography fence needs to be
+  explicit in every package-track sub-agent brief, every time.** My first
+  package-track sub-agent dispatch included a "push into new territory"
+  suggestion (San Diego metro, Bakersfield/Central Valley, Tucson AZ) that
+  I added myself without re-checking `_criteria.md`'s actual scope — but
+  the priority/package track is HARD-scoped to Phoenix AZ metro and
+  Greater LA metro ONLY (Kevin's 2026-08-09 ruling; OC/Inland Empire are
+  treated as in-scope by established practice, San Diego/Bakersfield/
+  Tucson are NOT, they're different metros entirely). The sub-agent
+  dutifully found 3 real, well-corroborated hits there (Big Time Plumbing,
+  Bakersfield; Morse & Bailey A/C, El Cajon; East County Garage Doors,
+  Lakeside) — all discarded, none queued, because they're out of the
+  mandated geography, not because they were bad leads. Caught this before
+  anything was written to a file or committed. Re-ran a second package-
+  track sub-agent with the geography fence spelled out explicitly and a
+  hard instruction to reject/flag anything resolving outside it. Lesson
+  for future runs: never suggest expansion territory for the priority
+  track without re-reading `_criteria.md` first — the "push into fresh
+  ground" instinct is right for the website track (genuinely nationwide)
+  but wrong for the package/priority track without Kevin's explicit
+  sign-off to loosen geography.
+- (website track, run 2026-08-31) 3 hits, three brand-new markets (first
+  visit to each): Reed Overhead Doors (Ottumwa IA, garage doors — a new
+  no-website SUBTYPE variant worth banking: entire presence is
+  manufacturer/dealer-locator pages, Clopay + LiftMaster dealer listings,
+  no owned domain at all, business email is a free `@live.com` address;
+  Ottumwa IA itself was already partially worked for plumbing in an
+  earlier run, this is a different vertical/business, not a repeat),
+  Nelson's Complete Treat LLC (Hobbs NM, pest control/landscaping,
+  multi-state NM+TX licensed operation running on pure Facebook only,
+  owner Trey Nelson medium-high confidence via a personal yahoo email +
+  matching LinkedIn), Bilskie Electric LLC (Vincennes IN, electrical,
+  directory-only presence, owner name UNRESOLVED between two candidates —
+  "Brandt Bilskie" named directly in customer reviews as the one doing the
+  work vs. a "Ron Bilskie" tied to Valley Electric Supply on LinkedIn who
+  may just be an industry contact/relative — flagged hard for Montague to
+  resolve before Elly drafts anything personalized). One collision flagged
+  and correctly NOT queued either as hit or clean miss: "Jones Electric"
+  in Vincennes IN — the only owned domain found (joneselectricusa.com)
+  lists locations in FL and MA, almost certainly a different national
+  business wearing the same name as the local Facebook page: sub-agent
+  correctly declined to guess either way rather than force it into a
+  queued hit or a struck-out miss. Ottumwa IA (garage doors done, most
+  other verticals untried), Hobbs NM (pest control now saturated — 2
+  misses + 1 hit; other verticals untried), Vincennes IN (electrical done;
+  other verticals untried) are all worth a return pass for remaining
+  verticals.
+- (package/priority track, run 2026-08-31) 2 hits queued after dropping a
+  duplicate: the geography-corrected sub-agent's first candidate, Scenic
+  View Landscape Inc (Glendora CA), turned out to be a straight re-find of
+  an already-in-pipeline prospect from 2026-08-14
+  (`scenic-view-landscape-glendora-ca`) — dropped as a duplicate rather
+  than queued again; **worth having the package-track sub-agent brief
+  include an explicit "check `ls prospects/` for an existing slug before
+  reporting a hit" instruction going forward**, since a pure research-only
+  sub-agent with no file access has no way to know the pipeline's current
+  contents and will happily re-find genuinely real, already-queued
+  prospects. The two genuinely new hits: Hero AC & Heat LLC (Casa Grande
+  AZ, HVAC, true owner-operator "Sam" answers his own calls, ~12hr Yelp
+  response/100% response-rate badge despite only 3 reviews vs. 20yrs
+  family experience claimed), Orange Heating Air Conditioning &
+  Refrigeration (Orange CA/Orange County, HVAC, founded 1990, ~10hr
+  response/100% response-rate badge, only 16 reviews despite 35yrs in
+  business — thin-reviews-vs-tenure pattern continues to be a reliable
+  secondary signal). Search budget ran ~48 across the two package-track
+  passes combined (excluding the discarded out-of-geography pass). Fresh
+  Phoenix/LA-metro ground opened this run, mostly cold: San Fernando
+  Valley (Northridge, Reseda, Sylmar, Pacoima, Granada Hills, Winnetka/
+  Canoga Park), San Gabriel Valley remnants (Hacienda Heights, Baldwin
+  Park, Rowland Heights, La Puente/Industry), Antelope Valley (Palmdale,
+  Lancaster), Orange County remnants (Placentia, Yorba Linda, Brea, Anaheim
+  Hills/Villa Park, Stanton/Los Alamitos, Seal Beach), South Bay (Manhattan
+  Beach/Palos Verdes, Carson, Panorama City), Phoenix exurbs (Fountain
+  Hills, Litchfield Park, Tolleson, Coolidge, Casa Grande — Casa Grande
+  landed the Hero AC hit but its other verticals ran cold). Cave Creek AZ's
+  previously-untried verticals (garage door, electrical, restoration) also
+  ran cold this pass — that suburb can now be considered fully worked.
+  Notable drops: J & R Plumbing (Palmdale) — a same-named HomeAdvisor
+  listing flagged "Unlicensed Contractor" plus several near-identical
+  competing names in the same small market, unresolvable identity risk,
+  dropped per the standing hard rule; several strong signals resolved to
+  already-exhausted cities via cross-suburb search behavior (LunAireLLC →
+  Mesa, J R Roofing and Exteriors → Cottonwood AZ/outside the metro fence
+  entirely, Valley of the Sun Roofing → Phoenix/Buckeye) and were dropped
+  rather than queued under the wrong city.
