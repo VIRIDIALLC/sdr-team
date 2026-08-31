@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -40,3 +40,4 @@ quote_stage: none
   Dropped angle: the 10,500 sq mi Sweetwater County service area (same
   "your listing understates you" mechanism as the 08-27 Powerhouse draft).
   Advanced to `drafted`. See outreach.md.
+- 2026-08-31 (Kevin, via KIREEK): sent to alltechplumbingllc.rs@gmail.com.
