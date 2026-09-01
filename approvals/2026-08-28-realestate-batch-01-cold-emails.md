@@ -1,6 +1,9 @@
 # Batch 1 — real estate cold emails (25 drafts, staged in Kevin's Gmail)
 
-status: closed — superseded by ROLLING-realestate-campaign.md
+status: superseded
+
+> Superseded by ROLLING-realestate-campaign.md (2026-09-01) — that file is
+> the live state of this campaign.
 
 **From:** VEGA/Claude Code session · **Date:** 2026-08-28
 
