@@ -1,6 +1,6 @@
 # Batch 1 — real estate cold emails (25 drafts, staged in Kevin's Gmail)
 
-status: pending
+status: closed — superseded by ROLLING-realestate-campaign.md
 
 **From:** VEGA/Claude Code session · **Date:** 2026-08-28
 
