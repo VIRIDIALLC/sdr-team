@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -27,3 +27,4 @@ quote_stage: none
   Opens by quoting his own review back at him (search-snippet-sourced, flagged
   to Kevin). Brandt used in the greeting, title still unconfirmed. Advanced to
   `drafted`.
+- 2026-09-01 (Kevin, via KIREEK): sent to bilskieelectric@gmail.com.
