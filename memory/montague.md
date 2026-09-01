@@ -2650,3 +2650,113 @@
   - Backlog after this run: no genuinely untouched `stage: found`
     prospects remain (both holds above stay at `found` by documented gate
     misses, not backlog).
+
+- (2026-09-01 run) `_fleet-state.md` timestamp was fresh (16:36 UTC,
+  generated same day) — trusted normally. Local repo started detached
+  HEAD (matching `origin/master` exactly, itself 27 commits behind an
+  earlier local branch ref) — `git fetch origin` + `git checkout master`
+  + `git pull` cleanly fast-forwarded, no divergent local work, no
+  data-loss risk. Scanned `prospects/*/status.md` for `stage: found` with
+  no `(Montague)` log entry — 5 matched, exactly today's two Rupika
+  batches (2 website: C&W Landscaping/Laurel MS, Shaw Roofing/Hays KS;
+  1 website + 2 package mixed as below: Red Wing Termite/Hays KS —
+  website; Lang Roofing/Bell Gardens CA and Ricardo Exterminator/Bell
+  Gardens CA — package) — a normal-sized batch. Used 5 parallel research
+  subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself for consistency.
+
+  Result: 1 of 5 advanced to `enriched` (Shaw Roofing), 4 held at `found`
+  on the email gate (C&W Landscaping, Lang Roofing, Red Wing Termite,
+  Ricardo Exterminator) — none dead ends, all four have a solidly
+  confirmed website-gap (or, for the two package prospects, everything
+  else checked out) and are just currently unreachable by email.
+
+  - **Shaw Roofing (advanced, website):** a genuinely new confidence-tier
+    precedent used again — Kc_33@hotmail.com is a real, specific,
+    directly-listed address from BuildZoom (not an invented domain-pattern
+    guess, there's no domain to guess from), single-source since every
+    other hit traces back to the same underlying record. Applied the same
+    tier established for BGS AC & Heating (2026-08-30): "directly-listed,
+    single-underlying-source" passes the gate, distinct from and stronger
+    than a guessed pattern. Owner Casey Shaw medium confidence (same
+    single-source caveat). Caught and flagged a NOT-to-use detail: an
+    unsourced claim about a 2017 Malarkey-shingle-recall inspection offer
+    in Wakeeney that couldn't be traced to any fetchable source (likely
+    Facebook content the search summarizer paraphrased, Facebook itself
+    egress-blocked) — explicit warning left in enrichment.md so Elly
+    doesn't use it.
+  - **C&W Landscaping (held, website):** cleanest website-gap confirmation
+    of the batch — 4/4 guessed domains NXDOMAIN plus TWO separate same-name
+    collisions correctly ruled out (cwlandscape.com/Falls Church VA;
+    candwlandscaping.com/Grover NC). Worth naming: the research agent
+    caught and explicitly debunked a raw AI-search-summary that flatly
+    asserted "Wilfredo Campos is the owner" with no location qualifier —
+    that's the VA collision's owner, not this business's. A clean example
+    of the standing "search-tool synthesized answers aren't sourced
+    findings" failure mode (Cold Fusion Mechanical 2026-08-13, Walnut
+    Valley/Dave's Plumbing 2026-08-16, Orange Heating 2026-08-31) — good
+    that the debunk happened before it reached a record. Facebook's About
+    tab is the one unreached lead (egress-blocked) — flagged as worth a
+    Playwright/manual follow-up rather than a dead end.
+  - **Lang Roofing (held, package):** the "Mark Lang" president/email
+    claim from ZoomInfo turned out to be a data-aggregator conflation with
+    an unrelated, CLOSED Spokane, WA "Lang Roofing Company" — caught and
+    discarded rather than reported as even a guess, same discipline as the
+    C&W debunk above. Real owner is Steve Lang (President since the 1970s,
+    HIGH confidence — BBB, a RoofersCoffeeShop trade-association article,
+    BuildZoom). Real website is langroofinginc.net (indexed, multi-city
+    service pages) — .com looks thinner, don't use it. **License
+    verification (CSLB #405427, #298981) stayed unconfirmed AGAIN** —
+    cslb.ca.gov egress-blocked same as every run since 2026-08-02 — no red
+    flags anywhere, but per the standing ad hoc handling this is now a
+    third instance (Boldt HVAC 2026-08-11, MJB Electric 2026-08-30, this
+    one) of a license question staying open specifically because this
+    environment can't reach cslb.ca.gov at all, not because of anything
+    about the business — worth Kevin knowing this is a structural
+    environment gap by now, not business-specific bad luck, if he ever
+    wants a real answer on any of these three.
+  - **Red Wing Termite (held, website):** the owner-name thread from
+    Rupika's brief got a real answer without fully resolving — "Jerry" is
+    independently confirmed via a direct review quote ("Jerry and
+    Company... two generation, locally owned and operated"), safe to use
+    alone. The "Lacy" surname connection through a KS LLC filing (Gerald
+    J. Lacy, registered agent) is a plausible, well-reasoned lead but its
+    address is Norton, KS — a different town from this Hays business — so
+    stays unconfirmed, not used. Worth naming as a clean example of the
+    "real name, right first name, unconfirmed surname" pattern (distinct
+    from Bilskie Electric/Merican Plumbing's "real name, uncertain title"
+    pattern) — first-name-only is still usable on a CALL CARD when it's
+    independently sourced, even without a confirmed last name.
+  - **Ricardo Exterminator (held, package — the one with a real
+    unresolved hard-gate question):** email gate failed cleanly (two
+    conflicting unsourced .com/.net guesses, both discarded). Separately,
+    and worth Kevin's attention regardless of the email hold: the CA
+    Structural Pest Control Board license status came back genuinely
+    absent from every reachable source (not just unchecked — pestboard.ca.gov
+    AND the actual lookup tool search.dca.ca.gov are both egress-blocked,
+    and no license record for "Ricardo Exterminator" or "Ricardo Medina"
+    is indexed anywhere, including a direct check of LA County's PCO
+    registry). No evidence of revocation either, so this isn't a
+    contradiction — but for a licensed vertical, 31 years of operation
+    with zero findable license record is a different flavor of "unresolved"
+    than the routine ambiguous-CSLB-number cases, and per the MJB Electric
+    (2026-08-30) precedent this stays flagged as its own open item, not
+    quietly resolved by the email hold covering for it — don't let a
+    future email-only re-check silently clear this prospect without
+    someone actually running the DCA license search. Owner "Ricardo
+    Medina" medium confidence via a D&B founding-date cross-check (1995 =
+    31 years, matches the brief). Also worth noting: the four
+    ricardoexterminator.com/.net/.us/.biz domains that surfaced are NOT a
+    real website — one's own page title is literally "Just another
+    WordPress site," an uncustomized/abandoned install, so the
+    "no real website" pain point still holds despite domains existing.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 5 prospects this run (target/guessed company domains, BBB,
+    Facebook, BuildZoom, D&B, ZoomInfo, pestboard.ca.gov, search.dca.ca.gov,
+    cslb.ca.gov, ag.ks.gov, haysusa.com, LA County Ag Commissioner's PCO
+    list checked directly instead) — same recurring pattern logged since
+    2026-08-02. DNS-level resolution stayed decisive and unblocked
+    throughout — every website-gap verdict above rests on DNS plus
+    directory cross-referencing, everything else is search-snippet-sourced.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain.
