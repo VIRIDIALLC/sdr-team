@@ -2509,3 +2509,133 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-09-01 (this run) — 1 drafted, the whole enriched queue.** `git fetch
+  origin` first per CLAUDE.md: origin/master had moved to db67551 (KIREEK
+  fleet-state refresh on top of Montague's 2026-09-01 pass, "1 advanced, 4 held
+  on email gate"). Container started detached at that commit with a clean tree,
+  the ordinary stale-ref pattern logged every run since 08-13, repointed with
+  `git checkout -B work origin/master` before reading anything.
+  `_fleet-state.md` was generated 2026-09-01 16:46 UTC, minutes old, so ground
+  truth was live. The KIREEK outage from 08-28/08-29 remains closed.
+
+  **Kevin cleared the queue again.** All 3 drafts from yesterday (Hero AC,
+  Bilskie, Nelson's Complete Treat) are gone from `drafted`, so that queue was
+  at zero when I started for the second day running. Approval rate stays
+  unblemished and there is still literally zero logged feedback on tone or
+  edits after ten weeks, so "Edits Kevin tends to make" stays honestly empty.
+
+  Scanned `prospects/*/status.md`: 2 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold from
+  2026-08-03, unchanged, skipped again) plus 1 real one, drafted:
+  **shaw-roofing-hays-ks** (website). No defensive-check skip; it passed
+  Montague's email gate at the single-source tier.
+
+  **Shaw Roofing — I had to reject four separate angles on sameness before I
+  found one, and that is the story of this run.** This prospect has an unusually
+  rich file (total web absence, a Utah namesake owning the .com, a personal
+  hotmail as the only written channel, absence from both BBB's Hays category and
+  the Chamber directory while competitors are listed) and almost every angle it
+  offers is one I used in the last four days:
+  - **The Utah namesake owning shawroofing.com** is Bilskie 08-31 with different
+    nouns. Both reduce to "search your name and you get somebody who isn't you."
+    One day apart, same track, same inbox.
+  - **The Kansas registration having nowhere to live** is Nelson's 08-31
+    exactly: a credential you hold, no home for it. One day apart.
+  - **The hotmail address** is the Kelso 08-26 legitimacy mechanism and is a dig
+    at how a man looks rather than a question about how he operates.
+  - **Owner-operator on a roof when the phone rings** is Local Choice 08-29,
+    Horizon 08-30, and I already refused it on Hero 08-31. Quadruple-used.
+
+  **What won: permanence on an insurance-funded roof.** On a paid hail claim the
+  adjuster has already set the number, so the homeowner is not shopping on price
+  at all. The decision collapses onto which contractor they believe will still
+  answer the phone in three years, and that is the single thing Casey has over a
+  storm-chasing crew and the single thing there is currently no way to check.
+  **This is a mechanism I have never used on any track: the argument is not that
+  he is hard to find, it is that price has been removed from the decision and
+  what replaces it is unverifiable about him.** Findability would have been weak
+  anyway in a town of 21,000.
+
+  **Generalizable and worth keeping: ask what the customer is actually deciding
+  ON, not how they find you.** Every website-track draft I have written argues
+  about the finding step. This one argues about the choosing step, and it turns
+  out that when a third party sets the price (insurance, a warranty, a grant, a
+  landlord's budget) the whole decision moves onto trust signals the prospect
+  has no way to publish. That should generate fresh emails on any trade with
+  third-party-funded work: roofing, restoration, medical-adjacent, some HVAC
+  rebate work.
+
+  **Deliberately not RidgeTop 08-18**, the only other roofing website draft.
+  That one was a search-volume-spike argument ("half of Meridian searches
+  roofing repair the same afternoon"). Mine never mentions search at all, which
+  was a constraint I set before writing rather than a coincidence.
+
+  **Assertion discipline.** Nothing in the file says how much of his book is
+  insurance work or whether he loses jobs to transients, so the opener asks
+  rather than claims, with both doors face-saving (losing work to chasers is a
+  shared grievance with no shame in it; not losing it means he owns the town).
+  The general facts about hail claims and storm-following crews are true of
+  western Kansas roofing, not claims about his customers. Only Montague's
+  verified facts are asserted. I also cut "all three look about the same" to
+  "they all look about the same" on reread, because I had never set up three
+  bids and the number was smuggled in.
+
+  **Closing-question shape needed varying, again.** My first draft of the
+  two-door question was "or is Hays small enough that people already know which
+  one you are," which is near word-for-word Bilskie's "or is Vincennes small
+  enough that everybody's already got your number" from two days ago.
+  **Second run in a row where sameness showed up in a sentence shape rather than
+  in the argument** (08-31 caught a copied staccato rhythm). This is now a
+  reliable failure mode: the mechanisms come out disjoint and the sentences still
+  rhyme. Sweep for it explicitly.
+
+  **License flag put in three places** (outreach note, status log, rolling file)
+  because the body names KS Roofing License #16-002115 and Montague could not
+  reach ag.ks.gov or the Hays contractor list. If it is inactive the email needs
+  a rewrite, not a tweak. Also carried Montague's explicit do-not-use flag on
+  the 2017 Malarkey shingle-recall claim into the note and the rolling file.
+
+  **84% BrightLocal stat omitted again, tenth run running on this track.**
+  Considered override: this is a differentiation argument, not a findability one.
+
+  **Selling kit still reads `status: draft-awaiting-kevin`** on both collateral
+  files. Per last run's note I did not re-raise it; it is in the record. Body
+  links the live public case-studies page, the note names the one-pager as the
+  call leave-behind with the caveat.
+
+  **Verification notes:** recounted by grep — 84 found, 1 enriched, 1 drafted, 2
+  approved, 108 sent, 6 closed, 3 dismissed. All four dated first-touch approval
+  files already `status: superseded`, nothing to close. Left
+  `2026-08-21-followup-drafts-held-lane.md` open on purpose (not a first-touch
+  file) and left `2026-08-28-realestate-batch-01-cold-emails.md` alone (different
+  workflow). Regenerated `approvals/ROLLING-first-touch-drafts.md` from live
+  `stage: drafted`; it lists exactly this one.
+
+  **The held-lane number has doubled and I had it wrong in my own notes.**
+  I have been carrying "11 undrafted second touches" since 08-21. Recounted
+  properly this run: **32 prospects at `followup: held`, 10 with a
+  `followup-1.md`, so 22 undrafted** (21 excluding sp-lawn-care, which stays out
+  because Kevin owns Karl's thread directly). It doubled because every
+  website-track and ads-track first touch he sends lands in that lane by design.
+  Corrected in the rolling file. Whoever picks this up next: recount it, do not
+  inherit the number.
+
+  Track breakdown: 1 website. Standard post-write sweep on body text only (em
+  dash, en dash, bracket placeholder, retired package name, third-person
+  Kevin/Viridia, `$`, "guarantee", the 84% stat, British spellings) — clean on
+  every check. Body is 158 words, marginally longer than the recent 117 to 156
+  band, which I accepted because the middle paragraph carries the whole argument
+  and splitting it weakened it.
+
+  **Next run:** check `stage: enriched` first, then regenerate
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted` (write it
+  explicitly empty if nothing is there). Upstream backlog is **84 at
+  `stage: found`** and has now grown every day for thirteen days (80 on 08-31,
+  78 on 08-30, 74 on 08-29). Montague advanced 1 and held 4 today against
+  Rupika's finds, so the gap widened again and this seat's ceiling was one draft.
+  The 22 undrafted held-lane second touches remain the one place surplus capacity
+  here would convert, now twelve days running.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.
