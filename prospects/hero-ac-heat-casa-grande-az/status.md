@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -26,3 +26,4 @@ quote_stage: none
   08-29 and Horizon 08-30 mechanism out of the same inbox. No review count or
   tenure figure asserted in the body since both vary by source. AZ ROC #338116
   still a secondhand read, flagged not gating. Advanced to `drafted`.
+- 2026-09-01 (Kevin, via KIREEK): sent to herohvac5@gmail.com.
