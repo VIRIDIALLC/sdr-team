@@ -1818,3 +1818,113 @@
   Mesa, J R Roofing and Exteriors → Cottonwood AZ/outside the metro fence
   entirely, Valley of the Sun Roofing → Phoenix/Buckeye) and were dropped
   rather than queued under the wrong city.
+
+- (run 2026-09-01) Scheduled run, two tracks (package + website — ads track
+  not requested). Container started detached from `origin/master` again —
+  same recurring stale-ref symptom as every run since 2026-08-13 — fixed
+  with `git checkout master` (local branch already matched origin's
+  fast-forwarded tip once fetched), nothing lost. `_new-leads.md` had
+  nothing dropped in. Ran both tracks as parallel foreground Agent-tool
+  sub-agents (research-only, no file/git access) as requested by this
+  session's task instructions rather than backgrounding them — same
+  underlying pattern as recent runs, just launched together and waited on.
+  Committed and pushed each track's batch separately as it landed.
+- (package/priority track, run 2026-09-01) New technique tried alongside
+  the standing ones: review-count-vs-tenure gap search
+  (`[vertical] [city] yelp reviews`, looking for a business with decades
+  in operation but very few reviews, then reading the reviews themselves
+  for complaint language) rather than only the Yelp-response-time phrase
+  — worked well in Bell Gardens CA, worth keeping as a third standing
+  technique alongside response-time and complaint-language search. ~55
+  searches run. 2 hits, both Bell Gardens CA (LA metro): Lang Roofing Inc
+  (roofing, founded 1974, only 17 Yelp/18 Birdeye reviews after 50+ years,
+  a specific negative review flags shoddy patch work, phone/walk-in only
+  — no online booking found; same address also hosts a "Lang Construction"
+  Yelp listing, flagged for Montague to confirm which trade name to lead
+  with and rule out a collision; CSLB licenses show active per search but
+  need a hard live-lookup confirm), Ricardo Exterminator (pest control,
+  31yrs in business, only 5 Yelp reviews/2.5star, reviews directly
+  complain about the owner running late/no-show pattern, reads as a true
+  solo operator — HARD FLAG for Montague: pest control needs verification
+  via the CA Structural Pest Control Board, not CSLB, license status not
+  yet confirmed). A third candidate, Northern Air Mechanical Services
+  (Phoenix AZ, HVAC, ~10hr Yelp response — a clean single signal), was
+  found but deliberately held back rather than queued: the company's own
+  "Our Team" page names 5 people and it runs two separate Yelp listings
+  (Phoenix + Gilbert, the Gilbert one alone showing 61 reviews) — reads
+  closer to a small multi-location operator than an owner drowning in
+  work, and only one signal could be corroborated. Worth a fuller pull
+  (real review content, whether Phoenix/Gilbert are one company or
+  franchise-style separate) before treating it as queue-ready in a future
+  run, not an automatic drop. New geography judgment call, not yet
+  Kevin-confirmed: Yuma, Sierra Vista, Prescott/Prescott Valley, and
+  Kingman AZ were suggested as possible fresh Phoenix-metro-adjacent
+  ground but the sub-agent declined to search them — all read as 100+
+  miles out, separate labor/media markets, Sierra Vista specifically
+  Tucson-adjacent (out of scope) — flagging rather than guessing; if
+  Kevin wants those treated as in-scope that needs his explicit ruling.
+  Near-miss worth a follow-up pass: S&S Premier (South Gate CA pest
+  control, 35yrs, only 11 Yelp photos suggesting thin activity, but review
+  count/complaint language wasn't pinned down in time) — matches the same
+  shape as the Ricardo Exterminator hit. Several strong unnamed signals
+  never resolved to a business name despite the standard follow-up
+  technique (Highland Park CA remodeler ~5hr/25 quote requests, Wilmington
+  CA garage door ~5hr/10 quote requests, Bell CA electrician ~11hr/89
+  quote requests, Bell Gardens CA landscaper ~10hr response with Aguilar
+  Landscaping as an unconfirmed lead) — worth repeat attempts. Dropped:
+  Todd Edwards Air Conditioning (Yelp said "Sun City AZ" but actual
+  address resolves to Mayer/Cordes Lakes AZ near Prescott — well outside
+  the metro fence, another cross-suburb-resolution case, plus no real pain
+  signal anyway), Mendez Electrical Maintenance (Huntington Park CA —
+  reviews directly contradict the signal, praising fast Yelp-messenger
+  response), Capitol Roofing (Boyle Heights — response time sat right at
+  the 1hr threshold, not clearly over it, no second signal). Suburb/
+  vertical combos tried empty this run (avoid repeating as-is): San Pedro
+  (HVAC), Bellflower (plumbing — chains only), Montebello (garage door),
+  Huntington Park (electrician/pest control), South Gate (pest
+  control/electrical/painting beyond the Ricardo hit), Laveen Village
+  (HVAC), Baldwin Hills/Crenshaw (roofing), Paramount (landscaping), Pico
+  Rivera (painting), Sun City AZ (HVAC/roofing/painting/garage door),
+  Ahwatukee (HVAC complaint search), Arcadia Phoenix (plumbing complaint
+  search), Wilmington CA (garage door/roofing beyond the unresolved
+  name), Venice CA (electrician — resolved to Lancaster), Mar Vista
+  (plumber), Eagle Rock (landscaping), West Adams (landscaping), Watts
+  (plumbing), Maryvale/Sunnyslope Phoenix (HVAC/garage door), Historic
+  Filipinotown/Pico-Union (roofing), Maywood/Cudahy (painting/electrician/
+  garage door complaint searches), Youngtown/Sun City AZ (roofing
+  complaint search).
+- (website track, run 2026-09-01) 4 brand-new small/mid markets tried:
+  Sheridan WY, Hays KS, Laurel MS, Kerrville TX (ran cold — see below). 3
+  hits, 2 from the same market (Hays KS): Shaw Roofing (Hays KS, pure
+  no-website, sole owner-operator Casey Shaw confirmed HIGH confidence via
+  BuildZoom personal email tied to same address/license, KS Roofing
+  License #16-002115 active, zero reviews anywhere — genuinely invisible
+  online despite being real/licensed), Red Wing Termite & Pest Control
+  (Hays KS, pure no-website, reviews describe a two-generation family
+  operation but owner name UNRESOLVED — a review names "Jerry," a
+  possibly-related historic BBB filing suggests surname "Lacy," neither
+  confirmed as current ownership, flagged hard for Montague), C & W
+  Landscaping (Laurel MS, pure no-website, ruled out a collision where an
+  AI summary wrongly attributed an unrelated Northern Virginia company's
+  domain (cwlandscape.com) to this business — worth remembering AI
+  summaries keep doing this, always verify a claimed website actually
+  matches address/state before trusting it). Held back rather than queued
+  to avoid over-concentrating in one small market: Cosgrove Painting Co.
+  (Laurel MS, also pure no-website, family painting business — worth
+  queuing directly next run if Laurel gets revisited, skip re-verification).
+  One candidate flagged unconfirmed rather than queued: Bucking Iron
+  Plumbing & Landworks (Story WY/Sheridan area) — an AI summary claimed
+  their domain (buckingiron.com) is dead/parked but a second summary gave
+  conflicting live-site info, and this session's WebFetch was blocked from
+  reaching the domain directly to settle it — needs a live-browser check
+  before it's usable either way, not queued this run. Sheridan WY plumbing
+  ran cold (2 real sites: 307plumbing.com, aplusplumbersinc.com) but its
+  HVAC names (Sheridan Heating & Air, Lee Heating Cooling & Refrigeration,
+  ALC Universal) were never individually checked — worth a follow-up.
+  Kerrville TX ran fully cold on electrical and garage doors (both had
+  modern real sites: ramoselectrickerrville.com, rodohd.com) but painting
+  and window cleaning were never tried there — worth a fresh pass before
+  writing the market off. Hays KS was the most productive market this
+  run (2 hits from 2 verticals) — worth trying HVAC/electrical there next
+  time. New standing markets-tried additions: Sheridan WY, Hays KS, Laurel
+  MS, Kerrville TX.
