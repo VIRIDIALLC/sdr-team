@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -26,3 +27,4 @@ quote_stage: none
   facts not in the file. Leans on Hobbs geography, never the brand name, per
   Montague's collision warning. Advanced to `drafted`.
 - 2026-09-01 (Kevin, via KIREEK): sent to Treypest@yahoo.com.
+- 2026-09-01 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
