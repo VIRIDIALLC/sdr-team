@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -25,3 +25,4 @@ quote_stage: none
   dropped: the oilfield procurement gate, close to BGS 08-30 and it assumes
   facts not in the file. Leans on Hobbs geography, never the brand name, per
   Montague's collision warning. Advanced to `drafted`.
+- 2026-09-01 (Kevin, via KIREEK): sent to Treypest@yahoo.com.
