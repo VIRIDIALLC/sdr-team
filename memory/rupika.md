@@ -1928,3 +1928,98 @@
   run (2 hits from 2 verticals) — worth trying HVAC/electrical there next
   time. New standing markets-tried additions: Sheridan WY, Hays KS, Laurel
   MS, Kerrville TX.
+
+- (run 2026-09-02) Scheduled run, two tracks (package + website — ads track
+  not requested per this run's task instructions). `git fetch` showed 34
+  unmerged commits and new branches; container started on a detached HEAD at
+  `origin/master`'s fetched tip — same recurring stale-ref symptom as every
+  run since 2026-08-13 — fixed with `git checkout master` + `git pull`,
+  nothing lost. `_new-leads.md` had nothing dropped in. Ran both tracks as
+  parallel foreground Agent-tool sub-agents (research-only, no file/git
+  access, explicitly briefed with the geography fence and exhausted-market
+  lists from this file) — the harness ran them as background tasks despite
+  the foreground request, notifications arrived a few minutes apart; no
+  functional difference, both completed before any files were written.
+- (package/priority track, run 2026-09-02) 2 hits, both flagged for
+  Montague to verify a license/board status before advancing: Desert Chill
+  Air Conditioning & Heating (Anthem AZ, HVAC, owner Michael Wood — named
+  directly in Yelp review text, high confidence — ~4hr Yelp response despite
+  9 quote requests, only 13 reviews vs. 12+yr tenure, AND no website found
+  at all — three stacked signals, cleanest hit of the run; AZ ROC #289556
+  self-reported, not independently verified against roc.az.gov), TrueGuard
+  Pest Management (Downey CA, pest control, likely owner Greg Montoya via
+  LinkedIn + review mentions — medium confidence — sourced via the
+  complaint-language technique: a specific "broken appointments and broken
+  promises to call back" review plus another "terrible unprofessional
+  service" complaint, only 10 reviews/3.5star after ~13yrs; flagged a
+  possible name-collision with similarly-named TrueGuard/TruGuard pest
+  entities in other markets — Downey listing reads independent but not
+  fully ruled out — and CA pest control needs the Structural Pest Control
+  Board, not CSLB, not yet checked). A third candidate, Amado Landscaping
+  (Hawthorne/Lawndale CA, 7hr response/18 quote requests), was found but
+  deliberately NOT queued — established 1967, 219 reviews at its main
+  listing plus a second ~40-review Yelp listing and a same-named Amado AZ
+  business, too scaled/ambiguous to resolve cleanly; worth a repeat
+  attempt if someone wants to chase the listing-identity question first.
+  Phoenix suburbs read as increasingly thinned-out this run (~20
+  combos tried, mostly fast responders or no data) — LA metro's
+  southeast Gateway Cities (Downey/Lawndale/Cerritos/Bellflower) produced
+  more texture; worth weighting that sub-region relatively higher next
+  time. Empty combos this run (avoid repeating as-is): roofing (Downey),
+  garage doors (Bellflower, Apache Junction AZ, Sun City AZ, Downey),
+  pest control (Paramount, Downey — Zeal Pest ruled out, reviews praise
+  fast response), landscaping (Laveen AZ), painting (Ahwatukee AZ),
+  HVAC (Gardena, Hawthorne, Huntington Park, Anthem AZ unnamed signal),
+  plumbing (Queen Creek AZ, New River/Anthem AZ, Inglewood — R&R Plumbing
+  ruled out too scaled at 171 reviews/30yrs, Cudahy/Maywood), electrical
+  (Cerritos — Croff Electric and Roc Electric both ruled out as
+  resolving to already-exhausted Long Beach/Whittier), restoration
+  (South Gate, Lynwood). New drops this run: Jordan Roof Company (Garden
+  Grove/Lakewood — owner personally answers the phone per reviews,
+  contradicting the pain signal, plus runs two offices — multi-branch
+  disqualifier) and Saiyan Electric (Downey — conflicting review counts
+  across listings, an active multi-market expansion narrative — reads as
+  a scaling operator, not an owner-operated shop). Unresolved strong
+  signals worth a repeat attempt: pest control Downey (12hr response/198
+  quote requests, name never resolved), plumbing Inglewood (9hr/10
+  requests, unnamed), HVAC Anthem AZ (3hr/7 requests, unnamed, separate
+  from Desert Chill).
+- (website track, run 2026-09-02) 3 hits across 4 fresh small/mid markets
+  (Elko NV, Beckley WV, Hutchinson KS, Danville VA) plus two markets that
+  ran fully cold (Bowling Green KY, Texarkana TX/AR): Dove Electric
+  Company (Danville VA, electrical, owner William Dove Jr. HIGH confidence
+  via BBB + BuildZoom, pure Facebook/directory-only presence, BBB-
+  accredited since 2022 — a same-surname Lynchburg VA "Dove Electric Co."
+  confirmed as a different, unrelated business owned by Sidney Dove Jr.,
+  do not merge), Guthrie Plumbing And Services (Hutchinson KS, plumbing,
+  directory-branded "P. Guthrie Plumbing Services" — owner's full first
+  name NOT resolved, only "P." — MEDIUM confidence, flagged for a KS
+  contractor-license lookup), MMP Roofing and Construction LLC (Beckley
+  WV, roofing, WV license #064635 confirmed active/real but owner name
+  NOT found — "MMP" initials don't resolve to a person, flagged for a
+  direct WV Secretary of State filing pull, org #511548). A bonus
+  candidate was banked but not queued (avoid over-concentrating the
+  batch): Sunrise Yard Service (Elko NV, landscaping, Lic #3358910, no
+  owner name found, minor same-name collision risk with a Casa Grande AZ
+  business of the same name — worth a follow-up pass if Elko gets
+  revisited). One important self-caught false positive: Babb's Fence and
+  Landscape LLC (Elko NV) initially read as a no-website hit on the first
+  Facebook-scoped pass, but a follow-up owner-name search surfaced a real
+  active site (babbsfence.com) — confirms the standing "always do the
+  named follow-up search before tagging a hit" rule is still doing real
+  work, don't skip it even when the first pass looks clean. Cold
+  markets/verticals this run (real sites found, don't re-try as-is):
+  Bowling Green KY (HVAC, electrical — fully cold), Texarkana TX/AR (pest
+  control — fully cold), Beckley WV (roofing, rest of field beyond MMP),
+  Hutchinson KS (plumbing, rest of field beyond Guthrie — note JRAY
+  Plumbing there resolves to a `jray-plumbing.business.site` free Google
+  Business Profile page, a borderline subtype-3 case not chased further,
+  worth a look if Hutchinson gets revisited), Elko NV (landscaping, rest
+  of field beyond the bonus candidate), Danville VA (electrical, rest of
+  field — Elliott Electric and Spitzer Inc look established, Scruggs
+  Electric too ambiguous/mixed-identity to pursue). Alexandria LA (garage
+  doors) came up unresolved rather than clean-cold — a generic Facebook
+  page/Marketplace listing surfaced but couldn't be confirmed as a real
+  distinct operating business, not pursued further. New standing markets-
+  tried additions: Elko NV, Beckley WV, Hutchinson KS, Danville VA,
+  Bowling Green KY, Texarkana TX/AR, Alexandria LA (partial).
