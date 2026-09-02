@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-09-02 16:48 UTC (2026-09-02 09:48 Phoenix)
+Generated: 2026-09-02 17:15 UTC (2026-09-02 10:15 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -99,7 +99,7 @@ Generated: 2026-09-02 16:48 UTC (2026-09-02 09:48 Phoenix)
 
 - **GHL API:** UP (live probe returned 200)
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-09-02 16:31 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 16m ago)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 43m ago)
 - **KIREEK repo:** 22 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
 
 ## Every team, right now
@@ -110,21 +110,21 @@ Generated: 2026-09-02 16:48 UTC (2026-09-02 09:48 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 4 minutes ago — "Montague 2026-09-02: enrichment batch — 1 advanced, 4 held on email gate" (567d73b70)
-- pipeline (prospects, 209 items): found 87 · enriched 2 · drafted 1 · approved 2 · sent 108 · closed 6 · dismissed 3 — ~55% through the pipeline
+- last commit: 2 minutes ago — "Elly 2026-09-02: 1 first touch drafted (Guthrie Plumbing), rolling approvals regenerated" (36e7a1952)
+- pipeline (prospects, 209 items): found 87 · enriched 1 · drafted 2 · approved 2 · sent 108 · closed 6 · dismissed 3 — ~55% through the pipeline
 - where each agent is (from their own logged task work):
-  - **Elly** (Outreach): 2026-09-01 on `shaw-roofing-hays-ks` — "drafted website-track first touch. Angle is permanence against storm-chasing crews on an insurance-funded roof"
+  - **Elly** (Outreach): 2026-09-02 on `guthrie-plumbing-hutchinson-ks` — "drafted website-track first touch, advanced to `drafted`. Team greeting used ("Hi Guthrie Plumbing team,") per"
   - **Kalki** (Outreach Research & Standards): no logged task activity yet
   - **Montague** (Enrichment): 2026-09-02 on `desert-chill-ac-heating-anthem-az` — "**Email gate FAILED — held at `found`.** No real website (one search-synthesized domain, desertchillair.com, d"
   - **Nova** (Magic Patterns Build): no logged task activity yet · 1 open handoff(s) in their inbox
   - **Rupika** (Prospecting): 2026-09-02 on `desert-chill-ac-heating-anthem-az` — "found via the Yelp "yelp advertisers" response-time technique (Anthem AZ HVAC search), added to pipeline. Owne"
   - **Sage** (Quoting): no logged task activity yet
   - **Sue** (SDR Director): no logged task activity yet
-- agent work in the last 24h: "Montague 2026-09-02: enrichment batch â€” 1 advanced, 4 held on email gate"; "Rupika 2026-09-02: package + website batch â€” 5 hits (Phoenix/LA + 4 small markets)"; "Elly 2026-09-01: 1 first touch drafted (Shaw Roofing), rolling approvals regenerated"
+- agent work in the last 24h: "Elly 2026-09-02: 1 first touch drafted (Guthrie Plumbing), rolling approvals regenerated"; "Montague 2026-09-02: enrichment batch â€” 1 advanced, 4 held on email gate"; "Rupika 2026-09-02: package + website batch â€” 5 hits (Phoenix/LA + 4 small markets)"
 - waiting on Kevin (4): 2026-08-21: Second-touch drafts — 10 prospects in the `followup: held` lane; For Kevin — first-touch drafts waiting on you (LIVE QUEUE); Follow-up sequence — 4 prospect(s) ready to enroll (rolling queue); Real estate campaign — live state (rolling)
 
 ### Ads Team
-- last commit: 17 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (df04c63a0)
+- last commit: 44 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (df04c63a0)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
@@ -142,14 +142,14 @@ Generated: 2026-09-02 16:48 UTC (2026-09-02 09:48 Phoenix)
 - waiting on Kevin (3): 2026-08-14: Post-purchase onboarding sequence — spec + gap list; 2026-08-24: Billing-transition client comms + Tyler "keep the system" one-pager; 2026-08-24: Tyler meeting — collect + keep-the-system talk track (2026-08-24)
 
 ### Finance Team
-- last commit: 24 hours ago — "Yelp wire landed 9/1: book it correctly and address the passthrough mis-categorization it " (6b8f1009a)
+- last commit: 25 hours ago — "Yelp wire landed 9/1: book it correctly and address the passthrough mis-categorization it " (6b8f1009a)
 - pipeline (invoices, 9 items): draft 3 · paid 1 · draft_amount_disputed 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~25% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-08-31 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 102 days overdue, still 91+ bucket. Fourth run on hold, 10 " · 1 open handoff(s) in their inbox
 - waiting on Kevin (5): 2026-08-24: A/R aging review — 2026-08-24; 2026-08-27: A/R aging review — 2026-08-27; 2026-08-31: A/R aging review + reminder refresh — 2026-08-31; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 27 minutes ago — "Merge Ash's Week 6 creatives + Part 2 pairing cleanup into master" (798e584a7)
+- last commit: 53 minutes ago — "Merge Ash's Week 6 creatives + Part 2 pairing cleanup into master" (798e584a7)
 - pipeline (posts, 32 items): drafted 3 · scheduled 8 · posted 5 · ready 3 · superseded 13 — ~71% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-09-02 on `ai-quote-that-went-quiet` — "**Migrated to `creative/linkedin.png`** per the 2026-08-31 storage contract, per Rati's 2026-09-01 handoff. Ch" · 1 open handoff(s) in their inbox
@@ -167,7 +167,7 @@ Generated: 2026-09-02 16:48 UTC (2026-09-02 09:48 Phoenix)
 - waiting on Kevin: nothing
 
 ### Web Design Team
-- last commit: 20 hours ago — "Add real product visualizations to the primary site's text-only sections" (04adc5856)
+- last commit: 21 hours ago — "Add real product visualizations to the primary site's text-only sections" (04adc5856)
 - pipeline (prospects, 1 items): researched 1
 - where each agent is (from their own logged task work):
   - **Nova** (Magic Patterns Build): 2026-08-12 on `tpg-home-improvements-az` — "Dispatch referenced a pre-existing `prospects/tpg-home-improvements-az/brief.md` on master — it did not exist " · 1 open handoff(s) in their inbox
@@ -177,11 +177,11 @@ Generated: 2026-09-02 16:48 UTC (2026-09-02 09:48 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-09-02 16:48 UTC (auto-generated by VEGA's backend):
+As of 2026-09-02 17:15 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 119 days (17 weeks) → ~1 close per 2 week(s).
 This week (since 2026-08-24): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 16m ago)
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 43m ago)
 Approvals waiting on Kevin across the fleet: 15
 ```
