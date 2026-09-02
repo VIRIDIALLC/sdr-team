@@ -38,3 +38,4 @@ quote_stage: none
   (unresolved/unattributed domain per Montague). Advanced to drafted.
 - 2026-08-26 (Kevin, via KIREEK): sent to kelsoelectric@hotmail.com.
 - 2026-08-26 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: recruiting. A journeyman deciding whether to answer him looks the company up exactly as a customer would, and losing the right electrician costs more than losing a customer. Completely new mechanism for this repo and the best available answer to the `I'm already busy` objection. kelsoelectric.com is still unresolved and still worth ten seconds in a browser before sending. `stage` stays `sent` and `followup` stays `held`; nothing sent.

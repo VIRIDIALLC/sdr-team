@@ -29,3 +29,4 @@ quote_stage: none
   08-21). See outreach.md.
 - 2026-08-24 (Kevin, via KIREEK): sent to abplumbing23@gmail.com.
 - 2026-08-24 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: the site's job is to update the customers he already has, since the man whose water heater he replaced does not know he started doing main sewer drains in the spring. New mechanism for this repo. Uses the same fact as the runner-up dropped on 08-24 but on a different machine: not that a Facebook post decays, but that a past customer's picture of you goes stale. `stage` stays `sent` and `followup` stays `held`; nothing sent.

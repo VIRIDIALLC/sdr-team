@@ -38,3 +38,4 @@ quote_stage: none
   argument this draft is not making). Advanced to drafted.
 - 2026-08-26 (Kevin, via KIREEK): sent to av_heatingandcooling@yahoo.com.
 - 2026-08-26 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: Del Rio contains two markets on different systems, and the transient half cannot plug into a referral network at all and refills every year. Flagged honestly as sharing DNA with the Hero AC 08-31 newcomer angle; kept because the file is genuinely thin and this is the one real observation available. Base is never named and his customer mix is asked, not assumed. `stage` stays `sent` and `followup` stays `held`; nothing sent.
