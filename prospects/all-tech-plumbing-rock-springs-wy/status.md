@@ -43,3 +43,4 @@ quote_stage: none
   Advanced to `drafted`. See outreach.md.
 - 2026-08-31 (Kevin, via KIREEK): sent to alltechplumbingllc.rs@gmail.com.
 - 2026-08-31 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: union technicians mean a cost base the van-and-helper shop does not carry, so he cannot be the low bid and needs the reason attached to the number. New purpose for the site in this repo: protecting price rather than generating leads. Uses the union fact that was kept out of touch one, on a different mechanism (cost structure, not credential). `stage` stays `sent` and `followup` stays `held`; nothing sent.

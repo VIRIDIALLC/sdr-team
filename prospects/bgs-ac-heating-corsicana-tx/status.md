@@ -62,3 +62,4 @@ quote_stage: none
   that Facebook page. See outreach.md.
 - 2026-08-31 (Kevin, via KIREEK): sent to bgac812@gmail.com.
 - 2026-08-31 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: his biggest advantage over the Dallas operations advertising into Navarro County is that he is fifty miles closer, and that is the one thing invisible in an online comparison. Asked, not asserted. The (469) Dallas-prefix phone number stays out for the third time (Powerhouse 08-27 mechanism) but is good call material. `stage` stays `sent` and `followup` stays `held`; nothing sent.

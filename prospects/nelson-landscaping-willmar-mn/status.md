@@ -51,3 +51,4 @@ quote_stage: none
   08-21 High Country Lawn follow-up). Advanced to `drafted`. See outreach.md.
 - 2026-08-31 (Kevin, via KIREEK): sent to lee.nelson14@gmail.com.
 - 2026-08-31 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: every paver driveway he has built is seen by a whole street for twenty years and is completely anonymous. Changes the audience from people already talking to him (touch one's portfolio argument) to people who will never speak to him. Adjacency to the Family Painting truck angle checked and recorded: branded-and-temporary versus permanent-and-anonymous. `stage` stays `sent` and `followup` stays `held`; nothing sent.

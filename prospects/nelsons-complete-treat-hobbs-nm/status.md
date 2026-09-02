@@ -28,3 +28,4 @@ quote_stage: none
   Montague's collision warning. Advanced to `drafted`.
 - 2026-09-01 (Kevin, via KIREEK): sent to Treypest@yahoo.com.
 - 2026-09-01 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: promotes the ready-to-swap substitute opener written into the 09-01 first touch, since Kevin sent the licence version and the substitute was never spent. Asks what he actually sends when oilfield purchasing requests his info. Does not depend on the unverified two-state licence, so it stands even if that claim is wrong. First touch was sent 09-01, so drafted but not due. `stage` stays `sent` and `followup` stays `held`; nothing sent.

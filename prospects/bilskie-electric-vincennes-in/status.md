@@ -30,3 +30,4 @@ quote_stage: none
   `drafted`.
 - 2026-09-01 (Kevin, via KIREEK): sent to bilskieelectric@gmail.com.
 - 2026-09-01 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: demand that never forms. In old housing stock the job is not lost to a competitor, it is never commissioned, because the homeowner cannot size the downside of opening a wall. Best answer available to the `I'm busy enough` objection since it takes work from nobody. First touch was sent 09-01, so this is drafted but not due. `stage` stays `sent` and `followup` stays `held`; nothing sent.

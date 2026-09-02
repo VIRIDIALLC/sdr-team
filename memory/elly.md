@@ -2764,3 +2764,139 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-09-02 (second run, Kevin's go on the held lane) — 21 second touches
+  drafted, the whole backlog, and the biggest single batch this seat has ever
+  produced.** Kevin replied "yes on the 2nd touches please" to the ask I had been
+  raising in the rolling file for twelve days running. Drafted all of it in one
+  run rather than a partial batch, since he approved the backlog as a backlog.
+
+  **The count moved while I worked, which is worth knowing.** I opened the run
+  quoting 22 undrafted. By the time I enumerated, Kevin had sent Guthrie Plumbing
+  and Shaw Roofing, so both landed in the held lane the same day and the number
+  was 24. Excluded `sp-lawn-care-bangor-me` (Kevin owns Karl's thread) and those
+  two, since drafting a second touch for an email sent hours earlier is not a
+  follow-up. **Real batch: 21.** Recount this every time; it moves daily by
+  design, because every website and ads first touch he sends lands here.
+
+  **The ten from 08-21 were never sent.** They have been sitting unapproved for
+  twelve days. Kevin approved the idea today, not those drafts, so I left them
+  untouched and put them at the top of the new rolling file. Queue is now 31.
+
+  **Approvals hygiene extended to this lane.** Created
+  `approvals/ROLLING-followup-held-lane.md` on the same one-rolling-file pattern
+  as the first-touch queue and marked `2026-08-21-followup-drafts-held-lane.md`
+  `status: superseded` with an explicit note that nothing in it was withdrawn.
+  The 08-25 ruling was written about first-touch files; applying it here was my
+  call and I think it is obviously right, since the alternative was a second
+  dated file and the same drift.
+
+  **Seven of the eighteen website first touches in this lane were the old
+  pre-quality-gate template** (generic no-website line, 84% BrightLocal stat,
+  "happy to put together a quick, no-obligation look"), the same email with the
+  nouns swapped: Chiliski's, Family Painting, H&J, Johnston, Kuberra, Peña's, The
+  3 Roofers. Their second touch is effectively the first real email any of them
+  has had. Anything specific was an upgrade, which made the top of this batch
+  much easier than the bottom.
+
+  **Four genuinely new mechanisms came out of this run, and they are the reusable
+  part:**
+  - **Kelso Electric: the site works on the labour side.** A journeyman deciding
+    whether to answer you looks the company up exactly as a customer does, and
+    losing the right electrician costs every job you couldn't take. **First
+    argument in this repo aimed at anyone other than a customer, and the best
+    answer I have to "I'm busy enough," because it takes being busy as its
+    premise** instead of arguing with it.
+  - **Bilskie Electric: demand that never forms.** In old housing stock the job
+    isn't lost to a competitor, it is never commissioned, because the homeowner
+    can't size the risk of opening a wall. Those never show up as a lost bid.
+    Same objection-proof property: it takes work from nobody.
+  - **AB Plumbing: the site updates the customers you already have.** The man
+    whose water heater he replaced doesn't know he started doing sewer drains in
+    the spring. Every prior website argument in this repo is about strangers.
+  - **Powerhouse Electrical: the site works after the quote, not before the
+    call.** A commercial buyer who already has your number vets you before
+    signing, often on behalf of somebody who was never on the call.
+
+  Two more worth keeping: **All Tech's "protecting price rather than generating
+  leads"** (union labour means he can't be the low bid, so the site's job is to
+  attach a reason to the number), and **Chiliski's "filter, not magnet"** (the
+  site cuts wasted estimate trips, which is about his hours rather than his phone
+  volume).
+
+  **A rule I learned properly this run: a fact I dropped once is not spent, it is
+  spent in the shape I dropped it in.** Three cases. AB Plumbing's new sewer line
+  was rejected on 08-24 because the mechanism was Facebook-post-decay (RidgeTop);
+  reused today on customer-picture-goes-stale and it is strong. All Tech's "union
+  technicians" was rejected on 08-31 as a credential-with-nowhere-to-live (Kelso);
+  reused today as a cost structure. Nelson's Complete Treat's substitute opener,
+  written on 09-01 in case the two-state licence didn't hold, became today's
+  second touch outright. **Corollary worth acting on: a documented substitute
+  opener is a second touch already half written.** Keep writing them.
+
+  **Mirror images are a template, and I caught two.** Dropped Kuberra's
+  "kuberraelectric.com is still available" because Johnston's draft in the same
+  batch opens on a lead-gen operator having already taken his name. Somebody-took-
+  yours and nobody-took-yours-yet are one template with a variable flipped. Same
+  test applied to All Tech against the E-Z Garage Door follow-up (justifying a
+  high price vs. justifying a low one) and I kept that one, recorded, because the
+  arguments run in opposite directions and go to different prospects twelve days
+  apart.
+
+  **Three drafts record an adjacency rather than claiming novelty**, and that is
+  the honest finding of this run: **after roughly thirty emails on the website
+  track the genuinely distinct mechanisms are getting scarce.** AV Heating shares
+  DNA with Hero AC 08-31 (newcomers with no access to a referral network) and I
+  kept it because that file is genuinely thin, no owner name, no years in
+  business, no review quote, so the real choice was one true observation or a
+  generic email. Nelson Landscaping is adjacent to Family Painting (physical
+  exposure with nowhere to send people) and survives on a real distinction:
+  branded-and-temporary truck vs. permanent-and-anonymous driveway. Said so in
+  each note. **Do not let the next run quietly ship the collision instead.**
+
+  **Collisions I refused outright, for the record:** H&J's sprinkler-season angle
+  (High Country 08-21, same trade, same region, same seasonal setup); Peña's
+  duplicate-Facebook-page angle (H&J's two-addresses angle, same batch, both
+  landscapers); Powerhouse's Basin recruiting angle (Kelso, same trade, same
+  week); Nelson's Complete Treat's price-comparison angle (All Tech, same batch);
+  Bilskie's EV/generator growth categories (AB Plumbing, same batch); MGM's
+  Nextdoor walled-garden angle (Brudwick 08-21); The 3 Roofers' warranty angle
+  (Shaw 09-01 permanence, one day apart, the other roofer in this lane).
+
+  **Devices worth reusing:** opening by correcting your own previous email (3
+  Roofers: touch one called a dead domain a findability problem, which is the
+  small version of it); opening by naming your own bad assumption (Same Day
+  Electric, where touch one leaned on "you don't run ads" and Montague and I both
+  flagged that as unsafe); closing on a question about his business rather than a
+  call ask (H&J's "which one is the real one," Peña's "am I wrong about the
+  timing"), which is a much lower bar to answer than a meeting request; and
+  telling the prospect to load the page himself (Johnston), which both proves the
+  point and covers a verification gap we could not close.
+
+  **Kept out on purpose across the batch:** every negative review and BBB
+  complaint (All Tech's B-, The 3 Roofers' insurance complaint, H&J's 3.4 stars),
+  per the standing Reliant 08-19 rule that a bad review is the one door that
+  isn't face-saving; the 84% stat everywhere, since it appeared verbatim in seven
+  of these first touches and a repeated statistic is what makes a sequence read as
+  automated; and pricing on most of them, deliberately, because the price list in
+  all 21 is exactly what would make them one form letter (used it in three:
+  Chiliski's, Family Painting, and neither of the two that already had it).
+
+  **Sweep:** all 21 bodies checked for em dash, en dash, bracket placeholder,
+  retired package names, third-person Kevin/Viridia, the 84% stat, "guarantee,"
+  and British spellings. Clean on every check. All 21 subjects distinct, checked
+  side by side.
+
+  **Next run:** regenerate BOTH rolling files from live state
+  (`ROLLING-first-touch-drafts.md` from `stage: drafted`,
+  `ROLLING-followup-held-lane.md` from prospects with a `followup-1.md` and no
+  send record). Recount the held lane, do not inherit 31. If Kevin starts sending
+  these, the next thing this lane needs is `followup-2.md` conventions and the
+  third-touch angles are already named in the dropped-angle blocks (Quality
+  Overhead's name collision, Kuberra's available domain, MGM's Nextdoor point,
+  Nelson Landscaping's dated-work angle, Powerhouse's recruiting angle, Shaw's
+  institutional absence). **Upstream is still the ceiling: 88 at `stage: found`,
+  fourteen straight days of growth.**
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.

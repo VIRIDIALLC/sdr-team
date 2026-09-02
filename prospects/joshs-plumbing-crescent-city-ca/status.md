@@ -44,3 +44,4 @@ quote_stage: none
   See outreach.md.
 - 2026-08-31 (Kevin, via KIREEK): sent to joshmariaster@gmail.com.
 - 2026-08-31 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: publish the trip charge. The customer who will not phone a stranger to ask about money never appears in any number he can see. First outreach in this repo to use the doctrine's price-transparency point. Deliberately small and practical after a structural first touch. `stage` stays `sent` and `followup` stays `held`; nothing sent.

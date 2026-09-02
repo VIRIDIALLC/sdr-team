@@ -48,3 +48,4 @@ quote_stage: none
   (identical LLC name in Marrero LA). See outreach.md.
 - 2026-08-31 (Kevin, via KIREEK): sent to powerhouse_es@outlook.com.
 - 2026-08-31 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: the site works after the quote, not before the call. A commercial buyer who already has his number looks him up before signing, often for somebody who was never on the call, and finds a Texas namesake and a California one. Recruiting angle dropped as a collision with the Kelso draft in the same batch. `stage` stays `sent` and `followup` stays `held`; nothing sent.

@@ -1,5 +1,13 @@
 # Second-touch drafts — 10 prospects in the `followup: held` lane
 
+status: superseded
+
+> **Superseded 2026-09-02 by `approvals/ROLLING-followup-held-lane.md`.** All ten
+> drafts below are still unsent and still waiting on Kevin; nothing here was
+> withdrawn. The lane now has one rolling file listing all 31 second touches
+> (these ten plus the 21 drafted 09-02), regenerated every run, per the 08-25
+> approvals-hygiene ruling. Read the rolling file, not this one.
+
 **Nothing is sent. Nothing is queued.** These are drafts sitting in each
 prospect's folder as `followup-1.md`, waiting on you.
 
