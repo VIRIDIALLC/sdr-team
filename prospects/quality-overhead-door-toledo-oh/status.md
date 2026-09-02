@@ -22,3 +22,4 @@ quote_stage: none
   route through corporate. Advanced to drafted.
 - 2026-08-17 (Kevin, via KIREEK): sent to info@qualityoverheaddoor.com.
 - 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: ads isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: garage-door demand arrives in the four days after the first hard freeze, and an ad budget is the only lever that can be turned up on a Tuesday. Chosen partly because it works whether or not the GarageCo/Gridiron acquisition moved spend decisions to corporate. Drops touch one's Sponsored-badge hook and the TFP number. `stage` stays `sent` and `followup` stays `held`; nothing sent, Kevin's approval gate unchanged.

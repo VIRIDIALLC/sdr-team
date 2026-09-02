@@ -27,3 +27,4 @@ quote_stage: none
   to drafted. See outreach.md.
 - 2026-08-14 (Kevin, via KIREEK): sent to contactus@mrelectricwichita.com.
 - 2026-08-17 (VEGA): held out of the Yelp follow-up sequence -- track: ads isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
+- 2026-09-02 (Elly): second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: a national brand program does not bid the local auction, so does anybody bid for Bel Aire? Turns the unresolved Neighborly-franchise flag into the opener instead of leaving it as a silent objection. Drops touch one's Sponsored-badge hook and both proof numbers. `stage` stays `sent` and `followup` stays `held`; nothing sent, Kevin's approval gate unchanged.
