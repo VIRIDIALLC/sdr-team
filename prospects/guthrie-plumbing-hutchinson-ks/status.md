@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: website
 quote_stage: none
 ---
@@ -25,3 +25,17 @@ quote_stage: none
   FOUND despite checking HutchConnect, Facebook, KS SOS, LinkedIn,
   people-search — CALL CARD marked NO NAME FOUND rather than guessed.
   Advanced to `enriched`. See `enrichment.md`.
+- 2026-09-02 (Elly): drafted website-track first touch, advanced to
+  `drafted`. Team greeting used ("Hi Guthrie Plumbing team,") per the
+  no-name rule, not a guessed first name. Angle is that well work starts
+  in a search box rather than in a conversation, because a failed well
+  pump is rare enough that the person it happens to has no neighbor who
+  has been through one, so it is the one part of the book his referral
+  engine structurally cannot reach. **Load-bearing premise to verify
+  before sending: that he actually does well work.** It comes from a
+  single HutchConnect service list, search-snippet-sourced, and every
+  direct fetch was egress-blocked. A ready-to-swap substitute opener
+  (county reach toward Haven and Pretty Prairie, needs no service line
+  to be true) is written into `outreach.md`. The fact that Kansas has no
+  statewide plumber license was kept out of the body deliberately and
+  flagged as a call point instead.

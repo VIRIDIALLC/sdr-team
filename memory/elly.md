@@ -2639,3 +2639,128 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-09-02 (this run) — 1 drafted, the whole enriched queue, third day
+  running at a ceiling of one.** `git fetch origin` first per CLAUDE.md:
+  origin/master had moved to 88b22be (KIREEK fleet-state refresh on top of
+  Montague's 2026-09-02 pass, "1 advanced, 4 held on email gate"). Container
+  started detached, local `master` 39 commits behind, the ordinary stale-ref
+  pattern logged every run since 08-13; a plain `git checkout master &&
+  git merge --ff-only origin/master` did it, no unrelated-history weirdness.
+  `_fleet-state.md` was generated 2026-09-02 16:48 UTC, minutes old, so ground
+  truth was live. The KIREEK outage from 08-28/08-29 stays closed.
+
+  Scanned `prospects/*/status.md`: 2 at `stage: enriched` —
+  jc-heating-cooling-amarillo-tx (still Kevin's own email-verification hold from
+  2026-08-03, unchanged, skipped again) plus 1 real one, drafted:
+  **guthrie-plumbing-hutchinson-ks** (website). No defensive-check skip; the
+  email is one of the cleaner ones in a while, directly listed and consistent
+  with the same name, address and phone across several independent directories.
+
+  **Shaw Roofing did not move.** It has sat at `drafted` since yesterday, so the
+  rolling file lists two for the first time in three days. Not a concern yet at
+  one day old, but worth watching: the five-day freeze in late August started
+  looking exactly like this.
+
+  **What won: well work is search-native, and a referral network has a shape.**
+  Montague's service list has him doing residential plumbing, remodels, new
+  construction and wells. The argument is not that he can't be found. It is that
+  a failed well pump is rare enough that the person it happens to has no neighbor
+  who has been through one, so that job starts in a search box rather than in a
+  conversation, which makes it the one part of his book his referral engine
+  structurally *cannot* reach. **New mechanism on this track and worth reusing:
+  distribution rather than findability or decision-making.** Ask which segment of
+  a prospect's book their existing engine physically cannot deliver, instead of
+  asking how customers find them or what they decide on. It also argues from a
+  strength (twelve years of referrals, taken as given) rather than a deficiency,
+  which is the Brezden 08-21 / Nelson's 08-31 property that makes an email
+  complimentary instead of corrective.
+
+  **Runner-up dropped, and this time on merit as well as sameness:** the
+  planned-work half of the book (a burst line is decided in ninety seconds by
+  whoever answers; a bathroom remodel is a five-figure decision made over a week
+  by two people, only one of whom heard the recommendation). It is BGS 08-30
+  (repairs vs. changeouts) and Freedom Roofing 08-20 (roofing vs. coatings), so
+  two runs of "your two service lines buy differently" inside two weeks. But the
+  sharper reason to drop it is that it only says the referral engine is *slower*
+  on one kind of job, where the well angle says the engine cannot reach that job
+  at all. **Structural beats gradual, and that's a better tie-breaker than
+  sameness.** Keep it.
+
+  **The load-bearing premise is single-source and I handed Kevin both versions,
+  per the Nelson's 08-31 standing practice.** "Wells" comes off one HutchConnect
+  service list, search-snippet-sourced, with every direct fetch of HutchConnect,
+  Facebook, BBB and KS SOS egress-blocked to Montague all run. Wrote a
+  ready-to-swap substitute opener into the outreach note (county reach toward
+  Haven and Pretty Prairie, needs no service line to be true) and named it in the
+  rolling file. **New observation worth keeping: because the opener is a
+  question, a wrong premise costs relevance rather than truth.** "No, we don't do
+  wells" is still a reply. That is a real second argument for the question-shaped
+  opener beyond the 08-13 one, and it means a single-source premise is more
+  tolerable in a question than it would ever be in a claim.
+
+  **Also flagged honestly in the note: the substitute is itself a worn shape**
+  (ceiling-of-word-of-mouth, Brezden 08-21 and Hero AC 08-31). That is exactly
+  why it is the fallback and not the draft, and saying so beats quietly handing
+  Kevin a recycled mechanism as if it were fresh.
+
+  **Kept out of the body on purpose, all four for different reasons:** that
+  Kansas has no statewide plumber license (it is the whole reason the Master
+  Plumber certification is worth something, but it is an unverified regulatory
+  assertion, so it went in the note as a call point instead of into a cold
+  email); the hotmail address as the only written channel (Kelso 08-26 legitimacy
+  mechanism, and a dig at how a man looks rather than a question about how he
+  operates); the Elburn, Illinois same-name collision (name ambiguity, All Tech
+  08-28 and Bilskie 08-31); the unconfirmed BBB "A" rating (Montague couldn't
+  confirm it belongs to this business rather than a category page).
+
+  **Team greeting, cleanly.** Montague marked the CALL CARD NO NAME FOUND after
+  checking HutchConnect, Facebook, BBB, KS SOS, LinkedIn, county parcel records
+  and people-search; every source anywhere renders him "P. Guthrie" and the
+  initial does not resolve. She also surfaced unrelated Guthries in plumbing in
+  other states and flagged them do-not-use, which is the Freedom Roofing 08-20
+  collision risk caught before it reached me rather than after.
+
+  **84% BrightLocal stat omitted again, eleventh run running on this track.**
+  Closer than usual this time, since this genuinely is a search-driven argument
+  rather than the differentiation ones I have been writing. It still lost: the
+  body already makes the specific version of that point about one specific job,
+  and a generic industry percentage next to it weakens the specific claim and
+  adds exactly the brochure smell the rest of the email avoids.
+
+  **Verification notes:** recounted by grep — 88 found, 2 enriched, 2 drafted, 2
+  approved, 108 sent, 6 closed, 3 dismissed. All four dated first-touch approval
+  files already `status: superseded`, nothing to close. Left
+  `2026-08-21-followup-drafts-held-lane.md` open on purpose (not a first-touch
+  file) and left `2026-08-28-realestate-batch-01-cold-emails.md` alone (different
+  workflow). Regenerated `approvals/ROLLING-first-touch-drafts.md` from live
+  `stage: drafted`; it lists Guthrie plus the Shaw carryover. Held-lane count
+  recounted from live files rather than inherited, per my own 09-01 instruction:
+  **32 at `followup: held`, 10 with a `followup-1.md`, so 22 undrafted**, same as
+  yesterday.
+
+  **Selling kit still reads `status: draft-awaiting-kevin`** on both collateral
+  files. Not re-raised, per the 08-31 decision that it is in the record. Body
+  links the live public case-studies page; the note names the one-pager as the
+  call leave-behind with the lawyer-review caveat.
+
+  Track breakdown: 1 website. Standard post-write sweep on body text only (em
+  dash, en dash, bracket placeholder, retired package name, third-person
+  Kevin/Viridia, `$`, "guarantee", the 84% stat, British spellings) — clean on
+  every check. Body is 159 words, in the recent 117 to 158 band. Subject ("The
+  one job word of mouth doesn't reach") and closer ("Would you take a call on
+  it?") both checked against the last week's for the sentence-shape rhyming that
+  caught me on 08-31 and 09-01; the closer was deliberately not another "N
+  minutes this week" after three of those in a row.
+
+  **Next run:** check `stage: enriched` first, then regenerate
+  `approvals/ROLLING-first-touch-drafts.md` from live `stage: drafted` (write it
+  explicitly empty if nothing is there). Upstream backlog is **88 at
+  `stage: found`** and has now grown every day for fourteen days (84 on 09-01, 80
+  on 08-31, 78 on 08-30). Montague advanced 1 and held 4 today, so the ceiling on
+  this seat was one for the third straight day. The 22 undrafted held-lane second
+  touches remain the one place surplus capacity here would convert, now thirteen
+  days running.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.
