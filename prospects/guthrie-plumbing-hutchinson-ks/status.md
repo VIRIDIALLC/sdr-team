@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -40,3 +41,4 @@ quote_stage: none
   statewide plumber license was kept out of the body deliberately and
   flagged as a call point instead.
 - 2026-09-02 (Kevin, via KIREEK): sent to Guthrieplumbing@hotmail.com.
+- 2026-09-02 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.

@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -23,3 +24,4 @@ quote_stage: none
   and Montague could not reach the registry (egress-blocked). Nothing has
   been sent.
 - 2026-09-02 (Kevin, via KIREEK): sent to Kc_33@hotmail.com.
+- 2026-09-02 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
