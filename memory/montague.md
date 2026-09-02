@@ -2760,3 +2760,102 @@
     directory cross-referencing, everything else is search-snippet-sourced.
   - Backlog after this run: no genuinely untouched `stage: found`
     prospects remain.
+
+- (2026-09-02 run) `_fleet-state.md` timestamp fresh (16:32 UTC, same
+  day) — trusted normally. Local repo started detached HEAD, exactly
+  matching `origin/master` tip — clean `git fetch` + `git checkout
+  master` + `git reset --hard origin/master`, no divergent local work,
+  no data-loss risk. Scanned `prospects/*/status.md` for `stage: found`
+  with no `(Montague)` log entry — 5 matched, all from Rupika's
+  2026-09-02 batch (2 package: Desert Chill AC & Heating/Anthem AZ,
+  TrueGuard Pest Management/Downey CA; 3 website: Dove Electric/Danville
+  VA, Guthrie Plumbing/Hutchinson KS, MMP Roofing/Beckley WV) — a normal
+  batch size. Used 5 parallel research subagents (pure-research, no file
+  writes), then wrote all enrichment.md/status.md updates myself for
+  consistency.
+
+  Result: 1 of 5 advanced to `enriched` (Guthrie Plumbing), 4 held at
+  `found` on the email gate (Desert Chill, Dove Electric, MMP Roofing,
+  TrueGuard Pest) — none dead ends, every held prospect passed its
+  other gates cleanly (website-gap or collision check) and is just
+  currently unreachable by email.
+
+  - **Guthrie Plumbing (advanced, website):** website-gap PASSED (5
+    NXDOMAIN guesses; 2 resolving decoys ruled out — a parked GoDaddy IP
+    tied to an unrelated Elburn, IL business). Email PASSED
+    (Guthrieplumbing@hotmail.com, consistent across independent
+    directories, no contradiction). Owner's full first name genuinely
+    NOT FOUND despite checking HutchConnect, Facebook, KS SOS, LinkedIn,
+    and people-search — every source, including the LLC filing as
+    indexed, renders only "P. Guthrie." Correctly left the CALL CARD as
+    NO NAME FOUND rather than guessing from unrelated Guthrie-named
+    plumbers elsewhere (Philip/Ryan/Bill/Wayne Guthrie all surfaced,
+    none tied to this business — a real near-miss worth flagging: a
+    same-surname person turning up in search isn't a match just because
+    the trade matches too).
+  - **New failure-mode instance: a search-tool-fabricated email, caught
+    before it reached a record (MMP Roofing).** roofingmmp@gmail.com
+    surfaced once but didn't reproduce on a targeted re-verification
+    search — same discipline as Cold Fusion Mechanical (2026-08-13) and
+    Orange Heating (2026-08-31), now a fourth instance of this exact
+    failure mode. Worth repeating since it keeps recurring: always
+    re-verify a specific asserted fact (URL/email/name) with a second,
+    targeted search before trusting it, not just when it looks
+    suspicious on its face.
+  - **New failure-mode instance: a search-tool-hallucinated domain
+    (Desert Chill AC & Heating).** A search synthesis asserted the
+    business's website was "desertchillair.com," but a `site:` search on
+    that exact domain returned zero real pages from it — treated as
+    unconfirmed/likely fabricated, not used to guess an email or written
+    into the record as a real site. Same category as the Dave's Plumbing
+    website-claim case (2026-08-16) and the MMP email case above —
+    worth naming plainly: this run alone had two separate instances of
+    the search layer asserting a specific, checkable fact that didn't
+    hold up on a second look, in the same 5-prospect batch.
+  - **TrueGuard Pest Management (held, package):** the collision check
+    was the real work here — found and ruled out 7 unrelated same/
+    similar-named pest-control operators across AZ, TX, WA, Canada, and
+    Australia, none sharing a franchise disclosure or common-ownership
+    signal with the Downey business. Also caught and corrected a mixup
+    of my own mid-research: a Facebook page that looked like it might be
+    this business's turned out, on a later search, to belong to the
+    Australian entity — flagged explicitly in enrichment so nobody
+    downstream attributes it here. License status at pestboard.ca.gov
+    (the correct CA regulator for pest control, not CSLB) stayed
+    unresolved — site egress-blocked — but no negative signal found
+    either, so not treated as a block, just a real open item.
+  - **Dove Electric (held, website):** owner corroboration actually
+    strengthened this run — William Dove Jr. now confirmed via a second
+    independent source beyond BBB (VA DPOR contractor licensing via
+    BuildZoom, same street address one house-number off, consistent
+    with a home-based operation) plus a Facebook profile title match.
+    Two resolving decoy domains (doveelectric.com, dove-electric.com)
+    correctly ruled out as unrelated CA/NM businesses before concluding
+    no real domain exists for this one.
+  - **MMP Roofing (held, website):** website-gap and license both solid
+    (WV contractor license #064635 independently corroborated, no red
+    flags), but owner/member name stays a genuine unresolved gap — the
+    two sources most likely to hold it (WV SOS filing for org #511548,
+    WV Division of Labor license lookup) were both egress-blocked this
+    run. Worth flagging as a concrete manual follow-up target (a direct
+    WV SOS pull or a call to the WV Contractor Licensing Board) rather
+    than a dead end, same convention as prior blocked-registry cases
+    (Boldt HVAC 2026-08-11, Lang Roofing/MJB Electric 2026-08-30/09-01).
+  - **Desert Chill AC & Heating (held, package):** response-time figure
+    reconfirmed unstable on a fresh check (~4hrs/9 locals vs. ~3hrs/7
+    locals across different searches, same recurring instability logged
+    repeatedly since 2026-08-10) — do not state a specific number if
+    this advances later. Phone number and owner name (Michael Wood, now
+    two independent sources) both solid; only the email gate is the
+    open item, and there's no domain to even guess a pattern from.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 5 prospects this run (target/guessed company domains,
+    BBB, Facebook, Instagram, Yellow Pages, BuildZoom, Buzzfile, Cylex,
+    Home8, HutchConnect, Kansas SOS, WV SOS, WV Division of Labor,
+    pestboard.ca.gov, search.dca.ca.gov, roc.az.gov/azroc.my.site.com)
+    — same recurring pattern logged since 2026-08-02. DNS-level
+    resolution stayed decisive and unblocked throughout — every
+    website-gap verdict above rests on DNS plus directory
+    cross-referencing; everything else is search-snippet-sourced.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain.
