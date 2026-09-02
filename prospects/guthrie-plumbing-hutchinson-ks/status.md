@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -39,3 +39,4 @@ quote_stage: none
   to be true) is written into `outreach.md`. The fact that Kansas has no
   statewide plumber license was kept out of the body deliberately and
   flagged as a call point instead.
+- 2026-09-02 (Kevin, via KIREEK): sent to Guthrieplumbing@hotmail.com.
