@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-09-02 18:41 UTC (2026-09-02 11:41 Phoenix)
+Generated: 2026-09-02 21:04 UTC (2026-09-02 14:04 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -99,8 +99,8 @@ Generated: 2026-09-02 18:41 UTC (2026-09-02 11:41 Phoenix)
 
 - **GHL API:** UP (live probe returned 200)
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-09-02 17:35 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 1h ago)
-- **KIREEK repo:** 22 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 3h ago)
+- **KIREEK repo:** 0 commit(s) not yet pushed to origin (origin is current)
 
 ## Every team, right now
 
@@ -110,7 +110,7 @@ Generated: 2026-09-02 18:41 UTC (2026-09-02 11:41 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 3 minutes ago — "Elly 2026-09-02: held-lane second touches complete (21 of 21) + rolling approvals file" (641c54efb)
+- last commit: 2 hours ago — "Elly 2026-09-02: held-lane second touches complete (21 of 21) + rolling approvals file" (641c54efb)
 - pipeline (prospects, 209 items): found 87 · enriched 1 · approved 2 · sent 110 · closed 6 · dismissed 3 — ~56% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-09-02 on `ab-plumbing-marshalltown-ia` — "second touch drafted into `followup-1.md` (first touch sent, no reply). Angle: the site's job is to update the"
@@ -124,7 +124,7 @@ Generated: 2026-09-02 18:41 UTC (2026-09-02 11:41 Phoenix)
 - waiting on Kevin (4): For Kevin — first-touch drafts waiting on you (LIVE QUEUE); Follow-up sequence — 4 prospect(s) ready to enroll (rolling queue); For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE); Real estate campaign — live state (rolling)
 
 ### Ads Team
-- last commit: 65 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (b756ea617)
+- last commit: 3 hours ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (b756ea617)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
@@ -142,14 +142,14 @@ Generated: 2026-09-02 18:41 UTC (2026-09-02 11:41 Phoenix)
 - waiting on Kevin (3): 2026-08-14: Post-purchase onboarding sequence — spec + gap list; 2026-08-24: Billing-transition client comms + Tyler "keep the system" one-pager; 2026-08-24: Tyler meeting — collect + keep-the-system talk track (2026-08-24)
 
 ### Finance Team
-- last commit: 26 hours ago — "Yelp wire landed 9/1: book it correctly and address the passthrough mis-categorization it " (6b8f1009a)
+- last commit: 29 hours ago — "Yelp wire landed 9/1: book it correctly and address the passthrough mis-categorization it " (6b8f1009a)
 - pipeline (invoices, 9 items): draft 3 · paid 1 · draft_amount_disputed 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~25% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-08-31 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 102 days overdue, still 91+ bucket. Fourth run on hold, 10 " · 1 open handoff(s) in their inbox
 - waiting on Kevin (5): 2026-08-24: A/R aging review — 2026-08-24; 2026-08-27: A/R aging review — 2026-08-27; 2026-08-31: A/R aging review + reminder refresh — 2026-08-31; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 2 hours ago — "Merge Ash's Week 6 creatives + Part 2 pairing cleanup into master" (798e584a7)
+- last commit: 5 hours ago — "Merge Ash's Week 6 creatives + Part 2 pairing cleanup into master" (798e584a7)
 - pipeline (posts, 32 items): drafted 3 · scheduled 8 · posted 5 · ready 3 · superseded 13 — ~71% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-09-02 on `ai-quote-that-went-quiet` — "**Migrated to `creative/linkedin.png`** per the 2026-08-31 storage contract, per Rati's 2026-09-01 handoff. Ch" · 1 open handoff(s) in their inbox
@@ -167,21 +167,20 @@ Generated: 2026-09-02 18:41 UTC (2026-09-02 11:41 Phoenix)
 - waiting on Kevin: nothing
 
 ### Web Design Team
-- last commit: 22 hours ago — "Add real product visualizations to the primary site's text-only sections" (04adc5856)
+- last commit: 25 hours ago — "Add real product visualizations to the primary site's text-only sections" (04adc5856)
 - pipeline (prospects, 1 items): researched 1
 - where each agent is (from their own logged task work):
   - **Nova** (Magic Patterns Build): 2026-08-12 on `tpg-home-improvements-az` — "Dispatch referenced a pre-existing `prospects/tpg-home-improvements-az/brief.md` on master — it did not exist " · 1 open handoff(s) in their inbox
-- agent work in the last 24h: "Add real product visualizations to the primary site's text-only sections"
 - waiting on Kevin: nothing
 
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-09-02 18:41 UTC (auto-generated by VEGA's backend):
+As of 2026-09-02 21:04 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 119 days (17 weeks) → ~1 close per 2 week(s).
 This week (since 2026-08-24): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 1h ago)
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 3h ago)
 Approvals waiting on Kevin across the fleet: 15
 ```
