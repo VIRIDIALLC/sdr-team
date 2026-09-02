@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -22,3 +22,4 @@ quote_stage: none
   Roofing License #16-002115 on ag.ks.gov** — the body names the license
   and Montague could not reach the registry (egress-blocked). Nothing has
   been sent.
+- 2026-09-02 (Kevin, via KIREEK): sent to Kc_33@hotmail.com.
