@@ -2023,3 +2023,90 @@
   distinct operating business, not pursued further. New standing markets-
   tried additions: Elko NV, Beckley WV, Hutchinson KS, Danville VA,
   Bowling Green KY, Texarkana TX/AR, Alexandria LA (partial).
+
+- (run 2026-09-03) Scheduled run, two tracks (package + website — ads track
+  not requested per this run's task instructions). `git fetch` showed a
+  force-updated `origin/master` and the container started on a detached HEAD
+  matching `origin/master`'s fetched tip exactly — same recurring stale-ref
+  symptom as every run since 2026-08-13, fixed with `git checkout -B master
+  origin/master`, nothing lost. `_new-leads.md` had nothing dropped in. Ran
+  both tracks as parallel background Agent-tool sub-agents (research-only, no
+  file/git access, briefed to read this file's tail themselves and check
+  `prospects/` for slug collisions rather than being hand-fed the lists) —
+  worked cleanly, cut prompt-authoring overhead vs. copying exhausted-market
+  lists manually. Committed the website-track batch separately from the
+  package-track batch since the two research agents finished several minutes
+  apart and a stop-hook flagged untracked files in between — two clean
+  commits, no functional difference from one.
+- (package/priority track, run 2026-09-03) Ran an unusually large search
+  budget (~110 queries/~30 suburb-vertical combos) — both metros are
+  reading as heavily picked-over now, most combos resolved to fast
+  responders, franchise-scale operations, or unresolved figures. Only 2
+  hits, thinner than the usual 3: On Edge Pest Control LLC (owner Brandyn
+  Dee Grantham, ~4-5yr LLC, ~3hr Yelp response/93% response rate PLUS
+  direct review complaints about no-shows/unreturned calls/texts sitting
+  alongside genuinely positive reviews — reads as a real solo operator
+  dropping follow-through under load, not a failing business; address
+  unresolved across 3 sources — New River AZ per Yelp geocoding, Surprise
+  AZ per HomeAdvisor, Chandler AZ per LLC filing — flagged hard for
+  Montague, do not assume one), Downey Exterminators Inc (Downey CA pest
+  control, owner Javier Munoz, established 2004 but only 17 Yelp reviews
+  despite tenure + self-claimed "10,000+ clients," AND no Yelp
+  response-time/messaging badge at all unlike every competitor pulled in
+  the same searches — a new pain-signal pattern worth reusing: absence of
+  a messaging/response badge, where competitors all show one, reads as its
+  own signal even without a specific hours figure; has a real live website
+  though, package track not website track). New standing judgment call
+  this run: found a genuinely over-1hr, corroborated pain-signal hit
+  (Godfather Electric, Inglewood CA, 4hr/5hr/1day response across 3 reads,
+  real communication complaints) but deliberately did NOT queue it — one
+  negative review describes the owner going silent for 2 weeks then
+  responding with language read as an implied threat ("he knows people in
+  my neighborhood"). Worth treating a character/reputation red flag as its
+  own disqualifier tier, separate from and worse than the existing
+  license/scale disqualifiers — surfaced rather than silently dropped so
+  Kevin/Montague know it was seen and why it's out. Also dropped: Señor
+  Rooting & Plumbing (Carson CA, 1.0star/2 reviews, reads as possibly
+  defunct rather than overwhelmed), two apparent directory-mill/templated
+  listings (Walters Garage Doors, Prosper Garage Door Repair, both Downey
+  CA), and three scale-disqualified operators (Goody Garage Doors 3,000+
+  reviews, 1st Stryke Pest & Termite 449 reviews, KAI HVAC/Morning Star
+  Garage Doors both cross-suburb-resolved to Phoenix with no real pain
+  signal). Several 2026-09-02 unresolved unnamed signals (Avondale AZ
+  roofing complaint, Downey CA pest control 12hr/198-request signal,
+  Inglewood CA plumbing 9hr signal, Anthem AZ HVAC 3hr signal distinct from
+  Desert Chill) were re-attempted this run and remain unresolved — worth
+  another pass rather than writing off. Empty combos this run (avoid
+  repeating as-is): Compton CA (HVAC, roofing, electrical, painting),
+  Whittier CA (electrical), Norwalk CA (garage door, pest control,
+  electrical), Lawndale CA (plumbing), Bellflower CA (HVAC, pest control
+  beyond already-tried names), Lynwood/South Gate CA (painting, roofing,
+  restoration — franchise-dominated), South Gate CA (electrical), Paramount
+  CA (plumbing, roofing), Avondale AZ (HVAC), Buckeye AZ (plumbing), Surprise
+  AZ (garage door, electrical), El Mirage AZ (HVAC, electrical), Tolleson AZ
+  (plumbing, electrical, garage door), Coolidge AZ (HVAC), Litchfield Park AZ
+  (garage door), Maricopa/Eloy AZ (plumbing).
+- (website track, run 2026-09-03) 3 hits from 2 fresh small markets (Garden
+  City KS, North Platte NE) — both markets read as productive, only
+  lightly worked (2 of ~8 verticals each): Pete's Painting (Garden City KS,
+  directory-only across HomeAdvisor/BBB/Yelp/YP/Porch/Connectpainters,
+  address 801 Pats Dr confirmed consistently, but owner full name did NOT
+  hold up — an AI summary claimed "Pete Herrada" but a follow-up search
+  only surfaced an unrelated Kansas entity, "Herrada Painting &
+  Remodeling, LLC," likely the source of the conflation — a THIRD example
+  of the AI-summary-hallucination failure mode logged 2026-08-30/09-01/
+  09-03, worth treating as a standing pattern to watch for, not a fluke),
+  SNP Heating and Air LLC (North Platte NE, owner Shawn Pochop —
+  high-confidence via initials match + independent HomeAdvisor review
+  naming "Shawn" as the technician, young LLC registered 4/24/2024),
+  Garden City Garage Doors LLC (Garden City KS, Facebook-only, owner name
+  not found, a same-market competitor "Overhead Door Company of Garden
+  City" correctly ruled out as a distinct 40-year franchise dealer, not a
+  collision). Both markets have plenty of untried verticals remaining if
+  revisited (Garden City KS: HVAC, plumbing, electrical, roofing, pest
+  control, landscaping all untried; North Platte NE: pest control,
+  roofing untried). Banked, not independently verified: Bug Eaters (North
+  Platte NE pest control) looked Facebook-only on a first pass but wasn't
+  run through the named follow-up search — worth a fast check next visit.
+  Dodge City KS electrical ran cold (Pruitt Electric LLC has a real site,
+  pruittservices.net).

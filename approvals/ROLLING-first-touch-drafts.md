@@ -1,7 +1,7 @@
 # For Kevin — first-touch drafts waiting on you (LIVE QUEUE)
 
 status: open
-Last regenerated: 2026-09-02 (Elly)
+Last regenerated: 2026-09-03 (Elly)
 
 > **This is the only first-touch approval file. It is regenerated from scratch
 > every run** and lists every prospect currently sitting at `stage: drafted`,
@@ -10,74 +10,80 @@ Last regenerated: 2026-09-02 (Elly)
 > approvals but really nothing" incident, there are no more dated first-touch
 > files. If this file says the queue is empty, the queue is empty.
 
-## The queue: 2 drafts
+## The queue: EMPTY
 
-| Prospect | Track | Contact | Hook | Email confidence |
-|---|---|---|---|---|
-| **Guthrie Plumbing (Hutchinson KS)** — new today | website | No name found. Address the business or ask for the owner | Do you still take well work, or has that side of it dropped off? | **Good.** Directly listed and consistent with this exact business's name, address and phone across several independent directories, nothing contradicting it |
-| **Shaw Roofing (Hays KS)** — carried over from 09-01 | website | Casey Shaw (medium confidence) | When a hail run brings out-of-town crews through Hays, do you lose jobs to them, or does that not really happen to you? | **Single-source** (a real, directly-listed address on BuildZoom, but every result traces back to that one record) |
+**Nothing is waiting on you here.** Zero prospects are at `stage: drafted`. You
+sent both of yesterday's drafts (Guthrie Plumbing and Shaw Roofing) on 09-02 and
+nothing has replaced them.
 
-Nothing has been sent. The full drafts and the reasoning behind them live in
-`prospects/guthrie-plumbing-hutchinson-ks/outreach.md` and
-`prospects/shaw-roofing-hays-ks/outreach.md`.
+This is not a slow run on my end. **The enriched queue was empty too**, so there
+was nothing for this seat to write. One prospect sits at `stage: enriched` and it
+is `jc-heating-cooling-amarillo-tx`, which is your own email-verification hold
+from 2026-08-03 and already has a finished draft. It has been in that state for
+31 days; if you ever phone-verify `office@jcheatingcooling.com`, the draft moves
+to `drafted` the same day.
 
-The queue is two because the enriched queue was one. Montague advanced a single
-prospect today and held four others on the email gate, so one new draft is the
-whole of what reached this seat, not a batch-size choice.
+## Why it is empty, and it is upstream of me
 
-## Check one thing before each of these sends
+**Montague advanced nobody today.** Her 09-03 pass verified Rupika's five new
+prospects and held all five at `found` on the email gate. That is the correct
+call every time, but it means the ceiling on this seat today was zero.
 
-**Guthrie Plumbing: does he actually do well work?** The first two paragraphs of
-the email rest entirely on it, and it comes from a single HutchConnect service
-list that Montague could only read as a search snippet, because every direct
-fetch of HutchConnect, Facebook, BBB and Kansas SOS was blocked to her all run.
-The cost of being wrong is deliberately low, since the opener is a question and
-not a claim, so the worst case is an irrelevant email rather than a false one.
-But if you already know he doesn't do wells, a **ready-to-swap substitute
-opener** is written into the draft note (county reach out toward Haven and Pretty
-Prairie, which needs no service line to be true). Everything after the first two
-paragraphs stands unchanged under it.
+**93 prospects are now sitting at `stage: found`.** That number has grown every
+single day for fifteen days: 88 yesterday, 84 on 09-01, 80 on 08-31, 78 on 08-30,
+74 on 08-29. Rupika keeps sourcing at four or five a day and enrichment is
+clearing zero to one, so the gap widens daily and the drafting seat starves
+behind it.
 
-There is also **no first name for him anywhere.** Montague checked HutchConnect,
-Facebook, BBB, Kansas SOS, LinkedIn, county parcel records and people-search, and
-every source renders him only as "P. Guthrie." The email uses a team greeting
-rather than a guess. On the phone, ask for the owner. She found several unrelated
-Guthries in plumbing in other states and flagged them explicitly as do-not-use.
+**The bottleneck is the email gate, specifically.** Over the last week Montague
+has advanced 1 and held 4, advanced 1 and held 4, and today advanced 0 and held 5.
+These are not enrichment failures, they are prospects with no discoverable, real
+email address. Two things would change that number and neither is mine to decide:
 
-**Shaw Roofing: the body names his Kansas roofing license, and nobody has pulled
-it off a live registry.** KS Roofing License #16-002115 is reported active from
-prior research and no enforcement action surfaced anywhere against the name, but
-the Kansas AG's roofing registration search and the City of Hays
-licensed-contractor list were both egress-blocked. Two minutes on ag.ks.gov
-settles it. If it comes back inactive the email needs rewriting rather than
-editing, since the license is doing real work in the argument. Also, unchanged
-from yesterday: **do not raise the Malarkey shingle-recall detail** if you get him
-on the phone. One search result claimed Shaw offers free inspections tied to a
-2017 recall in WaKeeney and Montague could not trace it to any fetchable source.
+1. **Sourcing that filters for a reachable email before a prospect enters the
+   pipeline**, so Rupika's finds don't stack up behind a gate they were never
+   going to pass. That is a Rupika change.
+2. **A second channel for the ones that fail the email gate.** A prospect with a
+   verified phone and no email is not unreachable, it is just not reachable by
+   me. You are cold calling as the primary play right now. Ninety-three found
+   prospects with real phone numbers is a call list, not a dead backlog, and
+   right now they sit in this repo doing nothing while the pipeline reports them
+   as work in progress.
 
-## Upstream, and it is the same message as the last fourteen days
+Point 2 is worth a ruling either way. If the answer is that they stay parked,
+that is fine, but then the found count is not a backlog and nobody should read it
+as one.
 
-**88 prospects are sitting at `stage: found`.** That number has grown every single
-day since 08-20 (84 yesterday, 80 on 08-31, 78 on 08-30, 74 on 08-29). Rupika
-keeps sourcing and the enrichment step is advancing one or two a day against four
-or five new finds, so the gap widens daily. This seat cannot produce first touches
-faster than Montague advances prospects, and today that ceiling was one again.
+## Where spare capacity here went instead
 
-## Where spare capacity here would actually convert
+You said "yes on the 2nd touches please" on 09-02 and I drafted all 21 that day.
+Two more prospects landed in that lane the same evening when you sent Guthrie and
+Shaw. **Shaw Roofing's second touch is drafted today**, which leaves that lane
+complete except for the two deliberate exclusions below. Details in
+`approvals/ROLLING-followup-held-lane.md`.
 
-**22 prospects that were sent a website-track or ads-track first touch have had
-nothing since, and have no second touch drafted.** Recounted from live files this
-run rather than carried forward: 32 prospects sit at `followup: held`, 10 of them
-have a `followup-1.md`, so 22 do not. That number was 11 when I first raised it on
-08-21 and it has doubled, because every website and ads first touch you send lands
-in this lane by design (the GHL Yelp sequence is the wrong message for them, so
-they are correctly kept out of it).
+**Guthrie Plumbing is deliberately not drafted, and I would rather tell you why
+than hand you a filler email.** His first touch went yesterday, and every angle I
+can build for a second one is either the same shape as his own first email (which
+was already "here is a lane your word of mouth can't reach") or a mechanism this
+seat has run in the last two weeks on somebody else: the ceiling of word of mouth
+(Brezden 08-21, Hero AC 08-31), your two service lines buy differently (Freedom
+08-20, BGS 08-30), a credential with nowhere to live (Nelson's 08-31), somebody
+else owns your name (Bilskie 08-31, Johnston 09-02), demand that never forms
+(Bilskie 09-02). He is not due a second email for several days. I would rather
+write him a real one next week than a recycled one today.
 
-These are yours to say go on, not something I should start unasked. Say the word
-on a later run and I will draft them the way I drafted the first ten, one
-genuinely new argument each, no re-arguing the first email. `sp-lawn-care-bangor-me`
-stays excluded either way, since you are handling Karl directly.
+## One kit gap, and it is not about any single prospect
 
-The doctrine's own numbers are the argument here: roughly 93% of conversions come
-by the sixth attempt, and half of all leads never get a second one. Twenty-two
-prospects that got exactly one email is the median behaviour the doctrine names.
+**There is no website-track case study in the selling kit.** Both one-sheets in
+`collateral/case-study-onesheets.md` are lead-response stories for The Complete
+System (TFP Landscaping, Finish Coat Painting). **Eighteen of the prospects
+sitting in the follow-up lane are website track**, and the proof piece I am
+supposed to reach for argues a different offer than the email does. It is why
+most website-track drafts link the live case-studies page generically and stop
+there.
+
+If a website build you have shipped has a number attached to it, even a small one
+(a client who had no site and now gets N calls a month off it), that would be the
+single most useful thing you could add to the kit for this track. Both existing
+one-sheets also still read `status: draft-awaiting-kevin`, unchanged since 08-19.

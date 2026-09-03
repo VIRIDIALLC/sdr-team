@@ -2859,3 +2859,103 @@
     cross-referencing; everything else is search-snippet-sourced.
   - Backlog after this run: no genuinely untouched `stage: found`
     prospects remain.
+
+- (2026-09-03 run) Clean start — session was in a detached-HEAD state
+  matching `origin/master`'s tip exactly (`34e614e`), no divergent local
+  work; `git checkout -B master origin/master` put it on a proper branch,
+  no data-loss risk. Scanned `prospects/*/status.md` for `stage: found`:
+  the raw list was long (~90 folders), but nearly all already carry a
+  Montague log entry documenting a prior hold/dead-end directly in
+  `status.md` (this team's established convention for held prospects —
+  no separate `enrichment.md`, findings folded into the status.md Log
+  with a memory pointer) — re-running the same searches on those would
+  burn cost for no new signal, so left them alone per the standing
+  practice. Only 5 were genuinely untouched, all from today's two Rupika
+  batches (commits 41d4b2a, 34e614e): On Edge Pest Control (New River AZ,
+  package), Downey Exterminators (Downey CA, package), Garden City Garage
+  Doors (Garden City KS, website), SNP Heating and Air (North Platte NE,
+  website), Pete's Painting (Garden City KS, website) — a normal batch
+  size. Used 5 parallel research subagents (pure-research, no file
+  writes), then wrote all status.md log entries myself for consistency.
+
+  **Result: 0 of 5 advanced — all 5 held at `found` on the email gate.**
+  Worth naming plainly since it's unusual for every prospect in a batch
+  to land the same way: none are dead ends (every one passed its other
+  gates — website-gap or pain-signal confirmation — cleanly), the email
+  gate is just what's currently blocking all five, and two of the five
+  independently ran into this run's dominant failure mode below.
+
+  - **The search-tool-hallucinated-email failure mode hit hard this run
+    — now flagged as a real, recurring, worth-escalating pattern, not
+    just a one-off.** Downey Exterminators alone produced two different,
+    mutually-contradicting "confirmed" emails from two separate search
+    passes, neither traceable to an actual page, both discarded after a
+    third targeted search found no email at all. On Edge Pest Control's
+    email (Brandyn@onedgepest.com) was a genuine verbatim find, not an
+    AI-summary invention — but `site:onedgepest.com` returns zero
+    indexed pages, so its liveness is unconfirmed, and given how often
+    this exact failure mode has bitten this team (Cold Fusion Mechanical
+    2026-08-13, Orange Heating 2026-08-31, MMP Roofing 2026-09-02, both
+    Downey candidates this run), chose the disciplined read — held
+    rather than reported — over treating "not literally AI-invented" as
+    good enough on its own. This is now 6+ instances of this failure
+    mode in under a month; if it keeps recurring at this rate, worth
+    raising to Kevin as a real limitation of relying on WebSearch's own
+    synthesized answers for anything as consequential as a contact
+    email, not just a per-business caution anymore.
+  - **Egress proxy blocked essentially every direct fetch again this
+    run — but with a new wrinkle worth naming.** For Garden City Garage
+    Doors, the proxy blocked even baseline control-domain checks
+    (google.com, anthropic.com), meaning the website-gap conclusion
+    there rests entirely on search-snippet convergent-absence with zero
+    DNS-level corroboration — a real step down in confidence from the
+    usual "ENOTFOUND is decisive" pattern, flagged explicitly in that
+    prospect's own record rather than presented as equally solid. By
+    contrast, SNP Heating and Air got a clean, doubly-decisive
+    website-gap confirmation this run via a raw `getent hosts` DNS
+    lookup that bypasses the proxy entirely (WebFetch ENOTFOUND +
+    independent raw-DNS ENOTFOUND on 8 domains) — worth remembering as a
+    technique: when WebFetch's own ENOTFOUND feels like it might just be
+    proxy noise, a raw DNS lookup via Bash is a real, independent
+    second check, not just a restatement of the same block.
+  - **On Edge Pest Control:** a real three-way address conflict (AZ LLC
+    filing: Chandler; HomeAdvisor: Surprise; Yelp geo-tag: New River)
+    resolved to a lean, not a fact — all three tie to the same phone
+    number, and Surprise/New River (north Phoenix valley, ~20mi apart)
+    read as more mutually consistent than the Chandler filing address,
+    which is likely stale from the 2021 LLC registration. Also caught: the
+    "~3hr/93%" response-time figure everyone's been carrying forward as
+    Yelp's traces specifically to Angi/HomeAdvisor's badge, not a Yelp
+    stat directly — worth relabeling if this advances later rather than
+    attributing it to the platform Rupika's sourcing technique targets.
+  - **Downey Exterminators:** beyond the email failure above, resolved
+    the founding-year ambiguity toward 2004 (CA SOS filing detail,
+    repeated but not page-verified) against three-to-four different
+    self-reported tenure claims (15/18/28 years, even Angi's generic
+    "10+ years") in the business's own marketing copy — a real
+    copy-consistency problem worth someone eventually telling the
+    business about, not a red flag on legitimacy. Confirmed the broad
+    4-county service-area claim doesn't show any sign of a larger
+    multi-crew operation — stays ICP-consistent.
+  - **Garden City Garage Doors:** ruled out two resolving domain guesses
+    as unrelated businesses (a Garden City, NY company and a Chicagoland
+    IL company) rather than treating either as a false-positive
+    contradiction — collision-check discipline paying off again.
+  - **SNP Heating and Air:** owner Shawn Pochop strengthened from
+    "review + initials-match" to also include a BBB structured
+    "Owner" field and a local TV news quote (KNOP News2) — the news
+    source itself was unreachable this run (summary-sourced only), so
+    flagged as strengthened-but-not-fully-page-verified rather than
+    settled.
+  - **Pete's Painting:** independently corroborated "Pete Herrada" via a
+    BBB structured field (distinct from Rupika's original single
+    AI-summary lead that couldn't be reconfirmed) — leans confirmed now,
+    though still search-mediated not page-verified, so flagged for Elly
+    to hedge slightly (lead with "Pete," don't bet the opener on the
+    surname) if this advances later. Also caught a real collision risk
+    before it could contaminate the record: a different "Pete's
+    Painting" in Topeka, KS has its own real website
+    (petespaintingtopekaks.com) — confirmed as the wrong business, not
+    evidence against this Garden City prospect's website-gap.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain.

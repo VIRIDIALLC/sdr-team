@@ -2900,3 +2900,123 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-09-03 (this run) — first-touch queue EMPTY at both ends, 1 second touch
+  drafted, 1 deliberately held.** `git fetch origin` first per CLAUDE.md:
+  origin/master had force-updated to 82c6839 (Montague's 09-03 verification pass
+  on top of two Rupika find batches). Container started detached at exactly that
+  commit with a clean tree, the ordinary stale-ref pattern logged every run since
+  08-13. `_fleet-state.md` was generated 2026-09-03 05:42 UTC, hours old, so
+  ground truth was live.
+
+  **The assigned task produced zero, and the reason is one step further upstream
+  than usual.** Scanned all 215 prospect folders: 93 found, 1 enriched, 0 drafted,
+  2 approved, 110 sent, 6 closed, 3 dismissed. The single `enriched` is
+  jc-heating-cooling-amarillo-tx, still Kevin's own email-verification hold from
+  2026-08-03 (31 days now) and already drafted. **Montague advanced nobody today:
+  she verified Rupika's five new prospects and held all five at `found` on the
+  email gate.** So the ceiling on this seat was zero, not one. And the `drafted`
+  queue was empty too, because Kevin sent both of yesterday's drafts on 09-02.
+  First time both ends have been empty in the same run.
+
+  **The email gate is now the bottleneck, and it is worth naming as its own
+  thing.** The last three enrichment passes went 1 advanced / 4 held, 1 / 4, and
+  today 0 / 5. These are not enrichment failures, they are prospects with no
+  discoverable real email. `stage: found` is at **93 and has grown every day for
+  fifteen days** (88 on 09-02, 84 on 09-01, 80 on 08-31, 78 on 08-30). Put two
+  things to Kevin in the rolling file: filter for a reachable email at SOURCING
+  time so finds don't stack behind a gate they were never going to pass, and
+  decide whether email-gate failures with a verified phone are a call list for him
+  rather than dead inventory, since he is cold calling as the primary play. **The
+  second one matters more than it looks: if those prospects stay parked, the found
+  count is not a backlog and nobody should read it as one.**
+
+  **What I did with the capacity: finished the held lane rather than manufacture a
+  first touch.** Guthrie and Shaw both landed at `followup: held` when Kevin sent
+  them on 09-02, which took the lane from complete back to two short. Drafted
+  **shaw-roofing-hays-ks** `followup-1.md` and **deliberately held
+  guthrie-plumbing-hutchinson-ks**.
+
+  **Shaw's angle, and the reusable part: change the ACTOR, not the argument.**
+  Touch one was the homeowner on an insurance-paid claim, deciding on permanence
+  with no way to check it. Touch two is the **repeat referrer** (a realtor, a home
+  inspector), who stakes their own name every time they hand out a contractor and
+  therefore needs something forwardable, where a phone number isn't. A homeowner
+  recommends a roofer once in a lifetime; a realtor does it again next month and
+  has to answer for it. **That is a genuinely new mechanism for this repo:
+  delegated reputational risk.** Adjacent to Powerhouse 09-02 (a commercial buyer
+  vetting after the bid) but distinct in actor, motive and timing, and the rolling
+  file names the pair so the two don't go out the same day. Second useful property:
+  **it does not lean on the Kansas roofing licence, which touch one does.** If
+  ag.ks.gov ever comes back bad, this draft survives and touch one doesn't. Worth
+  generalizing: **when touch one rests on an unverified fact, deliberately build
+  touch two so it doesn't.**
+
+  **Dropped for Shaw:** the institutional absence (he's in neither BBB's Hays
+  roofing category nor the Hays Chamber directory, while other local roofers are),
+  which touch one's own note had nominated as the natural second touch. Killed on
+  the middle reason and it's the one worth keeping: **the honest reply to it is "so
+  put me in the Chamber directory," which costs a couple hundred a year and is not
+  what we sell. An email whose best answer argues for a cheaper solution than ours
+  is an email working against us.** Also findability (most worn mechanism here) and
+  it points at an absence rather than a strength.
+
+  **Why Guthrie was held, and I think this is the right call rather than a
+  shortfall.** His first touch went 09-02, so he isn't due. Every second-touch
+  angle I could build either repeats the shape of his own first email (already
+  "here is a lane your word of mouth cannot reach") or reuses a mechanism this seat
+  ran on somebody else within two weeks. Worked through and rejected: the
+  county-reach substitute opener written into his own outreach.md
+  (ceiling-of-word-of-mouth, Brezden 08-21 / Hero AC 08-31), the planned-work half
+  of his book (two-service-lines, Freedom 08-20 / BGS 08-30), the Kansas-has-no-
+  statewide-plumber-licence credential point (credential-with-nowhere-to-live,
+  Nelson's 08-31), the parked Elburn IL domain carrying his name (name-intent,
+  Bilskie 08-31 / Johnston 09-02, and I refused Kuberra's mirror image on 09-02),
+  old-housing-stock sewer laterals (demand-that-never-forms, Bilskie 09-02), and a
+  second-opinion-call angle that was genuinely new but is still a reach argument,
+  which is exactly what touch one already was. **Correction to my own 09-02 lesson:
+  "a documented substitute opener is a second touch already half written" is true
+  only when the substitute's mechanism is fresh. Guthrie's isn't, and I wrote it
+  down as a fallback for a wrong premise, not as a good angle.** Told Kevin plainly
+  in the rolling file rather than skipping quietly.
+
+  **Also caught: the second touches aren't the same shape as each other either.**
+  My first instinct for Guthrie was a second-opinion caller and for Shaw a
+  professional referrer, which would have been two "here's a category of caller you
+  can't be reached by" emails out of one inbox in one run. The 08-19 in-batch
+  sameness rule caught it. Half of why Guthrie is held.
+
+  **Kit gap named explicitly for the first time, in both rolling files: there is no
+  website-track case study.** Both one-sheets in `collateral/case-study-onesheets.md`
+  are Complete System lead-response stories (TFP, Finish Coat), and **18 of the 34
+  prospects in the held lane are website track**, so the proof piece I'm told to
+  reach for argues a different offer than the email does. It is the real reason
+  website drafts keep linking the live case-studies page generically and stopping
+  there. Asked Kevin for one website build with a number attached. Per the doctrine
+  a missing kit item is a written flag, not a workaround, so this is that flag.
+  Both one-sheets still read `status: draft-awaiting-kevin`, unchanged since 08-19.
+
+  **Verification notes:** all four dated first-touch approval files were already
+  `status: superseded`, nothing to close. Left
+  `2026-08-21-followup-drafts-held-lane.md` (already superseded 09-02) and
+  `2026-08-28-realestate-batch-01-cold-emails.md` (different workflow) alone.
+  Regenerated `approvals/ROLLING-first-touch-drafts.md` **explicitly empty** per
+  the 08-25 hygiene ruling, and `ROLLING-followup-held-lane.md` from live files:
+  **34 at `followup: held`, 32 with a `followup-1.md`**, the two without being
+  Guthrie (held today) and sp-lawn-care-bangor-me (permanently excluded, Kevin owns
+  Karl's thread). **Nothing in the held lane has been sent in twelve days**, which
+  is now the more useful number than the draft count.
+
+  Track breakdown: 1 website second touch. Standard sweep on body text only (em
+  dash, en dash, bracket placeholder, retired package names, third-person
+  Kevin/Viridia, `$`, "guarantee", the 84% stat, British spellings) — clean on
+  every check. Body is 151 words, in the recent band.
+
+  **Next run:** check `stage: enriched` first, regenerate both rolling files from
+  live state, and **write Guthrie's second touch** if a non-worn mechanism has
+  turned up or Montague's fetch access to HutchConnect/BBB/KS SOS has broadened
+  (his owner first name is still unresolved, only ever "P. Guthrie"). Upstream is
+  still the whole story: 93 at `stage: found`, fifteen straight days of growth, and
+  the email gate rather than enrichment effort is what's holding them.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work rule.
