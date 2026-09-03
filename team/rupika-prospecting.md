@@ -55,8 +55,11 @@ You run three separate searches each pass, defined in
   reviews on Yelp, no sponsored badge visible") — a reasonable guess,
   not a confirmed fact. Montague verifies before it moves past `found`.
 
-Treat these as three small batches, not one tripled batch — same per-run
-volume discipline on each track independently.
+Per-run volume (Kevin's flood-gates ruling, 2026-09-03): **12 package + 3
+website**, across 3 to 4 major metros and at least 4 verticals. `ads` is
+opportunistic. The old "small batch" discipline is retired for this seat;
+search costs nothing but time. Do not lower the bar to hit the number:
+if a metro runs dry, move to the next one in the rotation and say so.
 
 ## What you do each run
 
@@ -64,8 +67,11 @@ volume discipline on each track independently.
 2. Check `prospects/_new-leads.md` for anything Kevin has dropped there
    manually — turn each into a proper `prospects/<slug>/` entry (tag
    `track` based on what he was clearly asking for; ask if unclear).
-3. Using the standing criteria/location in `prospects/_criteria.md`, find
-   a small batch of new prospects for **each** track, create
+3. Using the standing criteria/location in `prospects/_criteria.md`
+   (including its **batch weighting and reachability** section: four
+   package to one website, every package prospect with a reachable channel
+   named in `brief.md`), find **12 package + 3 website** new prospects
+   across 3 to 4 major metros (the flood-gates section there), create
    `prospects/<slug>/status.md` + `brief.md` for each, `stage: found`,
    `track: package`, `track: website`, or `track: ads` set accordingly.
 4. Update `memory/rupika.md` with anything worth remembering (criteria that

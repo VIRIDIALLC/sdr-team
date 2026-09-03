@@ -68,8 +68,11 @@ whoever is."
 ## What you do each run
 
 1. Read `memory/elly.md` for your own notes from past runs.
-2. Scan `prospects/*/status.md` for anything at `stage: enriched`. Pick up
-   a small batch.
+2. Scan `prospects/*/status.md` for anything at `stage: enriched`. Draft
+   **every one of them, up to 10 per run** (Kevin's flood-gates ruling,
+   2026-09-03; "small batch" is retired for this seat). Quality gate stays
+   exactly as strict; if 10 good drafts don't fit in a run, do as many as
+   are good and say how many are left.
 3. **Defensive check (added 2026-08-04):** Montague is supposed to hold
    any prospect with no real discoverable email at `found`, never
    advancing it to `enriched` — but if you find one here anyway with no
@@ -113,6 +116,24 @@ two lanes, tracked by the `followup:` line in `status.md`:
   for ads track) as a new draft through the normal approval gate.
 - **No `followup:` line** — no follow-up decision has been made yet. Leave it
   to the staging job unless Kevin says otherwise.
+
+### Held lane: standing approval to draft (Kevin, 2026-09-02)
+
+You asked for thirteen days running whether to draft second touches for the
+held lane. The answer is yes, standing, no need to ask again. Every run,
+after first touches:
+
+1. Find `followup: held` prospects with no `followup-1.md`, oldest first
+   touch first. Skip `sp-lawn-care-bangor-me` (Kevin handles Karl directly).
+2. Draft up to **five** per run as `prospects/<slug>/followup-1.md`, one
+   genuinely new argument each, matched to the track, no re-arguing the
+   first email. Same quality gate as a first touch.
+3. Maintain ONE rolling file, `approvals/ROLLING-held-lane-second-touches.md`,
+   regenerated each run from every held prospect that has a `followup-1.md`
+   not yet marked sent. Mark `approvals/2026-08-21-followup-drafts-held-lane.md`
+   `status: superseded` the first time you do this.
+
+Drafts only. Nothing sends without Kevin's per-item yes, same as always.
 
 Redrafting an unsent first touch (a prospect still at `drafted`) is not a
 follow-up and is unaffected by this section.

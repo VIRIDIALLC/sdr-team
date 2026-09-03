@@ -171,6 +171,75 @@ fit, just not reachable by email right now), and move on. This mirrors
 the website-gap and ads-activity gates below — a gate that protects the
 next agent's time, not a reason to quietly drop a real prospect.
 
+### Email-gate hold with a confirmed phone = call-ready (Kevin's ruling, 2026-09-02)
+
+Kevin is cold calling as the primary play. On 2026-09-02, 64 email-gate
+holds were sitting at `found` with a confirmed phone number and 48 of them
+with an owner's name, invisible to him because "no email" read as "dead."
+That is the opposite of what he asked for. A prospect you cannot email but
+CAN call is not held, it is call-ready.
+
+When the email gate fails, before you move on:
+
+1. If the phone is confirmed in at least two independent sources, add
+   `call_ready: yes` to the `status.md` frontmatter (under `quote_stage`),
+   and make sure `enrichment.md` leads with the CALL CARD (Ask for / Phone /
+   Response / Hook). Write `call_ready_source: <the two sources>` next to it.
+   Stage stays `found`. One source only, or a number that conflicts across
+   sources: leave `call_ready` off and say why in the log.
+2. Regenerate `CALL-READY.md` at the repo root from every prospect with
+   `call_ready: yes` (the live list, not this run's additions), in this
+   order: `track: package` in Phoenix or LA metro first, then `package`
+   elsewhere, then `website` and `ads`. Same table shape as `CALL-LIST.md`
+   (Prospect / Ask for / Phone / Hook). One rolling file, regenerated every
+   run, never a dated copy (Kevin's 08-25 rule). If nothing is call-ready,
+   write it explicitly empty. Put `Last regenerated` at the top.
+3. Each run, also sweep a few of the EXISTING email-gate holds at `found`:
+   any with a two-source phone gets the flag too, so the 2026-09-02 seed
+   render of `CALL-READY.md` (regex-built, unverified) is replaced by
+   verified rows within a couple of weeks.
+4. When Kevin logs a call outcome or the prospect later gets an email and
+   advances, drop `call_ready` and it leaves the file on your next render.
+
+`CALL-LIST.md` stays VEGA's (email sequence finished, phone next). Do not
+hand-edit it. `CALL-READY.md` is yours.
+
+### Batch size: up to 15 per run (Kevin's flood-gates ruling, 2026-09-03)
+
+The "small batch, lookups cost money" cap below was written for a paid
+enrichment API. You have no paid API; you have WebSearch, WebFetch and
+Playwright. So the cap is run time, not dollars: **work up to 15 prospects
+per run**, package track first, newest `found` first, then the oldest
+email-gate holds for the call-ready sweep. If Kevin has opened the
+environment's network access (he was asked to on 2026-09-03), direct
+fetches of prospect sites, BBB, Facebook and state license lookups will
+start working and the email gate will start passing; lead your memory
+entry with one line saying whether fetches worked this run, so Kevin can
+see the switch took effect without reading the whole note.
+
+### Batch selection: package track first (Kevin's ruling, 2026-09-02)
+
+When picking your batch from `stage: found`, take `track: package`
+prospects before `website` or `ads`, and Phoenix/LA metro before other
+markets. The stated priority is Complete System clients in Phoenix and LA;
+on 2026-09-02 both of that day's Phoenix/LA package prospects were held on
+the email gate while two Kansas website builds reached Kevin's queue. The
+gate was filtering out the priority and passing the secondary lane.
+
+### Enrichment databases: tested and not for this ICP (2026-09-02)
+
+Vibe Prospecting (Explorium) and Clay were both tested against real
+email-gate holds on 2026-09-02. Vibe matched "Desert Chill AC & Heating"
+(Anthem AZ) to an ice cream van company in Dubai and "MMP Roofing" (Beckley
+WV) to a civil contractor in South Africa; two others returned nothing. An
+Arizona 1-to-10-employee HVAC/plumbing/roofing search returned an air
+purifier retailer, a software company and a media company. Clay cannot
+start without a domain, which is the one thing these prospects lack. Both
+are LinkedIn-derived B2B databases and owner-operator trades shops are not
+in them. Do not use either for the email gate; the call-ready route above
+is the answer. If Kevin wires a directory-grade source (a local-business
+data provider, not a B2B one), this section gets rewritten.
+
 ## Website-track quality gate
 
 For `track: website` prospects, Rupika's "Website status" note in
@@ -254,15 +323,17 @@ along.
 
 1. Read `memory/montague.md` for your own notes from past runs.
 2. Scan `prospects/*/status.md` for anything at `stage: found`. Pick up a
-   small batch (enrichment lookups can cost real money per call — cap batch
-   size, don't process the whole backlog in one run).
+   batch of **up to 15** (see "Batch size" above; the old money-based cap
+   is retired, there is no paid API on this seat).
 3. For each, research/fill in `enrichment.md` in that prospect's folder:
    company summary, best contact, why they fit, any relevant recent
    context — for `track: website`, also the verified website-gap check
    above; for `track: ads`, the verified ad-activity check above. Confirm
    a real email exists (the required gate above) before advancing
    `stage` to `enriched` — hold at `found` if one genuinely can't be
-   found.
+   found. **If it can't be found but the phone is confirmed in two
+   sources, mark it `call_ready: yes` and regenerate `CALL-READY.md`**
+   (section above).
 4. Update `memory/montague.md` with anything worth remembering.
 5. Commit your changes with a clear message.
 

@@ -3,7 +3,31 @@
 Source of truth for what Rupika searches for each run. Two tracks — every
 prospect gets tagged with which one it's for (see `_template/status.md`).
 
-## PRIORITY (2026-08-09, Kevin): actual clients first — Phoenix + L.A.
+## FLOOD GATES (Kevin's ruling, 2026-09-03) — every major metro, big batches
+
+Kevin, 2026-09-03, after a zero-draft day: *"All metro areas big cities. Open
+the flood gates."* This supersedes the Phoenix/LA-only restriction below for
+the package track. Phoenix and LA stay first in the rotation because he can
+drive to them, but they read as picked over with the search technique in
+use (110 queries on 09-03 for 2 hits), so the hunt is now national:
+
+- **Markets (package track):** every US metro of roughly 500k+ people. Work
+  them in rotation, 3 to 4 metros per run, and log in `memory/rupika.md`
+  which metro+vertical combos you covered so the next run moves on. Start
+  with the West and Sun Belt (Phoenix, LA, San Diego, Inland Empire, Las
+  Vegas, Tucson, Denver, Salt Lake, Sacramento, Bay Area, Portland,
+  Seattle, Dallas, Houston, Austin, San Antonio, Albuquerque, Oklahoma
+  City, Tulsa, Kansas City, Atlanta, Charlotte, Nashville, Tampa, Orlando,
+  Jacksonville, Miami) and then the rest.
+- **Batch size per run: 12 package + 3 website.** "Small batch" is retired
+  for Rupika. She is search-only, so volume costs nothing but run time.
+  Every prospect still needs a named pain signal and a reachable channel
+  (below); volume is not a license to lower the bar, it is a reason to
+  search more places.
+- **Vertical spread:** cover at least 4 verticals per run so one dry
+  vertical in one metro doesn't zero the batch.
+
+## PRIORITY (2026-08-09, Kevin): actual clients first — Phoenix + L.A. (markets superseded 09-03, see above)
 
 The #1 motion right now is **actual (recurring) clients for the Complete System** —
 home-service owners who visibly have the pain (missed calls, slow follow-up, no system,
@@ -13,6 +37,23 @@ NOT nationwide (the US-wide locations in the tracks below are superseded for the
 Keep a **mix**: the web-design (one-time) track still runs as a secondary lane, but weight the
 volume toward actual Complete System clients, not one-time web leads. Every prospect needs a
 named pain signal (see the skill) — no signal, not a prospect yet.
+
+## Batch weighting and reachability (Kevin's ruling, 2026-09-02)
+
+- **Per run: four `package` prospects for every one `website`.** Runs had
+  drifted to three website for every two package, the reverse of the
+  priority above. `ads` stays opportunistic (only when you happen to see a
+  clean fit), not a quota.
+- **A package prospect must have a reachable channel written into
+  `brief.md` at sourcing time**: a real domain, OR a listed email, OR a
+  confirmed phone number plus the owner's name. Say which. A prospect with
+  none of the three is not a prospect yet. Reason: 88 prospects were stuck
+  at `found` on 2026-09-02 because Montague's email gate failed, and most of
+  them had no domain to find an email on. Sourcing for reachability is
+  cheaper than enriching into a wall.
+- **Phoenix and LA first in the rotation, then every other major metro**
+  (flood-gates ruling above). Small markets stay legitimate for the website
+  track.
 
 ## Track: package
 
