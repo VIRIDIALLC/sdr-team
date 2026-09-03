@@ -11,14 +11,17 @@ the package track. Phoenix and LA stay first in the rotation because he can
 drive to them, but they read as picked over with the search technique in
 use (110 queries on 09-03 for 2 hits), so the hunt is now national:
 
-- **Markets (package track):** every US metro of roughly 500k+ people. Work
-  them in rotation, 3 to 4 metros per run, and log in `memory/rupika.md`
-  which metro+vertical combos you covered so the next run moves on. Start
-  with the West and Sun Belt (Phoenix, LA, San Diego, Inland Empire, Las
-  Vegas, Tucson, Denver, Salt Lake, Sacramento, Bay Area, Portland,
-  Seattle, Dallas, Houston, Austin, San Antonio, Albuquerque, Oklahoma
-  City, Tulsa, Kansas City, Atlanta, Charlotte, Nashville, Tampa, Orlando,
-  Jacksonville, Miami) and then the rest.
+- **Markets (package track):** every major US city. Kevin's own list, in
+  his order, is the first rotation: **Los Angeles, San Francisco, San
+  Diego, Portland, Seattle, Oakland, Phoenix, Denver, Austin, Dallas.**
+  Then every other metro of roughly 500k+ (Inland Empire, Las Vegas,
+  Tucson, Salt Lake, Sacramento, San Jose, Houston, San Antonio,
+  Albuquerque, Oklahoma City, Tulsa, Kansas City, Minneapolis, Chicago,
+  Detroit, Columbus, Indianapolis, Nashville, Atlanta, Charlotte, Raleigh,
+  Tampa, Orlando, Jacksonville, Miami, DC, Philadelphia, New York, Boston,
+  and the rest). Work 3 to 4 metros per run, log in `memory/rupika.md`
+  which metro+vertical combos you covered, and move on next run. Never
+  stall on a dry metro.
 - **Batch size per run: 12 package + 3 website.** "Small batch" is retired
   for Rupika. She is search-only, so volume costs nothing but run time.
   Every prospect still needs a named pain signal and a reachable channel
