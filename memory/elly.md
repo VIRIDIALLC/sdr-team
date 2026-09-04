@@ -3020,3 +3020,139 @@ no feedback yet on those specifically)
   the email gate rather than enrichment effort is what's holding them.
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work rule.
+
+- **2026-09-04 (this run) — 6 drafted, the whole enriched queue, and the first
+  real batch in two weeks.** `git fetch origin` first per CLAUDE.md: origin/master
+  had moved to c2a6e0b (Montague's 09-04 enrichment pass on top of two Rupika find
+  batches, 11 new prospects). Container started in a **detached HEAD** with local
+  `master` one commit behind, the same stale-ref pattern logged every run since
+  08-13; plain `git checkout master && git merge --ff-only origin/master` fixed it.
+  `_fleet-state.md` was generated 2026-09-04 08:14 UTC so ground truth was live,
+  but note it predates today's three prospect commits and reports `enriched 1`
+  when the real count was 7. **The fleet file supersedes dated notes, not the
+  files themselves; when it is older than the last commit, count the folders.**
+
+  **Montague advanced six after twelve days of advancing zero or one.** Scanned
+  all 226 prospect folders: 98 found, 7 enriched, 0 drafted, 2 approved, 110 sent,
+  6 closed, 3 dismissed. Of the 7 enriched, jc-heating-cooling-amarillo-tx is
+  still Kevin's own email-verification hold from 2026-08-03 (32 days) and already
+  drafted, correctly skipped again. Drafted the other six, all `track: package`,
+  all with a real or grounded-guess email so no defensive-check skips:
+  **airbest-home-services-puyallup-wa, akt-landscaping-seattle-wa,
+  anthem-electric-alpine-ca, gibson-roofing-damascus-or,
+  green-dreams-landscape-san-diego-ca, nombrano-construction-phoenix-az.**
+  Five of the six sit in the metros Kevin put first in the rotation on 09-03.
+
+  **The defining fact of this batch: only ONE of six could cite a response-time
+  number, and each of the other five failed differently.** This is the cleanest
+  illustration yet of the three-bucket convention the team has built case by case:
+  - **AirBest — unconfirmed but not contradicted → use as a question.** Montague
+    couldn't reproduce the ~3hr figure (Google doesn't index Yelp's widget) but
+    found nothing against it. The 08-13 amendment's exact case. Hook used.
+  - **AKT — actively unstable → drop entirely.** 4/5/6/10hr all surfaced in one
+    search pass with no way to isolate which snippet was AKT's. CVA 08-15 bucket.
+  - **Anthem — actively contradicted → drop entirely.** 4 days/126 locals vs 10
+    min/61 locals across two fresh checks. Not drift, a contradiction.
+  - **Green Dreams — real but moving → don't quote it, praise it qualitatively.**
+    Reconfirmed at ~3hrs, faster than the sourced ~1 day. Montague read it as a
+    rolling metric and asked for qualitative framing. **New sub-case worth
+    naming: a number can be reliable and still be unquotable, because it will be
+    stale by the time Kevin sends.**
+  - **Gibson — never had one.** Sourced on review-count-vs-tenure and a complaint
+    pattern, so the underlying-problem opener was correct from the start.
+
+  **Six distinct mechanisms, deliberately, because six package drafts leaving one
+  inbox on one day is the worst in-batch sameness risk this seat has ever had.**
+  The 08-19 rule (check the other drafts in your own current batch, not just the
+  last one in the track) did most of the work here:
+  - **AirBest — you already paid for the expensive half.** 15+ indexed pages with
+    a separate service-area landing page per town, which is a real, unusual
+    investment for a shop with five Yelp reviews. The email takes his marketing
+    seriously and argues the last ten feet. **Complimentary framing beats
+    corrective framing on the identical mechanism** — the dropped angle was
+    "your marketing outran your capacity," the same observation stated as a
+    criticism, which invites him to defend his capacity instead of agreeing.
+  - **AKT — you can't hire a desk for six weeks a year.** Seattle landscaping
+    demand arrives in one spring lump while an owner-operator's intake is flat
+    all year, so the same response time is free in November and loses the job in
+    April. **Genuinely new mechanism for this repo: demand shape, not demand
+    volume.** It also has the property that it needs nothing verified beyond his
+    trade and his city, which is exactly what you want when the metric is dead.
+  - **Anthem — your customers and your leads get two different companies.**
+    Montague flagged (as a caution) that the "responsive" review sentiment comes
+    from booked jobs, a different channel from an inbound quote request. Read the
+    other way that IS the email: after 19 years it is still one man and one
+    phone, so the un-hired queue behind the hired. **Most face-saving frame I
+    have found — it says his service is good and the gap is purely structural at
+    intake.** Nearest neighbors (KJC 08-28, Passionate Plumber 08-26) are both
+    about the queue itself; this one is about two populations getting two
+    companies. Worth reaching for again.
+  - **Gibson — the callback with nowhere to land.** 43 years, and a homeowner's
+    question about a finished roof arrives when Steve and Josh are both on other
+    roofs. **The mechanism is verified by a dated BBB complaint the body never
+    mentions** (Trevor R., 1★, 11/23/2023, "only gave excuses," escalated to a
+    BBB complaint and a lawsuit threat before anyone inspected). Quoting it would
+    have been the one door that isn't face-saving (Reliant 08-19), so the email
+    argues the mechanism underneath and explicitly says nobody is ignoring
+    anyone. **Also declined Montague's CALL CARD hook for exactly this reason:
+    hers opens by telling a man people speak badly of him. That works on the
+    phone where tone carries it, and not in cold text.**
+  - **Green Dreams — you measure which number rang, not which one paid.** He runs
+    separate tracking numbers on Yelp and on greendreams.land. **Hardest draft of
+    the batch because he is genuinely good at the thing we sell** (fast replies,
+    166 photos, real site, call tracking), so the pitch had to invert: flatter the
+    sophistication accurately, then name the half a tracking number structurally
+    cannot answer. **Reusable principle: against a competent operator, find the
+    question their own sophistication proves they are asking and cannot answer.**
+  - **Nombrano — at zero the math is different.** Newly licensed 2025, no review
+    history anywhere, one-page site, personal 626 cell. A missed lead is a
+    percentage of everything rather than a rounding error. Told Kevin plainly this
+    is the weakest of the six and to send it last or skip it: guessed email on a
+    two-week-old placeholder domain that may have no mailbox at all.
+
+  **Held lane: unchanged and correctly so.** 34 at `followup: held`, 32 with a
+  `followup-1.md`. The two without are sp-lawn-care-bangor-me (permanently
+  excluded, Kevin owns Karl's thread) and **guthrie-plumbing-hutchinson-ks, held
+  for a second run**. Re-tested him against today's four new mechanisms before
+  holding: front-door/back-door collapses into word-of-mouth-ceiling for a
+  no-website prospect, seasonality (a Kansas freeze event) is the same
+  "so they search" shape his first touch already ran, attribution needs marketing
+  he doesn't have, and at-zero is wrong for twelve years in. His first touch went
+  09-02, so he isn't due. Same conclusion as 09-03 and for the same reason, which
+  is the right answer rather than a shortfall.
+
+  **Approvals hygiene:** all four dated first-touch files were already
+  `status: superseded`, nothing to close. Regenerated
+  `ROLLING-first-touch-drafts.md` from live state (6 at `drafted`, table plus send
+  order plus the mechanism list). `ROLLING-followup-held-lane.md` was still
+  accurate in substance so it got a targeted refresh (date, and twelve days
+  becomes thirteen) rather than a rewrite. Verified the proposed GHL standing
+  approval in `handoffs/2026-09-02-kevin-pipeline-rulings.md` still reads
+  `status: proposed`, so per-item approval stands and nothing here sends.
+
+  **Upstream, still the ceiling:** 98 at `stage: found`, up from 93, sixteen
+  straight days of growth. Today was the best enrichment day in two weeks and the
+  found count still grew. Both asks repeated in the rolling file: filter for a
+  reachable email at sourcing time, and rule on whether email-gate failures with a
+  verified phone are a call list for Kevin rather than dead inventory.
+
+  Track breakdown: 6 package. Standard sweep on body text only (em dash, en dash,
+  bracket placeholder, retired package names, third-person Kevin/Viridia, `$`,
+  "guarantee", the 84% stat, British spellings) — clean on every check after two
+  real fixes: "licence" in Nombrano's body and "behaviour"/"formalised" in AKT's
+  notes. The one "Kevin" hit in a body is AKT's owner's own first name, which is
+  correct and flagged for Kevin in the draft and the rolling file. Bodies run
+  110 to 140 words, in the recent band.
+
+  **Next run:** check `stage: enriched` first, regenerate both rolling files from
+  live state, and **write Guthrie's second touch** if a non-worn mechanism has
+  turned up (his owner first name is still unresolved, only ever "P. Guthrie").
+  If Kevin sends today's six they will land in the `followup: held` lane as
+  package-track prospects, which the lane has almost none of, so the second-touch
+  angles are already named in each draft's dropped-angle block: AirBest's
+  marketing-outran-capacity, AKT's residential-vs-commercial, Anthem's missing
+  front door, Gibson's second-generation handoff, Green Dreams' long-sale
+  follow-up, Nombrano's contact form with nothing behind it.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.

@@ -2110,3 +2110,115 @@
   run through the named follow-up search — worth a fast check next visit.
   Dodge City KS electrical ran cold (Pruitt Electric LLC has a real site,
   pruittservices.net).
+
+- (run 2026-09-04) Scheduled run, two tracks (package + website — ads track
+  not requested per this run's task instructions). `git fetch` showed no new
+  history since the last local sync; no stale-ref symptom this time. Ran both
+  tracks as parallel background Agent-tool sub-agents (research + file-write
+  access, briefed to read `_criteria.md`/templates/`memory/rupika.md`'s tail/
+  `ls prospects/` themselves rather than being hand-fed the lists), committing
+  the website-track batch as soon as it landed (per the pattern since
+  2026-08-27) while the package-track agent (larger job, targeting 12 hits)
+  was still running.
+- (website track, run 2026-09-04) 3 hits, three brand-new markets: WDM, LLC
+  Garage Doors & More (Hattiesburg MS, garage doors, pure Facebook/directory-
+  only — Instagram, BBB, home-builders-association listing, no owned domain
+  anywhere — owner Will Robison HIGH confidence via LinkedIn + an independent
+  SignalHire profile agreeing), Clean Earth Landscaping (Farmington NM,
+  landscaping, pure Facebook/directory-only, owner Brian Meikle Jr. HIGH
+  confidence via a personal gmail tied to the listing + two corroborating
+  directories; a near-name-collision with "Scratching the Earth Landscaping,"
+  a real unrelated live-site competitor in the same market, was checked and
+  ruled out), Lloyd Miller's Painting (Great Falls MT, painting, 60+yr family
+  business, pure Facebook-only — owner name FLAGGED not confirmed: search
+  narrative says founder Lloyd J. Miller died 2018 and the business
+  continues under son Lloyd Robert Miller, but that's AI-summary text only,
+  not a primary-source hit; flagged hard for Montague to verify against MT
+  contractor registration/BBB/LLC filing, plus two collision risks — the
+  founder's own 2018 obituary and an unrelated "Lloyd W. Miller Architect"
+  on LinkedIn). No literal `yelp.com/biz/...` URL was seen for any of the
+  three, so their `## Links` blocks correctly carry only `maps:` lines, no
+  fabricated `yelp:` line. New standing markets-tried additions: Great Falls
+  MT, Farmington NM, Hattiesburg MS — all three read as productive but only
+  partially worked (each still has several untried verticals — Great Falls:
+  roofing/electrical/garage doors; Farmington: HVAC/plumbing/roofing/pest
+  control/painting/garage doors; Hattiesburg: HVAC/plumbing/electrical/pest
+  control/landscaping/painting). Cold this run: Great Falls MT plumbing
+  (Grizzly, Action, 4Aces, Kindred — all real sites), HVAC (MT Cool HVAC —
+  real site), pest control (Bug Doctor, All American Pest Control — real
+  sites); Farmington NM electrical (Nightlight, Four Corners, ROSS/WES — all
+  real sites; Samon's resolved to a real hardware-store site, not a
+  service business), most of landscaping (Kauppi Kustom, Clean Cut's — real
+  sites); Hattiesburg MS roofing (Gable, Matlock, Eddie Pearson, B&A — all
+  real, well-built sites, reads fully picked-over there), most of garage
+  doors (Overhead Door Co. and Underwood Door Co. — real sites; E-Z Garage
+  Door Services is a live candidate but already queued as
+  `ez-garage-door-services-petal-ms`, correctly skipped as a duplicate).
+  Banked, not queued (worth a follow-up next time): Magic Mike's Painting
+  Galore and More (Great Falls MT, resolves to a Wix subdomain, not checked
+  closely for whether it's genuinely live or an abandoned free-builder
+  page), Matthew's Painting (Great Falls MT, confirmed pure Facebook-only
+  real candidate, but owner name fully unresolved — a similarly-themed
+  LinkedIn "Matt Jansen — Owner, Matt the Painter" was deliberately NOT
+  attributed to this business, too speculative — held back in favor of
+  Lloyd Miller's Painting for this batch's painting slot, worth queuing
+  directly with owner name left unconfirmed if Great Falls gets revisited).
+- (package/priority track, run 2026-09-04) First run under the 2026-09-03
+  flood-gates ruling actually opening fresh metro ground — Phoenix/LA are
+  heavily picked over per dozens of prior runs, so this run worked San
+  Diego, Portland, Seattle, and Oakland/East Bay (Kevin's own metro list,
+  next in rotation after Phoenix/LA). 8 hits (short of the 12 target — the
+  sub-agent hit this session's shared WebSearch budget cap mid-pass on
+  Oakland/SF Bay Area, stopped rather than pad with weak hits; worth
+  budgeting a fresh WebSearch allowance or splitting Oakland/SF into its
+  own run next time), 5 verticals: Anthem Electric (Alpine CA/San Diego
+  metro, electrical, owner Kenneth W. Caron, "responds in about 4 days"/126
+  quote requests, reachable via phone+owner name, name-collision risk vs.
+  unrelated Anthem AZ/Chubbuck ID entities flagged), Green Dreams Landscape
+  Design + Build (San Diego, landscaping, owner Ryan, "responds in about 1
+  day" + 37 reviews/7yrs tenure gap, reachable via confirmed domain,
+  flagged as possibly boutique/multi-crew rather than solo operator — needs
+  Montague to confirm headcount stays in ICP), Gibson Roofing (Damascus
+  OR/Portland metro, roofing, owner Steve Gibson, 40+yr tenure vs. only 24
+  reviews + mixed reviews citing follow-up/customer-service issues,
+  reachable via confirmed domain), All Service Painting Inc (Portland,
+  painting, owner Allen Riffe, 25+yrs, TWO independently corroborated
+  callback-failure complaint quotes — the sharpest version of this signal
+  — reachable via confirmed domain, high confidence), AKT Landscaping
+  (Seattle/Burien, landscaping, owner Kevin Tran, 20+yrs, "responds in
+  about 4hrs" + review-count-vs-tenure gap, reachable via listed email +
+  phone + confirmed owner name, no dedicated domain — only a Google Sites
+  page), EZ Electrical (Everett WA/Seattle metro, electrical, "New on
+  Yelp"/genuinely small shop, "responds in about 2 days", reachable via
+  confirmed domain, owner name unconfirmed — a review names "Igor," flagged
+  plus a name-collision risk vs. an unrelated Vancouver WA "EZ Electric
+  LLC"), AirBest Home Services (Puyallup WA/South Sound-Seattle metro,
+  HVAC, "responds in about 3hrs"/5 reviews, reachable via confirmed domain,
+  owner name unconfirmed — flagged, also flagged that Puyallup is ~35mi
+  south of Seattle proper, same general metro labor market as Tacoma/
+  Auburn, worth Kevin confirming that counts as in-rotation), Edward Romero
+  Roofing (Hayward CA/Oakland-East Bay metro, roofing, owner Edward I.
+  Romero, ~50yr tenure vs. only 15 reviews + a direct named callback-
+  failure complaint, reachable via phone+owner name, high confidence).
+  Notable drops: Charlie Hall Plumbing, HVAC Experts, The A/C Guy, Air Pro
+  Solutions, Interstate Pest Management (multi-location/4-generation
+  franchise scale), Advanced Garage Doors (multi-metro Seattle-to-
+  Bellingham footprint), Medina's Plumbing (National City — unresolved
+  multi-entity name collision), "Andeds Painting" (Tacoma — never resolved
+  to a real business across follow-ups, treated as a likely search-snippet
+  hallucination artifact), Fix & Go Garage Door (Bellevue — real complaint
+  but failed the reachability rule: no owner name and no confirmed domain,
+  only a bare phone number). Empty combos this run (avoid repeating
+  as-is): San Diego (garage door, restoration, most suburb-scoped plumbing/
+  roofing across Chula Vista/El Cajon/Escondido/Oceanside/Vista/National
+  City/Poway/Spring Valley), Portland (garage door, restoration, most
+  Gresham/Hillsboro/Beaverton/Tigard/Oregon City/Lake Oswego passes beyond
+  the two hits), Seattle (garage door, roofing — several strong-looking
+  candidates all too scaled or contradicted by reviews, most Tacoma/Renton/
+  Kent/Everett/Bellevue passes beyond the three hits), Oakland/SF (HVAC,
+  electrical, plumbing, pest control — and San Francisco proper never
+  yielded a queueable hit; South SF/Daly City/pest control ran out of
+  budget mid-pass, worth a dedicated follow-up). New standing metro-
+  rotation additions: San Diego, Portland, Seattle, Oakland/East Bay
+  (all only partially worked — plenty of untried suburb/vertical ground
+  remains in each, especially SF proper and South Bay Area).

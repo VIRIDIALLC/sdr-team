@@ -2959,3 +2959,138 @@
     evidence against this Garden City prospect's website-gap.
   - Backlog after this run: no genuinely untouched `stage: found`
     prospects remain.
+
+- (2026-09-04 run) `_fleet-state.md` timestamp fresh (08:14 UTC, same day) —
+  trusted normally. Clean git state — `git fetch origin` first, working tree
+  already synced to `origin/master`. Scanned `prospects/*/status.md` for
+  `stage: found` with no `(Montague)` log entry — 11 matched, exactly
+  today's two Rupika batches (8 package: AirBest Home Services/Puyallup WA,
+  AKT Landscaping/Seattle WA, All Service Painting/Portland OR, Anthem
+  Electric/Alpine CA, Edward Romero Roofing/Hayward CA, EZ Electrical/Everett
+  WA, Gibson Roofing/Damascus OR, Green Dreams Landscape/San Diego CA; 3
+  website: Clean Earth Landscaping/Farmington NM, Lloyd Miller's Painting/
+  Great Falls MT, WDM Garage Doors/Hattiesburg MS) — within the 15/run cap.
+  Used 11 parallel research subagents (pure-research, no file writes), then
+  wrote all enrichment.md/status.md updates myself for consistency. This is
+  the first batch under the 2026-09-03 flood-gates ruling opening every
+  major metro — first hits from genuinely new ground (Seattle, Portland,
+  San Diego/East Bay, plus small-market website-track towns) rather than
+  the heavily-picked-over Phoenix/LA rotation.
+
+  Result: 7 of 11 advanced to `enriched` (AirBest Home Services, AKT
+  Landscaping, Gibson Roofing, Green Dreams Landscape, EZ Electrical — all
+  package/website mix per below; Clean Earth Landscaping, Anthem Electric),
+  4 held at `found` on the email gate (All Service Painting, Edward Romero
+  Roofing — both marked `call_ready: yes`; WDM Garage Doors, Lloyd Miller's
+  Painting — neither call-ready). Also swept 2 old email-gate holds from the
+  2026-08-11 hand-picked batch: Nombrano Construction advanced (a live
+  domain now exists that didn't in August — genuine new finding, not a
+  research miss), Camelback Hardscapes marked `call_ready: yes`.
+
+  - **Anthem Electric — the most consequential catch of the run.** Rupika's
+    brief flagged `anthem-electric.net` as an unconfirmed possible domain.
+    Verification found it's DEFINITIVELY a different, unrelated business —
+    "Anthem Electric Inc." in Port Jefferson, NY (owner Andrew Shikora),
+    corroborated across 5 independent sources. Had this gone out as a
+    website line or a domain-pattern email guess, it would have routed
+    outreach to a stranger's business 2,700 miles away. Caught before it
+    reached the record — worth naming as a new, sharper category than the
+    routine "hallucinated domain" cases logged before (Desert Chill
+    2026-09-02, Dave's Plumbing 2026-08-16): those were domains that didn't
+    resolve to anything real; this one resolves to a REAL business, just
+    the wrong one. A collision check on a domain needs to verify identity,
+    not just that the domain is live. Response-time figure on the same
+    prospect also came back actively CONTRADICTED on reconfirmation (4
+    days/126 vs. 10 min/61 across two fresh checks) — dropped per the CVA
+    Exterminators convention. Email gate still passed independently via a
+    real aggregator-listed address, not the wrong domain.
+  - **EZ Electrical:** the collision risk Rupika flagged (an unrelated
+    Vancouver WA "EZ Electric LLC") resolved cleanly via WA L&I's own
+    structured Socrata API data — the most authoritative source available,
+    and a technique worth remembering for any future WA-business collision
+    question. Separately, the "Igor" owner-name lead from sourcing did NOT
+    reproduce on re-verification — traced to unrelated businesses, another
+    instance of the AI-summary-conflation failure mode this pipeline keeps
+    catching. Correctly left the CALL CARD as NO NAME FOUND rather than
+    forcing an inferential match (Erik A. Zagrean, WA L&I's registered
+    principal for the likely parent LLC) onto the card — the domain link
+    was real but not confirmed enough to risk a cold call on.
+  - **Green Dreams Landscape:** Rupika's own "boutique, not a bare
+    operator" ICP-fit concern got a real, decisive answer — CSLB license
+    #1058519 lists the entity as "Sole Ownership," settling the question at
+    the state-record level rather than by inference from review text. Worth
+    remembering as a technique: a state contractor-license entity-type field
+    can resolve a team-size/ICP-fit question that reviews alone can't.
+  - **Clean Earth Landscaping:** a SECOND unrelated name-collision surfaced
+    on top of the one Rupika already flagged ("Scratching the Earth") — a
+    domain that does resolve, cleanearthlandscaping.com, redirects to an
+    entirely different pond-company business in Mt. Juliet, TN. Correctly
+    ruled out via address/phone cross-check rather than assumed to be this
+    prospect's site just because it resolved. The raw-DNS-via-Bash technique
+    (bypasses the egress proxy) was decisive across all three website-track
+    prospects this run — worth continuing to lean on this over WebFetch
+    alone, which keeps 403ing/hitting the proxy.
+  - **Lloyd Miller's Painting — a new category worth naming distinctly:**
+    not a routine email-gate hold. THREE separate open questions stayed
+    genuinely unresolved after a real effort — whether the son (Lloyd
+    Robert Miller, real, corroborated via two independent obituaries) is
+    actually the CURRENT operator of this specific Facebook-page business
+    (the brief's exact business name, "Lloyd R. Miller Painting and
+    Decorating," never appears anywhere except inside AI-search-summary
+    text — real risk of confabulation stitching together true elements);
+    whether the business is even still active (zero dated evidence in the
+    last 1-2 years found anywhere); and whether the one phone number found
+    is even this business (tied to a differently-named listing). Flagged
+    prominently for Kevin rather than left as a routine hold needing a
+    future re-check — this is closer to the Apple Plumbing (2026-08-11)/
+    Reed Overhead Doors (2026-08-31) category of "something more
+    fundamental than missing contact info is unresolved," and probably
+    needs a human judgment call on whether to keep pursuing at all.
+  - **Edward Romero Roofing:** the callback complaint Rupika flagged
+    couldn't be pulled from Yelp directly (as expected) but reconstructed
+    cleanly via Yahoo Local/Birdeye mirrors of the same underlying Google
+    review — dated 12/2025, genuinely recent, stronger than the "years-old
+    anecdote" risk in the brief. Real operational nuance worth carrying
+    forward: license-holder Edward Romero is confirmed, but reviews
+    2019-2025 consistently describe grandson "Eddie" as the one actually
+    running day-to-day work now — noted on the CALL CARD as an alt name to
+    ask for. Also caught and corrected a real tool-conflation error
+    mid-research: an early BuildZoom pull showed the license as suspended,
+    which turned out to be data bleed from an unrelated, actually-troubled
+    business (Edgar Romero Roofing, Van Nuys) — resolved before it reached
+    the record.
+  - **All Service Painting:** corrected the source of both complaint quotes
+    Rupika attributed to Yelp — they actually trace to Angi. Worth a
+    standing note: Rupika's brief.md sometimes labels a complaint-language
+    find "Yelp" generically when the actual indexed source is a different
+    review platform; worth Montague always re-tracing the platform, not
+    just re-verifying the content. Also corrected the tenure figure (1994/
+    32yrs per two independent official-ish sources, not the brief's
+    "1998/25yrs").
+  - **Gibson Roofing:** same pattern as All Service Painting — the specific
+    Yelp review text sourcing flagged couldn't be pulled (Yelp doesn't
+    index review bodies to Google), but an equivalent, dated, directly-
+    quotable complaint turned up on BBB instead, covering the same "slow
+    follow-up" theme. Worth naming as a repeatable fallback: when a Yelp
+    complaint can't be verified, checking BBB's own customer-review section
+    is a real alternate source, not just a dead end.
+  - **CALL-READY.md fully regenerated for the first time since the
+    2026-09-02 seed.** The seed (53 unverified, regex-built rows) had not
+    been touched by any run in the two days since — worth flagging that the
+    "sweep a few existing holds each run" instruction wasn't actually
+    happening. Replaced with 3 real verified rows this run (the seed drop
+    from 53→3 is expected, not data loss — see the file's own note). Also
+    flagged in the new file: apple-plumbing-scottsdale-az should NOT be
+    re-added when swept later — it's a documented dead-end (acquired by Day
+    & Night 7/31/2025), not a real solo-operator prospect anymore, but the
+    2026-09-02 seed still listed it. Worth prioritizing the sweep more
+    consistently in upcoming runs given how far behind it had fallen.
+  - Egress proxy blocked most direct WebFetch attempts again this run
+    (company/guessed domains, BBB, Facebook, CSLB.ca.gov's actual query
+    form (though the base site loaded, a first this run), OR CCB's live
+    portal, WA/MT/NM Secretary of State filings) — same recurring pattern.
+    Raw DNS-via-Bash stayed decisive and unblocked throughout, now the
+    standard technique for every website-gap check.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain (all 4 email-gate holds above stay at `found` by
+    documented gate misses, not backlog).
