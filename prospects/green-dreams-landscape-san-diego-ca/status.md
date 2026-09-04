@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: package
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
 - 2026-09-04 (Montague): verified and advanced to `enriched`. ICP-fit concern resolved in Green Dreams' favor — CSLB license #1058519 lists the entity as "Sole Ownership" (Ryan Christopher North individually), a real owner-operator despite the boutique-reading surface signals. Email office@greendreams.land confirmed directly on their own site, not a guess (email gate PASSED) — note the domain is greendreams.land, not the .com Rupika found. Response-time reconfirmed at ~3hrs (faster than the brief's "1 day," used as a qualitative "fast responder" framing rather than a stale number). Phone (858) 923-8520 confirmed as the Yelp-listed number specifically — the business's own site displays a different number, (858) 422-3477. See enrichment.md.
 
 - 2026-09-04 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track, The Complete System. Hardest of the batch because he is already fast: no number cited, per Montague's recommendation, only qualitative praise. Angle inverts the usual pitch: he runs separate tracking numbers on Yelp and on his own site, so he measures which line rang but not which one produced a signed build. Attribution, not speed. Dropped angle: the length of a design-build sale (close to KJC 08-28).
+- 2026-09-04 (Kevin, via KIREEK): sent to office@greendreams.land.
