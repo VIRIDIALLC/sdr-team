@@ -7,70 +7,31 @@ is a different list (email sequence finished); this one is prospects that
 never had an email to begin with. Say "prep me for a call with <name>" for
 the pre-call card.
 
-**Last regenerated: 2026-09-02, SEED RENDER (Claude Code session, at Kevin's
-direction).** Built from the existing hold notes by pattern match, not by
-Montague's two-source check, so no `call_ready: yes` flags are set yet.
-Rows marked *status log* were pulled from prose, not a CALL CARD. Montague
-replaces this file with verified rows on her runs; until then, glance at
-the record before dialing.
+**Last regenerated: 2026-09-04 (Montague), first real verified render.** The
+2026-09-02 seed render (53 rows, regex-built from prose, not Montague's
+two-source check) has been fully retired — every row below is a real
+`call_ready: yes` flag on that prospect's own `status.md`, set after an
+actual two-source phone check this run or a prior one. This is a big drop
+from 53 rows to 3: that's expected and correct, not a data loss — the seed
+was never verified to begin with, and the standing "sweep a few existing
+holds each run" practice hadn't produced any real verified rows since
+2026-09-02 until today. It will grow gradually as more holds get swept.
+
+**Note on the seed's dropped rows:** most of the 53 seed rows are still real,
+untouched `found`-stage prospects sitting in `prospects/*/status.md` — they
+just don't carry a verified `call_ready: yes` yet. One seed row,
+`apple-plumbing-scottsdale-az`, should NOT be re-added when swept: it's a
+documented dead-end (acquired by Day & Night Air Conditioning 7/31/2025, no
+longer an independent solo-operator prospect) — see its own status.md.
 
 Order: package track in Phoenix/LA metro, then package elsewhere, then
 website/ads.
 
 | Prospect | Track | Ask for | Phone | Source | Hook |
 |---|---|---|---|---|---|
-| apple-plumbing-scottsdale-az | package | — | (480) 425-8282 | brief | — |
-| bright-ideas-painting-los-angeles-ca | package | Jose | (213) 652-2044 | call card | I looked you up and there's no website for Bright Ideas |
-| camelback-hardscapes-scottsdale-az | package | — | 480-600-8011 | brief | — |
-| desert-chill-ac-heating-anthem-az | package | Michael Wood | (623) 340-5938 | status log | — |
-| dk-electrical-services-westminster-ca | package | — | (714) 887-3386 | call card | Your Yelp shows about a 2 hour response time even with a |
-| elite-professional-painting-anthem-az | package | Jaime — first name only, confirmed via multiple independent | (602) 377-0553 | call card | no verified hook — held on the email gate, see below |
-| first-and-local-plumbing-garden-grove-ca | package | Jose Esteban | (714) 719-5231 | call card | Your Yelp shows about a 7 hour response time. Is that still |
-| garcias-landscaping-san-clemente-ca | package | Salomon | (949) 973-0937 | call card | Your customers already trust you enough to wait days for |
-| good-times-plumbing-restoration-chandler-az | package | Hunter James | (480) 525-8095 | brief | — |
-| james-fania-plumbing-dana-point-ca | package | — | (949) 887-4885 | status log | — |
-| jw-painting-cypress-ca | package | — | (562) 833-1369 | status log | — |
-| lang-roofing-bell-gardens-ca | package | Steve Lang | (562) 923-8728 | status log | — |
-| linea-electric-san-pedro-ca | package | Salvatore Poliseri | (310) 871-0976 | brief | — |
-| mh-painting-tustin-ca | package | Mario | (714) 470-4129 | call card | Your reviews say you're quick to respond and always show |
-| mjb-electric-camarillo-ca | package | Michael Alan | (805) 987-4272 | status log | — |
-| nombrano-construction-phoenix-az | package | — | (626) 372-9803 | brief | — |
-| primus-pest-simi-valley-ca | package | Darren Dutka | (805) 304-5169 | status log | — |
-| ricardo-exterminator-bell-gardens-ca | package | — | (323) 773-2084 | status log | — |
-| trueguard-pest-management-downey-ca | package | Greg Montoya | 888-371-4954 | brief | — |
-| westland-mechanical-phoenix-az | package | Westland Mechanical | (602) 848-3399 | call card | Your Yelp says you get back to new quote requests in about a |
-| sonrise-roofing-wichita-falls-tx | package | Chris Carroll | (940) 631-1535 | brief | — |
-| aarons-heating-cooling-watertown-sd | website | Aaron | (605) 882-5982 | call card | Somebody Googling you in Watertown finds trane.com and a |
-| affordable-plumbing-drain-klamath-falls-or | website | Affordable Plumbing | (541) 591-8662 | call card | You've got a 4.2-star Angi rating with real recent reviews |
-| ap-plumbing-co-del-rio-tx | website | Pineda Family | (830) 765-3973 | call card | You've got a Facebook page and directory listings and |
-| bnb-painting-construction-klamath-falls-or | website | Brandon | (541) 539-6558 | call card | You've got a Facebook page and a Yelp listing and that's it — |
-| ceh-painting-vicksburg-ms | website | Chris Steele | (601) 618-1543 | call card | 20+ years painting Vicksburg homes but no actual website — so |
-| dd-plumbing-repair-medford-or | website | Cory Slater | (541) 772-2111 | brief | — |
-| dorries-roofing-ardmore-ok | website | Shayne | (580) 768-0147 | call card | I looked you up and there's no website for Dorries Roofing |
-| dove-electric-danville-va | website | William Dove | (434) 251-0505 | brief | — |
-| ed-pat-electric-klamath-falls-or | website | Cary | (541) 882-9920 | call card | You've held an active Oregon contractor's license since |
-| emc-plumbing-heating-vernal-ut | website | Ed | (970) 675-2572 | call card | Every EMC Plumbing domain out there belongs to somebody else |
-| four-seasons-lawn-landscape-laurel-ms | website | Hunter | 601-425-5856 | call card | no verified hook (this is a website-gap pitch) — lead with |
-| goodvin-plumbing-ottumwa-ia | website | Ryan Goodvin | (641) 777-2007 | brief | — |
-| guardian-pest-termite-services-ardmore-ok | website | Danny | (580) 226-7233 | call card | You've got two company names and two Facebook pages on one |
-| harrells-refrigeration-selma-al | website | Marie Harrell | (334) 872-8905 | status log | — |
-| hutchinson-plumbing-del-rio-tx | website | Joseph | (830) 488-4882 | call card | You've built a real 10-year business here — BBB profile, |
-| jam-pest-control-dickinson-nd | website | John | (701) 260-1311 | call card | You've been Justice Against Mice and Insects for 27 years |
-| jb-plumbing-ottumwa-ia | website | — | (641) 799-5136 | call card | You're on Facebook but nowhere else online — anyone who |
-| lays-electric-bartlesville-ok | website | Lloyd Lay | (918) 333-7941 | brief | — |
-| lolo-landscaping-rome-ga | website | Jahaziel Vega | (706) 676-7222 | brief | — |
-| mmp-roofing-construction-beckley-wv | website | — | 681-220-0640 | brief | — |
-| olympus-roofing-elizabethtown-ky | website | Olympus Roofing | (270) 307-1488 | call card | You've got a Facebook page, a Yelp listing, and a |
-| pinnacle-painting-middlesboro-ky | website | Andrew Blondell | (606) 246-0628 | call card | You've got a Facebook page and that's it — no website at |
-| red-wing-termite-pest-control-hays-ks | website | — | (785) 635-8833 | status log | — |
-| reed-overhead-doors-ottumwa-ia | website | Robert Reed | (641) 684-4993 | status log | — |
-| solid-rock-roofing-elizabethtown-ky | website | Drew Kenny | (502) 234-2847 | brief | — |
-| total-lawn-care-landscape-middlesboro-ky | website | — | 315-730-9783 | brief | I noticed you don't have your own website — with how many |
-| tracy-martin-roofing-alexandria-la | website | — | (318) 787-2210 | status log | — |
-| wall-cw-painting-martinsville-va | website | Coy Wall | (276) 638-3797 | call card | Hi, is this Coy — with CW Wall Painting? Wanted to check |
-| watkins-plumbing-drains-meridian-ms | website | Ashley Watkins | 601-286-0191 | brief | — |
-| wesley-b-jones-electrical-vicksburg-ms | website | President Wesley | (601) 636-9591 | status log | — |
-| wj-gas-plumbing-electrical-corinth-ms | website | Will Johnson | (662) 643-5472 | status log | — |
-| your-electrician-aberdeen-sd | website | Brian Braaten | (605) 380-3960 | status log | — |
+| camelback-hardscapes-scottsdale-az | package | Jake (Jacob Fowler) | (480) 600-8011 | Yelp + bizprofile.net | no verified hook — response-time signal actually contradicted by reviews calling them "very responsive"; lead with no-website/no-email instead |
+| all-service-painting-portland-or | package | Allen | (503) 251-5944 | Angi + Yahoo Local | A couple of past customers have said they had to chase you down for updates and never heard back — after 30 years in business, I don't think that's who you actually are |
+| edward-romero-roofing-hayward-ca | package | Edward (or "Eddie," his grandson) | (510) 581-8626 | BBB + BuildZoom | A tenant was told to expect a call back with roof-inspection findings and it never came — a full month later, still nothing |
 
-_53 call-ready in the seed render (20 package Phoenix/LA, 1 package elsewhere, 32 website/ads)._
+_3 verified call-ready rows as of 2026-09-04. The prior 53-row seed is
+retired — see note above._
