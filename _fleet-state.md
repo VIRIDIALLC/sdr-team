@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-09-03 20:31 UTC (2026-09-03 13:31 Phoenix)
+Generated: 2026-09-04 02:11 UTC (2026-09-03 19:11 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -10,7 +10,7 @@ Generated: 2026-09-03 20:31 UTC (2026-09-03 13:31 Phoenix)
 
 ## THE NUMBER — $10k MRR by 2026-12-31 (everything here serves this)
 
-- **Gap: $6,218/mo** → **6 Complete System client(s)** at $1,197/mo (plan +1 for churn risk) in **118 days** (16 weeks) → ~1 close per 2 week(s).
+- **Gap: $6,218/mo** → **6 Complete System client(s)** at $1,197/mo (plan +1 for churn risk) in **117 days** (16 weeks) → ~1 close per 2 week(s).
 - Real MRR $3,782 (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 - **This week** (since 2026-08-24): 0 conversations · 0 proposals out · 0 closed · $0 MRR added
 - Last week: week of 8/17 - 1 conversation, 0 proposals, 0 closed, $0 MRR added
@@ -98,8 +98,8 @@ Generated: 2026-09-03 20:31 UTC (2026-09-03 13:31 Phoenix)
 ## Systems — live-probed, not recalled
 
 - **GHL API:** UP (live probe returned 200)
-- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-09-03 20:07 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 23m ago)
+- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-09-04 02:10 UTC)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 0m ago)
 - **KIREEK repo:** 0 commit(s) not yet pushed to origin (origin is current)
 
 ## Every team, right now
@@ -110,7 +110,7 @@ Generated: 2026-09-03 20:31 UTC (2026-09-03 13:31 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 68 seconds ago — "Kevin 2026-09-03 evening: his metro list first in rotation; send-channel design and propos" (bf3dd1ed8)
+- last commit: 6 hours ago — "Kevin 2026-09-03 evening: his metro list first in rotation; send-channel design and propos" (bf3dd1ed8)
 - pipeline (prospects, 214 items): found 92 · enriched 1 · approved 2 · sent 110 · closed 6 · dismissed 3 — ~55% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-09-03 on `shaw-roofing-hays-ks` — "second touch drafted into `followup-1.md`. Nothing sent; `stage` stays `sent`, `followup` stays `held`. Angle " · 1 open handoff(s) in their inbox
@@ -124,7 +124,7 @@ Generated: 2026-09-03 20:31 UTC (2026-09-03 13:31 Phoenix)
 - waiting on Kevin (4): For Kevin — first-touch drafts waiting on you (LIVE QUEUE); Follow-up sequence — 5 prospect(s) ready to enroll (rolling queue); For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE); Real estate campaign — live state (rolling)
 
 ### Ads Team
-- last commit: 24 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (cc1808cbd)
+- last commit: 30 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (74d7c6244)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
@@ -142,7 +142,7 @@ Generated: 2026-09-03 20:31 UTC (2026-09-03 13:31 Phoenix)
 - waiting on Kevin (3): 2026-08-14: Post-purchase onboarding sequence — spec + gap list; 2026-08-24: Billing-transition client comms + Tyler "keep the system" one-pager; 2026-08-24: Tyler meeting — collect + keep-the-system talk track (2026-08-24)
 
 ### Finance Team
-- last commit: 5 hours ago — "A/R refresh 2026-09-03: Yelp wire (09-01) not yet visible in QuickBooks, Denise escalated " (41b03cb93)
+- last commit: 11 hours ago — "A/R refresh 2026-09-03: Yelp wire (09-01) not yet visible in QuickBooks, Denise escalated " (41b03cb93)
 - pipeline (invoices, 9 items): draft 3 · paid 1 · draft_amount_disputed 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~25% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-09-03 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 105 days overdue, still 91+ bucket. **Fifth consecutive run" · 1 open handoff(s) in their inbox
@@ -150,7 +150,7 @@ Generated: 2026-09-03 20:31 UTC (2026-09-03 13:31 Phoenix)
 - waiting on Kevin (3): 2026-09-03: A/R aging review + reminder refresh — 2026-09-03; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 4 hours ago — "Week 6 published early by my error: incident record + the payload fix" (ee65ec115)
+- last commit: 10 hours ago — "Week 6 published early by my error: incident record + the payload fix" (ee65ec115)
 - pipeline (posts, 32 items): drafted 3 · scheduled 8 · posted 8 · superseded 13 — ~75% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-09-02 on `ai-quote-that-went-quiet` — "**Migrated to `creative/linkedin.png`** per the 2026-08-31 storage contract, per Rati's 2026-09-01 handoff. Ch" · 1 open handoff(s) in their inbox
@@ -177,11 +177,11 @@ Generated: 2026-09-03 20:31 UTC (2026-09-03 13:31 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-09-03 20:31 UTC (auto-generated by VEGA's backend):
+As of 2026-09-04 02:11 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
-Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 118 days (16 weeks) → ~1 close per 2 week(s).
+Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 117 days (16 weeks) → ~1 close per 2 week(s).
 This week (since 2026-08-24): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 23m ago)
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 0m ago)
 Approvals waiting on Kevin across the fleet: 13
 ```
