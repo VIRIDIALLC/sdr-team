@@ -1,5 +1,6 @@
 ---
 stage: sent
+followup: held
 track: website
 quote_stage: none
 ---
@@ -15,3 +16,4 @@ quote_stage: none
 
 - 2026-09-05 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Website track. Angle that won: the missing catalog — existing mowing customers cannot see that he also does fences, tree removal and turf, because Facebook shows only the last thing posted, so the cheapest repeat work walks. Deliberately inverted from Guthrie Plumbing 09-02 (which argued word of mouth cannot reach a stranger) to avoid the one-template risk this track carries. Dropped: the artificial-turf wedge (needs an unverifiable claim about local water policy). **Did NOT use the CALL CARD's "no cost to you unless you like it" line** — it is an offer term that contradicts `_pricing.md` and appears nowhere in this repo before today; flagged for Kevin and raised with Montague as a handoff.
 - 2026-09-05 (Kevin, via KIREEK): sent to brianmeiklejr@gmail.com.
+- 2026-09-05 (VEGA): held out of the Yelp follow-up sequence -- track: website isn't Yelp messaging. Follow-up needs a matched-angle manual draft through the normal approval flow.
