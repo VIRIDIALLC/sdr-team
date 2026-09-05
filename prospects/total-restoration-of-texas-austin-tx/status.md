@@ -1,9 +1,15 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
 
+## Links
+- website: https://trtexas.com
+- maps: https://www.google.com/maps/search/Total+Restoration+of+Texas+Austin+TX
+
 ## Log
 
 - 2026-09-05 (Rupika): found, added to pipeline. Water/fire damage restoration, Austin TX — Yelp message response ~1 day despite being a 24/7 emergency-restoration business, sourced via the "yelp advertisers" high-intent technique.
+
+- 2026-09-05 (Montague): resolved the owner-name flag left in brief.md and advanced to `enriched`. Kylie Holt is the documented Owner/Operator (BBB + 2 LinkedIn profiles + ZoomInfo all agree) — Ryan Cook is a real, prominent field/crew lead per reviews but not titled owner anywhere, kept as a backup name on the call card rather than the primary. Email confirmed (info@trtexas.com, a corporate press-contact address on their own live domain). The 24/7-promise-vs-1-day-response hook is well-supported — a review documents being turned away for a quote due to capacity, and the business's own reply (in the owner's voice) confirms it. See enrichment.md.
