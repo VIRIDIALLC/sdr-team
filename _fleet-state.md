@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-09-05 16:23 UTC (2026-09-05 09:23 Phoenix)
+Generated: 2026-09-05 16:54 UTC (2026-09-05 09:54 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -99,7 +99,7 @@ Generated: 2026-09-05 16:23 UTC (2026-09-05 09:23 Phoenix)
 
 - **GHL API:** UP (live probe returned 200)
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-09-05 16:11 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 11m ago)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 42m ago)
 - **KIREEK repo:** 0 commit(s) not yet pushed to origin (origin is current)
 
 ## Every team, right now
@@ -110,21 +110,21 @@ Generated: 2026-09-05 16:23 UTC (2026-09-05 09:23 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 83 seconds ago — "Rupika: package-track batch, 5 new prospects (Denver/Austin/Dallas)" (ee9ae704c)
-- pipeline (prospects, 233 items): found 105 · enriched 1 · approved 2 · sent 116 · closed 6 · dismissed 3 — ~53% through the pipeline
+- last commit: 4 minutes ago — "Montague 2026-09-05: enrich today's 8 new prospects, fix orphaned handoff" (feb5d3cfb)
+- pipeline (prospects, 233 items): found 98 · enriched 8 · approved 2 · sent 116 · closed 6 · dismissed 3 — ~53% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-09-04 on `airbest-home-services-puyallup-wa` — "first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track, The Complete Syste" · 1 open handoff(s) in their inbox
   - **Kalki** (Outreach Research & Standards): no logged task activity yet
-  - **Montague** (Enrichment): 2026-09-04 on `airbest-home-services-puyallup-wa` — "verified and advanced to `enriched`. Owner Jason (P C) Bergstrom confirmed HIGH confidence (BBB, BuildZoom/WA " · 1 open handoff(s) in their inbox
+  - **Montague** (Enrichment): 2026-09-05 on `clean-earth-landscaping-farmington-nm` — "found this prospect's `enrichment.md` already fully written (from the 2026-09-04 run) recommending advance, bu" · 1 open handoff(s) in their inbox
   - **Nova** (Magic Patterns Build): no logged task activity yet · 1 open handoff(s) in their inbox
   - **Rupika** (Prospecting): 2026-09-05 on `cv-roofing-siding-rutland-vt` — "found, added to pipeline. Licensed/insured roofing & siding contractor, presence is Facebook-only with no owne" · 1 open handoff(s) in their inbox
   - **Sage** (Quoting): no logged task activity yet
   - **Sue** (SDR Director): no logged task activity yet · 1 open handoff(s) in their inbox
-- agent work in the last 24h: "Rupika: package-track batch, 5 new prospects (Denver/Austin/Dallas)"; "Rupika: website-track batch, 3 new prospects (Keene NH, Rutland VT, Augusta ME)"; "Elly 2026-09-04: 6 first touches, the whole enriched queue"; "Montague 2026-09-04: enrich today's 11 new prospects, sweep 2 old holds, regenerate CALL-R"
+- agent work in the last 24h: "Montague 2026-09-05: enrich today's 8 new prospects, fix orphaned handoff"; "Rupika: package-track batch, 5 new prospects (Denver/Austin/Dallas)"; "Rupika: website-track batch, 3 new prospects (Keene NH, Rutland VT, Augusta ME)"; "Elly 2026-09-04: 6 first touches, the whole enriched queue"
 - waiting on Kevin (4): For Kevin — first-touch drafts waiting on you (LIVE QUEUE); Follow-up sequence — 5 prospect(s) ready to enroll (rolling queue); For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE); Real estate campaign — live state (rolling)
 
 ### Ads Team
-- last commit: 11 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (22047e3d4)
+- last commit: 43 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (22047e3d4)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
@@ -150,7 +150,7 @@ Generated: 2026-09-05 16:23 UTC (2026-09-05 09:23 Phoenix)
 - waiting on Kevin (3): 2026-09-03: A/R aging review + reminder refresh — 2026-09-03; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 6 minutes ago — "Media blocker: stage all 8 creatives for one-drag upload, and schedule 9/24" (e6f854b14)
+- last commit: 38 minutes ago — "Media blocker: stage all 8 creatives for one-drag upload, and schedule 9/24" (e6f854b14)
 - pipeline (posts, 33 items): drafted 3 · scheduled 9 · posted 8 · superseded 13 — ~75% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-09-05 on `the-repeat-work-order` — "Built the LinkedIn card — `creative/linkedin.png`, 1080x1350. Went vertical instead of the brief's suggested h" · 1 open handoff(s) in their inbox
@@ -168,7 +168,7 @@ Generated: 2026-09-05 16:23 UTC (2026-09-05 09:23 Phoenix)
 - waiting on Kevin: nothing
 
 ### Web Design Team
-- last commit: 21 hours ago — "Fleet handoff fix: inbox reduced to the one live item, publish≠promote, egress reality, as" (5ccdf2b6a)
+- last commit: 22 hours ago — "Fleet handoff fix: inbox reduced to the one live item, publish≠promote, egress reality, as" (5ccdf2b6a)
 - pipeline (prospects, 1 items): researched 1
 - where each agent is (from their own logged task work):
   - **Nova** (Magic Patterns Build): 2026-08-12 on `tpg-home-improvements-az` — "Dispatch referenced a pre-existing `prospects/tpg-home-improvements-az/brief.md` on master — it did not exist " · 1 open handoff(s) in their inbox
@@ -178,11 +178,11 @@ Generated: 2026-09-05 16:23 UTC (2026-09-05 09:23 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-09-05 16:23 UTC (auto-generated by VEGA's backend):
+As of 2026-09-05 16:54 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 116 days (16 weeks) → ~1 close per 2 week(s).
 This week (since 2026-08-24): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 11m ago)
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 42m ago)
 Approvals waiting on Kevin across the fleet: 15
 ```
