@@ -2222,3 +2222,122 @@
   rotation additions: San Diego, Portland, Seattle, Oakland/East Bay
   (all only partially worked — plenty of untried suburb/vertical ground
   remains in each, especially SF proper and South Bay Area).
+
+- (run 2026-09-05) Scheduled run, two tracks (package + website — ads track
+  not requested per this run's task instructions). `git fetch` showed the
+  container on a detached HEAD exactly matching `origin/master`'s fetched
+  tip — same recurring stale-ref symptom as every run since 2026-08-13,
+  fixed with `git checkout -B master origin/master`, nothing lost.
+  `_new-leads.md` had nothing dropped in. Ran both tracks as parallel
+  background Agent-tool sub-agents again (research + file-write access,
+  briefed to read `_criteria.md`/templates/this file's tail/`ls prospects/`
+  themselves). Committed the website-track batch as soon as it landed
+  (per the pattern since 2026-08-27) while the package-track agent was
+  still running on its larger job; a KIREEK fleet-state-refresh commit
+  landed on `origin/master` in between the two batch commits — clean
+  fast-forward pull, no conflict.
+- (package/priority track, run 2026-09-05) First run in Denver, Austin, and
+  Dallas — the next fresh metros in Kevin's 09-03 flood-gates rotation after
+  Phoenix/LA/San Diego/Portland/Seattle/Oakland. Only 5 hits, well short of
+  the 12 target, across 5 verticals (Denver=2, Austin=2, Dallas=1): 4 Seasons
+  Pest Management (Aurora CO/Denver metro, pest control, ~4hr Yelp
+  response/22 reviews/4.1star, family-owned, reachable via confirmed domain
+  4seasonspestco.com), Dos Lunas Landscape and Construction (Denver CO,
+  landscaping, ~10hr response, hands-on paver/hardscape crew named in
+  reviews, reachable via confirmed domain doslunaslandscape.co), Kolor Pros
+  Painting (Round Rock TX/Austin metro, painting, ~10hr response, women-owned
+  by Kathleen Myers, 39 reviews since 2014, reachable via confirmed domain),
+  Total Restoration of Texas (Austin TX, restoration, ~1-day Yelp *message*
+  response despite marketing 24/7 emergency response — sharpest version of
+  this signal this run, reachable via confirmed domain trtexas.com; flagged
+  for Montague — BBB lists owner Kylie Holt but the site/reviews point to
+  "Ryan" as day-to-day contact, needs reconciling), Green Texas HVAC (Plano
+  TX/Dallas metro, HVAC, ~7hr response vs. every other Plano HVAC Yelp
+  advertiser responding within the hour, reachable via confirmed domain
+  greentexashvac.com). Two compounding reasons for the short count: (1) this
+  session's WebSearch budget ran out mid-pass on Dallas, stopped rather than
+  pad with unverified hits (same call as 2026-09-04's Oakland/SF cutoff); (2)
+  the 2026-09-02 reachability rule caught three otherwise-strong signals that
+  had to be dropped rather than queued: Water Heater Doctor (Thornton CO
+  plumbing, ~8hr response/29-36 review drift, phone confirmed but no owner
+  name found), AMS Garage Doors (Round Rock TX, a severe "even the emergency
+  number went unanswered" complaint — same real-operator-dropping-
+  follow-through-under-load shape as On Edge Pest Control 09-03 — but owner
+  only known as "Richard," no phone/domain captured), Leal Electric (Leander
+  TX/Austin metro, ~5hr response/29 reviews/20+yr family shop, but the only
+  owner-name source, BuildZoom, resolves to a *different* Leal Electric
+  location in San Juan TX ~230mi away — an unresolved name-collision, not
+  just a missing phone). New hard drop this run: Fast Plumbing (Austin) — a
+  reviewer reported the owner showed up at their door with "serious threats"
+  after a negative review, same character/reputation disqualifier tier as
+  Godfather Electric (09-03), never queue. Other drops: Befort Plumbing &
+  Heating (Aurora CO, est. 1957/1,095 recent quote requests — too scaled),
+  Green Frontier Electric (Aurora CO, thin on Yelp but 191 reviews/4.9star on
+  Birdeye + a "top 4% of CO contractors" BuildZoom ranking — reads as a real
+  growing multi-crew operation), plus a long list dropped on the standing
+  "reviews directly praise fast/responsive service" contradiction pattern
+  (Guerrero Landscape, Evercraft Remodeling, Fine Brush Painting, AM Tech
+  Electric, B&C Electric, Dynamic Electrical Service, C&J Plumbing, HD
+  Electric, KMAC Air Conditioning, Monumental Construction & Restoration),
+  a name-collision-unresolved case (Capitol Roofing & Construction, Dallas —
+  conflicting 10min-vs-11hr reads plus collision risk with an already-known
+  dropped Capitol Roofing in Boyle Heights CA), a cross-suburb-resolution
+  miss (Signature Services Roofing, Thornton CO — actual base reads as
+  Boulder), and several franchise/scale exclusions (That 1 Painter, Color
+  World Painting, Mr. Electric of Dallas, Zoom Drain, ABC Home & Commercial
+  Services, Dallas Plumbing Company since 1903, Monarch Construction &
+  Roofing). Unresolved signals worth a repeat pass (name never pinned to a
+  reachable channel, ran out of budget before verifying): Star Builders DFW
+  (Grand Prairie TX roofing, ~2hr response, new listing), an unnamed Frisco
+  TX landscaping ~11hr signal (likely "Vasquez lawn service"), several
+  unnamed Dallas HVAC/electrical/painting 5-9hr signals. New standing
+  metro-rotation entries (all only partially worked, Dallas thinnest):
+  Denver (Aurora, Lakewood, Arvada, Westminster, Thornton, Centennial,
+  Golden, Englewood, Broomfield, Wheat Ridge, Commerce City, Northglenn,
+  Brighton, Castle Rock, Highlands Ranch, Littleton), Austin (Round Rock,
+  Cedar Park, Georgetown, Pflugerville, Kyle, Leander, San Marcos, Buda),
+  Dallas (Plano, Frisco, Garland, Irving, Mesquite, McKinney, Denton, Grand
+  Prairie, Carrollton, Richardson, Addison, Coppell, Wylie, Rockwall, Allen,
+  Lewisville). Worth a dedicated follow-up run on Dallas specifically before
+  moving further down the rotation, given how thin its coverage was here.
+- (website track, run 2026-09-05) 3 hits, three brand-new markets in what
+  reads as essentially untouched territory for this track — New England
+  (outside Bangor ME/Presque Isle ME, tried long ago): Keene NH, Rutland VT,
+  Augusta ME. 2 verticals (electrical x2, roofing x1): JE & BC Electric
+  (Keene NH, electrical, two named co-owners — Jeff Ezequelle, Ben Crosby —
+  each with a direct phone line, licensed NH/VT, zero owned web presence
+  across Facebook/HomeAdvisor/BuildZoom/BBB/Yelp — clean high-confidence
+  hit; flagged a near-miss collision: "J & B Electric"/jandbelectric.com is
+  a distinct unrelated business, don't conflate), CV Roofing and Siding
+  (Rutland VT, roofing, licensed/insured in an otherwise real-site-saturated
+  Rutland roofing field — weakest of the three, only a Facebook page found,
+  no phone/address/owner surfaced at all, flagged hard for Montague to pull
+  contact info directly off Facebook; ruled out a real collision — cvroofers.com
+  belongs to an unrelated "Champlain Valley Roofers & General Contracting
+  Inc." in Castleton VT, confirmed via direct WebFetch, don't attribute that
+  domain or its "since 1996" history here), Plourdes Electrical Plus
+  (Augusta ME, electrical, 24hr-service since 2013, strong directory
+  footprint — Yelp, BBB, YellowPages, Nextdoor, EcoHome, homeyou — with no
+  owned domain anywhere, a clean confirmed gap; owner name UNRESOLVED
+  between two sources, LinkedIn says Steve Plourde/Master Electrician,
+  BBB says Melissa Plourde/managing since 2013 — flagged for Montague,
+  likely a husband/wife operation; real yelp.com/biz/ URL captured
+  directly). Cold this pass (real sites found, don't re-try as-is): Rutland
+  VT landscaping (Pratico's, Four Seasons, Meticulous LLC, Blake and Sons),
+  Rutland VT garage doors (Ski Door Inc.) and other roofers (Primo, King's),
+  Augusta ME pest control (Atlantic Pest Control, The Turf Doctor) and
+  landscaping (Lawn Boy, Ledgehill), Keene NH electrical rest-of-field
+  (Tattersall Electric, A.B. Precision Electric). Banked, not queued (worth
+  a follow-up, not independently verified further): Downs Lawncare (Rutland
+  VT, Facebook-only but no phone/owner surfaced at all, thinner than CV
+  Roofing), Lawn Master of Vermont (Rutland VT, conflicting website field
+  across directories — one lists an obviously-unrelated domain, likely a
+  directory data-mixup — needs a live-browser check either way). New
+  standing markets-tried additions: Keene NH, Rutland VT, Augusta ME — all
+  three read as productive but only lightly worked, each with plenty of
+  untried verticals remaining (Keene NH: HVAC/plumbing/roofing/pest
+  control/landscaping/painting/garage doors; Rutland VT: HVAC/plumbing/
+  electrical/pest control/painting; Augusta ME: HVAC/plumbing/roofing/
+  garage doors/painting). New England generally is likely underexploited
+  for this track relative to the South/Midwest/Mountain-West markets that
+  dominate the tried-list so far.
