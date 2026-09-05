@@ -3156,3 +3156,173 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-09-05 (this run) — 7 first touches, the whole enriched queue, plus
+  Guthrie's second touch after two runs of holding him.** `git fetch origin`
+  first per CLAUDE.md: origin/master had moved to e63bcf9 (KIREEK fleet-state
+  refresh on top of Montague's 09-05 enrichment pass). Container started in a
+  **detached HEAD exactly at origin/master with a clean tree**, the same
+  stale-ref-only pattern logged every run since 08-13; `git checkout -B` onto
+  origin/master fixed it, no merge needed. `_fleet-state.md` was 40 minutes old,
+  so ground truth was live for once, and its `enriched 8` matched the real
+  folder count.
+
+  **Montague advanced eight, seven of them fresh.** Counts by grep: 99 found, 8
+  enriched, 0 drafted, 2 approved, 116 sent, 6 closed, 3 dismissed. The eighth
+  enriched is jc-heating-cooling-amarillo-tx, Kevin's own email-verification
+  hold from 2026-08-03, now day 34, already drafted, correctly skipped again.
+  Drafted the other seven, no defensive-check skips (all had a confirmed or
+  single-source-directly-listed email): **dos-lunas-landscape-denver-co,
+  four-seasons-pest-management-aurora-co, green-texas-hvac-plano-tx,
+  kolor-pros-painting-round-rock-tx, total-restoration-of-texas-austin-tx**
+  (package) and **clean-earth-landscaping-farmington-nm,
+  je-bc-electric-keene-nh** (website).
+
+  **THE FINDING OF THIS RUN, and it is not a draft. Both of Montague's
+  website-track CALL CARDs suggested an opener ending "I want to build you an
+  actual website, no cost to you unless you like it." That is an offer term
+  Kevin has never approved and it contradicts `prospects/_pricing.md`** (real
+  build fees, $500 to $1,200 one-time plus $30/mo hosting, which is what Sage
+  quotes from). Checked before writing either draft: the phrase appears in
+  exactly two files in the whole repo, both from today, and no prior outreach
+  draft has ever used it. **Declined it in both**, which is routine under the
+  well-established "the CALL CARD is input, not instruction" precedent, and
+  flagged it to Kevin at the top of the rolling approvals file. Flagged rather
+  than silently dropped for a specific reason: **if Kevin HAS approved a
+  try-before-you-buy term, it is a far stronger hook than anything I wrote and
+  both drafts should be rewritten around it** — and it would need to land in
+  `_pricing.md` where Sage sees it, not live only in call cards.
+
+  **Routing note worth keeping.** I initially wrote "raised with Montague as a
+  handoff" into both drafts and then corrected it. `handoffs/` is the
+  **cross-team** channel and Montague is on this team, exactly as I logged on
+  08-21. The honest routes are the approvals file, this memory, and Sue, whose
+  stated job is the seams between our agents. A claim entering prospect-facing
+  material through a call card is precisely her lane, not a content defect in
+  anybody's work.
+
+  **Seven emails out of one inbox on one day, five of them package track, is the
+  worst in-batch sameness risk this seat gets.** Seven distinct mechanisms,
+  deliberately:
+  - **Total Restoration — two arrival paths.** Their own marketing promises 24/7
+    staffing and on-site within the hour; Yelp shows ~1 day on messages. The
+    email concedes the emergency lane outright and isolates the non-emergency
+    quote request as a structurally different animal. Best-supported hook of the
+    batch, because the two halves of the tension come from two different sources.
+  - **Kolor Pros — competitor structure, not competitor quality.** The franchises
+    in the same Austin searches are not better painters, they just have somebody
+    whose whole job is picking up. **New reusable frame: name the competitor's
+    structural advantage, never the competitor.** Category only, so it stays true
+    and doesn't read as a dig.
+  - **Dos Lunas — the shortlist closes before he answers.** Design-build work is
+    planned and comparison-shopped, so the buyer messages four landscapers in one
+    weekend sitting. He is not losing to a competitor, he is absent from a list
+    that fills in an afternoon. Distinct from every "you're slow" variant because
+    the loss is structural rather than comparative.
+  - **4 Seasons Pest — urgency decay, specific to the trade.** The customer who
+    just found mice is not shopping and their willingness to wait decays on its
+    own whether or not a competitor shows up. **Genuinely new axis: every other
+    draft loses the job TO someone; this one loses it to the clock.**
+  - **JE & BC Electric — the best credential is filed somewhere invisible.**
+    BuildZoom score 99, top 15% of ~13,069 NH contractors, 36 permits 2021-2023,
+    and no homeowner has ever heard of BuildZoom.
+  - **Clean Earth — the missing catalog.** Mowing customers can't see that he
+    also does fences, tree removal and turf, because Facebook shows only the last
+    post. **Deliberate inversion of Guthrie 09-02**, which argued word of mouth
+    can't reach a stranger; this argues the people who already trust him can't
+    see what else he sells. The website track has one natural hook and this is
+    how you keep it from becoming one template.
+  - **Green Texas HVAC — before reviews exist, speed is the only proof.**
+
+  **Response-time discipline, and one deliberate non-use.** Four package drafts
+  open on the question; none asserts a number. Kolor Pros ~10hr is
+  unconfirmed-but-not-contradicted, asked plainly. Total Restoration ~1 day is
+  corroborated-not-reverified and the opener offers her the genuinely true out
+  that Yelp may be counting something different. Dos Lunas has no stable figure
+  (8/10hr/1 day) so the email asks about a *range*. 4 Seasons shows 50 min to 2
+  days across Yelp's own category tags for one listing, so the body says "hours"
+  and offers Jesse a third door, that Yelp is measuring something odd. **Green
+  Texas HVAC's ~7hr was not used at all** — Montague couldn't reconfirm any part
+  of it, and on a prospect whose existence as an operator is in question, an
+  unverifiable number is the wrong foundation. Built that one entirely on two
+  facts they published themselves. **New rule of thumb: when a prospect's
+  legitimacy is the open question, use only self-published facts.**
+
+  **Green Texas HVAC is the weakest of the seven and I said so plainly** in the
+  draft and the rolling file: no BBB, absent from two independent Plano HVAC
+  directories, no Facebook, no review describing a real service call, and a
+  virtual-office suite shared with Target Corporation and SAIC. Montague was
+  right to advance it under the Boldt/Quality Overhead precedent and right to
+  flag it loudly. Told Kevin to send it last, skip it, or spend two minutes on
+  the phone first.
+
+  **4 Seasons Pest's BBB F rating**, revocation alert and competency-licensing
+  alert are real, deliberately nowhere in the copy, and flagged for Kevin's ears
+  only. Same treatment as every other "true, useful on a call, not face-saving in
+  cold text" fact.
+
+  **Guthrie Plumbing, and this is the part worth rereading next time.** Held
+  09-03 and 09-04 for want of a non-worn mechanism, both correct. Today I found
+  the parked-domain finding buried in Montague's website-gap section
+  (`guthrieplumbing.com` and `guthrieplumbingservices.com` both RESOLVE, traced
+  to an unrelated Guthrie Plumbing in Elburn IL), decided it was a new
+  name-ownership argument, and **wrote the whole second touch on it. Then killed
+  it.** The Johnston Heating & Air second touch from 09-02, sitting in the same
+  approval queue, opens "Type johnstonheatingandair.com into your phone" and
+  argues the same shape, and my own 09-04 hold note had already listed "somebody
+  else owns your name" as worn (Bilskie 08-31, Johnston 09-02). **I should have
+  checked the named precedent before writing rather than after.** The lesson is
+  narrow and practical: **the worn-mechanism list in the rolling held-lane file
+  is a checklist to read BEFORE drafting, not a thing to write at the end.**
+
+  Rewrote it on **anonymity**, which nothing in this repo has argued: Montague
+  cannot find his first name anywhere (HutchConnect, Facebook, BBB, KS SOS,
+  LinkedIn, county parcel, people-search all render him "P. Guthrie"), and in a
+  trade where the customer hands a stranger a key to their house, that is a
+  conversion problem rather than trivia. Subject is "What does the P stand for?"
+  **The fact everyone had been reading for three runs as a constraint on the
+  greeting was the best argument in the file.** Generalizable: when a prospect
+  keeps getting held, re-read the enrichment's *limitations* as candidate
+  arguments, not just its findings.
+
+  **Held lane is now complete** — 34 at `followup: held`, 33 with a
+  `followup-1.md`, the only exclusion being sp-lawn-care-bangor-me (permanent,
+  Kevin owns Karl's thread). From here the constraint is entirely Kevin's queue,
+  not the drafting.
+
+  **Approvals hygiene:** all four dated first-touch files were already
+  `status: superseded`, nothing to close. Regenerated
+  `ROLLING-first-touch-drafts.md` from live state (7 at `drafted`, table, send
+  order, mechanism list, the two send-with-care warnings, the pricing-term
+  ruling request). `ROLLING-followup-held-lane.md` got a targeted refresh (33
+  not 32, fourteen days not thirteen, Guthrie moved from the not-drafted section
+  into New today, and the closing section rewritten now that the hold resolved).
+
+  **Upstream, still the ceiling:** 99 at `stage: found`, up from 98. Seventeen
+  straight days of growth, and this was another good enrichment day. Both
+  standing asks repeated in the rolling file: filter for a reachable email at
+  sourcing time, and rule on whether email-gate failures with a verified phone
+  are a call list for Kevin rather than dead inventory.
+
+  **84% BrightLocal stat omitted again on both website drafts**, twelfth and
+  thirteenth run running on this track. Neither draft is a findability argument,
+  so it would not have fit even if it weren't worn.
+
+  Track breakdown: 5 package, 2 website, plus 1 website second touch. Standard
+  sweep on body text (em dash, en dash, bracket placeholder, retired package
+  names, third-person Kevin/Viridia, `$`, `%`, "guarantee", the 84% stat, stray
+  sign-off, British spellings) — clean on every check after real fixes:
+  "neighbours"/"favourite" in Kolor Pros' **body**, plus "behaviour", "colour",
+  "catalogue" and "licence" in various notes. British spellings are now a
+  recurring self-inflicted defect on this seat, four runs running; sweep for them
+  every time. Bodies run 128 to 150 words, in the recent band.
+
+  **Next run:** check `stage: enriched` first, regenerate both rolling files from
+  live state, and **read the worn-mechanism list before drafting any second
+  touch**. If Kevin rules on the try-before-you-buy question, both of today's
+  website drafts likely need rewriting around it. Guthrie's touch three already
+  has its angle written down (the parked domains), by which point the distance
+  from Johnston will be enough.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.

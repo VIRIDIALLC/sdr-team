@@ -1,7 +1,7 @@
 # For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE)
 
 status: open
-Last regenerated: 2026-09-04 (Elly)
+Last regenerated: 2026-09-05 (Elly)
 
 > **This is the only second-touch approval file**, and it replaces the dated
 > `2026-08-21-followup-drafts-held-lane.md`, which is now marked superseded. It is
@@ -12,13 +12,17 @@ Last regenerated: 2026-09-04 (Elly)
 **Nothing is sent and nothing is queued.** Every one of these is a draft sitting
 in `prospects/<slug>/followup-1.md`.
 
-## The queue: 32 drafts
+## The queue: 33 drafts
 
 Recounted from live files this run, not carried forward: **34 prospects sit at
-`followup: held`, 32 of them now have a `followup-1.md`.** The two that don't are
-both deliberate and both explained at the bottom.
+`followup: held`, 33 of them now have a `followup-1.md`.** The one that doesn't
+is `sp-lawn-care-bangor-me`, permanently and deliberately excluded, explained at
+the bottom. **Guthrie Plumbing, held on 09-03 and 09-04 for want of a
+non-worn angle, is drafted today** and is the only addition since yesterday.
+With that, this lane is complete: every held prospect that should have a second
+touch now has one.
 
-**Nothing here has moved in thirteen days.** The ten from 08-21 have been waiting
+**Nothing here has moved in fourteen days.** The ten from 08-21 have been waiting
 since 08-21 and the twenty-one from 09-02 have not been sent either. That is not
 a complaint about your queue, it is the one number in this file worth watching:
 these were written because the doctrine says roughly 93% of conversions come by
@@ -66,13 +70,13 @@ second touch that never sends counts the same as no second touch at all.
 | Bilskie Electric (Vincennes IN) | website | 09-01 | The jobs that never get started |
 | Nelson's Complete Treat (Hobbs NM) | website | 09-01 | What do you send them? |
 
-### New today (1)
+### Drafted 2026-09-04 (1)
 
 | Prospect | Track | First touch | Subject |
 |---|---|---|---|
 | Shaw Roofing (Hays KS) | website | 09-02 | The people who send you the most roofs |
 
-**Shaw is drafted early on purpose and should not go before roughly 09-06.** His
+**Shaw should not go before roughly 09-06.** His
 first email went yesterday. I wrote it because the lane was otherwise clear, not
 because it is due, and the draft's own note says so. Check for a reply first.
 
@@ -81,26 +85,50 @@ than the argument. Touch one was the homeowner on an insurance-paid claim and wh
 they can't verify about him. This one is the **repeat referrer** (a realtor, a home
 inspector) who stakes their own name every time they hand out a contractor and so
 needs something forwardable, where a phone number isn't. It also does not lean on
-his Kansas roofing licence, which touch one does. If that registry check ever comes
+his Kansas roofing license, which touch one does. If that registry check ever comes
 back badly, **this draft survives it and touch one doesn't.**
 
-## Not drafted, and both on purpose
+### New today (1)
+
+| Prospect | Track | First touch | Subject |
+|---|---|---|---|
+| Guthrie Plumbing (Hutchinson KS) | website | 09-02 | What does the P stand for? |
+
+**Guthrie was held on 09-03 and 09-04 and is drafted today.** Both holds were
+right: every angle available then either repeated his own first email or reused a
+worn mechanism. What turned up today was the one fact everybody, me included, had
+been reading as a limitation rather than as an argument. **Montague cannot find
+his first name anywhere.** HutchConnect, Facebook, BBB, the Kansas SOS, LinkedIn,
+county parcel records, people-search: every source renders him "P. Guthrie."
+Twelve years and a Master Plumber card, and there is nowhere online to learn who
+he is.
+
+In a trade where the customer is about to hand a stranger a key to their house,
+that is a conversion problem rather than trivia, and it is an argument nothing in
+this repo has made before. It is also face-saving by construction, since the
+premise is that he is underselling himself. Subject line is the hook and it is
+the one email in this lane he will open out of curiosity about himself.
+
+**Worth knowing, because it is the kind of thing you should hear from me rather
+than from a prospect:** I first wrote this second touch on the parked-domain
+finding (`guthrieplumbing.com` and `guthrieplumbingservices.com` both resolve and
+trace to an unrelated Guthrie Plumbing in Illinois), finished it, and then killed
+it on the sameness check. **The Johnston Heating & Air second touch already in
+this queue opens "Type johnstonheatingandair.com into your phone"** and argues
+the same shape, and the 09-04 note had already named that mechanism worn. Two
+website emails out of the same inbox days apart with the same opening move is
+exactly what the gate is for. The domain finding is kept, written up in full, for
+touch three.
+
+## Not drafted, and on purpose
 
 **`sp-lawn-care-bangor-me` stays excluded permanently**, because you are handling
 Karl's thread directly and a routine-drafted email landing inside a live
 conversation you own is the one thing this lane must never do.
 
-**`guthrie-plumbing-hutchinson-ks` is held this run, and I would rather explain
-than hand you filler.** His first touch went yesterday, so he is not due. More to
-the point, every angle available for a second one either repeats the shape of his
-own first email (which was already "here is a lane your word of mouth cannot
-reach") or reuses a mechanism this seat ran on somebody else inside two weeks:
-the ceiling of word of mouth (Brezden 08-21, Hero AC 08-31), your two service
-lines buy differently (Freedom 08-20, BGS 08-30), a credential with nowhere to
-live (Nelson's 08-31), somebody else owns your name (Bilskie 08-31, Johnston
-09-02), demand that never forms (Bilskie 09-02). Two candidate openers are
-already written down in his `outreach.md` for whoever picks this up next. He gets
-a real second email next week rather than a recycled one today.
+That is now the only exclusion. **With Guthrie drafted, this lane is complete:
+all 33 held prospects that should have a second touch have one.** From here the
+constraint is entirely your queue, not the drafting.
 
 ## Send them in age order, not in list order
 
@@ -174,9 +202,15 @@ distinct mechanisms are getting scarce. Three drafts in this batch record an
 adjacency to an earlier one rather than pretending to be novel (AV Heating against
 Hero AC, All Tech against E-Z Garage Door, Nelson Landscaping against Family
 Painting). I would rather you know which ones are close than find out from a
-prospect. Guthrie being held today is the same principle applied one step earlier:
-when the only remaining mechanism is a worn one, the right move is to wait rather
-than ship it.
+prospect.
+
+Guthrie is this run's version of the same discipline, and it cut both ways. He
+was held twice rather than shipped on a worn mechanism, and today, when the
+angle I reached for first turned out to duplicate Johnston's, the finished draft
+got thrown out rather than sent. **Three days of holding produced a better email
+than the first one I wrote today would have been.** That is the argument for the
+gate, and it is also the honest limit of it: this lane now runs on genuinely
+scarce material, so expect more holds like those and fewer batches of five.
 
 ## The kit gap behind all of this
 
