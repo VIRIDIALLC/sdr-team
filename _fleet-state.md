@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-09-05 17:26 UTC (2026-09-05 10:26 Phoenix)
+Generated: 2026-09-05 22:12 UTC (2026-09-05 15:12 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -98,8 +98,8 @@ Generated: 2026-09-05 17:26 UTC (2026-09-05 10:26 Phoenix)
 ## Systems — live-probed, not recalled
 
 - **GHL API:** UP (live probe returned 200)
-- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-09-05 16:11 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 1h ago)
+- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-09-05 22:12 UTC)
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 0m ago)
 - **KIREEK repo:** 0 commit(s) not yet pushed to origin (origin is current)
 
 ## Every team, right now
@@ -110,7 +110,7 @@ Generated: 2026-09-05 17:26 UTC (2026-09-05 10:26 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 3 minutes ago — "Elly 2026-09-05: 7 first touches, Guthrie's second touch, unapproved offer term declined" (026977378)
+- last commit: 5 hours ago — "Elly 2026-09-05: 7 first touches, Guthrie's second touch, unapproved offer term declined" (026977378)
 - pipeline (prospects, 233 items): found 98 · enriched 1 · drafted 7 · approved 2 · sent 116 · closed 6 · dismissed 3 — ~54% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-09-05 on `clean-earth-landscaping-farmington-nm` — "first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Website track. Angle that won: th" · 1 open handoff(s) in their inbox
@@ -124,14 +124,13 @@ Generated: 2026-09-05 17:26 UTC (2026-09-05 10:26 Phoenix)
 - waiting on Kevin (4): For Kevin — first-touch drafts waiting on you (LIVE QUEUE); Follow-up sequence — 5 prospect(s) ready to enroll (rolling queue); For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE); Real estate campaign — live state (rolling)
 
 ### Ads Team
-- last commit: 74 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (22047e3d4)
+- last commit: 16 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (f0ba92499)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
   - **Doc** (Copywriter): 2026-08-14 on `viridia-complete-system` — "Kevin's features-vs-outcomes test on the 4 live ads (real numbers in `api-funnel-analysis-2026-08-13.md` / `_p" · 1 open handoff(s) in their inbox
   - **Nova** (Landing Page Build): 2026-08-09 on `viridia-complete-system` — "built the dedicated landing page (see `landing-page-notes.md`) — hero uses the ad's exact hook ("Never miss a " · 1 open handoff(s) in their inbox
   - **Wraith** (Meta Media Buyer): 2026-08-19 on `viridia-complete-system` — "routine monitoring run. `_performance-latest.md` regenerated today (2026-08-19 14:12 UTC — same-day, fresh). L"
-- agent work in the last 24h: "Fleet handoff fix: inbox cleared, Meta/retirement contradictions removed, persona rules al"
 - waiting on Kevin: nothing
 
 ### Customer Success
@@ -150,13 +149,13 @@ Generated: 2026-09-05 17:26 UTC (2026-09-05 10:26 Phoenix)
 - waiting on Kevin (3): 2026-09-03: A/R aging review + reminder refresh — 2026-09-03; Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 69 minutes ago — "Media blocker: stage all 8 creatives for one-drag upload, and schedule 9/24" (e6f854b14)
+- last commit: 6 hours ago — "Media blocker: stage all 8 creatives for one-drag upload, and schedule 9/24" (e6f854b14)
 - pipeline (posts, 33 items): drafted 3 · scheduled 9 · posted 8 · superseded 13 — ~75% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-09-05 on `the-repeat-work-order` — "Built the LinkedIn card — `creative/linkedin.png`, 1080x1350. Went vertical instead of the brief's suggested h" · 1 open handoff(s) in their inbox
   - **Rati** (Social Media Manager): 2026-09-05 on `the-repeat-work-order` — "**Scheduled.** LinkedIn, Thu 2026-09-24 9:00 AM MST (`2026-09-24T16:00:00.000Z`), GHL id `6a9c3fd57a52c41bff73"
   - **Soniti** (Social Video & Repurposing): no logged task activity yet
-- agent work in the last 24h: "Media blocker: stage all 8 creatives for one-drag upload, and schedule 9/24"; "Ash: creative for the-repeat-work-order (property management, 9/24 slot)"; "Fleet handoff fix: closable handoffs, publish authority reconciled, Ash trigger unblocked"; "Creatives: Ash already delivered all seven; the blocker is a public URL"
+- agent work in the last 24h: "Media blocker: stage all 8 creatives for one-drag upload, and schedule 9/24"; "Ash: creative for the-repeat-work-order (property management, 9/24 slot)"
 - waiting on Kevin (3): 2026-08-21: Comment reply kit — Viridia's own channels; 2026-08-25: TFP Landscaping — Yelp page updates, drafts for your approval; 2026-08-28: Your personal LinkedIn — three drafts, so the question is a read and
 
 ### SEO Team
@@ -168,21 +167,20 @@ Generated: 2026-09-05 17:26 UTC (2026-09-05 10:26 Phoenix)
 - waiting on Kevin: nothing
 
 ### Web Design Team
-- last commit: 22 hours ago — "Fleet handoff fix: inbox reduced to the one live item, publish≠promote, egress reality, as" (5ccdf2b6a)
+- last commit: 27 hours ago — "Fleet handoff fix: inbox reduced to the one live item, publish≠promote, egress reality, as" (5ccdf2b6a)
 - pipeline (prospects, 1 items): researched 1
 - where each agent is (from their own logged task work):
   - **Nova** (Magic Patterns Build): 2026-08-12 on `tpg-home-improvements-az` — "Dispatch referenced a pre-existing `prospects/tpg-home-improvements-az/brief.md` on master — it did not exist " · 1 open handoff(s) in their inbox
-- agent work in the last 24h: "Fleet handoff fix: inbox reduced to the one live item, publishâ‰ promote, egress reality, "
 - waiting on Kevin (2): 2026-09-04: Dispatch Nova to build the five keyword-realignment money pages (or ; 2026-09-04: Deploy the delivered CONTENT_MAP crawler-body spec to the viridiaana
 
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-09-05 17:26 UTC (auto-generated by VEGA's backend):
+As of 2026-09-05 22:12 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 116 days (16 weeks) → ~1 close per 2 week(s).
 This week (since 2026-08-24): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 1h ago)
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 0m ago)
 Approvals waiting on Kevin across the fleet: 15
 ```
