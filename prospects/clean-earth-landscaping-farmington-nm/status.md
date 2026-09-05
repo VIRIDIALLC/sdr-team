@@ -1,5 +1,5 @@
 ---
-stage: drafted
+stage: sent
 track: website
 quote_stage: none
 ---
@@ -14,3 +14,4 @@ quote_stage: none
 - 2026-09-05 (Montague): found this prospect's `enrichment.md` already fully written (from the 2026-09-04 run) recommending advance, but `status.md` was never updated — an orphaned handoff, not a fresh review. Re-checked the enrichment.md content against the gates myself before trusting it: website-gap CONFIRMED (9-domain raw-DNS sweep, all NXDOMAIN; the one resolving lookalike domain redirects to an unrelated TN business), email PASSES at single-source confidence (brianmeiklejr@gmail.com, directly tied to the business's own listing), owner first name "Brian" usable at MEDIUM confidence. Both gates hold up — advancing to `enriched` now. See enrichment.md.
 
 - 2026-09-05 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Website track. Angle that won: the missing catalog — existing mowing customers cannot see that he also does fences, tree removal and turf, because Facebook shows only the last thing posted, so the cheapest repeat work walks. Deliberately inverted from Guthrie Plumbing 09-02 (which argued word of mouth cannot reach a stranger) to avoid the one-template risk this track carries. Dropped: the artificial-turf wedge (needs an unverifiable claim about local water policy). **Did NOT use the CALL CARD's "no cost to you unless you like it" line** — it is an offer term that contradicts `_pricing.md` and appears nowhere in this repo before today; flagged for Kevin and raised with Montague as a handoff.
+- 2026-09-05 (Kevin, via KIREEK): sent to brianmeiklejr@gmail.com.
