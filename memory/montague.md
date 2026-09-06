@@ -3229,3 +3229,75 @@
     phone on file, so none newly qualify for `call_ready` without fresh
     research; left for a dedicated sweep run given today's 8-prospect batch
     plus the orphaned-record fix already used a full run's worth of effort.
+
+- (2026-09-06 run) Local HEAD was detached but matched `origin/master`'s tip
+  (`cbf9907`) exactly — `git checkout -B master origin/master`, no data-loss
+  risk, standard stale-cache pattern. Scanned `prospects/*/status.md` for
+  `stage: found`; the raw grep hit 100+ folders but nearly all already carry
+  a Montague log entry documenting a prior hold/dead-end — only 8 were
+  genuinely untouched, exactly today's two Rupika batches (5 package,
+  Las Vegas/Tucson metros: Call Shamrock, Eco Pest, Extreme Pest Control,
+  RCP Mechanical, Vegas Paints; 3 website, small New England towns: Al
+  Jeffers & Sons/Townshend VT, Dumont LLC/Waterville ME, Outdoor Property
+  Services/Laconia NH). Used 8 parallel research subagents (pure-research,
+  no file writes), then wrote all enrichment.md/status.md updates myself.
+
+  Result: 3 of 8 advanced to `enriched` (RCP Mechanical, Vegas Paints — both
+  package; Al Jeffers & Sons — website). 5 held at `found`: 3 on the email
+  gate with a confirmed two-source phone (Call Shamrock, Eco Pest, Extreme
+  Pest Control — all newly marked `call_ready: yes`, added to
+  `CALL-READY.md`), 1 on the email gate without a second phone source
+  (Dumont LLC), 1 on a wrong website-gap guess (Outdoor Property Services).
+
+  - **Outdoor Property Services — the most consequential catch of the run,
+    a wrong website-gap guess (same category as Plourdes Electrical,
+    2026-09-05).** Rupika's brief said no owned website exists (Facebook +
+    directories only). Wrong: `opsnh.com` is a real, live Wix site at the
+    exact confirmed address, up since at least June 2026 per Wayback. Not
+    advanced — the from-scratch-build pitch doesn't hold, and this needs
+    Kevin's call on how (or whether) to re-approach, not a routine hold.
+    Owner name also genuinely unresolved between "John Gamans" (AI-search
+    only, not a primary source) and "Joe" (the site's only named contact,
+    joe@opsnh.com) — didn't guess which, or whether they're the same person.
+  - **Two response-time figures came back CONTRADICTED (not just
+    unconfirmed) this run** — Call Shamrock (brief's "5 hrs" vs. an
+    AI-synthesized "4 hrs," neither traceable to a real snippet) and RCP
+    Mechanical (brief's "4 hrs" vs. an AI-synthesized "Robbie answered in 30
+    min," a different fact entirely, not a Yelp metric). Per the CVA
+    Exterminators convention, dropped both numbers rather than using them
+    even as a question, and used a different real signal as the hook
+    instead (veteran/licensed angle; thin-review-count-vs-tenure fact,
+    respectively). A third, Vegas Paints, came back merely unstable/noisy
+    (2-5hr range, not a wild outlier) — kept qualitatively, no number cited.
+    This keeps happening often enough (now well past 10 instances since
+    2026-08-04) that it may be worth Kevin deciding whether this
+    sourcing-technique's headline hook should just be treated as
+    sourcing-only from here rather than re-attempted for verification each
+    time — logged the same ask on 2026-08-11, still unresolved.
+  - **RCP Mechanical:** email gate passed via the guessed-pattern-on-
+    confirmed-live-domain precedent (info@rcpheatingandair.com) — now used
+    9+ times since 2026-08-11, still worth Kevin explicitly confirming this
+    reading of the gate.
+  - **Vegas Paints:** a real phone-number discrepancy — Rupika's sourced
+    (725) 525-7483 matched none of three independently-found numbers
+    (website's own (702) 605-1141, a stray NC-area-code number, BBB's (702)
+    929-0937). Led the CALL CARD with the website's own directly-verified
+    number and flagged the rest for Kevin to double-check before dialing —
+    same call-tracking-sprawl pattern as Sal's Landscape/Doherty Bros
+    (2026-08-11).
+  - **Dumont LLC:** found a likely-matching Maine SOS LLC filing, but its
+    registered agent is a third-party attorney, not the owner — correctly
+    did not put his name on the CALL CARD. Owner's actual name stays NOT
+    FOUND. Phone remains single-sourced (no independent second source
+    turned up this run) — did not mark `call_ready`, unlike the three
+    package-track holds above.
+  - Did not do a dedicated sweep of the older email-gate/call-ready backlog
+    this run (D&D Plumbing, SonRise Roofing, Superior Roofing, Crandell
+    Pest Control, Noska Lawncare, Casey Moriarty Pest Control, Radiant
+    Remodeling Pros, CV Roofing, WDM Garage Doors, Lloyd Miller's Painting,
+    Plourdes Electrical, and others) — today's 8-prospect new batch used
+    the full run, same reasoning as 2026-09-05.
+  - `CALL-READY.md` regenerated: 3 → 6 verified rows.
+  - Backlog after this run: no genuinely untouched `stage: found` prospects
+    remain (Dumont LLC and Outdoor Property Services stay at `found` by
+    documented gate misses, not backlog).

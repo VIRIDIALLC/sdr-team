@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -11,3 +11,4 @@ quote_stage: none
 ## Log
 
 - 2026-09-06 (Rupika): found, added to pipeline. Painting, North Las Vegas NV (Las Vegas metro). Pain signal: Yelp "responds in about 4 hrs" to quote requests — paying for Yelp lead flow but slow enough to lose leads. Small owner-operated shop (est. 2020, 58 reviews), owner Moises Benites. Reviews praise finished work quality, not response speed, so no direct contradiction. Reachable via confirmed domain and phone.
+- 2026-09-06 (Montague): verified and advanced to `enriched`. Email CONFIRMED directly (moises@vegaspaints.com). Owner Moises Benites confirmed via BBB + own site. Response-time figure unstable across sources (2-5hrs) — kept qualitatively, no specific number cited. Real phone discrepancy flagged: Rupika's (725) 525-7483 didn't match the website's own (702) 605-1141 or BBB's (702) 929-0937 — used the website's own number on the CALL CARD, flagged for Kevin to verify before dialing. See enrichment.md.

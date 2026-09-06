@@ -7,19 +7,17 @@ is a different list (email sequence finished); this one is prospects that
 never had an email to begin with. Say "prep me for a call with <name>" for
 the pre-call card.
 
-**Last regenerated: 2026-09-04 (Montague), first real verified render.** The
-2026-09-02 seed render (53 rows, regex-built from prose, not Montague's
-two-source check) has been fully retired — every row below is a real
+**Last regenerated: 2026-09-06 (Montague).** Every row below is a real
 `call_ready: yes` flag on that prospect's own `status.md`, set after an
-actual two-source phone check this run or a prior one. This is a big drop
-from 53 rows to 3: that's expected and correct, not a data loss — the seed
-was never verified to begin with, and the standing "sweep a few existing
-holds each run" practice hadn't produced any real verified rows since
-2026-09-02 until today. It will grow gradually as more holds get swept.
+actual two-source phone check. Grown from 3 rows (2026-09-04) to 6 this run
+— 3 new rows added from today's batch (call-shamrock-tucson-az,
+eco-pest-oro-valley-az, extreme-pest-control-las-vegas-nv), no dedicated
+sweep of the older backlog this run (today's 8-prospect new batch used the
+full run).
 
-**Note on the seed's dropped rows:** most of the 53 seed rows are still real,
-untouched `found`-stage prospects sitting in `prospects/*/status.md` — they
-just don't carry a verified `call_ready: yes` yet. One seed row,
+**Note on the retired 2026-09-02 seed:** most of that 53-row seed are still
+real, untouched `found`-stage prospects sitting in `prospects/*/status.md` —
+they just don't carry a verified `call_ready: yes` yet. One seed row,
 `apple-plumbing-scottsdale-az`, should NOT be re-added when swept: it's a
 documented dead-end (acquired by Day & Night Air Conditioning 7/31/2025, no
 longer an independent solo-operator prospect) — see its own status.md.
@@ -32,6 +30,9 @@ website/ads.
 | camelback-hardscapes-scottsdale-az | package | Jake (Jacob Fowler) | (480) 600-8011 | Yelp + bizprofile.net | no verified hook — response-time signal actually contradicted by reviews calling them "very responsive"; lead with no-website/no-email instead |
 | all-service-painting-portland-or | package | Allen | (503) 251-5944 | Angi + Yahoo Local | A couple of past customers have said they had to chase you down for updates and never heard back — after 30 years in business, I don't think that's who you actually are |
 | edward-romero-roofing-hayward-ca | package | Edward (or "Eddie," his grandson) | (510) 581-8626 | BBB + BuildZoom | A tenant was told to expect a call back with roof-inspection findings and it never came — a full month later, still nothing |
+| call-shamrock-tucson-az | package | Patrick (Patrick Rogan) — single-sourced (BBB only) | (520) 704-7336 | Rupika's discovery + BBB | no verified hook — response-time claim contradicted across searches; lead with veteran-owned/licensed angle |
+| eco-pest-oro-valley-az | package | Nick (Ingerston) | (520) 797-7378 | Rupika's discovery + BBB | Your Yelp shows a response time of about 3 hours on quote requests. Is that still accurate? With your hours as limited as they are, I don't think you're losing these on purpose. |
+| extreme-pest-control-las-vegas-nv | package | Rick (Cox) — moderate confidence | (702) 490-0707 | Rupika's discovery + Nextdoor review | no verified hook — response-time claim never surfaced in search; lead with tenure/loyalty angle |
 
-_3 verified call-ready rows as of 2026-09-04. The prior 53-row seed is
+_6 verified call-ready rows as of 2026-09-06. The prior 53-row seed is
 retired — see note above._
