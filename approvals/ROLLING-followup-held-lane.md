@@ -1,7 +1,7 @@
 # For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE)
 
 status: open
-Last regenerated: 2026-09-05 (Elly)
+Last regenerated: 2026-09-06 (Elly)
 
 > **This is the only second-touch approval file**, and it replaces the dated
 > `2026-08-21-followup-drafts-held-lane.md`, which is now marked superseded. It is
@@ -12,17 +12,16 @@ Last regenerated: 2026-09-05 (Elly)
 **Nothing is sent and nothing is queued.** Every one of these is a draft sitting
 in `prospects/<slug>/followup-1.md`.
 
-## The queue: 33 drafts
+## The queue: 34 drafts
 
-Recounted from live files this run, not carried forward: **34 prospects sit at
-`followup: held`, 33 of them now have a `followup-1.md`.** The one that doesn't
+Recounted from live files this run, not carried forward: **35 prospects sit at
+`followup: held`, 34 of them now have a `followup-1.md`.** The one that doesn't
 is `sp-lawn-care-bangor-me`, permanently and deliberately excluded, explained at
-the bottom. **Guthrie Plumbing, held on 09-03 and 09-04 for want of a
-non-worn angle, is drafted today** and is the only addition since yesterday.
-With that, this lane is complete: every held prospect that should have a second
-touch now has one.
+the bottom. **Clean Earth Landscaping, whose first touch you sent yesterday, is
+drafted today** and is the only addition since yesterday. The lane stays
+complete: every held prospect that should have a second touch has one.
 
-**Nothing here has moved in fourteen days.** The ten from 08-21 have been waiting
+**Nothing here has moved in fifteen days.** The ten from 08-21 have been waiting
 since 08-21 and the twenty-one from 09-02 have not been sent either. That is not
 a complaint about your queue, it is the one number in this file worth watching:
 these were written because the doctrine says roughly 93% of conversions come by
@@ -92,9 +91,26 @@ back badly, **this draft survives it and touch one doesn't.**
 
 | Prospect | Track | First touch | Subject |
 |---|---|---|---|
-| Guthrie Plumbing (Hutchinson KS) | website | 09-02 | What does the P stand for? |
+| Clean Earth Landscaping (Farmington NM) | website | 09-05 | The jobs you never hear about |
 
-**Guthrie was held on 09-03 and 09-04 and is drafted today.** Both holds were
+**Clean Earth is the newest first touch in this repo and this draft is early on
+purpose.** You sent his first email yesterday, so a second touch is not due. It
+is drafted now only so the lane stays complete and so it sits in the queue in age
+order; it should go out behind everything from 08-17 and 09-02, and the draft's
+own note says so. The angle is the **forwardable link**: fencing, dirt and gravel
+work and pressure washing are property-maintenance services, not lawn care, and
+the buyer for those is a property manager or an HOA board who has to put
+something in front of an owner. What they put in front of them is a link. With no
+site he is not in the conversation and never learns the bid existed. Touch one
+argued that his existing mowing customers cannot see the rest of his service
+list; this is a buyer class he cannot reach at all, and the loss is invisible
+rather than merely unnoticed. Checked against the worn-mechanism list **before**
+writing, which was the explicit lesson from Guthrie yesterday.
+
+### Drafted 2026-09-05
+
+**Guthrie Plumbing (Hutchinson KS), "What does the P stand for?" — held on 09-03
+and 09-04 and drafted 09-05.** Both holds were
 right: every angle available then either repeated his own first email or reused a
 worn mechanism. What turned up today was the one fact everybody, me included, had
 been reading as a limitation rather than as an argument. **Montague cannot find
@@ -126,8 +142,8 @@ touch three.
 Karl's thread directly and a routine-drafted email landing inside a live
 conversation you own is the one thing this lane must never do.
 
-That is now the only exclusion. **With Guthrie drafted, this lane is complete:
-all 33 held prospects that should have a second touch have one.** From here the
+That is now the only exclusion. **This lane stays complete: all 34
+held prospects that should have a second touch have one.** From here the
 constraint is entirely your queue, not the drafting.
 
 ## Send them in age order, not in list order

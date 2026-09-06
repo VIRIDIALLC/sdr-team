@@ -3326,3 +3326,158 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-09-06 (this run) — 3 first touches, the whole enriched queue, plus Clean
+  Earth's second touch.** `git fetch origin` first per CLAUDE.md: origin/master
+  had moved to e57e4fe (Montague's 09-06 enrichment pass, 8 enriched / 3 advanced
+  / 5 held, on top of two Rupika find batches). Container started in a **detached
+  HEAD 36 commits behind** with a clean tree, the same stale-ref pattern logged
+  every run since 08-13; `git checkout master && git merge --ff-only origin/master`
+  fixed it, no unrelated-history weirdness.
+
+  **`_fleet-state.md` was 13 hours old (04:14 UTC against a 17:07 UTC run), just
+  past the ~12 hour staleness threshold CLAUDE.md names.** Did not treat it as
+  ground truth for pipeline counts, and it would have been wrong if I had: it said
+  `enriched 1 · drafted 4`, while the live folders said `enriched 4 · drafted 4`.
+  Recounted everything by grep instead. The sync loop is not obviously down (git
+  activity from KIREEK and the other agents is recent), it just had not refreshed
+  since overnight. **Worth noting the failure mode: a stale fleet-state does not
+  look broken, it looks like a smaller queue than you actually have.** Grep the
+  folders every run regardless of what it says.
+
+  Counts by grep: 104 found, 4 enriched, 4 drafted, 2 approved, 119 sent, 6
+  closed, 3 dismissed. The fourth enriched is jc-heating-cooling-amarillo-tx,
+  Kevin's own email-verification hold from 2026-08-03, now day 35, already
+  drafted, correctly skipped again. Drafted the other three, no defensive-check
+  skips: **rcp-mechanical-north-las-vegas-nv, vegas-paints-north-las-vegas-nv**
+  (package) and **al-jeffers-sons-townshend-vt** (website).
+
+  **The pricing-term flag is now on its THIRD run and third declined draft.** Al
+  Jeffers' CALL CARD closes "I want to build you a real site, no cost unless you
+  like it," the same offer term that appeared on both of yesterday's website-track
+  cards. Declined again. It contradicts `prospects/_pricing.md` ($500 to $1,200
+  one-time plus $30/mo hosting, which is what Sage quotes from) and still appears
+  nowhere in this repo except in call cards. **What changed in how I flagged it:**
+  yesterday it was a question at the top of the rolling file; today it is written
+  as a two-branch decision (either he approved it, in which case three drafts need
+  rewriting and it must land in `_pricing.md` before Sage quotes somebody the old
+  way, or he did not, in which case it must come out of the cards). Also sent a
+  push notification, because three runs of silence on an unapproved offer term
+  sitting in prospect-facing material is not something to keep logging quietly.
+  Still not a `handoffs/` item: that channel is cross-team, Montague is on this
+  team, and this is Sue's seam.
+
+  **Two North Las Vegas package prospects, same morning, same inbox — the
+  Northridge collision from 08-19 exactly.** Handled it by refusing the
+  response-time opener on BOTH, which is a first for a same-day package pair:
+  - **Vegas Paints — the scattered front door.** Three separately published phone
+    numbers, (702) 605-1141 and an 828 number on their own site and (702) 929-0937
+    on BBB, all from pages Montague fetched herself. Opener asks which one reaches
+    him. **Best property of this angle: it cannot embarrass us.** The numbers are
+    published by him and by BBB and they genuinely do not match, and if the sprawl
+    is deliberate call tracking then "yes, those are tracking lines" is a
+    face-saving answer that still opens the conversation. Rupika's (725) number
+    could not be confirmed by anyone so the body says three numbers, not four.
+    Dropped: the owner-operator ceiling, which is this seat's most-repeated shape
+    and has to lean on the unstable figure to land.
+  - **RCP Mechanical — the review nobody asked for.** Genuinely new mechanism
+    here: review volume in the trades measures whether anyone *asks*, not how many
+    good jobs got done, so a thin listing is a process fact rather than a verdict
+    on the owner. Face-saving by construction, since the premise is that his work
+    is better than his listing, and it maps directly onto reputation management
+    inside the Complete System. **Deliberately rejected Montague's own CALL CARD
+    hook** ("8+ years but only 33 reviews, that gap usually means leads aren't
+    converting"), which uses the same fact but points it at him as a diagnosis
+    with no face-saving door, and which depends on an 8-year figure BBB
+    contradicts (LLC formed 5/14/2021; eight is Poyner's personal trade tenure).
+    The shipped email needs no tenure figure at all. Review count asked
+    ("somewhere around thirty... is that about right?"), never asserted, so the
+    email survives the number being wrong.
+
+  **Rupika's response-time figures failed on BOTH package prospects, in the two
+  different ways the team has been cataloguing.** RCP was CONTRADICTED (three
+  searches never surfaced "4 hrs" once, substituting an unrelated 30-minute
+  review anecdote each time) so it is dropped entirely and not for the call
+  either, per the CVA convention. Vegas Paints was unstable (4hr / 2hr / "varies
+  2 to 5", review counts drifting 58/57/69), which is usable as a question and
+  which I still declined, on sameness grounds rather than confidence. That is four
+  straight runs where the sourced figure did not survive re-check. The pattern is
+  worth Kevin's weighting, and it is in the rolling file.
+
+  **Al Jeffers is the best draft I have written on the website track, and the
+  reason is structural.** Every website-track email this seat has produced argues
+  "you cannot be found," which is why the track keeps converging on one template.
+  Al Jeffers argues the opposite: he CAN be found, and what gets found is a page
+  whose Google-indexed title reads "Jeffers & Sons Heating & Cooling Inc. is under
+  construction" over a homepage that 403s. **No website reads as an old shop that
+  never bothered. A broken one reads as a shop that might have closed.** That is a
+  different claim with a different emotional beat, and for a 49-year-old business
+  it is the one thing a stranger sees. **New standing note: a broken site is not a
+  weaker version of no site, it is a different and better argument. Look for it.**
+
+  **Caught a near-collision on Al Jeffers' opener and rewrote it.** The first
+  version opened "Pull up your own web address on your phone," which is the same
+  opening MOVE as the Johnston Heating & Air second touch sitting in the held-lane
+  queue ("Type johnstonheatingandair.com into your phone") and is exactly why the
+  Guthrie parked-domain draft got killed on 09-05. The underlying mechanisms are
+  genuinely different (somebody else owns your name, versus your own site is live
+  and broken), but the first sentence would have looked copied. Rewrote it to lead
+  with the damning quote instead, which is stronger anyway. **This is the second
+  run in a row where reading the worn-mechanism list first paid for itself.**
+
+  **Kept out of Al Jeffers' copy and flagged for Kevin's ears only: the nephew.**
+  802 HVAC in Townshend was founded ~2022 by Cody Jeffers, Al's grandson and Tim's
+  nephew, after leaving this family shop. Real, and Rupika flagged it so the two
+  do not get conflated. A younger relative competing in the same small town is the
+  most personal thing in the file; it has no place in a cold email and I said I
+  would not raise it on a call either unless Tim does. Same treatment as Reliant's
+  bad review (08-19), JE & BC's HomeAdvisor 1.0 (09-05) and 4 Seasons' BBB F.
+
+  **Held lane: Clean Earth drafted, lane complete again at 34 of 35.** He was the
+  only held prospect without a `followup-1.md` other than sp-lawn-care-bangor-me
+  (permanent exclusion, Kevin owns Karl's thread). His first touch went out
+  yesterday so a second touch is not due; drafted it anyway to keep the lane
+  complete and said plainly in both the draft and the rolling file that it should
+  send behind everything from 08-17 and 09-02. Angle is the **forwardable link**:
+  fencing, dirt/gravel work and pressure washing are property-maintenance
+  services, and a property manager or HOA board has to put a link in front of an
+  owner, so with no site he never learns the bid existed. Distinct from touch one's
+  missing-catalog argument (customers who already know him) because this is a
+  buyer class he cannot reach at all. Dropped: naming Scratching the Earth
+  Landscaping, the real local competitor with a live site, on the standing rule
+  that we name a structural advantage and never a competitor.
+
+  **Approvals hygiene:** all four dated first-touch files were already
+  `status: superseded`, nothing to close. Regenerated
+  `ROLLING-first-touch-drafts.md` from live state (7 at `drafted`, split into
+  new-today and still-waiting tables, send order, mechanism list, the
+  response-time accounting, the escalated pricing ruling request, the guessed-email
+  flag on RCP). `ROLLING-followup-held-lane.md` patched for the real numbers (34
+  drafts, 35 held, fifteen days, Clean Earth in New today, Guthrie moved down into
+  a dated section).
+
+  **Upstream, and it got worse:** 104 at `stage: found`, up from 99. Eighteen
+  straight days of growth, and Montague advanced four today. Both standing asks
+  repeated in the rolling file, with the added point that a 104-prospect pile is
+  now the largest asset in this repo doing nothing.
+
+  **84% BrightLocal stat omitted again** on the website draft, fourteenth run
+  running. Al Jeffers is not a findability argument, so it would not have fit.
+
+  Track breakdown: 2 package, 1 website, plus 1 website second touch. Standard
+  sweep on body text only (em dash, en dash, bracket placeholder, retired package
+  names, third-person Kevin/Viridia, `$`, `%`, "guarantee", the 84% stat, stray
+  sign-off, British spellings) — clean on every check, no fixes needed this run,
+  which breaks the four-run British-spelling streak. Keep sweeping for them
+  anyway. Bodies run 135 to 146 words, in the recent band.
+
+  **Next run:** check `stage: enriched` first and recount by grep rather than
+  trusting `_fleet-state.md`'s pipeline line if its timestamp is stale. If Kevin
+  has ruled on the try-before-you-buy term, Al Jeffers, JE & BC Electric and Clean
+  Earth's touch two all need rewriting around it. Guthrie's touch three already
+  has its angle written down (the parked domains). RCP Mechanical's touch two
+  angle is written down too: the two live domains splitting his search authority,
+  which is a website argument I deliberately kept out of a package first touch.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.
