@@ -2341,3 +2341,73 @@
   garage doors/painting). New England generally is likely underexploited
   for this track relative to the South/Midwest/Mountain-West markets that
   dominate the tried-list so far.
+
+- (run 2026-09-06) Search-only package-track run per explicit task
+  instructions (no git, no enrichment, no outreach) — next four metros in
+  the flood-gates rotation after Denver/Austin/Dallas: Las Vegas NV, Tucson
+  AZ, Salt Lake City UT, Sacramento CA. Only 5 hits against a 12 target,
+  4 verticals (HVAC, painting, pest control x2, HVAC/electrical), 2 of the
+  4 metros represented: RCP Mechanical (North Las Vegas NV, HVAC, owner
+  Robbie/Robert Poyner, ~4hr Yelp response, 33 reviews/8+yr tenure gap,
+  reachable via confirmed domain rcpheatingandair.com), Vegas Paints (North
+  Las Vegas NV, painting, owner Moises Benites, ~4hr response, 58 reviews
+  since 2020, reachable via confirmed domain vegaspaints.com), Extreme Pest
+  Control (Las Vegas NV, pest control, owner Rick C. — first+last-initial
+  only, flagged for Montague to get a full surname — ~3hr response, 47
+  reviews, closed weekends/small-hours shop, no website found so flagged as
+  a future upsell candidate per the no-website-subset rule, reachable via
+  phone+partial owner name), Call Shamrock (Tucson AZ, HVAC/electrical,
+  8-year Marine veteran owner, ~5hr response/46 quote requests, AZ ROC
+  359203/359295, reachable via confirmed domain callshamrock.com), Eco Pest
+  LLC (Oro Valley AZ/Tucson metro, pest control, owner Nick Ingerston —
+  LinkedIn spells it "Ingertson," spelling unconfirmed — ~3hr response,
+  very short weekly hours (closed Sat/Sun) as a second small-shop signal,
+  reachable via confirmed domain ecopestaz.com). Las Vegas metro (Vegas/
+  Henderson/North Las Vegas) and Tucson metro (Tucson/Oro Valley/Marana)
+  both worked reasonably well; Salt Lake City (SLC/West Valley City/Sandy/
+  Provo/Orem/West Jordan) and Sacramento (Sacramento/Roseville/Elk Grove/
+  Folsom) ran unusually dry — roughly 60-70 combined search queries across
+  both with NOT ONE queueable hit, a new standing-pattern observation worth
+  flagging: both metros' Yelp advertiser pools read as heavily fast-
+  responding (10min-1hr the overwhelming norm) and reviews for the rare
+  slow-responder repeatedly PRAISED speed/responsiveness directly
+  (Amador Landscaping West Jordan UT, At Your Service Pros SLC,
+  Sacramento Repipe & Plumbing,
+  Master Tech Roofing Tucson, Golden Roofing AZ Tucson, Vine Electric Elk
+  Grove, Mad Turf Installations Las Vegas, Rakeman Plumbing North Las
+  Vegas, NV Landscapes Las Vegas, Service Plus Plumbing Henderson) — a
+  cleaner and more repeated version of the standing "reviews contradict
+  the pain signal" pattern than usual, worth trying a fresh technique
+  (e.g. complaint-language first, response-time second) on these two
+  specific metros next time rather than leading with the Yelp-advertiser
+  search. Complaint-language and "family owned" fallback searches were
+  also tried for both metros this run and also came up empty of queueable
+  hits (SLC: MSE Plumbing/Elk Grove Plumbing & Drain-style complaints
+  didn't apply to SLC itself; Sacramento: MSE Plumbing and Sacramento
+  Repipe complaints resolved to businesses whose broader review picture
+  turned out positive). Scale disqualifiers hit this run: Atlas Plumbing
+  (Henderson NV, 40yrs/4 generations/300+ reviews), Signature Heating
+  Cooling and Plumbing (Tucson AZ, 4.7 rating across thousands of
+  aggregator reviews, BBB-accredited since 2018 — reads established
+  despite a thin-looking Yelp-only slice), NV Landscapes (Las Vegas,
+  23+yrs/3rd generation/149-165 reviews), Universe Construction (Saratoga
+  Springs/Lehi UT — labeled "Salt Lake City" by search snippets but
+  actually Utah County, 120+ Google reviews, BuildZoom top-20% — a
+  cross-suburb-resolution catch), C and C Roofing and Baccus Roofing
+  (both Henderson NV, established/highly-rated, no pain signal). One
+  address-collision catch: "Topiaria" (Tucson landscaping, new-on-Yelp/
+  1-day response) resolved its listed address to Moon Valley Nurseries in
+  Marana, an unrelated garden-center business at the same address —
+  dropped as unresolved rather than assumed. Reachability-rule drops
+  (real signal, insufficient contact info): Stepping-Stone Landscaping
+  (Tucson AZ, owner confirmed as "Solomon," 1-day Yelp response, but no
+  phone or domain found across several follow-up searches), On 2 The Next
+  1 Landscaping and "Topiaria" itself (both Tucson, same problem). No
+  character/license red flags surfaced this run. New standing
+  markets-tried additions: Las Vegas/Henderson/North Las Vegas NV, Tucson/
+  Oro Valley/Marana AZ, Salt Lake City/West Valley City/Sandy/Provo/Orem/
+  West Jordan UT, Sacramento/Roseville/Elk Grove/Folsom CA — Vegas and
+  Tucson both have plenty of untried verticals remaining (roofing,
+  plumbing, garage door, restoration, remodeling, landscaping all only
+  partially worked in each); SLC and Sacramento are flagged above for a
+  technique change rather than a straight re-run.
