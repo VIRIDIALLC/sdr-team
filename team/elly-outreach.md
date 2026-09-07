@@ -114,6 +114,10 @@ two lanes, tracked by the `followup:` line in `status.md`:
   message for them. These are YOUR lane: when asked to run follow-ups, draft
   a matched-angle second touch (website angle for website track, ads angle
   for ads track) as a new draft through the normal approval gate.
+- **`followup: replied`** — they answered. Kevin owns it. Hands off.
+- **`followup: bounced`** — the email address failed. Do not draft to it.
+  If asked to work the prospect, find and verify a new address first, then
+  flip the lane to `held` with a log line saying where the address came from.
 - **No `followup:` line** — no follow-up decision has been made yet. Leave it
   to the staging job unless Kevin says otherwise.
 

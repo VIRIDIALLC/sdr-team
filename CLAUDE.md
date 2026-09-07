@@ -322,3 +322,17 @@ phone lane, then recycles:
 
 Agents: treat `followup: calling` like `enrolled` — the prospect is owned by
 Kevin's phone outreach; do NOT draft manual follow-ups against it.
+
+Two terminal lanes, written by VEGA's reply watcher (KIREEK
+`reply_watch.py`, reads Kevin's inbox every 10 minutes, 2026-09-07):
+
+- **`followup: replied`** — the prospect wrote back. GHL opportunity is moved
+  to Engaged. Kevin owns the thread. Never stage, enroll, call-list, or draft
+  against a replied prospect.
+- **`followup: bounced`** — Gmail returned a delivery failure for the address
+  on file. The address is wrong, not the prospect. Never enroll it in GHL.
+  Re-verify the address (or find a phone) before anything else happens; if a
+  new address is confirmed, set `followup:` back to `held` and log why.
+
+No job may overwrite `replied` or `bounced` with `staged`, `enrolled`, or
+`calling`. Log lines from the watcher read `(VEGA reply watch)`.
