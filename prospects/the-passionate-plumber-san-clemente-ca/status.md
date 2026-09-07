@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -44,3 +44,4 @@ quote_stage: none
   licensing language anywhere in the draft, per Montague's escalated CSLB
   flag. Case-studies page linked after the ask. Advanced to drafted.
 - 2026-08-26 (Kevin, via KIREEK): sent to Info@thepassionateplumber.com.
+- 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as Info@thepassionateplumber.com.

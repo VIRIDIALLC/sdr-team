@@ -22,3 +22,4 @@ Every autonomous send and enrollment under the 2026-09-02 standing approval (cap
 - 2026-09-07 12:31 enrolled follow-up → KJC Roofing, Inc. <info@kjcroofing.com> (kjc-roofing-mission-viejo-ca)
 - 2026-09-07 12:31 enrolled follow-up → Local Choice Pest & Landscape Nutrition <info@localchoicepest.com> (local-choice-pest-landscape-nutrition-cave-creek-az)
 - 2026-09-07 12:31 enrolled follow-up → Nombrano Construction <info@nombrano-construction.com> (nombrano-construction-phoenix-az)
+- 2026-09-07 12:31 enrolled follow-up → The Passionate Plumber <Info@thepassionateplumber.com> (the-passionate-plumber-san-clemente-ca)
