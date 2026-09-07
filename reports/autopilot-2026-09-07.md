@@ -14,3 +14,4 @@ Every autonomous send and enrollment under the 2026-09-02 standing approval (cap
 - 2026-09-07 12:31 enrolled follow-up → AKT Landscaping <aktsevices@gmail.com> (akt-landscaping-seattle-wa)
 - 2026-09-07 12:31 enrolled follow-up → Anthem Electric <anthemelectric@yahoo.com> (anthem-electric-alpine-ca)
 - 2026-09-07 12:31 enrolled follow-up → Dos Lunas Landscape and Construction, Denver, CO <25jovanni@gmail.com> (dos-lunas-landscape-denver-co)
+- 2026-09-07 12:31 enrolled follow-up → 4 Seasons Pest Management, Aurora, CO <service@4seasonspestco.com> (four-seasons-pest-management-aurora-co)
