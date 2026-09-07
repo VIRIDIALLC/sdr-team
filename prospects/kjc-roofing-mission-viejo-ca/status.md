@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -47,3 +47,4 @@ quote_stage: none
   assumption about how he operates, and a compliment rather than a question).
   Advanced to `drafted`. See outreach.md.
 - 2026-08-31 (Kevin, via KIREEK): sent to info@kjcroofing.com.
+- 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as info@kjcroofing.com.
