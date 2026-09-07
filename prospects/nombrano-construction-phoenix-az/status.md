@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
 
 - 2026-09-04 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track, The Complete System. Weakest prospect in the batch and the draft says so plainly to Kevin: guessed email on a two-week-old one-page domain that may have no mailbox, no reviews anywhere, CSV's 10hr figure unverifiable so not cited. Angle is that he is at zero: newly licensed 2025, no review history, so every lead is a percentage of the whole business rather than a rounding error. Recommended he be sent last. Dropped angle: the contact form with nothing behind it (untested assumption, and website-flavored on a package prospect).
 - 2026-09-04 (Kevin, via KIREEK): sent to info@nombrano-construction.com.
+- 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as info@nombrano-construction.com.
