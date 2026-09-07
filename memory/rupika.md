@@ -2411,3 +2411,39 @@
   plumbing, garage door, restoration, remodeling, landscaping all only
   partially worked in each); SLC and Sacramento are flagged above for a
   technique change rather than a straight re-run.
+
+- (run 2026-09-07) Scheduled run, both tracks. `git fetch` showed the
+  container starting on a detached HEAD exactly matching `origin/master`'s
+  fetched tip (`be08739`) — same recurring stale-ref symptom as every run
+  since 2026-08-13, fixed with `git checkout -B master origin/master`,
+  nothing lost. `_new-leads.md` had nothing dropped in. Ran both tracks as
+  parallel background Agent-tool sub-agents again, research + file-write
+  only (no memory/git access) — committing each batch as soon as it landed,
+  per the pattern since 2026-08-27.
+- (website track, run 2026-09-07) 3 hits, three brand-new small/mid markets
+  not on the standing avoid-list: Ken Adams Plumbing Inc (Walla Walla WA,
+  plumbing, established 1979, strong directory footprint but zero owned
+  domain — caught and flagged a false-positive: an AI search summary
+  claimed "kenadamsplumbing.com" was their site, actually an unrelated
+  multi-city plumbing lead-gen network with no Walla Walla page at all;
+  reachable via phone + email, owner likely "Ken Adams" per business name,
+  medium confidence), DW Olson Electric (Winona MN, electrical, since
+  2007, BuildZoom top-8%-of-MN score, Facebook + directory-only, owner
+  Daniel W. Olson confirmed high-confidence via BBB, reachable via phone;
+  flagged a same-market competitor with a real site — KEY Electric and
+  Automation, keyelec.net — don't conflate), Durango Brushworks LLC
+  (Durango CO, painting, Facebook-only and unusually thin footprint even
+  by this track's standards — no directory listings at all, which read as
+  its own signal — but reachability is genuinely weak: no phone/email/
+  owner name surfaced anywhere, only the Facebook page itself; flagged
+  hard for Montague, a direct CO Secretary of State entity lookup is the
+  likely unblock since plain web search couldn't reach it). Cold this pass
+  (real sites found, don't re-try as-is): Winona MN roofing (Denny's
+  Roofing) and pest control (A+ Pest Management); Durango CO garage doors
+  (Adams Overhead Door), landscaping (several, incl. AMP Lawn &
+  Landscaping), and a painting runner-up (Rocky Top Painting). New
+  standing markets-tried additions: Walla Walla WA, Winona MN, Durango CO
+  — all three read as productive but only lightly worked (1 vertical
+  confirmed cold each beyond the hit), worth a follow-up pass on untried
+  verticals (HVAC, roofing/pest control minus what's noted cold above,
+  garage doors, restoration) if revisited.
