@@ -103,7 +103,7 @@ makes "emailing, replying, selling" real without burning his Gmail domain:
 - **Kevin's daily touch becomes one item:** "review the SDR drafts" in
   KIREEK, batch-approve, done. Not one email at a time.
 
-**STANDING APPROVAL, PROPOSED (status: proposed):** Elly's first-touch
+**STANDING APPROVAL, PROPOSED (status: approved):** Elly's first-touch
 drafts that pass the quality gate may be enrolled and sent through GHL
 without per-item review, capped at 30 per day, home-service package track
 only, never to a domain already in the CRM, never to anyone who replied
