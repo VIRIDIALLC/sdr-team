@@ -42,7 +42,6 @@ goes through your normal approval).
 | Professional Window Cleaning Tempe Az | — | ** (480) 839-1707 | 0/3 | — |
 | Rafael Iris Roofing Valley Village Ca | — | — | 0/3 | — |
 | Ramos Painting Arcadia Ca | Oscar | (626) 512-1007 | 0/3 | — |
-| Rebuild Arizona Construction Phoenix Az | — | ** (602) 574-1100 — matches brief.md exactly. | 0/3 | — |
 | Reliant Pest Control Northridge Ca | Gary               (Martin — owner/founder, confirmed via | (818) 349-9610 | 0/3 | — |
 | Scenic View Landscape Glendora Ca | Isaias Gallegos | (626) 428-8380 | 0/3 | — |
 | Sky View Window Cleaning Phoenix Az | — | ** (623) 349-7012 | 0/3 | — |
@@ -52,4 +51,4 @@ goes through your normal approval).
 | Vigilair Heating Cooling Cerritos Ca | Robert            (owner/founder; Susy Vigil — wife, office — | (562) 818-5001    (search-snippet sourced, not page-verified — | 0/3 | — |
 | Walnut Valley Pest Control Walnut Ca | Mary               (Mary Cadena, CEO per CA SOS filing — | (909) 861-1600 | 0/3 | — |
 
-_Last rendered 2026-09-07 09:12 local._
+_Last rendered 2026-09-07 13:36 local._
