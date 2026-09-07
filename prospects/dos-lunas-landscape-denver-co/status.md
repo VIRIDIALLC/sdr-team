@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
 
 - 2026-09-05 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track, The Complete System. Opener asks the response-time range as a question ("a few hours to a day") rather than quoting Rupika's ~10hr, per Montague's instruction that fresh searches returned 8hr/10hr/1day with no stable figure. Angle that won: the design-build shortlist forms in one weekend sitting before he sees the message. Dropped: the personal-Gmail-as-business-inbox angle (harder to say without it reading as a dig at his professionalism).
 - 2026-09-05 (Kevin, via KIREEK): sent to 25jovanni@gmail.com.
+- 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as 25jovanni@gmail.com.

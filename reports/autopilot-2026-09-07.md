@@ -13,3 +13,4 @@ Every autonomous send and enrollment under the 2026-09-02 standing approval (cap
 - 2026-09-07 12:31 enrolled follow-up → AirBest Home Services <airbesthomeservices@gmail.com> (airbest-home-services-puyallup-wa)
 - 2026-09-07 12:31 enrolled follow-up → AKT Landscaping <aktsevices@gmail.com> (akt-landscaping-seattle-wa)
 - 2026-09-07 12:31 enrolled follow-up → Anthem Electric <anthemelectric@yahoo.com> (anthem-electric-alpine-ca)
+- 2026-09-07 12:31 enrolled follow-up → Dos Lunas Landscape and Construction, Denver, CO <25jovanni@gmail.com> (dos-lunas-landscape-denver-co)
