@@ -7,13 +7,12 @@ is a different list (email sequence finished); this one is prospects that
 never had an email to begin with. Say "prep me for a call with <name>" for
 the pre-call card.
 
-**Last regenerated: 2026-09-06 (Montague).** Every row below is a real
+**Last regenerated: 2026-09-07 (Montague).** Every row below is a real
 `call_ready: yes` flag on that prospect's own `status.md`, set after an
-actual two-source phone check. Grown from 3 rows (2026-09-04) to 6 this run
-— 3 new rows added from today's batch (call-shamrock-tucson-az,
-eco-pest-oro-valley-az, extreme-pest-control-las-vegas-nv), no dedicated
-sweep of the older backlog this run (today's 8-prospect new batch used the
-full run).
+actual two-source phone check. Grown from 6 rows (2026-09-06) to 8 this run
+— 2 new rows added from today's batch (quality-painting-sa-san-antonio-tx,
+dw-olson-electric-winona-mn), no dedicated sweep of the older backlog this
+run (today's 13-prospect new batch used the full run).
 
 **Note on the retired 2026-09-02 seed:** most of that 53-row seed are still
 real, untouched `found`-stage prospects sitting in `prospects/*/status.md` —
@@ -33,6 +32,8 @@ website/ads.
 | call-shamrock-tucson-az | package | Patrick (Patrick Rogan) — single-sourced (BBB only) | (520) 704-7336 | Rupika's discovery + BBB | no verified hook — response-time claim contradicted across searches; lead with veteran-owned/licensed angle |
 | eco-pest-oro-valley-az | package | Nick (Ingerston) | (520) 797-7378 | Rupika's discovery + BBB | Your Yelp shows a response time of about 3 hours on quote requests. Is that still accurate? With your hours as limited as they are, I don't think you're losing these on purpose. |
 | extreme-pest-control-las-vegas-nv | package | Rick (Cox) — moderate confidence | (702) 490-0707 | Rupika's discovery + Nextdoor review | no verified hook — response-time claim never surfaced in search; lead with tenure/loyalty angle |
+| quality-painting-sa-san-antonio-tx | package | Ernest (Espinoza) | (210) 843-8118 | site + Yahoo Local + Nextdoor | Your Yelp shows about a 3 hour response time on 40 recent quote requests. Does that sound right? |
+| dw-olson-electric-winona-mn | website | Daniel (Olson) | (507) 961-0264 | BBB + Nextdoor + Claimspages | Your website address actually just redirects to your Google Maps pin instead of showing your work — did you know that? |
 
-_6 verified call-ready rows as of 2026-09-06. The prior 53-row seed is
+_8 verified call-ready rows as of 2026-09-07. The prior 53-row seed is
 retired — see note above._

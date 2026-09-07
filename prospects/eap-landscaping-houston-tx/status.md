@@ -1,5 +1,5 @@
 ---
-stage: found
+stage: enriched
 track: package
 quote_stage: none
 ---
@@ -11,3 +11,4 @@ quote_stage: none
 ## Log
 
 - 2026-09-07 (Rupika): found, added to pipeline. Landscaping, Houston TX 77084 (west Houston/Cypress area, Houston metro). Pain signal: Yelp "responds in about 4 hrs" (drifted 2-4 hrs across searches) with 4.3 rating/7 reviews — small volume but a real, stated over-1-hour response on a Yelp-advertised listing. Family-owned, owner Ernesto, praised for install quality (flagstone edging) in the one review found, not response speed — no direct contradiction. Reachable via confirmed domain.
+- 2026-09-07 (Montague): verified and advanced to `enriched`. Email CONFIRMED directly (eaplandscapingllc1@gmail.com). Owner first name "Ernesto" corroborated via 2 independent review mentions, surname/title unconfirmed — left as first-name-only. Phone single-sourced. Response-time figure CONTRADICTED on reconfirmation (4hr/30min/2hr) — dropped, generic hook used instead. See enrichment.md.

@@ -3301,3 +3301,114 @@
   - Backlog after this run: no genuinely untouched `stage: found` prospects
     remain (Dumont LLC and Outdoor Property Services stay at `found` by
     documented gate misses, not backlog).
+
+- (2026-09-07 run) `_fleet-state.md` was stamped 2026-09-06 04:14 UTC — over
+  24h old, past the ~12h staleness threshold in CLAUDE.md. Flagged this
+  plainly rather than trusting it; treated Kevin's mode/priorities section as
+  unverified for this run (didn't change anything about how this run
+  worked, but noting it since the doctrine asks to say so). Git state: local
+  HEAD was detached but matched `origin/master` tip (`98c91fd`) exactly —
+  standard stale-cache pattern, `git checkout -B master origin/master`, no
+  data-loss risk. Scanned `prospects/*/status.md` for `stage: found` with no
+  Montague log entry — exactly 13 matched, today's two Rupika batches (10
+  package: Albuquerque, San Antonio, Houston-metro, Gilroy/San Jose metro;
+  3 website: Walla Walla WA, Winona MN, Durango CO) — within the 15/run cap,
+  worked as one batch since it was already under the limit. Used 13 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself for consistency.
+
+  Result: 9 of 13 advanced to `enriched` (Blessed Pest Control, Katy Pro
+  Painting, EAP Landscaping, E-Plumbing And Drain Services, Apex Pest
+  Control, Silver Electric, Guy's Heating and Air Conditioning, Sleep Tight
+  Pest Control — all package; Ken Adams Plumbing — website). 4 held at
+  `found`: Pacheco Electric (email gate, phone conflicts across sources),
+  Quality Painting S.A. (email gate, newly `call_ready: yes`), Durango
+  Brushworks (email + phone both genuinely not found), DW Olson Electric
+  (email gate, newly `call_ready: yes`).
+
+  - **Sleep Tight Pest Control — the most consequential catch of the run, a
+    genuine owner-name error in Rupika's own sourcing, not a search-tool
+    fabrication.** Her brief named "Rustom Setna" as owner. Wrong: every
+    independent source that names Setna (LinkedIn, RocketReach, ContactOut,
+    ZoomInfo, Buzzfile) ties him specifically to a *different* Sugar Land
+    pest control company, Rabka Pest Control — same city, same industry,
+    apparently conflated during sourcing. The real founder, Chris Hatfield,
+    surfaced via an independent 2017/2018 press interview (Voyage Houston
+    Magazine) that also carried this business's actual domain
+    (sleeptighthouston.com — Rupika's search had only found a directory
+    subpage, sugarlanddirect.us) and a sourced email (Cloudflare-obfuscated
+    on the page, decoded directly rather than guessed). Corrected the name
+    before it reached `enrichment.md` and flagged prominently in both files
+    — this is exactly the kind of cross-agent data error Sue's charter
+    exists to catch (the 2026-08-18 CALL CARD parser miss was the reader's
+    fault; this one is a sourcing-stage name conflation), and worth a
+    standing reminder: verify a brief's owner name against an independent
+    source before trusting it forward, the same discipline already applied
+    to website-gap and response-time claims, not just to AI-search
+    summaries.
+  - **DW Olson Electric — sharper website-gap evidence than the usual "no
+    site exists."** One domain, olsonelectricwinona.com, does resolve and
+    is even the one BBB lists as their site — but it 301-redirects to a
+    Google short link that lands on their own Google Maps pin, not a real
+    page. A live domain that's actually just a redirect-to-Maps trap is a
+    more specific, more usable hook than a plain absence, and worth
+    remembering as its own pattern distinct from "domain resolves to an
+    unrelated business" (Anthem Electric, EZ Electrical) or "domain lapsed
+    to a squat" (Plourdes Electrical) — this one still points at the real
+    business, it just goes nowhere.
+  - **Two more response-time figures came back CONTRADICTED, not just
+    unconfirmed** (Guy's Heating: 11hr/4hr/24min-50% across three
+    snapshots; EAP Landscaping: 4hr/30min/2hr) — both dropped per the CVA
+    Exterminators convention, real alternate hooks used instead (Guy's
+    Heating: a broken HTTPS site, an actual live pain signal caught this
+    run; EAP Landscaping: a generic opener). Two others came back
+    genuinely reconfirmed/corroborated rather than contradicted for once
+    — Blessed Pest Control's "same-day service" review resolved as a
+    different metric, not a real conflict, and Quality Painting S.A.'s
+    figure got a real third-platform reconfirmation (Yahoo Local
+    independently showing "3 hrs/100%," landing right between Rupika's two
+    Yelp reads). Worth noting both directions keep happening at similar
+    rates — this sourcing technique's number is genuinely unstable in both
+    directions, not just failure-prone.
+  - **Email gate: two new "real but not page-verified" categories, both
+    advanced with explicit confidence flags rather than either blocked or
+    silently trusted.** Guy's Heating's email (guyshvac@yahoo.com) recurred
+    identically across 5 independent WebSearch queries but never showed up
+    in a direct page fetch (the pages that likely carry it are
+    login-walled) — treated as real, convergent-evidence, not a
+    domain-pattern guess, per the standing "search-summary quotes the
+    page's own contact info" fallback. Ken Adams Plumbing's email
+    similarly converges across several directories tied to the same
+    address/phone. Both flagged for Elly/Kevin as moderate- rather than
+    high-confidence — worth watching whether this reading holds up the way
+    the guessed-pattern-on-live-domain precedent has.
+  - **Two more owner-name "real name, unconfirmed title" cases** (Silver
+    Electric's "Sylvester/Silvestre" — confirmed only as the field
+    technician, not verified as owner; Ken Adams Plumbing's "Ken Adams" —
+    circumstantially strong, business literally named for him, but WA SOS/
+    L&I lookups are JS-only and couldn't be queried directly) — both used
+    on the CALL CARD with an explicit not-confirmed-as-owner/not-certified
+    caveat, same convention as Merican Plumbing (2026-08-17) and Dave's
+    Plumbing (2026-08-16).
+  - **A same-name-different-city trap correctly caught and ruled out**
+    (Apex Pest Control: a "Dustin Barousse, Owner" result belongs to an
+    unrelated Knoxville TN business of the same very-common name — did not
+    use it) — same discipline as Mr. Electric/franchise cautions before.
+  - **Pacheco Electric: a genuine phone conflict, not just a single-source
+    gap** — two different numbers, each independently corroborated on its
+    own cluster of sources, disagreeing with each other. Per the
+    call_ready rule this is "a number that conflicts across sources," not
+    "one source only" — held off `call_ready` rather than picking one
+    arbitrarily.
+  - `CALL-READY.md` regenerated: 6 → 8 verified rows (added Quality
+    Painting S.A. and DW Olson Electric). Did not do a dedicated sweep of
+    the older backlog this run (D&D Plumbing, SonRise Roofing, Superior
+    Roofing, Crandell Pest Control, Noska Lawncare, Casey Moriarty Pest
+    Control, Radiant Remodeling Pros, CV Roofing, WDM Garage Doors, Lloyd
+    Miller's Painting, Plourdes Electrical, Dumont LLC, Outdoor Property
+    Services, and others) — today's 13-prospect new batch used the full
+    run.
+  - Backlog after this run: no genuinely untouched `stage: found` prospects
+    remain (Pacheco Electric, Quality Painting S.A., Durango Brushworks,
+    DW Olson Electric stay at `found` by documented gate misses, not
+    backlog).
