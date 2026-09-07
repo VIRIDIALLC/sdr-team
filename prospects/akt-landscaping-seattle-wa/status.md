@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -16,3 +16,4 @@ quote_stage: none
 
 - 2026-09-04 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track, The Complete System. No response-time number cited (4/5/6/10hr all surfaced in one pass, actively-unstable bucket per the CVA convention). Angle is seasonality: Seattle landscaping demand arrives in a six-week spring lump and an owner-operator's intake is flat all year, so the same response time is free in November and costs the job in April. Declined Montague's review-count-vs-tenure CALL CARD hook (Hero AC 08-31 mechanism, and it argues from an absence). Flagged for Kevin: the prospect's own first name is Kevin.
 - 2026-09-04 (Kevin, via KIREEK): sent to aktsevices@gmail.com.
+- 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as aktsevices@gmail.com.
