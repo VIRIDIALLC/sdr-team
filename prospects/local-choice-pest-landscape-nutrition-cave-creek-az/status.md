@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -60,3 +60,4 @@ quote_stage: none
   and is a hard disqualifier if it comes back revoked or inactive. Advanced to
   `drafted`.
 - 2026-08-31 (Kevin, via KIREEK): sent to info@localchoicepest.com.
+- 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as info@localchoicepest.com.
