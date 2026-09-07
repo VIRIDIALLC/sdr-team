@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-09-07 18:44 UTC (2026-09-07 11:44 Phoenix)
+Generated: 2026-09-07 18:57 UTC (2026-09-07 11:57 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -98,7 +98,7 @@ Generated: 2026-09-07 18:44 UTC (2026-09-07 11:44 Phoenix)
 ## Systems — live-probed, not recalled
 
 - **GHL API:** UP (live probe returned 200)
-- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-09-07 18:44 UTC)
+- **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-09-07 18:57 UTC)
 - **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 0m ago)
 - **KIREEK repo:** 0 commit(s) not yet pushed to origin (origin is current)
 
@@ -110,7 +110,7 @@ Generated: 2026-09-07 18:44 UTC (2026-09-07 11:44 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 54 minutes ago — "Change status of Elly's first-touch drafts to approved" (95eff916f)
+- last commit: 67 minutes ago — "Change status of Elly's first-touch drafts to approved" (95eff916f)
 - pipeline (prospects, 254 items): found 108 · enriched 1 · drafted 14 · approved 2 · sent 120 · closed 6 · dismissed 3 — ~53% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-09-07 on `blessed-pest-control-san-antonio-tx` — "first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track. Angle that won: th" · 1 open handoff(s) in their inbox
@@ -124,7 +124,7 @@ Generated: 2026-09-07 18:44 UTC (2026-09-07 11:44 Phoenix)
 - waiting on Kevin (4): For Kevin — first-touch drafts waiting on you (LIVE QUEUE); Follow-up sequence — 13 prospect(s) ready to enroll (rolling queue); For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE); Real estate campaign — live state (rolling)
 
 ### Ads Team
-- last commit: 20 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (5686ed8e9)
+- last commit: 20 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (3e151d509)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
@@ -142,7 +142,7 @@ Generated: 2026-09-07 18:44 UTC (2026-09-07 11:44 Phoenix)
 - waiting on Kevin (2): 2026-08-14: Post-purchase onboarding sequence — spec + gap list; 2026-08-24: Billing-transition client comms + Tyler "keep the system" one-pager
 
 ### Finance Team
-- last commit: 53 minutes ago — "Update status to approved in status.md" (9ce935339)
+- last commit: 66 minutes ago — "Update status to approved in status.md" (9ce935339)
 - pipeline (invoices, 9 items): draft 3 · paid 1 · draft_amount_disputed 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 2 · sent_to_collections 1 — ~25% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-09-07 on `reminder-antonio-gonzales-2026-08` — "Live QBO pull — balance still $397.00 per QBO, now 109 days overdue, still 91+ bucket. **Sixth consecutive run" · 1 open handoff(s) in their inbox
@@ -150,7 +150,7 @@ Generated: 2026-09-07 18:44 UTC (2026-09-07 11:44 Phoenix)
 - waiting on Kevin (4): 2026-09-04: Yelp wire (Kevin: "went through" the morning of 2026-09-01) — the Ba; A/R aging review — rolling file (regenerated in place each run); Open questions — books cleanup, 2026-08-15; Open questions — payout reconciliation, 2026-08-15
 
 ### Social Team
-- last commit: 30 minutes ago — "Media upload done: all 8 scheduled posts carry their creative (KIREEK social_media_upload." (0cf4eeb95)
+- last commit: 43 minutes ago — "Media upload done: all 8 scheduled posts carry their creative (KIREEK social_media_upload." (0cf4eeb95)
 - pipeline (posts, 33 items): drafted 3 · scheduled 8 · posted 9 · superseded 13 — ~77% through the pipeline
 - where each agent is (from their own logged task work):
   - **Ash** (Designer): 2026-09-05 on `the-repeat-work-order` — "Built the LinkedIn card — `creative/linkedin.png`, 1080x1350. Went vertical instead of the brief's suggested h" · 1 open handoff(s) in their inbox
@@ -160,7 +160,7 @@ Generated: 2026-09-07 18:44 UTC (2026-09-07 11:44 Phoenix)
 - waiting on Kevin (4): 2026-08-21: Comment reply kit — Viridia's own channels; 2026-08-21: Reconnect the Viridia Analytics Facebook page in GHL (also restores ; 2026-08-25: TFP Landscaping — Yelp page updates, drafts for your approval; 2026-08-28: Your personal LinkedIn — three drafts, so the question is a read and
 
 ### SEO Team
-- last commit: 2 hours ago — "SEO routine 2026-09-07: escalate 2 items past their standing timeout thresholds" (c94cded35)
+- last commit: 3 hours ago — "SEO routine 2026-09-07: escalate 2 items past their standing timeout thresholds" (c94cded35)
 - pipeline (audits, 3 items): recommendations 2 · tracking 1 — ~78% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elenor** (Backlink & Citation Outreach): no logged task activity yet
@@ -178,7 +178,7 @@ Generated: 2026-09-07 18:44 UTC (2026-09-07 11:44 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-09-07 18:44 UTC (auto-generated by VEGA's backend):
+As of 2026-09-07 18:57 UTC (auto-generated by VEGA's backend):
 Real MRR: $3782/mo (VERIFIED 2026-08-24 - sum of 6 active Stripe subscriptions (live API pull). The missing $897/mo is TYLER (Wall Candy) at past_due after an 8/22 failed payment - RECOVERABLE, payment-plan talks in progress; AZ GLO's Stripe status is unverified (finance checking). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $6,218/mo → 6 Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 114 days (16 weeks) → ~1 close per 2 week(s).
