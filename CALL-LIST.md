@@ -2,7 +2,7 @@
 
 Machine-rendered by VEGA's call-recycle sweep; don't hand-edit (status.md
 is the source of truth). These prospects finished the email sequence
-(~14 days after enrollment, no reply, no close). Say
+(~22 days after enrollment, no reply, no close). Say
 "prep me for a call with <name>" for the pre-call card, and "log a call
 attempt for <name>" after each dial. At 3 attempts a
 prospect auto-recycles back into the follow-up queue (re-enrollment still
@@ -51,4 +51,4 @@ goes through your normal approval).
 | Vigilair Heating Cooling Cerritos Ca | Robert            (owner/founder; Susy Vigil — wife, office — | (562) 818-5001    (search-snippet sourced, not page-verified — | 0/3 | — |
 | Walnut Valley Pest Control Walnut Ca | Mary               (Mary Cadena, CEO per CA SOS filing — | (909) 861-1600 | 0/3 | — |
 
-_Last rendered 2026-09-07 13:36 local._
+_Last rendered 2026-09-07 14:00 local._
