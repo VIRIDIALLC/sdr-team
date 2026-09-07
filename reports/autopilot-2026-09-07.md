@@ -12,3 +12,4 @@ Every autonomous send and enrollment under the 2026-09-02 standing approval (cap
 - 2026-09-07 12:31 sent first touch → Vegas Paints (residential/commercial painting) <moises@vegaspaints.com> (vegas-paints-north-las-vegas-nv)
 - 2026-09-07 12:31 enrolled follow-up → AirBest Home Services <airbesthomeservices@gmail.com> (airbest-home-services-puyallup-wa)
 - 2026-09-07 12:31 enrolled follow-up → AKT Landscaping <aktsevices@gmail.com> (akt-landscaping-seattle-wa)
+- 2026-09-07 12:31 enrolled follow-up → Anthem Electric <anthemelectric@yahoo.com> (anthem-electric-alpine-ca)

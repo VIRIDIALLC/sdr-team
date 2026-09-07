@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -16,3 +16,4 @@ quote_stage: none
 
 - 2026-09-04 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track, The Complete System. No response-time number cited (4 days/126 vs 10 min/61 across two checks, actively-contradicted bucket). Angle is the front door against the back door: customers describe him as easy to reach, but after 19 years it is still one man and one phone, so people who haven't hired him yet queue behind everyone who has. Dropped angle: the missing website, because it argues from an absence and its honest reply is 'so build me a site', a cheaper product than the one we're selling.
 - 2026-09-04 (Kevin, via KIREEK): sent to anthemelectric@yahoo.com.
+- 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as anthemelectric@yahoo.com.
