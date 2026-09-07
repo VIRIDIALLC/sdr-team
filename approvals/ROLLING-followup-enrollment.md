@@ -1,4 +1,4 @@
-# Follow-up sequence — 11 prospect(s) ready to enroll (rolling queue)
+# Follow-up sequence — 13 prospect(s) ready to enroll (rolling queue)
 
 Sent 2+ days ago, real email on file, no reply recorded,
 and the first email was the Yelp angle (track: package) — the only track
@@ -14,6 +14,8 @@ a dated backlog.
 | AirBest Home Services — Puyallup, WA (South Sound / Seattle-Tacoma metro) | airbesthomeservices@gmail.com |
 | AKT Landscaping (A.K.T Landscaping Services LLC) — Seattle/Burien, WA (Seattle metro) | aktsevices@gmail.com |
 | Anthem Electric — Alpine, CA (San Diego metro) | anthemelectric@yahoo.com |
+| Dos Lunas Landscape and Construction, Denver, CO | 25jovanni@gmail.com |
+| 4 Seasons Pest Management, Aurora, CO | service@4seasonspestco.com |
 | Gibson Roofing — Damascus, OR (Portland metro) | info@gibsonroofing.com |
 | Green Dreams Landscape Design + Build — San Diego, CA (San Diego metro) | office@greendreams.land |
 | Hero AC & Heat LLC, 3009 N Rockwell Ave, Casa Grande, AZ (Pinal County, Phoenix-metro exurb) — HVAC | herohvac5@gmail.com |

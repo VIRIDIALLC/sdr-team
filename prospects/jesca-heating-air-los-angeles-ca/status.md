@@ -1,6 +1,7 @@
 ---
 stage: sent
-followup: enrolled
+followup: calling
+call_attempts: 0
 track: package
 quote_stage: none
 ---
@@ -22,3 +23,4 @@ quote_stage: none
   outreach.md.
 - 2026-08-18 (Kevin, via KIREEK): sent to info@jescahvac.com.
 - 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
+- 2026-09-07 (VEGA): email sequence presumed finished (14 days since enrollment, no reply logged) — moved to Kevin's CALL-LIST.md for phone outreach.

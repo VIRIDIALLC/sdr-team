@@ -1,6 +1,7 @@
 ---
 stage: sent
-followup: enrolled
+followup: calling
+call_attempts: 0
 track: package
 quote_stage: none
 ---
@@ -18,3 +19,4 @@ quote_stage: none
 - 2026-08-21 (Elly): drafted (package). Review-count opener (33 reviews since 2012 on a quarterly-service business); deliberately did NOT use Montague's bad-review hook, per the 08-19 Reliant precedent that quoting bad reviews at a stranger is not face-saving. See outreach.md.
 - 2026-08-21 (Kevin, via KIREEK): sent to info@opexterminating.com.
 - 2026-08-24 (Kevin, via KIREEK): enrolled in the GHL outbound pipeline for real.
+- 2026-09-07 (VEGA): email sequence presumed finished (14 days since enrollment, no reply logged) — moved to Kevin's CALL-LIST.md for phone outreach.
