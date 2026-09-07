@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
 
 - 2026-09-04 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track, The Complete System. Hardest of the batch because he is already fast: no number cited, per Montague's recommendation, only qualitative praise. Angle inverts the usual pitch: he runs separate tracking numbers on Yelp and on his own site, so he measures which line rang but not which one produced a signed build. Attribution, not speed. Dropped angle: the length of a design-build sale (close to KJC 08-28).
 - 2026-09-04 (Kevin, via KIREEK): sent to office@greendreams.land.
+- 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as office@greendreams.land.
