@@ -1,6 +1,6 @@
 # Real estate campaign — live state (rolling)
 
-status: pending
+status: approved
 
 **One rolling file, not dated dailies** (Kevin's 2026-08-25 rule). Any
 session working the real estate play updates THIS file rather than adding
