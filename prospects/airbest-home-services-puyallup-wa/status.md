@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
 
 - 2026-09-04 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track, The Complete System. Opened on the ~3hr Yelp figure as a QUESTION (unconfirmed-but-not-contradicted bucket, allowed since 2026-08-13); the angle is that he already paid for the expensive half of the funnel (15+ indexed pages, a landing page per town he covers) and the leak is at the last step. Dropped angle: marketing-outran-capacity, same mechanism stated as a criticism instead of a compliment.
 - 2026-09-04 (Kevin, via KIREEK): sent to airbesthomeservices@gmail.com.
+- 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as airbesthomeservices@gmail.com.
