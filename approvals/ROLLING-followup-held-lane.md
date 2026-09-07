@@ -1,7 +1,7 @@
 # For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE)
 
 status: open
-Last regenerated: 2026-09-06 (Elly)
+Last regenerated: 2026-09-07 (Elly) — counts re-verified live, unchanged
 
 > **This is the only second-touch approval file**, and it replaces the dated
 > `2026-08-21-followup-drafts-held-lane.md`, which is now marked superseded. It is
@@ -21,7 +21,7 @@ the bottom. **Clean Earth Landscaping, whose first touch you sent yesterday, is
 drafted today** and is the only addition since yesterday. The lane stays
 complete: every held prospect that should have a second touch has one.
 
-**Nothing here has moved in fifteen days.** The ten from 08-21 have been waiting
+**Nothing here has moved in sixteen days.** The ten from 08-21 have been waiting
 since 08-21 and the twenty-one from 09-02 have not been sent either. That is not
 a complaint about your queue, it is the one number in this file worth watching:
 these were written because the doctrine says roughly 93% of conversions come by

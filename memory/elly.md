@@ -3481,3 +3481,175 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-09-07 (this run) — 8 first touches, the whole enriched queue, and the
+  drafted pile is now 15.** `git fetch origin` first per CLAUDE.md: origin/master
+  had moved to c1727ce (Montague's 09-07 pass, 13 enriched / 9 advanced / 4 held,
+  on top of two Rupika find batches). Container started in a **detached HEAD 40
+  commits behind** with a clean tree, the same stale-ref pattern logged every run
+  since 08-13; `git checkout master && git merge --ff-only origin/master` fixed
+  it.
+
+  **`_fleet-state.md` was ~37 hours stale (2026-09-06 04:14 UTC against a
+  2026-09-07 17:08 UTC run), three times past the ~12 hour threshold CLAUDE.md
+  names, and it was ALSO stale yesterday at 13 hours.** Two runs in a row now.
+  Treated everything in it as unverified and recounted by grep, which was again
+  the right call: it claimed `enriched 1 · drafted 4` against a live
+  `enriched 9 · drafted 7`. Pushed a notification about the sync loop, because a
+  second consecutive stale refresh is a loop that is down rather than a loop that
+  was briefly late, and every team in the fleet reads that file as ground truth.
+  **Restating last run's lesson because it held again: a stale fleet-state does
+  not look broken, it looks like a smaller queue than you actually have.**
+
+  Counts by grep: 109 found, 9 enriched, 7 drafted, 2 approved, 119 sent, 6
+  closed, 3 dismissed. The ninth enriched is jc-heating-cooling-amarillo-tx,
+  Kevin's own email-verification hold from 2026-08-03, now day 36, already
+  drafted, correctly skipped again. Drafted the other eight, no defensive-check
+  skips. **Eight is the largest normal-queue batch this seat has done under the
+  10-per-run flood-gates ruling** and it was the whole queue, not a batch-size
+  choice.
+
+  **Six package-track drafts, five of them Houston-area Texas, out of one inbox
+  on one day. That is the worst in-batch sameness risk this seat has ever had**,
+  worse than Northridge on 08-19 and worse than the seven on 09-05, because five
+  of them share a metro AND a track. Eight distinct mechanisms, and the two that
+  collided got resolved deliberately rather than accidentally:
+  - **Blessed Pest — the shared inbox.** BlessedPestControl@gmail.com is the
+    whole company inbox and both founders (Ivy Wood and Ashton Walkup) do field
+    work, so every message belongs to both of them and therefore to neither.
+    **New axis: every other draft argues how FAST a lead is answered; this one
+    argues WHO IT BELONGS TO.** Face-saving by construction because the email
+    says outright that nobody is dropping the ball, the structure just has no
+    catcher.
+  - **Sleep Tight — the customer who will not call you.** Bed bug inquiries are
+    typed at night, from bed, out of embarrassment, and sent to four companies at
+    once by someone who will not have that conversation twice. **Best line I have
+    written on this seat: "Three hours is a fine number. It's just measured from
+    when you woke up."** It concedes his number is good, which is disarming and
+    true, then relocates the problem where the number cannot see it.
+  - **Katy Pro — follow-up, not speed, and this inverts the whole seat.** His
+    ~2-3 hr figure is the ONLY response-time number in five runs that survived
+    independent re-check, and it is good news. So the standard opener would have
+    been an insult. The email concedes his speed in line two and argues that
+    speed wins the first conversation while persistence wins the job (Velocify's
+    sixth-attempt evidence, deliberately not quoted). **Second use of the Green
+    Dreams principle (09-04): against an operator already good at what we sell,
+    find the question their own competence proves they are asking and cannot
+    answer.**
+  - **Silver Electric — demand concentration.** Generator revenue in the Houston
+    metro arrives almost entirely in the ~72 hours after a regional outage, which
+    is exactly when a four hour reply is late rather than normal. **New axis: the
+    average is the wrong unit. His number isn't disputed anywhere in the email,
+    only what it's measured over.** Cleanest automation-over-hiring case this ICP
+    produces: you cannot staff for a day that comes twice a year.
+  - **E-Plumbing — a missed call leaves no evidence.** Montague checked eight
+    sources and found no reviews, no directory presence and no owner name, so
+    calls really are their entire funnel. **New axis: an unanswered call is the
+    only lead category that produces no record at all, which is why a shop can be
+    losing steadily and have no way to notice.** Maps onto missed-call text-back
+    without naming the feature. The middle paragraph says "that isn't a
+    criticism, plenty of good shops run exactly that way" because telling a
+    business it is invisible is a dig unless you say that out loud.
+  - **EAP Landscaping — lead-value asymmetry.** A cleanup and a full design build
+    land in one Gmail looking identical, so the highest-value request is
+    statistically the one most likely to be buried. **New axis: every other draft
+    treats leads as interchangeable.** Caught myself inventing his pricing in a
+    first pass ("a forty dollar cleanup and a twenty thousand dollar backyard")
+    and rewrote it with job types only. Worth remembering: an illustrative number
+    about a prospect's own economics is still an invented number.
+  - **Guy's Heating — a fault the owner structurally cannot observe.** http loads
+    fine, https returns 503 on two attempts, browsers force https, so the site
+    works every single time HE checks it and fails for a share of visitors.
+    **This is what kept it from being a repeat of Al Jeffers (09-06).** Al
+    Jeffers argues a broken site makes an old business look closed; this argues
+    the site is broken SELECTIVELY and the selection excludes the owner, so no
+    amount of diligence on his part would surface it. Same fact family, different
+    claim, and I flagged the pair to Kevin as do-not-send-same-day rather than
+    trusting the difference to carry on its own.
+  - **Ken Adams (website) — the domain is a lead broker.** Best fact this seat
+    has been handed on this track. kenadamsplumbing.com is a national lead-gen
+    network claiming 27,999 cities that collects plumbing requests and sells them
+    on, Montague fetched it herself, and none of six variant domains resolve.
+
+  **The worn-mechanism check paid for itself for the third run running, and this
+  time it was load-bearing on the website track.** "Somebody else has your
+  domain" is used up (Bilskie 08-31, Johnston 09-02, and I killed a finished
+  Guthrie draft on 09-05 for it). Ken Adams looked like a fourth. **The
+  distinction that saved it: in all three worn cases the domain belonged to an
+  unrelated business that merely shared a name, which is bad luck. Here the
+  entity holding his name is in the business of selling plumbing leads, so it is
+  an active competitor for his work rather than a passive collision.** Different
+  claim, different consequence. I also deliberately refused the opening MOVE, not
+  just the mechanism: no "type your domain into your phone," because that is
+  Johnston's literal first sentence and is exactly why Guthrie died. Led with the
+  flat assertion ("kenadamsplumbing.com isn't yours") instead, which is stronger
+  anyway. **Generalizable: check the mechanism AND the opening move separately.
+  Two drafts can differ in argument and still look copied in sentence one.**
+
+  **The 84% BrightLocal stat, and a real conflict between two of my own governing
+  documents.** Ken Adams is the first website draft in fifteen runs where that
+  stat would genuinely have fit, because it IS a findability argument. Left it
+  out anyway: `_acquisition-doctrine.md` §5 lists Tier 1 and Tier 2 explicitly,
+  that figure is in neither, and §8 requires every claim to be Tier 1/2 sourced,
+  our own data, or absent. But `team/elly-outreach.md` still names it as the
+  standard data point for this track. **Those two documents disagree and the
+  doctrine wins under its own terms.** Flagged in the draft and to Kevin rather
+  than silently dropped, and deliberately did NOT edit my own persona file to
+  match: rewriting my own instructions to resolve a conflict I found is exactly
+  the seam Sue exists for.
+
+  **Pricing term: fourth run, still no ruling, and nothing new to decline.** Ken
+  Adams' card does not carry "no cost to you unless you like it," so today added
+  no fourth declined draft. Kept the two-branch framing in the rolling file
+  rather than escalating further, and did NOT re-notify: I pushed a notification
+  yesterday and repeating identical information is noise. The sync loop was the
+  new thing worth Kevin's attention today.
+
+  **Greeting call worth keeping.** Silver Electric got the team greeting even
+  though Montague found a real recurring first name in reviews, which normally
+  loses to the CVA/Merican precedent. **The reason is new: the open question was
+  not WHO he is, it was HOW HIS NAME IS SPELLED** ("Sylvester (Silvestre)").
+  Misspelling a man's name in the first word of a cold email is a real avoidable
+  cost and the team greeting costs nothing. **New rule of thumb: identity
+  uncertainty and orthographic uncertainty are different problems, and only the
+  first one is settled by the confirmed-real-person precedent.**
+
+  **Held lane: nothing to do, and that is correct.** 35 at `followup: held`, 34
+  with a `followup-1.md`, the only gap being sp-lawn-care-bangor-me (permanent,
+  Kevin owns Karl's thread). Lane has been complete since 09-06. Gave the rolling
+  held-lane file a targeted refresh (date, fifteen days becomes sixteen) rather
+  than a rewrite, since the counts re-verified unchanged.
+
+  **Approvals hygiene:** all four dated first-touch files were already
+  `status: superseded`, nothing to close. Regenerated
+  `ROLLING-first-touch-drafts.md` from live state: 15 at `drafted`, split into
+  new-today / 09-06 / 09-05 tables, a where-to-start list, four
+  needs-two-minutes warnings, the response-time accounting, and the pricing
+  question.
+
+  **The real headline is that the queue is now 15 and nothing moved yesterday.**
+  Seven drafts carried over untouched and eight went on top. Said so plainly in
+  the rolling file: drafting has not been the constraint for some time. Upstream
+  is still worse, 109 at `found`, up from 104, nineteen straight days of growth
+  even on a thirteen-prospect enrichment day.
+
+  Track breakdown: 7 package, 1 website. Standard sweep on body text only (em
+  dash, en dash, bracket placeholder, retired package names, third-person
+  Kevin/Viridia, `$`, `%`, "guarantee", the 84% stat, stray sign-off, British
+  spellings) — bodies clean on every check. Four British spellings caught and
+  fixed in NOTE prose ("centres", "behaviour", "neighbour", "monetised"), so the
+  09-06 clean run was the exception and this defect is back; keep sweeping.
+  Bodies run 111 to 145 words, in the recent band.
+
+  **Next run:** check `stage: enriched` first and recount by grep regardless of
+  what `_fleet-state.md` says, since it has now been stale two runs running. Read
+  the worn-mechanism list before drafting any second touch. Second-touch angles
+  for today's eight are written into each draft's dropped-angle block: Blessed's
+  invisible award, Sleep Tight's founding story, Katy Pro's two sale lengths,
+  Silver Electric's one named technician, E-Plumbing's half-day Saturday, EAP's
+  scattered front door and Instagram, Guy's sole license holder, Ken Adams' town
+  scale. If Kevin rules on the try-before-you-buy term, JE & BC, Al Jeffers and
+  Clean Earth's touch two all need rewriting around it.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.
