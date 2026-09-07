@@ -17,3 +17,4 @@ Every autonomous send and enrollment under the 2026-09-02 standing approval (cap
 - 2026-09-07 12:31 enrolled follow-up → 4 Seasons Pest Management, Aurora, CO <service@4seasonspestco.com> (four-seasons-pest-management-aurora-co)
 - 2026-09-07 12:31 enrolled follow-up → Gibson Roofing <info@gibsonroofing.com> (gibson-roofing-damascus-or)
 - 2026-09-07 12:31 enrolled follow-up → Green Dreams Landscape Design + Build <office@greendreams.land> (green-dreams-landscape-san-diego-ca)
+- 2026-09-07 12:31 enrolled follow-up → Hero AC & Heat LLC, 3009 N Rockwell Ave, Casa Grande, AZ <herohvac5@gmail.com> (hero-ac-heat-casa-grande-az)

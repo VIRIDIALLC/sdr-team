@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -28,3 +28,4 @@ quote_stage: none
   tenure figure asserted in the body since both vary by source. AZ ROC #338116
   still a secondhand read, flagged not gating. Advanced to `drafted`.
 - 2026-09-01 (Kevin, via KIREEK): sent to herohvac5@gmail.com.
+- 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as herohvac5@gmail.com.
