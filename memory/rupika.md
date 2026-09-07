@@ -2447,3 +2447,68 @@
   confirmed cold each beyond the hit), worth a follow-up pass on untried
   verticals (HVAC, roofing/pest control minus what's noted cold above,
   garage doors, restoration) if revisited.
+- (package/priority track, run 2026-09-07) Next four metros in the
+  flood-gates rotation after Las Vegas/Tucson/SLC/Sacramento: San Jose,
+  Houston, San Antonio, Albuquerque. Fell short of the 12 target — 10
+  hits across 4 metros and 6 verticals: Guy's Heating and Air Conditioning
+  (Gilroy CA/San Jose metro, HVAC, ~11hr response/12 quotes, 34yr
+  family-owned, reachable via confirmed domain), Sleep Tight Pest Control
+  (Sugar Land TX/Houston, pest control, ~3hr response/106 quotes, owner
+  Rustom Setna, only a directory-hosted subpage not a real domain —
+  reachable via phone+owner name, flagged as a future website-upsell
+  candidate), EAP Landscaping (Houston TX 77084/Cypress area, landscaping,
+  ~4hr response drifting 2-4hrs, owner Ernesto, reachable via domain),
+  Silver Electric (Katy TX/Houston, electrical, ~4hr response/15 quotes,
+  reachable via domain, soft-contradiction flag — reviews praise on-job
+  professionalism not contact speed, same pattern as Call Shamrock,
+  flagged for Montague not dropped), Katy Pro Painting (Cypress TX/
+  Houston, painting, ~3hr response/112 quotes, family-owned by the
+  Martinez sons, reachable via domain, same soft-contradiction flag),
+  E Plumbing and Drain Services (Channelview TX/Houston, plumbing, ~4hr
+  response/43 quotes, reachable via domain+phone), Quality Painting SA
+  (San Antonio TX, painting, ~4hr/~2hr response drift/40 quotes, owner
+  Ernest Espinoza, reachable via domain), Blessed Pest Control (San
+  Antonio TX, pest control, ~3hr response, woman/veteran-owned, owner Ivy
+  Wood — an NPMA award winner, reachable via domain, same soft-
+  contradiction flag), Pacheco Electric (Albuquerque NM, electrical, ~1
+  day response AND only an 85% response rate/49 quotes — an unusually
+  strong double signal, owner Joshua, no domain found, reachable via
+  phone+owner name, flagged as a future website-upsell candidate), Apex
+  Pest Control (Albuquerque NM, pest control, ~1 day response, est. 2016,
+  reachable via confirmed domain+phone, owner's personal name NOT found —
+  flagged for Montague, only 1 Yelp review showing despite 90 photos on
+  the listing — Montague to confirm current rating/review count
+  directly). San Jose metro (San Jose, Santa Clara, Sunnyvale, Milpitas,
+  Campbell, Gilroy, Morgan Hill, Los Gatos) and Albuquerque (incl. Rio
+  Rancho) both read as thin/fast-responding markets — same pattern
+  already flagged for Salt Lake City and Sacramento on 2026-09-06, now a
+  third and fourth data point; reviews repeatedly praised speed directly
+  (Norcal Wildlife Removal, Smart Painting, Single Line Electric in San
+  Jose; Southwest Electric, Royalty Heating & Cooling, Steve's Overhead
+  Garage Doors, Altitude Roofing, FreeFlow Mechanical in Albuquerque, all
+  dropped on direct contradiction) and several other strong signals
+  failed the reachability rule instead (Matthew's Landscapes,
+  Albuquerque — only 1 review, no phone or site found at all). Houston
+  was by far the most productive metro this run (5 hits/5 verticals) —
+  suburbs worked: Sugar Land, Katy, Cypress, Channelview, Spring,
+  Baytown, Humble, Missouri City, Tomball, Friendswood, Pasadena, League
+  City, Conroe. San Antonio worked but lost several strong-looking
+  signals to franchise/scale (Champion Home Services, 10,000+ reviews) or
+  direct contradiction (Hunter Service Group, LMP Roofing, Apex Air
+  Electric — all "responds immediately/promptly" per their own reviews).
+  New standing-pattern note: "Apex" and "Quality Painting/Exteriors" are
+  extremely common business names nationally — hit several near-miss
+  name collisions this run (a Quality Exteriors in Austin vs. the actual
+  Cibolo TX hit; AGF Roofing/Moreno Roofing initially read as San Jose
+  but actually Fremont/Watsonville CA) — always confirm via address/phone
+  match, never name alone, especially for these two names going forward.
+  Other franchise/scale drops: Mister Sparky (Katy), Voda Cleaning &
+  Restoration (Houston), X Out Pest Services and Bulwark Exterminating
+  (San Antonio). New standing metro-rotation entries (all only partially
+  worked): San Jose (San Jose, Santa Clara, Sunnyvale, Milpitas,
+  Campbell, Gilroy, Morgan Hill, Los Gatos — flagged thin, see above),
+  Houston (Sugar Land, Katy, Cypress, Channelview, Spring, Baytown,
+  Humble, Missouri City, Tomball, Friendswood, Pasadena, League City,
+  Conroe — strong, worth a full second pass), San Antonio (New Braunfels,
+  Boerne, Cibolo, Converse, Helotes, Live Oak, Universal City),
+  Albuquerque (incl. Rio Rancho — flagged thin, see above).
