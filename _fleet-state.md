@@ -1,6 +1,6 @@
 # FLEET STATE — machine-generated ground truth
 
-Generated: 2026-09-08 18:07 UTC (2026-09-08 11:07 Phoenix)
+Generated: 2026-09-08 18:29 UTC (2026-09-08 11:29 Phoenix)
 
 > Written by KIREEK's sync loop on Kevin's PC; NEVER hand-edit (it will be
 > overwritten). **Read this file FIRST, before any dated note, status log,
@@ -99,8 +99,8 @@ Generated: 2026-09-08 18:07 UTC (2026-09-08 11:07 Phoenix)
 
 - **GHL API:** UP (live probe returned 200)
 - **Meta ads:** 0 active / 4 paused ads (snapshot generated 2026-09-08 18:07 UTC)
-- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 0m ago)
-- **KIREEK repo:** 3 commit(s) not yet pushed to origin — Kevin pushes; cloud readers of the KIREEK repo are behind by that much
+- **Funnel truth (spec vs Meta vs live page):** CONSISTENT (checked 21m ago)
+- **KIREEK repo:** 0 commit(s) not yet pushed to origin (origin is current)
 
 ## Every team, right now
 
@@ -110,7 +110,7 @@ Generated: 2026-09-08 18:07 UTC (2026-09-08 11:07 Phoenix)
 - waiting on Kevin: nothing
 
 ### SDR Team
-- last commit: 35 minutes ago — "Autopilot sent: Lilah Landscaping, LLC — Oklahoma City, OK" (776c5cc14)
+- last commit: 56 minutes ago — "Autopilot sent: Lilah Landscaping, LLC — Oklahoma City, OK" (776c5cc14)
 - pipeline (prospects, 263 items): found 113 · enriched 1 · drafted 4 · approved 2 · sent 134 · closed 6 · dismissed 3 — ~54% through the pipeline
 - where each agent is (from their own logged task work):
   - **Elly** (Outreach): 2026-09-08 on `a-best-air-heat-tulsa-ok` — "first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track. Angle that won: th" · 1 open handoff(s) in their inbox
@@ -124,7 +124,7 @@ Generated: 2026-09-08 18:07 UTC (2026-09-08 11:07 Phoenix)
 - waiting on Kevin (2): For Kevin — first-touch drafts waiting on you (LIVE QUEUE); For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE)
 
 ### Ads Team
-- last commit: 20 seconds ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (1a81b6376)
+- last commit: 22 minutes ago — "Meta performance snapshot (machine-generated, first-hand API pull)" (1a81b6376)
 - pipeline (campaigns, 2 items): archived 2
 - where each agent is (from their own logged task work):
   - **Ash** (Ad Creative): 2026-08-09 on `viridia-complete-system` — "delivered Concept A ("Rooftop, missed call") in both required formats — 1:1 feed (1080x1080) and 9:16 Stories/" · 1 open handoff(s) in their inbox
@@ -142,7 +142,7 @@ Generated: 2026-09-08 18:07 UTC (2026-09-08 11:07 Phoenix)
 - waiting on Kevin (2): 2026-08-14: Post-purchase onboarding sequence — spec + gap list; 2026-08-24: Billing-transition client comms + Tyler "keep the system" one-pager
 
 ### Finance Team
-- last commit: 64 minutes ago — "Merge origin/master (KIREEK fleet-state refresh)" (78b387fdc)
+- last commit: 86 minutes ago — "Merge origin/master (KIREEK fleet-state refresh)" (78b387fdc)
 - pipeline (invoices, 16 items): draft 10 · paid 2 · draft_amount_disputed 1 · hold_kevin_collecting_in_person 1 · paid_pending_qbo_entry 1 · sent_to_collections 1 — ~17% through the pipeline
 - where each agent is (from their own logged task work):
   - **Sato** (Finance Manager): 2026-09-08 on `denise-mcadams-porter-2026-08-yelp` — "Drafted from Kevin's Yelp billing-breakdown export, live-checked against the file's own totals. Not sent — Kev" · 1 open handoff(s) in their inbox
@@ -156,7 +156,7 @@ Generated: 2026-09-08 18:07 UTC (2026-09-08 11:07 Phoenix)
   - **Ash** (Designer): 2026-09-05 on `the-repeat-work-order` — "Built the LinkedIn card — `creative/linkedin.png`, 1080x1350. Went vertical instead of the brief's suggested h" · 1 open handoff(s) in their inbox
   - **Rati** (Social Media Manager): 2026-09-07 on `ai-quote-that-went-quiet` — "**Opening line replaced in GHL and above.** Old line 1 was "An underrated place AI earns its keep in a small h"
   - **Soniti** (Social Video & Repurposing): no logged task activity yet
-- agent work in the last 24h: "House style rule in CLAUDE.md and the Rati/Ash contract; strip the dashes from the contrac"; "Instagram goes live for the first time; first illustrated post published"; "Ash: no-work run â€” no art backlog, no handoff addressed to Ash"; "Media upload done: all 8 scheduled posts carry their creative (KIREEK social_media_upload."
+- agent work in the last 24h: "House style rule in CLAUDE.md and the Rati/Ash contract; strip the dashes from the contrac"; "Instagram goes live for the first time; first illustrated post published"; "Ash: no-work run â€” no art backlog, no handoff addressed to Ash"
 - waiting on Kevin (4): 2026-08-21: Comment reply kit — Viridia's own channels; 2026-08-21: Reconnect the Viridia Analytics Facebook page in GHL; 2026-08-25: TFP Landscaping — Yelp page updates, drafts for your approval; 2026-08-28: Your personal LinkedIn — three drafts, so the question is a read and
 
 ### SEO Team
@@ -168,7 +168,7 @@ Generated: 2026-09-08 18:07 UTC (2026-09-08 11:07 Phoenix)
 - waiting on Kevin (3): 2026-09-04: Geo-expansion decisions from the AZ/CA/NV competitive read (moved fr; 2026-09-07: Elenor's only outreach batch (08-18) shows zero logged activity — 20; 2026-09-07: Money pages from the 08-13 keyword-realignment handoff still not ind
 
 ### Web Design Team
-- last commit: 52 minutes ago — "Compliance: second pass removed the noscript 'Automated Reviews' service link" (3a9bcc962)
+- last commit: 73 minutes ago — "Compliance: second pass removed the noscript 'Automated Reviews' service link" (3a9bcc962)
 - pipeline (prospects, 1 items): researched 1
 - where each agent is (from their own logged task work):
   - **Nova** (Magic Patterns Build): 2026-08-12 on `tpg-home-improvements-az` — "Dispatch referenced a pre-existing `prospects/tpg-home-improvements-az/brief.md` on master — it did not exist " · 3 open handoff(s) in their inbox
@@ -178,11 +178,11 @@ Generated: 2026-09-08 18:07 UTC (2026-09-08 11:07 Phoenix)
 ## COUNCIL REFRESH — paste this block into the Growth Council when asked for current state
 
 ```
-As of 2026-09-08 18:07 UTC (auto-generated by VEGA's backend):
+As of 2026-09-08 18:29 UTC (auto-generated by VEGA's backend):
 Real MRR: $4679/mo (VERIFIED 2026-09-07 live Stripe pull - 7 ACTIVE subscriptions = $4,679/mo: 4 x $897 (Jonathan Gonzalez, Denise McAdams Porter / Wall Candy, Sierra Glover / AQ Communications, Ivan Cruz / Finish Coat), 1 x $497 (Isaias Torres / TFP), 2 x $297 (Orlando Gomez, Lorena Nunez). NOBODY is on the $1,197 Complete System yet - the clients-needed figure in the gap line is a target count, not a client count. 11 canceled subs on the account ($4,067/mo churned lifetime). QBO's headline is inflated by Yelp passthrough - never use it.)
 Target: $10000 by 2026-12-31 | Offer: $1197/mo
 Gap: $5,321/mo → need 5 MORE Complete System client(s) at $1,197/mo (plan +1 for churn risk) in 113 days (16 weeks) → ~1 close per 3 week(s).
 This week (since 2026-08-24): 0 conversations, 0 proposals out, 0 closed, $0 MRR added
-Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 0m ago)
+Systems: GHL UP (live probe returned 200) | Meta: 0 active / 4 paused ads (snapshot generated 2026-0 | Funnel: CONSISTENT (checked 21m ago)
 Approvals waiting on Kevin across the fleet: 17
 ```
