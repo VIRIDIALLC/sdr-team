@@ -8,6 +8,8 @@
 
 **Ad activity status:** n/a (website track)
 
+**Links:** No `yelp:` line captured — the predecessor "Rob Merriman Plumbing & Heating" has two Yelp listings (yelp.com/biz/rob-merriman-plumbing-and-heating-pendleton-2 and yelp.com/biz/merriman-rob-plumbing-and-heating-pendleton), but nothing turned up yet under the new "Morris Plumbing" name — didn't want to put the old brand name on Kevin's call card under a live prospect record. Montague: worth checking whether Yelp has actually migrated/renamed the listing since this rebrand.
+
 **Response-time signal:** n/a
 
 **Source (how they were found):** Found via WebSearch scoped to facebook.com for "plumbing small business Facebook page Pendleton OR" (facebook.com/p/Morris-Plumbing-LLC-61569943290612/). Confirmed the Merriman-to-Morris succession via a follow-up search that surfaced Morris Plumbing LLC's own Facebook announcement post plus matching address/phone on Rob Merriman Plumbing & Heating's Yelp/BBB listings. Address: 4354 Westgate, Pendleton, OR 97801. Phone: (541) 276-7221. Owner name not yet found under the new "Morris" name — flag for Montague. COLLISION NOTE: there is an unrelated "Morris Plumbing & Heating" on Orcas Island, WA (San Juan Islands) that also had a 2026 ownership-change news item — do not conflate; this record is the Pendleton, OR / Rob Merriman succession only, confirmed via matching address and phone.
