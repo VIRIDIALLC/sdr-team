@@ -3653,3 +3653,156 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+- **2026-09-08 (this run) — 4 first touches, the whole enriched queue, and Kevin
+  cleared eleven overnight.** `git fetch origin` first per CLAUDE.md:
+  origin/master had force-updated to 76494b2 (KIREEK fleet-state refresh on top
+  of Montague's 09-08 pass, 9 enriched, plus two Rupika find batches). Container
+  started in a detached HEAD, the same stale-ref pattern logged every run since
+  08-13; `git checkout -B master origin/master` fixed it, clean diff, no merge.
+
+  **`_fleet-state.md` was FRESH this run (17:04 UTC against a ~17:30 UTC run),
+  breaking the two-run stale streak from 09-06 and 09-07, and its pipeline line
+  matched my grep exactly** (enriched 5, drafted 4). First time in three runs the
+  file could be trusted. **Still recounted by grep, and should keep doing that** —
+  the check costs nothing and the failure mode is invisible when it happens.
+
+  Counts by grep: 114 found, 5 enriched, 4 drafted, 2 approved, 130 sent, 6
+  closed, 3 dismissed. The fifth enriched is jc-heating-cooling-amarillo-tx,
+  Kevin's own email-verification hold from 2026-08-03, now day 37, already
+  drafted, correctly skipped again. Drafted the other four, no defensive-check
+  skips, all four package track.
+
+  **The headline is that Kevin sent eleven of the fifteen overnight.** Yesterday's
+  rolling file said drafting had stopped being the constraint and nothing had
+  moved in a day. It moved. Four carried over (Al Jeffers, EAP, JE & BC, Ken
+  Adams) and four went on top, so the queue is 8.
+
+  **The email-confidence flags predicted both bounces, and this is the first time
+  this seat can check its own flagging against an outcome.** Of the eleven sent,
+  two came back `followup: bounced`: Sleep Tight Pest Control and RCP Mechanical.
+  Those are exactly the two the 09-07 rolling file flagged, RCP as **guessed** and
+  Sleep Tight as **deliverability unverified**. Every address marked confirmed
+  delivered. **Keep flagging the email column and keep putting it in the rolling
+  file** — it is not bookkeeping, it predicts. Ken Adams is the only draft left in
+  the queue carrying a flag (moderate).
+
+  **The batch's dominant risk was in-batch sameness again, and in two directions
+  at once: two Tulsa businesses and two landscapers, four package drafts, one
+  inbox, one morning.** Four distinct mechanisms and four distinct opening moves,
+  checked separately per the 09-07 lesson:
+  - **A Best Air & Heat — lead intent and coverage run in opposite directions
+    across the day.** They advertise 24/7 emergency HVAC, and nobody calls an HVAC
+    company at eleven at night to price shop, so the highest-intent lead of the
+    week arrives in the only hours nobody is awake for. **New axis: every other
+    draft argues how fast a lead is answered; this argues WHEN the good ones
+    arrive.** No response-time figure exists on this prospect at all (`brief.md`
+    says n/a, Rupika sourced it with the named-complaint technique), so the
+    standard opener was never available.
+  - **A Hernandez Painting — response time is positional, not absolute.** Painting
+    is bought as three quotes the customer committed to before sending the first
+    message, so a day is not slow, it is second or third, and whoever walks the
+    house first frames the job the other two bid against. **The one usable figure
+    of the batch**, unconfirmed-not-contradicted, asked as a question with the out
+    that Yelp may be guessing.
+  - **Dun Dirt Cheap — the recurring book, and this is the genuinely new axis of
+    the run.** Nearly everything she sells comes back (mowing, trimming, tree
+    work, sprinklers, pest control), and the happy customer who simply forgets to
+    call this year produces no missed call, no unread message and no record of any
+    kind. It reads as a quiet week. **Every draft in this repo argues about first
+    contact; this one argues about the fifth.** Deliberately NOT the
+    owner-operator-ceiling shape: the thing that is capped is institutional
+    memory, which a system actually takes over rather than merely assists with.
+  - **Lilah Landscaping — the advertised hours and the unreachable hours are
+    physically the same hours.** Seven days a week, 7am to 7pm is eighty four
+    hours of running loud equipment in ear protection with the phone in a pocket,
+    and lawn care is close to the only trade where the whole working day sits
+    inside that condition (a plumber takes the call from the truck). Second half
+    is what makes it a loss: nobody has a landscaping emergency, so the caller
+    just moves down the list and the business never learns it happened.
+
+  **The A Best / Lilah pair was a real near-collision and I caught it while
+  drafting, not after.** Both prospects publish an availability claim, so the lazy
+  version of both emails opens by quoting that claim back ("you say you're open
+  X, who answers?"). Total Restoration (09-05) already ran the
+  quote-their-own-availability-claim opening move, and it argued a contradiction
+  between two published claims. So A Best opens on buyer behavior at eleven at
+  night and argues value, Lilah opens by asking about his own workday and argues
+  physical inability, and neither quotes a claim back as sentence one. **Told
+  Kevin in the rolling file not to send them the same morning anyway.** Restating
+  the 09-07 rule because it earned its place a fourth time: check the mechanism
+  and the opening move separately.
+
+  **Declined Montague's CALL CARD hook on A Best, which is the fifth time this
+  seat has refused to quote a customer complaint at a stranger** (Reliant 08-19,
+  4 Seasons 09-05, JE & BC 09-07, and here). Her hook is close to verbatim: "I
+  saw a review where a customer said they couldn't get you or your manager Jared
+  to call back... I don't think that's who you actually are." The softener is
+  generous and is exactly the sentence a defensive owner reads as condescending
+  from someone who has never met him. **The BBB record (4 complaints, 3
+  unanswered, F rating) is real, it corroborates the pain signal better than
+  anything in the batch, and it is flagged loudly for Kevin's ears only** —
+  including the honest warning that a record like that may mean the problem is a
+  habit rather than a system gap, which no software fixes.
+
+  **Also deliberately kept out of A Best, and named in the draft so nobody
+  downstream reaches for it: the origin story.** Their About page says they moved
+  back from Dallas and opened the business in 2009 after Kenny's mother was
+  diagnosed with breast cancer. It is the most human thing in the file and using
+  it to open a cold sales email would be the worst thing this seat has ever sent.
+  Not a runner-up. **New standing note: some facts are not weak angles, they are
+  facts you write down as excluded so the next run does not rediscover them as
+  clever.**
+
+  **Dropped Dun Dirt Cheap's strongest runner-up on a collision I could point at
+  rather than a judgment call.** Six service lines in one Gmail with wildly
+  different values is a good argument, and it is EAP Landscaping's shipped
+  argument, on the same trade, sitting in Kevin's queue right now. Same-trade
+  same-mechanism a week apart is worse than the usual sameness risk.
+
+  **Track question raised, not resolved, on A Hernandez Painting.** He owns no
+  domain at all (hernandezpaintingmo.com belongs to an unrelated Omar Painting LLC
+  DBA Hernandez Painting in Bridgeton MO, confirmed by three direct fetches), and
+  social-only presence is literally `_criteria.md`'s website-gap filter. Montague
+  kept him `package`. **Did not change the track** — that field is not mine to
+  flip — and flagged it to Kevin and Sue instead, with the website version of the
+  pitch already written up as his dropped angle. **The Scenic View precedent
+  (08-15) does not settle this one: Scenic View HAD a site, this prospect has
+  none.**
+
+  **Held lane: nothing to do, and that is correct.** 35 at `followup: held`, 34
+  with a `followup-1.md`, the only gap being sp-lawn-care-bangor-me (permanent,
+  Kevin owns Karl's thread). Complete since 09-06.
+
+  **Approvals hygiene:** all five dated first-touch/campaign files already
+  `status: superseded`, nothing to close. Regenerated
+  `ROLLING-first-touch-drafts.md` from live state: 8 at `drafted`, new-today and
+  carried-over tables, a where-to-start list, three two-minute warnings, the
+  bounce-prediction finding, the pricing question (fifth run, nothing new
+  declined, not re-notified), the new track question, and the response-time
+  accounting.
+
+  **Upstream, worse again:** 114 at `stage: found`, up from 109. Twenty straight
+  days of growth on a nine-prospect enrichment day. Both standing asks repeated.
+
+  **84% BrightLocal stat: not applicable this run**, all four drafts package
+  track. The doctrine-vs-persona-file conflict logged 09-07 is still unresolved
+  and is still Sue's seam, not something to edit into my own instructions.
+
+  Track breakdown: 4 package. Standard sweep on body text only (em dash, en dash,
+  bracket placeholder, retired package names, third-person Kevin/Viridia, `$`,
+  `%`, "guarantee", the 84% stat, stray sign-off, British spellings) — clean on
+  every check, and clean in the NOTE prose too, no fixes needed. Second clean
+  British-spelling run out of three; keep sweeping. Bodies run 121 to 139 words,
+  in the recent band.
+
+  **Next run:** check `stage: enriched` first and recount by grep. Read the
+  worn-mechanism list before drafting any second touch. Second-touch angles for
+  today's four are written into each dropped-angle block: A Best's unanswered
+  complaints (call only, never cold text), Hernandez's St. Louis domain collision,
+  Dun Dirt Cheap's six-service inbox and storm-demand concentration, Lilah's
+  anonymity and every-lead-is-load-bearing. If Kevin rules on the try-before-you-buy
+  term, JE & BC, Al Jeffers and Clean Earth's touch two need rewriting around it.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
+  rule.

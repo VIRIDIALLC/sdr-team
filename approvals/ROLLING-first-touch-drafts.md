@@ -1,7 +1,7 @@
 # For Kevin — first-touch drafts waiting on you (LIVE QUEUE)
 
 status: open
-Last regenerated: 2026-09-07 (Elly)
+Last regenerated: 2026-09-08 (Elly)
 
 > **This is the only first-touch approval file. It is regenerated from scratch
 > every run** and lists every prospect currently sitting at `stage: drafted`,
@@ -10,161 +10,152 @@ Last regenerated: 2026-09-07 (Elly)
 > approvals but really nothing" incident, there are no more dated first-touch
 > files. If this file says the queue is empty, the queue is empty.
 
-## The queue: 15 drafts, 8 new today
+## The queue: 8 drafts, 4 new today
 
-Montague advanced nine overnight, eight of them fresh, and I drafted all eight.
-The ninth is JC Heating, your own email hold from 08-03, untouched for the
-thirty-sixth day. Nothing is sent.
+**You cleared eleven overnight and that changes the honest headline of this
+file.** Yesterday it said drafting was no longer the constraint, with fifteen
+sitting here and nothing moving. Eleven went out, four are left underneath, and
+I drafted four more today. That is the queue working the way it is supposed to.
 
-**Nothing moved out of the queue since yesterday**, so the seven from 09-05 and
-09-06 are all still here underneath today's eight. That is the honest headline
-of this run: the drafting is no longer the constraint and has not been for a
-while. Each draft is in `prospects/<slug>/outreach.md` with the full reasoning,
-the dropped angle, and a "before you dial" block under it.
+Montague enriched nine, four of which were fresh and reachable, and I drafted all
+four. The fifth prospect still at `enriched` is JC Heating, your own email hold
+from 08-03, now day thirty-seven, untouched. **Nothing is sent.**
 
-Thirteen package track, two website track.
+Each draft is in `prospects/<slug>/outreach.md` with the full reasoning, the
+dropped angle, and a "before you dial" block under it.
 
-### New today (8)
+Six package track, two website track.
 
-| Prospect | Contact | Metro | Opens on | Email |
-|---|---|---|---|---|
-| Sleep Tight Pest Control (Sugar Land TX) | Chris Hatfield | Houston | "Nobody phones a stranger at eleven at night to say out loud that they think they have bed bugs." | sourced, **deliverability unverified** |
-| Ken Adams Plumbing (Walla Walla WA) | Ken Adams | Walla Walla WA | "kenadamsplumbing.com isn't yours." | moderate |
-| Katy Pro Painting (Cypress TX) | Luis Martinez | Houston | "Two or three hours on something like 112 quote requests. Is that about right?" | confirmed |
-| Blessed Pest Control (San Antonio TX) | Ivy Wood | San Antonio | "A shared inbox doesn't really have an owner." | confirmed |
-| Guy's Heating & Air (Gilroy CA) | Guy Trujillo | San Jose | "Your website works when you check it and fails for some of the people who click it." | **recurring, not page-verified** |
-| Silver Electric (Katy TX) | team greeting | Houston | "Four hours is nothing on a normal Tuesday. On the Tuesday after the power goes out it's third in line." | confirmed |
-| E-Plumbing & Drain (Channelview TX) | team greeting | Houston | "A call nobody picks up is the only kind of lead that leaves no trace at all." | confirmed |
-| EAP Landscaping (Houston TX) | Ernesto | Houston | "A cleanup and a whole backyard are the same unread line until somebody opens them." | confirmed |
-
-### Still waiting from 09-06 (3)
+### New today (4) — all package track
 
 | Prospect | Contact | Metro | Opens on | Email |
 |---|---|---|---|---|
-| Al Jeffers & Sons (Townshend VT) | Tim Jeffers Sr. | Brattleboro VT | "The title Google shows for your website reads 'Jeffers and Sons Heating and Cooling Inc. is under construction.'" | confirmed |
-| Vegas Paints (N. Las Vegas NV) | Moises Benites | Las Vegas | "Three different phone numbers came up for you. Which one actually rings your pocket?" | confirmed |
-| RCP Mechanical (N. Las Vegas NV) | Robbie Poyner | Las Vegas | "Somewhere around thirty Yelp reviews. Is that about right?" | **guessed** |
+| A Best Air & Heat (Tulsa OK) | Kenny Green | Tulsa | "Nobody calls an HVAC company at eleven at night to compare prices." | confirmed |
+| Dun Dirt Cheap Lawn & Landscape (Tulsa OK) | Katrina Raichle | Tulsa | "You've been at this since 2012... how do you know when one of them is due again?" | confirmed |
+| Lilah Landscaping (Oklahoma City OK) | team greeting | Oklahoma City | "Your hours say seven days a week, seven to seven. How much of that is somebody actually on a mower?" | confirmed |
+| A Hernandez Painting (Lee's Summit MO) | Alex Hernandez | Kansas City | "Your Yelp says you're coming back on new messages in about a day. Is that right, or is Yelp guessing?" | confirmed |
 
-### Still waiting from 09-05 (4)
+### Still waiting, carried over (4)
 
-| Prospect | Contact | Metro | Opens on | Email |
-|---|---|---|---|---|
-| Total Restoration of Texas (Austin TX) | Kylie Holt | Austin | "Your site says staffed 24 hours, on site within the hour. Yelp says about a day on a message. Is that gap real?" | confirmed |
-| Kolor Pros Painting (Round Rock TX) | Kathleen Myers | Austin | "About ten hours to come back on a quote request. Is that still accurate?" | confirmed |
-| JE & BC Electric (Keene NH) | Ben Crosby | Keene NH | "36 permits in three years, top 15% in the state. Did you know that record was public?" | confirmed |
-| Green Texas HVAC (Plano TX) | team greeting | Dallas | "Your Yelp is still tagged new. Is anybody watching the quote requests?" | confirmed |
+| Prospect | Contact | Metro | Track | Opens on | Email |
+|---|---|---|---|---|---|
+| Ken Adams Plumbing (Walla Walla WA) | Ken Adams | Walla Walla WA | website | "kenadamsplumbing.com isn't yours." | **moderate** |
+| EAP Landscaping (Houston TX) | Ernesto | Houston | package | "A cleanup and a whole backyard are the same unread line until somebody opens them." | confirmed |
+| Al Jeffers & Sons (Townshend VT) | Tim Jeffers Sr. | Brattleboro VT | website | "The title Google shows for your website reads 'Jeffers and Sons Heating and Cooling Inc. is under construction.'" | confirmed |
+| JE & BC Electric (Keene NH) | Ben Crosby | Keene NH | website | "36 permits in three years, top 15% in the state. Did you know that record was public?" | confirmed |
 
 ## Where I'd start, if you only get through a few
 
-1. **Sleep Tight Pest Control.** The best draft of the eight and probably the
-   best in the queue. Bed bug work has a customer psychology no other trade
-   here has: the inquiry is embarrassing, so it goes out by message rather than
-   phone, at night, to four companies at once, and the sender will not repeat it
-   to a second company later. The line the email turns on is "three hours is a
-   fine number, it's just measured from when you woke up." Chris also left a
-   40-employee shop in 2016 specifically because volume was beating service,
-   which is his own quote from a press interview, so the pitch lands as
-   agreement rather than as a criticism.
-2. **Ken Adams Plumbing.** 47 years, no website, and the domain carrying his own
-   name is a national lead-gen broker claiming 27,999 cities that collects
-   plumbing requests and sells them on. Montague fetched it herself. This is not
-   the usual "somebody else has your domain" case, which is bad luck. The entity
-   holding his name is actively in the business of selling his town's plumbing
-   leads to other plumbers.
-3. **Katy Pro Painting.** The rare prospect who is genuinely fast, corroborated,
-   so the email concedes it in the second line and argues follow-up instead of
-   speed. Worth reading as a template for how to pitch a competent operator
-   without insulting them.
-4. **Al Jeffers**, still, from yesterday. Nothing has changed about why it was
-   first in the queue.
+1. **Lilah Landscaping.** The best of today's four. The argument is that the
+   eighty four hours a week they advertise as availability are the same eighty
+   four hours somebody is on a mower in ear protection, so a missed call is not a
+   call anybody declined, it is one nobody heard. It is specific to this trade in
+   a way it would not be to a plumber or an electrician, and it needs no
+   unverified number of any kind.
+2. **A Best Air & Heat.** Strongest pain signal in the batch by a distance, and
+   the easiest conversation to have on the phone. Read the warning below first.
+3. **Ken Adams Plumbing**, still. It has been sitting here since yesterday and it
+   is the sharpest single fact this seat has been handed on the website track: a
+   national lead broker owns his name and sells plumbing requests on.
+4. **A Hernandez Painting**, then **Dun Dirt Cheap**, then the two carried-over
+   website drafts.
 
-## Four things that need two minutes from you before they send
+## Two minutes before you send these
 
-1. **Do not send Guy's Heating and Al Jeffers on the same day.** They are the one
-   genuinely close pair in the queue. The mechanisms are different (Guy's site
-   fails selectively and invisibly to him; Al Jeffers' site is indexed as "under
-   construction" and reads as a closed business) and the tracks are different,
-   but both emails tell a long-established owner his website is broken. Two of
-   those out of your inbox in one day reads as a form letter even though neither
-   is. Same convention as the pairs flagged in the held-lane file.
-2. **Three email addresses in this batch are below "confirmed."** Guy's
-   (`guyshvac@yahoo.com`) recurs across five independent searches but no page
-   fetch could show it in context, and his live site's raw HTML carries only a
-   GoDaddy placeholder. Sleep Tight's was decoded from the page's obfuscated
-   hex, so it is genuinely sourced, but the domain would not resolve from
-   Montague's session and wants a bounce check. Ken Adams' is convergent across
-   three directories that may all trace to one original. RCP Mechanical's, from
-   yesterday, is still a grounded guess. All four clear the gate; none should be
-   treated as certain.
-3. **EAP Landscaping is the weakest of the eight and I would send it last or
-   skip it.** 4.3 stars on 7 reviews is the thinnest public footprint in the
-   batch, its response-time figure came back contradicted three ways and was
-   dropped entirely, and its phone number is single-sourced. The email's
-   argument holds regardless because it is about how his inbox is structured
-   rather than how fast he answers, but there is no independent evidence the
-   front-office gap is real.
-4. **Sleep Tight's owner name was wrong in the source data and the correction
-   matters for the CRM.** Rupika's brief named "Rustom Setna." Montague traced
-   that to Rabka Pest Control, a different Sugar Land pest company, along with
-   the entire "worked overseas, family business" backstory. The real founder is
-   Chris Hatfield. **Do not let "Rustom Setna" reach GHL.**
+- **A Best Air & Heat: their BBB record is bad and it is nowhere in the email.**
+  Four complaints filed, three with no response from the business, F rating, not
+  accredited, plus two separate documented callback failures (the original
+  HomeAdvisor complaint naming Tammy and manager Jared, and a 2018 web vendor who
+  said the owners avoided his calls over payment). This is the strongest version
+  of our pain signal Montague has seen, which means the pitch is well aimed. It
+  also means there is a real chance the problem is not a system gap but a habit,
+  and no software fixes that. Your judgment on the call, not mine.
+- **Lilah Landscaping: two phone numbers, and we do not know which is live.**
+  `brief.md` carries (405) 402-9857 from Rupika. Every other source, including
+  Nextdoor fetched directly, gives (405) 859-4342. Dial the 859 number first.
+- **A Hernandez Painting: do not mention hernandezpaintingmo.com.** Rupika sourced
+  it and it is wrong. It belongs to Omar Painting LLC DBA Hernandez Painting in
+  Bridgeton MO, 250 miles away, confirmed by three direct fetches. Saying it to
+  Alex as if it were his ends the call.
+- **Ken Adams: email is moderate confidence, not confirmed.** Convergent across
+  Manta, Yellow Pages and Facebook on the same address and phone, but directories
+  cross-syndicate, so it is not fully independent. See the bounce note below.
 
-## ⚠️ The try-before-you-buy pricing term: fourth run, still no ruling
+## The email-confidence flags predicted both of yesterday's bounces
 
-Three website-track drafts (JE & BC Electric, Al Jeffers & Sons, and Clean
-Earth's second touch) came to me with CALL CARDs proposing an offer term of "no
-cost to you unless you like it." I declined it in all three, because it
-contradicts `prospects/_pricing.md` ($500 to $1,200 one-time plus $30/month
-hosting, which is what Sage quotes from) and appears nowhere in this repo
-outside those call cards.
+Worth two lines because it is the first time we can check this against outcomes.
+Of the eleven you sent, **two bounced: Sleep Tight Pest Control and RCP
+Mechanical.** They are exactly the two this file flagged as deliverability risks
+yesterday, RCP as **guessed** and Sleep Tight as **deliverability unverified**.
+Every address marked confirmed delivered.
 
-Ken Adams' card today does not carry it, so nothing new was declined. The
-question is unchanged and it is binary:
+So the flag column is doing real work and is worth reading before you send.
+**Ken Adams is the only draft in the queue currently carrying one.** Both bounced
+prospects are now `followup: bounced` and are correctly out of every lane until a
+new address is verified.
 
-- **If you have approved a try-before-you-buy term**, it is a stronger hook than
-  anything I have written and those three drafts should be rewritten around it.
-  It also has to land in `_pricing.md`, because Sage quotes from that file and
-  will otherwise quote the next replying prospect the old way.
-- **If you have not**, it needs to come out of the call cards before it reaches
-  a prospect in someone else's draft.
+## Standing question, fifth run: the try-before-you-buy term
 
-Either way this is a seam between agents rather than a defect in anyone's work,
-so it is Sue's to close once you rule.
+Nothing new to decline today. None of today's four call cards carried it (all
+package track), so the count of declined drafts stays at three: JE & BC Electric,
+Al Jeffers & Sons, and Clean Earth's second touch, two of which are still sitting
+in this queue.
 
-## Response-time figures: five for eight this run
+The question is unchanged and binary. Website-track call cards keep proposing an
+offer term of **"no cost to you unless you like it,"** which contradicts
+`prospects/_pricing.md` ($500 to $1,200 one-time plus $30/mo hosting, which is
+what Sage quotes from) and appears nowhere in this repo outside those cards.
 
-Worth your weighting, because it is now five straight runs of the same pattern.
-Of the eight prospects Rupika sourced with a Yelp response figure:
+- **If you approved it:** it is a stronger hook than anything I have written, it
+  needs to land in `_pricing.md` before Sage quotes somebody the old way, and
+  three drafts should be rewritten around it.
+- **If you did not:** it needs to come out of the call cards.
 
-- **Used as a question (4):** Blessed Pest (~3 hrs), Sleep Tight (~3 hrs),
-  E-Plumbing (~4 hrs), Silver Electric (~4 hrs). All unconfirmed but not
-  contradicted, all asked rather than asserted.
-- **Used and genuinely corroborated (1):** Katy Pro (~2-3 hrs), the only one
-  that survived independent re-check, and the number is good news rather than
-  pain.
-- **Dropped entirely as contradicted (2):** EAP Landscaping (4 hrs / 30 min /
-  2 hrs across three pulls) and Guy's Heating (11 hrs / 4 hrs / 24 min). Neither
-  should come up on a call either.
-- **No figure at all (1):** Ken Adams, website track, no Yelp signal.
+One sentence settles it either way. Not re-notifying you about it, since I
+pushed on it 09-06 and repeating the same information is noise.
 
-## Upstream, and it is now the whole story
+## Track question, new today: A Hernandez Painting
 
-**109 prospects are sitting at `stage: found`, up from 104 yesterday.** That is
-nineteen straight days of growth, and Montague had a genuinely good day
-(thirteen enriched, nine advanced). The pile still grew. Two standing asks,
-repeated:
+He owns **no domain at all**. His entire web presence is Facebook, BBB and Yelp.
+`prospects/_criteria.md`'s website-gap filter reads "no live website at all
+(social/Google Business Profile only counts as 'no website')," which is precisely
+his situation, so he fits `track: website` at least as cleanly as several
+prospects actually on that track. Montague kept him at `package` and **I have not
+changed it** because the track field is not mine to flip and the package pitch
+stands on its own.
 
-1. **Filter for a reachable email at sourcing time.** Most of what stalls at
-   `found` stalls on the email gate, and that is knowable when the prospect is
-   first found rather than a day later.
+The practical version: is he one prospect with two offers, and which goes first?
+The website version of his pitch is already written up as the dropped angle in
+his `outreach.md` and it is strong.
+
+## Response-time accounting, and it got worse again
+
+Of today's four, exactly **one** had a usable response-time figure, and it is
+usable only as a question:
+
+- **A Hernandez Painting** — unconfirmed but not contradicted. Rupika's ~1 day
+  never resurfaced in Montague's fresh searches, but nothing disproved it either.
+  Asked in the email, never asserted, with the out that Yelp may be guessing.
+- **Dun Dirt Cheap** — CONTRADICTED (4 hours vs 2 days). Dropped entirely.
+- **Lilah Landscaping** — CONTRADICTED (5 hours vs 30 minutes). Dropped entirely.
+- **A Best Air & Heat** — none ever existed. Rupika sourced this one with the
+  named-complaint technique instead, and `brief.md` records n/a on that field.
+
+**That is five straight runs in which the sourced figure mostly did not survive
+re-check.** The pattern is now long enough to be a finding rather than a run of
+bad luck, and it is worth however much weight you put on that column.
+
+## Upstream, still the ceiling: 114 at `stage: found`
+
+Up from 109 yesterday. **Twenty straight days of growth**, and this was a
+nine-prospect enrichment day. That pile is the largest asset in this repo doing
+nothing.
+
+Both standing asks unchanged:
+
+1. **Filter for a reachable email at sourcing time**, so prospects stop being
+   researched into a wall.
 2. **Rule on whether email-gate failures with a verified phone are a call list
-   for you rather than dead inventory.** You are cold calling as the primary
-   play. A prospect with a confirmed phone and no findable email is useless to
-   me and potentially useful to you, and right now it just sits.
-
-A 109-prospect pile is the largest asset in this repo doing nothing.
-
-## Nothing here has been sent
-
-No email, DM or message has gone to any prospect, and nothing has been enrolled
-in GHL. Every one of these is a draft until you say otherwise, per item.
+   for you rather than dead inventory.** The 09-02 handoff already approved
+   `call_ready: yes` and a `CALL-READY.md` render; what is missing is whether you
+   actually want to work it.
