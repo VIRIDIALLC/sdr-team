@@ -21,3 +21,21 @@ Purchase Likelihood (1-5), Likelihood Reasoning, EMAIL, SUBJECT.
    approves before anything sends.
 
 Commit prospects as you go so they show up for Kevin's review.
+
+## Re-score 2026-09-08 — `RESCORE-2026-09-08.csv`
+
+Kevin found rows on the call list that are not current advertisers and have
+only a handful of recent requests. The 2026-08-11 CSV never recorded advertiser
+status or request volume; its 1–5 score measured "likelihood of adopting
+analytics." So the list was re-scored on what IS on file, with two blank columns
+for the two things only Kevin's Yelp view can answer:
+
+- `Score v2` (0–110): response pain (slower = higher, the hook), reachability
+  (phone / email / website), GHL state (sequence finished > never emailed > not
+  loaded > running), core-trade fit, minus the CSV's own negatives.
+- 274 rows collapsed to 174 unique businesses (the CSV carried duplicates with
+  different response times; the strongest row was kept, contact fields merged).
+- `Advertiser? (Kevin)`, `Recent RAQs (Kevin)`, `Verdict (keep/drop)`: fill in
+  from the Yelp page in `Verify rank` order. Do not scrape Yelp for these.
+- A `drop` verdict means: close the GHL opportunity and mark the prospect
+  folder `stage: closed` with the reason.
