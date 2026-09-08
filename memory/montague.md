@@ -3412,3 +3412,128 @@
     remain (Pacheco Electric, Quality Painting S.A., Durango Brushworks,
     DW Olson Electric stay at `found` by documented gate misses, not
     backlog).
+
+- (2026-09-08 run) Started on a detached HEAD matching `origin/master`'s
+  tip (`4ea296a`) exactly — standard stale-cache pattern,
+  `git checkout -B master origin/master`, no data-loss risk. `_fleet-state.md`
+  was fresh (generated 16:32 UTC same day, well under the 12h threshold).
+  Scanned `prospects/*/status.md` for `stage: found` with no Montague log
+  entry — exactly 9 matched, today's two Rupika batches (6 package: Dun'
+  Dirt Cheap Lawn & Landscape + A Best Air & Heat, Tulsa OK; A Hernandez
+  Painting + Kevin Turner Painting + AMJ Remodeling and Handyman, KC metro;
+  Lilah Landscaping, OKC; 3 website: Powers Refrigeration, Walla Walla WA;
+  Morris Plumbing + Premier Roofing & Painting, both Pendleton OR) — well
+  within the 15/run cap, worked as one batch. Used 9 parallel research
+  subagents (pure-research, no file writes), then wrote all enrichment.md/
+  status.md updates myself for consistency.
+
+  Result: 4 of 9 advanced to `enriched` (Dun' Dirt Cheap Lawn & Landscape,
+  A Best Air & Heat, A Hernandez Painting — all package; Lilah Landscaping
+  — package). 5 held at `found`: AMJ Remodeling and Handyman, Powers
+  Refrigeration, Morris Plumbing, Premier Roofing & Painting — all newly
+  `call_ready: yes` — and Kevin Turner Painting, held WITHOUT `call_ready`
+  despite a confirmed phone (see below, the one genuinely new-shaped
+  decision this run).
+
+  - **Kevin Turner Painting — deliberately did NOT mark `call_ready`
+    despite a 2-source-confirmed phone, a new precedent worth naming.**
+    Every prior email-gate hold with a confirmed phone has been marked
+    `call_ready: yes` mechanically — the gate as written is pass/fail on
+    email + phone-sourcing, no scale carve-out. This one is different in
+    degree, not just another Boldt HVAC/Quality Overhead Door caution:
+    LinkedIn shows 11-50 employees, RocketReach ~$3M/yr revenue, active
+    LinkedIn job postings for a Commercial Estimator AND an Outside Sales
+    Representative, and press releases describing active geographic
+    expansion — converging signals that this is now a scaled regional
+    operator with its own sales/estimating layer, close to the opposite of
+    the "owner still answering their own phone" pain profile the whole
+    program is built on. Also: the business changed ownership 8/5/2022
+    (BBB) — current owner is David Rule, "Kevin" is retained legacy
+    branding only, founder no longer involved as far as any source shows.
+    Chose to hold it out of `CALL-READY.md` rather than let a likely
+    non-ICP business default into Kevin's dial queue, flagging it loudly
+    in enrichment.md/status.md instead for his explicit call. Worth Kevin
+    deciding explicitly whether "call_ready" should stay purely mechanical
+    (email+phone only) or whether a severe-enough scale/ownership signal
+    should suppress it going forward — this is the first time this
+    judgment call actually changed an outcome rather than just adding a
+    caution to an otherwise-advancing prospect.
+  - **A Hernandez Painting — a real domain-collision catch, not just an
+    unconfirmed guess.** Rupika's sourced website, hernandezpaintingmo.com,
+    IS a real, live site — but for a different business entirely (Omar
+    Painting LLC DBA Hernandez Painting, Bridgeton MO, St. Louis metro,
+    confirmed via 3 direct fetches, ~250 miles from the actual Lee's Summit
+    prospect). Removed the `website:` line rather than pass along a wrong
+    URL onto Kevin's call card — worth naming as its own category alongside
+    the Johnston Heating & Air domain-squat case (2026-08-09): a resolving,
+    real, on-topic-named domain still isn't proof it's THIS business's
+    site; always check the page's own disclosed identity/address/phone
+    against the prospect before treating a same-name domain as confirmed.
+  - **Two more search-tool-hallucinated emails caught and correctly
+    discarded** (AMJ Remodeling's "Remodel66671@netzero.com" — zero hits on
+    a literal-string search; Morris Plumbing's "morrisplumbingllc@outlook.com"
+    — traced to an unrelated same-named WI business; Premier Roofing &
+    Painting's "premierroofing541@gmail.com" — zero hits on literal-string
+    search, suspiciously pattern-matched to the phone's area code). Now
+    well past 5 instances of this specific failure mode (Cold Fusion
+    Mechanical 2026-08-13, "Dave/David is the owner" 2026-08-16, the
+    sdplumbingheating.com URL claim 2026-08-16, and these three) — the
+    literal-quoted-string verification technique keeps being the thing
+    that catches it; worth treating as a standing check, not optional.
+  - **Two more response-time figures came back CONTRADICTED**: Dun' Dirt
+    Cheap Lawn & Landscape (4hrs vs. 2 days), Lilah Landscaping (5hrs vs.
+    30min), AMJ Remodeling (2hrs vs. 50min) — three in one run, all dropped
+    per the CVA Exterminators convention, alternate hooks used instead
+    (founding-story angle for Dun' Dirt Cheap; generic/hours-based for
+    Lilah; owner's-own-words for AMJ). A Hernandez Painting's figure came
+    back genuinely unconfirmed-but-not-contradicted (carried forward as a
+    question, per the standing amendment).
+  - **Lilah Landscaping — a real phone-number discrepancy caught before it
+    reached a call card**, same pattern as Vegas Paints (2026-09-06): the
+    brief's sourced number, (405) 402-9857, didn't match the number
+    multiple independent sources converged on, (405) 859-4342. Led the
+    CALL CARD with the verified number and flagged both explicitly.
+  - **A Best Air & Heat — the callback-failure pain signal corroborated a
+    second, independent way**, not just re-confirmed: a separate 2018
+    reviewer described the same owners "avoiding calls when payment was
+    due," and BBB independently shows 4 complaints filed with 3 unanswered
+    (F rating). This is the strongest version of this specific pain signal
+    seen in recent runs — a repeated pattern across unrelated sources, not
+    a one-off complaint.
+  - **AMJ Remodeling — a live Weebly site turned up that Rupika's brief
+    didn't find** (amjremodelingandhandymanservice.weebly.com) — same
+    "double-check a 'no website found' note" pattern flagged repeatedly
+    (J Powers Electric 2026-08-12, Scenic View Landscape 2026-08-15).
+    Doesn't change track routing per the house no-website-subset rule
+    (this stays package track either way), just flagged as informational
+    for whoever revisits the email gate.
+  - All 3 website-track prospects this run (Powers Refrigeration, Morris
+    Plumbing, Premier Roofing & Painting) had their website-gap guess
+    INDEPENDENTLY CONFIRMED, not just trusted — no wrong-guess dead ends
+    this run. Powers Refrigeration's case had a genuine nuance: one domain
+    (powersrefrigeration.com) does resolve but is an unbranded parked
+    GoDaddy placeholder — worth remembering as its own category alongside
+    DW Olson Electric's redirect-to-Maps trap (2026-09-07): a resolving
+    domain with zero identifying content isn't a contradiction of the
+    website-gap claim, just a nuance worth a one-line flag.
+  - Egress access was notably good this run — direct WebFetch succeeded on
+    most target-business domains, BBB profiles, WA SOS/L&I records,
+    BuildZoom, Nextdoor, and Yahoo Local; blocked specifically on Facebook
+    (login wall, every attempt across all 9 prospects), HomeAdvisor/Angi
+    (403), and the Oregon SOS/CCB and OpenCorporates portals (503/403,
+    JS-driven forms not fetchable via GET). Facebook being the one
+    consistently-blocked channel is now a recurring pattern worth naming on
+    its own — it's cost real owner-name resolutions twice this run alone
+    (Morris Plumbing, Premier Roofing & Painting).
+  - `CALL-READY.md` regenerated: 8 → 12 verified rows.
+  - Backlog after this run: no genuinely untouched `stage: found` prospects
+    remain (Kevin Turner Painting, AMJ Remodeling, Powers Refrigeration,
+    Morris Plumbing, Premier Roofing & Painting stay at `found` by
+    documented gate misses/flags, not backlog). Did not do a dedicated
+    sweep of the older email-gate/call-ready backlog this run (D&D
+    Plumbing, SonRise Roofing, Superior Roofing, Crandell Pest Control,
+    Noska Lawncare, Casey Moriarty Pest Control, Radiant Remodeling Pros,
+    CV Roofing, WDM Garage Doors, Lloyd Miller's Painting, Plourdes
+    Electrical, Dumont LLC, Outdoor Property Services, Pacheco Electric,
+    Quality Painting S.A., Durango Brushworks, DW Olson Electric, and
+    others) — today's 9-prospect new batch used the full run.
