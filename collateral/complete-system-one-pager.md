@@ -42,7 +42,7 @@ everyone else's voicemail.
   Yelp/Google auto-response + booking build for Yelp-heavy shops).
 - **One inbox** — calls, texts, Yelp, Google, and Facebook leads in one
   place, with automatic follow-up so nothing goes cold.
-- **Reviews + QuickBooks-synced invoicing** running in the background.
+- **QuickBooks-synced invoicing** running in the background.
 - **Google Business Profile setup + optimization.**
 - One Viridia-branded app. Done for you, live in days. You keep doing the work.
 
