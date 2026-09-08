@@ -276,3 +276,32 @@ copy: shorter, plainer sentences over elaborate ones, contractions where
 natural, no "not just X, but Y" construction, no forced rhetorical
 flourishes. If a sentence sounds like it belongs in a blog post, rewrite
 it plainer.
+
+## Compliance: never sell or discuss review automation (Kevin, 2026-09-08)
+
+**Yelp flagged Viridia for review-solicitation compliance on 2026-09-08.**
+
+Yelp's content guidelines prohibit a business from asking its customers for
+reviews, and prohibit partners from selling review solicitation. Effective
+immediately, and until Kevin says otherwise:
+
+- **No outbound asset may offer, promise, imply or discuss** requesting,
+  generating, soliciting, automating or managing reviews. That covers cold
+  email, follow-up sequences, call scripts, LinkedIn and Instagram DMs, ad
+  copy, one-pagers, pitch cards, proposals and client reports.
+- **"Reputation management" is the same claim in a suit.** Do not use it.
+- **Do not use review volume or star ratings as a pain hook.** "Your rating
+  has not moved in a year" and "you only have eleven reviews" are both out,
+  even though neither promises anything, because the implied fix is the
+  prohibited one.
+- Responding to a review a customer already left is a different act from
+  soliciting one. While the flag is open, pitch neither.
+
+What to lead with instead: speed to lead, missed calls, after-hours coverage,
+booked estimates, stale-database follow-up. Those are the offer's real
+strengths and they are the proof we actually have (TFP, Finish Coat).
+
+If a prospect asks about reviews on a call, the honest answer is that Viridia
+does not solicit reviews. Do not improvise past that.
+
+Applies to every agent in every repo. See also `_house-style.md`.
