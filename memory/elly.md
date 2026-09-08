@@ -3806,3 +3806,47 @@ no feedback yet on those specifically)
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work
   rule.
+
+  **POST-COMMIT ADDENDUM, same run — Kevin's Yelp review-compliance ruling landed
+  on `master` mid-run and I re-checked everything against it.** Four commits
+  arrived between my fetch and my push, and the merge is exactly the
+  "Kevin works through several doors" case CLAUDE.md describes. Two of them matter
+  to this seat permanently:
+
+  1. **`team/elly-outreach.md` gained a compliance section (Kevin, 2026-09-08):**
+     Yelp flagged Viridia for review-solicitation compliance. No outbound asset
+     may offer, promise, imply or discuss requesting, generating, soliciting,
+     automating or managing reviews. **"Reputation management" is the same claim
+     in a suit and is banned too.** And critically for this seat: **review volume
+     and star ratings are out as pain hooks**, because the implied fix is the
+     prohibited one. Lead with speed to lead, missed calls, after-hours coverage,
+     booked estimates, stale-database follow-up instead.
+  2. **New `_house-style.md`**, machine-written by KIREEK, banning em and en
+     dashes, curly quotes and apostrophes, the ellipsis character, and a list of
+     AI-tell phrases, plus the harder-to-grep tells (the three-part list, the
+     "it's not X, it's Y" rhythm, the restating summary paragraph, uniform
+     paragraph length). It exempts internal notes and rationale sections but
+     warns that pasting from notes into copy is exactly how a dash escapes.
+
+  **Re-swept all eight bodies in the queue, mine and the four carried over, and
+  every one is clean on both.** One real fix: A Hernandez Painting's fourth line
+  read "Your reviews say the work is the easy part for you" and now reads "Your
+  customers say." It was a compliment rather than a pain hook or an offer, so it
+  was arguably already inside the line, but with a live Yelp flag the word does
+  not belong in a cold email.
+
+  **The important lesson is what this rule retroactively kills.** The "review
+  nobody asked for" mechanism, which I was pleased with on RCP Mechanical (09-06)
+  and logged as genuinely new, **is not writable any more** — it is built entirely
+  on review volume as the pain hook. Same for anything descended from it. That
+  email is already sent. **Two things saved this run by accident:** the standing
+  rule against quoting a customer complaint at a stranger meant A Best was already
+  built without its complaint record, and none of today's four used a review count
+  or rating in the copy, which had been a sameness habit rather than a compliance
+  choice.
+
+  **Standing note for every future run: check `git log` on `team/elly-outreach.md`
+  and `_house-style.md` after the final fetch, not just at the start.** A rule
+  that lands mid-run is invisible if you only read your persona file once. The
+  merge would have gone through silently and four non-compliant drafts could have
+  sat in Kevin's queue looking approved-ready. It cost one grep to catch.

@@ -26,7 +26,7 @@ address is what you would expect from a shop that owns no domain.)
 >
 > And whoever walks the house first usually frames the job. They pick the rooms, the prep, the finish, and the other two end up bidding against that version of it or getting a "we'll be in touch."
 >
-> Your reviews say the work is the easy part for you. This is the part that happens before anybody sees it.
+> Your customers say the work is the easy part for you. This is the part that happens before anybody sees it.
 >
 > Worth fifteen minutes?
 >

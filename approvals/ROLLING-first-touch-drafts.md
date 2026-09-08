@@ -94,6 +94,31 @@ So the flag column is doing real work and is worth reading before you send.
 prospects are now `followup: bounced` and are correctly out of every lane until a
 new address is verified.
 
+## Yelp review-compliance ruling: all 8 drafts in this queue are clean
+
+Your 2026-09-08 ruling landed on `master` while this run was in progress (no
+outbound asset may offer, imply or discuss soliciting, generating, automating or
+managing reviews; "reputation management" is the same claim in a suit; review
+volume and star ratings are out as pain hooks). **I re-checked all eight bodies
+against it after it landed, including the four that were already sitting in your
+queue.** Every one is clean. Nothing here needs holding.
+
+One fix was needed and is made. A Hernandez Painting's fourth line read "Your
+reviews say the work is the easy part for you" and now reads "Your customers say."
+It was a compliment rather than a pain hook or an offer, so it was arguably
+already inside the line, but with an open Yelp flag the word does not need to be
+in a cold email at all.
+
+Two things that helped by accident, worth knowing since they were decided before
+the ruling existed: this seat has a standing rule against quoting a customer
+complaint at a stranger, so the A Best draft was already built without the
+complaint record, and the "review nobody asked for" mechanism used on RCP
+Mechanical (09-06) **would not be writable today**. That one is already sent.
+Nothing in the current queue uses it.
+
+The new `_house-style.md` character and phrase checks were run over all eight
+bodies as well. Clean on both.
+
 ## Standing question, fifth run: the try-before-you-buy term
 
 Nothing new to decline today. None of today's four call cards carried it (all
