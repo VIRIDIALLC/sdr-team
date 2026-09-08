@@ -2512,3 +2512,110 @@
   Conroe — strong, worth a full second pass), San Antonio (New Braunfels,
   Boerne, Cibolo, Converse, Helotes, Live Oak, Universal City),
   Albuquerque (incl. Rio Rancho — flagged thin, see above).
+
+- (run 2026-09-08) Scheduled run, two tracks (package + website — ads not
+  requested). `git fetch` showed the container on a detached HEAD exactly
+  matching `origin/master`'s fetched tip — same recurring stale-ref symptom
+  as every run since 2026-08-13, fixed with `git checkout -B master
+  origin/master`, nothing lost. `_new-leads.md` had nothing dropped in. Ran
+  both tracks as parallel background Agent-tool sub-agents again, committing
+  each batch as soon as it landed. Caught and fixed a real gap this run: the
+  website-track batch's first commit was missing the `## Links` block Kevin's
+  2026-08-20 ruling requires (yelp:/maps: at sourcing time) — the sub-agent
+  brief didn't explicitly ask for it and the agent (reasonably) didn't invent
+  one since the template itself doesn't have a Links section. Fixed with a
+  follow-up commit (WebSearched the real Yelp URLs for 2 of the 3, added
+  maps: search links to all 3). **Standing fix for future runs: explicitly
+  tell every prospecting sub-agent to add a `## Links` block (yelp: if
+  sourced from/confirmed on Yelp, maps: always, as a
+  `google.com/maps/search/<Business>+<City>` URL) even though `_template/
+  status.md` doesn't show one — it's Rupika's job to capture it at sourcing
+  time per CLAUDE.md, not something to defer to Montague.**
+- (package/priority track, run 2026-09-08) Next four metros in the
+  flood-gates rotation after San Jose/Houston/San Antonio/Albuquerque:
+  Oklahoma City OK, Tulsa OK, Kansas City MO/KS, Minneapolis MN. Fell well
+  short of the 12 target — only 6 hits across 3 metros (OKC, Tulsa, KC) and
+  4 verticals: Dun' Dirt Cheap Lawn & Landscape (Tulsa/Sand Springs OK,
+  landscaping, ~4hr Yelp response, family-owned since 2012, reachable via
+  domain+phone+email), A Best Air & Heat (Tulsa OK, HVAC, sourced via a
+  complaint-language search rather than the response-time technique — a
+  named review reporting manager Jared and owner Tammy both failed to
+  return calls despite advertised 24/7 service, reachable via domain+
+  phone), A Hernandez Painting (Lee's Summit MO/KC metro, painting, ~1 day
+  response, reachable via domain+phone+email), Kevin Turner Painting
+  (Belton MO/KC metro, painting, ~2hr response, but flagged with a SCALE
+  CAUTION for Montague — 30yr tenure/153 HomeAdvisor reviews is bigger than
+  most package hits, not an automatic drop since no multi-crew/multi-trade
+  signal found, but worth a crew-size check), Lilah Landscaping (Oklahoma
+  City OK, landscaping, ~5hr response, "New on Yelp" — a young/growing shop
+  still building out lead handling), AMJ Remodeling and Handyman
+  (Independence MO/KC metro, remodeling/handyman, ~2hr response, owner Ron
+  Smith confirmed via BBB, no website found anywhere — correctly kept
+  `track: package` per the no-website-subset rule, flagged as a future
+  upsell candidate). **Minneapolis MN ran completely dry** — 8+ suburb/
+  vertical combos (Bloomington, Eden Prairie, Maple Grove, Woodbury,
+  Plymouth, Burnsville, Coon Rapids, Blaine, St. Paul, Minnetonka) across
+  HVAC/plumbing/roofing/electrical/pest control/garage door/painting/
+  landscaping, every advertiser responding in 10-50 minutes, complaint-
+  language searches surfacing only generic industry commentary rather than
+  named businesses — the same "fast-responding market" pattern already
+  logged for Salt Lake City, Sacramento, San Jose, and Albuquerque (now a
+  5th data point); needs a genuinely different discovery technique before
+  another pass pays off, not a straight re-run. New collision trap for the
+  standing list: "Alta Pest Control" (Tulsa) — a small family shop (owner
+  Christopher Langlois, 38 reviews) sourced via Angi/BBB shares its street
+  address (5460 S Garnett Rd) with altapestcontrol.com, which turned out to
+  be a multi-state chain (OK/TX/TN/VA/WA) — same address strongly suggests
+  the small shop got absorbed/scaled into the regional brand; dropped
+  rather than queued as the "family shop." Other drops this run: franchise
+  (Mr. Electric of Oklahoma City), scale (OKC Roofers 450+ reviews, Air
+  Solutions Sand Springs 2,429 reviews, Standard Heating Minneapolis
+  94yr/3rd-gen, T-Town Roofing Tulsa $8.1M revenue/7 employees despite a
+  sharp named complaint), direct contradiction (RC Roofing Solutions Edmond
+  — reviews praise being "easy to communicate with"), unresolved name
+  collision (Redeemed Roofing Bixby OK — multiple same-named chains
+  elsewhere, dropped rather than guessed). Reconfirmed a technique note
+  from prior runs: an unnamed "responds in about X hours" aggregate result
+  very often needs a follow-up query quoting the exact number + review
+  count back to resolve the business name — used repeatedly and reliably
+  this run. New standing metro-rotation entries: Oklahoma City OK and Tulsa
+  OK (both productive, worth a full second pass — most suburbs untried
+  beyond the hits above), Kansas City MO/KS (workable but thinner, needed
+  more suburb passes than OKC/Tulsa — Lee's Summit, Belton, Independence
+  worked; other KC suburbs still untried), Minneapolis MN (dry, flagged
+  above — needs a new technique, not more of the same search).
+- (website track, run 2026-09-08) 3 hits: 2 fresh markets, one revisit.
+  Revisited Walla Walla WA (prior hit market, plumbing) on a fresh
+  vertical — HVAC/refrigeration hit: Powers Refrigeration LLC (one-man
+  shop, est. May 2024, real reviews/photos across Yelp/Birdeye, zero owned
+  domain, owner Codi M. Powers via LinkedIn). Also re-checked Winona MN and
+  Durango CO (both prior hit markets) across several more verticals — both
+  now read as largely exhausted for this track (every named follow-up in
+  both resolved to a real, professional-looking site this pass); one
+  banked-not-queued near-miss in Durango worth logging: "Electric Zone"
+  (facebook.com/Electriczonedgo) — Facebook page exists but doesn't surface
+  in Yelp's own "best 10 electricians" list or any directory at all, no
+  phone/address found, same thin-reachability shape as Durango Brushworks
+  from the 09-07 run. New brand-new market: Pendleton OR (~17k pop, Pacific
+  NW interior, ~35mi from Walla Walla) — read as genuinely productive, 2
+  hits from just 3 verticals tried: Morris Plumbing LLC (a 2026 rebrand/
+  succession of Rob Merriman Plumbing & Heating, est. 1957 — same address/
+  phone confirmed across both names, 68+ years of real history, never had a
+  website under either name; owner name not found under the new "Morris"
+  brand, flagged for Montague; also no Yelp listing found under the new
+  name — only the predecessor's, not carried forward onto the call card,
+  see brief.md) and Premier Roofing & Painting LLC (family-run, licensed/
+  bonded/insured, 17 project photos on its Yelp listing, no owned domain).
+  Electrical and roofing both came up cold in Pendleton (Pendleton Electric
+  Co., Blue Mountain Electric, Palmer Roofing, and "Jack's Roofing Guys"
+  all have real sites) — untried verticals remain there (HVAC beyond the
+  Powers hit, pest control, landscaping, garage doors, restoration), worth
+  a follow-up pass. New collision traps for the standing list: "Painting
+  Pro's LLC" (Walla Walla) — multiple similarly-named "Painting Pro(s)"
+  LLCs exist nationally, couldn't cleanly attribute a domain either way,
+  dropped rather than guessed; "Foreman Electric" (Durango) — the small
+  local Facebook page is distinct from foreman-electric.webflow.io, which
+  belongs to a much larger multi-state "Foreman Electric Service Co., Inc."
+  (since 1949) — don't attribute that site to the small Durango business;
+  "Morris Plumbing & Heating" (Orcas Island WA) is a same-named but
+  unrelated business, don't conflate with the Pendleton OR record above.
