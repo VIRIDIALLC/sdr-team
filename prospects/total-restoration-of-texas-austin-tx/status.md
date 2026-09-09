@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
 
 - 2026-09-05 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track, The Complete System. Best-supported hook of the batch: their own marketing promises 24/7 staffing and on-site within the hour, Yelp shows ~1 day on messages. Angle that won: two arrival paths, conceding the emergency lane outright and isolating the non-emergency quote request. Dropped: the insurance-clock angle (unverifiable premise about how much of her work is claims-driven). The Mike Willemsen capacity-refusal review and the owner's own confirming reply are deliberately kept out of the body and flagged as call material only.
 - 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): sent to info@trtexas.com.
+- 2026-09-09 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as info@trtexas.com.
