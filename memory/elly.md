@@ -3850,3 +3850,180 @@ no feedback yet on those specifically)
   that lands mid-run is invisible if you only read your persona file once. The
   merge would have gone through silently and four non-compliant drafts could have
   sat in Kevin's queue looking approved-ready. It cost one grep to catch.
+
+- **2026-09-09 (this run) — 10 first touches, the largest batch this seat has done
+  under the flood-gates ruling, and it was the whole queue.** `git fetch origin`
+  first per CLAUDE.md: origin/master had force-updated to ec1c7c9 (Montague's 09-09
+  enrichment pass, 12 prospects, on top of two Rupika find batches). Container
+  started in a detached HEAD at that exact commit, the same stale-ref pattern logged
+  every run since 08-13; `git checkout -B master origin/master` fixed it, clean diff,
+  no merge.
+
+  **`_fleet-state.md` was 9h46m old** (07:22 UTC against a 17:08 UTC run). Inside the
+  ~12 hour window, so trusted, but closer to the edge than the 09-08 refresh was.
+  Recounted by grep anyway and should keep doing that.
+
+  Counts by grep: 116 found, 11 enriched, 4 drafted, 2 approved, 134 sent, 6 closed,
+  3 dismissed. The eleventh enriched is jc-heating-cooling-amarillo-tx, Kevin's own
+  email-verification hold from 2026-08-03, now day 38, already drafted, correctly
+  skipped again. Drafted the other ten, no defensive-check skips. Nine package, one
+  website. Queue is now 14.
+
+  **This is the first full batch written under Kevin's 09-08 Yelp compliance ruling,
+  and it changed real content rather than just passing a grep.** Three of Montague's
+  CALL CARD hooks could not ship as written, because each paired a response-time
+  figure with a review count or a star rating: Buckeye ("166 quote requests with only
+  5 reviews on file"), Mice Guys ("four hours despite a 4.9 rating"), and Rupika's
+  original Buckeye pain signal, which was built on the same pairing. **Standing note
+  worth generalizing: the CALL CARD hook is now a compliance risk, not just a
+  suggestion I sometimes decline on craft grounds.** Montague's cards are written from
+  a template that reaches for the rating whenever it is good, and that template
+  predates the ruling. In every case the response half survived and the review half
+  was replaced with something else off the same listing, which is a clean and
+  repeatable fix: **look for a second non-review number on the listing before
+  concluding the hook is dead.**
+
+  **The batch's dominant risk was in-batch sameness and it was the worst geographic
+  and vertical overlap this seat has ever had at once: four Chicago metro, two
+  Detroit metro, two Indianapolis, three plumbers, two pest control shops, two
+  painters, nine of ten package track, out of one inbox on one morning.** Ten
+  distinct mechanisms, and the opening move checked separately from the mechanism per
+  the 09-07 lesson:
+  - **Buckeye Plumbing — volume, not speed.** 166 quote requests is the largest
+    inbound figure any prospect here has carried, and the argument is that a number
+    that size stops being a discipline question and becomes an arithmetic one, since
+    the replies have to come out of billable hours. **New axis: every package draft
+    in this repo argues how FAST; this one argues HOW MANY**, and it never says he is
+    slow.
+  - **Comfort First — the differentiator that only a human can deliver.** They run
+    24/7 with no night or weekend surcharge, which is a deliberate published pricing
+    decision and does not drift between searches the way a Yelp average does. **New
+    axis: every other draft argues what a missed lead costs; this one argues that the
+    missed call is the one where he never got to make his own best argument.**
+  - **JJ Construction — his two numbers are causally linked.** Three hours and a
+    hundred percent response rate, and the email asks whether the second causes the
+    first, since a shop that lets some go posts a faster average on the rest. **New
+    axis: nobody here has argued that a GOOD metric produces a bad one.** Deeply
+    face-saving, and I think actually true. Deliberately not the Katy Pro move
+    (09-07): that conceded speed and pivoted to persistence; this one stays on the
+    same two numbers and claims a relationship between them.
+  - **L.D. Smith — the delay is caused by missing information.** Answering a
+    Noblesville request properly needs the schedule, the schedule is not in the
+    crawlspace, and he runs seven towns off one shop. **New axis: the fix is the
+    reply carrying the calendar rather than him typing faster**, which is closer to
+    what the offer does than "be faster" is.
+  - **Marvin & Son — the lead expires on its own.** A tripped breaker gets reset
+    overnight and the homeowner decides it was nothing, so the callback lands on
+    somebody politely embarrassed. **New axis: every other draft assumes an
+    unanswered lead goes to a competitor; this one says it stops existing.** Second
+    half is what makes it worth money: the emergency call was the doorway to the
+    panel upgrade, and the doorway shuts by itself.
+  - **Mice Guys — his own name pre-qualifies the lead.** Somebody searching "mice in
+    the walls" who lands on a company called Mice Guys is not comparing quotes, they
+    are relieved. **New axis: intent is already maximal at first contact, so delay
+    costs more here than at a generalist**, and the opener is a compliment about a
+    branding decision rather than anything about response times.
+  - **Palma Painting — subtraction.** Built on the confirmed 90% response rate rather
+    than the unconfirmed hour count: one in ten people who asked for a price never
+    heard back, and there is no list of who they were. **New axis: the argument is
+    the missing tenth rather than the late ninety.** Both doors of the question are
+    genuinely comfortable (out of area, or a busy week).
+  - **Solidified Pest — an unanswered referral costs two customers.** The referral
+    arrives pre-trusted, and when it goes unanswered the person who vouched hears
+    about it. **New axis: the cost that is socially visible and that he can never
+    see.** Grounded in the Nextdoor evidence and his own published Redford service
+    area, and phrased so it never asserts what share of his work is referral, which
+    would have been a guess.
+  - **Zuniga's Plumbing — the cost side of answering, and this inverts the seat.**
+    Twenty-odd first touches here argue what a missed lead costs him. This one says
+    replying is genuinely expensive for a three-person shop because it comes out of a
+    job already paid for, and that the pitch is making the reply free rather than
+    making Walter faster. **The third paragraph explicitly dismisses the ordinary
+    version of our own pitch before making ours.** Best framing I have written on
+    this seat and it may be better on the phone than anything in the one-pager.
+  - **Expert Paint (website) — the login wall.** His entire web presence is a
+    Facebook page that would not open for Montague without an account. **New
+    mechanism on a track that only has a few: not "you cannot be found" (worn many
+    times), not "somebody else has your name" (worn three times), not "your site is
+    broken" (Al Jeffers), not "your credential is filed somewhere invisible"
+    (JE & BC). The first line is our own first-hand experience of failing to reach
+    him**, which is the most checkable kind of claim available.
+
+  **Three same-batch collisions caught while drafting rather than after, and each
+  was resolved by pointing at a specific shipped draft rather than by taste:**
+  - **Buckeye vs L.D. Smith.** Both plumbers with wide footprints, and Buckeye's
+    eight Ohio counties would have supported the same service-area-sprawl argument.
+    Gave the mechanism to L.D. Smith, who has seven named towns off one shop AND a
+    slow current figure to explain, and moved Buckeye to volume.
+  - **Solidified vs Mice Guys.** Both pest control, drafted the same morning.
+    Solidified's wildlife half would have argued the pre-decided panicked caller,
+    which is Mice Guys' whole mechanism. Mice Guys owns it because the company NAME
+    does the work, so Solidified went to the referral instead.
+  - **Comfort First vs A Best Air & Heat (09-08).** Same trade, and the lazy version
+    of both opens on a late-night call. Moved Comfort First to Saturday morning,
+    which is also the more honest choice, since Saturday is when most shops charge
+    the premium he waives.
+
+  **Two more mechanisms dropped on collisions with drafts already in Kevin's queue
+  or recently sent:** JJ Construction's storm burst and Zuniga's plumbing-and-heating
+  freeze both reduce to Silver Electric's demand concentration (09-07), and Palma's
+  seven service lines is EAP Landscaping's shipped argument. All three logged as
+  second touches in their dropped-angle blocks.
+
+  **Greeting calls worth keeping.** Comfort First got the team greeting even though
+  TWO real owner names are documented (Rick Young on BBB, Julie Young on LinkedIn,
+  reading as a married pair). **This is a third category, distinct from both existing
+  precedents: not identity uncertainty (CVA/Merican, where a confirmed real person
+  beats a team greeting) and not the two-unresolved-candidates ambiguity that takes a
+  bare "Hi,". Both names are real; the open question is which of them owns the
+  inbox**, and the address is a generic guessed `info@` that either might read.
+  Addressing one half of a couple by name in a shared inbox is an avoidable way to
+  start wrong, and the team greeting costs nothing. Palma Painting is the ordinary
+  no-name-found case (the only candidate was a customer calling the crew lead "Jr,"
+  correctly refused by Montague). **Buckeye's owner is named Kevin Edmonds**,
+  confirmed twice over, so that draft's greeting reads "Hi Kevin," and I flagged it
+  in three places so nobody downstream reads it as a stray signature.
+
+  **Held lane: nothing to do, and that is correct.** 35 at `followup: held`, 34 with
+  a `followup-1.md`, the only gap being sp-lawn-care-bangor-me (permanent, Kevin owns
+  Karl's thread). Complete since 09-06. Gave the rolling file a date refresh rather
+  than a rewrite.
+
+  **Approvals hygiene:** all five dated first-touch/campaign files were already
+  `status: superseded`, nothing to close. Regenerated `ROLLING-first-touch-drafts.md`
+  from live state: 14 at `drafted`, new-today and carried-over tables, a
+  where-to-start list, six two-minute warnings, a new compliance section explaining
+  which hooks the 09-08 ruling killed, the response-time accounting, the pricing
+  question and the doctrine conflict.
+
+  **The 84% BrightLocal conflict came up on a live draft for the second time in
+  three runs** (Ken Adams 09-07, Expert Paint today) and is still unresolved.
+  `team/elly-outreach.md` names the stat as this track's standard data point;
+  `_acquisition-doctrine.md` §5/§8 excludes it. Doctrine wins under its own terms, so
+  it stayed out. **Still deliberately not editing my own persona file to resolve it.**
+  Rewriting my own instructions to settle a conflict I found is Sue's seam.
+
+  **Upstream, worse again:** 116 at `stage: found`, up from 114. Twenty-one straight
+  days of growth, on a day Montague enriched eleven and I cleared ten. Drafting has
+  not been the constraint for weeks.
+
+  Track breakdown: 9 package, 1 website. Standard sweep on body text only (em dash,
+  en dash, curly quotes, bracket placeholder, retired package names, third-person
+  Kevin/Viridia, `$`, `%`, "guarantee", the 84% stat, the word "review" in any form,
+  stray sign-off, British spellings) — clean on every check across all ten. Also swept
+  the full files including NOTE prose: one British spelling caught and fixed
+  ("colour" in Buckeye's note), so that defect is still live; keep sweeping. Bodies
+  run 115 to 146 words, in the recent band.
+
+  **Next run:** check `stage: enriched` first and recount by grep. Read the
+  worn-mechanism list before drafting any second touch, and **add the three worn
+  today: demand concentration, service-area sprawl, and the pre-decided high-intent
+  caller.** Second-touch angles for today's ten are written into each dropped-angle
+  block: Buckeye's eight counties, Comfort First's husband-and-wife split, Expert
+  Paint's aggregator pages, JJ's storm burst, L.D. Smith's hire-your-way-out
+  ceiling, Marvin's two addresses, Mice Guys' out-of-area filter, Palma's two 404s,
+  Solidified's wildlife urgency, Zuniga's correlated freeze. If Kevin rules on the
+  try-before-you-buy term, JE & BC, Al Jeffers and Clean Earth's touch two still need
+  rewriting around it.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work rule.
