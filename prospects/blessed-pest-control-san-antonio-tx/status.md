@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
 - 2026-09-07 (Montague): verified and advanced to `enriched`. Email CONFIRMED directly (BlessedPestControl@gmail.com, on site). Owner Ivy Wood confirmed via 3 independent sources. Response-time soft-contradiction resolved — "same-day service" praise is about the treatment visit, not Yelp-message speed, so the ~3hr figure isn't actually contradicted; carried forward as a question. See enrichment.md.
 - 2026-09-07 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track. Angle that won: the shared inbox. BlessedPestControl@gmail.com is the whole company inbox and both founders do field work, so a quote request belongs to both of them and therefore to neither. Response-time question (~3 hrs) kept as the opener, asked never asserted. Dropped: the 2025 NPMA award as an invisible credential, too close to the JE & BC Electric draft already in Kevin's queue.
 - 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): sent to BlessedPestControl@gmail.com.
+- 2026-09-09 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as BlessedPestControl@gmail.com.
