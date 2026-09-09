@@ -1,8 +1,4 @@
-status: done
-
-> **CLOSED.** Resolved 2026-09-07: the prospects staged here were enrolled in the GHL follow-up sequence (13 in that run). Kept as the record of what was staged.
-
-# Follow-up sequence — 13 prospect(s) ready to enroll (rolling queue)
+# Follow-up sequence — 9 prospect(s) ready to enroll (rolling queue)
 
 Sent 2+ days ago, real email on file, no reply recorded,
 and the first email was the Yelp angle (track: package) — the only track
@@ -15,19 +11,15 @@ a dated backlog.
 
 | Prospect | Email |
 |---|---|
-| AirBest Home Services — Puyallup, WA (South Sound / Seattle-Tacoma metro) | airbesthomeservices@gmail.com |
-| AKT Landscaping (A.K.T Landscaping Services LLC) — Seattle/Burien, WA (Seattle metro) | aktsevices@gmail.com |
-| Anthem Electric — Alpine, CA (San Diego metro) | anthemelectric@yahoo.com |
-| Dos Lunas Landscape and Construction, Denver, CO | 25jovanni@gmail.com |
-| 4 Seasons Pest Management, Aurora, CO | service@4seasonspestco.com |
-| Gibson Roofing — Damascus, OR (Portland metro) | info@gibsonroofing.com |
-| Green Dreams Landscape Design + Build — San Diego, CA (San Diego metro) | office@greendreams.land |
-| Hero AC & Heat LLC, 3009 N Rockwell Ave, Casa Grande, AZ (Pinal County, Phoenix-metro exurb) — HVAC | herohvac5@gmail.com |
-| Horizon Roofing (2030 Main St Ste 1300, Irvine, CA 92614) | contact@horizonroofingca.com |
-| KJC Roofing, Inc. (Mission Viejo, CA) | info@kjcroofing.com |
-| Local Choice Pest & Landscape Nutrition | info@localchoicepest.com |
-| Nombrano Construction (Phoenix, AZ (3101 N Central Ave, Ste 183-5575)) | info@nombrano-construction.com |
-| The Passionate Plumber (130 Avenida Baja, San Clemente, CA 92672) | Info@thepassionateplumber.com |
+| Blessed Pest Control | BlessedPestControl@gmail.com |
+| E-Plumbing And Drain Services LLC | service@e-plumbinganddrainservices.com |
+| Green Texas (HVAC), Plano, TX (Dallas metro) | info@greentexashvac.com |
+| Guy's Heating and Air Conditioning (Guy's Heating, Air Conditioning & Sheet Metal) | guyshvac@yahoo.com |
+| Katy Pro Painting & Remodeling | katypropr@gmail.com |
+| Kolor Pros Painting, Round Rock, TX (Austin metro) | kathleen@kolorprospainting.com |
+| Silver Electric (Silver Electric DBA) | silverelectric1985@gmail.com |
+| Total Restoration of Texas, Austin, TX | info@trtexas.com |
+| Vegas Paints (residential/commercial painting) | moises@vegaspaints.com |
 
 ---
 
