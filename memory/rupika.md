@@ -2619,3 +2619,97 @@
   (since 1949) — don't attribute that site to the small Durango business;
   "Morris Plumbing & Heating" (Orcas Island WA) is a same-named but
   unrelated business, don't conflate with the Pendleton OR record above.
+
+- (run 2026-09-09) Scheduled run, both tracks. `git fetch` showed `origin/master`
+  already fast-forwarded and the container on a detached HEAD matching its
+  fetched tip exactly — same recurring stale-ref symptom as every run since
+  2026-08-13, fixed with `git checkout -B master origin/master`, nothing lost.
+  `_new-leads.md` had nothing dropped in. Ran both tracks as parallel background
+  Agent-tool sub-agents again (research + file-write only, no memory/git access),
+  committing each batch to `master` as soon as it landed — website batch first,
+  package batch second, no conflict between the two pushes.
+- (package/priority track, run 2026-09-09) Next four metros in the flood-gates
+  rotation after Oklahoma City/Tulsa/Kansas City/Minneapolis: Chicago IL, Detroit
+  MI, Columbus OH, Indianapolis IN. 9 hits against the 12 target, 6 verticals
+  (HVAC, pest control, roofing, plumbing x3, painting, electrical): Comfort First
+  Heating & Cooling (Minooka IL/Chicago-Aurora area, HVAC, ~2hr Yelp response,
+  reachable via domain), Mice Guys (Buffalo Grove IL/Chicago-Schaumburg area,
+  pest control, ~4hr response, 4.9star/60 reviews, reachable via domain+phone+
+  email), JJ Construction Roofing (Bensenville IL/Chicago-Naperville area,
+  roofing, ~3hr response, 4.8star/98 reviews, reachable via domain), Zuniga's
+  Plumbing (Chicago IL proper/surfaced via Cicero search, plumbing, ~4hr
+  response, reachable via domain+phone — flagged for Montague: 50yr tenure
+  claim needs a scale check, could read multi-gen), Solidified Pest Control
+  (Livonia MI/Detroit-Dearborn Heights area, pest control, ~2hr response,
+  reachable via domain), Buckeye Plumbing & Drains (Orient OH/Columbus-Grove
+  City area, plumbing, ~2hr response with a sharp volume mismatch — 166 recent
+  quote requests vs. only 5 reviews, reachable via domain), Palma Painting
+  (Indianapolis IN, painting, ~8hr response/90% response rate/4.8star, reachable
+  via domain+phone), Marvin and Son Electrical (Taylor MI/Detroit-Westland area,
+  electrical, response figure drifted 7hr vs 1hr across sources and only 2
+  reviews — queued per the flag-don't-drop rule since identity held, but flagged
+  as this run's weakest lead, reachable via domain+phone), L D Smith Plumbing
+  (Indianapolis IN/Greenwood-Carmel-Fishers area, plumbing, ~4hr response,
+  founder-led since 2011 starting in his garage, reachable via domain).
+  Cross-suburb resolution was the dominant pattern this run — 6 of the 9 hits
+  actually home in a different city than the suburb searched (Minooka not
+  Aurora, Bensenville not Naperville, Livonia not Dearborn Heights, Chicago not
+  Cicero, Orient not Grove City, Taylor not Westland) — worth planning for as
+  the default outcome in these metros, not a surprise. New technique note:
+  the "quote the exact numbers back" name-resolution trick worked reliably for
+  HVAC/pest control/plumbing/painting again but repeatedly failed for
+  electrical and restoration this run — those two verticals returned more
+  generic aggregate Google-AI-overview blurbs that wouldn't pin to a specific
+  business even after a follow-up query; budget more searches per hit (or
+  deprioritize) for electrical/restoration specifically in these four metros.
+  Notable drop: CWF Restoration (Aurora IL search) — the one clear slow-
+  response restoration hit, resolved to "Chicago Water & Fire Restoration," a
+  multi-state regional operation — hard scale disqualifier despite the clean
+  pain signal. Also dropped for direct pain-signal contradiction: Faulkner
+  Restoration and A+ Restoration Services (both Greenwood IN — established/
+  award-winning or 30min-response, contradicts a slow-response story).
+  Struck-out ground this run (avoid repeating as-is without a new technique):
+  Indianapolis restoration and electrical (Greenwood, Fishers, Noblesville —
+  fast responders or unresolvable names), Columbus HVAC and electrical
+  (Hilliard, Dublin, Westerville, Reynoldsburg — mostly sub-1hr, one
+  unresolvable "Beacon Electrical Solutions" lead), Detroit HVAC and roofing
+  (Livonia, Sterling Heights, Troy — thin, low-review candidates couldn't be
+  identity-confirmed). New standing metro-rotation entries: Chicago (Aurora,
+  Naperville, Joliet, Elgin, Schaumburg, Cicero, Evanston, Waukegan — only
+  partially worked, restoration untried beyond the CWF drop), Detroit (Warren,
+  Sterling Heights, Dearborn, Dearborn Heights, Livonia, Troy, Westland — thin
+  so far, worth a second pass with fresh suburbs), Columbus (Dublin,
+  Westerville, Reynoldsburg, Grove City, Hilliard — only plumbing broke
+  through, HVAC/electrical need a different technique), Indianapolis (proper +
+  Fishers, Carmel, Noblesville, Greenwood, Lawrence — painting/plumbing worked,
+  restoration/electrical didn't). Next four in Kevin's rotation after this:
+  Nashville, Atlanta, Charlotte, Raleigh.
+- (website track, run 2026-09-09) 3 hits, three brand-new small markets in the
+  15k-40k sweet spot, none on the standing avoid-list, spanning Great Plains/
+  Appalachia/Deep South as the memory pointer suggested: Henton Plumbing
+  Service (Dodge City KS, plumbing, ~36yr tenure, no web presence at all beyond
+  Facebook/directories, owner Valgene Henton per directory data — medium
+  confidence), Window Butler (Morgantown WV, window cleaning, founded 1999/25+
+  years, no web presence at all, owner Vaughn "Joe" Voithofer — medium-high
+  confidence, named consistently across sources), Expert Paint Company LLC
+  (Cullman AL, painting, owner Scott Hallmark/32yr tenure, no web presence at
+  all, high confidence — owner named directly in the business's own Facebook
+  About info with a matching contact email). All three are the same "no web
+  presence beyond Facebook/directories" subtype — no dead-domain or broken-
+  free-builder case turned up this run. Miss rate ran slightly above the usual
+  ~2-per-hit budget (7 misses across the three markets: Cisco's Plumbing,
+  Stewart Plumbing Heating & AC, Star Refrigeration in Dodge City; Ayersman
+  Roofing, Pizzurro Pest Control, Patrick Valentine Electric in Morgantown;
+  Golden Rule Painting in Cullman — all had real sites) but not alarming for
+  fresh small markets. New collision catch: "Trapper Tim's Nuisance Wildlife
+  Removal" was Facebook-tagged "Morgantown WV" but its BBB/Yelp listings
+  actually place it in Morgantown, INDIANA — dropped rather than risk
+  misattributing a different state's business; worth remembering same-name
+  small towns across states as a specific collision subtype, not just
+  same-name-different-business. Morgantown WV read as unusually rich for this
+  track — two more likely no-website hits surfaced but weren't used this run
+  (Sackett Electrical Service LLC, Morgantown Overhead Door LLC) — worth a
+  quick close-out pass next time before spending a fresh market. New standing
+  markets-tried additions: Dodge City KS, Morgantown WV, Cullman AL — all
+  three have plenty of untried verticals remaining beyond the hit and the
+  listed misses.
