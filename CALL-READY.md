@@ -7,14 +7,13 @@ is a different list (email sequence finished); this one is prospects that
 never had an email to begin with. Say "prep me for a call with <name>" for
 the pre-call card.
 
-**Last regenerated: 2026-09-08 (Montague).** Every row below is a real
+**Last regenerated: 2026-09-09 (Montague).** Every row below is a real
 `call_ready: yes` flag on that prospect's own `status.md`, set after an
-actual two-source (or better) phone check. Grown from 8 rows (2026-09-07)
-to 12 this run — 4 new rows added from today's batch
-(amj-remodeling-handyman-independence-mo, powers-refrigeration-walla-walla-wa,
-morris-plumbing-pendleton-or, premier-roofing-painting-pendleton-or), no
-dedicated sweep of the older backlog this run (today's 9-prospect new
-batch used the full run).
+actual two-source (or better) phone check. Grown from 12 rows (2026-09-08)
+to 14 this run — 2 new rows added from today's batch
+(henton-plumbing-dodge-city-ks, window-butler-morgantown-wv), both
+website-track. No dedicated sweep of the older backlog this run (today's
+12-prospect new batch used the full run).
 
 **Note on the retired 2026-09-02 seed:** most of that 53-row seed are still
 real, untouched `found`-stage prospects sitting in `prospects/*/status.md` —
@@ -40,6 +39,8 @@ website/ads.
 | powers-refrigeration-walla-walla-wa | website | Codi (Powers) | (509) 540-1130 | WA SOS + WA L&I license + LinkedIn | You've got a domain registered in your name — powersrefrigeration.com — but it's just a blank GoDaddy placeholder page, nothing live. Did you know that? |
 | morris-plumbing-pendleton-or | website | NO NAME FOUND | (541) 276-7221 | allbiz.com + BuildZoom | You took over a plumbing business with 68 years of history behind it — Rob Merriman's shop, going back to 1957 — but there's still no website for it under the new name. Not even the old business ever had one. |
 | premier-roofing-painting-pendleton-or | website | NO NAME FOUND | (541) 721-0636 | Yahoo Local + ZeroFi/CCB record | You've got 17 real project photos up on Yelp and an active Facebook page — but nothing of your own online. No website to point people to when they ask to see your work. |
+| henton-plumbing-dodge-city-ks | website | Valgene (Henton) — medium confidence | (620) 227-8374 | D&B + Buzzfile + Yellow Pages | You don't have a website that comes up when someone searches your name — just Facebook and a handful of directory listings, after about 36 years in business. Did you know that? |
+| window-butler-morgantown-wv | website | Joseph "Joe" (Voithofer) — Ops Manager; founder Vaughn also goes by "Joe" | (304) 292-2055 | BBB + Yellow Pages | You don't have a website — just Facebook and a handful of directory listings, after 25+ years in business. Did you know that? |
 
-_12 verified call-ready rows as of 2026-09-08. The prior 53-row seed is
+_14 verified call-ready rows as of 2026-09-09. The prior 53-row seed is
 retired — see note above._

@@ -3537,3 +3537,134 @@
     Electrical, Dumont LLC, Outdoor Property Services, Pacheco Electric,
     Quality Painting S.A., Durango Brushworks, DW Olson Electric, and
     others) — today's 9-prospect new batch used the full run.
+
+- (2026-09-09 run) Started on a detached HEAD matching `origin/master`'s
+  tip (`d29e659`) exactly — standard stale-cache pattern, `git checkout -B
+  master origin/master`, no data-loss risk. `_fleet-state.md` was
+  ~9h16m old (generated 07:22 UTC, run started 16:38 UTC) — under the 12h
+  threshold, treated as fresh. Scanned `prospects/*/status.md` for
+  `stage: found` prospects carrying no "Montague" mention anywhere in
+  their own log — exactly 12 matched, today's two Rupika batches (9
+  package: Chicago/Detroit/Columbus/Indianapolis metros — Buckeye
+  Plumbing & Drains, Comfort First Heating and Cooling, JJ Construction
+  Roofing, L.D. Smith Plumbing, Marvin and Son Electrical, Mice Guys,
+  Palma Painting, Solidified Pest Control, Zuniga's Plumbing; 3 website:
+  Expert Paint Company/Cullman AL, Henton Plumbing/Dodge City KS, Window
+  Butler/Morgantown WV) — well within the 15/run cap, worked as one
+  batch. Used 12 parallel research subagents (pure-research, no file
+  writes), then wrote all enrichment.md/status.md updates myself for
+  consistency. (Note on the scan method: a plain "no enrichment.md file"
+  check gives false positives — many older held prospects document their
+  gate outcome directly in status.md's own Log without ever writing an
+  enrichment.md, e.g. sonrise-roofing-wichita-falls-tx from 2026-08-05.
+  Checking for a "Montague" mention in status.md's Log is the more
+  reliable untouched-detector; worth remembering for future runs.)
+
+  Result: 10 of 12 advanced to `enriched` (Buckeye Plumbing & Drains,
+  Comfort First Heating and Cooling, JJ Construction Roofing, L.D. Smith
+  Plumbing, Marvin and Son Electrical, Mice Guys, Palma Painting,
+  Solidified Pest Control, Zuniga's Plumbing — all package; Expert Paint
+  Company — website). 2 held at `found`, both website track, both newly
+  `call_ready: yes` (Henton Plumbing, Window Butler).
+
+  - **Marvin and Son Electrical — a flagged 3-city identity conflict
+    resolved as one real business, not a conflation.** Rupika's brief
+    flagged the business appearing under Taylor MI (Yelp), Clinton
+    Township MI (BBB), and Westland MI (search-scope) as needing
+    confirmation before advancing. Resolved: the same phone number ties
+    all three together, and Westland was never a separate location — just
+    a service-area search hit, consistent with the site's own stated
+    Wayne/Oakland/Washtenaw coverage. Advanced. Separately caught a real
+    open question worth flagging to Sue/Kevin, not resolved: BuildZoom
+    shows a possibly-expired individual electrical license (garbled name
+    parse "S and Son Marvin E," same Clinton Twp zip) expired since
+    2016 — couldn't reach MI LARA's interactive license lookup to confirm
+    whether the LLC's current contractor license is separate/active. Same
+    "advance but flag prominently" pattern as Boldt HVAC's license
+    caution (2026-08-11) and Quality Overhead Door's PE-ownership flag
+    (2026-08-15) — now a third instance of an ownership/licensing-
+    structure caution that isn't covered by any of the defined gates.
+  - **Zuniga's Plumbing — a flagged scale/ICP-fit concern resolved
+    favorably, with a real marketing-inflation catch attached.** Rupika
+    flagged the business's own "over 50 years" claim as needing
+    verification before trusting it's still owner-operated. Resolved
+    favorably (3 employees, ~$228K/yr revenue, single location, owner
+    still personally doing plumbing work, no sales layer) — but BBB shows
+    the actual corporate entity incorporated in 2005, ~21 years, not 50+.
+    The tenure claim is very likely marketing language about the family's
+    trade lineage, not the company's real age. Flagged so Elly doesn't
+    repeat "50+ years" uncritically — "20+ years" is the defensible
+    number. Worth naming as its own pattern: a brief's own "why they fit"
+    framing can itself need light-touch fact-checking, same as the
+    Coleman Painting "17 years" correction (2026-08-13).
+  - **Window Butler — caught a search-tool hallucination before it nearly
+    became a phantom email on a call-ready card.** An AI-synthesized
+    search summary repeatedly and confidently asserted the business's
+    website was "windowbutlerwv.com" with email "windowbutlerwv@gmail.com,"
+    across multiple independent queries — neither claim ever appeared in
+    an actual search-result snippet, and direct DNS/HTTP checks disproved
+    or couldn't confirm either. This is now well past 6 instances of this
+    same failure mode (Cold Fusion Mechanical 2026-08-13, "Dave/David is
+    the owner" 2026-08-16, the sdplumbingheating.com URL claim 2026-08-16,
+    three more on 2026-09-08, this one) — always verify a specific
+    asserted fact (URL, email, name) traces to a real quoted source,
+    especially right before it would have landed on a CALL-READY.md row
+    Kevin might actually use.
+  - **Window Butler — also a two-people-same-nickname case, a new
+    category.** Founder Vaughn Voithofer and current Operations Manager
+    Joseph Voithofer are two distinct, real people who both go by "Joe" —
+    not an ambiguity between candidates (like AMS Landscaping/Krasiva
+    Windows) and not an uncertain-title case (like Merican Plumbing/Dave's
+    Plumbing), but two confirmed people sharing a nickname. Led the CALL
+    CARD with Joseph (current BBB contact) and flagged the shared nickname
+    explicitly so Kevin isn't confused mid-call if a different "Joe"
+    answers.
+  - **Two more response-time figures actively dropped as unreliable
+    rather than used even as a question** (Comfort First Heating: a "20
+    min" counter-figure came with a mismatched review count, 24 vs. the
+    confirmed 27, making it unreliable rather than a clean contradiction;
+    Marvin and Son: three different figures — 1hr/5hr/7hr — depending on
+    which geographic search context was used, reading as a Yelp
+    display/caching quirk rather than a real signal). Both landed "no
+    verified hook" on the CALL CARD rather than forcing a number through.
+  - **Two more figures came back as minor, non-alarming drift, carried
+    forward as a question with the current number**: L.D. Smith Plumbing
+    (brief's ~4hrs vs. a current ~6hrs snippet — reads as the metric
+    having moved since the original citation, not noise) and Zuniga's
+    Plumbing (brief's ~4hrs vs. current ~3hrs, plus JJ Construction
+    Roofing's ~3hrs, which for once came back genuinely CONFIRMED via an
+    independent Yahoo Local source, not just re-observed on Yelp).
+  - **Palma Painting — a real name reference correctly NOT used.** A Yelp
+    review calling the crew lead "Jr" was the only name-like hit anywhere
+    (no BBB, no Facebook page, no Indiana LLC filing found for this
+    business at all) — treated as a customer nickname, not a verified
+    first name, and marked NO NAME FOUND rather than risk "is Jr around?"
+    sounding wrong on a cold call. Worth remembering alongside the
+    Merican Plumbing/Dave's Plumbing "real name, uncertain title" bucket
+    as a distinct, stricter case: a real name reference that still isn't
+    solid enough to use.
+  - **Guessed-pattern-on-confirmed-live-domain precedent used 3x more this
+    run** (Comfort First Heating, L.D. Smith Plumbing, Palma Painting) —
+    now well past 15 uses across runs since 2026-08-11, still worth Kevin
+    explicitly confirming this reading of the gate is what he intended.
+  - Egress access was mixed this run — direct WebFetch succeeded on most
+    target-business domains, BBB, Yellow Pages, D&B, Buzzfile, Yahoo
+    Local, and BuildZoom; blocked specifically on Facebook (login wall,
+    every attempt across all 12 prospects, costing a real name/email
+    resolution on Henton Plumbing and Window Butler both), Michigan LARA's
+    license portal, and Alabama's/Kansas's SOS entity-lookup forms
+    (interactive-only, not fetchable via GET).
+  - `CALL-READY.md` regenerated: 12 → 14 verified rows (Henton Plumbing,
+    Window Butler). Did not do a dedicated sweep of the older
+    email-gate/call-ready backlog this run (D&D Plumbing, SonRise
+    Roofing, Superior Roofing, Crandell Pest Control, Noska Lawncare,
+    Casey Moriarty Pest Control, Radiant Remodeling Pros, CV Roofing, WDM
+    Garage Doors, Lloyd Miller's Painting, Plourdes Electrical, Dumont
+    LLC, Outdoor Property Services, Pacheco Electric, Quality Painting
+    S.A., Durango Brushworks, DW Olson Electric, Kevin Turner Painting,
+    AMJ Remodeling, Powers Refrigeration, Morris Plumbing, Premier
+    Roofing & Painting, and others) — today's 12-prospect new batch used
+    the full run.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain (Henton Plumbing, Window Butler stay at `found` by
+    documented gate misses/call_ready flags, not backlog).
