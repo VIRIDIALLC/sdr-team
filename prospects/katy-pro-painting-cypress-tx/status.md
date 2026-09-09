@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -15,3 +15,4 @@ quote_stage: none
 - 2026-09-07 (Montague): verified and advanced to `enriched`. Email CONFIRMED directly (katypropr@gmail.com). Owner Luis Martinez confirmed; son's first name not found despite real effort, left for the call. Phone confirmed 2 sources. "Couple hours" review resolved as corroborating the response-time reputation, not contradicting it. See enrichment.md.
 - 2026-09-07 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track. Angle that won: follow-up, not speed. His ~2-3 hr response is corroborated and genuinely good, so the email concedes that outright and argues persistence rather than speed wins the job. Both numbers asked, never asserted. Dropped: the two sale lengths under one roof, too close to EAP Landscaping in the same batch.
 - 2026-09-07 (KIREEK autopilot, standing approval 2026-09-02): sent to katypropr@gmail.com.
+- 2026-09-09 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as katypropr@gmail.com.
