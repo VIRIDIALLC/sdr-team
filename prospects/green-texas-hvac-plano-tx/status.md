@@ -1,6 +1,6 @@
 ---
 stage: sent
-followup: staged
+followup: enrolled
 track: package
 quote_stage: none
 ---
@@ -17,3 +17,4 @@ quote_stage: none
 
 - 2026-09-05 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track, The Complete System. **Weakest of today's seven and flagged as such** — carried Montague's shell-operation uncertainty prominently into the note (no BBB, absent from two Plano HVAC directories, no Facebook, no reviews of a real service call, virtual-office suite address shared with unrelated companies). Deliberately did NOT use the unreconfirmable ~7hr figure; built the body on their own two published facts instead (new Yelp listing, 7am-6pm seven days). Angle that won: before reviews exist, response time is the only signal a new listing has. Dropped: the posted-hours coverage question (this seat's over-used fallback shape).
 - 2026-09-07 (Kevin, via KIREEK): sent to info@greentexashvac.com.
+- 2026-09-09 (KIREEK autopilot, standing approval 2026-09-02): enrolled in the GHL follow-up sequence as info@greentexashvac.com.
