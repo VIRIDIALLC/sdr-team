@@ -12,3 +12,4 @@ Every autonomous send and enrollment under the 2026-09-02 standing approval (cap
 - 2026-09-09 07:51 enrolled follow-up → Kolor Pros Painting, Round Rock, TX <kathleen@kolorprospainting.com> (kolor-pros-painting-round-rock-tx)
 - 2026-09-09 07:51 enrolled follow-up → Silver Electric <silverelectric1985@gmail.com> (silver-electric-katy-tx)
 - 2026-09-09 07:51 enrolled follow-up → Total Restoration of Texas, Austin, TX <info@trtexas.com> (total-restoration-of-texas-austin-tx)
+- 2026-09-09 07:51 enrolled follow-up → Vegas Paints <moises@vegaspaints.com> (vegas-paints-north-las-vegas-nv)
