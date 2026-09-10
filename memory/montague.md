@@ -3668,3 +3668,128 @@
   - Backlog after this run: no genuinely untouched `stage: found`
     prospects remain (Henton Plumbing, Window Butler stay at `found` by
     documented gate misses/call_ready flags, not backlog).
+
+- (2026-09-10 run) Started on a detached HEAD matching `origin/master`'s tip
+  (`ee880b7`) exactly — `git fetch origin` first, then `git checkout -B
+  master origin/master`, no data-loss risk. **`_fleet-state.md` was ~33h
+  old (generated 2026-09-09 07:22 UTC, run started 2026-09-10 16:38 UTC) —
+  past the 12h freshness threshold.** Flagged it plainly rather than lean on
+  it; this run's work (standing daily enrichment pipeline) doesn't depend on
+  fleet-state specifics either way, but worth Kevin checking why KIREEK's
+  sync loop hasn't refreshed since yesterday morning.
+
+  Scanned `prospects/*/status.md` for `stage: found` with no "Montague"
+  mention in the Log — exactly 8 matched, all from today's Rupika batch (5
+  package: Accolade Painting/Duluth GA, Lawns By Luke/Mt. Juliet TN, Leo's
+  Lawn Service/Alpharetta GA, Local Plumb Pros/Raleigh NC, Townsend
+  Painting/Concord NC; 3 website: AMG Electric/Laramie WY, Doe Plumbing/
+  Laramie WY, Sackett Electrical Service/Morgantown WV) — well within the
+  15/run cap, worked as one batch. Used 8 parallel research subagents
+  (pure-research, no file writes), then wrote all enrichment.md/status.md
+  updates myself for consistency.
+
+  Result: 6 of 8 advanced to `enriched` (Accolade Painting, Lawns By Luke,
+  Leo's Lawn Service, Local Plumb Pros, Townsend Painting — all package;
+  AMG Electric — website). 2 held at `found`, both website track, both
+  newly `call_ready: yes` (Doe Plumbing, Sackett Electrical Service).
+
+  - **Townsend Painting — a real phone-number correction plus a genuinely
+    unresolved identity question, both flagged rather than guessed.** The
+    brief's phone, (704) 793-8632, couldn't be corroborated anywhere (zero
+    hits on an exact-string search); a different number, (704) 345-8318, is
+    well corroborated across Angi + Nextdoor + a second same-named business.
+    Led the CALL CARD with the verified number, same convention as Lilah
+    Landscaping/Vegas Paints before it. Separately: a second "Townsend
+    Painting" (townsendpainting.net, Charlotte, "since 2005") also names a
+    "Jay Townsend" at the same corrected phone number — could be the same
+    business rebranded/relocated (which would also explain why
+    townsendpaintingnc.com is now dead/NXDOMAIN), a relative, or pure
+    coincidence. Genuinely couldn't resolve which, so flagged it explicitly
+    in enrichment.md rather than picking a founding-year story — this
+    matters because citing the wrong company history on the call would be a
+    real, avoidable miss.
+  - **Two more search-tool-hallucination catches, one nearly upgraded a
+    shaky lead into a false-confirmed one.** Sackett Electrical Service's
+    candidate email (Dakotas289@hotmail.com, carried over from Rupika)
+    stayed at medium/low confidence rather than getting upgraded — Google's
+    AI-summary layer kept asserting it confidently, including an unprompted,
+    unsupported leap ("likely referring to Dakota Sackett") in searches that
+    didn't even ask about email, but no independent page ever confirmed it
+    (Facebook login-walled, Birdeye explicitly states no email listed). Held
+    at `found` on the email gate rather than trusting the repetition. Leo's
+    Lawn Service also surfaced two decoy phone numbers during research — one
+    a single-fetch artifact never reproduced, one belonging to a genuinely
+    different same-named business on a different site — both correctly
+    discarded before they could reach a CALL CARD. Now well past 8 instances
+    of this failure mode logged since 2026-08-13; the standing discipline
+    (verify a literal asserted fact traces to a real quoted source) keeps
+    paying off.
+  - **Sackett Electrical Service — owner name upgraded from medium to full
+    confidence via a primary-source government record.** Rupika's "Dakota"
+    lead (first name only, from an email address) was independently
+    confirmed as **Dakota Sackett**, and confirmed as the LLC's actual
+    owner/member (not just an employee), by directly fetching the WV
+    Secretary of State's own business registration filing
+    (apps.sos.wv.gov) — a first-party record, not another directory
+    aggregator. Worth naming as a category: when a state SOS/business-filing
+    portal is actually fetchable (unlike the many interactive-form-only
+    ones that keep blocking this environment), it's the strongest single
+    source available for an owner-name gate, better than any directory
+    convergence.
+  - **AMG Electric — a new nuance on the email gate for dead-domain
+    website-track prospects: a website being dead doesn't mean the domain's
+    email is unreachable.** Adam@amgelectric.biz sits on the same domain
+    confirmed dead for website purposes (404/ghs, TLS fails) — but a DNS
+    check found the domain's MX records point to a live, actively-configured
+    Google Workspace account (SPF + site-verification TXT present). That's
+    real corroborating signal the mailbox is genuinely live, distinct from
+    both "confirmed on a page" and "guessed pattern on an active domain" —
+    worth remembering as its own category: a dead *website* domain can still
+    have live *mail* infrastructure, and that's worth checking (via DNS MX/
+    TXT lookup) before assuming a website-gap prospect's domain-tied email
+    is automatically unreachable too.
+  - **Doe Plumbing — a clean call_ready outcome where the phone was rock-
+    solid but the email genuinely wasn't good enough to trust**, even though
+    it recurred across 2 search queries: both traced to the same underlying
+    blocked/obfuscated D&B page (Cloudflare placeholder, then 403), never an
+    actual read of real text. Given the phone was independently confirmed
+    across 5 sources including a direct BBB fetch, `call_ready: yes` was the
+    clearly better call than forcing the AOL address through — this is the
+    kind of case the 2026-09-02 call-ready ruling exists for.
+  - **Accolade Painting — a currently-broken real website, flagged so
+    nobody references it on the call.** accoladepaintingatl.com is a real,
+    previously-indexed domain that now 404s with a Wix "ConnectYourDomain"
+    error (confirmed via direct fetch) — not a permanent gap since it's
+    package track, but a real, current fact ("I saw your website" would
+    visibly fail if Kevin's asked to pull it up). A second, unrelated
+    business ("Accolade Finishes, Inc.") and a separate "accolade-
+    painting.com" site kept surfacing as name-collision traps in search —
+    both correctly excluded.
+  - Email confidence across today's batch split roughly into three tiers,
+    worth naming as the working taxonomy going forward: **directly
+    confirmed** (Lawns By Luke, Leo's Lawn Service — found verbatim in
+    fetched page text; Local Plumb Pros — found in the site's own JSON-LD
+    structured data, backend but genuinely the business's own code), **used
+    despite being search-summary-only** (Accolade Painting, Townsend
+    Painting — recurred consistently across independent queries, no
+    contradiction, direct fetch blocked by a dead site/login-wall rather
+    than by suspicion), and **not trusted despite recurring** (Doe
+    Plumbing's AOL address, Sackett's hotmail address — both traced back to
+    either a single blocked source cited twice, or an AI-summary's own
+    unsupported inference, rather than independent corroboration). The line
+    between tiers two and three is whether the repetition traces to
+    genuinely separate sources or one blocked source asked twice — worth
+    keeping explicit since it's a judgment call every run now.
+  - Egress access was mixed this run — direct WebFetch succeeded on most
+    target-business domains (where they existed), BBB profiles (including a
+    live WV Secretary of State filing), D&B, Yellow Pages, Angi, and Chamber
+    listings; blocked on Facebook (login wall, every attempt across all 8
+    prospects — cost a real email/owner resolution on Sackett Electrical and
+    contributed to Townsend Painting's unresolved identity question) and
+    Wayback Machine/archive.org (blocked, would have helped confirm
+    Townsend's and Accolade's formerly-live site content).
+  - `CALL-READY.md` regenerated: 14 → 16 verified rows (Doe Plumbing,
+    Sackett Electrical Service).
+  - Backlog after this run: no genuinely untouched `stage: found` prospects
+    remain (Doe Plumbing, Sackett Electrical Service stay at `found` by
+    documented `call_ready` flags, not backlog).
