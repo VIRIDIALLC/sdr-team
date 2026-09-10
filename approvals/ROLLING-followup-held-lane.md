@@ -1,7 +1,10 @@
 # For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE)
 
 status: open
-Last regenerated: 2026-09-09 (Elly) — counts re-verified live, unchanged since 09-06
+Last regenerated: 2026-09-10 (Elly). Counts re-verified live against `status.md`
+again this run: 35 at `followup: held`, 34 with a `followup-1.md`, the only gap
+still being the permanent `sp-lawn-care-bangor-me` exclusion. Unchanged since
+09-06. Nothing to add, and that is the lane being complete rather than skipped.
 
 > **This is the only second-touch approval file**, and it replaces the dated
 > `2026-08-21-followup-drafts-held-lane.md`, which is now marked superseded. It is
