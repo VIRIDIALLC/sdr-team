@@ -2713,3 +2713,86 @@
   markets-tried additions: Dodge City KS, Morgantown WV, Cullman AL — all
   three have plenty of untried verticals remaining beyond the hit and the
   listed misses.
+
+- (run 2026-09-10) Scheduled run, both tracks. `git fetch` showed the container
+  on a detached HEAD exactly matching `origin/master`'s fetched tip — same
+  recurring stale-ref symptom as every run since 2026-08-13, fixed with `git
+  checkout -B master origin/master`, nothing lost. Fleet state (`_fleet-state.md`)
+  was dated 2026-09-09 07:22 UTC — over 12hrs old at run time, flagged per
+  doctrine, though it doesn't block search-only work. `_new-leads.md` had
+  nothing dropped in. Ran both tracks as parallel background Agent-tool
+  sub-agents again, committing each batch to `master` as soon as it landed
+  (package batch first, then website in two pushes as its sub-agent's files
+  landed) — no conflicts.
+- (package/priority track, run 2026-09-10) Next four metros in the flood-gates
+  rotation after Chicago/Detroit/Columbus/Indianapolis: Nashville TN, Atlanta
+  GA, Charlotte NC, Raleigh NC. Hit the full 12 target across 8 verticals
+  (plumbing, garage doors, landscaping, pest control, painting, roofing,
+  electrical, HVAC), 3 per metro: Southern Brothers Plumbing (Gallatin
+  TN/Nashville, family-owned technique, owner Christopher Brinkley, domain),
+  Aaron's Garage Doors (Mount Juliet TN/Nashville, owner Aaron Moore, 30+yr,
+  domain), Lawns by Luke (Mount Juliet TN/Nashville, owner John Howard,
+  domain), Leo's Lawn Service (Alpharetta GA/Atlanta, owner Leo Perez,
+  domain), MayDay Pest Control (Marietta GA/Atlanta, surfaced via Roswell
+  search, "responds in about 1 hr" — flagged as this run's weakest signal,
+  sitting right AT the >1hr threshold rather than clearly over it, 45
+  reviews/14-county service area also flagged for a scale sanity-check,
+  phone+owner reachability only, no website), Accolade Painting (Duluth
+  GA/Atlanta, owner Larry Johnson, domain+phone), HL Construction Roofing
+  (Charlotte NC, surfaced via Matthews search, ~3hr response but aggregated/
+  unconfirmed-single-source, owners Hector Lozano/Sonia Mancia, domain),
+  Townsend Painting (Concord NC/Charlotte, owner Jay Townsend, domain),
+  Triple J Electric (Shelby NC, surfaced via Gastonia search, ~2hr response
+  aggregated/flagged, owner Joseph Lynn Harris, NC license #12930 confirmed,
+  domain), Local Plumb Pros (Raleigh NC, surfaced via Apex search, family-
+  owned technique, owner William Soares, NC license #34535, domain+email),
+  BACC Roofing & Restoration (Willow Spring NC/Raleigh, surfaced via Garner
+  search, ~9hr response, owner Bryan Rudy, veteran-owned, domain), Griffin
+  Heating & Air (Fuquay-Varina NC/Raleigh, confirmed one-man op — owner James
+  Griffin took over his firefighter father's 1986 business in 2000, no one
+  else to answer the phone while he's on a job, phone+owner reachability, no
+  website found). 5 of 12 cross-suburb resolved (searched suburb ≠ confirmed
+  home address) — continues to be the default outcome in these metros, not a
+  surprise. Dropped this run: Prodigy Sewer & Drain (Franklin TN, scale —
+  176+ Birdeye reviews + 70 more elsewhere despite a good 3hr/71-request Yelp
+  signal), Lightning Bug Electric (Marietta GA, resolved to a 10-20min
+  responder, direct contradiction), F&H Painting (Duluth GA, only a first
+  name for the owner, no confirmed phone/address/domain — failed the
+  reachability rule), Sherrill Pest Control (Murfreesboro TN, 11-50
+  employees/multi-city TN operation, scale), Mobile Joe's Landscaping
+  (Alpharetta GA, PR-Newswire-promoted "35 years... trusted name in Atlanta
+  metro" — reads as too established/regional for the ICP). Empty combos this
+  run (avoid re-trying as-is): electrical (Marietta GA — fast responders
+  only), pest control (Cary NC — no attributable slow figure), HVAC
+  (Brentwood NC — all sub-30min), Kennesaw GA HVAC (a candidate found but no
+  confirmable contact info), Hendersonville TN plumbing (all fast
+  responders). Next four in Kevin's rotation after this: Tampa, Orlando,
+  Jacksonville, Miami.
+- (website track, run 2026-09-10) Closed out one of the two Morgantown WV
+  candidates banked from 2026-09-08 rather than spending a fresh market on
+  it: Sackett Electrical Service LLC KEPT (WV Master Electrician license
+  #063742, address + phone confirmed across 6+ independent directories, no
+  website anywhere, owner lead "Dakota" — first name only, medium confidence,
+  flagged for Montague; also flagged a same-named-but-unrelated "Sackett
+  Electric LLC" in IA/IL with its own real site — don't conflate). Morgantown
+  Overhead Door LLC did NOT hold up and was dropped — beyond a single
+  Facebook page, no independent source (no BBB, D&B, Nextdoor, Angi, or
+  HomeAdvisor listing) confirmed even its address or phone, let alone
+  distinguished it from a recently-closed competitor in the same area. New
+  standing drop reason: a candidate resting on exactly one unverifiable
+  source, with zero independent corroboration anywhere, gets dropped outright
+  rather than banked or queued on a guess. Filled the remaining two slots
+  with a brand-new small market, Laramie WY (~32k pop, not previously
+  worked): Doe Plumbing (plumbing/HVAC, no site anywhere — BBB's own
+  "Website" field points to their Facebook page instead of a domain, about
+  as clean a first-party gap signal as this track gets, owner Tom Ferris
+  HIGH confidence via direct BBB fetch) and AMG Electric LLC (electrical,
+  website-gap subtype (b) dead domain — they own amgelectric.biz for email
+  but a direct fetch confirmed a Google-hosted 404, never published or long
+  gone; owner "Adam," medium-high confidence via a consistently-appearing
+  listed email). Laramie cleared roughly the usual ~2-miss-per-hit budget
+  (real sites found for Western View Painting, Laramie Mechanical, Fremont
+  Electric, JD Roofing & Sons, Tough Guys Landscaping, King's Snow &
+  Landscape, Toltec Electric before landing the two hits). New standing
+  markets-tried addition: Laramie WY — untried verticals remain (roofing,
+  pest control, garage doors, restoration, landscaping) if revisited.
