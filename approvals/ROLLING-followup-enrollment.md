@@ -1,8 +1,4 @@
-status: done
-
-> **CLOSED.** Resolved 2026-09-09: the prospects staged here were enrolled in the GHL follow-up sequence (9 in that run). Kept as the record of what was staged.
-
-# Follow-up sequence — 9 prospect(s) ready to enroll (rolling queue)
+# Follow-up sequence — 4 prospect(s) ready to enroll (rolling queue)
 
 Sent 2+ days ago, real email on file, no reply recorded,
 and the first email was the Yelp angle (track: package) — the only track
@@ -15,15 +11,10 @@ a dated backlog.
 
 | Prospect | Email |
 |---|---|
-| Blessed Pest Control | BlessedPestControl@gmail.com |
-| E-Plumbing And Drain Services LLC | service@e-plumbinganddrainservices.com |
-| Green Texas (HVAC), Plano, TX (Dallas metro) | info@greentexashvac.com |
-| Guy's Heating and Air Conditioning (Guy's Heating, Air Conditioning & Sheet Metal) | guyshvac@yahoo.com |
-| Katy Pro Painting & Remodeling | katypropr@gmail.com |
-| Kolor Pros Painting, Round Rock, TX (Austin metro) | kathleen@kolorprospainting.com |
-| Silver Electric (Silver Electric DBA) | silverelectric1985@gmail.com |
-| Total Restoration of Texas, Austin, TX | info@trtexas.com |
-| Vegas Paints (residential/commercial painting) | moises@vegaspaints.com |
+| A Best Air & Heat, Inc. — Tulsa, OK | info@abestairtulsa.com |
+| A Hernandez Painting, LLC — Lee's Summit, MO (Kansas City metro) | hernandezpainting2020@gmail.com |
+| Dun' Dirt Cheap Lawn & Landscape — Tulsa/Sand Springs, OK | dundirtcheaptulsa@gmail.com |
+| Lilah Landscaping, LLC — Oklahoma City, OK | LilahLandscaping@gmail.com |
 
 ---
 
