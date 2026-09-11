@@ -7,13 +7,14 @@ is a different list (email sequence finished); this one is prospects that
 never had an email to begin with. Say "prep me for a call with <name>" for
 the pre-call card.
 
-**Last regenerated: 2026-09-10 (Montague).** Every row below is a real
+**Last regenerated: 2026-09-11 (Montague).** Every row below is a real
 `call_ready: yes` flag on that prospect's own `status.md`, set after an
-actual two-source (or better) phone check. Grown from 14 rows (2026-09-09)
-to 16 this run — 2 new rows added from today's batch
-(doe-plumbing-laramie-wy, sackett-electrical-service-morgantown-wv), both
-website-track. No dedicated sweep of the older backlog this run (today's
-8-prospect new batch used the full run).
+actual two-source (or better) phone check. Grown from 16 rows (2026-09-10)
+to 20 this run — 4 new rows added from today's batch (aarons-garage-doors-
+mount-juliet-tn, griffin-heating-air-fuquay-varina-nc, triple-j-electric-
+shelby-nc, 3h-ac-tampa-fl), all package track. No dedicated sweep of the
+older email-gate/call-ready backlog this run (today's 15-prospect batch —
+9 older backlog + 6 fresh — used the full run).
 
 **Note on the retired 2026-09-02 seed:** most of that 53-row seed are still
 real, untouched `found`-stage prospects sitting in `prospects/*/status.md` —
@@ -43,6 +44,10 @@ website/ads.
 | window-butler-morgantown-wv | website | Joseph "Joe" (Voithofer) — Ops Manager; founder Vaughn also goes by "Joe" | (304) 292-2055 | BBB + Yellow Pages | You don't have a website — just Facebook and a handful of directory listings, after 25+ years in business. Did you know that? |
 | doe-plumbing-laramie-wy | website | Tom (Ferris) | (307) 745-0571 | BBB (direct fetch) + D&B + Yellow Pages + Chamber of Commerce | You've got 40+ reviews and a real shop here in Laramie, but no website that comes up when someone searches you — just Facebook and directory listings. Did you know that? |
 | sackett-electrical-service-morgantown-wv | website | Dakota (Sackett) | 304-216-8008 | WV Secretary of State (direct fetch, registered agent/member record) + D&B + Birdeye | You're a licensed Master Electrician with a real shop here in Morgantown, but there's no website — just Facebook and a few directory listings. Did you know that? |
+| aarons-garage-doors-mount-juliet-tn | package | Aaron (Moore) | (615) 456-6654 | BBB + D&B | A customer said you answered your own cell, told him 30 minutes, and had his door fixed before lunch — that's rare for 30 years in business, and hard to keep doing solo forever. |
+| griffin-heating-air-fuquay-varina-nc | package | James (Griffin) | (919) 552-7956 | BBB + Angi + US Aircon + Central Index | Your dad started this fixing HVAC on his days off from the Raleigh fire department back in '86 — now it's just you running the whole thing solo. That's a lot for one person. |
+| triple-j-electric-shelby-nc | package | NO NAME CONFIRMED — possible Joseph Lynn Harris, unverified linkage (see status.md) | (704) 300-7477 | BuildZoom + Nextdoor | no verified hook — confirm identity before a personalized pitch |
+| 3h-ac-tampa-fl | package | Brian (Hebert) | (813) 979-4208 | BBB + CentralIndex + ServiceAgent.ai | Your dad Tom started this in '72, and you and your siblings Sarah and Tom put the '3H' in the name when you formalized it — that's over 50 years as a family shop. |
 
-_16 verified call-ready rows as of 2026-09-10. The prior 53-row seed is
+_20 verified call-ready rows as of 2026-09-11. The prior 53-row seed is
 retired — see note above._
