@@ -2796,3 +2796,112 @@
   Landscape, Toltec Electric before landing the two hits). New standing
   markets-tried addition: Laramie WY — untried verticals remain (roofing,
   pest control, garage doors, restoration, landscaping) if revisited.
+
+- (run 2026-09-11) Scheduled run, both tracks. `git fetch` + `git status` showed
+  this container's local `master` pinned to an OLD snapshot (`4882d90`,
+  2026-09-04) with **no common ancestor** against the current `origin/master`
+  (`dce311b`) — `git merge-base` returned nothing, and `git log master..origin/master`
+  showed the entire 09-04-through-09-10 history (copy-playbook gate, GHL
+  sequence v2, Sue/Elly/Montague work) as "not on my branch." This read
+  differently from the routine stale-detached-HEAD symptom logged every run
+  since 2026-08-13 (usually a plain fast-forward gap) — worth flagging clearly
+  in case another session hits the same no-common-ancestor shape and isn't sure
+  it's the familiar case. Confirmed safe before touching anything: working tree
+  was clean, no stash, and this branch's own reflog showed it was simply
+  `Created from refs/remotes/origin/master` at container start — i.e. it was
+  never anything but an old copy of origin, never any local-only work of mine.
+  Fixed with `git checkout -B master origin/master` (not a merge, not a force
+  push — just pointing the local ref at the real shared history), confirmed
+  clean afterward. Nothing lost. `_fleet-state.md` was dated 2026-09-04, 7 days
+  stale (>>12hr threshold) — flagged per doctrine as the sync loop being down,
+  treated as unverified background context rather than relied on for this
+  run's decisions (this run doesn't depend on fleet-state anyway). `_new-leads.md`
+  had nothing dropped in. Ran both tracks as parallel background Agent-tool
+  sub-agents, file-write only, no memory/git access — reviewed both batches'
+  files for compliance before committing.
+- **COMPLIANCE CHANGE — read before using the "yelp advertisers" technique
+  again:** Kevin's 2026-09-10 HARD GATE ruling (`docs/sdr-copy-playbook.md`,
+  now baked into `team/rupika-prospecting.md` and root `CLAUDE.md`) retires the
+  long-standing convention of recording a Google/AI-overview-sourced Yelp
+  response-time figure as an "unverified guess" for Montague to confirm later.
+  That convention is exactly what the new rule blocks: `yelp_advertiser` and
+  `yelp_response_time` may now only be recorded if a human physically read the
+  live Yelp page (I can't — barred from browsing/fetching Yelp programmatically,
+  same as Playwright). This was the SINGLE BIGGEST source of package-track hits
+  in every run since 2026-08-04 (see every entry above this one) — most 3-hit
+  package batches leaned on it alongside the family-owned technique, some runs
+  almost entirely. **This run used the family-owned/locally-owned technique
+  exclusively for package-track sourcing and hit the full 12 target across 4
+  metros/9 verticals without it**, so the loss is not fatal, but it's a real
+  capacity hit worth Kevin/Sue knowing about explicitly rather than discovering
+  via a quietly-thinner batch — flagging it here as the written flag the
+  doctrine calls for rather than a silent workaround. If Kevin wants the
+  Yelp-signal volume back, the fix per the gate's own text is a human (Kevin or
+  a VA) capturing `yelp_advertiser`/`yelp_response_time`/`observed_by`/
+  `observed_on` by eye — not something I can route around.
+- (package/priority track, run 2026-09-11) Next four metros in the flood-gates
+  rotation after Nashville/Atlanta/Charlotte/Raleigh: Tampa, Orlando,
+  Jacksonville, Miami FL. Hit the full 12 target, 3 per metro, 9 verticals
+  (HVAC, plumbing x2, electrical x2, roofing, garage doors, restoration, pest
+  control, landscaping, painting), family-owned technique only per the
+  compliance change above: 3H AC (Tampa, HVAC, owner Brian Hebert, Hebert
+  family since 1972, domain), Larson Plumbing Inc (Tampa, owner Chris Larson,
+  founded 1991, domain), Small Jobs Electric Inc (Tampa, owners Nathanial &
+  Thomas Houle, domain), FS Landscaping Solutions LLC (Orlando, owners Armando
+  Fernandez & Chiara Sterlacci, young shop est. 2021, domain), Byrne Termite &
+  Pest Control (Orlando, owner Joseph Byrne, personally on jobs, domain),
+  DeBaggis Painting Inc (Orlando, owner Jim DeBaggis, on-site every job,
+  domain), Vigilante & Family Roofing (Jacksonville, owner Richard Vigilante,
+  FL license active, domain), A1A Overhead Door Co (Jacksonville, owner James
+  Fuqua, domain), Anderson Restoration & Emergency Services (Jacksonville,
+  owners Aaron & Susanne Anderson, independent not franchise, domain),
+  Florida HVAC Contractor Inc (Hialeah/Miami, owner Jesus Alcides Vallejos,
+  domain — FLAG for Montague: BuildZoom ranks top 6% of FL contractors, worth
+  a scale sanity-check), Kendall Plumbing Services LLC (Miami/Kendall, owner
+  Sergio Perez, ~5 employees — no confirmed domain, reachable via phone+owner
+  name only, FLAG for Montague to check for a real domain, possible
+  no-website-subset upsell flag), Wright's Electric LLC (Homestead/Miami,
+  domain+phone confirmed — FLAG for Montague: owner's full personal name not
+  independently confirmed this pass). No metro ran dry. Dropped rather than
+  queued: Hernandez Plumbing (Doral/Miami — 200+ Yelp/471 Birdeye reviews, too
+  scaled), Tower Electric Contractors (Homestead — conflicting owner-name
+  signals against an unrelated CO business of the same name, no confirmed
+  domain, identity risk). Franchise/chain results skipped throughout (SERVPRO,
+  PuroClean, Paul Davis, CertaPro, Five Star Painting, Mr. Electric,
+  Roto-Rooter). Next four in Kevin's rotation after this, per `_criteria.md`'s named order:
+  DC, Philadelphia, New York, Boston (the last unworked entries on the named
+  flood-gates list) — after those, the rotation needs Kevin/Sue input on where
+  to go next since the named list will be exhausted.
+- (website track, run 2026-09-11) 3 hits, all Watertown NY — a brand-new
+  market (grepped this file for "watertown" first; only unrelated Watertown
+  SD/WI entries already in the pipeline came up, confirmed fresh). Market
+  turned out rich enough (8 verticals tried) to fill the whole batch without a
+  second city: Hatchell's Lawn Care (landscaping, GBP's own "Website" field
+  points to their Facebook page instead of a domain, owner "Chad" — first name
+  only, medium confidence), Ken Scott Plumbing / Kenneth R. Scott Plumbing
+  (plumbing, sole proprietorship since 1974/50+yr, zero web presence anywhere,
+  owner confirmed HIGH confidence via the City of Watertown's official
+  Licensed Master Plumbers roster PDF — a new usable source type, worth
+  reusing for other NY-market license lookups), Lashway Plumbing (plumbing/
+  heating, ~2 employees since 2010, Manta listing unclaimed, no domain, owner
+  Clifford M. Lashway confirmed HIGH confidence via the same city roster).
+  Miss rate ran roughly the usual ~2-3-per-hit budget (Kogut's Contracting, KL
+  Painting, Harrienger's Contracting, Dan Kampnich Roofing, Scott Warner
+  Contracting, Northern Heating & Cooling, NYTRIC Electrical, Freeman
+  Mechanical Services all had real sites). New verification catches: dropped
+  Ed Keane III Electrical (named owner found to have died in 2020 via a local
+  obituary — directories just hadn't updated, not a real gap); dropped
+  Blanding Plumbing (BBB shows the same family runs "Blanding Mechanical Inc"
+  with a live site at sewerfish.com — same business under a different brand);
+  dropped Alternative Plumbing (inconsistent phone numbers across sources, not
+  on the city's current licensed-plumbers roster, no owner name anywhere —
+  single uncorroborated thread, dropped per the single-source rule); dropped
+  Watertown Pest Control Solutions (Facebook-only, zero independent
+  corroboration). Banked but not used, worth a quick close-out pass next time
+  rather than spending a fresh market: Austin Romeo's North Country Plumbing
+  (Black River NY/Watertown metro, licensed, real address/phone, distinct from
+  an unrelated same-named Wading River NY business — no confirmed
+  website-status read yet). New standing markets-tried addition: Watertown NY
+  — untried verticals remain (electrical beyond the Ed Keane drop, HVAC beyond
+  the Northern Heating miss, garage doors, pest control beyond the one drop
+  above, restoration).
