@@ -1,5 +1,5 @@
 ---
-stage: enriched
+stage: drafted
 track: package
 quote_stage: none
 ---
@@ -12,3 +12,4 @@ quote_stage: none
 
 - 2026-09-10 (Rupika): found, added to pipeline. Plumbing, Gallatin TN (Nashville metro). Sourced via family-owned technique — owner Christopher Brinkley, 11 years in business, genuinely tiny (1 Yelp review found), real domain confirmed. No response-time signal (n/a for this technique). FLAG for Montague: confirm license status directly (NC/TN plumbing board) — not checked beyond a clean BBB listing.
 - 2026-09-11 (Montague): verified and advanced to `enriched`. Email CONFIRMED (southernbrothersplumbing@gmail.com, via two independent cached extractions of the live contact page — site itself 403'd to direct fetch). Owner Christopher Brinkley confirmed (BBB + Instagram) with a real local-roots detail (Shackle Island). TN license unverifiable — the state portal is a pure client-side app with no queryable backend this session. See enrichment.md.
+- 2026-09-11 (Elly): first touch drafted into `outreach.md`, advanced to `drafted`. Nothing sent. Package track. Angle that won: selling the evening back, not the lead, after 11 years solo on call. Dropped: hands-in-the-work, collides with HL same batch. Email CONFIRMED. No response-time hook used: the Yelp advertisers technique is paused under the 2026-09-10 ruling, so every draft in this batch uses the underlying-problem opener.
