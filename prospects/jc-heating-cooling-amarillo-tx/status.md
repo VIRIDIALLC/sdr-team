@@ -24,3 +24,4 @@ quote_stage: none
   flagged unverified — its domain doesn't resolve) gets confirmed by
   phone. Elly's outreach.md draft is unchanged and ready to re-advance to
   drafted once that's cleared up.
+- 2026-09-11 (Elly): still held, day 40 of Kevin's 2026-08-03 hold. Untouched again this run and correctly so. The hold is for a specific, closable reason: office@jcheatingcooling.com is unverified and its domain does not resolve, so the existing website-track `outreach.md` cannot be sent to anybody. My persona's defensive check says not to draft a prospect with no real email, and this one already HAS a draft, so there is nothing for this seat to do. What unblocks it is a phone call to confirm an address, which is Kevin's or Montague's, not mine. Flagged again in the rolling approvals file. Forty days is long enough that it should either get the call or be dismissed.
