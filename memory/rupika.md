@@ -2619,3 +2619,289 @@
   (since 1949) — don't attribute that site to the small Durango business;
   "Morris Plumbing & Heating" (Orcas Island WA) is a same-named but
   unrelated business, don't conflate with the Pendleton OR record above.
+
+- (run 2026-09-09) Scheduled run, both tracks. `git fetch` showed `origin/master`
+  already fast-forwarded and the container on a detached HEAD matching its
+  fetched tip exactly — same recurring stale-ref symptom as every run since
+  2026-08-13, fixed with `git checkout -B master origin/master`, nothing lost.
+  `_new-leads.md` had nothing dropped in. Ran both tracks as parallel background
+  Agent-tool sub-agents again (research + file-write only, no memory/git access),
+  committing each batch to `master` as soon as it landed — website batch first,
+  package batch second, no conflict between the two pushes.
+- (package/priority track, run 2026-09-09) Next four metros in the flood-gates
+  rotation after Oklahoma City/Tulsa/Kansas City/Minneapolis: Chicago IL, Detroit
+  MI, Columbus OH, Indianapolis IN. 9 hits against the 12 target, 6 verticals
+  (HVAC, pest control, roofing, plumbing x3, painting, electrical): Comfort First
+  Heating & Cooling (Minooka IL/Chicago-Aurora area, HVAC, ~2hr Yelp response,
+  reachable via domain), Mice Guys (Buffalo Grove IL/Chicago-Schaumburg area,
+  pest control, ~4hr response, 4.9star/60 reviews, reachable via domain+phone+
+  email), JJ Construction Roofing (Bensenville IL/Chicago-Naperville area,
+  roofing, ~3hr response, 4.8star/98 reviews, reachable via domain), Zuniga's
+  Plumbing (Chicago IL proper/surfaced via Cicero search, plumbing, ~4hr
+  response, reachable via domain+phone — flagged for Montague: 50yr tenure
+  claim needs a scale check, could read multi-gen), Solidified Pest Control
+  (Livonia MI/Detroit-Dearborn Heights area, pest control, ~2hr response,
+  reachable via domain), Buckeye Plumbing & Drains (Orient OH/Columbus-Grove
+  City area, plumbing, ~2hr response with a sharp volume mismatch — 166 recent
+  quote requests vs. only 5 reviews, reachable via domain), Palma Painting
+  (Indianapolis IN, painting, ~8hr response/90% response rate/4.8star, reachable
+  via domain+phone), Marvin and Son Electrical (Taylor MI/Detroit-Westland area,
+  electrical, response figure drifted 7hr vs 1hr across sources and only 2
+  reviews — queued per the flag-don't-drop rule since identity held, but flagged
+  as this run's weakest lead, reachable via domain+phone), L D Smith Plumbing
+  (Indianapolis IN/Greenwood-Carmel-Fishers area, plumbing, ~4hr response,
+  founder-led since 2011 starting in his garage, reachable via domain).
+  Cross-suburb resolution was the dominant pattern this run — 6 of the 9 hits
+  actually home in a different city than the suburb searched (Minooka not
+  Aurora, Bensenville not Naperville, Livonia not Dearborn Heights, Chicago not
+  Cicero, Orient not Grove City, Taylor not Westland) — worth planning for as
+  the default outcome in these metros, not a surprise. New technique note:
+  the "quote the exact numbers back" name-resolution trick worked reliably for
+  HVAC/pest control/plumbing/painting again but repeatedly failed for
+  electrical and restoration this run — those two verticals returned more
+  generic aggregate Google-AI-overview blurbs that wouldn't pin to a specific
+  business even after a follow-up query; budget more searches per hit (or
+  deprioritize) for electrical/restoration specifically in these four metros.
+  Notable drop: CWF Restoration (Aurora IL search) — the one clear slow-
+  response restoration hit, resolved to "Chicago Water & Fire Restoration," a
+  multi-state regional operation — hard scale disqualifier despite the clean
+  pain signal. Also dropped for direct pain-signal contradiction: Faulkner
+  Restoration and A+ Restoration Services (both Greenwood IN — established/
+  award-winning or 30min-response, contradicts a slow-response story).
+  Struck-out ground this run (avoid repeating as-is without a new technique):
+  Indianapolis restoration and electrical (Greenwood, Fishers, Noblesville —
+  fast responders or unresolvable names), Columbus HVAC and electrical
+  (Hilliard, Dublin, Westerville, Reynoldsburg — mostly sub-1hr, one
+  unresolvable "Beacon Electrical Solutions" lead), Detroit HVAC and roofing
+  (Livonia, Sterling Heights, Troy — thin, low-review candidates couldn't be
+  identity-confirmed). New standing metro-rotation entries: Chicago (Aurora,
+  Naperville, Joliet, Elgin, Schaumburg, Cicero, Evanston, Waukegan — only
+  partially worked, restoration untried beyond the CWF drop), Detroit (Warren,
+  Sterling Heights, Dearborn, Dearborn Heights, Livonia, Troy, Westland — thin
+  so far, worth a second pass with fresh suburbs), Columbus (Dublin,
+  Westerville, Reynoldsburg, Grove City, Hilliard — only plumbing broke
+  through, HVAC/electrical need a different technique), Indianapolis (proper +
+  Fishers, Carmel, Noblesville, Greenwood, Lawrence — painting/plumbing worked,
+  restoration/electrical didn't). Next four in Kevin's rotation after this:
+  Nashville, Atlanta, Charlotte, Raleigh.
+- (website track, run 2026-09-09) 3 hits, three brand-new small markets in the
+  15k-40k sweet spot, none on the standing avoid-list, spanning Great Plains/
+  Appalachia/Deep South as the memory pointer suggested: Henton Plumbing
+  Service (Dodge City KS, plumbing, ~36yr tenure, no web presence at all beyond
+  Facebook/directories, owner Valgene Henton per directory data — medium
+  confidence), Window Butler (Morgantown WV, window cleaning, founded 1999/25+
+  years, no web presence at all, owner Vaughn "Joe" Voithofer — medium-high
+  confidence, named consistently across sources), Expert Paint Company LLC
+  (Cullman AL, painting, owner Scott Hallmark/32yr tenure, no web presence at
+  all, high confidence — owner named directly in the business's own Facebook
+  About info with a matching contact email). All three are the same "no web
+  presence beyond Facebook/directories" subtype — no dead-domain or broken-
+  free-builder case turned up this run. Miss rate ran slightly above the usual
+  ~2-per-hit budget (7 misses across the three markets: Cisco's Plumbing,
+  Stewart Plumbing Heating & AC, Star Refrigeration in Dodge City; Ayersman
+  Roofing, Pizzurro Pest Control, Patrick Valentine Electric in Morgantown;
+  Golden Rule Painting in Cullman — all had real sites) but not alarming for
+  fresh small markets. New collision catch: "Trapper Tim's Nuisance Wildlife
+  Removal" was Facebook-tagged "Morgantown WV" but its BBB/Yelp listings
+  actually place it in Morgantown, INDIANA — dropped rather than risk
+  misattributing a different state's business; worth remembering same-name
+  small towns across states as a specific collision subtype, not just
+  same-name-different-business. Morgantown WV read as unusually rich for this
+  track — two more likely no-website hits surfaced but weren't used this run
+  (Sackett Electrical Service LLC, Morgantown Overhead Door LLC) — worth a
+  quick close-out pass next time before spending a fresh market. New standing
+  markets-tried additions: Dodge City KS, Morgantown WV, Cullman AL — all
+  three have plenty of untried verticals remaining beyond the hit and the
+  listed misses.
+
+- (run 2026-09-10) Scheduled run, both tracks. `git fetch` showed the container
+  on a detached HEAD exactly matching `origin/master`'s fetched tip — same
+  recurring stale-ref symptom as every run since 2026-08-13, fixed with `git
+  checkout -B master origin/master`, nothing lost. Fleet state (`_fleet-state.md`)
+  was dated 2026-09-09 07:22 UTC — over 12hrs old at run time, flagged per
+  doctrine, though it doesn't block search-only work. `_new-leads.md` had
+  nothing dropped in. Ran both tracks as parallel background Agent-tool
+  sub-agents again, committing each batch to `master` as soon as it landed
+  (package batch first, then website in two pushes as its sub-agent's files
+  landed) — no conflicts.
+- (package/priority track, run 2026-09-10) Next four metros in the flood-gates
+  rotation after Chicago/Detroit/Columbus/Indianapolis: Nashville TN, Atlanta
+  GA, Charlotte NC, Raleigh NC. Hit the full 12 target across 8 verticals
+  (plumbing, garage doors, landscaping, pest control, painting, roofing,
+  electrical, HVAC), 3 per metro: Southern Brothers Plumbing (Gallatin
+  TN/Nashville, family-owned technique, owner Christopher Brinkley, domain),
+  Aaron's Garage Doors (Mount Juliet TN/Nashville, owner Aaron Moore, 30+yr,
+  domain), Lawns by Luke (Mount Juliet TN/Nashville, owner John Howard,
+  domain), Leo's Lawn Service (Alpharetta GA/Atlanta, owner Leo Perez,
+  domain), MayDay Pest Control (Marietta GA/Atlanta, surfaced via Roswell
+  search, "responds in about 1 hr" — flagged as this run's weakest signal,
+  sitting right AT the >1hr threshold rather than clearly over it, 45
+  reviews/14-county service area also flagged for a scale sanity-check,
+  phone+owner reachability only, no website), Accolade Painting (Duluth
+  GA/Atlanta, owner Larry Johnson, domain+phone), HL Construction Roofing
+  (Charlotte NC, surfaced via Matthews search, ~3hr response but aggregated/
+  unconfirmed-single-source, owners Hector Lozano/Sonia Mancia, domain),
+  Townsend Painting (Concord NC/Charlotte, owner Jay Townsend, domain),
+  Triple J Electric (Shelby NC, surfaced via Gastonia search, ~2hr response
+  aggregated/flagged, owner Joseph Lynn Harris, NC license #12930 confirmed,
+  domain), Local Plumb Pros (Raleigh NC, surfaced via Apex search, family-
+  owned technique, owner William Soares, NC license #34535, domain+email),
+  BACC Roofing & Restoration (Willow Spring NC/Raleigh, surfaced via Garner
+  search, ~9hr response, owner Bryan Rudy, veteran-owned, domain), Griffin
+  Heating & Air (Fuquay-Varina NC/Raleigh, confirmed one-man op — owner James
+  Griffin took over his firefighter father's 1986 business in 2000, no one
+  else to answer the phone while he's on a job, phone+owner reachability, no
+  website found). 5 of 12 cross-suburb resolved (searched suburb ≠ confirmed
+  home address) — continues to be the default outcome in these metros, not a
+  surprise. Dropped this run: Prodigy Sewer & Drain (Franklin TN, scale —
+  176+ Birdeye reviews + 70 more elsewhere despite a good 3hr/71-request Yelp
+  signal), Lightning Bug Electric (Marietta GA, resolved to a 10-20min
+  responder, direct contradiction), F&H Painting (Duluth GA, only a first
+  name for the owner, no confirmed phone/address/domain — failed the
+  reachability rule), Sherrill Pest Control (Murfreesboro TN, 11-50
+  employees/multi-city TN operation, scale), Mobile Joe's Landscaping
+  (Alpharetta GA, PR-Newswire-promoted "35 years... trusted name in Atlanta
+  metro" — reads as too established/regional for the ICP). Empty combos this
+  run (avoid re-trying as-is): electrical (Marietta GA — fast responders
+  only), pest control (Cary NC — no attributable slow figure), HVAC
+  (Brentwood NC — all sub-30min), Kennesaw GA HVAC (a candidate found but no
+  confirmable contact info), Hendersonville TN plumbing (all fast
+  responders). Next four in Kevin's rotation after this: Tampa, Orlando,
+  Jacksonville, Miami.
+- (website track, run 2026-09-10) Closed out one of the two Morgantown WV
+  candidates banked from 2026-09-08 rather than spending a fresh market on
+  it: Sackett Electrical Service LLC KEPT (WV Master Electrician license
+  #063742, address + phone confirmed across 6+ independent directories, no
+  website anywhere, owner lead "Dakota" — first name only, medium confidence,
+  flagged for Montague; also flagged a same-named-but-unrelated "Sackett
+  Electric LLC" in IA/IL with its own real site — don't conflate). Morgantown
+  Overhead Door LLC did NOT hold up and was dropped — beyond a single
+  Facebook page, no independent source (no BBB, D&B, Nextdoor, Angi, or
+  HomeAdvisor listing) confirmed even its address or phone, let alone
+  distinguished it from a recently-closed competitor in the same area. New
+  standing drop reason: a candidate resting on exactly one unverifiable
+  source, with zero independent corroboration anywhere, gets dropped outright
+  rather than banked or queued on a guess. Filled the remaining two slots
+  with a brand-new small market, Laramie WY (~32k pop, not previously
+  worked): Doe Plumbing (plumbing/HVAC, no site anywhere — BBB's own
+  "Website" field points to their Facebook page instead of a domain, about
+  as clean a first-party gap signal as this track gets, owner Tom Ferris
+  HIGH confidence via direct BBB fetch) and AMG Electric LLC (electrical,
+  website-gap subtype (b) dead domain — they own amgelectric.biz for email
+  but a direct fetch confirmed a Google-hosted 404, never published or long
+  gone; owner "Adam," medium-high confidence via a consistently-appearing
+  listed email). Laramie cleared roughly the usual ~2-miss-per-hit budget
+  (real sites found for Western View Painting, Laramie Mechanical, Fremont
+  Electric, JD Roofing & Sons, Tough Guys Landscaping, King's Snow &
+  Landscape, Toltec Electric before landing the two hits). New standing
+  markets-tried addition: Laramie WY — untried verticals remain (roofing,
+  pest control, garage doors, restoration, landscaping) if revisited.
+
+- (run 2026-09-11) Scheduled run, both tracks. `git fetch` + `git status` showed
+  this container's local `master` pinned to an OLD snapshot (`4882d90`,
+  2026-09-04) with **no common ancestor** against the current `origin/master`
+  (`dce311b`) — `git merge-base` returned nothing, and `git log master..origin/master`
+  showed the entire 09-04-through-09-10 history (copy-playbook gate, GHL
+  sequence v2, Sue/Elly/Montague work) as "not on my branch." This read
+  differently from the routine stale-detached-HEAD symptom logged every run
+  since 2026-08-13 (usually a plain fast-forward gap) — worth flagging clearly
+  in case another session hits the same no-common-ancestor shape and isn't sure
+  it's the familiar case. Confirmed safe before touching anything: working tree
+  was clean, no stash, and this branch's own reflog showed it was simply
+  `Created from refs/remotes/origin/master` at container start — i.e. it was
+  never anything but an old copy of origin, never any local-only work of mine.
+  Fixed with `git checkout -B master origin/master` (not a merge, not a force
+  push — just pointing the local ref at the real shared history), confirmed
+  clean afterward. Nothing lost. `_fleet-state.md` was dated 2026-09-04, 7 days
+  stale (>>12hr threshold) — flagged per doctrine as the sync loop being down,
+  treated as unverified background context rather than relied on for this
+  run's decisions (this run doesn't depend on fleet-state anyway). `_new-leads.md`
+  had nothing dropped in. Ran both tracks as parallel background Agent-tool
+  sub-agents, file-write only, no memory/git access — reviewed both batches'
+  files for compliance before committing.
+- **COMPLIANCE CHANGE — read before using the "yelp advertisers" technique
+  again:** Kevin's 2026-09-10 HARD GATE ruling (`docs/sdr-copy-playbook.md`,
+  now baked into `team/rupika-prospecting.md` and root `CLAUDE.md`) retires the
+  long-standing convention of recording a Google/AI-overview-sourced Yelp
+  response-time figure as an "unverified guess" for Montague to confirm later.
+  That convention is exactly what the new rule blocks: `yelp_advertiser` and
+  `yelp_response_time` may now only be recorded if a human physically read the
+  live Yelp page (I can't — barred from browsing/fetching Yelp programmatically,
+  same as Playwright). This was the SINGLE BIGGEST source of package-track hits
+  in every run since 2026-08-04 (see every entry above this one) — most 3-hit
+  package batches leaned on it alongside the family-owned technique, some runs
+  almost entirely. **This run used the family-owned/locally-owned technique
+  exclusively for package-track sourcing and hit the full 12 target across 4
+  metros/9 verticals without it**, so the loss is not fatal, but it's a real
+  capacity hit worth Kevin/Sue knowing about explicitly rather than discovering
+  via a quietly-thinner batch — flagging it here as the written flag the
+  doctrine calls for rather than a silent workaround. If Kevin wants the
+  Yelp-signal volume back, the fix per the gate's own text is a human (Kevin or
+  a VA) capturing `yelp_advertiser`/`yelp_response_time`/`observed_by`/
+  `observed_on` by eye — not something I can route around.
+- (package/priority track, run 2026-09-11) Next four metros in the flood-gates
+  rotation after Nashville/Atlanta/Charlotte/Raleigh: Tampa, Orlando,
+  Jacksonville, Miami FL. Hit the full 12 target, 3 per metro, 9 verticals
+  (HVAC, plumbing x2, electrical x2, roofing, garage doors, restoration, pest
+  control, landscaping, painting), family-owned technique only per the
+  compliance change above: 3H AC (Tampa, HVAC, owner Brian Hebert, Hebert
+  family since 1972, domain), Larson Plumbing Inc (Tampa, owner Chris Larson,
+  founded 1991, domain), Small Jobs Electric Inc (Tampa, owners Nathanial &
+  Thomas Houle, domain), FS Landscaping Solutions LLC (Orlando, owners Armando
+  Fernandez & Chiara Sterlacci, young shop est. 2021, domain), Byrne Termite &
+  Pest Control (Orlando, owner Joseph Byrne, personally on jobs, domain),
+  DeBaggis Painting Inc (Orlando, owner Jim DeBaggis, on-site every job,
+  domain), Vigilante & Family Roofing (Jacksonville, owner Richard Vigilante,
+  FL license active, domain), A1A Overhead Door Co (Jacksonville, owner James
+  Fuqua, domain), Anderson Restoration & Emergency Services (Jacksonville,
+  owners Aaron & Susanne Anderson, independent not franchise, domain),
+  Florida HVAC Contractor Inc (Hialeah/Miami, owner Jesus Alcides Vallejos,
+  domain — FLAG for Montague: BuildZoom ranks top 6% of FL contractors, worth
+  a scale sanity-check), Kendall Plumbing Services LLC (Miami/Kendall, owner
+  Sergio Perez, ~5 employees — no confirmed domain, reachable via phone+owner
+  name only, FLAG for Montague to check for a real domain, possible
+  no-website-subset upsell flag), Wright's Electric LLC (Homestead/Miami,
+  domain+phone confirmed — FLAG for Montague: owner's full personal name not
+  independently confirmed this pass). No metro ran dry. Dropped rather than
+  queued: Hernandez Plumbing (Doral/Miami — 200+ Yelp/471 Birdeye reviews, too
+  scaled), Tower Electric Contractors (Homestead — conflicting owner-name
+  signals against an unrelated CO business of the same name, no confirmed
+  domain, identity risk). Franchise/chain results skipped throughout (SERVPRO,
+  PuroClean, Paul Davis, CertaPro, Five Star Painting, Mr. Electric,
+  Roto-Rooter). Next four in Kevin's rotation after this, per `_criteria.md`'s named order:
+  DC, Philadelphia, New York, Boston (the last unworked entries on the named
+  flood-gates list) — after those, the rotation needs Kevin/Sue input on where
+  to go next since the named list will be exhausted.
+- (website track, run 2026-09-11) 3 hits, all Watertown NY — a brand-new
+  market (grepped this file for "watertown" first; only unrelated Watertown
+  SD/WI entries already in the pipeline came up, confirmed fresh). Market
+  turned out rich enough (8 verticals tried) to fill the whole batch without a
+  second city: Hatchell's Lawn Care (landscaping, GBP's own "Website" field
+  points to their Facebook page instead of a domain, owner "Chad" — first name
+  only, medium confidence), Ken Scott Plumbing / Kenneth R. Scott Plumbing
+  (plumbing, sole proprietorship since 1974/50+yr, zero web presence anywhere,
+  owner confirmed HIGH confidence via the City of Watertown's official
+  Licensed Master Plumbers roster PDF — a new usable source type, worth
+  reusing for other NY-market license lookups), Lashway Plumbing (plumbing/
+  heating, ~2 employees since 2010, Manta listing unclaimed, no domain, owner
+  Clifford M. Lashway confirmed HIGH confidence via the same city roster).
+  Miss rate ran roughly the usual ~2-3-per-hit budget (Kogut's Contracting, KL
+  Painting, Harrienger's Contracting, Dan Kampnich Roofing, Scott Warner
+  Contracting, Northern Heating & Cooling, NYTRIC Electrical, Freeman
+  Mechanical Services all had real sites). New verification catches: dropped
+  Ed Keane III Electrical (named owner found to have died in 2020 via a local
+  obituary — directories just hadn't updated, not a real gap); dropped
+  Blanding Plumbing (BBB shows the same family runs "Blanding Mechanical Inc"
+  with a live site at sewerfish.com — same business under a different brand);
+  dropped Alternative Plumbing (inconsistent phone numbers across sources, not
+  on the city's current licensed-plumbers roster, no owner name anywhere —
+  single uncorroborated thread, dropped per the single-source rule); dropped
+  Watertown Pest Control Solutions (Facebook-only, zero independent
+  corroboration). Banked but not used, worth a quick close-out pass next time
+  rather than spending a fresh market: Austin Romeo's North Country Plumbing
+  (Black River NY/Watertown metro, licensed, real address/phone, distinct from
+  an unrelated same-named Wading River NY business — no confirmed
+  website-status read yet). New standing markets-tried addition: Watertown NY
+  — untried verticals remain (electrical beyond the Ed Keane drop, HVAC beyond
+  the Northern Heating miss, garage doors, pest control beyond the one drop
+  above, restoration).

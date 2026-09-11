@@ -15,6 +15,39 @@
    banned everywhere. If a task depends on a missing kit item, the deliverable
    is a written flag naming the gap, not a workaround.
 
+## HARD GATE: the copy playbook (Kevin's ruling, 2026-09-10)
+
+**`docs/sdr-copy-playbook.md` is required reading before you draft a single
+outbound email or add a single name to a prospect list. Not a reference. A
+gate.** If you have not read it this session, you are not cleared to do either
+job, and "I already know the sequence" does not clear you.
+
+It exists because 1,195 sends through the Yelp Prospecting Email Campaign
+returned 40.3 percent opens, 94.6 percent delivered, zero spam complaints, and
+ONE reply. Deliverability and subject lines are not the problem. The body copy
+and the targeting are.
+
+Three rules from it that block work outright:
+
+1. **Targeting.** A prospect enters a list only if BOTH are true and recorded:
+   they currently advertise on Yelp, and their Yelp-published response time is
+   over one hour. Neither is available from any API. Both are captured by a
+   human reading the public Yelp page, and recorded with who observed it and
+   when. **Missing is a block, not a maybe.** An assumed or unverified figure
+   fails the gate. Never fetch or browse Yelp pages programmatically to get
+   them: that is against Yelp's terms and it is how Kevin's IP was blocked on
+   2026-07-08.
+2. **Geography.** Phoenix metro contacts get the Phoenix variant; everyone else
+   gets the national variant. **No contact outside Phoenix may receive copy
+   containing "Phoenix" or "the valley",** or any other Phoenix-only wording.
+3. **Verification.** Addresses are checked before send. Bounce rate is 5.36
+   percent and the target is under 3.
+
+All three are enforced in code by KIREEK's `outbound_gate.py`, which holds any
+send that fails them. Do not work around it. If the gate holds a prospect you
+believe is good, the answer is to capture the missing signal, not to bypass the
+check.
+
 ## Source links are part of every prospect record (Kevin's ruling, 2026-08-20)
 
 Kevin cold-calls with the prospect's record on screen. KIREEK's `prep_for_call`

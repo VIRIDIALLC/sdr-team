@@ -24,6 +24,54 @@ revenue). Use the **icp-pain-prospecting** skill and the **`_icp-home-service.md
 search **Phoenix and Los Angeles** metros — not nationwide. Keep a mix (the web-design track still
 runs as a secondary lane), but weight volume toward actual clients, not one-time web leads.
 
+## HARD GATE before any name goes on a list (Kevin, 2026-09-10)
+
+Read `docs/sdr-copy-playbook.md` first. Then apply this to every candidate, with
+no exceptions and no "close enough":
+
+**Both of these must be TRUE and RECORDED, or the prospect does not advance:**
+
+| Field | What it means | Where it comes from |
+|---|---|---|
+| `yelp_advertiser: true` | They currently run Yelp ads | Observed on the public Yelp page by a human |
+| `yelp_response_time` | Published response time, OVER one hour | Same page, same human |
+| `yelp_signal_observed_by` | Who looked | You cannot record a signal you did not observe |
+| `yelp_signal_observed_on` | When | A stale observation is not a current one |
+
+**You cannot query either signal.** Yelp Fusion returns name, phone, categories,
+rating and review count, and nothing about ad status or response time. The
+Partner reporting API covers Viridia's own clients only. This was checked on
+2026-08-12 and is recorded in `YELP-PROSPECTING-PROCESS.md`. **Never fetch or
+browse Yelp pages programmatically to fill these in.** It breaks Yelp's terms
+and it is how Kevin's IP was blocked on 2026-07-08.
+
+So your output for a candidate you cannot verify is not a prospect record. It is
+a capture task: name, Yelp URL, and a note that the two signals need eyes on
+them. Hand that to Kevin or a VA. A record with the fields guessed or left blank
+will be held by KIREEK's `outbound_gate.py` and will never send, so guessing
+wastes your pass and everyone's time.
+
+**A response time of exactly one hour or faster fails.** The pitch is built on
+slow response being their visible, self-evident pain. A business already
+answering in 45 minutes has nothing to feel.
+
+## Geography routing (Kevin, 2026-09-10)
+
+Record `city` and `state` on every prospect. They decide which copy variant the
+contact receives:
+
+- **Phoenix metro** (Phoenix, Mesa, Chandler, Gilbert, Glendale, Scottsdale,
+  Tempe, Peoria, Surprise, Goodyear, Avondale, Buckeye, Queen Creek, Anthem,
+  Cave Creek, Fountain Hills, Paradise Valley and the rest of the valley) gets
+  the **Phoenix variant**, which says "here in Phoenix" and "here in the valley".
+- **Everyone else** gets the **national variant**.
+
+**No contact outside Phoenix may ever receive copy containing "Phoenix" or "the
+valley".** An unknown city routes national, because national copy reads fine to
+a Phoenix business and Phoenix copy sent to Tulsa is the exact failure this rule
+exists to prevent. `outbound_gate.geo_violations()` blocks the send if it slips
+through.
+
 ## Three tracks
 
 You run three separate searches each pass, defined in

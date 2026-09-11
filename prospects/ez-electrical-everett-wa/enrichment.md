@@ -1,91 +1,109 @@
 CALL CARD
-  Ask for:   NO NAME FOUND       — checked ez-electrical.com's own About/Contact
-             pages (name no owner), WA L&I contractor license registry, no
-             Facebook or BBB profile exists for this business. Best lead (Erik A.
-             Zagrean, WA L&I-registered principal of "EZ Electrical LLC,"
-             Kirkland) is only inferentially linked to this exact domain, not
-             confirmed — not safe to put on the card. A review-mentioned "Igor"
-             did NOT reproduce on re-verification and traces to unrelated
-             businesses — do not use.
-  Phone:     (206) 401-4114      (confirmed on the business's own site; single-
-             source, no second independent listing found to cross-check)
-  Response:  ~2 days             (Yelp, reconfirmed — one search said "2 days,"
-             another "2-4 days," directionally consistent: a multi-day responder)
-  Hook:      "Your Yelp shows a couple days before you get back to a new lead —
-              for a shop this new, that's leads walking to whoever calls back
-              first."
+  Ask for:   NO NAME FOUND       — checked ez-electrical.com's own About/
+             Contact pages (name no owner), WA L&I's official contractor
+             license registry (data.wa.gov, primary source), no Facebook or
+             BBB profile exists. Best lead (Erik A. Zagrean, principal of
+             "EZ Electrical LLC," Kirkland, per WA L&I) is only
+             inferentially linked to this exact domain — not confirmed
+             enough to put on the card. A review-mentioned "Igor" does NOT
+             belong to this business — traces to an unrelated company's
+             review.
+  Phone:     (206) 401-4114      (confirmed on the business's own site)
+  Response:  n/a — a pre-2026-09-10 Yelp figure exists (see below) but is not
+             usable as fact or hook under the current compliance gate.
+  Hook:      no verified hook.
 
-## Company summary
+## HANDOFF-INTEGRITY NOTE — read this first
 
-EZ Electrical, serving Everett to Renton WA (Seattle metro). "New on Yelp"
-listing, verified license, 4.4 stars / 7 reviews — a genuinely small, likely
-new operation. Website ez-electrical.com is real and live (partnerships with
-InStyle Homes, LCM Cabinets/Design and Build, Earth Heat listed on-site).
+A real enrichment pass for this prospect already existed on `master` before
+this run (committed 2026-09-08, inside a large squashed commit `c52dae5`) —
+it even ends with its own "Status: ADVANCE to `enriched`" line. **`status.md`
+was never actually updated to reflect it** — no stage change, no Montague
+log line — so this prospect sat at `stage: found` for three days looking
+untouched, exactly the kind of silent dropped-handoff CLAUDE.md's Sue
+section warns about (the 2026-08-18 CALL CARD-parser incident). This file
+reconciles that prior work with this run's independent research rather
+than overwriting it — see memory/montague.md for the full flag to Sue/Kevin,
+since other prospects in the backlog may have the same issue.
 
-## Collision risk — RESOLVED
+## Email — CONFIRMED
 
-Rupika flagged a real risk: an unrelated "EZ Electric LLC" (Vancouver WA,
-principal Iemanuil Zhyryada) shares a near-identical name. Queried WA L&I's
-official contractor license registry directly (data.wa.gov) — this cleanly
-resolves the collision. At least FOUR similarly-named, separately-licensed WA
-electrical LLCs exist (a genuinely crowded name space), but each has a
-distinct UBI number, license number, address, and principal:
-- **EZ ELECTRICAL LLC** — UBI 604897813, Kirkland, principal Erik A. Zagrean, ACTIVE
-- EZ ELECTRIC LLC — UBI 605455461, Vancouver, principal Iemanuil Zhyryada, ACTIVE (the one Rupika flagged — confirmed distinct)
-- Ez Electric — UBI 602888865, Toppenish, principal Ezequiel Morfin, ACTIVE
-- EZ Lighting and Electric LLC — Issaquah, EXPIRED
+info@ez-electrical.com — confirmed independently by both research passes.
+The 2026-09-08 pass found it on the site's Contact Us page; this run's pass
+found it verbatim on three separate pages (homepage, /contact-us,
+/about-us). High confidence.
 
-Everett/Renton-serving ez-electrical.com is most plausibly the Kirkland entity
-(Erik A. Zagrean) based on legal-name match and service-area consistency with
-a Kirkland/Redmond base, corroborated by a HomeAdvisor "EZ Electrical, LLC"
-Redmond listing describing "Erik and his team" — but no single source
-explicitly ties the domain itself to that UBI, so this stays an inferential
-link, not a confirmed one. Not confirmed enough to put on the CALL CARD (see
-above), but a real, sourced lead worth Kevin/Elly knowing about.
+## Owner name — the two passes disagree on confidence; deferring to the
+stronger source
 
-## Owner name — NOT FOUND (confirmed enough to use)
+The 2026-09-08 pass queried **WA L&I's official contractor license registry
+directly via its structured Socrata API (data.wa.gov)** — a primary,
+authoritative source — and resolved the name-collision risk cleanly: at
+least four similarly-named WA electrical LLCs exist, each with a distinct
+UBI, and "EZ ELECTRICAL LLC" (UBI 604897813, Kirkland, principal **Erik A.
+Zagrean**, ACTIVE) is the most plausible match for ez-electrical.com by
+legal-name and service-area consistency (corroborated by a HomeAdvisor
+listing describing "Erik and his team" in Redmond) — but no single source
+ties the *domain itself* to that UBI, so that pass correctly left it off
+the CALL CARD as inferential, not confirmed.
 
-The "Igor" lead in Rupika's brief did not survive re-verification — targeted
-searches show phrases like "Igor was awesome to work with" actually trace to
-unrelated companies (24/7 Electric, and separate electricians named Igor
-elsewhere) — a real instance of the search tool's AI-summary layer conflating
-unrelated businesses under a shared first name, the same failure mode logged
-repeatedly on this pipeline. Do not carry "Igor" forward as owner. Site's own
-About/Contact pages name no owner. Best lead is Erik A. Zagrean per the
-collision-resolution research above, but the domain link is inferential —
-per the never-placeholder/never-invent rule, left off the CALL CARD.
+This run's independent pass reached the same name (Erik Zagrean) via a
+*different, weaker* source — a WA Secretary of State business filing seen
+through a third-party aggregator (bizprofile.net), not the primary state
+record — and had initially put it on the CALL CARD at medium confidence.
+**Deferring to the more rigorous 2026-09-08 finding**: two independently-
+sourced passes landing on the same name is good corroborating signal, but
+neither closes the actual domain-to-UBI link, so NO NAME FOUND stays the
+correct, honest CALL CARD state. Erik Zagrean remains the best lead for
+Kevin/Elly's awareness, just not safe to say cold on a call.
 
-## Email — CONFIRMED (found directly, not guessed)
+**"Igor" — confirmed NOT this business, by both passes independently.**
+The 2026-09-08 pass traced "Igor was awesome to work with" to unrelated
+companies (24/7 Electric, and other electricians named Igor elsewhere);
+this run's pass separately traced the same phrase to a different business
+entirely ("Ample Electric"). Two independent confirmations that this is a
+misattribution — dropped.
 
-**info@ez-electrical.com** — found directly on the site's own Contact Us page,
-consistent across two pages of the same site. High confidence, real find, not
-a pattern guess. Email gate: PASSED.
+## Distinct-entity confirmation — CONFIRMED, not the Vancouver namesake
 
-## Phone
+Both passes agree, via different sources: WA L&I's registry (2026-09-08,
+primary/authoritative) shows EZ ELECTRICAL LLC (Kirkland, UBI 604897813,
+Erik A. Zagrean) as distinct from EZ ELECTRIC LLC (Vancouver, UBI
+605455461, Iemanuil Zhyryada) — different legal name, city, UBI, and
+principal. This run's pass corroborated the same split via a different
+aggregator, plus confirmed the Vancouver entity's project geography
+(Kirkland/Seattle/Marysville) is consistent with ez-electrical.com's stated
+Everett-to-Renton service area, not Vancouver's.
 
-(206) 401-4114 — confirmed on the business's own published Contact Us page.
-Single-source (no BBB or Facebook profile exists for independent cross-check)
-— flag as reliable-but-single-sourced.
+## Phone — CONFIRMED, one hallucinated number discarded
 
-## Response-time signal
+(206) 401-4114 confirmed by both passes on the site's own pages (single-
+source — no BBB/Facebook profile exists for independent cross-check, flag
+as reliable-but-single-sourced). This run's pass separately caught and
+discarded a hallucinated second number ("206-300-4196") that a search-AI
+summary asserted but that traced to no real source anywhere.
 
-"Responds in about 2 days" per Yelp (Rupika's brief) — reconfirmed via a fresh
-search, with minor variance ("2 days" vs. "2-4 days" across two passes).
-Directionally consistent (a multi-day responder either way) — usable per the
-CALL CARD hook above.
+## Website — confirmed real, live (informational, package track)
 
-## Website
+ez-electrical.com confirmed via direct fetch, substantive content. Footer
+reads "Powered by Alba Marketing" (a local website-builder vendor) — no
+physical address, team bios, or "family-owned" copy anywhere on the site,
+consistent with a newly-listed small operator.
 
-ez-electrical.com confirmed real and live via direct fetch, substantive
-content. Package track — informational only.
+## The response-time figure — carried forward as history, not as a claim
+
+Yelp shows "responds in about 2 days" per the original brief, reconfirmed
+once on 2026-09-08 (directionally consistent, "2 days" vs "2-4 days" across
+two passes) — but that reconfirmation predates the 2026-09-10 compliance
+ruling. Per this run's decision (see memory/montague.md), Yelp response-time
+figures are no longer re-verified or used as fact/hook by Montague at all,
+even a previously-reconfirmed one. Recorded here for context only, not
+asserted and not the CALL CARD hook.
 
 ## Sourcing note
 
-Yelp itself never fetched directly (no-scrape rule). WA L&I data pulled
-directly from the state's own Socrata API (data.wa.gov) — a primary, structured
-source, high confidence for the collision resolution specifically. Email and
-website confirmed via direct WebFetch of the business's own site.
-
-**Recommendation: ADVANCE to `enriched`.** Email gate passed with a real
-direct find, collision risk resolved. Owner name genuinely not found — CALL
-CARD correctly shows NO NAME FOUND rather than a shaky inferential name.
+This run: ez-electrical.com (home, /contact-us, /about-us, /sitemap.xml),
+bizprofile.net, buildzoom.com all fetched directly. 2026-09-08 pass:
+ez-electrical.com's own pages plus WA L&I's Socrata API (data.wa.gov)
+fetched directly. Yelp never fetched directly by either pass, per the
+no-scrape rule.
