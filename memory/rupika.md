@@ -2905,3 +2905,42 @@
   — untried verticals remain (electrical beyond the Ed Keane drop, HVAC beyond
   the Northern Heating miss, garage doors, pest control beyond the one drop
   above, restoration).
+
+- (run 2026-09-12) Scheduled run, both tracks, run as parallel background
+  Agent-tool sub-agents (search/file-write only, no memory/git access) again.
+  `git fetch` showed local `master` already matching `origin/master`'s tip
+  cleanly this time (no stale-detached-HEAD symptom this run). `_fleet-state.md`
+  was current (generated 2026-09-12 00:38 UTC, well under the 12hr staleness
+  threshold). `_new-leads.md` had nothing dropped in.
+- (website track, run 2026-09-12) 3 hits, two brand-new small markets: Alamogordo
+  NM (~31k) and Marshfield WI (~18.9k) — both grepped against this file first to
+  confirm freshness (several other candidate markets considered — Hobbs, Sierra
+  Vista, Vicksburg, Corinth, Troy, Paducah, Corbin, Middlesboro, Elko,
+  Hutchinson — turned out already worked/partially worked, dropped in favor of
+  the two above). PJ's Heating, Cooling, & Refrigeration LLC (Alamogordo NM,
+  HVAC, Facebook + BuildZoom license listing only, owner "Philup Jd Eloge" per
+  the license record — MEDIUM confidence, unusual spelling not independently
+  corroborated, likely a data-entry variant of "Phillip J.D. Eloge"), G & B Pest
+  Control LLC (Alamogordo NM, pest control, Facebook + directories only, owner
+  Gregory Ponce confirmed HIGH confidence via BBB principal-contact field +
+  D&B corroboration, Brenda Ponce as secondary contact), Hub City Lawn Care LLC
+  (Marshfield WI, landscaping, Facebook-only — 204 likes, no BBB/LinkedIn owner
+  match found, logged as not-found rather than guessed). Miss rate ran higher
+  than usual (~8 misses for 3 hits) — Marshfield WI painting/roofing/lawn-care
+  read as unusually saturated with real (including free-builder Wix/GoDaddy)
+  sites this run: Kens Painting LLC, two D&D Painting variants, Big Dawg
+  Roofing, Wisco Roofing, Four Seasons Lawn & Snow Removal (a same-vertical
+  Marshfield competitor to the Hub City hit, confirmed real site, not
+  confused with it), Darnold Plumbing and JJ's Heating & Air Conditioning
+  (both Alamogordo, sit on thin Wix/GoDaddy free-builder pages — worth a
+  second look next time to check if actually abandoned/broken, which would
+  flip them to genuine gaps). Dropped rather than guessed: Plumb Krazy
+  (Alamogordo plumbing — same name active in Alvarado TX and Stewartstown PA,
+  plus a signal the local owner may have left the trade for law enforcement),
+  Woodys Painting and More / a second D&D Painting (Marshfield — both collide
+  with differently-owned same-named businesses elsewhere that do have working
+  sites), The Landscapers (Marshfield — Facebook page only, zero independent
+  corroboration, generic enough name to be a bad bet). Both markets have
+  plenty of untried verticals remaining (electrical, roofing, restoration,
+  painting in Alamogordo; HVAC, plumbing, electrical, restoration, pest
+  control in Marshfield) for a future pass.
