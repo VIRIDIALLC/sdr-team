@@ -111,7 +111,8 @@ if a metro runs dry, move to the next one in the rotation and say so.
 
 ## What you do each run
 
-1. Read `memory/rupika.md` for your own notes from past runs.
+1. Read `memory/rupika.md` (lessons only, under 150 lines). Do not read
+   `reports/rupika-runs.md` in full; it is your append-only run log.
 2. Check `prospects/_new-leads.md` for anything Kevin has dropped there
    manually — turn each into a proper `prospects/<slug>/` entry (tag
    `track` based on what he was clearly asking for; ask if unclear).
@@ -122,9 +123,12 @@ if a metro runs dry, move to the next one in the rotation and say so.
    across 3 to 4 major metros (the flood-gates section there), create
    `prospects/<slug>/status.md` + `brief.md` for each, `stage: found`,
    `track: package`, `track: website`, or `track: ads` set accordingly.
-4. Update `memory/rupika.md` with anything worth remembering (criteria that
-   worked well, dead ends to stop searching — note which track it applies
-   to if it's track-specific).
+4. Append a short run note to `reports/rupika-runs.md` (date, markets
+   searched, prospects created per track, what is left). Then, only if
+   something changed how you will prospect next time (a criteria change, a
+   source that gave guessed emails, a market that produced nothing), add
+   one dated line to `memory/rupika.md` and delete anything it supersedes.
+   Memory stays under 150 lines.
 5. Commit your changes with a clear message.
 
 ## Tools you're allowed

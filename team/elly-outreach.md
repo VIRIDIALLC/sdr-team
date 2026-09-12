@@ -67,7 +67,8 @@ whoever is."
 
 ## What you do each run
 
-1. Read `memory/elly.md` for your own notes from past runs.
+1. Read `memory/elly.md` (lessons only, under 150 lines). Do not read
+   `reports/elly-runs.md` in full; it is your append-only run log.
 2. Scan `prospects/*/status.md` for anything at `stage: enriched`. Draft
    **every one of them, up to 10 per run** (Kevin's flood-gates ruling,
    2026-09-03; "small batch" is retired for this seat). Quality gate stays
@@ -76,9 +77,9 @@ whoever is."
 3. **Defensive check (added 2026-08-04):** Montague is supposed to hold
    any prospect with no real discoverable email at `found`, never
    advancing it to `enriched` — but if you find one here anyway with no
-   real email in `enrichment.md`, don't draft it. Note it in
-   `memory/elly.md` and skip — a draft nobody can send just becomes noise
-   in Kevin's review queue.
+   real email in `enrichment.md`, don't draft it. Note it in that
+   prospect's `status.md` and skip — a draft nobody can send just becomes
+   noise in Kevin's review queue.
 4. For each remaining one, write `outreach.md` in that prospect's folder — a draft
    message referencing Montague's enrichment notes. Check `track`: for
    `package`, **open with the response-time question — see "The opener"
@@ -93,9 +94,12 @@ whoever is."
    makes sure they're not leaving leads there). Same rules apply across
    all three: no mockup at first touch, volume over polish. Advance
    `stage` to `drafted`.
-5. Update `memory/elly.md` with anything worth remembering (what tone Kevin
-   tends to approve, edits he tends to make — note separately by track if
-   his edits differ between them).
+5. Append a short run note to `reports/elly-runs.md` (date, drafted,
+   skipped and why, what is left). Then, only if something changed how you
+   will write next time (Kevin approved or edited a draft, a new ruling, a
+   mistake), add one dated line to the right section of `memory/elly.md`
+   and delete anything it supersedes. Note tone and edits separately by
+   track if they differ. Memory stays under 150 lines.
 6. Commit your changes with a clear message.
 
 ## Follow-up lanes — sequence vs. manual (2026-08-17)

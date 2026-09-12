@@ -164,8 +164,8 @@ and active) — never present a guessed address as a confirmed one; say
 explicitly in `enrichment.md` which case it is.
 
 **If no real email turns up after an honest effort, do not advance to
-`enriched`.** Leave the prospect at `found`, note it in
-`memory/montague.md` as email-blocked (not a dead end the same way a
+`enriched`.** Leave the prospect at `found`, note it in that
+prospect's `status.md` as email-blocked (not a dead end the same way a
 wrong website-gap guess is — the prospect itself may still be a real
 fit, just not reachable by email right now), and move on. This mirrors
 the website-gap and ads-activity gates below — a gate that protects the
@@ -213,9 +213,10 @@ per run**, package track first, newest `found` first, then the oldest
 email-gate holds for the call-ready sweep. If Kevin has opened the
 environment's network access (he was asked to on 2026-09-03), direct
 fetches of prospect sites, BBB, Facebook and state license lookups will
-start working and the email gate will start passing; lead your memory
-entry with one line saying whether fetches worked this run, so Kevin can
-see the switch took effect without reading the whole note.
+start working and the email gate will start passing; lead your run note
+in `reports/montague-runs.md` with one line saying whether fetches worked
+this run, so Kevin can see the switch took effect without reading the
+whole note.
 
 ### Batch selection: package track first (Kevin's ruling, 2026-09-02)
 
@@ -249,8 +250,8 @@ website exist at all, and if so, what's actually wrong with it (broken,
 outdated, not mobile-friendly, etc.)? Write what you verified into
 `enrichment.md` — this becomes the claim Elly's pitch relies on, so it
 needs to hold up. If Rupika's guess turns out wrong (site's actually
-fine), don't advance the prospect — note it in `memory/montague.md` as a
-dead end and leave it at `found` for Kevin to see, don't quietly drop it.
+fine), don't advance the prospect — note it in that prospect's `status.md` as
+a dead end and leave it at `found` for Kevin to see, don't quietly drop it.
 
 ## Ads-track verification gate
 
@@ -264,8 +265,8 @@ show enough to tell, say so honestly in `enrichment.md` rather than
 guessing. Write what you verified into
 `enrichment.md` — this becomes the claim Elly's pitch relies on. If
 Rupika's guess turns out wrong (they're already running Yelp ads), don't
-advance the prospect — note it in `memory/montague.md` as a dead end and
-leave it at `found` for Kevin to see, don't quietly drop it. Same
+advance the prospect — note it in that prospect's `status.md` as a dead
+end and leave it at `found` for Kevin to see, don't quietly drop it. Same
 convention as the website-track gate above.
 
 ## Response-time-signal verification gate (added 2026-08-04)
@@ -321,7 +322,8 @@ along.
 
 ## What you do each run
 
-1. Read `memory/montague.md` for your own notes from past runs.
+1. Read `memory/montague.md` (lessons only, under 150 lines). Do not read
+   `reports/montague-runs.md` in full; it is your append-only run log.
 2. Scan `prospects/*/status.md` for anything at `stage: found`. Pick up a
    batch of **up to 15** (see "Batch size" above; the old money-based cap
    is retired, there is no paid API on this seat).
@@ -334,7 +336,10 @@ along.
    found. **If it can't be found but the phone is confirmed in two
    sources, mark it `call_ready: yes` and regenerate `CALL-READY.md`**
    (section above).
-4. Update `memory/montague.md` with anything worth remembering.
+4. Append a short run note to `reports/montague-runs.md` (date, enriched,
+   held and why, call-ready, what is left). Then, only if something changed
+   how you will work next time, add one dated line to `memory/montague.md`
+   and delete anything it supersedes. Memory stays under 150 lines.
 5. Commit your changes with a clear message.
 
 ## Tools you're allowed

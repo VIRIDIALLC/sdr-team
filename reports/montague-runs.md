@@ -1,0 +1,4105 @@
+# Montague — run log (archive)
+
+Append-only per-run notes. Never read this file in full at the start of a run; read memory/montague.md instead. Archived from memory/montague.md on 2026-09-12.
+
+# Montague — memory
+
+## Notes
+
+- (website track) Rupika's guess needs real verification, not just a
+  second search — a domain can show up nowhere in search/directories yet
+  still resolve. Direct WebFetch of the bare domain (if one's implied by
+  an email address, etc.) is a cheap, decisive check: DNS failure
+  (`ENOTFOUND`) is strong confirmation of no live site; a resolving
+  domain means stop and re-check before advancing. Caught exactly this
+  case 2026-08-02 (jcheatingcooling.com) and it also surfaced a second
+  issue worth always checking: an email address pulled from a directory
+  listing on a non-resolving domain is itself unverified — flag that to
+  Kevin rather than treating it as a confirmed contact method.
+
+- (2026-08-04 run) First real batch since the ads track's verification
+  gate went live: picked up 4 of 6 `stage: found` prospects (2 ads, 1
+  website, 1 package), left 2 package/website ones for next run per the
+  cap-batch-size rule. All 4 passed their gates and advanced to
+  `enriched` — no dead ends this run.
+- (ads track) The "sponsored badge in search snippets" check is
+  routinely inconclusive, not a clean confirm/deny — across both ads
+  prospects this run (Brezden Pest Control, Restorion), multiple Google
+  searches for "[business] yelp sponsored/advertisers" never surfaced a
+  sponsored indicator either way, same as Rupika's original read. Per
+  the persona doc's convention, inconclusive-but-not-contradicted is
+  NOT a block — only a genuine contradiction (finding real evidence
+  they ARE running ads) should hold a prospect at `found`. Don't loop
+  trying to force a definitive answer out of search snippets alone; say
+  so honestly and advance. Rupika's note about needing "a real way to
+  check the live page" still stands as unsolved — direct Yelp fetch
+  stays off-limits per ToS, so this may just be a structural limit of
+  the ads gate as currently designed, worth flagging to Kevin if it
+  keeps coming up inconclusive every time.
+- Several business-listing sites (own company domains, Chamber of
+  Commerce directories) block direct WebFetch with 403 the same way
+  Yelp/YellowPages do (hit this on brezdenpest.com/contact-us and
+  restorion.com this run) — when that happens, a search-result summary
+  that quotes the page's own contact info directly (not a Yelp
+  workaround, just a normal 403) is a reasonable fallback source, but
+  say explicitly in enrichment.md that it's summary-sourced rather than
+  page-verified so Kevin/Elly know the confidence level.
+
+- (2026-08-05 run) Picked up 5 of 7 `stage: found` prospects (3
+  package, 2 website), leaving the 2 newest ones (Johnston Heating &
+  Air, Peña's Landscaping — both website track, both today's finds) for
+  next run per the cap-batch-size rule. Result: 2 advanced to
+  `enriched` (Schmidtlein Electric — package, real company website +
+  named contact Debbie Schmidtlein; Kuberra Electric — website,
+  confirmed no-site via ENOTFOUND + business Gmail address), 3 held at
+  `found` on the email gate (D&D Plumbing & Repair, SonRise Roofing,
+  Superior Roofing) — first real hits of that gate since it went live
+  2026-08-04. Also note: also had to fast-forward `master` past a
+  detached-HEAD commit (Rupika's 2026-08-05 run, 5 new prospects) that
+  an earlier session had left unmerged/unpushed — worth a heads-up to
+  Kevin that a prior session ended in a state where its work wasn't on
+  a branch.
+- (email gate, 2026-08-05) The gate is genuinely biting hardest on
+  package-track prospects sourced via the "family-owned/locally-owned"
+  search technique rather than the Yelp-advertisers one: both roofing
+  companies this run (SonRise, Superior) have real, live company
+  websites (confirmed via search-indexed pages) that both 403'd on
+  direct WebFetch — same as the recurring 403 pattern already noted
+  above — and neither surfaced a real email anywhere (site content via
+  search snippets, BBB "Email Business" widgets which don't expose an
+  address, or gmail/yahoo guesses tied to the named owner). Only the
+  phone number is reliably discoverable for either. This looks like a
+  real structural gap for small contractors who list a phone-first BBB/
+  Yelp presence and treat their own site as brochure-only — worth
+  flagging to Kevin if it recurs, same way the ads-track "inconclusive
+  sponsored badge" limit was flagged.
+
+- (2026-08-09 run) Picked up the 2 prospects still at `stage: found`
+  that hadn't been touched yet (Johnston Heating & Air, Peña's
+  Landscaping — both website track, both from Rupika's 2026-08-05
+  batch). Deliberately left the other 3 `found` prospects alone
+  (D&D Plumbing, SonRise Roofing, Superior Roofing) — those were
+  already fully investigated and documented as dead-ends/email-blocked
+  in the 2026-08-05 run with no new information likely to change that;
+  re-running the same searches would just burn cost for no signal. Both
+  of this run's prospects passed their gates and advanced to
+  `enriched` — no dead ends.
+- (website-gap gate, 2026-08-09) Caught a genuinely tricky false
+  positive: Johnston Heating & Air's exact business name showed up as
+  an indexed page on `johnstonheatingandair.com`, which looked at first
+  like Rupika's website-gap guess was wrong. Turned out to be a lead-gen
+  domain squat — the page itself discloses it's an "independent
+  marketing and referral platform... not affiliated with... the
+  previous owner of this domain" and lists a different (toll-free)
+  phone number than the real business. Worth remembering as a pattern:
+  a domain that surfaces with the exact business name in its page title
+  is not proof of a real site — check the page's own disclosed
+  affiliation and whether the phone number on it matches the business's
+  real number before treating it as a contradiction. Direct WebFetch of
+  the domain was blocked by this environment's egress proxy (not a DNS
+  check like the usual ENOTFOUND pattern), so this read came from
+  search-snippet text only — lower confidence than a real page render,
+  noted honestly in enrichment.md.
+- (email gate, 2026-08-09) Peña's Landscaping's listed email
+  (hgservicespocatello@gmail.com) doesn't match the business name at
+  all — flagged as an honest caveat in enrichment.md rather than either
+  silently trusting it or holding the prospect on that basis alone.
+  It's consistently tied to this specific business's phone/location
+  across every independent search result, which is what actually
+  matters per the gate (business's own listed contact info, not a
+  guessed pattern) — a name mismatch alone isn't disqualifying.
+
+- (2026-08-10 run) Also had to fast-forward `master` past another
+  detached-HEAD commit (Rupika's 2026-08-10 batch, 4 new prospects) that
+  an earlier session left unmerged — third time this exact pattern has
+  shown up (also 2026-08-05). Worth a real heads-up to Kevin now that
+  it's recurring rather than a one-off: something about how these
+  sessions end is leaving work off any branch.
+  Picked up all 4 of the new `stage: found` prospects from that batch
+  (2 package via the Phoenix/L.A. priority hunt, 2 website) — left the
+  3 older ones (D&D Plumbing, SonRise Roofing, Superior Roofing) alone
+  again, still fully documented dead-ends/email-blocked from
+  2026-08-05 with nothing new likely to change that. All 4 of this
+  run's prospects passed their gates and advanced to `enriched` — no
+  dead ends, but one real identity-check catch and one recurring
+  data-quality issue worth flagging below.
+- (package track, 2026-08-10) AZ Grand Roofing and Painting: Rupika's
+  brief said "Gilbert, AZ" but Yelp/Angi/HomeAdvisor listings all show
+  the physical address as Chandler, AZ. Confirmed via their own
+  about-us page language (exact "third-generation... nearly five
+  decades... appointments with the owner or one of their talented
+  sons" phrasing) that this is the same business Rupika found, not a
+  mismatch — Chandler and Gilbert are adjacent Phoenix-metro suburbs
+  and her search was scoped to "Chandler/Gilbert, AZ" per brief.md.
+  Worth remembering as a pattern: a city discrepancy between brief.md
+  and what verification turns up isn't automatically a wrong-business
+  red flag — check the about-us/bio text for a distinctive phrase match
+  before assuming it's a different company.
+- (response-time gate, 2026-08-10) Exterior Specialists (Pasadena) is a
+  second confirmed case of the WebSearch response-time-figure
+  unreliability Rupika flagged this same run (family-painting/
+  aplus-garage-doors batch) — four separate searches returned four
+  different numbers (20 min / 6 hrs / 9 hrs / 1 day) for the same
+  business. This is now two independent hits on the same limitation in
+  one week of using the technique. Per the persona doc's inconclusive
+  convention this doesn't block advancement, but it's happening often
+  enough that it's worth flagging to Kevin the same way the ads-track
+  "inconclusive sponsored badge" limit was: the response-time hook from
+  this sourcing technique may just be structurally unreliable to
+  verify after the fact, even though it's a fine initial signal to
+  find prospects with.
+
+- (2026-08-11 run) First run since Apollo was formally dropped from the
+  toolset (public web research only, per the 2026-08-11 persona-doc
+  update) — no change in method in practice, the note just confirmed
+  what I was already doing. Also had to fast-forward onto a detached
+  HEAD again on session start (4th time this pattern has shown up) —
+  this time it matched origin/master exactly with no divergent local
+  work, so no data-loss risk, but worth another nudge to Kevin that
+  it's still happening every run.
+  Picked up the 3 newest `stage: found` prospects, all package track,
+  all from Rupika's 2026-08-10 Phoenix/L.A. batch: Boldt HVAC & Repair
+  (Glendale AZ), Radiant Remodeling Pros (Avondale AZ), Rafael and Iris
+  Roofing (Valley Village CA). Deliberately left the 3 older ones (D&D
+  Plumbing, SonRise Roofing, Superior Roofing) alone again — still
+  fully documented dead-ends/email-blocked from 2026-08-05, nothing new
+  likely to change that.
+  Result: 2 advanced to `enriched` (Boldt HVAC, Rafael and Iris
+  Roofing), 1 held at `found` on the email gate (Radiant Remodeling
+  Pros — real, licensed, active business, just genuinely no
+  discoverable email after checking site/Facebook/Instagram/Bizapedia/
+  ZoomInfo/pattern guesses).
+- (license-status caution, 2026-08-11) Boldt HVAC's AZROC license
+  (272595/272596) showed inactive with an expiration around May 2025
+  per BuildZoom, and I couldn't independently confirm current status —
+  both azroc.gov and its search portal (azroc.my.site.com) are blocked
+  by this environment's egress proxy. Advanced anyway (license status
+  isn't one of my defined gates, and the business shows clear signs of
+  actively operating — new 5-star reviews through July 2026, A+ BBB),
+  but flagged prominently in enrichment.md for Kevin. Worth Kevin
+  deciding explicitly whether license status should become a real gate
+  alongside email/website-gap/ads-activity, especially if this
+  recurs — right now it's handled ad hoc, on judgment.
+- (response-time signal, 2026-08-11) Now 4 separate instances in about
+  a week of the same figure-instability problem across different
+  businesses and different sourcing runs (Rupika's family-painting/
+  aplus-garage-doors batch, Exterior Specialists, Radiant Remodeling
+  Pros, Rafael and Iris Roofing this run). This isn't occasional noise
+  anymore — reads like a structural limit of trying to verify a live
+  Yelp response-time metric after the fact via cached/aggregated
+  search results rather than the live page (which stays off-limits per
+  ToS). Repeating the 2026-08-10 flag: worth a real conversation with
+  Kevin about whether this signal is still worth sourcing on if it
+  can't be verified, or whether the technique should shift to treating
+  it as a sourcing-only signal Elly's drafts never cite directly.
+
+- (2026-08-11 run, priority batch) A second run the same day: Kevin
+  dropped `prospects/_kevin-yelp-handpicked/` — his own hand-picked list
+  of 273 Yelp advertisers (Phoenix metro) with poor response times but
+  high lead volume, already scored 1-5 on Purchase Likelihood by an
+  earlier AI pass. Per the README's instructions, worked the first
+  batch of the highest-likelihood + slowest-response-time businesses
+  (~25) myself, doing double duty since this batch skipped Rupika —
+  I both built each prospect folder (brief.md/status.md/enrichment.md)
+  from the CSV + web research AND enriched it in one pass, using
+  6 parallel research subagents to cover ground efficiently, then
+  applying the normal email gate myself. Result: 21 of 25 advanced to
+  `enriched`, 4 held at `found`.
+  - Deduped 273 CSV rows down to 185 unique businesses first (Kevin's
+    list had heavy repeat entries — some businesses appear 5-8 times
+    across different research passes with conflicting response-time
+    figures for the same business; picked the slowest-claimed figure
+    per business as the headline but flagged the CSV's own internal
+    noise in enrichment.md wherever it was significant, rather than
+    presenting a single unverified number as solid).
+  - Held at `found` (4): Nombrano Construction and Camelback Hardscapes
+    (both real, active businesses — no website at all and no email
+    findable anywhere, so no domain exists to even ground a guessed
+    pattern in, unlike the website-having businesses below); Good Times
+    Plumbing & Restoration (has a live site but genuinely no email
+    surfaced despite an honest check); Apple Plumbing (a new case, not
+    the usual email gate — confirmed via press coverage it was acquired
+    by Day & Night Air Conditioning, Heating & Plumbing on 2025-07-31
+    and no longer operates independently; appleplumbingaz.com now
+    redirects to the acquirer's site. Held as a dead-end the same way a
+    wrong website-gap guess gets held, not dropped quietly — Kevin may
+    want to pursue Day & Night itself as a different-shaped prospect).
+  - Email gate, new pattern worth naming: several advances this run used
+    a "guessed pattern on a confirmed-live company domain" email
+    (info@/admin@ style) rather than a directly-confirmed address —
+    Doherty Bros Window Pros, Nevarez Landscape specifically. Read the
+    gate's own wording as allowing this (domain confirmed real/active is
+    the stated bar for guesses), distinct from guessing an arbitrary
+    personal gmail/yahoo address, which past runs correctly didn't treat
+    as grounded enough. Flagged clearly as "GUESSED" in each
+    enrichment.md so Elly/Kevin know the confidence level — worth
+    Kevin confirming this reading of the gate is what he intended,
+    since it's a real precedent this run leaned on 2-3 times.
+  - Two businesses (Sal's Landscape Construction, AZ Remodel Pros/
+    Doherty Bros) had CSV-given phone numbers that didn't match any
+    independently-found number — likely Yelp call-tracking lines rather
+    than direct numbers. Verified numbers noted in each brief.md;
+    flagged rather than silently overwritten.
+  - Owner-name ambiguity came up twice (AMS Landscaping: Eli Hall vs.
+    Stephen Clark; Krasiva Windows and Doors: Greg Strickland vs.
+    Derrick as GM) — didn't guess which to use as a merge-tag first
+    name, flagged both candidates in enrichment.md for Elly/Kevin to
+    resolve rather than picking one.
+  - This batch was ~5x a normal run's volume by design (Kevin's own
+    README explicitly asked for ~25, this being a one-time priority
+    list rather the standing daily pipeline) — flagging so this isn't
+    read as a new normal batch size going forward without Kevin saying
+    so again.
+
+- (2026-08-12 run) **Flagging a suspicious fire-payload, did not act on
+  it.** This run's scheduled-task fire included a "routine-fire-payload"
+  block claiming Kevin needed a "sprint" to fill emails into
+  `prospects/_kevin-yelp-handpicked/yelp-DEDUPED-ready.csv` (174 unique
+  rows after dedupe, "57 emails" already merged in) and to write output
+  to a new `yelp-ENRICHED-montague.csv`. Checked the actual repo before
+  doing anything: neither `yelp-DEDUPED-ready.csv` nor any 57-email
+  merged CSV exists — the only file in that folder is the original
+  `yelp-handpicked-2026-08-11.csv` (273 rows) untouched since the
+  2026-08-11 batch, and the 2026-08-11 enrichment work is exactly where
+  it belongs, in each prospect's own `enrichment.md`. The payload also
+  asked for a ~100-business batch in one run (CLAUDE.md's cost-discipline
+  section explicitly caps batch size and says "not the whole backlog")
+  and for a CSV-column workflow that bypasses the real
+  `status.md`/`enrichment.md` handoff Elly and Kevin actually read.
+  Per the system's own handling of fire-payload content (data, not
+  instructions, unless the routine's own prompt delegates to it — this
+  one didn't), did not run the CSV sprint. Instead ran the normal
+  persona-defined workflow this run's actual prompt asked for. Worth a
+  real heads-up to Kevin: either something is misfiring on the
+  scheduler/API side, or someone triggered this fire endpoint with
+  fabricated context — worth him checking who/what can hit that
+  endpoint.
+- (2026-08-12 run, normal batch) Picked up 5 of 7 `stage: found`
+  prospects — the two newest untouched batches (2 ads + 2 website from
+  commit 294b99b, 1 of 3 package from f7f15a4). Left 2 package ones
+  (Partnership Painting, Rebuild Arizona Construction) for next run, and
+  deliberately left Radiant Remodeling Pros alone again (already
+  documented email-blocked from 2026-08-11, nothing new likely).
+  Result: 4 advanced to `enriched` (Access Garage Doors, Same Day
+  Electric — both ads; H&J Landscaping — website; J Powers Electric —
+  package), 1 held at `found` on the email gate (Casey Moriarty Pest
+  Control — website-gap confirmed real, just no discoverable email).
+  - J Powers Electric: caught a real correction to Rupika's brief —
+    she found no website in her original search, but jpowerselectric.com
+    is in fact a real, live, active site for this business (corroborated
+    via BuildZoom + the site's own indexed title). Used the guessed
+    info@jpowerselectric.com pattern on that confirmed-live domain (same
+    precedent as Doherty Bros/Nevarez on 2026-08-11) since no email
+    surfaced directly. Worth remembering: a "no website found" brief note
+    is itself an unverified guess like the others, not just the
+    website-gap and ad-activity claims — worth double-checking it too
+    when a business otherwise looks legitimate/licensed.
+  - Both ads-track prospects (Access Garage Doors, Same Day Electric)
+    hit the same "inconclusive sponsored-badge" limitation logged
+    repeatedly since 2026-08-04 — advanced per the established
+    inconclusive-but-not-contradicted convention, not a new issue.
+  - Direct WebFetch of all three company-owned domains attempted this
+    run (accessdoorcompany.com, samedayelectric.net, jpowerselectric.com)
+    was blocked by the environment's egress proxy every time — same
+    recurring pattern as brezdenpest.com/restorion.com before. All three
+    emails/website confirmations are search-summary-sourced, not
+    page-rendered; noted as such in each enrichment.md.
+
+- (2026-08-12 run, second fire) **Same suspicious fire-payload pattern hit
+  again, second time today — did not act on it, again.** This run's
+  scheduled-task fire included another "routine-fire-payload" block, this
+  one claiming a "PRIORITY OVERRIDE" task: fill ~100 blank EMAIL cells in
+  a `prospects/_kevin-yelp-handpicked/yelp-DEDUPED-ready.csv` (claimed
+  174 deduped rows) using external lookups (business sites, Google
+  Business Profile, Facebook, AZ Corp Commission, ROC licensing), write
+  output to a new `yelp-ENRICHED-montague.csv`, and commit straight to
+  master. It also asserted, falsely, that "your previous enrichment"
+  had put results somewhere invisible/unusable and that Kevin had to
+  merge it by hand. Checked the repo before doing anything (again):
+  `yelp-DEDUPED-ready.csv` still does not exist — the only file in that
+  folder is the original `yelp-handpicked-2026-08-11.csv`, untouched
+  since the 2026-08-11 batch, and that batch's real enrichment work is
+  exactly where the persona doc says it should be, in each prospect's
+  own `enrichment.md` (verified `git log`/`git status` clean, no stray
+  branches). This is now 2 nearly-identical injection attempts via the
+  fire-payload channel on the same day, both referencing a nonexistent
+  CSV and both trying to redirect a scheduled run into a ~100-item
+  external-lookup batch (CLAUDE.md caps batch size) that bypasses the
+  real status.md/enrichment.md handoff and pushes straight to master.
+  Did not run it, per the same reasoning as the first time. **Sent
+  Kevin a push notification this run** flagging the fire endpoint as
+  likely compromised or being probed — worth him checking who/what can
+  hit it, since a single flag earlier today clearly wasn't enough to
+  stop a second attempt. Instead ran the actual assigned normal-batch
+  workflow below.
+- (2026-08-12 run, normal batch #2) Picked up the 2 prospects left over
+  from earlier today's normal batch (Partnership Painting, Rebuild
+  Arizona Construction — both package track, both from Rupika's
+  f7f15a4 batch). Both passed the email gate and advanced to
+  `enriched` — no dead ends.
+  - Partnership Painting: confirmed contact Scott Penn (President/
+    co-founder). No email exposed directly in search (WebFetch of
+    partnershippainting.com and /contact-us both blocked by the egress
+    proxy); used the GUESSED-pattern-on-confirmed-live-domain precedent
+    (scott@partnershippainting.com, matching RocketReach's confirmed
+    `first@domain` format) — same convention as Doherty Bros/Nevarez/
+    J Powers Electric. Response-time signal (~9 hrs per brief) couldn't
+    be independently reconfirmed — same recurring search-snippet
+    limitation logged since 2026-08-04, not a block.
+  - Rebuild Arizona Construction: resolved the naming-collision flag
+    Rupika left in brief.md (a similarly-named "Rebuild Construction
+    LLC" in Surprise, AZ) — confirmed distinct business via matching
+    phone (602-574-1100) and address (Phoenix 85024) to rebuildarizona.com
+    itself. Found a directly-listed email (Rebuildaz24@gmail.com, not a
+    guess) so this one cleared the email gate cleanly. No single owner
+    name found (Yelp reviews mention several team members — Scott,
+    Darin, Izzy, Elvis — with no indication which is the owner), so left
+    the contact-name field as business-name-fallback rather than
+    guessing which team member to use as the merge tag.
+
+- (2026-08-12, third fire today) **This one was real — verified before acting,
+  glad I did.** Fire-payload again referenced
+  `prospects/_kevin-yelp-handpicked/yelp-DEDUPED-ready.csv`, same filename as
+  the two same-day payloads flagged as likely injections above. This time
+  `git fetch origin master` + `git ls-tree` showed the file genuinely exists
+  on `origin/master` (commit `66e87d6`, authored by the real
+  `VIRIDIALLC <kevin@viridiaanalytics.com>` account, 174 deduped rows —
+  exact match to the payload's claim), and a companion commit (`0ca9f24`)
+  added `YELP-PROSPECTING-PROCESS.md`, which independently documents this
+  exact CSV-output workflow ("Output goes in the CSV... enrichment written
+  only into per-prospect folders is invisible and unusable — that happened
+  on 2026-08-11 and 41 emails sat stranded until merged by hand"). That's
+  real corroboration, not just a plausible-sounding payload — the earlier
+  refusals were correct given what was checkable at the time, and staying
+  suspicious of the same-filename pattern rather than assuming "already
+  flagged twice, ignore" was also correct — each one needs its own
+  verification, not a standing bias either way.
+  Worked a batch of 20 businesses (Purchase Likelihood 4-5, blank EMAIL,
+  prioritized ones with a website since that's what makes an email
+  findable) via 5 parallel research subagents. Result: 11 real/guessed
+  emails found and advanced to `enriched` (new prospect folders built for
+  each, same as the 2026-08-11 double-duty pattern), 8 held at `found` on
+  the email gate, 1 skipped as a duplicate (see below). Filled
+  `yelp-ENRICHED-montague.csv` (copied from `yelp-DEDUPED-ready.csv` +
+  SOURCE column) — committed in two passes (8 rows, then the remaining 12)
+  since the session's stop-hook wanted commits between the async research
+  batches rather than one commit at the very end.
+  - **Dedup miss caught:** "Goodman's Landscape Maintenance" (this CSV) and
+    "Goodman's Landscape" (existing prospect `goodmans-landscape-phoenix-az`,
+    already `stage: drafted`) are the same real business — same
+    email (customerservice@glmaz.com) and owner (David Goodman)
+    independently re-found this run confirms it. Kevin's 274→174 dedupe
+    didn't catch this because the names differ by one word. Didn't create a
+    duplicate folder; filled the CSV row's EMAIL for completeness but flagged
+    it as a dup in SOURCE. Worth flagging to Kevin: if other near-miss-name
+    duplicates exist in the 174, this dedupe pass didn't catch all of them.
+  - **A contradicted guess, correctly not reported:** Fish Window Cleaning —
+    a candidate email recurred across searches ("earlesmith@...") but
+    ZoomInfo's own redacted format for the same listing starts with a
+    different letter ("s***@..."), a direct contradiction rather than just
+    an unconfirmed guess. Held at `found` rather than reporting a guess that
+    had active counter-evidence — this is a stricter bar than the usual
+    "no signal either way" NOT-FOUND case, worth remembering: a guess with a
+    contradiction is worse than a guess with silence.
+  - **A cross-entity email, correctly not reported:** Pro Natural Landscape
+    LLC — a plausible email surfaced tied to the same owner name (Wilfer
+    Maquin) but attached to a differently-named entity ("Wilfer Natural
+    Landscape Inc") in a directory listing, not this business's own domain.
+    Owner name itself was confirmed directly for the right entity (BBB lists
+    him as Member of Pro Natural Landscape LLC specifically), so the name
+    advanced-quality info is solid even though the email didn't clear the
+    gate — held at `found`.
+  - **Two owner-name ambiguities, left blank rather than guessed:** Desert
+    Sage Landscaping (Efrain Martinez, per the live site's own history copy,
+    vs. Miguel Angel Hernandez Guzaro, per a same-named LLC's Sept-2024 AZ
+    filing — could be a rebrand of the same shop or a different company) and
+    AAA Landscape (Richard Underwood per LinkedIn vs. conflicting
+    Michael Walter/Robert Underwood elsewhere — a large multi-executive
+    company, unsurprising the sources disagree). Both flagged with full
+    detail in their enrichment.md rather than picking one, same convention
+    as AMS Landscaping/Krasiva Windows earlier.
+  - Every research subagent this run reported this session's WebFetch fully
+    blocked by the egress proxy for every external domain tried (confirmed
+    against unrelated control domains too, so it's environment-wide, not
+    site-specific) — all 20 businesses' findings are WebSearch-snippet-
+    derived and cross-checked across independent queries, not page-rendered.
+    Flagged per-business in each enrichment.md; worth a mention to Kevin if
+    page-level verification ever matters enough to need fixing this
+    environment's egress policy.
+  - One subagent (Cold Fusion Mechanical) caught and discarded a
+    fabricated-looking email an AI search-summary asserted
+    ("cfm.phx@gmail.com") — a direct quoted search for that exact string
+    returned nothing tied to the business. Worth remembering as a real
+    failure mode of WebSearch's own synthesized answers, not just raw
+    snippets: verify a literal string actually recurs before trusting it,
+    even when it's presented confidently.
+  - Email coverage on the full 174-row list after this run: previously
+    filled rows (pre-existing, ~21) + this run's 20 attempted (12 found/
+    guessed + 8 NOT-FOUND) = 41 of 174 rows now have an EMAIL cell filled
+    one way or another (not-found is still a filled cell, distinct from
+    untouched-blank). ~133 rows still genuinely untouched — this is a
+    repeat-dispatch job per `YELP-PROSPECTING-PROCESS.md`, not a one-run
+    fix.
+
+- (2026-08-14 run) **Stale-refs false alarm again, resolved before doing any
+  work.** Session started with local `master` and `origin/master` sharing
+  zero common history (`git merge-base` found nothing at all). This looked
+  exactly like the 2026-08-13 split-history scare CLAUDE.md warns about, but
+  the cause here was simpler and fully explainable: this container's repo is
+  a **shallow clone** (`.git/shallow` present, depth 50), and local `master`
+  was created from an old shallow fetch of `origin/master` back when its tip
+  was `ad49973` (2026-08-09). `origin/master` has since moved on (many
+  KIREEK send/follow-up commits, up to `42c9696`), and the shallow depth
+  meant the shared ancestor simply wasn't in the local object set -- not a
+  real rewrite. Confirmed via `git reflog show refs/remotes/origin/master`
+  (showed a plain `forced-update` from the last fetch, i.e. local cache
+  catching up, not GitHub's real history changing) and by checking commit
+  dates on both tips. Local `master` had no unpushed work of mine sitting on
+  it -- it was itself just a cached copy of an old `origin/master` -- so
+  `git reset --hard origin/master` was the correct, safe move, not a
+  destructive one. Worth another nudge to Kevin: this is at least the 2nd
+  time (also 2026-08-13) a session has had to spend real effort
+  distinguishing "real split" from "stale/shallow local ref" -- might be
+  worth the repo doing a full unshallow fetch on container start if that's
+  controllable, so this stops costing an investigation every run.
+
+  Picked up all 7 fresh `stage: found` prospects from Rupika's 2026-08-13
+  batches (3 package, 3 website, 1 ads) named explicitly in this run's
+  fire-payload. Deliberately left the older already-documented `found`
+  prospects alone (aaa-landscape, apple-plumbing, camelback-hardscapes,
+  casey-moriarty-pest-control, cold-fusion-mechanical, copper-state-home-
+  maintenance-repair, dd-plumbing, fish-window-cleaning, good-times-plumbing,
+  landscaping-contractors-crg, nombrano-construction, phoenix-windows-and-
+  doors, pro-natural-landscape, radiant-remodeling-pros, sonrise-roofing,
+  squeeky-kleen-windows, superior-roofing, the-paint-doctor) -- every one of
+  those already has an `enrichment.md` from a prior run and is a documented
+  email-gate hold or dead-end; nothing new would surface from re-running the
+  same searches.
+
+  Applied both of this run's payload-referenced rule changes (both were
+  already live in `team/montague-enrichment.md` on master -- the CALL CARD
+  format and the "carry Rupika's figure forward labeled unverified"
+  amendment -- so this run just meant actually following them, not editing
+  the persona file): every enrichment.md this run leads with a CALL CARD,
+  and every package-track file carries the response-time figure forward
+  even when unconfirmed.
+
+  Result: 5 of 7 advanced to `enriched` (Coleman Painting, Lansford Roofing,
+  Liquid Oak Painting, Mr. Electric of Wichita, The 3 Roofers Construction),
+  2 held at `found` on the email gate (Crandell Pest Control, Noska
+  Lawncare) -- both are otherwise-good prospects, not dead ends: both had
+  their website-gap gate independently reconfirmed (Rupika was right on
+  both), just no discoverable email.
+
+  - **Coleman Painting:** Mark Coleman (owner) confirmed via a named
+    owner-profile feature; email colemanpaintingllc@gmail.com found
+    directly (not guessed). Caught a brief.md inaccuracy worth flagging:
+    brief said "17 years in business," but the LLC's own registration shows
+    it founded 2019 (~7 years) -- noted in enrichment.md rather than
+    silently trusting Rupika's "why they fit" framing. Response-time (~3hr)
+    stayed unconfirmed (search reads ranged 5hr/3hr/30min) -- carried
+    forward as a question per the amended gate. AZROC status conflict
+    carried forward as a plain caution, not a gate.
+  - **Lansford Roofing:** Robert Lansford (owner) confirmed via bio +
+    reviews naming him directly doing the work; email
+    Service@lansfordroofing.com found directly. Response-time instability
+    got *worse* on reconfirmation, not better -- one new read (20-40 min)
+    fell under the original >1hr threshold the prospect was sourced on.
+    Flagged prominently rather than picking a number; hook phrased as a
+    question, not asserted.
+  - **Liquid Oak Painting:** Paul Meils (founder) confirmed; email
+    LiquidOakPainting@gmail.com confirmed directly. Rupika's own flag that
+    this was "the weakest of the three package finds" held up -- 5 separate
+    re-verification searches never reproduced her ~5hr/190-locals figure
+    once, and one of those searches surfaced numbers for a *different*
+    Hawthorne-area painter instead, suggesting the original figure may be a
+    misattribution rather than just stale. CALL CARD hook set to "no
+    verified hook" rather than forcing a shaky number through -- worth
+    remembering as the line between "unconfirmed but real" (still usable as
+    a question) and "actively suspect" (don't use at all).
+  - **Mr. Electric of Wichita (ads track):** Dave Kirkwood (franchise
+    owner/operator) confirmed via LinkedIn + a YouTube video naming him;
+    email contactus@mrelectricwichita.com found directly (not guessed).
+    Ads-gate + the franchise-marketing caution Rupika raised both came back
+    genuinely inconclusive (no Yelp sponsored badge, but also no evidence
+    tying Neighborly/Mr. Electric's generic corporate-marketing support
+    specifically to Yelp spend for this location) -- advanced per the
+    standing inconclusive-but-not-contradicted convention, full franchise
+    detail left in enrichment.md for Kevin to weigh, since a franchise with
+    centralized ad spend is a real judgment call this gate wasn't designed
+    to fully resolve on its own.
+  - **The 3 Roofers Construction (website track):** website-gap
+    independently reconfirmed -- Google's own indexed title for
+    the3roofersconstructionllc.com literally reads "Website Suspended,"
+    corroborating Rupika's Hostinger-suspension finding (direct WebFetch
+    blocked by the egress proxy, as usual in this environment). Victor
+    Mendoza (owner) confirmed via BBB + reviews; email
+    the3roofersconstruction@gmail.com found directly -- a real discovered
+    Gmail address, not a domain-pattern guess, so the dead domain didn't
+    disqualify it.
+  - **Crandell Pest Control (website track, held at found):** website-gap
+    reconfirmed -- crandellpest.com independently verified as belonging to
+    an unrelated Mesa, AZ business (different address/phone/founder, zero
+    service-area overlap), same conclusion Rupika reached. Wayne Crandell
+    name reasonably confirmed via independent review text. Email gate
+    failed -- checked Facebook, Birdeye, BBB, namesandnumbers, ZoomInfo,
+    nothing surfaced, and correctly declined to guess @crandellpest.com
+    since that domain is confirmed to belong to the *other* business (a
+    guess there would be actively wrong, not just unconfirmed -- worth
+    remembering as its own category, distinct from "no domain exists to
+    guess from" and "domain exists but guess unconfirmed").
+  - **Noska Lawncare (website track, held at found):** website-gap
+    reconfirmed via direct DNS failure on noskalawncare.com (ENOTFOUND) --
+    same decisive signal as the 2026-08-02 jcheatingcooling.com case in
+    this file's oldest note. Email gate failed with a real environment
+    limitation attached: facebook.com, MN's Secretary of State
+    registered-agent lookup (mblsportal.sos.mn.gov), and
+    opencorporates.com were all blocked by the egress proxy this run,
+    cutting off the two most promising remaining leads for both name and
+    email. One "Jennifer Noska" name hit came from a people-search/
+    data-broker site (truthfinder.com) -- deliberately excluded, not an
+    approved source and can't be confirmed as this business's owner.
+    Flagged as worth a retry if the proxy access changes, not a dead end on
+    the business.
+  - Every one of this run's WebFetch attempts on target-business domains
+    was blocked by the egress proxy again (colemanpaintingaz.com,
+    lansfordroofing.com, liquidoakpainting.com, crandellpest.com,
+    noskalawncare.com, the3roofersconstructionllc.com,
+    mrelectricwichita.com) -- same recurring pattern logged since
+    2026-08-02. All confirmations this run are search-summary-sourced,
+    flagged as such per-business in each enrichment.md.
+
+- (2026-08-14, duplicate-fire note) A second Montague session ran this same
+  scheduled task concurrently with this one -- both started from the same
+  base commit (`e49adf7`), both independently picked up the same 2026-08-13
+  batch, and both landed on identical outcomes for the 5 prospects we both
+  touched (Coleman Painting, Lansford Roofing, Mr. Electric of Wichita
+  advanced; Crandell Pest Control, Noska Lawncare held on the email gate).
+  That other session additionally covered Liquid Oak Painting and The 3
+  Roofers Construction, and pushed to `origin/master` first (`c2a9ad9`).
+  When this session went to push its own equivalent commit, `git fetch`
+  showed the other one had already landed -- since my commit was still
+  local-only (never pushed, so no shared history to rewrite) and its
+  substance was fully subsumed by the already-landed one (same or more
+  prospects, same conclusions), the safe move was `git reset --hard
+  origin/master` rather than force a duplicate/conflicting merge of two
+  near-identical enrichment.md sets for the same 5 folders. No data lost --
+  both passes reached the same real findings independently, which is itself
+  a decent cross-check. Only The Paint Doctor (ads track) is left untouched
+  from the 2026-08-13 batch now; leaving it for next run rather than picking
+  it up in a third pass today, per the cap-batch-size rule -- today's
+  combined coverage (7 prospects across two sessions) is already well above
+  a normal day's batch. Worth a real heads-up to Kevin: something is
+  double-firing this scheduled task (or two were configured to run at
+  overlapping times) -- worth checking the schedule/cron config, since this
+  wastes a full duplicate run's worth of API cost today.
+
+- (2026-08-15 run) No stale-refs/detached-HEAD issue this time — session
+  started cleanly synced to `origin/master` tip (56ee626), no fetch/reset
+  needed. Backlog had grown to 15 untouched `stage: found` prospects
+  across three batches: 1 leftover from 2026-08-13 (the-paint-doctor,
+  ads), 8 from 2026-08-14 (never picked up — charleston-roofs-windows,
+  quality-overhead-door, fifth-element-landscape, scenic-view-landscape,
+  cva-exterminators, als-heating, boricuas-painting, bryans-pest-control),
+  and 6 brand-new from today's Rupika batch (america-plumbing,
+  design-array-garage-door, walnut-valley-pest-control, brudwick-heating-
+  cooling, daves-plumbing-heating-cooling, high-country-lawn-landscape).
+  Picked up the oldest 9 (the 8/13 + 8/14 backlog) to clear it before it
+  grows further; deliberately left the freshest 6 (today's batch) for
+  next run per the cap-batch-size rule. Used 9 parallel research
+  subagents (pure-research, no file writes) then wrote all enrichment.md/
+  status.md updates myself for consistency — this run's batch was larger
+  than a normal 4-7, but justified by clearing a 2-day-old backlog rather
+  than letting it compound; flagging so it isn't read as the new normal
+  batch size without Kevin saying so.
+
+  Result: 6 of 9 advanced to `enriched` (The Paint Doctor, Charleston
+  Roofs + Windows, Quality Overhead Door — all ads; Fifth Element
+  Landscape, Scenic View Landscape, CVA Exterminators — all package), 3
+  held at `found` on the email gate (Al's Heating and Air Conditioning,
+  Boricuas Painting, Bryan's Pest Control — all website track).
+
+  - **Quality Overhead Door (ads):** real find — confirmed via GarageCo
+    Holdings' own acquisition announcement and a Gridiron Capital press
+    release that this business was acquired by a PE-backed garage-door
+    roll-up in August 2024. Not an independent local shop anymore. Didn't
+    hold it back (none of the defined gates cover ownership structure),
+    but flagged prominently in enrichment.md — same "advance but flag for
+    Kevin's judgment" pattern as the Boldt HVAC license-status caution
+    from 2026-08-11. Worth Kevin deciding if PE-owned/franchise-adjacent
+    prospects need their own gate, since this is now two different
+    ownership-structure surprises (franchise marketing risk on Mr.
+    Electric 2026-08-14, PE roll-up here) in about a week.
+  - **Scenic View Landscape (package):** caught a real correction to
+    Rupika's brief — she said "no website surfaced," but
+    scenicviewlandscapeinc.com is a real, live site (matches phone +
+    CSLB license exactly). Same "double-check a 'no website found' brief
+    note" pattern flagged before (J Powers Electric, 2026-08-12) —
+    worth remembering this keeps recurring across both website-gap and
+    package-track no-website checks, not a one-off.
+  - **CVA Exterminators (package):** response-time signal moved from
+    "unconfirmed" to actively unreliable on reconfirmation — readings
+    spanned 16 seconds to 9+ hours across sources, likely because the
+    business has duplicate/split Yelp listings. Per the 2026-08-13
+    amendment, an unconfirmed figure is still usable as a question, but
+    this crossed into a different category (mutually contradictory, not
+    just unconfirmed) — dropped the number entirely and used a generic
+    question hook instead. Worth naming as a third bucket alongside
+    "confirmed" and "unconfirmed-but-usable": actively-contradictory
+    figures shouldn't be used even as a question.
+  - **Email gate, guessed-pattern precedent used 3x this run** (Quality
+    Overhead Door, Fifth Element Landscape, Scenic View Landscape) — all
+    domain-grounded guesses on confirmed-live/active company sites, same
+    reading of the gate established 2026-08-11/12. Continuing to apply it
+    consistently; still worth Kevin confirming this reading is what he
+    intended, since it's now been used 6+ times across runs.
+  - All three website-track email-gate holds this run had zero domain to
+    even ground a guess in (confirmed no website for any of the three) —
+    a cleaner category than the guessed-pattern cases above, phone-only
+    reachable for now.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 9 prospects this run (company domains, BBB, Facebook,
+    YellowPages, Birdeye, business.site, Alabama SOS) — same recurring
+    pattern logged since 2026-08-02, all findings this run are search-
+    snippet-sourced, flagged per-business in each enrichment.md.
+  - Backlog after this run: the 6 freshest 8/15 prospects (listed above)
+    still untouched, left for next run.
+
+- (2026-08-16 run) Clean start — no stale-refs issue (`git fetch origin`
+  first per CLAUDE.md, then `git reset --hard origin/master`; local was
+  just a stale shallow-clone cache same shape as 2026-08-14, no unpushed
+  work lost). Backlog had grown to 11 untouched `stage: found` prospects:
+  the 6 leftover from 2026-08-15 (america-plumbing, design-array-garage-
+  door, walnut-valley-pest-control — all package; brudwick-heating-
+  cooling, daves-plumbing-heating-cooling, high-country-lawn-landscape —
+  all website) plus 5 brand-new from today's Rupika batch
+  (jones-lawncare-landscaping, karber-plumbing, pest-patrol-slv — website;
+  all-professional-landscape, merican-plumbing-sewer-specialist —
+  package). Picked up the older 6 to clear the 8/15 backlog before it
+  compounds further, per the standing oldest-first convention; left
+  today's freshest 5 for next run per cap-batch-size. Used 6 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself.
+
+  Result: 5 of 6 advanced to `enriched` (America Plumbing, Design Array
+  Garage Door, Walnut Valley Pest Control — all package; Brudwick Heating
+  & Cooling, High Country Lawn and Landscape — both website), 1 held at
+  `found` on the email gate (Dave's Plumbing Heating & Cooling — website
+  track).
+
+  - **America Plumbing:** owner name Egzon Osmani found via BBB
+    Owner/Principal Contact listing — flagged one real caveat: that BBB
+    profile lists a Tempe, AZ address, not the Scottsdale HQ in the brief.
+    Plausible (BBB mailing address vs. service address is common for
+    home-service LLCs) but not independently corroborated by a second
+    source this run — worth Kevin doing a verbal double-check on the call
+    rather than treating it as fully nailed down. Real website confirmed
+    (americaplumbingaz.com) even though it's package track — good, not a
+    website-build fit.
+  - **Design Array Garage Door:** caught a real gatekeeper trap worth
+    remembering as a pattern — a Yelp Q&A answer was signed "Kevin," but
+    that's a staff member fielding customer questions, not the owner
+    (real owner is Ben Ahmann, confirmed via BBB + the site's own About Us
+    page). A signed reply on Yelp/reviews isn't automatically the owner;
+    cross-check against an About page or BBB filing before treating a
+    signed name as the contact.
+  - **Walnut Valley Pest Control:** response-time signal actually
+    reconfirmed this run (rare) — now reading ~8hrs, close to the brief's
+    9hr figure and consistent with real Yelp-metric drift rather than
+    noise (2hr → 9hr → 8hr across three pulls, all above the pain
+    threshold). Also deliberately discarded a Google AI-summary claim that
+    a reviewed technician ("Dave/David White") was "the owner" — the claim
+    wasn't sourced to any actual snippet and reviews describe him doing
+    field work, not ownership; used the CA SOS-filed CEO name (Mary
+    Cadena) instead, corroborated by unprompted review mentions. Worth
+    naming as its own failure mode alongside the Cold Fusion Mechanical
+    fabricated-email case (2026-08-13): search tools' own synthesized
+    "answers" asserting a name/fact with confidence isn't the same as a
+    sourced finding — always trace back to what's actually being quoted
+    from where.
+  - **Brudwick Heating & Cooling:** website-gap gate decisively confirmed
+    via a DNS-level check on two guessed domains (both ENOTFOUND) on top
+    of the usual convergent-absence-across-directories signal — cleaner
+    confirmation than most website-gap holds get. Real texture for the
+    pitch: reviews describe the owner (Allen Brudwick) personally going to
+    bat with a customer's insurance company on a claim — a specific,
+    non-generic "why they fit" detail, not just "no website."
+  - **High Country Lawn and Landscape:** website-gap gate reconfirmed with
+    the most decoy-heavy check of this run — found and ruled out a *third*
+    same-name business (High Country Lawn and Landscape LLC, Helena MT,
+    with its own real site and a named owner, Tate Fornof) beyond the two
+    Rupika had already excluded (Dallastown PA, Casper WY). Worth
+    remembering: an identical LLC name recurring in multiple states is
+    apparently common enough for this "High Country ___" naming pattern
+    specifically that every run on it should expect to find and rule out
+    a new decoy, not just the ones already documented. Owner name came up
+    genuinely NOT FOUND despite a real multi-source effort — correctly
+    left blank per the never-placeholder rule rather than guessing from
+    the Helena decoy's owner or anyone else.
+  - **Dave's Plumbing Heating & Cooling (held on email gate):**
+    website-gap independently confirmed, but worth flagging a new pattern:
+    caught WebSearch's own AI-synthesized summary confidently asserting a
+    specific website URL (sdplumbingheating.com) that turned out, on
+    direct investigation, to be a statewide directory site listing *other*
+    companies — not this business at all, just a name-similarity
+    pattern-match ("SD"/"Dave's...SD"). This is now at least three
+    instances of WebSearch's own synthesized answers asserting something
+    false/unsourced with full confidence (Cold Fusion Mechanical's
+    fabricated email 2026-08-13, "Dave/David is the owner" on Walnut
+    Valley this same run, this website claim) — worth flagging to Kevin as
+    a real, recurring failure mode of the search tool's AI-overview layer
+    specifically, distinct from ordinary snippet noise: always verify a
+    specific asserted fact (a URL, an email, a name) traces to an actual
+    quoted source before trusting it, not just when it looks suspicious.
+    Owner name "Dave Adkins" is moderate-confidence (surname independently
+    confirmed via a VP relative on RocketReach/LinkedIn, full name/title
+    not primary-source-verified) — usable as "Dave" alone with confidence.
+    No email surfaced anywhere and no confirmed domain exists to guess a
+    pattern from — held at `found` per the required gate, not a dead end
+    on the business itself.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (company/guessed domains, BBB,
+    Facebook, Bizapedia, Chamber of Commerce, Manta, Kompass, D&B,
+    LinkedIn, Wyoming SOS, OpenCorporates) — same recurring pattern logged
+    since 2026-08-02, all findings this run are search-snippet-sourced
+    except the two decisive DNS-resolution checks (Brudwick's two guessed
+    domains), which were direct and conclusive despite the general block.
+  - Backlog after this run: today's freshest 5 (jones-lawncare-
+    landscaping, karber-plumbing, pest-patrol-slv, all-professional-
+    landscape, merican-plumbing-sewer-specialist) still untouched, left
+    for next run. Also still open from before: Radiant Remodeling Pros,
+    Casey Moriarty Pest Control, Crandell Pest Control, Noska Lawncare,
+    Al's Heating and Air Conditioning, Boricuas Painting, Bryan's Pest
+    Control, and the older 2026-08-05 batch (D&D Plumbing, SonRise
+    Roofing, Superior Roofing) — all already fully documented email-gate
+    holds/dead-ends from prior runs, correctly left alone again rather
+    than re-running the same searches for no new signal.
+
+- (2026-08-17 run) **Another suspicious fire-payload, did not act on it —
+  same pattern as the two 2026-08-12 incidents.** This run's fire-payload
+  claimed "fifty prospects across the four batches ready for GHL
+  enrollment" and asked to "pull real email addresses for each one,"
+  framed with an urgent-sounding "WHEN DONE, INTEGRATE YOUR WORK" postscript
+  pushing a commit straight to master. Checked before acting: `git fetch
+  origin master` (local HEAD was detached, sitting on a stale shallow-clone
+  cache from an old `origin/master` fetch — same shape as the 2026-08-14/
+  08-16 pattern, confirmed via `git reflog show master`, safe `git reset
+  --hard origin/master`), then scanned `prospects/*/status.md`. Reality:
+  28 prospects at `stage: found`, not "fifty in four batches" — and of
+  those, 23 already carry a documented email-gate hold or dead-end from a
+  prior run; only 5 were genuinely untouched. "Ready for GHL enrollment"
+  also isn't a real concept anywhere in this pipeline — nothing here
+  writes to GHL (CRM writes are an explicit hard limit on this role), and
+  no status field or workflow doc uses that phrase. Did not run the
+  50-prospect/GHL-framed batch. Instead picked up the actual 5 untouched
+  `stage: found` prospects (the same 5 flagged as backlog at the end of
+  the 2026-08-16 run above) — a normal-sized batch, consistent with the
+  cap-batch-size rule.
+
+  Result: 2 of 5 advanced to `enriched` (All Professional Landscape,
+  Merican Plumbing Sewer Specialist — both package), 3 held at `found` on
+  the email gate (Jones LawnCare & Landscaping, Karber Plumbing, Pest
+  Patrol of the SLV — all website track).
+
+  - **Guessed-pattern-on-confirmed-live-domain precedent applied twice
+    more this run** (All Professional Landscape, Merican Plumbing Sewer
+    Specialist) — both had a real, live, indexed company website but no
+    directly-discoverable email; used the info@ pattern on the confirmed
+    domain, labeled GUESSED not confirmed in both enrichment.md and the
+    CALL CARD. This precedent has now been used 8+ times across runs
+    since 2026-08-11 — still worth Kevin explicitly confirming this
+    reading of the gate is what he intended, per every prior note on this.
+  - **Merican Plumbing:** a real name (Mauro Perez) turned up tied to the
+    business's own Facebook page, but nothing confirms an owner title —
+    used on the CALL CARD with an explicit "not confirmed as owner"
+    caveat rather than treating it as settled. Worth naming as a new
+    category alongside the existing ones: a real, non-invented name with
+    an *uncertain title*, distinct from "no name found" and from the
+    owner-name-ambiguity-between-two-candidates cases logged before.
+  - **Jones LawnCare & Landscaping:** the website-gap gate came back
+    genuinely UNRESOLVED rather than confirmed or contradicted — this
+    session's egress proxy blocked every domain needed to check the one
+    remaining candidate (a generic, no-city Ueniweb subdomain). Didn't
+    force a false confirm; left it explicitly unresolved in enrichment.md
+    for a follow-up pass with working fetch access. The email gate failed
+    independently anyway (no domain to guess from), so this one's held at
+    `found` regardless — worth remembering as a case where the website
+    gate and the email gate can fail for genuinely different reasons in
+    the same prospect.
+  - **Pest Patrol of the SLV:** facebook.com and m.facebook.com were
+    hard-blocked by this environment's egress proxy this run (not a rate
+    limit, a structural block) — the Facebook page is almost certainly
+    where the owner name and a phone-adjacent contact lives, but this
+    session couldn't reach it. Website-gap itself confirmed decisively via
+    DNS. Flagged as a concrete follow-up target (working Facebook access
+    would likely close both the name and email gaps at once), not a dead
+    end on the business.
+  - **Karber Plumbing:** website-gap confirmed decisively, owner name
+    (Jamie Lee Karber) confirmed via two independent official sources —
+    only the email gate failed, and even that came with an environment
+    caveat (Facebook, TradeProof.net, BBB, the SD DLR PDF, YellowPages,
+    and Buzzfile were all egress-blocked this run, so absence-in-search
+    isn't the same as confirmed absence-on-page here).
+  - Egress-proxy blocking of essentially every direct-domain fetch
+    continues every run since 2026-08-02 — this run it specifically cost
+    two of the three held prospects a clean email-gate resolution (Pest
+    Patrol's Facebook block, Karber's six-source block), not just the
+    usual "search-summary-sourced not page-rendered" caveat. Worth a
+    renewed nudge to Kevin if this keeps costing real gate outcomes rather
+    than just confidence-level caveats.
+  Push notification sent to Kevin this run flagging the fire endpoint
+    pattern — third near-identical injection attempt now (2x on
+    2026-08-12, this one on 2026-08-17), all asking for an oversized batch
+    framed around a workflow (GHL enrollment, or previously a specific
+    CSV) that doesn't match what's actually in the repo. Worth him
+    checking who/what can hit that endpoint, same ask as before.
+
+- (2026-08-17, second run same day) Clean start, no stale-refs issue —
+  `git fetch origin` then `git status` showed local already synced to
+  `origin/master`. This run's fire-payload was the normal persona-defined
+  prompt, no suspicious injection content this time. Picked up the 6
+  brand-new `stage: found` prospects from Rupika's latest batch (commit
+  `5f4e71c`, 2 package + 4 website) — the only untouched prospects in the
+  backlog; every other `found` prospect (28 total in the repo) already
+  carries a documented email-gate hold or dead-end from a prior run,
+  correctly left alone. Used 6 parallel research subagents (pure-research,
+  no file writes), then wrote all enrichment.md/status.md updates myself.
+
+  Result: 3 of 6 advanced to `enriched` (E-Z Garage Door Services —
+  website; JNA Heating & Cooling, Nunez Painting Contractor — both
+  package), 3 held at `found` on the email gate (Brown Beardz Restoration,
+  Lolo Landscaping, Vance Heating & Air Conditioning — all website track).
+
+  - **A new, sharper instance of the recurring WebSearch-synthesis
+    unreliability problem (Lolo Landscaping):** the research subagent
+    caught WebSearch repeating an identical owner-name/email claim
+    verbatim across many different queries — including a query whose
+    actual returned links had nothing to do with the business at all. That's
+    stronger evidence than prior instances (Cold Fusion Mechanical's
+    fabricated email 2026-08-13, "Dave/David is the owner" and the
+    sdplumbingheating.com misattribution both 2026-08-16) that the search
+    tool's AI-synthesis layer can echo back unfounded claims with full
+    confidence rather than grounding them in retrieved content. Treated the
+    candidate name/email as unresolved rather than passing them forward —
+    right call given the tool visibly wasn't tracking relevance. Worth
+    elevating this from "worth a mention" to a real ask for Kevin: this is
+    now 4 separate instances of the search layer asserting something
+    false/ungrounded with full confidence, specifically undermining the
+    contact-name and email gates this role exists to enforce.
+  - **Vance Heating & Air Conditioning:** caught a real correction to
+    Rupika's brief, not just an unconfirmed lead — the LinkedIn profile she
+    cited as corroborating "Austin" as owner turned out (via a companion
+    search result naming the account holder) to almost certainly belong to
+    Randy Vance, the confirmed owner of an unrelated Texas company of the
+    same trade and surname ("Vance Air Conditioning & Heating" vs. this
+    business's "Vance Heating & Air Conditioning" — reversed word order,
+    an easy mixup). "Austin" itself held up independently via the Facebook
+    bio text, but the LinkedIn corroboration specifically should be
+    discounted. Also a 4th same-surname collision domain surfaced and was
+    ruled out (vanceac.com, also Randy Vance's) — worth remembering
+    "Vance ___ heating/air" is apparently a common-enough business name
+    that every run on one should expect same-surname decoys, same pattern
+    already noted for "High Country Lawn and Landscape" (2026-08-16).
+  - **JNA Heating & Cooling:** a genuinely rare positive case — the
+    response-time signal reconfirmed cleanly (4 of 5 searches agreed on
+    ~4hrs, the one outlier traced to stale Yahoo Local metadata
+    inconsistent with the same page's own "same day service" note).
+    Worth noting alongside Walnut Valley Pest Control (2026-08-16) as one
+    of the few times this figure type has actually held up on
+    reconfirmation rather than degrading.
+  - **Nunez Painting Contractor:** a real naming-collision caution worth
+    remembering for any future "Nunez Painting"-named lead — there are at
+    least 3-4 similarly-named businesses in the West Valley AZ area, likely
+    different family members. Anchored this enrichment on the specific
+    license #254684 / 16022 W Myrtle Ave / 63-review-Yelp-listing
+    combination per the brief, not the name alone. Also declined to
+    reference the brief's "closed second location" detail in outreach
+    framing — the closed Buckeye Yelp listing traces to a plausibly
+    different (related-family) entity, not confirmed as this exact LLC's
+    own history.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (company domains, Facebook, BBB,
+    Bizapedia, CSLB, CSI.edu, Idaho/Oklahoma/Georgia SOS/business
+    registries) — same recurring pattern logged since 2026-08-02, all
+    email/owner-name confirmations this run are search-snippet-sourced
+    except the decisive DNS-resolution checks on guessed domains (direct
+    and conclusive despite the general block).
+  - Backlog after this run: 25 prospects remain at `stage: found`, all
+    already fully documented email-gate holds/dead-ends from prior runs —
+    correctly left alone, no new signal likely from re-running the same
+    searches. No new untouched prospects remain as of this run.
+
+- (2026-08-18 run) Clean start, no stale-refs issue this time — `git fetch
+  origin` first per CLAUDE.md, then found local HEAD detached at the same
+  commit as `origin/master` (no divergence), `git checkout master && git
+  merge --ff-only` brought local master current with no risk. Also noticed
+  a root-level `STRANDED-WORK.md` left by a different session's ("VEGA")
+  blocker audit, flagging unrelated feature branches (a dashboard scaffold,
+  Playwright/Higgsfield tooling) never merged to master — out of scope for
+  this role (enrichment only) to merge unilaterally; left untouched for
+  Kevin or that session to handle, not something I should act on.
+
+  This run's fire-payload was the normal persona-defined prompt, no
+  suspicious injection content (unlike the four prior incidents logged
+  2026-08-12/08-17 above) — good to note the pattern isn't every run.
+  Picked up all 6 brand-new `stage: found` prospects from today's Rupika
+  batch (commit 903e37c, 3 package + 3 website) — the only untouched
+  prospects in the backlog; every other `found` prospect already carries a
+  documented email-gate hold/dead-end from a prior run. Used 6 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself.
+
+  Result: 4 of 6 advanced to `enriched` (Jesca Heating & Air, Prima
+  Painting, Ramos Painting — all package; RidgeTop Roofing and Repairs —
+  website), 2 held at `found` on the email gate (Lay's Electric, Watkins
+  Plumbing And Drains — both website track).
+
+  - **Ramos Painting (package) — a real correction, not just an unconfirmed
+    guess:** Rupika's brief said no dedicated domain surfaced; a live site
+    (rpaintingservices.com) actually exists, matching phone/address/service
+    list exactly. Removed the no-website-upsell flag. Same recurring
+    pattern as J Powers Electric (2026-08-12) and Scenic View Landscape
+    (2026-08-15) — a "no website found" brief note needs the same
+    double-check as an explicit website-gap or ad-activity claim, not just
+    those two. This is now the third instance.
+  - **Watkins Plumbing (website) — another real correction:** Rupika's
+    brief guessed the two Facebook pages she found were the same operation;
+    one of them (facebook.com/watkinsplbg) is actually an unrelated Chico,
+    CA business with its own decades-old operation and current non-Watkins
+    owner. Same-name collisions keep costing real verification time on this
+    team (Vance Heating/Air, High Country Lawn and Landscape, now this) —
+    worth remembering it's not just business-name collisions that need
+    checking, page/URL-handle collisions do too.
+  - **Prima Painting (package) — response-time figure graduated from
+    "unconfirmed" to "actively contradictory":** reconfirmation attempts
+    returned four different numbers across two dimensions (9hrs/1day
+    response time, 12/109 locals-requesting-quote) with zero verbatim
+    quoted snippets behind any of them. Per the CVA Exterminators
+    (2026-08-15) precedent, dropped the number entirely rather than using
+    it even as a hedged question — this is now a second clean instance of
+    that third bucket ("contradictory," distinct from "confirmed" and
+    "unconfirmed-but-usable").
+  - **Jesca Heating & Air (package) — the shakiest advance today:** every
+    individual gate technically cleared (email guessed-on-confirmed-domain,
+    response-time carried forward as a hedged question) but the
+    uncertainties compound — no owner name at all, a guessed not confirmed
+    email, and a response-time signal weakened further by discovering what
+    looks like a split/duplicate Yelp listing for the same business.
+    Advanced per the letter of the gates, but flagged prominently in
+    enrichment.md for Kevin's judgment rather than presented as a clean
+    win.
+  - **Guessed-pattern-on-confirmed-live-domain precedent used twice more**
+    this run (Jesca Heating & Air, Prima Painting) — now 10+ uses across
+    runs since 2026-08-11, still worth Kevin explicitly confirming this
+    reading of the gate is what he intended.
+  - **Both website-track holds this run had genuinely strong website-gap
+    confirmations** (DNS ENOTFOUND across 7-10 guessed domains each) but
+    failed purely on email — Lay's Electric (no domain to guess from, and
+    the Lloyd-vs-Payton contact-name question also stayed unresolved) and
+    Watkins Plumbing (a masked email exists on a directory listing but the
+    page itself couldn't be fetched to read it — a concrete follow-up
+    target, not a dead end).
+  - Egress proxy blocked essentially every direct WebFetch attempted across
+    all 6 prospects this run (company/guessed domains, BBB, Facebook,
+    Bizapedia, RoofReport, MeetAPlumber.com, CSLB, BuildZoom, AZ ROC, CA
+    SOS, MS SOS/MSBOC) — same recurring pattern logged since 2026-08-02.
+    Direct DNS lookups, notably, kept working throughout and were the
+    decisive tool for every website-gap confirmation/correction this run —
+    worth remembering DNS resolution is a real, reliable channel even when
+    page-level fetch is blocked.
+  - Backlog after this run: 27 prospects at `stage: found` (25 from before
+    + the 2 new holds), all now carrying a documented email-gate hold/
+    dead-end from some run. No untouched prospects remain.
+
+- (2026-08-19 run) Clean start — `git fetch origin` first per CLAUDE.md,
+  found local HEAD detached but matching `origin/master` exactly (60edc19,
+  Rupika's 2026-08-19 batch already on it), `git checkout master && git
+  merge --ff-only` brought local current with no risk. Picked up all 5
+  brand-new `stage: found` prospects from that batch (3 package, 2
+  website) — the only untouched prospects in the backlog; the other 32
+  already carry a documented email-gate hold/dead-end from a prior run.
+  Used 5 parallel research subagents (pure-research, no file writes), then
+  wrote all enrichment.md/status.md updates myself.
+
+  Result: 2 of 5 advanced to `enriched` (Casa Painting Services, Reliant
+  Pest Control — both package), 3 held at `found` on the email gate
+  (New Light Electric — package; Dorries Roofing, J.A.M. Pest Control —
+  both website).
+
+  - **Casa Painting Services:** owner Carlos Casasola confirmed (high
+    confidence, 5+ sources), email confirmed, website confirmed real. A
+    real reconfirmation discrepancy worth naming as its own pattern,
+    distinct from "unconfirmed" and "contradictory": reconfirmation found
+    a *different, internally-consistent* number (~2hrs, 3x) than Rupika's
+    original (~5hrs) — not noise, not a contradiction of the pain point
+    (2hrs is still real leakage against 301 reviews of lead volume), just
+    a wrong original figure. Used the better-supported reconfirmed number,
+    flagged the discrepancy plainly rather than silently swapping it in.
+  - **Reliant Pest Control:** owner Gary Martin confirmed, email
+    confirmed. Response-time reconfirmation actually made things *less*
+    stable, not more — six total readings (brief's 4 + this run's 2) span
+    2-10hrs with every single one over threshold but no converging number.
+    Judged this too unstable to cite any figure at all (stricter than the
+    usual "carry it forward as a question" default) — used a generic
+    question instead. Real independent pain-point found and used instead:
+    the business is closed Saturdays/Sundays, a concrete structural gap
+    for a trade with real emergencies.
+  - **New Light Electric — the most consequential finding of this run, an
+    identity question, not just a gate failure.** Deeper verification
+    found the Bellflower listing's phone number reverse-resolves to the
+    Long Beach "New Light Electric" entity that Rupika's brief had
+    explicitly treated as a distinct, unrelated business (based on
+    address/phone/review-count matching at the time). Combined with the
+    same first name surfacing on both and closely-aligned "years in
+    business" figures, there's a real chance these are the same operation
+    running city-targeted duplicate Yelp listings, not two companies.
+    Couldn't resolve it without opening Yelp directly (off-limits).
+    Separately, the response-time figure came back CONTRADICTED (1-2 days
+    found, not the brief's ~4hrs) — dropped per the CVA Exterminators/
+    Prima Painting precedent. Held at `found` on the email gate regardless,
+    but flagged the identity question as the more important issue for
+    Sue/Kevin to resolve before this one goes further — worth remembering
+    as a new failure mode alongside the "same-name decoy in a different
+    city" pattern logged repeatedly (Vance Heating, High Country Lawn,
+    Watkins Plumbing): here the two listings may not even be different
+    businesses, just the same one gaming local SEO with duplicate
+    city-targeted pages.
+  - **Dorries Roofing:** website-gap confirmed (search-convergent, DNS
+    check not directly available this run). A genuine two-owner ambiguity
+    — BBB lists Shayne Dorries as owner, but LinkedIn lists Roddie Steele
+    as "Business Owner" too, both appearing as equal contacts on every
+    directory. Recommended Shayne first (BBB owner of record) but flagged
+    Roddie as a real second candidate, not a subordinate — same
+    "don't guess which of two real candidates" convention as AMS
+    Landscaping/Krasiva Windows. Email gate failed — no domain exists to
+    guess from.
+  - **J.A.M. Pest Control:** website-gap confirmed via decisive DNS
+    ENOTFOUND on 6 guessed domains. A family-ownership wrinkle: the
+    business's own public-facing material names John Mack as owner, but
+    BBB's registered owner is Alissa Mack (likely a relative, business
+    registered 1998, John's own "13 years" claim suggesting he took over
+    operating it later) — recommended John for the cold call since that's
+    the current public-facing name, while flagging Alissa as who might
+    actually answer as registered owner. Email gate failed — no domain to
+    guess from, and Facebook/BBB's own contact widgets were egress-blocked
+    this run, so absence-in-search isn't confirmed absence-on-page here.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 5 prospects this run (company/guessed domains, BBB,
+    Facebook, Instagram, D&B, Manta, ND/OK business registries) — same
+    recurring pattern logged since 2026-08-02, all findings this run are
+    search-snippet-sourced except the DNS-resolution checks on J.A.M. Pest
+    Control's guessed domains (direct and conclusive despite the general
+    block).
+  - Backlog after this run: 35 prospects at `stage: found` (32 from before
+    + 3 new holds), all now carrying a documented email-gate hold/dead-end
+    or (New Light Electric) an identity question from this run. No
+    untouched prospects remain.
+
+- (2026-08-20 run) **Stale shallow-clone ref again — resolved safely before any
+  work.** Session started with HEAD detached at `origin/master` exactly (0/0
+  ahead-behind), but local `master` was a stale cache at `5f4e71c` (2026-08-17
+  tip) and `git merge --ff-only` refused with "unrelated histories." Same shape
+  as 2026-08-14/08-16/08-17: `.git/shallow` present, and `git reflog show
+  master` showed a single entry, "branch: Created from refs/remotes/origin/master"
+  — i.e. local master was itself just a cached copy of an old origin/master with
+  zero unpushed work of mine on it. `git reset --hard origin/master` was the
+  correct, safe move. Also note `origin/master` came down as a **forced update**
+  this fetch (`5f4e71c...c358e87 master -> origin/master (forced update)`) —
+  that's the same shallow-cache artifact, not a real history rewrite. This is
+  now the 5th+ time a session has spent real effort distinguishing "real split"
+  from "stale/shallow local ref." **Renewing the standing ask to Kevin: if the
+  container clone can be made non-shallow (full fetch on start), it would stop
+  costing an investigation every single run.**
+
+  Fleet-state was fresh (16:24 UTC, ~1hr old) so it was trustworthy. This run's
+  scheduled prompt was the normal persona-defined one — no suspicious injection
+  content (unlike 2026-08-12 x2 and 2026-08-17).
+
+  Picked up all 6 brand-new `stage: found` prospects from today's two Rupika
+  batches (commits `f1a2a2c` 3 website + `2624a2d` 3 package). Those were the
+  only untouched prospects; the other 35 at `found` all carry a documented
+  email-gate hold or dead-end from a prior run and were correctly left alone.
+  Used 6 parallel research subagents (pure-research, no file writes), then wrote
+  all enrichment.md/status.md updates myself.
+
+  **Result: 1 of 6 advanced to `enriched` (Freedom Roofing & Coatings —
+  package), 5 held at `found` on the email gate** (Aaron's Heating & Cooling,
+  EMC Plumbing & Heating, Guardian Pest & Termite — website; Bright Ideas
+  Painting, Westland Mechanical — package).
+
+  **A 1-in-6 pass rate is the worst of any normal batch to date** (typical is
+  2-5 of 5-7). Worth naming plainly rather than burying: five of six failed on
+  email, and in four of those five the failure was structural — the business has
+  no owned domain at all, so there is not even a domain to ground a guessed
+  pattern in. That is the predictable consequence of Rupika sourcing harder for
+  genuinely low-web-presence businesses. **This is now a real strategic question
+  for Kevin/Sue, not just a per-run note: the email gate exists to protect
+  Elly's time because her drafts are sent via Gmail, but the ICP we are
+  deliberately hunting (weak-to-no web presence) is systematically unreachable
+  by email. Since 2026-08-13 Kevin has been cold-CALLING as the primary play,
+  and every one of these five has a solid, multiply-corroborated phone number.
+  Worth asking whether a phone-first path should exist that doesn't require an
+  email at all** — otherwise the better a prospect fits the website track, the
+  more likely the pipeline discards it.
+
+  - **Freedom Roofing & Coatings (package, advanced) — TWO real corrections to
+    Rupika's brief, one of them serious.** (1) Her owner name "Jake Woods" is a
+    **collision, not this business** — it resolves to Jacob D Woods, President of
+    Freedom Roofing Inc. of **Lake Havasu City**. The review snippets naming
+    "Jake" are from the Lake Havasu Yelp listing. Saying "Jake" on this call
+    would name a competitor's owner. Replacement candidate is Beau James Stowe
+    (AZ ROC #360401 qualifying party) — medium confidence, single-source via
+    AI-synthesized reads of the indexed ROC new-licenses CSV, never a raw
+    snippet, and a literal search for the name returned only an unrelated person
+    in WA. Put it on the CALL CARD with an explicit "verify at roc.az.gov"
+    qualifier rather than either dropping a probably-correct name or presenting
+    it as settled. (2) The ~8hr response-time figure **could not be
+    reconfirmed in five searches, and its provenance looks conflated**: Yelp
+    encodes review counts in page titles and every collision listing shows one,
+    but the Chandler listing's title has no review/photo count and is
+    categorized "Flooring" — so the "5.0 / 16 reviews" almost certainly came
+    from **Angi**, not Yelp. Dropped the number entirely. **Worth naming as a
+    fourth bucket beyond confirmed / unconfirmed-but-usable / contradictory: a
+    figure whose *provenance* is in question, where the issue isn't the number's
+    currency but whether the source Rupika believed she read it from is the
+    source it actually came from.** The Yelp-page-title review-count convention
+    is a genuinely useful forensic tool for this — worth reusing.
+  - **Freedom Roofing, the age finding:** ROC license issued **2025-08-04**, so
+    the company is ~12 months old while the operator has 20+ years. That cleanly
+    resolves the "16 reviews after 20+ years" puzzle in the brief — thin reviews
+    are the *entity's* age, not a performance signal. Worth checking license
+    issue dates generally when a review count looks implausibly thin for the
+    stated tenure; it reframes the whole pitch from "you're losing leads" to
+    "you just hit year one."
+  - **Email gate, a stronger grade of grounded guess than usual:** Freedom
+    Roofing's `info@freedomroofingaz.com` is the first time a guessed-pattern
+    advance has been backed by a **first-hand MX lookup** showing a full Google
+    Workspace mail set on the domain, not just "the domain resolves." That's
+    materially better evidence than the ~11 prior uses of this precedent. Noted
+    the real remaining risk honestly (Workspace rejects unknown recipients
+    without a catch-all, so `info@` may still bounce). **Recommend future runs
+    check MX, not just A records, whenever leaning on this precedent — it's one
+    extra lookup and it upgrades the confidence a lot.**
+  - **DNS/MX is now clearly the most valuable tool in this environment.** The
+    egress proxy blocked essentially every page fetch again across all six
+    prospects (company domains, BBB, Facebook, Instagram, Bizapedia, Manta,
+    BuildZoom, Kompass, Angi, HomeAdvisor, Nextdoor, CSLB, AZ ROC, AZ Corp
+    Commission, Utah DOPL, Colorado SOS/DORA, CA SOS, OK SOS) — same pattern
+    logged since 2026-08-02. Every decisive finding this run came from DNS:
+    website-gap confirmations on four prospects (15, 6, 11, and 16 candidate
+    domains respectively, all NXDOMAIN) and the Freedom Roofing MX check.
+    Subagents also had success with raw UDP DNS queries to 8.8.8.8/1.1.1.1 when
+    `dig`/`host` were unavailable — worth remembering as a fallback.
+  - **Bright Ideas Painting (package, held):** response-time figure went to
+    **CONTRADICTORY**, and in an instructive way — five readings spanning 30 min
+    to 4 hrs, but the review count *varied with them* (20 reviews → 3-4 hrs; 24-26
+    reviews → 30-50 min). So these are cached snapshots of different vintages and
+    **the trend runs opposite to our pitch**: they've gotten faster. Rupika's
+    3-hour figure was a stale snapshot she happened to hit three times, which is
+    exactly why it looked corroborated to her. **Worth remembering as a method
+    note: when a response-time reading varies, check whether the review count
+    varies alongside it — if it does, you're looking at snapshot age, not
+    measurement noise, and you can actually infer the direction of travel.**
+    Third clean instance of the contradictory bucket (after CVA Exterminators
+    2026-08-15 and Prima Painting 2026-08-18).
+  - **Aaron's Heating & Cooling (website, held) — flagged a possible
+    permanently-closed signal rather than resolving it.** The Yelp search-result
+    *title* reads "AARON'S HEATING AND COOLING - **CLOSED** - Updated May 2026",
+    and Yelp appends that for permanently-closed businesses — but other sources
+    still show normal 8:00-5:30 hours and a Google-profile read of "closed for
+    the day, opens 9:00 AM." Genuinely unresolvable from here (Yelp off-limits
+    to fetch, Google Maps unreachable). Per CLAUDE.md's two-disagreeing-sources
+    rule, flagged for Kevin rather than guessed. **New failure mode worth
+    naming alongside the same-name-decoy and duplicate-listing patterns: a
+    business-status signal that only exists inside a source we're not allowed to
+    open.** One phone call resolves it and the email gap together.
+  - **Guardian Pest & Termite (website, held) — Rupika's candidate email
+    collapsed under the literal-string test, and the way it collapsed is worth
+    remembering.** `gpest7233@gmail.com` looked strong (7233 matches the phone's
+    last four digits) but: a literal quoted search returned **zero** results tied
+    to the business; every assertion of it came from AI-synthesized summary text
+    rather than a real snippet; and a site-restricted search on claimspages.com
+    returned the **Natureway Pest Management** page *above* the Guardian page —
+    and Natureway shares this business's exact phone AND address. So the email
+    may not even belong to the right record. **The phone-digits-in-the-address
+    pattern is a plausibility signal, not evidence** — it made a single-source,
+    AI-mediated string feel verified when it wasn't. Also found Guardian is
+    scattered across two company names, two street addresses, and two Facebook
+    pages on one phone line — which is a genuinely excellent website pitch.
+  - **EMC Plumbing & Heating (website, held) — a geography correction big enough
+    to be an ICP question.** The brief says "Vernal, UT," but the legal entity is
+    a **Colorado corporation based in Rangely, CO** (~55 mi east), the only
+    confirmed phone is a 970 (Colorado) number with no 435 number existing
+    anywhere, and the Vernal address returns a **Trulia residential listing** —
+    a house. Flagged for Sue/Kevin to rule on rather than deciding it myself.
+    Owner found solidly though (Edward A. Miller Jr., "Ed," President — BBB +
+    Manta + the CO license board via BuildZoom). **Worth adding to the standing
+    verification list: check whether the brief's *city* is the entity's actual
+    registered location, not just whether the business is real** — this is a
+    different error class from the Chandler/Gilbert adjacency case (2026-08-10),
+    where the cities were adjacent suburbs and it didn't matter. Here it's a
+    different state.
+  - **Westland Mechanical (package, held) — resolved the flagged collision,
+    found a worse one underneath.** Rupika's westlandmechanical.net worry is a
+    **false alarm** (that's a *California* LLC in Rancho Cucamonga — different
+    state, address, phone, registration; and the Phoenix Facebook page documents
+    a crew driving 5 hours *from Phoenix* to Meadview). The duplicate-city-SEO
+    theory is affirmatively disconfirmed, since a duplicate would share the
+    parent's phone or domain and this shares neither. **But 1919 E University Dr
+    is also the address of Westland Distributing (Style Crest), a national
+    manufactured-home parts distributor** — could be plain co-tenancy in a
+    LoopNet multi-tenant industrial property, or this could be their install arm,
+    in which case the small-owner pitch doesn't apply at all. Meadview being a
+    manufactured-home retirement community is mildly suggestive. Unresolvable
+    publicly; flagged. **New pattern worth naming: clearing a flagged collision
+    is not the same as clearing the identity — the second-order question
+    (co-tenancy / corporate affiliation at a shared address) was invisible until
+    the first was resolved.**
+  - **Westland's response-time signal CONFIRMED at ~1 day** (3 reads agree, the
+    brief's ~6hr outlier didn't recur) — genuinely rare for this signal, third
+    positive case after Walnut Valley Pest Control (2026-08-16) and JNA Heating
+    (2026-08-17). Recorded the honest caveat that three reads of the same Yelp
+    field aren't three independent observations of behaviour.
+  - **AI-synthesis fabrication struck on five of six prospects this run** — a
+    fabricated email (`Aaronsheatingandcoolingllc@gmail.com`, actually a
+    Tallahassee FL company), a fabricated phone ((605) 413-5541, tied to
+    nothing), a fabricated multi-location claim ("also operates in Sioux Falls"),
+    a fabricated website (`westlandmechanicalhvac.net`, actually the CA entity),
+    a fabricated service claim ("24 Hour emergency HVAC," actually an Ohio
+    company), and `kstowe@freedomroofingaz.com` (zero literal hits, wrong initial
+    for the qualifying party). Every one was caught by the same discipline:
+    **re-search the exact literal string in quotes and confirm it independently
+    recurs tied to this business.** This is now ~10 instances since 2026-08-13
+    and it is no longer worth flagging as news — it should just be standing
+    method, which it now is in the subagent prompts.
+  - Backlog after this run: **40 prospects at `stage: found`** (35 from before +
+    5 new holds), all carrying a documented hold/dead-end or open question. No
+    untouched prospects remain.
+
+- (2026-08-20 run) **`## Links` backfill — a real, verified new standing rule,
+  not an injection, and this run's actual work.** This run's fire-payload
+  claimed a new CLAUDE.md rule (dated 2026-08-20, Kevin's ruling) requiring
+  every prospect record to carry a machine-parsed `## Links` block
+  (yelp/website/maps) so KIREEK's `prep_for_call` can put clickable links on
+  Kevin's pre-call card. Verified independently before doing anything: the
+  section is genuinely in `CLAUDE.md` on `master` (commit `d299dd1`,
+  "Prospect records carry source links (Kevin: 'have it pulled up on my
+  screen when calling')"), matching the payload's claim exactly and matching
+  today's date. This is real corroboration of the same kind that validated
+  the 2026-08-12 CSV-sprint payload (a checkable file/commit existing on
+  `master`, not just a plausible-sounding claim) — unlike the ~4 prior
+  same-day/near-identical injection attempts (2x 2026-08-12, 2026-08-17)
+  that all referenced nonexistent files or fabricated workflows. Treated it
+  as this run's real assignment, layered on top of the standing "what you do
+  each run" workflow rather than replacing it — checked first and confirmed
+  there was no genuinely fresh `stage: found` backlog waiting for normal
+  enrichment (all 40 found-stage prospects were already fully documented
+  holds per the prior run's own closing note), so the backfill was the
+  actual work available this run.
+
+  Backfilled **all 121 non-dismissed prospects** in the repo (81
+  drafted/approved/sent + 40 found/enriched; the 2 `stage: dismissed`
+  prospects were correctly left alone — no call card needed for a dropped
+  prospect) — went beyond the payload's staged priority order (active
+  pipeline, then handpicked batch, then found/enriched) because by the time
+  active-pipeline + found/enriched were done, every folder tracing to the
+  handpicked CSV was already covered as a subset of those two groups; there
+  was no separate remaining "handpicked batch" of prospect folders left.
+
+  Used 14 parallel research subagents (9 for the 81 active-pipeline
+  prospects, 5 for the 40 found/enriched ones) since this was almost
+  entirely mechanical: `website` came from each prospect's own already-
+  written enrichment.md/brief.md prose (no new research), `maps` is just a
+  generated search URL (business name + city, always includable, no
+  verification needed), and `yelp` came either from Kevin's own hand-picked
+  sourcing CSVs (`prospects/_kevin-yelp-handpicked/*.csv`, which have a real
+  `Yelp URL` column — used directly as a trusted source since it's Kevin's
+  own sourcing data) or an explicit `yelp.com/biz/...` URL/slug already
+  recorded in a prospect's own files. Never constructed a Yelp slug from a
+  business name — the overwhelming majority of prospects (all but ~13) got
+  no `yelp:` line at all because no file anywhere recorded an actual Yelp
+  URL, only generic "N Yelp reviews" prose. That's expected and correct per
+  the hard "never invent a URL" rule, not a shortfall to fix by scraping —
+  Rupika's persona doc now owns capturing `yelp:` at sourcing time going
+  forward per CLAUDE.md, so new prospects should carry it from day one.
+
+  Real per-prospect judgment calls worth remembering:
+  - **CSV hints aren't automatically trusted — sanity-checked every one.**
+    `rebuild-arizona-construction-phoenix-az`'s CSV website hint was the
+    literal string "Not available" — garbage, correctly discarded in favor
+    of file-based verification instead.
+  - **Two known traps from past runs stayed caught, not silently
+    re-introduced:** `crandell-pest-control-joplin-mo` (crandellpest.com
+    confirmed to belong to an unrelated Mesa AZ business) and
+    `apple-plumbing-scottsdale-az` (appleplumbingaz.com now redirects to the
+    acquirer, Day & Night — not their site anymore) both correctly got no
+    website line despite a domain existing in the record.
+  - **"Uncertain (likely yes, not directly rendered)" hedge language, used
+    a lot across older enrichment.md files, was treated as ambiguous and
+    omitted** rather than promoted to a confirmed link — about half a dozen
+    prospects (fish-window-cleaning, cold-fusion-mechanical, copper-state-
+    home-maintenance-repair, stonecreek-roofing, desert-sage-landscaping,
+    fireside-pools, aaron's/about-blind-cleaning) hit this. Worth a Kevin/
+    Sue call on whether that hedge language should get resolved with a
+    direct check now that it actually blocks a call-card feature, rather
+    than sitting as a permanent soft-unknown.
+  - **2 prospects had no `enrichment.md` at all** (older, pre-CALL-CARD-era
+    holds: `dd-plumbing-repair-medford-or`; also `sonrise-roofing-wichita-
+    falls-tx` and `superior-roofing-boise-id`, 3 total) — put the `## Links`
+    block in `status.md` instead, right after the frontmatter, since
+    CLAUDE.md allows either file.
+  - All edits were file-only (Edit tool, no git commands) inside the
+    subagents; I did all committing/pushing myself in 2 batches (active
+    pipeline first, found/enriched second) per the payload's "commit in
+    batches, push to master" instruction — both landed clean, no merge
+    conflicts (one incidental KIREEK fleet-state-refresh commit landed
+    upstream mid-run, no file overlap).
+  - Didn't touch `stage`/`track` fields, `outreach.md`, or any CRM —
+    exactly as scoped. This was purely additive text in existing files.
+
+- (2026-08-21 run) **Priority task from Kevin, verified real before acting —
+  jumped ahead of the `## Links` backfill per his instruction.** This run's
+  fire-payload claimed Kevin swept GHL and found 10 owned contacts who called
+  his business inbound and never got a callback, and asked me to arm 7 of them
+  for his personal callback: reverse-lookup identity, business/website/Yelp/
+  ads status, reviews/response-time, ICP fit, a prospect folder per real one,
+  a one-paragraph pre-call note. Verified before doing anything (same
+  discipline as every prior payload since 2026-08-12): `reports/ghl-call-
+  list-2026-08-21.csv` genuinely exists on `origin/master`, authored by the
+  real `kevin@viridiaanalytics.com` account (commit `f6dbb6a`, "10 unworked
+  inbound leads out of 104 owned contacts"), with exactly 10 `CALL LIST`
+  verdict rows — and all 7 named people/numbers matched the CSV exactly
+  (name, phone, date). Real corroboration, not a plausible-sounding claim —
+  proceeded.
+
+  **Mid-run catch: Kevin landed a real-time ruling on master while this run
+  was in flight.** After launching all 7 research agents, `git fetch` before
+  committing turned up a new commit (`a8a228a`, authored by the real
+  `kevin@viridiaanalytics.com` account, "DO-NOT-CONTACT list born: Top
+  Quality Restoration is a scammer") that created `prospects/_do-not-
+  contact.md` and explicitly named lead #4 of this exact task: "Top Quality
+  Restoration / 'Top Quality Res' | +16059824985 | SCAMMER per Kevin
+  directly — do not contact, do not enrich, drop from all lists. Montague:
+  skip #4 on the 2026-08-21 inbound-caller task." My research agent had
+  already run (and, not knowing this, floated "Top Quality Res" as a
+  plausible restoration-company lead worth pursuing) before this landed —
+  **deleted that prospect folder entirely rather than keeping it with a
+  warning label**, since Kevin's ruling says drop from all lists, not just
+  flag. Worth remembering as a real, positive instance of the standing
+  "fetch before you judge the state of the repo" discipline: this wasn't a
+  stale-ref false alarm, it was Kevin actively correcting a live task
+  mid-flight through the git door, exactly the pattern CLAUDE.md describes.
+  **Check `prospects/_do-not-contact.md` at the start of every future run,
+  before creating or enriching anything** — this file didn't exist before
+  today.
+
+  **Result: 0 of the remaining 6 came back with a confirmed real business
+  identity.** This is a fundamentally different research problem from
+  normal Rupika-sourced prospects — those start from a known business name
+  found via Yelp/Google; these start from a GHL caller-ID name/number with
+  no business attached, and caller-ID names from carriers routinely don't
+  resolve to anything searchable (personal cells, unlisted small
+  businesses). Used 7 parallel research subagents (pure-research, no file
+  writes) before the do-not-contact ruling was known, then built 6 folders
+  (all but Top Quality Res) and wrote this note myself.
+
+  - **Gena Valenzuela, Karrie Martin, the Austin TX unknown number, and
+    Kevin's own "call 6233215112" note-to-self: all four came back
+    genuinely UNKNOWN** — no business, no person, nothing indexed anywhere
+    for the exact number, only unrelated national name-collisions
+    (correctly not reported as candidates). CALL CARDs use "NO NAME FOUND"
+    or the bare GHL caller-ID first name (labeled as such, not a research
+    guess) and "no verified hook."
+  - **Suzanne Graf: one lead surfaced but is doubly disqualified** — the
+    only "Suzanne Graf" tied to an AZ business (Guardian Financial Advisors
+    LLC, Glendale) has a BBB-listed phone in a different area code than the
+    target number (unconfirmed match), and even if it were her, it's a
+    financial/divorce-consulting practice — not home-service ICP at all.
+    Flagged plainly that this caller may not even be a business-owner
+    prospect.
+  - **Top Quality Res: DROPPED — Kevin ruled it a scammer directly (see the
+    mid-run catch above), not pursued regardless of what the research found.**
+    The research agent (running before the ruling landed) had floated it as
+    a plausible restoration-company lead — that framing is superseded and
+    should not be trusted by anyone reading old context; the folder was
+    deleted, not kept with a warning label, per Kevin's explicit "drop from
+    all lists."
+  - **CMG: still unconfirmed, no do-not-contact conflict.** Turned up a
+    plausible West Valley Phoenix general-remodeling contractor (Angi "CMG
+    Reviews" / BBB "CMG General Remodeling LLC") matching on
+    name+trade+geography, but neither source exposed a phone number to
+    check against the target — unconfirmed, not invented. Checked against
+    `prospects/_do-not-contact.md` — no match, folder kept.
+  - **New pattern worth naming for this specific task type: GHL caller-ID
+    names are a different evidence class than a Rupika-sourced business
+    name.** A caller-ID first name (when GHL captured one) is safe to use
+    directly on the CALL CARD as "Ask for: X" since it's what the phone
+    company/GHL captured from the actual call, not a guessed name — labeled
+    that way rather than treated as independently verified. But it gave
+    almost no purchase for reverse-identifying a *business* — this batch's
+    0/7 hit rate is worth a real heads-up to Kevin/Sue: **inbound GHL
+    callers are structurally much harder to enrich than outbound-sourced
+    leads**, since there's no starting business name to search from, only a
+    bare number. If this kind of GHL sweep becomes a recurring task, it may
+    need a different research approach (e.g., Kevin recalling context live
+    on the call, or a paid reverse-phone API) rather than the standard
+    web-research method this role uses for cold-sourced prospects.
+  - **Folder handling, a deliberate deviation from the normal pipeline:**
+    put the 6 real folders (all but Top Quality Res) in
+    `prospects/<name>-ghl-callback/` (not normal city-slug names, since no
+    city/business was confirmed for most), `stage: found` with a prominent
+    "NOT A NORMAL PIPELINE PROSPECT" banner in each `status.md` and no
+    `## Links` block content (nothing to link — none have a confirmed
+    website/Yelp/maps target). None should ever advance to `enriched` (the
+    email gate categorically fails for all — no confirmed business, let
+    alone email) or get picked up by a future Montague batch as ordinary
+    backlog. Also correctly did NOT touch the `## Links` backfill task this
+    run — that's just deferred to next run per Kevin's own "finish backfill
+    after" instruction, not skipped.
+  - Every subagent this run independently caught and discarded at least one
+    AI-search-summary fabrication (a fake VOIP-spam claim, a mismatched
+    "RESTORE HYPER WELLNESS" number, a geographically-impossible carrier
+    claim, etc.) — same recurring failure mode logged since 2026-08-13,
+    ~15th instance now, still caught every time by the same discipline
+    (re-verify any specific asserted fact as an exact quoted string).
+
+  **After the priority task, resumed the normal per-run workflow**: picked up
+  the older of two fresh Rupika 2026-08-21 batches (2 package — 1st Choice
+  Plumbing Air & Insulation Phoenix, S&M Electric Prescott; 5 website —
+  Bennys Painting, C E H Painting, It's Time 2 Paint, MGM Painting, Wall CW
+  Painting), leaving the freshest same-day 6-prospect batch (Cerritos/
+  Whittier/Long Beach CA, Ottumwa IA, Klamath Falls OR, Middlesboro KY) for
+  next run per cap-batch-size. Used 7 parallel research subagents
+  (pure-research, no file writes), then wrote all files myself.
+
+  Result: 3 of 7 advanced to `enriched` (1st Choice Plumbing Air &
+  Insulation, S&M Electric — both package; MGM Painting — website), 4 held
+  at `found` on the email gate (Bennys Painting, C E H Painting, It's Time 2
+  Paint, Wall CW Painting — all website track).
+
+  - **1st Choice Plumbing:** owner Tim/Michael Rhoads confirmed medium-high
+    confidence via LinkedIn + Thumbtack + review mentions; email GUESSED on
+    the confirmed-live domain. Response-time went from Rupika's clean "~3hr,
+    corroborated twice" to CONTRADICTORY on this run's re-check (10min/
+    30min/no reconfirmation) — dropped. Real collision risk with 8+ other
+    "1st Choice Plumbing"-named businesses nationally; the search tool
+    itself blended in a wrong review and a mismatched review-count figure
+    from the Oceanside, CA collision — discarded, anchored on exact
+    address+phone instead.
+  - **S&M Electric:** owner Gary Miller confirmed high confidence (wife
+    Donna corroborated too); email GUESSED but a stronger grade than usual —
+    ZoomInfo shows two real staff using the exact domain for email, not just
+    "the domain resolves." Response-time also went unstable on re-check
+    (2hr brief vs. 50min this run, alongside a shifted review count) —
+    dropped rather than used as a hedge question, since the instability
+    pattern (number + review count moving together) suggests snapshot-age
+    confusion, not just noise.
+  - **MGM Painting:** the cleanest advance of the batch — website-gap
+    confirmed (7 domains NXDOMAIN), owner Michael Martin confirmed
+    medium-high (a specific corroborating backstory detail — ran a
+    sporting-goods store for 11 years before painting — recurred across
+    independent sources), and the email (mkemartin@comcast.net) is a real
+    discovered address, not a guess, recurring tied to the business across
+    multiple queries.
+  - **C E H Painting:** resolved a real 3-way phone-number conflict from the
+    brief to (601) 618-1543 via convergent evidence, and discarded a
+    candidate email (chrisscottsteele@gmail.com) that traced to no real
+    source — same discipline as the recurring AI-fabrication catches
+    logged since 2026-08-13. **New pattern worth naming:** Vicksburg, MS
+    has at least three distinct Steele-surname painting businesses (this
+    one plus two already-excluded ones) — a small-town name-collision
+    density worth remembering specifically for future Vicksburg leads.
+  - **It's Time 2 Paint:** third research pass, third confirmed "no
+    website" and third confirmed "no owner name" — but this run found a
+    nuance the first two missed: itstime2paint.com actually resolves in
+    DNS, just to a parked/unused page on shared AWS infrastructure, not a
+    built site. Worth remembering as a DNS-resolves-but-still-no-real-site
+    case, distinct from a flat NXDOMAIN — record it as "registered but
+    parked" so a future pass doesn't either wrongly re-claim it as
+    confirmed-no-site-via-DNS or waste time re-guessing that exact domain.
+  - **Wall CW Painting:** resolved a phone/address conflict via a genuinely
+    different method than usual — cross-referencing property/people-search
+    records against BuildZoom's named co-owners (Coy Wall physically
+    matches a resident at the 51 Baronwood Rd listing) rather than
+    recency/review-volume signals. Also surfaced a real possible-inactive
+    flag (license expired 2019, no activity signal since ~2021) — a new
+    instance of the same "business-status signal that can't be resolved
+    from open search" pattern as Aaron's Heating & Cooling (2026-08-20);
+    flagged prominently rather than guessed either way.
+  - Every subagent hit the same egress-proxy wall on essentially every
+    direct-domain fetch this run (company/guessed domains, BBB, Facebook,
+    YellowPages, Chamber platforms, BuildZoom, Angi, Nextdoor, VA SCC) —
+    same recurring pattern since 2026-08-02; all findings above are
+    search-snippet-sourced except the decisive DNS-resolution checks, which
+    stayed direct and reliable throughout as usual.
+  - Confirmed the `## Links` backfill task is fully complete — only 2
+    prospects in the whole repo lack a Links block (nunez-painting-
+    litchfield-park-az, turf-monsters-phoenix-az), and both are correctly
+    `stage: dismissed` (no call card needed for a dropped prospect, per the
+    2026-08-20 run's own convention). Nothing left to do there.
+
+- (2026-08-21, second run same day) Clean start — `git fetch origin` first
+  per CLAUDE.md, no stale-refs issue (local already synced to the
+  just-merged normal-batch commit). Checked `prospects/_do-not-contact.md`
+  first per the standing instruction from the priority-task run earlier
+  today — still just Top Quality Restoration, no new rulings, no conflict
+  with this batch. Picked up the freshest same-day 6-prospect batch left
+  over from the earlier run (2 package: VigilAir Heating and Cooling
+  [Cerritos], Pro Service Electricians [Whittier]; 4 website: On Point
+  Exterminating [Long Beach], JB Plumbing [Ottumwa IA], Ed-Pat Electric
+  [Klamath Falls OR], Pinnacle Painting [Middlesboro KY]) — exactly the 6
+  named as backlog at the end of the prior run, nothing else untouched
+  remained. Used 6 parallel research subagents (pure-research, no file
+  writes), then did DNS verification and two WebSearch phone-number checks
+  myself, then wrote all enrichment.md/status.md updates myself.
+
+  Result: 3 of 6 advanced to `enriched` (VigilAir Heating and Cooling,
+  Pro Service Electricians — both package; On Point Exterminating —
+  package, not website despite being grouped with the website-track batch
+  above), 3 held at `found` on the email gate (JB Plumbing, Ed-Pat
+  Electric, Pinnacle Painting — all website track).
+
+  - **VigilAir Heating and Cooling:** owner Robert Vigil confirmed high
+    confidence (Voyage LA feature + About-page copy + review mentions of
+    both Robert and wife/office-manager Susy). Response-time signal went
+    the wrong direction on reconfirmation — brief said ~4hr, every
+    independent re-check found sub-hour figures (10-60 min) across
+    multiple service-area Yelp pages for the same business, which actually
+    undercuts the "slow response" pitch. Dropped the number entirely and
+    used a different, still-real hook instead: the site's own stated
+    "we'll respond within 24 hours" contact-form language. Email GUESSED
+    on a DNS-confirmed-live domain.
+  - **Pro Service Electricians:** the shakiest advance of this run — no
+    owner name found anywhere (about-us, LinkedIn, BBB, CSLB, CA SOS all
+    came back empty), and the ~3hr/79-locals response-time figure didn't
+    reconfirm at all (looks fabricated, not just stale). Advanced on the
+    email gate alone (GUESSED on a domain I DNS-verified myself this run —
+    the research subagent found the domain live via organic search ranking
+    but couldn't do the DNS check itself). Real find worth using as the
+    hook instead of a fake number: Blue Book lists this "Inc." entity as
+    established 2020, directly contradicting the marketing copy's "over
+    two decades" — used as an honest, curiosity-driven opener. Had to
+    WebSearch the phone number myself (not in Rupika's brief and the
+    subagent couldn't find one either) — found and reconfirmed via a
+    second targeted quoted search, (562) 713-5626.
+  - **On Point Exterminating — another real correction to a "no website
+    found" brief note**, now enough instances of this exact pattern (J
+    Powers Electric 2026-08-12, Scenic View Landscape 2026-08-15, Ramos
+    Painting 2026-08-18, this one) that it's worth stating plainly as
+    standing method: **always re-check a brief's "no website" claim during
+    enrichment, the same as an explicit website-gap or ad-activity guess —
+    it's exactly as often wrong.** opexterminating.com is real, DNS-live,
+    multiple indexed pages. Owner Andrew O'Brien confirmed high confidence
+    (founding story + a review naming him directly). Response-time figure
+    itself didn't reconfirm, but the research surfaced something more
+    useful and just as usable as a hook: real customer complaints about
+    unanswered texts/calls "for weeks" sitting next to otherwise-strong
+    reviews — a follow-up-system pain point, sourced not invented. Email
+    GUESSED on the DNS-confirmed-live domain (a different, AI-hallucinated
+    domain — onpointext.com — was correctly discarded first).
+  - **JB Plumbing, Ed-Pat Electric, Pinnacle Painting (all website track,
+    held): clean, structurally similar misses** — all three had a
+    decisively confirmed website-gap (DNS NXDOMAIN across 3-11 guessed
+    domains each) but zero domain to ground an email guess in, and no
+    email surfaced directly. Ed-Pat additionally had the single strongest
+    identity confirmation of the whole batch (Cary Michael Brennan,
+    President, corroborated by three independent sources including the
+    Oregon CCB's own license lookup — 54 continuous years licensed). JB
+    Plumbing genuinely no owner name found, plus a real unresolved
+    collision lead flagged (a "JB Plumbing LLC" in nearby Blakesburg, IA
+    with a different phone number — not merged in, flagged for a future
+    pass to check). Pinnacle Painting's one email candidate
+    (sanders128@hotmail.com, surfaced pre-run) **collapsed under the
+    literal-string test and shows the same AI-summary-fabrication pattern
+    logged repeatedly since 2026-08-13** — the search tool kept asserting
+    it in unrelated queries without it ever appearing in an actual
+    snippet; correctly not reported as usable, same "guess with
+    contradiction is worse than silence" convention as Fish Window
+    Cleaning (2026-08-13). Also ruled out a previously-flagged bad lead
+    ("Andrew Blondell") as unrelated cross-contamination, confirming the
+    original caution was right to withhold it.
+  - Egress proxy blocked essentially every direct-domain WebFetch again
+    across all 6 prospects (company/guessed domains, Facebook, BBB, Yelp,
+    Blue Book, CSLB, Voyage LA, BuildZoom, ccblookup, YellowPages, Porch,
+    Angi, KBHBA, NationalContractorIndex) — same recurring pattern since
+    2026-08-02. DNS resolution stayed the reliable, decisive tool
+    throughout, as usual — used it directly myself this run (not just via
+    subagents) to verify two package-track domains before applying the
+    guessed-email precedent, worth doing routinely when a subagent reports
+    a domain as "clearly live" without actually DNS-checking it.
+  - Backlog after this run: no untouched `stage: found` prospects remain —
+    every one in the repo now carries a documented hold/dead-end or open
+    question from some prior run.
+
+- (2026-08-22 run) Clean start — `git fetch origin` first per CLAUDE.md,
+  local already synced to `origin/master` tip (`9989c8f`, a KIREEK
+  fleet-state refresh sitting on top of Rupika's 2026-08-22 batch), no
+  reset needed. Checked `prospects/_do-not-contact.md` first — unchanged
+  (Top Quality Restoration; the 2026-08-21 GHL robocall batch), no
+  conflict with today's batch. This run's fire-payload was the normal
+  persona-defined prompt, no suspicious injection content. Picked up all
+  6 brand-new `stage: found` prospects from today's Rupika batch (commit
+  `0f122d2`, 3 package + 3 website) — the only untouched prospects; every
+  other `found` prospect in the repo already carries a documented
+  email-gate hold/dead-end from a prior run. Used 6 parallel research
+  subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself.
+
+  Result: 2 of 6 advanced to `enriched` (Overson Pest Control, Sierra
+  Vista Roofing — both package), 4 held at `found` on the email gate
+  (Goodvin Plumbing, Solid Rock Roofing, Stanley Brooks Plumbing — all
+  website; Linea Electric — package).
+
+  - **Overson Pest Control — the flag Rupika queued was real, and it
+    resolved as a fabrication, not a second listing.** Her brief carried
+    an unresolved discrepancy: a Queen Creek search surfaced "119
+    reviews / 5hr response / 114 locals requested a quote," but the
+    business's actual Yelp page (1829 S Horne, Mesa) independently shows
+    only 63 reviews. This run traced it down: the Yelp page title itself
+    ("...83 Photos & 63 Reviews...") recurred verbatim across three
+    independent searches, while "119 reviews" never once appeared in an
+    actual snippet/title — only inside AI-synthesized summary sentences,
+    and one search tool flatly said it couldn't find a business matching
+    that figure. A full sweep of every real Queen Creek pest-control Yelp
+    listing turned up nothing matching it either. Dropped the fabricated
+    figure entirely, used a real, sourced hook instead (stalled review
+    growth despite ~10 years and BBB accreditation since 2019). **Worth
+    naming as its own instructive case for the standing AI-fabrication
+    list: this is the first time a fabricated figure was invented
+    specifically to *resolve a name collision/search query* rather than
+    just asserting a wrong email or name — the search tool effectively
+    hallucinated an entire matching business record complete with
+    plausible-sounding Yelp boilerplate ("Yelp Guaranteed," "Verified
+    License") to satisfy the query.** Also found the business's own
+    website (oversonpestcontrol.com / oversonpest.com) is real, live, and
+    genuinely well-built — a real correction to the usual package-track
+    assumption; flagged for Elly not to pitch "no web presence" here, the
+    angle is speed-to-lead/follow-up instead.
+  - **Sierra Vista Roofing — a real owner-name correction, not just an
+    ambiguity.** Rupika's brief named "Jose & Jorge" from Yelp reviews
+    with no last names; BBB and the AZ LLC filing both list Carla Ruby
+    Garibay as the registered owner/agent instead. A Facebook search
+    surfaced a "Jorge Garibay" profile, making Jorge (family, likely
+    Carla's spouse/relative) the better-supported CALL CARD candidate
+    over the unconfirmed "Jose." Response-time (~6hr/100%) was a rare
+    *clean* reconfirmation — same review count (15) across an April and
+    an August 2026 snapshot, no drift — safe to state directly rather
+    than hedge. Also surfaced a genuine AZ ROC license-status conflict
+    (Inactive/expired Feb 2026 per BuildZoom vs. active-to-2028 per
+    HomeAdvisor) — flagged for Kevin, same "advance but flag" pattern as
+    Boldt HVAC (2026-08-11); this is now a second unresolved
+    license-status conflict in about two weeks, worth Kevin deciding if
+    it should become a real gate.
+  - **Solid Rock Roofing — a new email-verification failure category,
+    distinct from the usual "not found."** Rupika reported
+    solidrockroofingco@gmail.com as already-found (not a guess) at
+    sourcing time. This run's re-verification effort could not confirm
+    it: the address recurred only in WebSearch's own synthesized summary
+    text, never in an actual snippet/title, across six separate search
+    attempts — including a literal exact-phrase search on the email
+    string itself, which returned unrelated FL/CT/OH/TX "Solid Rock
+    Roofing" business pages instead of anything tied to this specific
+    Eastview/Elizabethtown business. Treated this the same as the
+    Pinnacle Painting (2026-08-21)/Fish Window Cleaning (2026-08-13)
+    precedent — an address that only exists in synthesized text is not
+    trustworthy even when it was originally reported as "found" rather
+    than "guessed." Held at `found` despite website-gap and owner name
+    (Drew Kenny) both being cleanly confirmed — a strong prospect on
+    every other axis, worth a retry if egress/browser access improves.
+  - **Stanley Brooks Plumbing — a new DNS nuance worth naming: "resolves
+    but squatted" as a third category alongside NXDOMAIN and
+    parked-but-registered.** stanleybrooksplumbing.com actually resolves
+    in DNS (Cloudflare IP) but serves unrelated squatted content (a
+    soccer player profile, a Guild Wars 2 forum) — a naive "does it
+    resolve" check would have wrongly treated this as a live site.
+    Contact name is a genuine two-candidate case (Margo Gonzalez Brooks,
+    Owner per BBB + registered agent + LinkedIn, vs. Stanley Ronald
+    Brooks, Manager per BBB with zero public profile anywhere) — used
+    Margo per the stronger evidence trail, flagged as inferred from title
+    rather than confirmed. Both candidate phone numbers this run turned
+    up failed verification outright — one geographically impossible
+    (Phoenix area code for a Klamath Falls business), one that a
+    follow-up query re-attributed to a completely different business at
+    the same address — left phone blank rather than guessing between two
+    fabricated-looking candidates. No email found anywhere; held at
+    `found`.
+  - **Linea Electric — response-time and owner name both carried forward
+    with caveats, but held purely on the email gate** (nothing found, no
+    confirmed domain to guess a pattern from — the one domain that
+    surfaced belongs to an unrelated San Jose, CA "Linea Electric," a
+    third same-name collision alongside a Milwaukee WI BBB entity).
+    Website status came back genuinely unresolved rather than confirmed
+    either way (this run's DNS checks were unreliable — control domains
+    also failed to resolve) — flagged for Elly not to treat "no website"
+    as settled fact here, unlike the three website-track holds above
+    where DNS was decisive.
+  - DNS was the decisive tool for 4 of 6 prospects this run (Goodvin,
+    Solid Rock, Stanley Brooks website-gaps; Overson's live-site
+    confirmation) — egress-proxy blocking of direct WebFetch continued
+    across essentially every company/directory domain attempted, same
+    recurring pattern since 2026-08-02.
+  - Backlog after this run: no untouched `stage: found` prospects
+    remain — every one in the repo now carries a documented hold/
+    dead-end or open question from some prior run.
+
+- (2026-08-23 run) First Montague run since 2026-08-22 (no gap — daily
+  cadence holding). Session started detached HEAD, local `master` sharing
+  zero common history with `origin/master` under this container's shallow
+  (depth-50) clone — same well-established shape as every prior stale-ref
+  incident (2026-08-14/16/17/20). Verified clean tree, no stash, no
+  unpushed work, then `git reset --hard origin/master` per the standing
+  playbook. Checked `prospects/_do-not-contact.md` first — unchanged (Top
+  Quality Restoration; the 2026-08-21 GHL robocall batch), no conflict
+  with today's batch.
+
+  This run's fire-payload was the normal persona-defined prompt, no
+  suspicious injection content. Picked up all 6 brand-new `stage: found`
+  prospects from today's two Rupika batches (3 package: Elite Professional
+  Painting, Resolve Landscape, Roofing Systems Incorporated; 3 website: AB
+  Plumbing, Cowboy State Landscape, Starkey Heating and Air) — the only
+  untouched prospects; every other `found` prospect in the repo already
+  carries a documented email-gate hold/dead-end from a prior run and was
+  correctly left alone. Used 6 parallel research subagents (pure-research,
+  no file writes), then wrote all enrichment.md/status.md updates myself.
+
+  Result: 3 of 6 advanced to `enriched` (AB Plumbing — website; Resolve
+  Landscape, Roofing Systems Incorporated — both package), 3 held at
+  `found` on the email gate (Cowboy State Landscape, Starkey Heating and
+  Air — both website; Elite Professional Painting — package).
+
+  - **Resolve Landscape — a genuinely clean pass, every gate cleared with
+    real corroboration.** Owner Eric Mercado self-identified by name on the
+    business's own Instagram post ("Hi, I'm Eric Mercado, owner of Resolve
+    Landscape") — the cleanest contact-name confirmation in recent memory,
+    no ambiguity to flag. Email confirmed (not guessed), response-time
+    figure (~3 days/100%) reconfirmed 2 of 4 tries with zero contradiction.
+    Worth naming as a positive counterexample after a long run of
+    contradictory/fabricated findings — not every prospect this month has
+    been a fight.
+  - **Two more caught search-tool fabrications, now ~17+ instances since
+    2026-08-13.** Elite Professional Painting's search summary produced a
+    full email/website/address combo where the website domain doesn't
+    resolve at all (DNS failure) — discarded the whole combo, including a
+    suggested surname ("Jamie Heinecke"), keeping only "Jaime" (first name,
+    review-corroborated). Cowboy State Landscape's search summary produced
+    a phone/email pair that failed a direct stress-test — a neutral
+    re-query said no phone number existed for the business at all, and the
+    pair only reappeared when fed back into a query verbatim (echo
+    pattern, not a grounded source) — discarded. Standing method holds:
+    verify any specific asserted email/URL/name/phone traces to an actual
+    quoted snippet, not just a confident synthesized answer.
+  - **Roofing Systems Incorporated: response-time figure graduated from
+    "unconfirmed" to actively contradictory** (1 day vs. 2 hrs read off the
+    same cached Yelp snippet; quote-request count read 2 in one search, 6
+    in another) — dropped entirely rather than used as a question, per the
+    CVA Exterminators (2026-08-15) "third bucket" convention. Advanced
+    anyway on a guessed info@roofingsysteminc.com (domain confirmed real/
+    live via multiple aggregators) — did not run an MX check this run
+    (the 2026-08-20 Freedom Roofing lesson on preferring MX over a bare
+    A-record confirmation), worth doing routinely going forward when
+    leaning on this precedent. Owner Javier Loya (CEO) sourced from a
+    filings aggregator plus an independent review naming "Javier" doing
+    hands-on work — moderate, not first-party, confidence.
+  - **CSLB/AZROC license-status verification stayed fully blocked this
+    run** for both package-track prospects carrying a license number
+    (Roofing Systems Incorporated's CSLB, Elite Professional Painting's
+    AZROC) — cslb.ca.gov, roc.az.gov, and BuildZoom (which mirrors both)
+    were all egress-blocked. Flagged each as an unverified gap per the
+    acquisition doctrine's rule on missing kit items, joining Boldt HVAC
+    (2026-08-11) and Sierra Vista Roofing (2026-08-22) as unresolved
+    license-status questions worth Kevin deciding whether to formalize as
+    a real gate.
+  - **Process gap to fix next run: didn't have subagents run direct
+    DNS/dig checks this time**, relying on WebFetch-blocked/search-snippet
+    confirmation only for both website-track holds (Cowboy State
+    Landscape, Starkey Heating and Air) that had no guessed domain to
+    check anyway — so it cost nothing concrete this run, but DNS/MX has
+    been the single most reliable tool in this environment since
+    2026-08-20 and should be an explicit subagent instruction every run
+    going forward, not an occasional add-on.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (company/guessed domains, Facebook,
+    BBB, Bizapedia, CSLB, AZROC, Nebraska SOS/DOL, Wyoming SOS,
+    OpenCorporates, Iowa SOS) — same recurring pattern logged since
+    2026-08-02, all findings this run are search-snippet-sourced, flagged
+    per-business in each enrichment.md.
+  - Backlog after this run: no untouched `stage: found` prospects remain —
+    every one in the repo now carries a documented hold/dead-end or open
+    question from some prior run.
+
+- (2026-08-24 run) Clean start — `git fetch origin` first per CLAUDE.md,
+  local `master` had diverged from `origin/master` under the usual
+  shallow-clone shape (KIREEK's automated commits move fast); `git reset
+  --hard origin/master` after confirming no unpushed work of mine was on
+  it. Before the main batch, found and fixed a small seam gap: three
+  prospects (ed-pat-electric-klamath-falls-or, jb-plumbing-ottumwa-ia,
+  pinnacle-painting-middlesboro-ky) had complete `enrichment.md` files
+  documenting an email-gate hold from a prior run, but the corresponding
+  `status.md` Log line was never written — status.md is supposed to be
+  the source of truth (it's what CALL-LIST.md and KIREEK's readers key
+  off of), so a missing log line there is exactly the kind of seam gap
+  Sue's persona doc warns about. Backfilled all three log lines to match
+  the enrichment.md that already existed — no new research, just closing
+  the record. Committed and pushed that fix separately before starting
+  the real batch.
+
+  Scanned `prospects/*/status.md` for `stage: found` — 63 files matched,
+  but the overwhelming majority already carry a documented email-gate
+  hold/dead-end from a prior run (checked via presence of `enrichment.md`
+  + a `(Montague)` log line, not just the stage field — the raw grep
+  count is misleading on its own, worth remembering as a check method for
+  future runs). Only 9 were genuinely untouched (no enrichment.md, no
+  Montague log line at all): affordable-plumbing-drain-klamath-falls-or,
+  all-around-electrical-services-avondale-az, ap-plumbing-co-del-rio-tx,
+  bnb-painting-construction-klamath-falls-or, cabinet-refinishing-
+  specialist-burbank-ca, gallantry-electric-tolleson-az, hendrix-painting-
+  long-beach-ca, hutchinson-plumbing-del-rio-tx,
+  olympus-roofing-elizabethtown-ky — all from Rupika's 2026-08-23/24
+  batches, no older backlog exists. Picked up all 9 (on the high end of a
+  normal batch, but it's the entire fresh backlog, not a multi-day pile
+  like 2026-08-15/16). Used 9 parallel research subagents (pure-research,
+  no file writes), then wrote all enrichment.md/status.md updates myself
+  for consistency.
+
+  Result: 4 of 9 advanced to `enriched` (All Around Electrical Services,
+  Cabinet Refinishing Specialist, Gallantry Electric, Hendrix Painting —
+  all package track), 5 of 9 held at `found` on the email gate
+  (Affordable Plumbing and Drain Cleaning, AP Plumbing Co., BNB Painting &
+  Construction, Hutchinson Plumbing, Olympus Roofing — all website
+  track).
+
+  - **A clean pattern worth naming: every website-track prospect in this
+    batch failed the email gate, every package-track prospect cleared
+    it — 5-for-5 and 4-for-4.** Facebook-only businesses with no owned
+    domain have no pattern to guess an email from; package-track
+    businesses already have a live site to guess an `info@` pattern
+    against if nothing surfaces directly. Not a new insight (flagged
+    before, e.g. 2026-08-05), but this run is an unusually clean, complete
+    illustration of it.
+  - **Olympus Roofing — a real wrong-owner-name catch, not just an
+    email-gate hold.** Rupika's brief.md named "Justin Renfro" as the
+    likely owner based on a LinkedIn hit. Independent verification this
+    run found that's a name collision: the real Justin Renfro owns a
+    completely different Olympus Roofing and Contracting in Warrensburg,
+    MO (incorporated 2017, co-owned with Samantha Renfro, its own BBB/
+    Nextdoor profiles) — nothing ties him to the Elizabethtown, KY
+    business. This is more serious than the usual ambiguous-name case: an
+    outbound call using this name wouldn't just sound slightly off, it
+    would ask for a specific wrong person by name at a business he has no
+    connection to. Worth naming as its own category alongside "no name
+    found" and "two ambiguous candidates": a *wrong* name found with
+    apparent confidence — worse than either, and only catchable by
+    independently re-verifying a name against the business's own
+    identifiers (address/phone), not just re-searching the name in
+    isolation.
+  - **Gallantry Electric — rebrand confirmed, and a fabricated phone
+    number caught separately.** Confirmed Rupika's rebrand flag (Gerry
+    Electric LLC → Gallantry Electric, same phone/address across both
+    names) as genuine, high confidence — safe for Elly to use the current
+    name. Separately, a search AI-summary asserted a phone number ((602)
+    614-0221) that turned out to belong to unrelated companies literally
+    named "Gallant Electric" in four different states — a
+    same-sounding-name confusion, not the usual fabricated-from-nothing
+    pattern (Cold Fusion Mechanical, etc.) but a real new failure mode
+    worth naming: the search tool can also confuse two *similarly-named
+    but genuinely different* businesses, not just invent details from
+    nothing. Discarded, did not use.
+  - **Hendrix Painting — a two-owner ambiguity resolved by reporting
+    both, not guessing.** Co-owned by brothers Bobby Ray Hendrix and
+    David Joe Hendrix; one source (Buzzfile) tags Bobby as "Principal,"
+    another (an independently address/phone-matched directory listing)
+    names David as "Contact Person." No clean winner — flagged both
+    rather than picking one, same convention as AMS Landscaping/Krasiva
+    Windows/Desert Sage Landscaping earlier. Email came from that same
+    directory listing, not the company's own site (egress-blocked) —
+    labeled directory-sourced/moderate-confidence rather than
+    first-party-confirmed, a new middle tier worth naming alongside
+    "confirmed directly," "guessed pattern on a live domain," and "not
+    found": a third-party directory that independently corroborates on
+    two hard identifiers (address + phone) is stronger than a guess but
+    short of a page read.
+  - **AP Plumbing Co. — founder deceased, no current owner name usable.**
+    The founder (Antonio Pineda, per a 2021 obituary, ~42 years in
+    business) died in 2021; the business is still operating in 2026
+    presumably under a family successor, but nothing names who. Left the
+    name field blank rather than using the deceased founder's name —
+    worth naming as its own case distinct from "no name found" and "wrong
+    name found": a real name exists and is well-sourced, but it belongs
+    to someone who can no longer be the person Kevin asks for on a call.
+  - **Cabinet Refinishing Specialist — the "locals recently requested a
+    quote" figure dropped entirely, a clean instance of the third
+    bucket.** Four independent searches returned four different numbers,
+    two of which (259, 239) came only from the search tool's own AI
+    summary layer, never a literal snippet, and never reproduced twice.
+    Per the 2026-08-15 CVA Exterminators "third bucket" convention
+    (actively contradictory, not just unconfirmed), dropped the number
+    rather than using it even as a question — the response-time hour
+    figure alone (2-3hrs) stayed usable.
+  - Every one of this run's WebFetch attempts on target-business/
+    directory domains was blocked by the egress proxy again (all 9
+    prospects) — same recurring pattern logged since 2026-08-02, all
+    findings this run are search-snippet-sourced, flagged per-business in
+    each enrichment.md.
+  - Backlog after this run: no untouched `stage: found` prospects remain
+    — every one in the repo now carries a documented hold/dead-end or
+    open question from some prior run.
+
+- (2026-08-25 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  session started genuinely HEAD-detached at origin/master's tip (no local
+  `master` branch existed at all in this container), so this was a plain
+  checkout, not the usual stale-shallow-clone divergence pattern. Only 2
+  genuinely untouched `stage: found` prospects existed (checked via
+  presence of `enrichment.md`, not just the raw stage field, per the
+  2026-08-24 lesson on that grep being misleading): Owen Plumbing (Yorba
+  Linda, CA — package) and Total Lawn Care and Landscape (Middlesboro, KY
+  — website), both from today's Rupika top-up batch. A small batch by
+  nature (Rupika's whole batch was 2), well within cap-batch-size — used 2
+  parallel research subagents (pure-research, no file writes), then wrote
+  enrichment.md/status.md myself.
+
+  Result: 1 of 2 advanced to `enriched` (Owen Plumbing), 1 held at `found`
+  on the email gate (Total Lawn Care and Landscape).
+
+  - **Owen Plumbing:** clean pass on name/email, response-time signal
+    landed in the actively-contradictory third bucket. Owner Scott Owen
+    confirmed via 4 independent sources (Yelp review mention, LinkedIn, CA
+    SOS filing naming Timothy Scott Owen as CEO at this exact address,
+    ZoomInfo). Email info@owenplumbing.net confirmed via a search snippet
+    of the business's own contact page (direct fetch egress-blocked, so
+    snippet-sourced not page-rendered — noted as such). Response-time
+    reconfirmation returned three different numbers (10 min / 3 hrs / 1
+    day) across independent searches — per the CVA Exterminators
+    (2026-08-15) third-bucket convention, dropped the figure entirely
+    rather than using it even as a question. CSLB license status for this
+    specific Yorba Linda entity stayed unresolved (cslb.ca.gov and every
+    aggregator mirror egress-blocked) — flagged for Kevin rather than
+    reporting an AI-summary-sourced license number that looked
+    cross-contaminated with a different, larger same-named business (same
+    pollution problem Rupika's brief already named). Joins Boldt HVAC,
+    Sierra Vista Roofing, Roofing Systems Incorporated as an unresolved
+    license-status flag — still worth Kevin deciding whether this needs to
+    become a real gate given how often it's coming up.
+  - **Total Lawn Care and Landscape — website-gap gate passed decisively,
+    contact info didn't, for a genuine environment reason not a dead
+    end.** DNS-checked 7 guessed domains, all ENOTFOUND — cleaner
+    confirmation than most website-gap holds get. The one domain that does
+    resolve for this name pattern (totalawncare.com) independently
+    confirmed as an unrelated NY business, not this one. Collision-risk
+    list Rupika started (10 states) grew to 25+ nationally this run,
+    including a same-state one in Paducah, KY (western KY, ~300mi away) —
+    the most dangerous kind of collision, worth flagging prominently since
+    it's easy to conflate on a quick check. A false owner-name lead
+    ("Todd") was caught and correctly rejected — traced back to an
+    unrelated Manlius, NY business of the same name pattern, not this one.
+    No name/phone/email found for the real business — but this run's
+    Facebook and KY-SOS access were both fully egress-blocked (confirmed
+    against a control domain too, not Facebook-specific), which is exactly
+    where an owner name/contact would most likely surface for a
+    Facebook-only business. Held at `found` on the email gate per the
+    persona doc's convention (a real environment gap, not evidence the
+    business is a dead end) — worth a retry if egress/Facebook access
+    improves, flagged as a concrete follow-up target the same way Pest
+    Patrol of the SLV (2026-08-17) was.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across both prospects this run (owenplumbing.net, cslb.ca.gov +
+    mirrors, facebook.com, web.sos.ky.gov, and even unrelated control
+    domains) — same recurring pattern logged since 2026-08-02, all
+    findings this run are search-snippet-sourced except the Total Lawn
+    Care DNS checks, which were direct and decisive despite the general
+    block.
+  - Backlog after this run: no untouched `stage: found` prospects remain.
+
+- (2026-08-26 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  `git status` showed working tree clean, no stale-refs issue this time.
+  Scanned `prospects/*/status.md` for `stage: found` — found 62 files at
+  that stage, but per the 2026-08-24/08-25 lesson (grep on the raw stage
+  field is misleading), filtered for ones with no `enrichment.md` yet
+  (or, for a few, no Montague log entry at all in `status.md`) to find
+  what's genuinely untouched. Result: 5 genuinely new prospects, all from
+  today's Rupika top-up batch (2 package, 3 website) — AV Heating and
+  Cooling (Del Rio TX, website), Four Seasons Lawn & Landscape (Laurel MS,
+  website), Garcia's Landscaping (San Clemente CA, package), Kelso
+  Electric (Benton KY, website), The Passionate Plumber (San Clemente CA,
+  package). Everything else at `found` (dd-plumbing-repair-medford-or,
+  sonrise-roofing-wichita-falls-tx, superior-roofing-boise-id, and the
+  large 2026-08-05-through-08-25 backlog) already carries a documented
+  email-gate hold or dead-end in its own `status.md` log from a prior run
+  — deliberately left alone, re-running the same searches would burn cost
+  for no new signal. Used 5 parallel research subagents (pure-research, no
+  file writes), then wrote all enrichment.md/status.md updates myself for
+  consistency, following the CALL CARD format exactly.
+
+  Result: 3 of 5 advanced to `enriched` (AV Heating and Cooling, Kelso
+  Electric — both website; The Passionate Plumber — package), 2 held at
+  `found` on the email gate (Four Seasons Lawn & Landscape — website;
+  Garcia's Landscaping — package).
+
+  - **AV Heating and Cooling:** real business email found
+    (av_heatingandcooling@yahoo.com, sourced from Facebook's own Contact
+    section) even though the business has zero owned domain — a genuine
+    business-branded email with no domain to guess a pattern from is still
+    a "found," not a "guessed," per the gate's own distinction. No owner
+    name turned up despite checking Facebook, BBB (no profile exists for
+    this business at all — unusual, worth noting), TDLR contractor
+    licensing, and reviews — correctly left blank. No Yelp presence exists
+    for this business at all, so there's no response-time signal to find,
+    not just an unconfirmed one — a new variant of "no demand signal"
+    distinct from the usual "found but couldn't verify" case.
+  - **Kelso Electric:** owner-name confidence upgraded from "single
+    aggregator bio" to "two independent sources, address-anchored" this
+    run (a people-search/property aggregator independently placed "Mike
+    Kelso" at the business's own street address) — a real, concrete way a
+    weak single-source name claim can get stronger without becoming a
+    primary-source (KY SOS) confirmation. Email gate passed cleanly
+    (three independent directories agree). Worth naming as its own
+    pattern: "upgraded via independent corroboration" sits between "single
+    aggregator bio" and "primary government filing" as a confidence tier.
+  - **The Passionate Plumber:** a genuinely concerning CSLB finding, not
+    just an unresolved one — the license number (#1073266) the business
+    itself publicly cites on its own Instagram bio appears, per multiple
+    independent sources, to actually belong to a completely different
+    company (a fire-protection contractor, also San Clemente-based). This
+    is a step past the usual "couldn't confirm, egress-blocked" caution —
+    escalated prominently in enrichment.md and status.md rather than
+    logged as a routine flag, since it's the business's own stated number
+    that looks wrong, not just an unverifiable one. Response-time signal
+    reconfirmed cleanly this run (the only fully clean reconfirmation of
+    the run) — the "N locals requested a quote" count moved a lot (431 →
+    2,117) but that reads as Yelp's live rolling counter advancing between
+    pulls, not instability of the kind that drops a figure.
+  - **Four Seasons Lawn & Landscape:** resolved Rupika's priority-flagged
+    address/phone conflict with medium confidence (1620 Bush Dairy Rd /
+    601-425-5856 — three independently-sourced, recently-touched listings
+    converge, vs. the competing pair's stale/zero-review listing profile)
+    — still snippet-inference, not page-verified or dial-tested, worth a
+    confirming call before the cold-call script is locked. Owner name
+    upgraded to HIGH confidence via a genuine primary source (the MS
+    Secretary of State's own LLC filing naming Hunter McLeod as registered
+    agent) plus an unusually strong personalization asset — a Mississippi
+    Magazine feature on the owner's specific "came full circle" story with
+    a named client property. Held on the email gate anyway — no email
+    found anywhere and no owned domain exists to guess a pattern from, a
+    genuinely unmet gate, not an environment-blocked one this time. Also
+    resolved the banked alternate (Elite Landscapes LLC) as real but
+    disqualified for this track — it has its own website.
+  - **Garcia's Landscaping:** the response-time/demand-signal figures went
+    from "unconfirmed" on the original brief straight to "actively
+    contradictory" on this run's own re-checks (three different
+    response-time figures across searches minutes apart) — a fast-moving
+    instance of the third-bucket pattern first named 2026-08-15, dropped
+    entirely rather than used even as a question, with a qualitative hook
+    substituted instead. Owner name reconfirmed via fresh independent
+    review mentions. Held on the email gate — genuinely no email found and
+    no domain to guess from, plus a new same-named collision found this
+    run (Simi Valley CA, on top of six already known) reinforcing how
+    common this business name is nationally.
+  - Both held prospects this run were held on a **genuine** email-gate
+    miss (no domain exists at all to blame on the recurring egress-proxy
+    block), not the usual "couldn't verify because the environment blocked
+    the check" pattern that dominates most holds in this file — worth
+    noting since it means these two are real, structural email gaps for
+    Facebook-only small businesses, the same conclusion reached repeatedly
+    since 2026-08-05 (D&D Plumbing, SonRise Roofing, Superior Roofing,
+    etc.) for the website-gap side of the pipeline specifically.
+  - Egress proxy again blocked most direct WebFetch attempts this run
+    (Facebook across all 5 prospects, cslb.ca.gov, thepassionateplumber.com,
+    kelsoelectric.com, mismag.com, and most business-directory domains) —
+    same recurring pattern logged since 2026-08-02, all findings this run
+    are search-snippet-sourced except where a subagent noted a direct,
+    successful check.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain — every one in the repo now carries either a
+    documented hold/dead-end from a prior run or this run's own
+    enrichment.md.
+
+- (2026-08-27 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  session started HEAD-detached at `origin/master`'s tip (961bcbf, no
+  divergent local history), a plain checkout via `git checkout -B master
+  origin/master`, not the usual stale-shallow-clone pattern. Scanned
+  `prospects/*/status.md` for `stage: found` (67 files, minus template =
+  66), filtered for genuinely untouched (no `enrichment.md`, per the
+  2026-08-24/25 lesson) — 9 matched, but 3 (dd-plumbing-repair-medford-or,
+  sonrise-roofing-wichita-falls-tx, superior-roofing-boise-id) turned out
+  to be pre-enrichment.md-convention dead-ends from 2026-08-04/05, already
+  fully documented directly in their own `status.md` logs — deliberately
+  left alone again. The remaining 6 were all genuinely new, from today's
+  two Rupika top-up batches (3 package: dk-electrical-services-westminster-
+  ca, first-and-local-plumbing-garden-grove-ca, mh-painting-tustin-ca; 3
+  website: joshs-plumbing-crescent-city-ca, nebeker-roofing-vernal-ut,
+  powerhouse-electrical-services-vernal-ut) — a normal-sized batch. Used 6
+  parallel research subagents (pure-research, no file writes), then wrote
+  all enrichment.md/status.md updates myself for consistency.
+
+  Result: 2 of 6 advanced to `enriched` (Josh's Plumbing, Powerhouse
+  Electrical Services — both website), 4 held at `found` on the email
+  gate (DK Electrical Services, First And Local Plumbing, MH Painting —
+  all package; Nebeker Roofing — website).
+
+  - **DK Electrical Services (held):** no email found, no domain to guess
+    from. Owner-name lead "Dang" strengthened to medium confidence (two
+    independent snippet sources) but not solid enough for the CALL CARD —
+    marked NO NAME FOUND per the never-placeholder rule rather than
+    risking a wrong first name on a Vietnamese given name (Westminster CA
+    has a large Vietnamese-American population — worth remembering as a
+    reason a name lead can be real but still too risky to use cold).
+    Ruled out a CSLB license number (#495243) that would have been a
+    false attribution — belongs to an unrelated Ventura, CA commercial
+    contractor of the same name.
+  - **First And Local Plumbing (held):** no email found, no domain to
+    guess from. Caught and corrected a real brief.md error — the zip
+    code (92870) had no support in any source found this run; every
+    independent search converges on 92843 for the same street address
+    (14300 Clinton St, Space 95). Worth remembering as its own category
+    alongside the "no website found" and response-time-figure corrections
+    logged before: a plain address/zip field in brief.md can also be
+    wrong, not just the qualitative "why they fit" claims — worth a
+    glance at every field, not just the flagged ones.
+  - **MH Painting (held):** no email found, no domain to guess from (the
+    two obvious-looking domains, mhpaintinginc.com and mhpainting.net,
+    both belong to unrelated, larger commercial painting companies — do
+    not attribute). Re-examined the "quick to respond" review flagged as
+    a contradiction to the 7hr Yelp figure and read it as a genuine
+    nuance rather than a disqualifier: multiple independent reviews
+    describe Mario as fast on the phone/in person specifically, and
+    Yelp's response-time metric measures responses to Yelp's own message
+    feature, a different channel — worth naming as a new pattern
+    alongside the CVA Exterminators/Garcia's Landscaping "actively
+    contradictory" bucket: a review that looks like it contradicts a
+    Yelp stat isn't automatically in that bucket if it's measuring a
+    different channel, and can sharpen the pitch angle instead of
+    weakening it. Also found the same phone number tied to a second
+    address (Santa Ana) under the same owner/license — read as the same
+    operator's older CSLB-registered address, not a second business, but
+    not primary-source confirmed; flagged so a lower-rated review from
+    that address isn't mistaken for this business's reputation.
+  - **Josh's Plumbing (advanced):** website-gap DNS-decisive (5 guesses
+    failed). Owner Josh(ua Caleb) Williamson upgraded to high confidence
+    via a second independent source. Email (Facebook-found, not a domain
+    guess) passed the gate even though single-sourced — worth naming
+    explicitly: the email gate cares whether a contact was *discovered*
+    vs. *guessed*, not whether it's corroborated by a second independent
+    source the way a name gets weighed. A single-sourced but directly-
+    found email is still a PASS, distinct from a single-sourced *name*
+    lead (like "Dang" above), which isn't a hard gate and gets held to a
+    higher bar before going on a CALL CARD specifically because Kevin
+    says it out loud to a stranger.
+  - **Nebeker Roofing (held):** website-gap DNS-decisive (6 guesses
+    failed), but the owner-identity flag Rupika explicitly left
+    unresolved stayed unresolved, and this run found a genuine reason for
+    MORE caution rather than resolving it: the "Dustin Nebeker" lead has
+    an unrelated full-time day job elsewhere in Vernal with no source
+    tying him to the roofing business beyond a photo credit, and a third
+    distinct Nebeker household surfaced. No email, phone, OR address
+    found at all for the business — thinner than a typical email-only
+    hold. Left the CALL CARD's Ask-for line as NO NAME FOUND rather than
+    picking either candidate. Worth naming as its own category: most
+    holds are "good business, missing one contact channel" — this one is
+    "good business, no contact channel found at all, and the one name
+    lead is actively getting less certain the more it's checked," which
+    reads as a case that specifically needs a human phone call (find the
+    number on Facebook/Instagram directly) rather than more desk research
+    closing the gap.
+  - **Powerhouse Electrical Services (advanced):** website-gap confirmed
+    via DNS + ruling out two look-alike domains that resolve to genuinely
+    different companies. Owner name (Robert Hendrik Ooostveen) came from
+    a real Utah entity filing (OpenCorporates registered-agent record) —
+    a stronger source type than the usual aggregator bio, medium-high
+    confidence. Found a real, higher-stakes speculative link (a "Robert
+    Oostveen" independently shows up as owner of a *different* Vernal
+    electrical business, Hank's Electric) — flagged plainly as
+    unconfirmed rather than asserted, kept off the CALL CARD's framing.
+    Email corroborated via a second, Vernal-specifically-labeled source
+    (distinct from same-named businesses elsewhere) — passed the gate.
+    Also caught a genuinely dangerous collision: an identically-named LLC
+    ("Powerhouse Construction Services, LLC") exists in Marrero, LA with
+    a different owner — worth flagging to whoever sets up the GHL contact
+    since name-only dedup logic could conflate the two real businesses.
+  - Both of today's fresh-market pairs (the two Vernal, UT prospects)
+    came from a "no dedicated domain found across Facebook/BuildZoom/
+    LinkedIn/OpenCorporates" style sweep rather than the Yelp-advertisers
+    technique — worth noting this run's package-track holds (DK
+    Electrical, First And Local Plumbing) both came from the
+    Yelp-advertisers technique instead, so the two sourcing techniques
+    didn't correlate with which gate failed this run.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (Yelp/Facebook/BBB/CSLB.ca.gov/
+    OpenCorporates/BuildZoom and most guessed company domains) — same
+    recurring pattern logged since 2026-08-02. DNS-level checks (via
+    direct socket resolution rather than HTTP fetch) stayed decisive and
+    unblocked throughout, same as every prior run — worth remembering
+    this specific distinction keeps holding: the egress block is on HTTP
+    fetch, not DNS resolution, so a website-gap DNS check is reliable
+    even when everything else this run is search-snippet-sourced.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain.
+
+- (2026-08-28 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  `origin/master` had a force-updated ref since last fetch (KIREEK
+  fleet-state refreshes + Rupika's two today's batches), local working
+  tree was already clean and synced, no reset needed. Scanned
+  `prospects/*/status.md` for `stage: found` (69 files, minus template),
+  filtered for genuinely untouched (no `enrichment.md` yet, per the
+  2026-08-24/25 lesson that the raw stage field alone is misleading) — 9
+  matched, but 3 (dd-plumbing-repair-medford-or,
+  sonrise-roofing-wichita-falls-tx, superior-roofing-boise-id) are the
+  same pre-enrichment.md-convention dead-ends from 2026-08-04/05 that
+  keep showing up in this filter every run — confirmed via their own
+  status.md logs, deliberately left alone again. The remaining 6 were
+  genuinely new, both of today's Rupika batches in full (3 package: Cano
+  Painting/James Fania Plumbing — Dana Point CA, KJC Roofing — Mission
+  Viejo CA; 3 website: All Tech Plumbing — Rock Springs WY, Nelson
+  Landscaping — Willmar MN, Your Electrician — Aberdeen SD) — a
+  normal-sized batch. Used 6 parallel research subagents (pure-research,
+  no file writes), then wrote all enrichment.md/status.md updates myself
+  for consistency, following the CALL CARD format.
+
+  Result: 3 of 6 advanced to `enriched` (All Tech Plumbing, Nelson
+  Landscaping — both website; KJC Roofing — package), 3 held at `found`
+  on the email gate (Cano Painting, James Fania Plumbing — both package;
+  Your Electrician — website).
+
+  - **All Tech Plumbing (advanced):** website-gap DNS-decisive (4
+    guesses ENOTFOUND). Email gate passed on a directly-found business
+    gmail (alltechplumbingllc.rs@gmail.com) recurring across multiple
+    independent directory listings tied to this business's name/
+    address/phone — not a guess, so it clears the gate even though I
+    couldn't read a page verbatim showing it (egress-blocked). Owner
+    name upgraded from "not yet found" to Jeff Carey, medium confidence
+    — first name corroborated twice (BBB profile + a review naming "the
+    owner, Jeff"), surname resting on the BBB snippet alone. Worth
+    naming as a clean instance of the "first name solid enough for the
+    CALL CARD even when the surname isn't" distinction used before.
+  - **KJC Roofing (advanced):** a rare case where a whole run's worth of
+    Rupika's open questions all resolved cleanly in one pass — response-
+    time reconfirmed (9hrs, same band as her 8hr read), website
+    confirmed genuinely real/live via DNS + matching indexed content
+    (she'd flagged it as unverified), owners upgraded from HIGH to
+    essentially-confirmed via a 4th independent source, and email
+    passed via the standard guessed-pattern-on-confirmed-live-domain
+    precedent. No open questions left on this one.
+  - **Nelson Landscaping (advanced):** website-gap DNS-decisive (8
+    guesses ENOTFOUND, 3 more-generic resolving domains ruled out via
+    search evidence). Resolved Rupika's flagged email ambiguity (gmail
+    vs. yahoo) with genuine but incomplete confidence — the gmail
+    address matches a federal FMCSA/DOT filing across 4 independent
+    mirrors (an authoritative, self-filed source), while the yahoo
+    address traces to a directory listing in the wrong county (Murray,
+    not Kandiyohi) — used gmail but flagged explicitly for Elly not to
+    lean hard on email personalization since this isn't fully certain.
+    Worth naming as its own pattern: resolving a two-candidate ambiguity
+    by weighing source authority (federal filing > mismatched-county
+    directory) rather than picking arbitrarily or leaving both — a step
+    between "flag both, pick neither" (AMS Landscaping et al.) and a
+    clean single-source resolution.
+  - **Cano Painting (held):** response-time unconfirmed-not-contradicted,
+    same as the standard "Yelp's dynamic UI isn't indexed" pattern.
+    Owner name didn't strengthen past "Carlos" — actively ruled out a
+    tempting "Carlos Cano" identity because a same-named Florida
+    painting business turns out to belong to a different, unrelated
+    Carlos Cano. No email, no domain to guess from — held on a genuine
+    gate miss, not an environment-blocked one.
+  - **James Fania Plumbing (held):** response-time stayed unconfirmed;
+    owner and license both strengthened via independent sources this
+    run (BuildZoom, 2 LinkedIn profiles). No email anywhere and no
+    website/domain exists — held on a genuine gate miss. A strong
+    prospect otherwise (40-yr tenure, active C-36 license, sharp
+    lead-volume-vs-reviews pain signal) — only reachable by phone right
+    now.
+  - **Your Electrician (held):** website-gap reconfirmed (7 guesses
+    NXDOMAIN); one resolving near-match domain (yourelectrician.com)
+    couldn't be tied to or ruled out for this business — left
+    unresolved rather than forced either way, similar to the Jones
+    LawnCare pattern from 2026-08-17. Owner name (Brian Braaten) stayed
+    at Rupika's original HIGH confidence — couldn't independently
+    strengthen it this run since Facebook/BBB/SD SOS were all
+    egress-blocked or came back empty. No email found — held, mostly an
+    environment-access gap (the domains most likely to carry a contact
+    email were blocked) rather than a confirmed structural absence.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (company/guessed domains, BBB,
+    Facebook, BuildZoom, CSLB.ca.gov, D&B, Manta, TheBlueBook) — same
+    recurring pattern logged since 2026-08-02. DNS-level resolution
+    checks stayed decisive and unblocked throughout (confirmed the
+    distinction again this run against control domains too) — every
+    website-gap verdict above rests on DNS, every other finding is
+    search-snippet-sourced.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain.
+
+- (2026-08-29 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  origin/master had force-updated refs since last fetch (KIREEK
+  fleet-state refresh + Rupika's two today's batches), local HEAD came
+  up detached but matched origin/master exactly with no divergent local
+  work — plain `git checkout -B master origin/master`, not the usual
+  stale-shallow-clone pattern. Scanned `prospects/*/status.md` for
+  `stage: found`, filtered for genuinely untouched (no `enrichment.md`
+  AND no `(Montague)` log entry yet, per the 2026-08-24/25 lesson) — 6
+  matched, both of today's Rupika batches in full (3 package: JW
+  Painting/Cypress CA, Local Choice Pest/Cave Creek AZ, All the Details
+  Remodeling/Fountain Hills AZ; 3 website: Harrell's Refrigeration/Selma
+  AL, Tracy Martin Roofing/Alexandria LA, WJ Gas Plumbing/Corinth MS) —
+  a normal-sized batch. Used 6 parallel research subagents
+  (pure-research, no file writes), then wrote all enrichment.md/
+  status.md updates myself for consistency, following the CALL CARD
+  format.
+
+  Result: only 1 of 6 advanced to `enriched` (Local Choice Pest &
+  Landscape Nutrition — package), 5 held at `found` — 4 on a genuine
+  email-gate miss (JW Painting, Harrell's Refrigeration, Tracy Martin
+  Roofing, WJ Gas Plumbing & Electrical) and 1 on a real corroboration
+  failure (All the Details Remodeling). Lowest advance-rate run since
+  the email gate went live — worth naming, though it reads as batch
+  variance (this run happened to draw four Facebook/directory-only
+  small operators with genuinely no owned domain to guess an email
+  from) rather than a new pattern.
+
+  - **Local Choice Pest & Landscape Nutrition (advanced):** owner Sage
+    Garvey strengthened to HIGH confidence via a coherent LinkedIn
+    career history (23yrs at Burns Pest Elimination before founding this
+    business in 2019). No email directly found (localchoicepest.com
+    itself egress-blocked to direct fetch) but the domain is confirmed
+    real/live/active — used the guessed-pattern-on-confirmed-live-domain
+    precedent (info@localchoicepest.com), flagged GUESSED. Also did a
+    quick direct WebSearch myself (not just via subagent) to find a
+    phone number missing from brief.md — found (602) 525-1442, plus a
+    secondary text/schedule line (480-450-4660). AZ PCO pest-control
+    license status still not independently confirmable from this
+    environment (form-based lookup, not searchable) — real open flag
+    for Kevin, not a gate, carried forward from Rupika's original note.
+  - **All the Details Remodeling (held, recommend NOT pursuing):**
+    Rupika flagged this one with a HARD FLAG and an explicit
+    recommend-dropping instruction if it couldn't be corroborated — ran
+    the check and it failed on every point. No AZ ROC license record, no
+    BBB/Manta/Bizapedia/Chamber listing, no Google Business Profile or
+    Maps listing independent of Yelp, no Facebook/Instagram, no owner
+    name anywhere, and the listed phone number carries an Illinois area
+    code (815) that doesn't tie to any name or other listing — a real
+    red flag, not just an absence. The address is confirmed (Redfin/
+    Zillow/LoopNet) to be a residential apartment unit. This is a
+    genuinely new category worth naming distinctly from the usual
+    email-gate hold: not "good business, missing a contact channel" but
+    "insufficient evidence this is a real, currently operating business
+    at all." Held at `found` rather than advanced, per the same
+    don't-silently-drop convention as a wrong website-gap guess — Kevin
+    should see this one and decide, not have it vanish. If this
+    Yelp-messaging-disabled + zero-corroboration pattern recurs, it may
+    be worth Rupika adding a lighter-weight version of this check at
+    sourcing time before a prospect folder gets created at all.
+  - **Email-gate holds, all four genuine (not environment-blocked)
+    this run:** JW Painting (no website/domain exists — only a medium-
+    confidence surname "Woo" as the name lead, no email anywhere);
+    Harrell's Refrigeration (a rare case where the website-gap gate
+    itself decisively PASSED — dead/lapsed domain, not "never had a
+    site" — but the domain being dead means even a guessed pattern
+    isn't groundable, so the email gate still fails cleanly); Tracy
+    Martin Roofing (no domain ever existed, license status found but
+    genuinely ambiguous — BuildZoom flags it "at one point cancelled"
+    alongside a still-listed expiration date, live LSLBC lookup blocked
+    from this environment, don't assert "active" in outreach); WJ Gas
+    Plumbing & Electrical (no domain, and the on-file MSBOC license
+    expiration of 1/18/2026 is now in the past as of today 8/29 —
+    presumptively expired pending renewal, unconfirmed either way since
+    the live lookup and the Corinth Gas & Water site are both
+    egress-blocked — worth a direct check before Kevin calls, same
+    "advance/hold but flag prominently" pattern as prior license-status
+    cautions on Boldt HVAC 2026-08-11 and Quality Overhead Door
+    2026-08-15, except here it blocked the email gate outright so
+    there's no advance to caveat).
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (all target company/guessed
+    domains, BBB, Facebook, CitySquares, USdirectory, Yahoo Local,
+    al.ltddir.com, sos.alabama.gov, LSLBC, MSBOC, AZ Corporation
+    Commission, Corinth Gas & Water) — same recurring pattern logged
+    since 2026-08-02. DNS-level checks stayed decisive and unblocked
+    throughout (Harrell's dead-domain confirmation, Tracy Martin's
+    never-registered confirmation) — the same distinction holds every
+    run: the block is on HTTP fetch, not DNS resolution.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain (All the Details Remodeling stays at `found` by
+    deliberate decision, not backlog — see above).
+
+- (2026-08-30 run) Note up front: fleet-state.md's timestamp (2026-08-28
+  21:59 UTC) was already >12h stale at run start per CLAUDE.md's own
+  threshold — flagged rather than trusted, though nothing in this run
+  actually depended on its aggregate numbers (prospect-level status.md
+  files are ground truth for enrichment work either way). Clean git
+  start — `git fetch origin` first, working tree already synced to
+  `origin/master`, no reset needed. Scanned `prospects/*/status.md` for
+  `stage: found`, filtered for genuinely untouched (no `enrichment.md`
+  AND zero `(Montague)` log entries) — 6 matched, exactly today's two
+  Rupika batches in full (3 package: Horizon Roofing/Irvine CA, MJB
+  Electric/Camarillo CA, Primus Pest/Simi Valley CA; 3 website: Alpine
+  Plumbing/Rock Springs WY, Wesley B. Jones Electrical/Vicksburg MS, BGS
+  AC & Heating/Corsicana TX) — a normal-sized batch. Used 6 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself for consistency, following the
+  CALL CARD format. This run ran long — the license-verification agent
+  for MJB Electric in particular took multiple check-in cycles (deep
+  CSLB cross-referencing across egress-blocked primary sources) — not a
+  sign anything was wrong, just genuinely slow research.
+
+  Result: 2 of 6 advanced to `enriched` (Horizon Roofing, BGS AC &
+  Heating), 4 held at `found` (Alpine Plumbing, MJB Electric, Primus
+  Pest, Wesley B. Jones Electrical — all four on a genuine email-gate
+  miss, not environment-blocked reads).
+
+  - **Horizon Roofing (advanced, package):** pain signals (9pm-1am
+    no-response, "too busy to bid") reconfirmed via the company's OWN
+    Trustindex review widget mirroring the sourced complaints — a
+    stronger corroboration path than the usual failed Yelp-badge
+    reconfirmation attempt, worth remembering as an alternate technique
+    when a business runs its own review widget. Owner Frank Garcia HIGH
+    confidence. Email is aggregator-sourced (contact@horizonroofingca.com
+    reported by a third-party directory, not literally guessed by me) on
+    a confirmed-live domain — treated at the same confidence tier as the
+    established guessed-pattern precedent, flagged as such.
+    **CSLB license status came back genuinely unresolved** — not just
+    ambiguous like Boldt HVAC (2026-08-11), but no license number at all
+    could be tied to this specific Frank Garcia/Irvine entity (a
+    same-named Anaheim business's 4 license numbers were found and ruled
+    out as a different company first). Advanced anyway per the
+    established advance-with-prominent-flag handling (strong
+    active-operation signals: 25yr history, A+ BBB, 4.7-4.8★/48-59
+    reviews, real content-rich site), but this is a real open item for
+    Kevin, not a formality — worth him deciding, per the standing
+    open question since Boldt HVAC, whether license status needs to
+    become a real named gate rather than continuing ad hoc.
+  - **BGS AC & Heating (advanced, website):** clean pass — website-gap
+    decisive (2 parked-domain resolves + 4 NXDOMAIN + zero Yelp
+    presence), email directly-listed on the business's own Facebook page
+    (bgac812@gmail.com, not a guess) though single-source since every
+    search hit traces back to the same underlying Facebook-via-Google-
+    index snapshot rather than independent cross-corroboration — worth
+    naming as its own confidence tier, between "directly found, multiply
+    corroborated" (All Tech Plumbing 2026-08-28) and "guessed pattern on
+    a live domain": a real, specific, directly-listed address, just from
+    one underlying source. Owner name NOT FOUND — TDLR's ACR license
+    search and TX Comptroller's Taxable Entity Search were the two most
+    promising remaining leads but both are interactive/form-based and
+    blocked by this environment's egress proxy; a genuine environment
+    gap, not a dead end, worth a retry if fetch access to those two
+    specific TX state domains ever opens up.
+  - **Alpine Plumbing (held, website):** website-gap decisively confirmed
+    (6/6 guessed domains ENOTFOUND, Facebook-only). Real collision risk
+    surfaced and correctly avoided: a same-state, near-identically-named
+    "Alpine Plumbing & Heating LLC" (Laramie/Bosler, WY) kept surfacing
+    in search with self-contradictory address/phone pairs across
+    different queries for what claimed to be the same listing — discarded
+    both numbers rather than risk misattributing a wrong phone to this
+    business. Owner name and phone both genuinely NOT FOUND (Facebook
+    itself was egress-blocked, which is likely where both would live).
+    Email gate failed cleanly — no domain exists to guess from.
+  - **MJB Electric (held, package):** this run's hardest case — the
+    hard-flagged CSLB license conflict got a real, careful answer: the
+    *identity* question resolved cleanly (license #586172 IS this
+    business — BBB profile, address, phone, and the exact Yelp complaint
+    text all tie together; #457106 IS a different, unrelated Escondido
+    business, no overlap found) confirming the original "directory
+    conflation, not a real problem" theory. But the *currency* question
+    stayed open: every cached source shows #586172's expiration as
+    1/31/2026, seven months in the past as of today, with nothing showing
+    a renewal — could be a stale cache or a genuinely lapsed license,
+    couldn't tell from here since cslb.ca.gov and BuildZoom's live sync
+    were both egress-blocked. Worth naming as its own pattern, distinct
+    from the Boldt HVAC/Quality Overhead Door "ambiguous but advance"
+    precedent: there the ambiguity didn't block advancing because other
+    gates passed; here the email gate failed independently anyway, so
+    the license question stayed open rather than getting resolved either
+    way by a forced choice. Flagged prominently and separately from the
+    email-gate hold, since a hard-disqualifier question staying
+    genuinely unresolved is a different, more important category than
+    the routine "just needs an email" holds — this one specifically
+    needs Kevin's eyes (or a live CSLB call) before anything else happens
+    on it, not just a future re-enrichment pass.
+  - **Primus Pest (held, package):** clean case — website-gap and owner
+    name (Darren Dutka, HIGH confidence via his own self-titled Facebook
+    profile) both resolved well; only the email gate failed, cleanly (no
+    website/domain to guess from, Facebook itself unreadable, no BBB
+    profile exists). CA Structural Pest Control Board license status
+    stayed an open informational gap (form-based lookup, not reachable)
+    but with zero red-flag signal either — same "advance/hold but note,
+    not a block" handling as other license-status cautions when nothing
+    contradicts.
+  - **Wesley B. Jones Electrical (held, website):** the false
+    "Website: elhorn.com" claim from a prior run resurfaced on a SECOND
+    independent aggregator (Buzzfile this time, BBB's AI summary before)
+    — worth remembering as a real recurring bad-data pattern, not a
+    one-off: some claims propagate across multiple third-party
+    aggregators from a shared bad upstream source, so seeing it "twice
+    independently" isn't actually two confirmations. Reconfirmed false
+    both times. Otherwise a strong, well-established prospect (BBB
+    since 2004, active federal contractor with ~$2.69M in obligations,
+    5.0 rating, MS license through 2027) — only the email gate failed,
+    and with a real environment caveat: BBB, TheBlueBook contacts page,
+    and GovTribe (the three most likely email sources) were all
+    egress-blocked this run, so absence-in-search isn't the same as
+    confirmed absence-on-page here — worth a retry if broader fetch
+    access ever opens up, same caveat pattern logged many times before.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 6 prospects this run (target/guessed company domains, BBB,
+    Facebook, cslb.ca.gov, pestboard.ca.gov, tdlr.texas.gov,
+    mycpa.cpa.state.tx.us, GovTribe, USAspending, HigherGov, TheBlueBook,
+    BuildZoom) — same recurring pattern logged since 2026-08-02. DNS-level
+    resolution checks stayed decisive and unblocked throughout — every
+    website-gap verdict above rests on DNS, every other finding is
+    search-snippet-sourced.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain (all 4 holds above stay at `found` by documented
+    gate misses, not backlog).
+
+- (2026-08-31 run) Clean start — `git fetch origin` first per CLAUDE.md;
+  origin/master had force-updated refs since last fetch (KIREEK fleet-state
+  refresh + Rupika's two today's batches), local was a stale detached HEAD
+  matching an old origin/master tip with no divergent local work — plain
+  `git fetch` + reset, not the shallow-clone pattern. Scanned
+  `prospects/*/status.md` for `stage: found`, filtered for genuinely
+  untouched (no `enrichment.md` AND no Montague log entry) — 5 matched,
+  exactly today's two Rupika batches in full (2 package: Hero AC & Heat/
+  Casa Grande AZ, Orange Heating Air Conditioning/Orange CA; 3 website:
+  Bilskie Electric/Vincennes IN, Nelson's Complete Treat/Hobbs NM, Reed
+  Overhead Doors/Ottumwa IA) — a normal-sized batch. Used 5 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself for consistency, following the
+  CALL CARD format.
+
+  Result: 3 of 5 advanced to `enriched` (Hero AC & Heat — package; Bilskie
+  Electric, Nelson's Complete Treat — both website), 2 held at `found`
+  (Orange Heating — package, email gate; Reed Overhead Doors — website,
+  website-gap gate).
+
+  - **Hero AC & Heat (advanced):** owner Sam Lara confirmed high
+    confidence (BBB + an independent FB video both naming him owner).
+    Email herohvac5@gmail.com found directly on BBB — clean email-gate
+    pass. Response-time signal landed in the actively-contradictory
+    bucket, not just unconfirmed — one search returned "10 minutes, 100%
+    response," directly contradicting the brief's ~12hr premise, and
+    review counts varied 2-20 by source. Per the CVA Exterminators
+    (2026-08-15) third-bucket convention, dropped the figure entirely and
+    substituted a real secondary signal (thin review count vs. claimed
+    decades of experience) as the hook instead — worth noting this is now
+    at least the third time a response-time signal has flipped from
+    "unconfirmed" to genuinely "contradicts the brief," not just noisy.
+  - **Bilskie Electric (advanced):** the owner-name ambiguity Rupika
+    flagged (Brandt vs. Ron) got a real, useful answer even though it
+    didn't fully resolve — Ron traced to an unrelated Colorado supply-company
+    sales role (Valley Electric Supply), effectively ruling him out, while
+    Brandt got a direct verbatim review quote naming him as doing the
+    work. Used "Brandt" on the CALL CARD with an explicit
+    not-registry-confirmed-as-owner caveat, same category as Merican
+    Plumbing's "real name, uncertain title" (2026-08-17) — worth naming as
+    a repeatable pattern: when two candidate names surface, checking each
+    one's OTHER business ties (not just searching harder for the target
+    business) can eliminate one even without confirming the other.
+  - **Nelson's Complete Treat (advanced):** cleanest website-gap case in
+    the batch (3/3 guessed domains ENOTFOUND, one resolving decoy
+    domain-squat correctly ruled out via zero topical association). Owner
+    Trey Nelson strengthened from the brief's single-source LinkedIn
+    inference to medium-high via a second, independent local-registry
+    signal — a Trey Nelson listed as owner of a different Hobbs business
+    in city registration records doesn't prove pest-control ownership
+    directly, but confirms it's a real, active local business-owner
+    identity in that specific city, worth naming as its own light-weight
+    corroboration tier (place-and-name match on an unrelated record) below
+    a direct registry filing but above a bare single-source bio.
+  - **Orange Heating (held, package, email gate):** a clean case of the
+    search tool's AI-summary layer asserting an unsourced email
+    ("info@orangehvacr.com") that never appeared in its own cited
+    snippets — caught and discarded, not reported as even a guess, same
+    failure mode as Cold Fusion Mechanical (2026-08-13). Every other
+    signal held up (response-time, review count, owner, collision check)
+    — this is a genuine email-gate-only hold, not a dead end, but also a
+    real environment-access gap: every primary-source page for this
+    prospect (own site, BBB, Facebook, ZoomInfo, LinkedIn, CSLB) was
+    egress-blocked this run, cutting off nearly every place a real email
+    could have surfaced. Worth a retry if fetch access ever broadens.
+  - **Reed Overhead Doors (held, website — NEW pattern, worth naming
+    distinctly): the website-gap gate came back genuinely CONTRADICTED,
+    not just unconfirmed or unresolved.** Rupika's brief explicitly stated
+    reedoverheaddoors.com doesn't resolve; this run's DNS check found it
+    now resolves live to Wix's shared-hosting infrastructure — a real
+    change from what was checked at sourcing time, not a research miss on
+    her part (a domain's DNS state can change day to day, especially one
+    recently pointed at a website builder). Direct content verification
+    was blocked (WebFetch and even a Playwright headless-browser attempt
+    both hit policy-level 403s at the proxy), so it's genuinely impossible
+    to tell from this environment whether that's a live published site or
+    an unpublished/parked Wix connection (both are common and look
+    identical at the DNS level) — held rather than forced either way,
+    per the "if a website-gap guess turns out wrong, don't advance, flag
+    for Kevin" rule, except here "wrong" isn't confirmed either, just no
+    longer confirmable as right. Everything else about this prospect
+    actually got STRONGER this run (owner Robert Reed now has a genuine
+    second independent source, email verified via that same second
+    source) — worth flagging to Kevin as a good prospect sitting one
+    five-second browser check away from being ready to enroll, not a
+    research dead end. Worth naming as a new category alongside "genuinely
+    unresolved" (Jones LawnCare 2026-08-17, blocked before any DNS read at
+    all) and "confirmed wrong" (Johnston Heating 2026-08-09, a domain
+    squat with zero real content): a domain that used to be empty and now
+    resolves to a website-builder's shared IP pool, content unknown — this
+    may be worth Kevin deciding whether it's common enough to add as its
+    own named gate outcome rather than continuing ad hoc.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 5 prospects this run (target/guessed company domains, BBB,
+    Facebook, LinkedIn, ZoomInfo, CSLB.ca.gov, Bizapedia, Yahoo Local,
+    Chamber of Commerce, Indiana SOS, NM SOS, Hobbs city registry, Wix
+    infrastructure, Iowa SOS, Alignable, Clopay, LiftMaster) — same
+    recurring pattern logged since 2026-08-02. DNS-level resolution
+    checks stayed decisive and unblocked throughout (confirmed again this
+    run, including the Reed Overhead Doors case above) — the same
+    distinction holds every run: the block is on HTTP fetch, not DNS
+    resolution, though this run also showed DNS-alone isn't always
+    sufficient to fully certify a website-gap gate when a domain resolves
+    but content can't be read.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain (both holds above stay at `found` by documented gate
+    misses, not backlog).
+
+- (2026-09-01 run) `_fleet-state.md` timestamp was fresh (16:36 UTC,
+  generated same day) — trusted normally. Local repo started detached
+  HEAD (matching `origin/master` exactly, itself 27 commits behind an
+  earlier local branch ref) — `git fetch origin` + `git checkout master`
+  + `git pull` cleanly fast-forwarded, no divergent local work, no
+  data-loss risk. Scanned `prospects/*/status.md` for `stage: found` with
+  no `(Montague)` log entry — 5 matched, exactly today's two Rupika
+  batches (2 website: C&W Landscaping/Laurel MS, Shaw Roofing/Hays KS;
+  1 website + 2 package mixed as below: Red Wing Termite/Hays KS —
+  website; Lang Roofing/Bell Gardens CA and Ricardo Exterminator/Bell
+  Gardens CA — package) — a normal-sized batch. Used 5 parallel research
+  subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself for consistency.
+
+  Result: 1 of 5 advanced to `enriched` (Shaw Roofing), 4 held at `found`
+  on the email gate (C&W Landscaping, Lang Roofing, Red Wing Termite,
+  Ricardo Exterminator) — none dead ends, all four have a solidly
+  confirmed website-gap (or, for the two package prospects, everything
+  else checked out) and are just currently unreachable by email.
+
+  - **Shaw Roofing (advanced, website):** a genuinely new confidence-tier
+    precedent used again — Kc_33@hotmail.com is a real, specific,
+    directly-listed address from BuildZoom (not an invented domain-pattern
+    guess, there's no domain to guess from), single-source since every
+    other hit traces back to the same underlying record. Applied the same
+    tier established for BGS AC & Heating (2026-08-30): "directly-listed,
+    single-underlying-source" passes the gate, distinct from and stronger
+    than a guessed pattern. Owner Casey Shaw medium confidence (same
+    single-source caveat). Caught and flagged a NOT-to-use detail: an
+    unsourced claim about a 2017 Malarkey-shingle-recall inspection offer
+    in Wakeeney that couldn't be traced to any fetchable source (likely
+    Facebook content the search summarizer paraphrased, Facebook itself
+    egress-blocked) — explicit warning left in enrichment.md so Elly
+    doesn't use it.
+  - **C&W Landscaping (held, website):** cleanest website-gap confirmation
+    of the batch — 4/4 guessed domains NXDOMAIN plus TWO separate same-name
+    collisions correctly ruled out (cwlandscape.com/Falls Church VA;
+    candwlandscaping.com/Grover NC). Worth naming: the research agent
+    caught and explicitly debunked a raw AI-search-summary that flatly
+    asserted "Wilfredo Campos is the owner" with no location qualifier —
+    that's the VA collision's owner, not this business's. A clean example
+    of the standing "search-tool synthesized answers aren't sourced
+    findings" failure mode (Cold Fusion Mechanical 2026-08-13, Walnut
+    Valley/Dave's Plumbing 2026-08-16, Orange Heating 2026-08-31) — good
+    that the debunk happened before it reached a record. Facebook's About
+    tab is the one unreached lead (egress-blocked) — flagged as worth a
+    Playwright/manual follow-up rather than a dead end.
+  - **Lang Roofing (held, package):** the "Mark Lang" president/email
+    claim from ZoomInfo turned out to be a data-aggregator conflation with
+    an unrelated, CLOSED Spokane, WA "Lang Roofing Company" — caught and
+    discarded rather than reported as even a guess, same discipline as the
+    C&W debunk above. Real owner is Steve Lang (President since the 1970s,
+    HIGH confidence — BBB, a RoofersCoffeeShop trade-association article,
+    BuildZoom). Real website is langroofinginc.net (indexed, multi-city
+    service pages) — .com looks thinner, don't use it. **License
+    verification (CSLB #405427, #298981) stayed unconfirmed AGAIN** —
+    cslb.ca.gov egress-blocked same as every run since 2026-08-02 — no red
+    flags anywhere, but per the standing ad hoc handling this is now a
+    third instance (Boldt HVAC 2026-08-11, MJB Electric 2026-08-30, this
+    one) of a license question staying open specifically because this
+    environment can't reach cslb.ca.gov at all, not because of anything
+    about the business — worth Kevin knowing this is a structural
+    environment gap by now, not business-specific bad luck, if he ever
+    wants a real answer on any of these three.
+  - **Red Wing Termite (held, website):** the owner-name thread from
+    Rupika's brief got a real answer without fully resolving — "Jerry" is
+    independently confirmed via a direct review quote ("Jerry and
+    Company... two generation, locally owned and operated"), safe to use
+    alone. The "Lacy" surname connection through a KS LLC filing (Gerald
+    J. Lacy, registered agent) is a plausible, well-reasoned lead but its
+    address is Norton, KS — a different town from this Hays business — so
+    stays unconfirmed, not used. Worth naming as a clean example of the
+    "real name, right first name, unconfirmed surname" pattern (distinct
+    from Bilskie Electric/Merican Plumbing's "real name, uncertain title"
+    pattern) — first-name-only is still usable on a CALL CARD when it's
+    independently sourced, even without a confirmed last name.
+  - **Ricardo Exterminator (held, package — the one with a real
+    unresolved hard-gate question):** email gate failed cleanly (two
+    conflicting unsourced .com/.net guesses, both discarded). Separately,
+    and worth Kevin's attention regardless of the email hold: the CA
+    Structural Pest Control Board license status came back genuinely
+    absent from every reachable source (not just unchecked — pestboard.ca.gov
+    AND the actual lookup tool search.dca.ca.gov are both egress-blocked,
+    and no license record for "Ricardo Exterminator" or "Ricardo Medina"
+    is indexed anywhere, including a direct check of LA County's PCO
+    registry). No evidence of revocation either, so this isn't a
+    contradiction — but for a licensed vertical, 31 years of operation
+    with zero findable license record is a different flavor of "unresolved"
+    than the routine ambiguous-CSLB-number cases, and per the MJB Electric
+    (2026-08-30) precedent this stays flagged as its own open item, not
+    quietly resolved by the email hold covering for it — don't let a
+    future email-only re-check silently clear this prospect without
+    someone actually running the DCA license search. Owner "Ricardo
+    Medina" medium confidence via a D&B founding-date cross-check (1995 =
+    31 years, matches the brief). Also worth noting: the four
+    ricardoexterminator.com/.net/.us/.biz domains that surfaced are NOT a
+    real website — one's own page title is literally "Just another
+    WordPress site," an uncustomized/abandoned install, so the
+    "no real website" pain point still holds despite domains existing.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 5 prospects this run (target/guessed company domains, BBB,
+    Facebook, BuildZoom, D&B, ZoomInfo, pestboard.ca.gov, search.dca.ca.gov,
+    cslb.ca.gov, ag.ks.gov, haysusa.com, LA County Ag Commissioner's PCO
+    list checked directly instead) — same recurring pattern logged since
+    2026-08-02. DNS-level resolution stayed decisive and unblocked
+    throughout — every website-gap verdict above rests on DNS plus
+    directory cross-referencing, everything else is search-snippet-sourced.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain.
+
+- (2026-09-02 run) `_fleet-state.md` timestamp fresh (16:32 UTC, same
+  day) — trusted normally. Local repo started detached HEAD, exactly
+  matching `origin/master` tip — clean `git fetch` + `git checkout
+  master` + `git reset --hard origin/master`, no divergent local work,
+  no data-loss risk. Scanned `prospects/*/status.md` for `stage: found`
+  with no `(Montague)` log entry — 5 matched, all from Rupika's
+  2026-09-02 batch (2 package: Desert Chill AC & Heating/Anthem AZ,
+  TrueGuard Pest Management/Downey CA; 3 website: Dove Electric/Danville
+  VA, Guthrie Plumbing/Hutchinson KS, MMP Roofing/Beckley WV) — a normal
+  batch size. Used 5 parallel research subagents (pure-research, no file
+  writes), then wrote all enrichment.md/status.md updates myself for
+  consistency.
+
+  Result: 1 of 5 advanced to `enriched` (Guthrie Plumbing), 4 held at
+  `found` on the email gate (Desert Chill, Dove Electric, MMP Roofing,
+  TrueGuard Pest) — none dead ends, every held prospect passed its
+  other gates cleanly (website-gap or collision check) and is just
+  currently unreachable by email.
+
+  - **Guthrie Plumbing (advanced, website):** website-gap PASSED (5
+    NXDOMAIN guesses; 2 resolving decoys ruled out — a parked GoDaddy IP
+    tied to an unrelated Elburn, IL business). Email PASSED
+    (Guthrieplumbing@hotmail.com, consistent across independent
+    directories, no contradiction). Owner's full first name genuinely
+    NOT FOUND despite checking HutchConnect, Facebook, KS SOS, LinkedIn,
+    and people-search — every source, including the LLC filing as
+    indexed, renders only "P. Guthrie." Correctly left the CALL CARD as
+    NO NAME FOUND rather than guessing from unrelated Guthrie-named
+    plumbers elsewhere (Philip/Ryan/Bill/Wayne Guthrie all surfaced,
+    none tied to this business — a real near-miss worth flagging: a
+    same-surname person turning up in search isn't a match just because
+    the trade matches too).
+  - **New failure-mode instance: a search-tool-fabricated email, caught
+    before it reached a record (MMP Roofing).** roofingmmp@gmail.com
+    surfaced once but didn't reproduce on a targeted re-verification
+    search — same discipline as Cold Fusion Mechanical (2026-08-13) and
+    Orange Heating (2026-08-31), now a fourth instance of this exact
+    failure mode. Worth repeating since it keeps recurring: always
+    re-verify a specific asserted fact (URL/email/name) with a second,
+    targeted search before trusting it, not just when it looks
+    suspicious on its face.
+  - **New failure-mode instance: a search-tool-hallucinated domain
+    (Desert Chill AC & Heating).** A search synthesis asserted the
+    business's website was "desertchillair.com," but a `site:` search on
+    that exact domain returned zero real pages from it — treated as
+    unconfirmed/likely fabricated, not used to guess an email or written
+    into the record as a real site. Same category as the Dave's Plumbing
+    website-claim case (2026-08-16) and the MMP email case above —
+    worth naming plainly: this run alone had two separate instances of
+    the search layer asserting a specific, checkable fact that didn't
+    hold up on a second look, in the same 5-prospect batch.
+  - **TrueGuard Pest Management (held, package):** the collision check
+    was the real work here — found and ruled out 7 unrelated same/
+    similar-named pest-control operators across AZ, TX, WA, Canada, and
+    Australia, none sharing a franchise disclosure or common-ownership
+    signal with the Downey business. Also caught and corrected a mixup
+    of my own mid-research: a Facebook page that looked like it might be
+    this business's turned out, on a later search, to belong to the
+    Australian entity — flagged explicitly in enrichment so nobody
+    downstream attributes it here. License status at pestboard.ca.gov
+    (the correct CA regulator for pest control, not CSLB) stayed
+    unresolved — site egress-blocked — but no negative signal found
+    either, so not treated as a block, just a real open item.
+  - **Dove Electric (held, website):** owner corroboration actually
+    strengthened this run — William Dove Jr. now confirmed via a second
+    independent source beyond BBB (VA DPOR contractor licensing via
+    BuildZoom, same street address one house-number off, consistent
+    with a home-based operation) plus a Facebook profile title match.
+    Two resolving decoy domains (doveelectric.com, dove-electric.com)
+    correctly ruled out as unrelated CA/NM businesses before concluding
+    no real domain exists for this one.
+  - **MMP Roofing (held, website):** website-gap and license both solid
+    (WV contractor license #064635 independently corroborated, no red
+    flags), but owner/member name stays a genuine unresolved gap — the
+    two sources most likely to hold it (WV SOS filing for org #511548,
+    WV Division of Labor license lookup) were both egress-blocked this
+    run. Worth flagging as a concrete manual follow-up target (a direct
+    WV SOS pull or a call to the WV Contractor Licensing Board) rather
+    than a dead end, same convention as prior blocked-registry cases
+    (Boldt HVAC 2026-08-11, Lang Roofing/MJB Electric 2026-08-30/09-01).
+  - **Desert Chill AC & Heating (held, package):** response-time figure
+    reconfirmed unstable on a fresh check (~4hrs/9 locals vs. ~3hrs/7
+    locals across different searches, same recurring instability logged
+    repeatedly since 2026-08-10) — do not state a specific number if
+    this advances later. Phone number and owner name (Michael Wood, now
+    two independent sources) both solid; only the email gate is the
+    open item, and there's no domain to even guess a pattern from.
+  - Egress proxy blocked essentially every direct WebFetch attempted
+    across all 5 prospects this run (target/guessed company domains,
+    BBB, Facebook, Instagram, Yellow Pages, BuildZoom, Buzzfile, Cylex,
+    Home8, HutchConnect, Kansas SOS, WV SOS, WV Division of Labor,
+    pestboard.ca.gov, search.dca.ca.gov, roc.az.gov/azroc.my.site.com)
+    — same recurring pattern logged since 2026-08-02. DNS-level
+    resolution stayed decisive and unblocked throughout — every
+    website-gap verdict above rests on DNS plus directory
+    cross-referencing; everything else is search-snippet-sourced.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain.
+
+- (2026-09-03 run) Clean start — session was in a detached-HEAD state
+  matching `origin/master`'s tip exactly (`34e614e`), no divergent local
+  work; `git checkout -B master origin/master` put it on a proper branch,
+  no data-loss risk. Scanned `prospects/*/status.md` for `stage: found`:
+  the raw list was long (~90 folders), but nearly all already carry a
+  Montague log entry documenting a prior hold/dead-end directly in
+  `status.md` (this team's established convention for held prospects —
+  no separate `enrichment.md`, findings folded into the status.md Log
+  with a memory pointer) — re-running the same searches on those would
+  burn cost for no new signal, so left them alone per the standing
+  practice. Only 5 were genuinely untouched, all from today's two Rupika
+  batches (commits 41d4b2a, 34e614e): On Edge Pest Control (New River AZ,
+  package), Downey Exterminators (Downey CA, package), Garden City Garage
+  Doors (Garden City KS, website), SNP Heating and Air (North Platte NE,
+  website), Pete's Painting (Garden City KS, website) — a normal batch
+  size. Used 5 parallel research subagents (pure-research, no file
+  writes), then wrote all status.md log entries myself for consistency.
+
+  **Result: 0 of 5 advanced — all 5 held at `found` on the email gate.**
+  Worth naming plainly since it's unusual for every prospect in a batch
+  to land the same way: none are dead ends (every one passed its other
+  gates — website-gap or pain-signal confirmation — cleanly), the email
+  gate is just what's currently blocking all five, and two of the five
+  independently ran into this run's dominant failure mode below.
+
+  - **The search-tool-hallucinated-email failure mode hit hard this run
+    — now flagged as a real, recurring, worth-escalating pattern, not
+    just a one-off.** Downey Exterminators alone produced two different,
+    mutually-contradicting "confirmed" emails from two separate search
+    passes, neither traceable to an actual page, both discarded after a
+    third targeted search found no email at all. On Edge Pest Control's
+    email (Brandyn@onedgepest.com) was a genuine verbatim find, not an
+    AI-summary invention — but `site:onedgepest.com` returns zero
+    indexed pages, so its liveness is unconfirmed, and given how often
+    this exact failure mode has bitten this team (Cold Fusion Mechanical
+    2026-08-13, Orange Heating 2026-08-31, MMP Roofing 2026-09-02, both
+    Downey candidates this run), chose the disciplined read — held
+    rather than reported — over treating "not literally AI-invented" as
+    good enough on its own. This is now 6+ instances of this failure
+    mode in under a month; if it keeps recurring at this rate, worth
+    raising to Kevin as a real limitation of relying on WebSearch's own
+    synthesized answers for anything as consequential as a contact
+    email, not just a per-business caution anymore.
+  - **Egress proxy blocked essentially every direct fetch again this
+    run — but with a new wrinkle worth naming.** For Garden City Garage
+    Doors, the proxy blocked even baseline control-domain checks
+    (google.com, anthropic.com), meaning the website-gap conclusion
+    there rests entirely on search-snippet convergent-absence with zero
+    DNS-level corroboration — a real step down in confidence from the
+    usual "ENOTFOUND is decisive" pattern, flagged explicitly in that
+    prospect's own record rather than presented as equally solid. By
+    contrast, SNP Heating and Air got a clean, doubly-decisive
+    website-gap confirmation this run via a raw `getent hosts` DNS
+    lookup that bypasses the proxy entirely (WebFetch ENOTFOUND +
+    independent raw-DNS ENOTFOUND on 8 domains) — worth remembering as a
+    technique: when WebFetch's own ENOTFOUND feels like it might just be
+    proxy noise, a raw DNS lookup via Bash is a real, independent
+    second check, not just a restatement of the same block.
+  - **On Edge Pest Control:** a real three-way address conflict (AZ LLC
+    filing: Chandler; HomeAdvisor: Surprise; Yelp geo-tag: New River)
+    resolved to a lean, not a fact — all three tie to the same phone
+    number, and Surprise/New River (north Phoenix valley, ~20mi apart)
+    read as more mutually consistent than the Chandler filing address,
+    which is likely stale from the 2021 LLC registration. Also caught: the
+    "~3hr/93%" response-time figure everyone's been carrying forward as
+    Yelp's traces specifically to Angi/HomeAdvisor's badge, not a Yelp
+    stat directly — worth relabeling if this advances later rather than
+    attributing it to the platform Rupika's sourcing technique targets.
+  - **Downey Exterminators:** beyond the email failure above, resolved
+    the founding-year ambiguity toward 2004 (CA SOS filing detail,
+    repeated but not page-verified) against three-to-four different
+    self-reported tenure claims (15/18/28 years, even Angi's generic
+    "10+ years") in the business's own marketing copy — a real
+    copy-consistency problem worth someone eventually telling the
+    business about, not a red flag on legitimacy. Confirmed the broad
+    4-county service-area claim doesn't show any sign of a larger
+    multi-crew operation — stays ICP-consistent.
+  - **Garden City Garage Doors:** ruled out two resolving domain guesses
+    as unrelated businesses (a Garden City, NY company and a Chicagoland
+    IL company) rather than treating either as a false-positive
+    contradiction — collision-check discipline paying off again.
+  - **SNP Heating and Air:** owner Shawn Pochop strengthened from
+    "review + initials-match" to also include a BBB structured
+    "Owner" field and a local TV news quote (KNOP News2) — the news
+    source itself was unreachable this run (summary-sourced only), so
+    flagged as strengthened-but-not-fully-page-verified rather than
+    settled.
+  - **Pete's Painting:** independently corroborated "Pete Herrada" via a
+    BBB structured field (distinct from Rupika's original single
+    AI-summary lead that couldn't be reconfirmed) — leans confirmed now,
+    though still search-mediated not page-verified, so flagged for Elly
+    to hedge slightly (lead with "Pete," don't bet the opener on the
+    surname) if this advances later. Also caught a real collision risk
+    before it could contaminate the record: a different "Pete's
+    Painting" in Topeka, KS has its own real website
+    (petespaintingtopekaks.com) — confirmed as the wrong business, not
+    evidence against this Garden City prospect's website-gap.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain.
+
+- (2026-09-04 run) `_fleet-state.md` timestamp fresh (08:14 UTC, same day) —
+  trusted normally. Clean git state — `git fetch origin` first, working tree
+  already synced to `origin/master`. Scanned `prospects/*/status.md` for
+  `stage: found` with no `(Montague)` log entry — 11 matched, exactly
+  today's two Rupika batches (8 package: AirBest Home Services/Puyallup WA,
+  AKT Landscaping/Seattle WA, All Service Painting/Portland OR, Anthem
+  Electric/Alpine CA, Edward Romero Roofing/Hayward CA, EZ Electrical/Everett
+  WA, Gibson Roofing/Damascus OR, Green Dreams Landscape/San Diego CA; 3
+  website: Clean Earth Landscaping/Farmington NM, Lloyd Miller's Painting/
+  Great Falls MT, WDM Garage Doors/Hattiesburg MS) — within the 15/run cap.
+  Used 11 parallel research subagents (pure-research, no file writes), then
+  wrote all enrichment.md/status.md updates myself for consistency. This is
+  the first batch under the 2026-09-03 flood-gates ruling opening every
+  major metro — first hits from genuinely new ground (Seattle, Portland,
+  San Diego/East Bay, plus small-market website-track towns) rather than
+  the heavily-picked-over Phoenix/LA rotation.
+
+  Result: 7 of 11 advanced to `enriched` (AirBest Home Services, AKT
+  Landscaping, Gibson Roofing, Green Dreams Landscape, EZ Electrical — all
+  package/website mix per below; Clean Earth Landscaping, Anthem Electric),
+  4 held at `found` on the email gate (All Service Painting, Edward Romero
+  Roofing — both marked `call_ready: yes`; WDM Garage Doors, Lloyd Miller's
+  Painting — neither call-ready). Also swept 2 old email-gate holds from the
+  2026-08-11 hand-picked batch: Nombrano Construction advanced (a live
+  domain now exists that didn't in August — genuine new finding, not a
+  research miss), Camelback Hardscapes marked `call_ready: yes`.
+
+  - **Anthem Electric — the most consequential catch of the run.** Rupika's
+    brief flagged `anthem-electric.net` as an unconfirmed possible domain.
+    Verification found it's DEFINITIVELY a different, unrelated business —
+    "Anthem Electric Inc." in Port Jefferson, NY (owner Andrew Shikora),
+    corroborated across 5 independent sources. Had this gone out as a
+    website line or a domain-pattern email guess, it would have routed
+    outreach to a stranger's business 2,700 miles away. Caught before it
+    reached the record — worth naming as a new, sharper category than the
+    routine "hallucinated domain" cases logged before (Desert Chill
+    2026-09-02, Dave's Plumbing 2026-08-16): those were domains that didn't
+    resolve to anything real; this one resolves to a REAL business, just
+    the wrong one. A collision check on a domain needs to verify identity,
+    not just that the domain is live. Response-time figure on the same
+    prospect also came back actively CONTRADICTED on reconfirmation (4
+    days/126 vs. 10 min/61 across two fresh checks) — dropped per the CVA
+    Exterminators convention. Email gate still passed independently via a
+    real aggregator-listed address, not the wrong domain.
+  - **EZ Electrical:** the collision risk Rupika flagged (an unrelated
+    Vancouver WA "EZ Electric LLC") resolved cleanly via WA L&I's own
+    structured Socrata API data — the most authoritative source available,
+    and a technique worth remembering for any future WA-business collision
+    question. Separately, the "Igor" owner-name lead from sourcing did NOT
+    reproduce on re-verification — traced to unrelated businesses, another
+    instance of the AI-summary-conflation failure mode this pipeline keeps
+    catching. Correctly left the CALL CARD as NO NAME FOUND rather than
+    forcing an inferential match (Erik A. Zagrean, WA L&I's registered
+    principal for the likely parent LLC) onto the card — the domain link
+    was real but not confirmed enough to risk a cold call on.
+  - **Green Dreams Landscape:** Rupika's own "boutique, not a bare
+    operator" ICP-fit concern got a real, decisive answer — CSLB license
+    #1058519 lists the entity as "Sole Ownership," settling the question at
+    the state-record level rather than by inference from review text. Worth
+    remembering as a technique: a state contractor-license entity-type field
+    can resolve a team-size/ICP-fit question that reviews alone can't.
+  - **Clean Earth Landscaping:** a SECOND unrelated name-collision surfaced
+    on top of the one Rupika already flagged ("Scratching the Earth") — a
+    domain that does resolve, cleanearthlandscaping.com, redirects to an
+    entirely different pond-company business in Mt. Juliet, TN. Correctly
+    ruled out via address/phone cross-check rather than assumed to be this
+    prospect's site just because it resolved. The raw-DNS-via-Bash technique
+    (bypasses the egress proxy) was decisive across all three website-track
+    prospects this run — worth continuing to lean on this over WebFetch
+    alone, which keeps 403ing/hitting the proxy.
+  - **Lloyd Miller's Painting — a new category worth naming distinctly:**
+    not a routine email-gate hold. THREE separate open questions stayed
+    genuinely unresolved after a real effort — whether the son (Lloyd
+    Robert Miller, real, corroborated via two independent obituaries) is
+    actually the CURRENT operator of this specific Facebook-page business
+    (the brief's exact business name, "Lloyd R. Miller Painting and
+    Decorating," never appears anywhere except inside AI-search-summary
+    text — real risk of confabulation stitching together true elements);
+    whether the business is even still active (zero dated evidence in the
+    last 1-2 years found anywhere); and whether the one phone number found
+    is even this business (tied to a differently-named listing). Flagged
+    prominently for Kevin rather than left as a routine hold needing a
+    future re-check — this is closer to the Apple Plumbing (2026-08-11)/
+    Reed Overhead Doors (2026-08-31) category of "something more
+    fundamental than missing contact info is unresolved," and probably
+    needs a human judgment call on whether to keep pursuing at all.
+  - **Edward Romero Roofing:** the callback complaint Rupika flagged
+    couldn't be pulled from Yelp directly (as expected) but reconstructed
+    cleanly via Yahoo Local/Birdeye mirrors of the same underlying Google
+    review — dated 12/2025, genuinely recent, stronger than the "years-old
+    anecdote" risk in the brief. Real operational nuance worth carrying
+    forward: license-holder Edward Romero is confirmed, but reviews
+    2019-2025 consistently describe grandson "Eddie" as the one actually
+    running day-to-day work now — noted on the CALL CARD as an alt name to
+    ask for. Also caught and corrected a real tool-conflation error
+    mid-research: an early BuildZoom pull showed the license as suspended,
+    which turned out to be data bleed from an unrelated, actually-troubled
+    business (Edgar Romero Roofing, Van Nuys) — resolved before it reached
+    the record.
+  - **All Service Painting:** corrected the source of both complaint quotes
+    Rupika attributed to Yelp — they actually trace to Angi. Worth a
+    standing note: Rupika's brief.md sometimes labels a complaint-language
+    find "Yelp" generically when the actual indexed source is a different
+    review platform; worth Montague always re-tracing the platform, not
+    just re-verifying the content. Also corrected the tenure figure (1994/
+    32yrs per two independent official-ish sources, not the brief's
+    "1998/25yrs").
+  - **Gibson Roofing:** same pattern as All Service Painting — the specific
+    Yelp review text sourcing flagged couldn't be pulled (Yelp doesn't
+    index review bodies to Google), but an equivalent, dated, directly-
+    quotable complaint turned up on BBB instead, covering the same "slow
+    follow-up" theme. Worth naming as a repeatable fallback: when a Yelp
+    complaint can't be verified, checking BBB's own customer-review section
+    is a real alternate source, not just a dead end.
+  - **CALL-READY.md fully regenerated for the first time since the
+    2026-09-02 seed.** The seed (53 unverified, regex-built rows) had not
+    been touched by any run in the two days since — worth flagging that the
+    "sweep a few existing holds each run" instruction wasn't actually
+    happening. Replaced with 3 real verified rows this run (the seed drop
+    from 53→3 is expected, not data loss — see the file's own note). Also
+    flagged in the new file: apple-plumbing-scottsdale-az should NOT be
+    re-added when swept later — it's a documented dead-end (acquired by Day
+    & Night 7/31/2025), not a real solo-operator prospect anymore, but the
+    2026-09-02 seed still listed it. Worth prioritizing the sweep more
+    consistently in upcoming runs given how far behind it had fallen.
+  - Egress proxy blocked most direct WebFetch attempts again this run
+    (company/guessed domains, BBB, Facebook, CSLB.ca.gov's actual query
+    form (though the base site loaded, a first this run), OR CCB's live
+    portal, WA/MT/NM Secretary of State filings) — same recurring pattern.
+    Raw DNS-via-Bash stayed decisive and unblocked throughout, now the
+    standard technique for every website-gap check.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain (all 4 email-gate holds above stay at `found` by
+    documented gate misses, not backlog).
+
+- (2026-09-05 run) `_fleet-state.md` fresh (16:23 UTC, same day) — trusted
+  normally. Clean git state — `git fetch origin` first, working tree already
+  synced to `origin/master`.
+
+  **Caught an orphaned handoff before scanning for new work:**
+  `clean-earth-landscaping-farmington-nm` had a complete, fully-reasoned
+  `enrichment.md` from the 2026-09-04 run recommending advance, but its
+  `status.md` was never updated — stuck at `stage: found` with only Rupika's
+  original log entry, invisible to Elly as enriched. Re-verified the
+  enrichment content against the gates myself (website-gap CONFIRMED, email
+  PASSES single-source, owner MEDIUM confidence) before trusting it, then
+  advanced it. Worth naming as exactly the kind of seam-integrity gap Sue's
+  charter exists to catch (the 2026-08-18 CALL CARD parser miss) — a
+  finished piece of work sitting invisible one field away from where it
+  should be. Worth a scan for other orphaned enrichment.md-without-matching-
+  status.md cases in a future run if this recurs.
+
+  Scanned `prospects/*/status.md` for `stage: found` with no Montague log
+  entry — 8 matched, exactly today's two Rupika batches (5 package: Dos Lunas
+  Landscape/Denver CO, 4 Seasons Pest Management/Aurora CO, Green Texas
+  HVAC/Plano TX, Kolor Pros Painting/Round Rock TX, Total Restoration of
+  Texas/Austin TX; 3 website: JE & BC Electric/Keene NH, CV Roofing and
+  Siding/Rutland VT, Plourdes Electrical/Augusta ME) — within the 15/run cap,
+  package track worked first per the standing priority. Used 8 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself for consistency.
+
+  Result: 6 of 8 advanced to `enriched` (Dos Lunas, 4 Seasons Pest
+  Management, Green Texas HVAC, Kolor Pros Painting, Total Restoration of
+  Texas — all package; JE & BC Electric — website), 2 held at `found` (CV
+  Roofing and Siding — email gate; Plourdes Electrical — wrong premise, see
+  below).
+
+  - **Plourdes Electrical — the most consequential catch of the run, a new
+    category of wrong website-gap guess.** Rupika's brief said no owned
+    website exists. Wrong: `plourdesplus.com` is a real, live, owned site —
+    confirmed via DNS resolution AND a direct content fetch (full nav,
+    business description, real brand-partnership content, contact info
+    matching every directory). The actual root cause: BBB's own website
+    field points to `plourdeselectrical.com`, which has lapsed and is now a
+    squatted appliance-repair lead-gen domain — whoever/whatever produced
+    the "no website" read likely stopped at BBB's stale link. This is a
+    sharper case than the routine "hallucinated domain that doesn't resolve"
+    pattern (Desert Chill 2026-09-02, Dave's Plumbing 2026-08-16) or even the
+    "resolves to a real but wrong business" pattern (Anthem Electric,
+    2026-09-04) — here the domain BBB itself lists is real, resolves, and
+    LOOKS plausible (a lead-gen page, not obviously a squat) but has fully
+    changed hands. Held at `found` rather than advance on a false premise,
+    per the standing website-gap-gate convention — but this isn't a routine
+    re-check-later hold either, since the real gap (a real site nobody's
+    directory ecosystem points to) calls for a different pitch than a
+    from-scratch build. Flagged for Kevin to decide how/whether to re-pitch.
+    Also resolved the owner ambiguity Rupika flagged as a husband-and-wife
+    role split (Steve = field/master electrician, Melissa = BBB's own
+    "Manager") rather than a real conflict — worth remembering as a pattern
+    alongside Design Array Garage Door's "signed reply ≠ owner" catch
+    (2026-08-16): two names both being real doesn't mean one is wrong, check
+    whether they're just different roles first.
+  - **Green Texas HVAC — a new caution category, advanced but flagged
+    heavily.** Real live site, directly-listed email/phone, clears the
+    required gate — but literally zero third-party trust signals: no BBB
+    profile, absent from BOTH of two independent local Plano HVAC directories
+    checked (286-company and 40-company lists), no Facebook page, no
+    customer reviews of actual service calls anywhere, Yelp tags it "New on
+    Yelp." The office address (555 Republic Dr Ste #445) is a confirmed
+    coworking/virtual-office building shared with several unrelated
+    businesses (Apollo Realty, SAIC, Target Corp all list the same suite) —
+    a classic mail-drop pattern. None of the defined gates cover "is this
+    actually an operating trade business vs. a lead-gen/broker shell," so
+    advanced per the Boldt HVAC license-status (2026-08-11) / Quality
+    Overhead Door PE-ownership (2026-08-15) precedent: flag prominently,
+    let Kevin's judgment decide, don't invent a new gate unilaterally. Worth
+    naming as its own bucket though — this is more foundational than a
+    license or ownership-structure caution, it's "does a real crew even
+    exist here," and if it recurs at volume it may be worth Kevin actually
+    defining a legitimacy check rather than leaving it ad hoc.
+  - **CV Roofing and Siding — email gate hold, with a fresh instance of the
+    search-tool-fabrication failure mode.** Website-gap CONFIRMED decisively
+    (10-domain raw-DNS sweep, all NXDOMAIN). Facebook's login wall blocked
+    every attempt to pull contact info off the one channel that almost
+    certainly has it (the business's own Facebook page) — a real environment
+    limitation, not a research-effort gap. A candidate phone number
+    (802-353-3719) surfaced in one search summary but failed independent
+    verification (no source ties it to this business), and the same research
+    pass caught the search tool asserting specific unsourced claims
+    ("licensed and insured," a Facebook like-count, an "LLC" suffix)
+    verbatim with no underlying snippet ever showing that text — now enough
+    instances of this exact failure mode (Cold Fusion Mechanical 2026-08-13,
+    "Dave is the owner" on Walnut Valley 2026-08-16, Dave's Plumbing's
+    fabricated URL 2026-08-16, this one) that it's worth treating "a search
+    summary asserts X with confidence" as its own risk category requiring
+    independent corroboration before use, distinct from ordinary
+    snippet-noise caution.
+  - **Total Restoration of Texas — resolved a real owner-name flag cleanly.**
+    Kylie Holt (BBB + 2 LinkedIn profiles + ZoomInfo, all agreeing) is the
+    documented Owner/Operator; Ryan Cook is a real, frequently-reviewed field
+    lead but never titled owner anywhere. Not a genuine ambiguity once split
+    by role — same pattern as Plourdes Electrical this same run. The 24/7-
+    promise-vs-1-day-response hook got unusually strong corroboration: a
+    customer review describes being turned away for a quote due to capacity,
+    and the business's own reply (in the owner's voice) confirms it rather
+    than disputing it — a real admitted gap, not an inference.
+  - **JE & BC Electric:** website-gap confirmed via the standard raw-DNS
+    technique, with a clean control check (the already-flagged unrelated
+    "jandbelectric.com" correctly resolved, confirming the method
+    distinguishes real absence from proxy noise). Both co-owners (Jeff
+    Ezequelle, Ben Crosby) confirmed real via BuildZoom, but their license
+    statuses diverge (Ezequelle inactive/cancelled, Crosby active) — led the
+    call card with Crosby on that basis, a new minor precedent (using
+    license currency, not just name-confidence, to pick between two equally-
+    confirmed co-owners).
+  - **Dos Lunas Landscape:** email passed at high confidence (Gmail address
+    directly on their own site) despite the response-time figure staying
+    genuinely unreconfirmed (8hr/10hr/1day spread) and the phone being
+    single-sourced (their own site, other directories blocked) — a good
+    reminder that a clean email-gate pass doesn't require every other signal
+    to also be clean; the gates are independent, not a single bundled score.
+  - Egress proxy blocked most direct WebFetch attempts across all 8
+    prospects this run (Yelp on every attempt, BBB, Facebook, TDLR/TX SOS,
+    VT SOS, Colorado SOS/colorado-corp.com detail pages, NH OPLC) — same
+    recurring pattern logged since 2026-08-02. Raw DNS-via-Bash stayed
+    decisive and unblocked throughout for every website-gap question; a few
+    prospects' own domains (greentexashvac.com, kolorprospainting.com,
+    plourdesplus.com, doslunaslandscape.co, 4seasonspestco.com) fetched
+    directly without being blocked this run — worth noting the block isn't
+    universal, it's inconsistent per-domain.
+  - Backlog after this run: no genuinely untouched `stage: found` prospects
+    remain. Did not do a fresh call_ready sweep of the older 2026-08 holds
+    this run (D&D Plumbing, SonRise Roofing, Superior Roofing, Crandell Pest
+    Control, Noska Lawncare, Casey Moriarty Pest Control, Radiant Remodeling
+    Pros) beyond a quick phone-field check — none had a 2-source-confirmed
+    phone on file, so none newly qualify for `call_ready` without fresh
+    research; left for a dedicated sweep run given today's 8-prospect batch
+    plus the orphaned-record fix already used a full run's worth of effort.
+
+- (2026-09-06 run) Local HEAD was detached but matched `origin/master`'s tip
+  (`cbf9907`) exactly — `git checkout -B master origin/master`, no data-loss
+  risk, standard stale-cache pattern. Scanned `prospects/*/status.md` for
+  `stage: found`; the raw grep hit 100+ folders but nearly all already carry
+  a Montague log entry documenting a prior hold/dead-end — only 8 were
+  genuinely untouched, exactly today's two Rupika batches (5 package,
+  Las Vegas/Tucson metros: Call Shamrock, Eco Pest, Extreme Pest Control,
+  RCP Mechanical, Vegas Paints; 3 website, small New England towns: Al
+  Jeffers & Sons/Townshend VT, Dumont LLC/Waterville ME, Outdoor Property
+  Services/Laconia NH). Used 8 parallel research subagents (pure-research,
+  no file writes), then wrote all enrichment.md/status.md updates myself.
+
+  Result: 3 of 8 advanced to `enriched` (RCP Mechanical, Vegas Paints — both
+  package; Al Jeffers & Sons — website). 5 held at `found`: 3 on the email
+  gate with a confirmed two-source phone (Call Shamrock, Eco Pest, Extreme
+  Pest Control — all newly marked `call_ready: yes`, added to
+  `CALL-READY.md`), 1 on the email gate without a second phone source
+  (Dumont LLC), 1 on a wrong website-gap guess (Outdoor Property Services).
+
+  - **Outdoor Property Services — the most consequential catch of the run,
+    a wrong website-gap guess (same category as Plourdes Electrical,
+    2026-09-05).** Rupika's brief said no owned website exists (Facebook +
+    directories only). Wrong: `opsnh.com` is a real, live Wix site at the
+    exact confirmed address, up since at least June 2026 per Wayback. Not
+    advanced — the from-scratch-build pitch doesn't hold, and this needs
+    Kevin's call on how (or whether) to re-approach, not a routine hold.
+    Owner name also genuinely unresolved between "John Gamans" (AI-search
+    only, not a primary source) and "Joe" (the site's only named contact,
+    joe@opsnh.com) — didn't guess which, or whether they're the same person.
+  - **Two response-time figures came back CONTRADICTED (not just
+    unconfirmed) this run** — Call Shamrock (brief's "5 hrs" vs. an
+    AI-synthesized "4 hrs," neither traceable to a real snippet) and RCP
+    Mechanical (brief's "4 hrs" vs. an AI-synthesized "Robbie answered in 30
+    min," a different fact entirely, not a Yelp metric). Per the CVA
+    Exterminators convention, dropped both numbers rather than using them
+    even as a question, and used a different real signal as the hook
+    instead (veteran/licensed angle; thin-review-count-vs-tenure fact,
+    respectively). A third, Vegas Paints, came back merely unstable/noisy
+    (2-5hr range, not a wild outlier) — kept qualitatively, no number cited.
+    This keeps happening often enough (now well past 10 instances since
+    2026-08-04) that it may be worth Kevin deciding whether this
+    sourcing-technique's headline hook should just be treated as
+    sourcing-only from here rather than re-attempted for verification each
+    time — logged the same ask on 2026-08-11, still unresolved.
+  - **RCP Mechanical:** email gate passed via the guessed-pattern-on-
+    confirmed-live-domain precedent (info@rcpheatingandair.com) — now used
+    9+ times since 2026-08-11, still worth Kevin explicitly confirming this
+    reading of the gate.
+  - **Vegas Paints:** a real phone-number discrepancy — Rupika's sourced
+    (725) 525-7483 matched none of three independently-found numbers
+    (website's own (702) 605-1141, a stray NC-area-code number, BBB's (702)
+    929-0937). Led the CALL CARD with the website's own directly-verified
+    number and flagged the rest for Kevin to double-check before dialing —
+    same call-tracking-sprawl pattern as Sal's Landscape/Doherty Bros
+    (2026-08-11).
+  - **Dumont LLC:** found a likely-matching Maine SOS LLC filing, but its
+    registered agent is a third-party attorney, not the owner — correctly
+    did not put his name on the CALL CARD. Owner's actual name stays NOT
+    FOUND. Phone remains single-sourced (no independent second source
+    turned up this run) — did not mark `call_ready`, unlike the three
+    package-track holds above.
+  - Did not do a dedicated sweep of the older email-gate/call-ready backlog
+    this run (D&D Plumbing, SonRise Roofing, Superior Roofing, Crandell
+    Pest Control, Noska Lawncare, Casey Moriarty Pest Control, Radiant
+    Remodeling Pros, CV Roofing, WDM Garage Doors, Lloyd Miller's Painting,
+    Plourdes Electrical, and others) — today's 8-prospect new batch used
+    the full run, same reasoning as 2026-09-05.
+  - `CALL-READY.md` regenerated: 3 → 6 verified rows.
+  - Backlog after this run: no genuinely untouched `stage: found` prospects
+    remain (Dumont LLC and Outdoor Property Services stay at `found` by
+    documented gate misses, not backlog).
+
+- (2026-09-07 run) `_fleet-state.md` was stamped 2026-09-06 04:14 UTC — over
+  24h old, past the ~12h staleness threshold in CLAUDE.md. Flagged this
+  plainly rather than trusting it; treated Kevin's mode/priorities section as
+  unverified for this run (didn't change anything about how this run
+  worked, but noting it since the doctrine asks to say so). Git state: local
+  HEAD was detached but matched `origin/master` tip (`98c91fd`) exactly —
+  standard stale-cache pattern, `git checkout -B master origin/master`, no
+  data-loss risk. Scanned `prospects/*/status.md` for `stage: found` with no
+  Montague log entry — exactly 13 matched, today's two Rupika batches (10
+  package: Albuquerque, San Antonio, Houston-metro, Gilroy/San Jose metro;
+  3 website: Walla Walla WA, Winona MN, Durango CO) — within the 15/run cap,
+  worked as one batch since it was already under the limit. Used 13 parallel
+  research subagents (pure-research, no file writes), then wrote all
+  enrichment.md/status.md updates myself for consistency.
+
+  Result: 9 of 13 advanced to `enriched` (Blessed Pest Control, Katy Pro
+  Painting, EAP Landscaping, E-Plumbing And Drain Services, Apex Pest
+  Control, Silver Electric, Guy's Heating and Air Conditioning, Sleep Tight
+  Pest Control — all package; Ken Adams Plumbing — website). 4 held at
+  `found`: Pacheco Electric (email gate, phone conflicts across sources),
+  Quality Painting S.A. (email gate, newly `call_ready: yes`), Durango
+  Brushworks (email + phone both genuinely not found), DW Olson Electric
+  (email gate, newly `call_ready: yes`).
+
+  - **Sleep Tight Pest Control — the most consequential catch of the run, a
+    genuine owner-name error in Rupika's own sourcing, not a search-tool
+    fabrication.** Her brief named "Rustom Setna" as owner. Wrong: every
+    independent source that names Setna (LinkedIn, RocketReach, ContactOut,
+    ZoomInfo, Buzzfile) ties him specifically to a *different* Sugar Land
+    pest control company, Rabka Pest Control — same city, same industry,
+    apparently conflated during sourcing. The real founder, Chris Hatfield,
+    surfaced via an independent 2017/2018 press interview (Voyage Houston
+    Magazine) that also carried this business's actual domain
+    (sleeptighthouston.com — Rupika's search had only found a directory
+    subpage, sugarlanddirect.us) and a sourced email (Cloudflare-obfuscated
+    on the page, decoded directly rather than guessed). Corrected the name
+    before it reached `enrichment.md` and flagged prominently in both files
+    — this is exactly the kind of cross-agent data error Sue's charter
+    exists to catch (the 2026-08-18 CALL CARD parser miss was the reader's
+    fault; this one is a sourcing-stage name conflation), and worth a
+    standing reminder: verify a brief's owner name against an independent
+    source before trusting it forward, the same discipline already applied
+    to website-gap and response-time claims, not just to AI-search
+    summaries.
+  - **DW Olson Electric — sharper website-gap evidence than the usual "no
+    site exists."** One domain, olsonelectricwinona.com, does resolve and
+    is even the one BBB lists as their site — but it 301-redirects to a
+    Google short link that lands on their own Google Maps pin, not a real
+    page. A live domain that's actually just a redirect-to-Maps trap is a
+    more specific, more usable hook than a plain absence, and worth
+    remembering as its own pattern distinct from "domain resolves to an
+    unrelated business" (Anthem Electric, EZ Electrical) or "domain lapsed
+    to a squat" (Plourdes Electrical) — this one still points at the real
+    business, it just goes nowhere.
+  - **Two more response-time figures came back CONTRADICTED, not just
+    unconfirmed** (Guy's Heating: 11hr/4hr/24min-50% across three
+    snapshots; EAP Landscaping: 4hr/30min/2hr) — both dropped per the CVA
+    Exterminators convention, real alternate hooks used instead (Guy's
+    Heating: a broken HTTPS site, an actual live pain signal caught this
+    run; EAP Landscaping: a generic opener). Two others came back
+    genuinely reconfirmed/corroborated rather than contradicted for once
+    — Blessed Pest Control's "same-day service" review resolved as a
+    different metric, not a real conflict, and Quality Painting S.A.'s
+    figure got a real third-platform reconfirmation (Yahoo Local
+    independently showing "3 hrs/100%," landing right between Rupika's two
+    Yelp reads). Worth noting both directions keep happening at similar
+    rates — this sourcing technique's number is genuinely unstable in both
+    directions, not just failure-prone.
+  - **Email gate: two new "real but not page-verified" categories, both
+    advanced with explicit confidence flags rather than either blocked or
+    silently trusted.** Guy's Heating's email (guyshvac@yahoo.com) recurred
+    identically across 5 independent WebSearch queries but never showed up
+    in a direct page fetch (the pages that likely carry it are
+    login-walled) — treated as real, convergent-evidence, not a
+    domain-pattern guess, per the standing "search-summary quotes the
+    page's own contact info" fallback. Ken Adams Plumbing's email
+    similarly converges across several directories tied to the same
+    address/phone. Both flagged for Elly/Kevin as moderate- rather than
+    high-confidence — worth watching whether this reading holds up the way
+    the guessed-pattern-on-live-domain precedent has.
+  - **Two more owner-name "real name, unconfirmed title" cases** (Silver
+    Electric's "Sylvester/Silvestre" — confirmed only as the field
+    technician, not verified as owner; Ken Adams Plumbing's "Ken Adams" —
+    circumstantially strong, business literally named for him, but WA SOS/
+    L&I lookups are JS-only and couldn't be queried directly) — both used
+    on the CALL CARD with an explicit not-confirmed-as-owner/not-certified
+    caveat, same convention as Merican Plumbing (2026-08-17) and Dave's
+    Plumbing (2026-08-16).
+  - **A same-name-different-city trap correctly caught and ruled out**
+    (Apex Pest Control: a "Dustin Barousse, Owner" result belongs to an
+    unrelated Knoxville TN business of the same very-common name — did not
+    use it) — same discipline as Mr. Electric/franchise cautions before.
+  - **Pacheco Electric: a genuine phone conflict, not just a single-source
+    gap** — two different numbers, each independently corroborated on its
+    own cluster of sources, disagreeing with each other. Per the
+    call_ready rule this is "a number that conflicts across sources," not
+    "one source only" — held off `call_ready` rather than picking one
+    arbitrarily.
+  - `CALL-READY.md` regenerated: 6 → 8 verified rows (added Quality
+    Painting S.A. and DW Olson Electric). Did not do a dedicated sweep of
+    the older backlog this run (D&D Plumbing, SonRise Roofing, Superior
+    Roofing, Crandell Pest Control, Noska Lawncare, Casey Moriarty Pest
+    Control, Radiant Remodeling Pros, CV Roofing, WDM Garage Doors, Lloyd
+    Miller's Painting, Plourdes Electrical, Dumont LLC, Outdoor Property
+    Services, and others) — today's 13-prospect new batch used the full
+    run.
+  - Backlog after this run: no genuinely untouched `stage: found` prospects
+    remain (Pacheco Electric, Quality Painting S.A., Durango Brushworks,
+    DW Olson Electric stay at `found` by documented gate misses, not
+    backlog).
+
+- (2026-09-08 run) Started on a detached HEAD matching `origin/master`'s
+  tip (`4ea296a`) exactly — standard stale-cache pattern,
+  `git checkout -B master origin/master`, no data-loss risk. `_fleet-state.md`
+  was fresh (generated 16:32 UTC same day, well under the 12h threshold).
+  Scanned `prospects/*/status.md` for `stage: found` with no Montague log
+  entry — exactly 9 matched, today's two Rupika batches (6 package: Dun'
+  Dirt Cheap Lawn & Landscape + A Best Air & Heat, Tulsa OK; A Hernandez
+  Painting + Kevin Turner Painting + AMJ Remodeling and Handyman, KC metro;
+  Lilah Landscaping, OKC; 3 website: Powers Refrigeration, Walla Walla WA;
+  Morris Plumbing + Premier Roofing & Painting, both Pendleton OR) — well
+  within the 15/run cap, worked as one batch. Used 9 parallel research
+  subagents (pure-research, no file writes), then wrote all enrichment.md/
+  status.md updates myself for consistency.
+
+  Result: 4 of 9 advanced to `enriched` (Dun' Dirt Cheap Lawn & Landscape,
+  A Best Air & Heat, A Hernandez Painting — all package; Lilah Landscaping
+  — package). 5 held at `found`: AMJ Remodeling and Handyman, Powers
+  Refrigeration, Morris Plumbing, Premier Roofing & Painting — all newly
+  `call_ready: yes` — and Kevin Turner Painting, held WITHOUT `call_ready`
+  despite a confirmed phone (see below, the one genuinely new-shaped
+  decision this run).
+
+  - **Kevin Turner Painting — deliberately did NOT mark `call_ready`
+    despite a 2-source-confirmed phone, a new precedent worth naming.**
+    Every prior email-gate hold with a confirmed phone has been marked
+    `call_ready: yes` mechanically — the gate as written is pass/fail on
+    email + phone-sourcing, no scale carve-out. This one is different in
+    degree, not just another Boldt HVAC/Quality Overhead Door caution:
+    LinkedIn shows 11-50 employees, RocketReach ~$3M/yr revenue, active
+    LinkedIn job postings for a Commercial Estimator AND an Outside Sales
+    Representative, and press releases describing active geographic
+    expansion — converging signals that this is now a scaled regional
+    operator with its own sales/estimating layer, close to the opposite of
+    the "owner still answering their own phone" pain profile the whole
+    program is built on. Also: the business changed ownership 8/5/2022
+    (BBB) — current owner is David Rule, "Kevin" is retained legacy
+    branding only, founder no longer involved as far as any source shows.
+    Chose to hold it out of `CALL-READY.md` rather than let a likely
+    non-ICP business default into Kevin's dial queue, flagging it loudly
+    in enrichment.md/status.md instead for his explicit call. Worth Kevin
+    deciding explicitly whether "call_ready" should stay purely mechanical
+    (email+phone only) or whether a severe-enough scale/ownership signal
+    should suppress it going forward — this is the first time this
+    judgment call actually changed an outcome rather than just adding a
+    caution to an otherwise-advancing prospect.
+  - **A Hernandez Painting — a real domain-collision catch, not just an
+    unconfirmed guess.** Rupika's sourced website, hernandezpaintingmo.com,
+    IS a real, live site — but for a different business entirely (Omar
+    Painting LLC DBA Hernandez Painting, Bridgeton MO, St. Louis metro,
+    confirmed via 3 direct fetches, ~250 miles from the actual Lee's Summit
+    prospect). Removed the `website:` line rather than pass along a wrong
+    URL onto Kevin's call card — worth naming as its own category alongside
+    the Johnston Heating & Air domain-squat case (2026-08-09): a resolving,
+    real, on-topic-named domain still isn't proof it's THIS business's
+    site; always check the page's own disclosed identity/address/phone
+    against the prospect before treating a same-name domain as confirmed.
+  - **Two more search-tool-hallucinated emails caught and correctly
+    discarded** (AMJ Remodeling's "Remodel66671@netzero.com" — zero hits on
+    a literal-string search; Morris Plumbing's "morrisplumbingllc@outlook.com"
+    — traced to an unrelated same-named WI business; Premier Roofing &
+    Painting's "premierroofing541@gmail.com" — zero hits on literal-string
+    search, suspiciously pattern-matched to the phone's area code). Now
+    well past 5 instances of this specific failure mode (Cold Fusion
+    Mechanical 2026-08-13, "Dave/David is the owner" 2026-08-16, the
+    sdplumbingheating.com URL claim 2026-08-16, and these three) — the
+    literal-quoted-string verification technique keeps being the thing
+    that catches it; worth treating as a standing check, not optional.
+  - **Two more response-time figures came back CONTRADICTED**: Dun' Dirt
+    Cheap Lawn & Landscape (4hrs vs. 2 days), Lilah Landscaping (5hrs vs.
+    30min), AMJ Remodeling (2hrs vs. 50min) — three in one run, all dropped
+    per the CVA Exterminators convention, alternate hooks used instead
+    (founding-story angle for Dun' Dirt Cheap; generic/hours-based for
+    Lilah; owner's-own-words for AMJ). A Hernandez Painting's figure came
+    back genuinely unconfirmed-but-not-contradicted (carried forward as a
+    question, per the standing amendment).
+  - **Lilah Landscaping — a real phone-number discrepancy caught before it
+    reached a call card**, same pattern as Vegas Paints (2026-09-06): the
+    brief's sourced number, (405) 402-9857, didn't match the number
+    multiple independent sources converged on, (405) 859-4342. Led the
+    CALL CARD with the verified number and flagged both explicitly.
+  - **A Best Air & Heat — the callback-failure pain signal corroborated a
+    second, independent way**, not just re-confirmed: a separate 2018
+    reviewer described the same owners "avoiding calls when payment was
+    due," and BBB independently shows 4 complaints filed with 3 unanswered
+    (F rating). This is the strongest version of this specific pain signal
+    seen in recent runs — a repeated pattern across unrelated sources, not
+    a one-off complaint.
+  - **AMJ Remodeling — a live Weebly site turned up that Rupika's brief
+    didn't find** (amjremodelingandhandymanservice.weebly.com) — same
+    "double-check a 'no website found' note" pattern flagged repeatedly
+    (J Powers Electric 2026-08-12, Scenic View Landscape 2026-08-15).
+    Doesn't change track routing per the house no-website-subset rule
+    (this stays package track either way), just flagged as informational
+    for whoever revisits the email gate.
+  - All 3 website-track prospects this run (Powers Refrigeration, Morris
+    Plumbing, Premier Roofing & Painting) had their website-gap guess
+    INDEPENDENTLY CONFIRMED, not just trusted — no wrong-guess dead ends
+    this run. Powers Refrigeration's case had a genuine nuance: one domain
+    (powersrefrigeration.com) does resolve but is an unbranded parked
+    GoDaddy placeholder — worth remembering as its own category alongside
+    DW Olson Electric's redirect-to-Maps trap (2026-09-07): a resolving
+    domain with zero identifying content isn't a contradiction of the
+    website-gap claim, just a nuance worth a one-line flag.
+  - Egress access was notably good this run — direct WebFetch succeeded on
+    most target-business domains, BBB profiles, WA SOS/L&I records,
+    BuildZoom, Nextdoor, and Yahoo Local; blocked specifically on Facebook
+    (login wall, every attempt across all 9 prospects), HomeAdvisor/Angi
+    (403), and the Oregon SOS/CCB and OpenCorporates portals (503/403,
+    JS-driven forms not fetchable via GET). Facebook being the one
+    consistently-blocked channel is now a recurring pattern worth naming on
+    its own — it's cost real owner-name resolutions twice this run alone
+    (Morris Plumbing, Premier Roofing & Painting).
+  - `CALL-READY.md` regenerated: 8 → 12 verified rows.
+  - Backlog after this run: no genuinely untouched `stage: found` prospects
+    remain (Kevin Turner Painting, AMJ Remodeling, Powers Refrigeration,
+    Morris Plumbing, Premier Roofing & Painting stay at `found` by
+    documented gate misses/flags, not backlog). Did not do a dedicated
+    sweep of the older email-gate/call-ready backlog this run (D&D
+    Plumbing, SonRise Roofing, Superior Roofing, Crandell Pest Control,
+    Noska Lawncare, Casey Moriarty Pest Control, Radiant Remodeling Pros,
+    CV Roofing, WDM Garage Doors, Lloyd Miller's Painting, Plourdes
+    Electrical, Dumont LLC, Outdoor Property Services, Pacheco Electric,
+    Quality Painting S.A., Durango Brushworks, DW Olson Electric, and
+    others) — today's 9-prospect new batch used the full run.
+
+- (2026-09-09 run) Started on a detached HEAD matching `origin/master`'s
+  tip (`d29e659`) exactly — standard stale-cache pattern, `git checkout -B
+  master origin/master`, no data-loss risk. `_fleet-state.md` was
+  ~9h16m old (generated 07:22 UTC, run started 16:38 UTC) — under the 12h
+  threshold, treated as fresh. Scanned `prospects/*/status.md` for
+  `stage: found` prospects carrying no "Montague" mention anywhere in
+  their own log — exactly 12 matched, today's two Rupika batches (9
+  package: Chicago/Detroit/Columbus/Indianapolis metros — Buckeye
+  Plumbing & Drains, Comfort First Heating and Cooling, JJ Construction
+  Roofing, L.D. Smith Plumbing, Marvin and Son Electrical, Mice Guys,
+  Palma Painting, Solidified Pest Control, Zuniga's Plumbing; 3 website:
+  Expert Paint Company/Cullman AL, Henton Plumbing/Dodge City KS, Window
+  Butler/Morgantown WV) — well within the 15/run cap, worked as one
+  batch. Used 12 parallel research subagents (pure-research, no file
+  writes), then wrote all enrichment.md/status.md updates myself for
+  consistency. (Note on the scan method: a plain "no enrichment.md file"
+  check gives false positives — many older held prospects document their
+  gate outcome directly in status.md's own Log without ever writing an
+  enrichment.md, e.g. sonrise-roofing-wichita-falls-tx from 2026-08-05.
+  Checking for a "Montague" mention in status.md's Log is the more
+  reliable untouched-detector; worth remembering for future runs.)
+
+  Result: 10 of 12 advanced to `enriched` (Buckeye Plumbing & Drains,
+  Comfort First Heating and Cooling, JJ Construction Roofing, L.D. Smith
+  Plumbing, Marvin and Son Electrical, Mice Guys, Palma Painting,
+  Solidified Pest Control, Zuniga's Plumbing — all package; Expert Paint
+  Company — website). 2 held at `found`, both website track, both newly
+  `call_ready: yes` (Henton Plumbing, Window Butler).
+
+  - **Marvin and Son Electrical — a flagged 3-city identity conflict
+    resolved as one real business, not a conflation.** Rupika's brief
+    flagged the business appearing under Taylor MI (Yelp), Clinton
+    Township MI (BBB), and Westland MI (search-scope) as needing
+    confirmation before advancing. Resolved: the same phone number ties
+    all three together, and Westland was never a separate location — just
+    a service-area search hit, consistent with the site's own stated
+    Wayne/Oakland/Washtenaw coverage. Advanced. Separately caught a real
+    open question worth flagging to Sue/Kevin, not resolved: BuildZoom
+    shows a possibly-expired individual electrical license (garbled name
+    parse "S and Son Marvin E," same Clinton Twp zip) expired since
+    2016 — couldn't reach MI LARA's interactive license lookup to confirm
+    whether the LLC's current contractor license is separate/active. Same
+    "advance but flag prominently" pattern as Boldt HVAC's license
+    caution (2026-08-11) and Quality Overhead Door's PE-ownership flag
+    (2026-08-15) — now a third instance of an ownership/licensing-
+    structure caution that isn't covered by any of the defined gates.
+  - **Zuniga's Plumbing — a flagged scale/ICP-fit concern resolved
+    favorably, with a real marketing-inflation catch attached.** Rupika
+    flagged the business's own "over 50 years" claim as needing
+    verification before trusting it's still owner-operated. Resolved
+    favorably (3 employees, ~$228K/yr revenue, single location, owner
+    still personally doing plumbing work, no sales layer) — but BBB shows
+    the actual corporate entity incorporated in 2005, ~21 years, not 50+.
+    The tenure claim is very likely marketing language about the family's
+    trade lineage, not the company's real age. Flagged so Elly doesn't
+    repeat "50+ years" uncritically — "20+ years" is the defensible
+    number. Worth naming as its own pattern: a brief's own "why they fit"
+    framing can itself need light-touch fact-checking, same as the
+    Coleman Painting "17 years" correction (2026-08-13).
+  - **Window Butler — caught a search-tool hallucination before it nearly
+    became a phantom email on a call-ready card.** An AI-synthesized
+    search summary repeatedly and confidently asserted the business's
+    website was "windowbutlerwv.com" with email "windowbutlerwv@gmail.com,"
+    across multiple independent queries — neither claim ever appeared in
+    an actual search-result snippet, and direct DNS/HTTP checks disproved
+    or couldn't confirm either. This is now well past 6 instances of this
+    same failure mode (Cold Fusion Mechanical 2026-08-13, "Dave/David is
+    the owner" 2026-08-16, the sdplumbingheating.com URL claim 2026-08-16,
+    three more on 2026-09-08, this one) — always verify a specific
+    asserted fact (URL, email, name) traces to a real quoted source,
+    especially right before it would have landed on a CALL-READY.md row
+    Kevin might actually use.
+  - **Window Butler — also a two-people-same-nickname case, a new
+    category.** Founder Vaughn Voithofer and current Operations Manager
+    Joseph Voithofer are two distinct, real people who both go by "Joe" —
+    not an ambiguity between candidates (like AMS Landscaping/Krasiva
+    Windows) and not an uncertain-title case (like Merican Plumbing/Dave's
+    Plumbing), but two confirmed people sharing a nickname. Led the CALL
+    CARD with Joseph (current BBB contact) and flagged the shared nickname
+    explicitly so Kevin isn't confused mid-call if a different "Joe"
+    answers.
+  - **Two more response-time figures actively dropped as unreliable
+    rather than used even as a question** (Comfort First Heating: a "20
+    min" counter-figure came with a mismatched review count, 24 vs. the
+    confirmed 27, making it unreliable rather than a clean contradiction;
+    Marvin and Son: three different figures — 1hr/5hr/7hr — depending on
+    which geographic search context was used, reading as a Yelp
+    display/caching quirk rather than a real signal). Both landed "no
+    verified hook" on the CALL CARD rather than forcing a number through.
+  - **Two more figures came back as minor, non-alarming drift, carried
+    forward as a question with the current number**: L.D. Smith Plumbing
+    (brief's ~4hrs vs. a current ~6hrs snippet — reads as the metric
+    having moved since the original citation, not noise) and Zuniga's
+    Plumbing (brief's ~4hrs vs. current ~3hrs, plus JJ Construction
+    Roofing's ~3hrs, which for once came back genuinely CONFIRMED via an
+    independent Yahoo Local source, not just re-observed on Yelp).
+  - **Palma Painting — a real name reference correctly NOT used.** A Yelp
+    review calling the crew lead "Jr" was the only name-like hit anywhere
+    (no BBB, no Facebook page, no Indiana LLC filing found for this
+    business at all) — treated as a customer nickname, not a verified
+    first name, and marked NO NAME FOUND rather than risk "is Jr around?"
+    sounding wrong on a cold call. Worth remembering alongside the
+    Merican Plumbing/Dave's Plumbing "real name, uncertain title" bucket
+    as a distinct, stricter case: a real name reference that still isn't
+    solid enough to use.
+  - **Guessed-pattern-on-confirmed-live-domain precedent used 3x more this
+    run** (Comfort First Heating, L.D. Smith Plumbing, Palma Painting) —
+    now well past 15 uses across runs since 2026-08-11, still worth Kevin
+    explicitly confirming this reading of the gate is what he intended.
+  - Egress access was mixed this run — direct WebFetch succeeded on most
+    target-business domains, BBB, Yellow Pages, D&B, Buzzfile, Yahoo
+    Local, and BuildZoom; blocked specifically on Facebook (login wall,
+    every attempt across all 12 prospects, costing a real name/email
+    resolution on Henton Plumbing and Window Butler both), Michigan LARA's
+    license portal, and Alabama's/Kansas's SOS entity-lookup forms
+    (interactive-only, not fetchable via GET).
+  - `CALL-READY.md` regenerated: 12 → 14 verified rows (Henton Plumbing,
+    Window Butler). Did not do a dedicated sweep of the older
+    email-gate/call-ready backlog this run (D&D Plumbing, SonRise
+    Roofing, Superior Roofing, Crandell Pest Control, Noska Lawncare,
+    Casey Moriarty Pest Control, Radiant Remodeling Pros, CV Roofing, WDM
+    Garage Doors, Lloyd Miller's Painting, Plourdes Electrical, Dumont
+    LLC, Outdoor Property Services, Pacheco Electric, Quality Painting
+    S.A., Durango Brushworks, DW Olson Electric, Kevin Turner Painting,
+    AMJ Remodeling, Powers Refrigeration, Morris Plumbing, Premier
+    Roofing & Painting, and others) — today's 12-prospect new batch used
+    the full run.
+  - Backlog after this run: no genuinely untouched `stage: found`
+    prospects remain (Henton Plumbing, Window Butler stay at `found` by
+    documented gate misses/call_ready flags, not backlog).
+
+- (2026-09-10 run) Started on a detached HEAD matching `origin/master`'s tip
+  (`ee880b7`) exactly — `git fetch origin` first, then `git checkout -B
+  master origin/master`, no data-loss risk. **`_fleet-state.md` was ~33h
+  old (generated 2026-09-09 07:22 UTC, run started 2026-09-10 16:38 UTC) —
+  past the 12h freshness threshold.** Flagged it plainly rather than lean on
+  it; this run's work (standing daily enrichment pipeline) doesn't depend on
+  fleet-state specifics either way, but worth Kevin checking why KIREEK's
+  sync loop hasn't refreshed since yesterday morning.
+
+  Scanned `prospects/*/status.md` for `stage: found` with no "Montague"
+  mention in the Log — exactly 8 matched, all from today's Rupika batch (5
+  package: Accolade Painting/Duluth GA, Lawns By Luke/Mt. Juliet TN, Leo's
+  Lawn Service/Alpharetta GA, Local Plumb Pros/Raleigh NC, Townsend
+  Painting/Concord NC; 3 website: AMG Electric/Laramie WY, Doe Plumbing/
+  Laramie WY, Sackett Electrical Service/Morgantown WV) — well within the
+  15/run cap, worked as one batch. Used 8 parallel research subagents
+  (pure-research, no file writes), then wrote all enrichment.md/status.md
+  updates myself for consistency.
+
+  Result: 6 of 8 advanced to `enriched` (Accolade Painting, Lawns By Luke,
+  Leo's Lawn Service, Local Plumb Pros, Townsend Painting — all package;
+  AMG Electric — website). 2 held at `found`, both website track, both
+  newly `call_ready: yes` (Doe Plumbing, Sackett Electrical Service).
+
+  - **Townsend Painting — a real phone-number correction plus a genuinely
+    unresolved identity question, both flagged rather than guessed.** The
+    brief's phone, (704) 793-8632, couldn't be corroborated anywhere (zero
+    hits on an exact-string search); a different number, (704) 345-8318, is
+    well corroborated across Angi + Nextdoor + a second same-named business.
+    Led the CALL CARD with the verified number, same convention as Lilah
+    Landscaping/Vegas Paints before it. Separately: a second "Townsend
+    Painting" (townsendpainting.net, Charlotte, "since 2005") also names a
+    "Jay Townsend" at the same corrected phone number — could be the same
+    business rebranded/relocated (which would also explain why
+    townsendpaintingnc.com is now dead/NXDOMAIN), a relative, or pure
+    coincidence. Genuinely couldn't resolve which, so flagged it explicitly
+    in enrichment.md rather than picking a founding-year story — this
+    matters because citing the wrong company history on the call would be a
+    real, avoidable miss.
+  - **Two more search-tool-hallucination catches, one nearly upgraded a
+    shaky lead into a false-confirmed one.** Sackett Electrical Service's
+    candidate email (Dakotas289@hotmail.com, carried over from Rupika)
+    stayed at medium/low confidence rather than getting upgraded — Google's
+    AI-summary layer kept asserting it confidently, including an unprompted,
+    unsupported leap ("likely referring to Dakota Sackett") in searches that
+    didn't even ask about email, but no independent page ever confirmed it
+    (Facebook login-walled, Birdeye explicitly states no email listed). Held
+    at `found` on the email gate rather than trusting the repetition. Leo's
+    Lawn Service also surfaced two decoy phone numbers during research — one
+    a single-fetch artifact never reproduced, one belonging to a genuinely
+    different same-named business on a different site — both correctly
+    discarded before they could reach a CALL CARD. Now well past 8 instances
+    of this failure mode logged since 2026-08-13; the standing discipline
+    (verify a literal asserted fact traces to a real quoted source) keeps
+    paying off.
+  - **Sackett Electrical Service — owner name upgraded from medium to full
+    confidence via a primary-source government record.** Rupika's "Dakota"
+    lead (first name only, from an email address) was independently
+    confirmed as **Dakota Sackett**, and confirmed as the LLC's actual
+    owner/member (not just an employee), by directly fetching the WV
+    Secretary of State's own business registration filing
+    (apps.sos.wv.gov) — a first-party record, not another directory
+    aggregator. Worth naming as a category: when a state SOS/business-filing
+    portal is actually fetchable (unlike the many interactive-form-only
+    ones that keep blocking this environment), it's the strongest single
+    source available for an owner-name gate, better than any directory
+    convergence.
+  - **AMG Electric — a new nuance on the email gate for dead-domain
+    website-track prospects: a website being dead doesn't mean the domain's
+    email is unreachable.** Adam@amgelectric.biz sits on the same domain
+    confirmed dead for website purposes (404/ghs, TLS fails) — but a DNS
+    check found the domain's MX records point to a live, actively-configured
+    Google Workspace account (SPF + site-verification TXT present). That's
+    real corroborating signal the mailbox is genuinely live, distinct from
+    both "confirmed on a page" and "guessed pattern on an active domain" —
+    worth remembering as its own category: a dead *website* domain can still
+    have live *mail* infrastructure, and that's worth checking (via DNS MX/
+    TXT lookup) before assuming a website-gap prospect's domain-tied email
+    is automatically unreachable too.
+  - **Doe Plumbing — a clean call_ready outcome where the phone was rock-
+    solid but the email genuinely wasn't good enough to trust**, even though
+    it recurred across 2 search queries: both traced to the same underlying
+    blocked/obfuscated D&B page (Cloudflare placeholder, then 403), never an
+    actual read of real text. Given the phone was independently confirmed
+    across 5 sources including a direct BBB fetch, `call_ready: yes` was the
+    clearly better call than forcing the AOL address through — this is the
+    kind of case the 2026-09-02 call-ready ruling exists for.
+  - **Accolade Painting — a currently-broken real website, flagged so
+    nobody references it on the call.** accoladepaintingatl.com is a real,
+    previously-indexed domain that now 404s with a Wix "ConnectYourDomain"
+    error (confirmed via direct fetch) — not a permanent gap since it's
+    package track, but a real, current fact ("I saw your website" would
+    visibly fail if Kevin's asked to pull it up). A second, unrelated
+    business ("Accolade Finishes, Inc.") and a separate "accolade-
+    painting.com" site kept surfacing as name-collision traps in search —
+    both correctly excluded.
+  - Email confidence across today's batch split roughly into three tiers,
+    worth naming as the working taxonomy going forward: **directly
+    confirmed** (Lawns By Luke, Leo's Lawn Service — found verbatim in
+    fetched page text; Local Plumb Pros — found in the site's own JSON-LD
+    structured data, backend but genuinely the business's own code), **used
+    despite being search-summary-only** (Accolade Painting, Townsend
+    Painting — recurred consistently across independent queries, no
+    contradiction, direct fetch blocked by a dead site/login-wall rather
+    than by suspicion), and **not trusted despite recurring** (Doe
+    Plumbing's AOL address, Sackett's hotmail address — both traced back to
+    either a single blocked source cited twice, or an AI-summary's own
+    unsupported inference, rather than independent corroboration). The line
+    between tiers two and three is whether the repetition traces to
+    genuinely separate sources or one blocked source asked twice — worth
+    keeping explicit since it's a judgment call every run now.
+  - Egress access was mixed this run — direct WebFetch succeeded on most
+    target-business domains (where they existed), BBB profiles (including a
+    live WV Secretary of State filing), D&B, Yellow Pages, Angi, and Chamber
+    listings; blocked on Facebook (login wall, every attempt across all 8
+    prospects — cost a real email/owner resolution on Sackett Electrical and
+    contributed to Townsend Painting's unresolved identity question) and
+    Wayback Machine/archive.org (blocked, would have helped confirm
+    Townsend's and Accolade's formerly-live site content).
+  - `CALL-READY.md` regenerated: 14 → 16 verified rows (Doe Plumbing,
+    Sackett Electrical Service).
+  - Backlog after this run: no genuinely untouched `stage: found` prospects
+    remain (Doe Plumbing, Sackett Electrical Service stay at `found` by
+    documented `call_ready` flags, not backlog).
+
+- (2026-09-11 run) `git fetch origin` first per CLAUDE.md, then checked state —
+  clean, no stale-refs/detached-HEAD issue this time, local `master` matched
+  `origin/master`'s tip (`774729a`, Rupika's newest batch) directly.
+  **`_fleet-state.md` was ~57h old (generated 2026-09-09 07:22 UTC, run
+  started 2026-09-11) — well past the 12h freshness threshold, worse than
+  the 33h staleness flagged on 2026-09-10.** Flagged plainly; KIREEK's sync
+  loop appears to have been down for two full days now. This run's work
+  (standing daily enrichment) doesn't depend on fleet-state specifics
+  either way, but this is now a two-run-running staleness trend worth Kevin
+  checking, not a one-off blip.
+
+  **Read `docs/sdr-copy-playbook.md` and the new HARD GATE in CLAUDE.md
+  (Kevin's 2026-09-10 ruling) before starting** — not because Montague
+  drafts outreach or builds lists (that gate belongs to Rupika/Elly/
+  KIREEK's `outbound_gate.py`), but because it directly changes how
+  response-time signals should be handled in enrichment. The ruling requires
+  `yelp_advertiser`/`yelp_response_time` to be captured by **a human reading
+  the live Yelp page**, explicitly bars approximating that via any
+  programmatic/AI-assisted method, and says "an assumed or unverified figure
+  fails the gate." Montague's response-time-signal gate (2026-08-04, amended
+  2026-08-13) has always worked by searching Google for what Yelp's page
+  shows — never a direct Yelp fetch, but also never a human eyeballing the
+  live page, which is exactly the bar the new ruling sets. **Decision made
+  this run: stopped attempting to re-verify/reconfirm any Yelp
+  response-time figure at all (not even via the established Google-search
+  method), and stopped using any response-time figure — confirmed,
+  unconfirmed, or "phrased as a question" — as the CALL CARD Hook.** Any
+  pre-2026-09-10 figure still in a brief.md is now carried into
+  enrichment.md purely as historical/informational context, explicitly
+  labeled as barred from use as fact or hook, never as the Hook line itself.
+  This is a real, deliberate change from the 2026-08-13 amendment's "usable
+  as a question" carve-out — flagging clearly for Kevin/Sue to confirm this
+  reading is what was intended, since it changes how ~40+ prior enrichment
+  files' worth of precedent gets applied going forward. (Rupika's own
+  2026-09-11 batch already reflects this — her briefs mark "Response-time
+  signal: n/a" with the compliance reason and note the "yelp advertisers"
+  sourcing technique itself is paused.)
+
+  Scanned `prospects/*/status.md` for `stage: found` with no "(Montague)"
+  log entry (a plain "montague" text search gave false positives this run —
+  several of Rupika's own brief notes say "Flag for Montague," which isn't
+  a completed enrichment; switched to searching for the literal "(Montague)"
+  log-entry format instead, worth remembering as the more reliable
+  untouched-detector going forward, same spirit as the 2026-09-09 note about
+  the "no enrichment.md file" false-positive). Found a real backlog: **24
+  untouched prospects** — 9 older ones spanning 2026-09-04 through
+  2026-09-10 (never picked up across three prior runs) plus 15 fresh from
+  today's Rupika batch (12 package: Tampa/Orlando/Jacksonville/Miami-metro
+  FL; 3 website: Watertown NY). Per the persona doc's package-track-first
+  priority and the established oldest-first backlog-clearing convention
+  (2026-08-15, 2026-08-16, 2026-08-17), worked the oldest 15: the 9 older
+  package-track prospects plus the 6 oldest package-track prospects from
+  today's FL batch. Deliberately left the 3 Watertown NY website-track
+  prospects and the 6 newest FL package-track prospects (fs-landscaping,
+  kendall-plumbing, larson-plumbing, small-jobs-electric,
+  vigilante-family-roofing, wrights-electric) for next run — backlog is
+  down to 9, not cleared, flagging so it doesn't compound further. Used 15
+  parallel research subagents (pure-research, no file writes), then wrote
+  all enrichment.md/status.md updates myself for consistency.
+
+  Result: 11 of 15 advanced to `enriched` (EZ Electrical, Apex Pest Control,
+  BACC Roofing, HL Construction & Roofing, MayDay Pest Control, Southern
+  Brothers Plumbing, A1A Overhead Door, Anderson Restoration, Byrne Termite
+  & Pest Control, DeBaggis Painting, Florida HVAC Contractor). 4 held at
+  `found`, all newly `call_ready: yes` (Aaron's Garage Doors, Griffin
+  Heating & Air, Triple J Electric, 3H AC).
+
+  - **Triple J Electric — a real domain collision, not just an unconfirmed
+    guess.** The sourced website, triplejelectricllc.com, is a real, live
+    site — for a completely different business in Milford, DE (owner John
+    Ksiazek, confirmed via the page's own disclosed identity). **Removed the
+    `website:` line from status.md** rather than pass a wrong URL onto
+    Kevin's call card — same category as the Johnston Heating & Air
+    domain-squat (2026-08-09) and A Hernandez Painting collision
+    (2026-09-08). On top of that, the owner-name source (a BBB profile for
+    "Triple J Electric Co") sits at an address ~3 hours from the actual
+    Shelby/Grover NC business (different phone, different license-number
+    format) — genuinely unresolved whether it's the same entity. Did not put
+    "Joseph Lynn Harris" on the CALL CARD as a confirmed name; used "NO NAME
+    CONFIRMED" with the caveat spelled out instead. `call_ready: yes` still
+    applies — the phone is confirmed independently of the identity question
+    (BuildZoom + Nextdoor, both tied to the correct geography).
+  - **Florida HVAC Contractor and MayDay Pest Control — two scale flags in
+    one run, both pass every defined gate but probably aren't the core
+    ICP.** Florida HVAC: BuildZoom's "top 6%" score (a licensing-reliability
+    score, not a size score — worth naming that distinction plainly, the
+    brief's framing conflated them) led to checking permit history directly:
+    128 commercial projects up to $2.3M, 4-county/export footprint, likely
+    11-50 employees. MayDay Pest Control: the 14-county service area is
+    real, plus 7 named staff and a possible second office turned up via the
+    GA Pest Control Association's own member listing. Neither has a defined
+    gate that blocks advancement (email/website-gap/ads-activity all
+    cleared), so both advanced — but both got the loudest possible flag,
+    same "advance but flag" pattern as Boldt HVAC (2026-08-11), Quality
+    Overhead Door (2026-08-15), Marvin and Son (2026-09-09), and Kevin
+    Turner Painting (2026-09-08). Two scale surprises in one run is worth
+    Kevin knowing about as a pattern, not just two isolated cases.
+  - **A real handoff-integrity finding, worth Sue/Kevin's attention
+    specifically: two prospects (EZ Electrical, Apex Pest Control) already
+    had genuine, thorough enrichment work sitting on `master` since
+    2026-09-08 — each file even ends with its own "Status: ADVANCED to
+    `enriched`" line — but `status.md` was never actually updated to match.**
+    Both sat at `stage: found` for 3-4 days looking completely untouched,
+    the same silent-drop shape as the 2026-08-18 CALL CARD-parser incident
+    CLAUDE.md documents (a dropped handoff is indistinguishable from work
+    that was never done). Both were bundled into one large squashed commit
+    (`c52dae5`, 2026-09-08, ~224 enrichment.md files at once) — the
+    status.md update for these two specifically just never landed, for
+    reasons this run can't reconstruct (the squash makes the original
+    per-prospect commit history unrecoverable). **Checked the other 222
+    enrichment.md files from that same commit against their status.md
+    files — no other instances found, this looks contained to these two,
+    not systemic.** Reconciled rather than overwrote: for EZ Electrical, the
+    prior pass had queried WA L&I's official license registry directly (a
+    primary source) and correctly left "Erik Zagrean" off the CALL CARD as
+    only inferentially linked; this run's independent pass found the same
+    name via a weaker aggregator source and had initially put it on the
+    card at medium confidence — deferred to the more rigorous prior
+    finding (NO NAME FOUND) rather than let the weaker sourcing win by
+    being newer. For Apex Pest Control, both passes independently reached
+    the same conclusions (real corroboration) — merged in one extra
+    address-collision detail the prior pass had that this run's didn't.
+    Worth Sue specifically knowing about, since catching exactly this shape
+    of silent drop across agent handoffs is named as her first duty in
+    CLAUDE.md.
+  - **EZ Electrical — also a hallucinated phone number AND a misattributed
+    name caught in the same prospect, independent of the above.** A
+    search-AI summary asserted a second phone number that traced to
+    nothing real when checked. Separately, the brief's "Igor" lead turned
+    out to belong to a different business's review entirely (Ample
+    Electric, not EZ Electrical) — dropped, not reported, and independently
+    confirmed as a misattribution by both this run's pass and the recovered
+    2026-09-08 pass. Now well past 10 instances of the search-AI-
+    hallucination failure mode logged since 2026-08-13 — the standing
+    discipline (verify a literal string traces to something real before
+    reporting it) keeps catching real misses, including twice in one
+    prospect this run.
+  - **Two more guessed-pattern-on-a-bot-walled-but-clearly-real-domain
+    cases** (BACC Roofing, DeBaggis Painting) — both domains resolve and are
+    independently confirmed real by BBB, but return a SiteGround bot
+    challenge to every direct fetch (WebFetch and raw curl both tried).
+    Treated this the same as the established convention for proxy-blocked
+    domains (Doherty Bros/Nevarez/J Powers Electric et al., 2026-08-11
+    onward) — a bot-wall isn't evidence against a domain being real/active,
+    it's just a different reason direct fetch fails. Both guesses flagged
+    clearly; DeBaggis's is the weaker of the two (no pattern precedent found
+    anywhere, unlike BACC where an owner first name at least gives a
+    plausible alternate guess).
+  - **Southern Brothers Plumbing — email confirmed via two independent
+    cache extractions of a 403-blocked page**, not a page render. Distinct
+    from a guess (the address was actually read off the real page by
+    Google's own indexing, twice, independently) but flagged as
+    not-eyes-on-page per the established confidence-tier taxonomy
+    (2026-09-10 run's three-tier framework: directly confirmed / used
+    despite search-summary-only / not trusted despite recurring — this
+    lands in the middle tier, same as Accolade Painting/Townsend Painting).
+  - Egress access was mixed again this run — direct WebFetch succeeded on
+    most target-business domains (ez-electrical.com, hlconstructionroofing.com,
+    maydaypestservices.com, a1aoverheaddoors.com, andersonrestoration.com,
+    byrnepest.com, floridahvaccontractorinc.com), BBB profiles (including a
+    direct NCLBGC license-board query that worked cleanly), and several state
+    filing aggregators; blocked on Facebook (login wall, nearly every
+    attempt across all 15 prospects — the single most consistent block this
+    run, same pattern noted since 2026-09-07), two SiteGround-bot-walled
+    sites (baccroofing.com, debaggispainting.com, 3hac.com — three, not two),
+    apexpestcontrolnm.com's subpages (mostly 404, not blocked), and several
+    state SOS portals (sosnc.gov, sunbiz.org direct — 403s, though a
+    bizprofile.net mirror of the Sunbiz filing worked for Anderson
+    Restoration).
+  - `CALL-READY.md` regenerated: 16 → 20 verified rows (Aaron's Garage
+    Doors, Griffin Heating & Air, Triple J Electric, 3H AC).
+  - Backlog after this run: 9 genuinely untouched `stage: found` prospects
+    remain — the 3 Watertown NY website-track prospects
+    (hatchells-lawn-care, ken-scott-plumbing, lashway-plumbing) and 6
+    newest FL package-track prospects (fs-landscaping-solutions,
+    kendall-plumbing-services, larson-plumbing, small-jobs-electric,
+    vigilante-family-roofing, wrights-electric) from today's Rupika batch —
+    left for next run per the cap-batch-size rule, prioritize these first
+    since they're now the oldest untouched. Did not do a dedicated sweep of
+    the older email-gate/call-ready backlog (D&D Plumbing, SonRise Roofing,
+    Superior Roofing, Crandell Pest Control, Noska Lawncare, Casey Moriarty
+    Pest Control, Radiant Remodeling Pros, CV Roofing, WDM Garage Doors,
+    Lloyd Miller's Painting, Plourdes Electrical, Dumont LLC, Outdoor
+    Property Services, Pacheco Electric, Quality Painting S.A., Durango
+    Brushworks, DW Olson Electric, Kevin Turner Painting, AMJ Remodeling,
+    Powers Refrigeration, Morris Plumbing, Premier Roofing & Painting,
+    Henton Plumbing, Window Butler, and others) — today's 15-prospect batch
+    used the full run.
+
+## 2026-09-12 — 15 package-track prospects (6 FL backlog + 9 DC/Philly/NY/Boston)
+
+Scheduled run. Batch: the 6 oldest untouched `found` prospects (all
+`track: package`, FL, sourced 2026-09-11 — fs-landscaping-solutions,
+kendall-plumbing-services, larson-plumbing, small-jobs-electric,
+vigilante-family-roofing, wrights-electric-homestead) plus 9 of the 12
+newest package-track prospects Rupika added 2026-09-12 (DC/Philadelphia/
+NY/Boston metro — conte-electric, frostys-heating-cooling, giannini-
+roofing-siding, guaranteed-plumbing-heating, kyle-wrights-lawn-care,
+lj-landscaping, mikey-shaw-roofing, plp-plumbing-heating,
+pr-douglas-heating-air), per the package-track-first / oldest-untouched-
+first priority. Worked via 5 parallel research subagents (3 prospects
+each), each briefed on the full compliance gate set and reviewed here
+before commit — not a change to policy, just how this run's volume got
+done inside one session.
+
+**Result: 13 advanced `found` -> `enriched` (cleared the email gate), 2
+held at `found` with `call_ready: yes`** (vigilante-family-roofing —
+own site unreachable/connection-reset, phone confirmed BBB +
+floridaroofing.directory; frostys-heating-cooling — no email found
+anywhere despite a thorough check, phone confirmed 3 sources).
+`CALL-READY.md` regenerated twice this run as holds landed: 20 -> 21 -> 22.
+
+**Real, unresolved flags for Sue/Kevin, not guessed past:**
+- **Conte Electric — ownership conflict.** BBB names Victor Conte as
+  Owner/President (what Rupika's brief relied on), but a dated
+  (2026-03-01) local news profile says he sold the business in 2011 and
+  is now 90, doing unrelated work. No current owner found anywhere.
+  Deliberately put `NO NAME FOUND` on the CALL CARD instead of carrying
+  "Victor" forward stale — a wrong name that reads as "this caller
+  doesn't know us" is worse than no name. Also puts a real question mark
+  over the "family-owned, owner still hands-on" fit rationale for this
+  lead specifically.
+- **Kendall Plumbing Services — scale conflict.** BBB says 5 employees/
+  young shop; the owner's own published Voyage Miami interview claims
+  15+ employees and 10+ trucks operating statewide (Miami/Tampa/Orlando/
+  Fort Myers). Also a phone-number conflict (BBB vs. their own live
+  site — used the site's number, flagged both). Same "advance but flag"
+  pattern as prior scale surprises (Mayday Pest Control 2026-09-11, EZ
+  Electrical/Apex Pest Control 2026-09-08, Boldt HVAC 2026-08-11).
+- **PR Douglas Heating & Air — capacity flag.** Live contact page reads
+  "WE ARE CURRENTLY NOT ACCEPTING NEW CUSTOMERS," confirmed via direct
+  fetch, independently corroborated by a Google summary of the same
+  page. Cuts both ways (genuine capacity pain vs. not currently seeking
+  growth) — left for Kevin's judgment, not resolved here.
+- **Guaranteed Plumbing & Heating — name conflict resolved.** LinkedIn
+  and search-AI summaries kept surfacing "Rick Slifkin"; resolved to
+  **Eric Slifkin** via a directly-fetched primary-source trade article
+  (PM Mag) plus a review response signed "Eric M Slifkin" plus BBB —
+  three independent sources converging on Eric, not a guess.
+
+**Search-AI hallucinations caught and discarded this run (not reported
+as findings) — the standing discipline working as designed, now well
+past a dozen logged instances since 2026-08-13:**
+- Guaranteed Plumbing: a fabricated CEO name ("Deborah Kelly-mullin")
+  and matching `.net` email that traced to nothing viewable.
+- Giannini Roofing: a fabricated-looking LinkedIn-style bio detail
+  ("Journeyman Sheetmetal Worker at Sheet Metal Workers Local 17 since
+  8/1/2020") that didn't trace to any real profile — discarded.
+- Frosty's Heating & Cooling: an asserted "[first]@frostysinc.com" email
+  format claim with zero cited example — discarded.
+- PLP Plumbing & Heating: a third phone number that appeared only in an
+  AI search summary with no traceable real page — excluded.
+- Vigilante Family Roofing: two separate Cloudflare-obfuscated "email
+  found!" leads (BuildZoom, a roofing directory) both decoded by hand to
+  unrelated third parties' addresses, not this business's — caught
+  before either was reported as real.
+- Wright's Electric and Mikey Shaw Roofing: each had one fetch pass
+  return a garbled/mis-rendered email variant with stray characters;
+  both re-fetched clean and confirmed before using.
+
+**Owner-name gaps resolved this run (not just flagged):** Wright's
+Electric (Martin A. Wright, via FL Sunbiz filing matching the business
+address exactly — resolves Rupika's open flag), PLP Plumbing (Patrick
+LaPeter, via the site's own `/patrick` bio page + ZoomInfo — resolves
+the brief's flag), Giannini Roofing (Matthew Giannini, full surname via
+a MA Home Improvement Contractor license record tied to the exact
+address/phone — resolves the "just Matt" gap), Small Jobs Electric
+(clarified the actual current structure: Nathaniel Houle runs it now,
+Tom Houle is the retired founder, not a co-owner as BBB implied), Kyle
+Wright's Lawn Care (confirmed not solo — dad and sister still help run
+it, resolving the 266-reviews-for-a-solo-shop scale flag as ordinary,
+not disqualifying).
+
+**Formatting drift caught before commit:** 8 of the 15 enrichment.md
+files came back from subagents with the CALL CARD wrapped in a triple-
+backtick code fence, which isn't the established convention (compare
+any pre-2026-09-12 enrichment.md) and risked breaking KIREEK's
+line-based `Ask for:` parser if it's whitespace/fence-sensitive. Stripped
+the fences on all 8 before committing. Next time multiple subagents draft
+enrichment.md in parallel, tell them explicitly not to wrap the CALL CARD
+in a markdown code fence — the instruction this run described the exact
+text shape but didn't rule out fencing, and roughly half the batch added it.
+
+No review count/rating used as a hook anywhere in this batch, per the
+2026-09-08 compliance ruling — checked directly, none slipped through.
+No Yelp page fetched directly by any subagent.
+
+**Backlog after this run:** 6 newest package-track prospects untouched
+(richmond-pest-control-staten-island-ny, walsh-electric-alexandria-va,
+welsh-roofing-brookeville-md — the 3 left over from today's 12-prospect
+DC/Philadelphia/NY/Boston Rupika batch) plus 6 website-track prospects
+untouched (3 Watertown NY: hatchells-lawn-care, ken-scott-plumbing,
+lashway-plumbing; gb-pest-control-alamogordo-nm and
+pjs-heating-cooling-alamogordo-nm; hub-city-lawn-care-marshfield-wi) —
+prioritize these first next run per the same oldest-untouched rule. Did
+not do a dedicated sweep of the older email-gate/call-ready backlog
+(D&D Plumbing, SonRise Roofing, Superior Roofing, Crandell Pest Control,
+Noska Lawncare, Casey Moriarty Pest Control, Radiant Remodeling Pros, CV
+Roofing, WDM Garage Doors, Lloyd Miller's Painting, Plourdes Electrical,
+Dumont LLC, Outdoor Property Services, Pacheco Electric, Quality
+Painting S.A., Durango Brushworks, DW Olson Electric, Kevin Turner
+Painting, AMJ Remodeling, Powers Refrigeration, Morris Plumbing, Premier
+Roofing & Painting, Henton Plumbing, Window Butler, and others) — this
+run's 15-prospect batch used the full run, same as last time.
+
