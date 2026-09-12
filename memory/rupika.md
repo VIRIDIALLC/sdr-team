@@ -2944,3 +2944,53 @@
   plenty of untried verticals remaining (electrical, roofing, restoration,
   painting in Alamogordo; HVAC, plumbing, electrical, restoration, pest
   control in Marshfield) for a future pass.
+- (package/priority track, run 2026-09-12) Next four metros in the flood-gates
+  rotation after Tampa/Orlando/Jacksonville/Miami — the last unworked entries on
+  `_criteria.md`'s named list: Washington DC, Philadelphia PA, New York NY,
+  Boston MA. Hit the full 12 target, 3 per metro, 6 verticals (HVAC, electrical,
+  roofing, plumbing, landscaping, pest control), family-owned technique only
+  (still the standing approach since the 2026-09-10 compliance change retired
+  the Yelp response-time convention): Frosty's Heating & Cooling (Alexandria VA/
+  DC metro, owner James Caramberis since 1989, domain), Walsh Electric
+  (Alexandria VA, since 1985, owner named as Ed Walsh in search summaries only —
+  single-sourced, FLAG for Montague, domain), Welsh Roofing Company (Brookeville
+  MD/Silver Spring, surfaced via Silver Spring search, owner Greg/Gregory O.
+  Welsh since 1983, still does most estimates himself, domain), Guaranteed
+  Plumbing & Heating (Philadelphia PA, owner Eric M. Slifkin, 30+ yrs, domain),
+  Kyle Wright's Lawn Care (Haddonfield NJ/Philadelphia metro, surfaced via
+  Cherry Hill search, owner Kyle Wright since 2009, 266 reviews flagged as
+  high for a solo-founder shop — Montague to sanity-check scale, domain), Mikey
+  Shaw Roofing (Newtown Square PA/Delaware County, owner Michael Shaw confirmed
+  via his own LinkedIn, domain), Conte Electric (Croton-on-Hudson/Ossining NY,
+  surfaced via Yonkers search, family-owned since 1965 by owner Victor Conte,
+  domain), Richmond Pest Control (Staten Island NY, family/veteran-owned 21+
+  yrs, owner name not found — FLAG for Montague, domain+phone), PLP Plumbing &
+  Heating (Elmsford NY, surfaced via New Rochelle search, 19+ yrs, owner name
+  not found — FLAG for Montague, domain+phone), P.R. Douglas Co. (Waltham MA/
+  Boston metro, sole proprietor Paul R. Douglas since 1979, only 6 employees,
+  domain), Giannini Roofing & Siding (Abington MA, surfaced via Quincy search,
+  founded 2021, owner known only as "Matt" in reviews — FLAG for Montague to
+  confirm surname, domain), L&J Landscaping (Framingham MA, father-son team
+  Jose 27+ yrs & Luis since 2020, launched under this name 2022, domain). No
+  metro ran dry — all four cleared 3 hits faster than the DC/LA rotation
+  typically does. Cross-suburb resolution recurred again (Conte Electric,
+  PLP Plumbing, Giannini Roofing — 3 of 12) — same pattern as every recent
+  run, not a surprise. Dropped rather than queued: Nicholson Plumbing (DC —
+  name collides with multiple unrelated same-named businesses across MD/PA/SC,
+  couldn't resolve to one entity), JB Plumbing & Heating (Philadelphia —
+  address inconsistency between BBB and Yelp, unresolved identity, swapped for
+  Guaranteed Plumbing & Heating instead), Duck Painting Company (Norristown PA
+  — single-sourced, only its own domain as evidence, plus a same-named "Duck's
+  Painting LLC" in Harrisburg — collision + single-source risk), Greenawalt
+  Roofing (Delaware County PA search — actually Lancaster-based with a second
+  Pittsburgh location and 774 reviews, too scaled). Franchises/scaled chains:
+  none of this run's strong candidates resolved to a Neighborly/SERVPRO-type
+  network, so nothing specific to log there this time. **Named flood-gates
+  rotation from `_criteria.md` is now fully worked through once** (LA, SF, SD,
+  Portland, Seattle, Oakland, Phoenix, Denver, Austin, Dallas, then Inland
+  Empire/Vegas/Tucson/SLC/Sacramento/San Jose/Houston/San Antonio/Albuquerque/
+  OKC/Tulsa/KC/Minneapolis/Chicago/Detroit/Columbus/Indianapolis/Nashville/
+  Atlanta/Charlotte/Raleigh/Tampa/Orlando/Jacksonville/Miami/DC/Philadelphia/
+  NY/Boston) — next run needs Kevin/Sue input on where to go next (repeat
+  untried verticals in already-worked metros, or a genuinely new rotation of
+  smaller major metros not yet on the named list).
