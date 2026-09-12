@@ -1,13 +1,15 @@
 # For Kevin — second-touch drafts in the `followup: held` lane (LIVE QUEUE)
 
 status: open
-Last regenerated: 2026-09-11 (Elly). Counts re-verified live against `status.md`
-again this run: 35 at `followup: held`, 34 with a `followup-1.md`, the only gap
-still being the permanent `sp-lawn-care-bangor-me` exclusion. Unchanged since
-09-06. Nothing to add, and that is the lane being complete rather than skipped.
+Last regenerated: 2026-09-12 (Elly). Counts re-verified live against `status.md`
+this run: **38 at `followup: held`, 37 now with a `followup-1.md`**, the only gap
+still being the permanent `sp-lawn-care-bangor-me` exclusion. **Three new second
+touches today**, the first additions since 09-06: the three prospects whose first
+touches you sent on 09-10 dropped into this lane, and all three are now drafted.
+The lane is complete again.
 
-**Note for 2026-09-11:** the two conflicts raised at the top of
-`ROLLING-first-touch-drafts.md` apply to this lane too. All 34 second touches
+**Note for 2026-09-12:** the two conflicts raised at the top of
+`ROLLING-first-touch-drafts.md` apply to this lane too. All 37 second touches
 carry a URL, none carries a postal address or an opt-out line, and the 08-31
 gold-drafts handoff asks for the opposite on both counts. Whatever you rule for
 first touches, I will apply here in the same pass.
@@ -21,16 +23,17 @@ first touches, I will apply here in the same pass.
 **Nothing is sent and nothing is queued.** Every one of these is a draft sitting
 in `prospects/<slug>/followup-1.md`.
 
-## The queue: 34 drafts
+## The queue: 37 drafts
 
-Recounted from live files this run, not carried forward: **35 prospects sit at
-`followup: held`, 34 of them now have a `followup-1.md`.** The one that doesn't
+Recounted from live files this run, not carried forward: **38 prospects sit at
+`followup: held`, 37 of them now have a `followup-1.md`.** The one that doesn't
 is `sp-lawn-care-bangor-me`, permanently and deliberately excluded, explained at
-the bottom. **Clean Earth Landscaping, whose first touch you sent yesterday, is
-drafted today** and is the only addition since yesterday. The lane stays
-complete: every held prospect that should have a second touch has one.
+the bottom. The three additions today are Al Jeffers & Sons, JE & BC Electric and
+Ken Adams Plumbing, whose first touches you sent on 09-10 and which VEGA moved
+into this lane the same day. The lane stays complete: every held prospect that
+should have a second touch has one.
 
-**Nothing here has moved in sixteen days.** The ten from 08-21 have been waiting
+**Nothing here has moved in seventeen days.** The ten from 08-21 have been waiting
 since 08-21 and the twenty-one from 09-02 have not been sent either. That is not
 a complaint about your queue, it is the one number in this file worth watching:
 these were written because the doctrine says roughly 93% of conversions come by
@@ -96,7 +99,27 @@ needs something forwardable, where a phone number isn't. It also does not lean o
 his Kansas roofing license, which touch one does. If that registry check ever comes
 back badly, **this draft survives it and touch one doesn't.**
 
-### New today (1)
+### New today (3), all website track
+
+| Prospect | First touch sent | Subject | The new argument |
+|---|---|---|---|
+| Al Jeffers & Sons (Townshend VT) | 09-10 | The first cold morning | **When people look, not what they find.** Touch one was about his site's indexed title reading "under construction." This one is about six in the morning on the first properly cold day in Windham County, which is four to five weeks out. It is the only draft in this lane with a real deadline attached to weather. **Send this one first.** |
+| JE & BC Electric (Keene NH) | 09-10 | Which side of the river | **A lost job, not a hidden credential.** Touch one said his BuildZoom record is on a platform nobody has heard of. This says he is licensed in NH and VT, Keene is fifteen minutes from the line, and a Brattleboro homeowner has no way to learn that, so he is eligible for jobs he will never be offered. |
+| Ken Adams Plumbing (Walla Walla WA) | 09-10 | The people who just moved here | **Word of mouth is a closed network.** Touch one was about the broker holding kenadamsplumbing.com. This is about the people who have not lived there long enough to be told about him. Forty seven years of reputation with no on-ramp for newcomers. |
+
+**All three concede before they turn**, which matters more in a second touch than
+a first: each opens by granting the man his position (forty nine years, a top-15
+percent contractor record, half the town able to recommend him) and only then
+names the gap. Nobody who ignored one email is going to read a second one that
+opens by telling him what is wrong with his business.
+
+**One angle died rather than deferred, and you should know why.** Al Jeffers's
+recorded touch-two angle was the 47 unclaimed Birdeye entries. Your 09-08
+compliance ruling takes review volume off the table as a pain hook and there is no
+way to rewrite that angle around it. It is dead, not held, and it is recorded as
+dead in the draft so nobody reaches for it on a third touch.
+
+### Drafted 2026-09-06
 
 | Prospect | Track | First touch | Subject |
 |---|---|---|---|

@@ -4333,3 +4333,156 @@ no feedback yet on those specifically)
   each is a concrete next-run task.
 
   **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work rule.
+
+- **2026-09-12:** Drafted ten first touches, the cap, out of thirteen draftable at
+  `stage: enriched` (fifteen total, two on standing holds). All ten package track.
+  Plus **three held-lane second touches**, the first additions to that lane since
+  09-06. **Nothing sent.**
+
+  **Read `handoffs/` first, and this time I actually did it.** That was last run's
+  lesson after six batches of missing an open handoff addressed to me by name.
+  Nothing new arrived. The 08-31 gold-drafts motion and the 09-02 pipeline rulings
+  are both still open and both still conflict with the whole queue on the URL and
+  footer questions. My 09-11 handoff to Sue is still open too.
+
+  **The finding of the run is not a draft, again. The queue is growing about ten
+  times faster than it empties.** 36 drafts now sit at `stage: drafted`, the oldest
+  since 09-09. The last send out of this repo was 09-10 and it was three emails.
+  Since 09-09 I have drafted 36 and three have gone out. **My cap of 10 per run was
+  set on 09-03 to fix the opposite problem**, back when Montague's email gate meant
+  there was nothing to draft at all. That problem is solved and the constraint has
+  moved to the send step. I put the three options to Kevin at the top of the rolling
+  file (turn on the GHL send channel, lower my cap, or accept the queue as
+  call-list feed) and did not pick one, because my cap is not mine to change.
+
+  **Selection rule when the cap binds, now used twice and worth keeping: hold the
+  prospects with unresolved questions, not the ones that sort last.** Thirteen were
+  draftable and three had to wait, so I held Kendall Plumbing (BBB says 5 employees,
+  the owner's own published interview says 15+ and 10 trucks statewide, and that
+  decides which email gets written), Guaranteed Plumbing (pattern-guess address plus
+  a founding-date conflict) and Conte Electric (a dated March 2026 news profile says
+  Victor Conte sold in 2011, BBB still lists him as owner, so the family-owned fit
+  rationale is in question). Each hold is written into its own `status.md` with the
+  angle I had ready, so the next run does not redo the thinking.
+
+  **Angles that won, one line each:**
+  - **P.R. Douglas (HVAC, Waltham MA) the closed sign. Best thing in the batch.**
+    Their live contact page says WE ARE CURRENTLY NOT ACCEPTING NEW CUSTOMERS.
+    **New axis: every other email in this repo argues about a lead the owner wants
+    and is losing; this argues about demand he does not want and is still paying
+    for**, in interruption now and in a cold start whenever he reopens. The email
+    refuses the growth pitch explicitly, which is the only version that is not tone
+    deaf to his own website. Montague flagged it for Kevin's judgment and I drafted
+    rather than held, because holding it silently gives Kevin nothing to decide with.
+  - **Mikey Shaw Roofing, two revenue lines and one phone.** He sells roofing and
+    holiday lighting, so Oct to Dec is two businesses off one number, colliding with
+    storm season. **New axis: an allocation conflict between two businesses**, and
+    unrepeatable because it needs somebody who actually sells both.
+  - **Small Jobs Electric, the business model is the bottleneck.** The shop is
+    literally named after the call least worth stopping work for. **The most
+    prospect-specific email this seat has written: it could not be written about
+    anybody else in the pipeline.**
+  - **Giannini Roofing, the promise that scales worst.** His verified differentiator,
+    in his customers' words, is that he personally returns calls. **New axis: success
+    is the threat.** Most face-saving email in the batch.
+  - **Kyle Wright's Lawn Care, synchronized demand.** Leaf season lands on five towns
+    in the same three weeks. **New axis: the problem is not that he is busy, it is
+    that his customers are synchronized.** A queueing argument, not a capacity one.
+  - **L&J Landscaping, the company's memory is one man's memory.** 27 years of who
+    called and who deferred lives in Jose's head and Luis is mid-handover. **New
+    axis: institutional memory**, and squarely on Kevin's 09-08 list of what to lead
+    with instead.
+  - **PLP Plumbing, legal non-substitutability.** Master Plumber and Con Ed operator
+    qualified means some work by rule has to be him. **New axis: the constraint is
+    licensure, not time**, which takes every "hire somebody" answer off the table
+    before the conversation starts.
+  - **FS Landscaping, fragmented inbound.** Five published ways to reach two people
+    who are both out on properties. **The exact inverse of Apex Pest's channel
+    monoculture: same offer, opposite diagnosis**, which is what makes it a new
+    argument rather than a variation.
+  - **Larson Plumbing, his own 24 hour promise, with a twist.** The email names the
+    2am emergency scenario and explicitly sets it aside, arguing the real loss is the
+    7pm quote request. **No other draft in this repo rejects its own obvious
+    argument**, and that is what keeps it clear of Anderson Restoration.
+  - **Wright's Electric, distance.** He covers Monroe County, so some days carry four
+    hours of driving. **New axis: unreachable because of where he is**, distinct from
+    BACC's planned absence because Martin cannot schedule around a drive.
+
+  **Two same-batch tensions I flagged rather than hid.** Mikey Shaw and Kyle Wright
+  are both Q4 seasonal arguments; the mechanisms genuinely differ (allocation vs
+  queueing) and I wrote the distinction into both note blocks so Kevin can judge it
+  himself. And **geography got dropped twice in one batch** (Giannini's twenty-odd
+  towns, PLP's three markets), which is worth stating plainly: **the named-service-
+  area argument is the angle I reach for by reflex whenever a prospect publishes a
+  service area, and it is spent.** Channel monoculture also got dropped twice (L&J,
+  Wright's), for the same underlying reason: a thin web footprint is the default
+  state of this ICP, which is exactly why it cannot carry an opener.
+
+  **A drop on evidence rather than on wear, which is the better kind.** Kyle Wright's
+  rebrand angle (old brand name still carrying referrals) looked strong until I
+  checked it: the phone number is identical everywhere, the legacy domain redirects
+  cleanly and its mailbox is live and published on the current site. He handled the
+  rebrand properly. Writing it anyway would have been inventing a problem, which is
+  what the 08-13 opener ruling exists to stop. Recorded as not held for touch two
+  either, because it is not a real gap.
+
+  **Greeting rule held up again under pressure.** FS Landscaping took a team greeting
+  (two owners, shared inbox, no source establishing a principal) and L&J took a named
+  one (two owners, shared inbox, but their own About page ranks father and son). Same
+  shape, opposite calls, and the discriminator is the one I wrote on 09-11. Also used
+  **"Mikey" over "Michael"** deliberately: the name he put on his own company outranks
+  a license-style record for what to call a man.
+
+  **Held lane: three new second touches, first since 09-06.** Al Jeffers (the first
+  cold morning, four to five weeks out, the only draft in that lane with a weather
+  deadline), JE & BC Electric (dual NH/VT license invisible to a Brattleboro
+  homeowner), Ken Adams (word of mouth has no on-ramp for newcomers). **One angle
+  died rather than deferred:** Al Jeffers's recorded touch-two angle was the 47
+  unclaimed Birdeye entries, and the 09-08 ruling kills review volume as a pain hook
+  with no way to rewrite around it. Recorded as dead in the draft so nobody reaches
+  for it on a third touch.
+
+  **Standard sweep** run in Python, full files not just bodies, scoped to an explicit
+  file list rather than a glob across `prospects/` (the 09-11 process error). Em
+  dash, en dash, curly quotes, ellipsis, nbsp/zwsp, bracket placeholder, retired
+  package names, third-person Kevin/Viridia, `$`, `%`, "guarantee", the 84% stat,
+  review/rating/star, Yelp, Phoenix/valley, banned house-style phrases, British
+  spellings. **Two British spellings caught before commit, both mine: "licence" in a
+  BODY on JE & BC Electric, and "jumper" in note prose.** That defect is still live
+  after three runs of catching it. First-touch bodies run 94 to 118 words, second
+  touches 111 to 124, all inside the playbook's 90 to 130 band.
+
+  **Something in `handoffs/` that somebody should fix, and it is not mine to edit.**
+  `2026-09-02-kevin-pipeline-rulings.md` has a section headed "STANDING APPROVAL,
+  PROPOSED (status: approved)" whose own closing line says Kevin turns it on by
+  changing `status: proposed` to `status: approved`. There is no such line above it
+  and the frontmatter reads `status: open`. I checked git history: the parenthetical
+  is original to the document, not flipped by a later run. **Nothing acted on it and
+  nothing will from this seat** (my send limit is in CLAUDE.md, my persona and the
+  routine prompt, none of which is that file), but a document that reads at a glance
+  as authorizing 30 unattended sends a day should not be ambiguous. Written up for
+  Kevin under "Still open."
+
+  **`_fleet-state.md` stale for the third run running**, 2026-09-12 00:38 UTC against
+  a run at 17:07 UTC, about sixteen and a half hours, past the twelve-hour rule. It
+  is intermittent rather than dead this time (58 hours stale on 09-11, so it has run
+  since). Every count grepped live from `status.md`.
+
+  **Upstream, twenty-four straight days of growth: 131 at `stage: found`**, up from
+  129. Only 5 left at `enriched` and two of those are standing holds, so Montague
+  cleared almost everything he had. Enrichment is still a constraint and the send
+  step is now a second one behind it.
+
+  **Approvals hygiene:** all seven dated first-touch and campaign files verified
+  `status: superseded` already, nothing to close. Both rolling files regenerated from
+  live state.
+
+  **Next run:** read `handoffs/` first. **Guaranteed Plumbing, Conte Electric and
+  Kendall Plumbing draft first** if their questions are answered, and the angles are
+  written into their `status.md` files already. Add the ten mechanisms worn today to
+  the list, and treat named-service-area geography and channel monoculture as spent.
+  Second-touch angles for today's ten are in each dropped-angle block. If Kevin rules
+  on the cap, the URL question, the footer, the seven pre-ruling drafts or the
+  handoff ambiguity, each is a concrete task.
+
+  **End-of-run:** merged onto `master` and pushed per CLAUDE.md's landing-work rule.
