@@ -3983,3 +3983,119 @@
     Henton Plumbing, Window Butler, and others) — today's 15-prospect batch
     used the full run.
 
+## 2026-09-12 — 15 package-track prospects (6 FL backlog + 9 DC/Philly/NY/Boston)
+
+Scheduled run. Batch: the 6 oldest untouched `found` prospects (all
+`track: package`, FL, sourced 2026-09-11 — fs-landscaping-solutions,
+kendall-plumbing-services, larson-plumbing, small-jobs-electric,
+vigilante-family-roofing, wrights-electric-homestead) plus 9 of the 12
+newest package-track prospects Rupika added 2026-09-12 (DC/Philadelphia/
+NY/Boston metro — conte-electric, frostys-heating-cooling, giannini-
+roofing-siding, guaranteed-plumbing-heating, kyle-wrights-lawn-care,
+lj-landscaping, mikey-shaw-roofing, plp-plumbing-heating,
+pr-douglas-heating-air), per the package-track-first / oldest-untouched-
+first priority. Worked via 5 parallel research subagents (3 prospects
+each), each briefed on the full compliance gate set and reviewed here
+before commit — not a change to policy, just how this run's volume got
+done inside one session.
+
+**Result: 13 advanced `found` -> `enriched` (cleared the email gate), 2
+held at `found` with `call_ready: yes`** (vigilante-family-roofing —
+own site unreachable/connection-reset, phone confirmed BBB +
+floridaroofing.directory; frostys-heating-cooling — no email found
+anywhere despite a thorough check, phone confirmed 3 sources).
+`CALL-READY.md` regenerated twice this run as holds landed: 20 -> 21 -> 22.
+
+**Real, unresolved flags for Sue/Kevin, not guessed past:**
+- **Conte Electric — ownership conflict.** BBB names Victor Conte as
+  Owner/President (what Rupika's brief relied on), but a dated
+  (2026-03-01) local news profile says he sold the business in 2011 and
+  is now 90, doing unrelated work. No current owner found anywhere.
+  Deliberately put `NO NAME FOUND` on the CALL CARD instead of carrying
+  "Victor" forward stale — a wrong name that reads as "this caller
+  doesn't know us" is worse than no name. Also puts a real question mark
+  over the "family-owned, owner still hands-on" fit rationale for this
+  lead specifically.
+- **Kendall Plumbing Services — scale conflict.** BBB says 5 employees/
+  young shop; the owner's own published Voyage Miami interview claims
+  15+ employees and 10+ trucks operating statewide (Miami/Tampa/Orlando/
+  Fort Myers). Also a phone-number conflict (BBB vs. their own live
+  site — used the site's number, flagged both). Same "advance but flag"
+  pattern as prior scale surprises (Mayday Pest Control 2026-09-11, EZ
+  Electrical/Apex Pest Control 2026-09-08, Boldt HVAC 2026-08-11).
+- **PR Douglas Heating & Air — capacity flag.** Live contact page reads
+  "WE ARE CURRENTLY NOT ACCEPTING NEW CUSTOMERS," confirmed via direct
+  fetch, independently corroborated by a Google summary of the same
+  page. Cuts both ways (genuine capacity pain vs. not currently seeking
+  growth) — left for Kevin's judgment, not resolved here.
+- **Guaranteed Plumbing & Heating — name conflict resolved.** LinkedIn
+  and search-AI summaries kept surfacing "Rick Slifkin"; resolved to
+  **Eric Slifkin** via a directly-fetched primary-source trade article
+  (PM Mag) plus a review response signed "Eric M Slifkin" plus BBB —
+  three independent sources converging on Eric, not a guess.
+
+**Search-AI hallucinations caught and discarded this run (not reported
+as findings) — the standing discipline working as designed, now well
+past a dozen logged instances since 2026-08-13:**
+- Guaranteed Plumbing: a fabricated CEO name ("Deborah Kelly-mullin")
+  and matching `.net` email that traced to nothing viewable.
+- Giannini Roofing: a fabricated-looking LinkedIn-style bio detail
+  ("Journeyman Sheetmetal Worker at Sheet Metal Workers Local 17 since
+  8/1/2020") that didn't trace to any real profile — discarded.
+- Frosty's Heating & Cooling: an asserted "[first]@frostysinc.com" email
+  format claim with zero cited example — discarded.
+- PLP Plumbing & Heating: a third phone number that appeared only in an
+  AI search summary with no traceable real page — excluded.
+- Vigilante Family Roofing: two separate Cloudflare-obfuscated "email
+  found!" leads (BuildZoom, a roofing directory) both decoded by hand to
+  unrelated third parties' addresses, not this business's — caught
+  before either was reported as real.
+- Wright's Electric and Mikey Shaw Roofing: each had one fetch pass
+  return a garbled/mis-rendered email variant with stray characters;
+  both re-fetched clean and confirmed before using.
+
+**Owner-name gaps resolved this run (not just flagged):** Wright's
+Electric (Martin A. Wright, via FL Sunbiz filing matching the business
+address exactly — resolves Rupika's open flag), PLP Plumbing (Patrick
+LaPeter, via the site's own `/patrick` bio page + ZoomInfo — resolves
+the brief's flag), Giannini Roofing (Matthew Giannini, full surname via
+a MA Home Improvement Contractor license record tied to the exact
+address/phone — resolves the "just Matt" gap), Small Jobs Electric
+(clarified the actual current structure: Nathaniel Houle runs it now,
+Tom Houle is the retired founder, not a co-owner as BBB implied), Kyle
+Wright's Lawn Care (confirmed not solo — dad and sister still help run
+it, resolving the 266-reviews-for-a-solo-shop scale flag as ordinary,
+not disqualifying).
+
+**Formatting drift caught before commit:** 8 of the 15 enrichment.md
+files came back from subagents with the CALL CARD wrapped in a triple-
+backtick code fence, which isn't the established convention (compare
+any pre-2026-09-12 enrichment.md) and risked breaking KIREEK's
+line-based `Ask for:` parser if it's whitespace/fence-sensitive. Stripped
+the fences on all 8 before committing. Next time multiple subagents draft
+enrichment.md in parallel, tell them explicitly not to wrap the CALL CARD
+in a markdown code fence — the instruction this run described the exact
+text shape but didn't rule out fencing, and roughly half the batch added it.
+
+No review count/rating used as a hook anywhere in this batch, per the
+2026-09-08 compliance ruling — checked directly, none slipped through.
+No Yelp page fetched directly by any subagent.
+
+**Backlog after this run:** 6 newest package-track prospects untouched
+(richmond-pest-control-staten-island-ny, walsh-electric-alexandria-va,
+welsh-roofing-brookeville-md — the 3 left over from today's 12-prospect
+DC/Philadelphia/NY/Boston Rupika batch) plus 6 website-track prospects
+untouched (3 Watertown NY: hatchells-lawn-care, ken-scott-plumbing,
+lashway-plumbing; gb-pest-control-alamogordo-nm and
+pjs-heating-cooling-alamogordo-nm; hub-city-lawn-care-marshfield-wi) —
+prioritize these first next run per the same oldest-untouched rule. Did
+not do a dedicated sweep of the older email-gate/call-ready backlog
+(D&D Plumbing, SonRise Roofing, Superior Roofing, Crandell Pest Control,
+Noska Lawncare, Casey Moriarty Pest Control, Radiant Remodeling Pros, CV
+Roofing, WDM Garage Doors, Lloyd Miller's Painting, Plourdes Electrical,
+Dumont LLC, Outdoor Property Services, Pacheco Electric, Quality
+Painting S.A., Durango Brushworks, DW Olson Electric, Kevin Turner
+Painting, AMJ Remodeling, Powers Refrigeration, Morris Plumbing, Premier
+Roofing & Painting, Henton Plumbing, Window Butler, and others) — this
+run's 15-prospect batch used the full run, same as last time.
+
