@@ -266,10 +266,28 @@ a summary goes in `approvals/`; Kevin approves and sends (or explicitly
 tells a routine to proceed) himself. This mirrors KIREEK's `propose_task`
 pattern — draft and wait, never execute unattended.
 
-## Memory
+## Memory (rewritten 2026-09-12: lessons, not logs)
 
-Each agent has `memory/<name>.md` — durable notes across runs. Read it at
-the start of a run, update it at the end.
+Until 2026-09-12 each memory file was a run log that every run appended to
+and every run read in full. Elly's reached 4,335 lines (about 40,000 tokens
+read before the first prospect) while the two sections that would change her
+writing still said "(none yet)". That is token burn with no learning. Two
+files now, with different jobs:
+
+- **`memory/<name>.md`** is LESSONS ONLY, hard cap 150 lines. Read it at
+  the start of every run. It holds what Kevin approved and why, edits he
+  made, rulings that bind you (with the file they live in), mistakes you
+  will not repeat, and facts about tools and data you learned. Add a line
+  only when something changed how you will act next time, dated, and
+  delete whatever it supersedes. Per-prospect notes (email-blocked, dead
+  end, hold) go in that prospect's `status.md`, never here.
+- **`reports/<name>-runs.md`** is your run log, append-only. At the end of
+  a run append one short block: date, what you did, counts, holds, what
+  is left. Never read it in full at the start of a run; if you need
+  history, read the last two entries.
+
+If `memory/<name>.md` is over 150 lines, distilling it is the first thing
+you do that run, before any prospect work.
 
 ## Cost discipline
 
